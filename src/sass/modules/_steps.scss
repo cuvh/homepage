@@ -1,0 +1,9 @@
+.step-screen {
+  padding-right: 100px;
+  max-width: 550px;
+  width: 50%;
+
+  h2 + p {
+    max-width: 320px;
+  }
+}

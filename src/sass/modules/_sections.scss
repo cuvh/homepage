@@ -1,0 +1,109 @@
+.section {
+  position: relative;
+
+  &.--banner {
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  }
+
+  &.--padding-s {
+    padding: 50px 0;
+  }
+
+  &.--padding-m {
+    padding: 80px 0;
+  }
+
+  &.--padding-l {
+    padding: 100px 0;
+  }
+
+  &.--home {
+    background-image: url(/imgs/home.jpg);
+    padding-bottom: 170px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+
+    + .section.--white {
+      height: 120px;
+      line-height: 120px;
+      margin-top: -120px;
+    }
+  }
+
+  &.--full {
+    height: 100vh;
+  }
+
+  &.--white {
+    background: white;
+  }
+
+  &.--green {
+    background: $ench-color;
+    color: #fff;
+  }
+
+  &.--dark {
+    background: $ench-dark-color;
+    color: #fff;
+  }
+
+  &.--footer {
+    background: #1a1a1a;
+    height: 120px;
+    line-height: 120px;
+    font-size: 16px;
+    padding: 0 50px;
+  }
+
+}
+
+.live-editing {
+  margin-top: 150px;
+  max-width: 15%;
+
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+
+.live-editing-image {
+  float: right;
+  width: 75%;
+}
+
+.v-base {
+  display: table;
+  width: 100%;
+  height: 100vh;
+
+  &.--h50 {
+    height: 50vh;
+  }
+}
+
+.v-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.v-bottom {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.feature {
+  margin-bottom: 50px;
+
+  h3 {
+    margin-bottom: 25px;
+  }
+}

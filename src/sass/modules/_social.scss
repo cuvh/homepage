@@ -1,0 +1,34 @@
+$social-size: 34px;
+$small-social-size: 28px;
+.social {
+  a {
+    display: inline-block;
+    height: $social-size;
+    width: $social-size;
+    line-height: $social-size;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #666;
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: .2s background ease-in-out;
+
+    &:hover,
+    &:focus {
+      background: rgba(#fff, .8);
+      color: #1a1a1a;
+    }
+  }
+
+  &.--small a {
+    width: $small-social-size;
+    height: $small-social-size;
+    line-height: $small-social-size;
+  }
+
+  &.--left a {
+    margin: 0 10px 0 0;
+  }
+
+}

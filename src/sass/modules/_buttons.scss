@@ -1,0 +1,50 @@
+.button {
+  display: inline-block;
+  font: 300 18px/1.2 $base-font-family 'Segoe UI' Arial , sans-serif;
+  text-decoration: none;
+  border-radius: 35px;
+  line-height: 48px;
+  height: 48px;
+  padding: 0 25px;
+  color: #fff;
+  background: $ench-color;
+  text-align: center;
+  min-width: 160px;
+  transition: .2s background ease-in-out;
+
+  &:hover,
+  &:focus {
+    background: rgba($ench-color, .9);
+  }
+
+  &.--white {
+    color: $ench-color;
+    background: #fff;
+
+    &:hover,
+    &:focus {
+      background: rgba(#fff, .9);
+    }
+  }
+
+  &.--trans {
+    background: transparent;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding:  0 20px;
+    min-width: auto;
+    border: 1px solid #fff;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background: rgba(#fff, .3);
+    }
+  }
+
+  &.--grey {
+    border: 1px solid #aaa;
+    color: #aaa;
+  }
+}
