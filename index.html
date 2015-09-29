@@ -12,6 +12,7 @@
   <div class="section --banner --full --home --padding-s menu-open">
       <div class="menu">
         <a href="#" class="button --small --trans --grey">Let's Begin</a>
+        <a href="#" class="fa fa-times menu-close js-close-menu"></a>
 
         <ul>
           <li><a href="#">Home</a></li>
@@ -25,6 +26,13 @@
           <li><a href="#">About us</a></li>
         </ul>
 
+        <ul class="--secondary">
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">For Companies</a></li>
+          <li><a href="#">For Universities</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+
         <div class="social --small --left">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
@@ -34,7 +42,11 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+
+          <img src="/imgs/ench_logo.svg" alt="">
+
+        </div>
         <div class="col-sm-6">
 
 
@@ -259,7 +271,8 @@
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script>
   $(function (){
-    $('.js-open-menu').on('click', function() {
+    $('.js-open-menu, .js-close-menu').on('click', function(e) {
+      e.preventDefault();
       $('body').toggleClass('is-menu-opened');
     });
   });

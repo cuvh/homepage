@@ -26,7 +26,7 @@
     }
   }
 }
-
+.menu-close,
 .menu-hamb {
   font-size: 22px !important;
   color: #fff;
@@ -42,6 +42,15 @@
     transform: rotate(180deg);
   }
 }
+.menu-close {
+  margin-left: 20px;
+
+  &:hover,
+  &:focus {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
 
 $nav-width: 280px;
 .menu {
@@ -53,8 +62,9 @@ $nav-width: 280px;
   background: #1a1a1a;
   z-index: 10;
   transform: translateX($nav-width);
-  padding: 30px 30px 0 50px;
+  padding: 30px 30px 30px 50px;
   color: #555;
+  overflow-y: auto;
 
   ul {
     margin-top: 30px;
@@ -64,13 +74,19 @@ $nav-width: 280px;
     a {
       display: inline-block;
       color: #fff;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       font-size: 20px;
       text-decoration: none;
 
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    &.--secondary a {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 5px;
     }
   }
 }
@@ -80,5 +96,8 @@ $nav-width: 280px;
 .is-menu-opened {
   .menu-open {
     transform: translateX(-$nav-width);
+  }
+  .menu-hamb {
+    display: none;
   }
 }
