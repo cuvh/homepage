@@ -1,3 +1,9 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-sizing: border-box;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: 'Geometria Light';
   src: url("/assets/fonts/Geometria-Light-webfont.eot");
@@ -40,6 +46,9 @@ blockquote {
 h1 {
   font: 400 52px/1.2 "Geometria Light" "Segoe UI" Arial, sans-serif;
   margin: 0 0 40px; }
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 36px; } }
 
 h2 {
   font: 400 32px/1.2 "Geometria Light" "Segoe UI" Arial, sans-serif; }
@@ -109,12 +118,6 @@ dd {
   clear: none;
   margin-left: 10px; }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-sizing: border-box;
-  box-sizing: border-box; }
-
 #mod .m-text-left {
   text-align: left; }
 
@@ -136,6 +139,12 @@ dd {
 #mod .m-height-100p {
   height: 100%; }
 
+#mod .m-d-none {
+  display: none; }
+
+#mod .m-o-hidden {
+  overflow: hidden; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -156,6 +165,9 @@ dd {
   @media (min-width: 1200px) {
     .container {
       width: 1190px; } }
+  @media only screen and (max-width: 768px) {
+    .container {
+      max-width: 90%; } }
 
 .container-fluid {
   margin-right: auto;
@@ -694,8 +706,25 @@ dd {
       height: 120px;
       line-height: 120px;
       margin-top: -120px; }
+      @media only screen and (max-width: 768px) {
+        .section.--home + .section.--white {
+          margin-top: 0; } }
+    @media only screen and (max-width: 992px) {
+      .section.--home {
+        height: 100vh !important; } }
+    @media only screen and (max-width: 768px) {
+      .section.--home {
+        padding: 20px;
+        height: auto !important; }
+        .section.--home .container {
+          max-width: 100%; } }
   .section.--full {
     height: 100vh; }
+    @media only screen and (max-width: 992px) {
+      .section.--full {
+        height: auto; } }
+  .section.--o-hidden {
+    overflow: hidden; }
   .section.--white {
     background: white; }
   .section.--green {
@@ -710,6 +739,12 @@ dd {
     line-height: 120px;
     font-size: 16px;
     padding: 0 50px; }
+    @media only screen and (max-width: 768px) {
+      .section.--footer {
+        height: auto;
+        text-align: center;
+        line-height: 60px;
+        padding: 50px; } }
 
 .live-editing {
   margin-top: 150px;
@@ -725,6 +760,13 @@ dd {
   display: table;
   width: 100%;
   height: 100vh; }
+  @media only screen and (max-width: 992px) {
+    .v-base {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .v-base {
+      height: auto !important; } }
   .v-base.--h50 {
     height: 50vh; }
 
@@ -787,14 +829,12 @@ dd {
   position: absolute;
   width: 280px;
   top: 0;
-  bottom: 0;
   right: 0;
   background: #1a1a1a;
-  z-index: 10;
-  transform: translateX(280px);
   padding: 30px 30px 30px 50px;
   color: #555;
-  overflow-y: auto; }
+  overflow-y: auto;
+  height: 100vh; }
   .menu ul {
     margin-top: 30px;
     list-style-type: none;
@@ -853,6 +893,40 @@ dd {
   width: 50%; }
   .step-screen h2 + p {
     max-width: 320px; }
+  @media only screen and (max-width: 768px) {
+    .step-screen {
+      max-width: 100%;
+      padding: 0;
+      width: 100%; } }
+
+.step-image {
+  float: right;
+  width: 50%;
+  text-align: left;
+  margin-left: 0px;
+  opacity: 0;
+  transition: .3s opacity ease-in-out; }
+  .step-image img {
+    max-width: 415px; }
+    @media only screen and (max-width: 992px) {
+      .step-image img {
+        max-width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .step-image {
+      opacity: 1 !important;
+      width: 100%;
+      text-align: center; } }
+  .step-image.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    opacity: 1; }
+    @media only screen and (max-width: 992px) {
+      .step-image.is-fixed {
+        position: static !important; } }
+
+.steps-container.visible-steps .step-image.is-fixed {
+  position: static; }
 
 .button {
   display: inline-block;
@@ -895,6 +969,12 @@ dd {
 .testimonial-section-title {
   padding-top: 90px;
   margin: 0 0 -120px; }
+  @media only screen and (max-width: 768px) {
+    .testimonial-section-title {
+      padding-top: 40px;
+      margin: 0;
+      max-width: 90%;
+      margin: 0 auto; } }
 
 .testimonial {
   text-align: left; }
@@ -913,6 +993,9 @@ dd {
       color: #aeaeae;
       margin-left: 40px;
       margin-bottom: 40px; }
+  @media only screen and (max-width: 768px) {
+    .testimonial {
+      margin-bottom: 50px; } }
 
 .testimonial-nav-left,
 .testimonial-nav-right {
@@ -923,6 +1006,10 @@ dd {
   margin-top: -12px;
   left: 50px;
   text-decoration: none; }
+  @media only screen and (max-width: 768px) {
+    .testimonial-nav-left,
+    .testimonial-nav-right {
+      display: none !important; } }
 
 .testimonial-nav-right {
   left: auto;

@@ -1,6 +1,13 @@
 .testimonial-section-title {
   padding-top: 90px;
   margin: 0 0 -120px;
+
+  @include media($screen-sm) {
+    padding-top: 40px;
+    margin: 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .testimonial {
@@ -25,6 +32,10 @@
       margin-bottom: 40px;
     }
   }
+
+  @include media($screen-sm) {
+    margin-bottom: 50px;
+  }
 }
 
 .testimonial-nav-left,
@@ -36,6 +47,10 @@
   margin-top: -12px;
   left: 50px;
   text-decoration: none;
+
+  @include media($screen-sm) {
+    display: none !important;
+  }
 }
 
 .testimonial-nav-right {

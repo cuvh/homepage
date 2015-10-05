@@ -21,6 +21,18 @@
   }
 }
 
+@mixin media($num) {
+  @media only screen and (max-width: $num) {
+    @content;
+  }
+}
+
+@mixin media-min($num) {
+  @media only screen and (min-width: $num) {
+    @content;
+  }
+}
+
 // Grid system
 //
 // Generate semantic grid columns with these mixins.

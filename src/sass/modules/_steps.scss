@@ -6,4 +6,53 @@
   h2 + p {
     max-width: 320px;
   }
+
+  @include media($screen-sm) {
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.step-image {
+  float: right;
+  width: 50%;
+  text-align: left;
+  margin-left: 0px;
+  opacity: 0;
+  transition: .3s opacity ease-in-out;
+
+  img {
+    max-width: 415px;
+
+    @include media($screen-md) {
+      max-width: 100%;
+    }
+  }
+
+  @include media($screen-sm) {
+    opacity: 1 !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    opacity: 1;
+
+    @include media($screen-md) {
+      position: static !important;
+    }
+  }
+
+}
+
+.steps-container {
+  &.visible-steps {
+    .step-image.is-fixed {
+      position: static;
+    }
+  }
 }
