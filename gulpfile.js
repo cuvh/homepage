@@ -1,16 +1,19 @@
 'use strict';
 
+var sourceCss = './src/sass/**/*.scss';
+var sourceJS = './src/js/*.js';
+var distCss = './dist/css';
+var distJs = './dist/js';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var webserver = require('gulp-webserver');
 var concat = require('gulp-concat');
+var minifyCss = require('gulp-minify-css');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var clean = require('gulp-clean');
 
-
-gulp.task('sass', function () {
-  gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
-});
 
 gulp.task('serve', function() {
   gulp.src('./')
@@ -21,18 +24,48 @@ gulp.task('serve', function() {
     }));
 });
 
+gulp.task('sass', function () {
+  gulp.src(sourceCss)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(distCss));
+});
+
 gulp.task('scripts', function() {
-  return gulp.src('./src/js/*.js')
+  return gulp.src(sourceJS)
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('./dist/js/'));
+    .pipe(gulp.dest(distJs));
+});
+
+gulp.task('minify-css', ['clean-css', 'sass'], function() {
+  return gulp.src(distCss + '/*.css')
+    .pipe(minifyCss())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest(distCss));
+});
+
+gulp.task('minify-js', ['clean-js', 'scripts'], function() {
+  return gulp.src(distJs + '/*.js')
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest(distJs));
+});
+
+gulp.task('clean-css', function() {
+  return gulp.src('./dist/css/*.min.css')
+    .pipe(clean());
+});
+
+gulp.task('clean-js', function() {
+  return gulp.src('./dist/js/*.min.js')
+    .pipe(clean());
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
+  gulp.watch(sourceCss, ['minify-css']);
 });
 
 gulp.task('scripts:watch', function () {
-  gulp.watch('./src/js/*.js', ['scripts']);
+  gulp.watch(sourceJS, ['minify-js']);
 });
 
-gulp.task('default',['sass', 'sass:watch', 'scripts','scripts:watch']);
+gulp.task('default',['minify-css', 'sass:watch', 'minify-js','scripts:watch']);
