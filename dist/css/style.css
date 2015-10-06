@@ -745,6 +745,8 @@ dd {
         text-align: center;
         line-height: 60px;
         padding: 50px; } }
+    .section.--footer .logo {
+      opacity: .5; }
 
 .live-editing {
   margin-top: 150px;
