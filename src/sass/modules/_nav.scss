@@ -93,9 +93,41 @@ $nav-width: 280px;
 }
 .is-menu-opened {
   .menu-open {
+    -webkit-transform: translateX(-$nav-width);
     transform: translateX(-$nav-width);
   }
   .menu-hamb {
     display: none;
   }
+}
+
+.cta-container,
+.ench-logo {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 200;
+}
+
+.cta-container {
+  left: auto;
+  right: 50px;
+
+  .button-cta {
+    margin-top: -10px;
+    display: none;
+  }
+  .menu-hamb {
+    display: inline-block;
+  }
+
+  &.swap {
+    .button-cta {
+      display: inline-block;
+    }
+    .menu-hamb {
+      display: none;
+    }
+  }
+
 }

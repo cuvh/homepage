@@ -45,7 +45,7 @@
       <div class="row">
         <div class="col-sm-3">
 
-          <img src="/imgs/ench_logo.svg" alt="">
+          <img src="/imgs/ench_logo.svg" alt="" class="ench-logo">
 
         </div>
         <div class="col-sm-6">
@@ -58,8 +58,9 @@
           </ul>
 
         </div>
-        <div class="col-sm-3 m-text-right">
+        <div class="col-sm-3 m-text-right cta-container">
           <a href="#" class="fa fa-bars menu-hamb js-open-menu"></a>
+          <a href="#" class="button --small --trans button-cta">Let’s Begin</a>
         </div>
       </div>
 
@@ -351,8 +352,6 @@
 
       $('.step-image').each(function( index ) {
         var offset = $(this).parent().offset();
-        console.log(scroll + $(window).height());
-        console.log('image ' + offset.top);
         if(scroll + $(window).height() < offset.top) {
           $(this).removeClass("is-fixed");
         }
@@ -363,6 +362,12 @@
 
       if (( $('.step-image.is-fixed').length > 0 && scroll < offsetPrev.top) || scroll > offsetNext.top) {
         $stepsContainer.addClass('visible-steps');
+      }
+
+      if( scroll > 100 && !$('.cta-container').hasClass('swap') ) {
+        $('.cta-container').addClass('swap');
+      } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
+        $('.cta-container').removeClass('swap');
       }
 
 

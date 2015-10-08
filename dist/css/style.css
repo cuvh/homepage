@@ -858,10 +858,31 @@ dd {
   transition: .3s transform ease-in-out; }
 
 .is-menu-opened .menu-open {
+  -webkit-transform: translateX(-280px);
   transform: translateX(-280px); }
 
 .is-menu-opened .menu-hamb {
   display: none; }
+
+.cta-container,
+.ench-logo {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 200; }
+
+.cta-container {
+  left: auto;
+  right: 50px; }
+  .cta-container .button-cta {
+    margin-top: -10px;
+    display: none; }
+  .cta-container .menu-hamb {
+    display: inline-block; }
+  .cta-container.swap .button-cta {
+    display: inline-block; }
+  .cta-container.swap .menu-hamb {
+    display: none; }
 
 .media-list {
   max-width: 55%;
@@ -942,7 +963,8 @@ dd {
   background: #00c092;
   text-align: center;
   min-width: 160px;
-  transition: .2s background ease-in-out; }
+  transition: .2s background ease-in-out;
+  cursor: pointer; }
   .button:hover,
   .button:focus {
     background: rgba(0, 192, 146, 0.9); }
