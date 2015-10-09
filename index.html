@@ -272,8 +272,11 @@
 
     <div class="v-base">
       <div class="v-middle">
+
+
           <div class="container">
 
+          <div class="js-slick">
             <div class="row gutter100">
               <div class="col-sm-6">
 
@@ -300,12 +303,42 @@
 
             </div>
 
+            <div class="row gutter100">
+              <div class="col-sm-6">
+
+                <div class="testimonial">
+                  <img src="http://lorempixel.com/160/160/people/" alt="">
+                  <h3>Jack Doe2</h3>
+                  <span>HR Director at Telerik</span>
+                  <p class="text-l">The design was awesome, but the real value was hidden in the numerous tips and examples that were provided!</p>
+                </div>
+
+              </div>
+
+
+              <div class="col-sm-6">
+
+                <div class="testimonial">
+                  <img src="http://lorempixel.com/160/160/cats/" alt="">
+                  <h3>Grumpy Cat3</h3>
+                  <span>HR at Visteon</span>
+                  <p class="text-l">I have applied for my first job with this new resume and the company called me on the very next day!</p>
+                </div>
+
+              </div>
+
+            </div>
+
 
           </div>
+    </div>
+
+
       </div>
     </div>
-    <a href="#" class="testimonial-nav-left fa fa-angle-left"></a>
-    <a href="#" class="testimonial-nav-right fa fa-angle-right"></a>
+
+    <a href="#" class="testimonial-nav-left fa fa-angle-left js-prev"></a>
+    <a href="#" class="testimonial-nav-right fa fa-angle-right js-next"></a>
 
   </div>
 
@@ -343,7 +376,9 @@
 
   </footer>
 
+
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
 <script src="dist/js/all.js"></script>
 <script>
   $(function (){
@@ -374,6 +409,10 @@
   });
 
   var s = skrollr.init();
+  $('.js-slick').slick({
+    prevArrow: '.js-prev',
+    nextArrow: '.js-next'
+  });
 </script>
 </body>
 </html>

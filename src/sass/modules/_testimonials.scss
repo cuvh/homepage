@@ -43,10 +43,19 @@
   position: absolute;
   font-size: 24px !important;
   color: #000;
-  top: 50%;
-  margin-top: -12px;
-  left: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0px;
   text-decoration: none;
+  vertical-align: middle;
+  padding: 20px;
+  padding-left: 50px;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+  }
 
   @include media($screen-sm) {
     display: none !important;
@@ -55,5 +64,7 @@
 
 .testimonial-nav-right {
   left: auto;
-  right: 50px;
+  right: 0px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
