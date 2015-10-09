@@ -89,7 +89,7 @@
     <div class="container">
 
 
-        <div class="v-base step-image is-fixed" data-top="opacity: 1; position: fixed;" data-150-top="opacity: 0;">
+        <div class="v-base step-image is-fixed" data-top="opacity: 1; position: fixed;" data-350-top="opacity: 0; ">
           <div class="v-middle">
           <img src="imgs/1.jpeg" alt="" >
           </div>
@@ -359,26 +359,15 @@
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
 
-      // $('.step-image').each(function( index ) {
-      //   var offset = $(this).parent().offset();
-      //   if(scroll + $(window).height() < offset.top) {
-      //     $(this).removeClass("is-fixed");
-      //   }
-      // });
-
-      var offsetNext = $stepsNextC.offset();
-      var offsetPrev = $stepsContainer.offset();
-
-      // if (( $('.step-image.is-fixed').length > 0 && scroll < offsetPrev.top) || scroll > offsetNext.top) {
-      //   $stepsContainer.addClass('visible-steps');
-      // }
+      if(scroll > $(window).height() - 60) {
+        $('body').removeClass('is-menu-opened');
+      }
 
       if( scroll > 100 && !$('.cta-container').hasClass('swap') ) {
         $('.cta-container').addClass('swap');
       } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
         $('.cta-container').removeClass('swap');
       }
-
 
     });
 

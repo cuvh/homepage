@@ -701,11 +701,13 @@ dd {
     padding-bottom: 170px;
     padding-left: 50px;
     padding-right: 50px;
-    color: #fff; }
+    color: #fff;
+    z-index: 20; }
     .section.-home + .section.-white {
       height: 120px;
       line-height: 120px;
-      margin-top: -120px; }
+      margin-top: -120px;
+      z-index: 21; }
       @media only screen and (max-width: 768px) {
         .section.-home + .section.-white {
           margin-top: 0; } }
@@ -836,7 +838,8 @@ dd {
   padding: 30px 30px 30px 50px;
   color: #555;
   overflow-y: auto;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 19; }
   .menu ul {
     margin-top: 30px;
     list-style-type: none;
