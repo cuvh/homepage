@@ -18,7 +18,7 @@
     background: rgba($ench-color, .9);
   }
 
-  &.--white {
+  &.-white {
     color: $ench-color;
     background: #fff;
 
@@ -28,7 +28,7 @@
     }
   }
 
-  &.--trans {
+  &.-trans {
     background: transparent;
     font-size: 16px;
     line-height: 40px;
@@ -44,7 +44,7 @@
     }
   }
 
-  &.--grey {
+  &.-grey {
     border: 1px solid #aaa;
     color: #aaa;
   }

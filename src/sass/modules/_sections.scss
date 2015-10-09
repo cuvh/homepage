@@ -1,7 +1,7 @@
 .section {
   position: relative;
 
-  &.--banner {
+  &.-banner {
   background-repeat: no-repeat;
   // background-attachment: fixed;
   background-position: center center;
@@ -12,26 +12,26 @@
 
   }
 
-  &.--padding-s {
+  &.-padding-s {
     padding: 50px 0;
   }
 
-  &.--padding-m {
+  &.-padding-m {
     padding: 80px 0;
   }
 
-  &.--padding-l {
+  &.-padding-l {
     padding: 100px 0;
   }
 
-  &.--home {
+  &.-home {
     background-image: url(/imgs/home.jpg);
     padding-bottom: 170px;
     padding-left: 50px;
     padding-right: 50px;
     color: #fff;
 
-    + .section.--white {
+    + .section.-white {
       height: 120px;
       line-height: 120px;
       margin-top: -120px;
@@ -56,32 +56,32 @@
     }
   }
 
-  &.--full {
+  &.-full {
     height: 100vh;
 
     @include media($screen-md) {
       height: auto;    }
   }
 
-  &.--o-hidden {
+  &.-o-hidden {
     overflow: hidden;
   }
 
-  &.--white {
+  &.-white {
     background: white;
   }
 
-  &.--green {
+  &.-green {
     background: $ench-color;
     color: #fff;
   }
 
-  &.--dark {
+  &.-dark {
     background: $ench-dark-color;
     color: #fff;
   }
 
-  &.--footer {
+  &.-footer {
     background: #1a1a1a;
     height: 120px;
     line-height: 120px;
@@ -130,7 +130,7 @@
     height: auto !important;
   }
 
-  &.--h50 {
+  &.-h50 {
     height: 50vh;
   }
 }

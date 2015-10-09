@@ -21,13 +21,13 @@ $small-social-size: 28px;
     }
   }
 
-  &.--small a {
+  &.-small a {
     width: $small-social-size;
     height: $small-social-size;
     line-height: $small-social-size;
   }
 
-  &.--left a {
+  &.-left a {
     margin: 0 10px 0 0;
   }
 

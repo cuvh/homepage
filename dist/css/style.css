@@ -678,74 +678,74 @@ dd {
     padding-left: 50px;
     padding-right: 50px; }
 
-.container.--cta {
+.container.-cta {
   max-width: 520px; }
 
 .section {
   position: relative; }
-  .section.--banner {
+  .section.-banner {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; }
-  .section.--padding-s {
+  .section.-padding-s {
     padding: 50px 0; }
-  .section.--padding-m {
+  .section.-padding-m {
     padding: 80px 0; }
-  .section.--padding-l {
+  .section.-padding-l {
     padding: 100px 0; }
-  .section.--home {
+  .section.-home {
     background-image: url(/imgs/home.jpg);
     padding-bottom: 170px;
     padding-left: 50px;
     padding-right: 50px;
     color: #fff; }
-    .section.--home + .section.--white {
+    .section.-home + .section.-white {
       height: 120px;
       line-height: 120px;
       margin-top: -120px; }
       @media only screen and (max-width: 768px) {
-        .section.--home + .section.--white {
+        .section.-home + .section.-white {
           margin-top: 0; } }
     @media only screen and (max-width: 992px) {
-      .section.--home {
+      .section.-home {
         height: 100vh !important; } }
     @media only screen and (max-width: 768px) {
-      .section.--home {
+      .section.-home {
         padding: 20px;
         height: auto !important; }
-        .section.--home .container {
+        .section.-home .container {
           max-width: 100%; } }
-  .section.--full {
+  .section.-full {
     height: 100vh; }
     @media only screen and (max-width: 992px) {
-      .section.--full {
+      .section.-full {
         height: auto; } }
-  .section.--o-hidden {
+  .section.-o-hidden {
     overflow: hidden; }
-  .section.--white {
+  .section.-white {
     background: white; }
-  .section.--green {
+  .section.-green {
     background: #00c092;
     color: #fff; }
-  .section.--dark {
+  .section.-dark {
     background: #333333;
     color: #fff; }
-  .section.--footer {
+  .section.-footer {
     background: #1a1a1a;
     height: 120px;
     line-height: 120px;
     font-size: 16px;
     padding: 0 50px; }
     @media only screen and (max-width: 768px) {
-      .section.--footer {
+      .section.-footer {
         height: auto;
         text-align: center;
         line-height: 60px;
         padding: 50px; } }
-    .section.--footer .logo {
+    .section.-footer .logo {
       opacity: .5; }
 
 .live-editing {
@@ -769,7 +769,7 @@ dd {
   @media only screen and (max-width: 768px) {
     .v-base {
       height: auto !important; } }
-  .v-base.--h50 {
+  .v-base.-h50 {
     height: 50vh; }
 
 .v-middle {
@@ -789,7 +789,7 @@ dd {
   font-family: "Roboto";
   font-size: 0;
   list-style-type: none; }
-  .nav.--center {
+  .nav.-center {
     text-align: center; }
   .nav li {
     display: inline-block; }
@@ -849,7 +849,7 @@ dd {
       text-decoration: none; }
       .menu ul a:hover {
         text-decoration: underline; }
-    .menu ul.--secondary a {
+    .menu ul.-secondary a {
       font-size: 16px;
       color: #666;
       margin-bottom: 5px; }
@@ -982,13 +982,13 @@ dd {
   .button:hover,
   .button:focus {
     background: rgba(0, 192, 146, 0.9); }
-  .button.--white {
+  .button.-white {
     color: #00c092;
     background: #fff; }
-    .button.--white:hover,
-    .button.--white:focus {
+    .button.-white:hover,
+    .button.-white:focus {
       background: rgba(255, 255, 255, 0.9); }
-  .button.--trans {
+  .button.-trans {
     background: transparent;
     font-size: 16px;
     line-height: 40px;
@@ -997,10 +997,10 @@ dd {
     min-width: auto;
     border: 1px solid #fff;
     color: #fff; }
-    .button.--trans:hover,
-    .button.--trans:focus {
+    .button.-trans:hover,
+    .button.-trans:focus {
       background: rgba(255, 255, 255, 0.3); }
-  .button.--grey {
+  .button.-grey {
     border: 1px solid #aaa;
     color: #aaa; }
 
@@ -1070,10 +1070,10 @@ dd {
     background: rgba(255, 255, 255, 0.8);
     color: #1a1a1a; }
 
-.social.--small a {
+.social.-small a {
   width: 28px;
   height: 28px;
   line-height: 28px; }
 
-.social.--left a {
+.social.-left a {
   margin: 0 10px 0 0; }
