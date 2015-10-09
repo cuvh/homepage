@@ -23,7 +23,7 @@ body {
   margin: 0;
   color: #444;
   background: #efefef;
-  font: 300 16px/1.25 "Roboto" sans-serif; }
+  font: 300 16px/1.25 "Roboto", sans-serif; }
 
 article,
 aside,
@@ -44,17 +44,17 @@ blockquote {
   display: none; }
 
 h1 {
-  font: 400 52px/1.2 "Geometria Light" "Segoe UI" Arial, sans-serif;
+  font: 400 52px/1.2 "Geometria Light", "Segoe UI", Arial, sans-serif;
   margin: 0 0 40px; }
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 36px; } }
 
 h2 {
-  font: 400 32px/1.2 "Geometria Light" "Segoe UI" Arial, sans-serif; }
+  font: 400 32px/1.2 "Geometria Light", "Segoe UI", Arial, sans-serif; }
 
 h3 {
-  font: 300 21px/1.2 "Roboto" "Segoe UI" Arial, sans-serif; }
+  font: 300 21px/1.2 "Roboto", "Segoe UI", Arial, sans-serif; }
 
 b, strong {
   font-weight: 700; }
@@ -927,8 +927,7 @@ dd {
   width: 50%;
   text-align: left;
   margin-left: 0px;
-  opacity: 0;
-  transition: .3s opacity ease-in-out; }
+  opacity: 0; }
   .step-image img {
     max-width: 415px; }
     @media only screen and (max-width: 992px) {
@@ -940,10 +939,8 @@ dd {
       width: 100%;
       text-align: center; } }
   .step-image.is-fixed {
-    position: fixed;
     top: 0;
-    left: 50%;
-    opacity: 1; }
+    left: 50%; }
     @media only screen and (max-width: 992px) {
       .step-image.is-fixed {
         position: static !important; } }

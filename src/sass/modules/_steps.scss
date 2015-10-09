@@ -20,7 +20,7 @@
   text-align: left;
   margin-left: 0px;
   opacity: 0;
-  transition: .3s opacity ease-in-out;
+  // transition: .3s opacity ease-in-out;
 
   img {
     max-width: 415px;
@@ -37,10 +37,9 @@
   }
 
   &.is-fixed {
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 50%;
-    opacity: 1;
 
     @include media($screen-md) {
       position: static !important;
