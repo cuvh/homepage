@@ -52,6 +52,8 @@ h1 {
 
 h2 {
   font: 400 32px/1.2 "Geometria Light", "Segoe UI", Arial, sans-serif; }
+  h2.-enlarge {
+    font-size: 42px; }
 
 h3 {
   font: 300 21px/1.2 "Roboto", "Segoe UI", Arial, sans-serif; }
@@ -135,6 +137,9 @@ dd {
 
 #mod .m-margin-r5 {
   margin-right: 50px; }
+
+#mod .m-margin-l10 {
+  margin-left: 100px; }
 
 #mod .m-height-100p {
   height: 100%; }
@@ -808,19 +813,42 @@ dd {
 
 .menu-close,
 .menu-hamb {
-  font-size: 22px !important;
-  color: #fff;
   text-decoration: none;
-  transition: .2s transform ease-in-out;
   padding: 20px;
   margin-top: -20px;
-  margin-right: -20px; }
-  .menu-close:hover,
-  .menu-close:focus,
-  .menu-hamb:hover,
-  .menu-hamb:focus {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
+  margin-right: -40px;
+  color: #fff; }
+  .menu-close span,
+  .menu-hamb span {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 4px;
+    background: #fff;
+    font-size: 0; }
+    .menu-close span:before,
+    .menu-close span:after,
+    .menu-hamb span:before,
+    .menu-hamb span:after {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: 22px;
+      height: 4px;
+      background: #fff;
+      transition: .2s transform ease-in-out; }
+    .menu-close span:after,
+    .menu-hamb span:after {
+      top: 7px; }
+  .menu-close:hover span:before,
+  .menu-hamb:hover span:before {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px); }
+  .menu-close:hover span:after,
+  .menu-hamb:hover span:after {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px); }
 
 .menu-close {
   margin-left: 20px; }
@@ -876,16 +904,41 @@ dd {
 
 .cta-container {
   left: auto;
-  right: 50px; }
+  right: 50px;
+  margin-top: -10px; }
   .cta-container .button-cta {
     margin-top: -10px;
-    display: none; }
+    display: none;
+    margin-right: -25px; }
+    .cta-container .button-cta.-trans {
+      background: #000;
+      border: none; }
+      .cta-container .button-cta.-trans:hover,
+      .cta-container .button-cta.-trans:focus {
+        background: rgba(0, 0, 0, 0.7); }
   .cta-container .menu-hamb {
     display: inline-block; }
   .cta-container.swap .button-cta {
     display: inline-block; }
   .cta-container.swap .menu-hamb {
     display: none; }
+
+.go-to-section {
+  position: absolute;
+  left: 50%;
+  bottom: 130px;
+  margin-left: -28px;
+  padding: 20px;
+  font-size: 34px !important;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s transform ease-in-out; }
+  .go-to-section:hover {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); }
+  @media only screen and (max-width: 768px) {
+    .go-to-section {
+      display: none !important; } }
 
 .media-list {
   max-width: 55%;

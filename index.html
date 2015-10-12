@@ -59,7 +59,7 @@
 
         </div>
         <div class="col-sm-3 m-text-right cta-container">
-          <a href="#" class="fa fa-bars menu-hamb js-open-menu"></a>
+          <a href="#" class="menu-hamb js-open-menu"><span>Toggle menu</span></a>
           <a href="#" class="button -small -trans button-cta">Let’s Begin</a>
         </div>
       </div>
@@ -74,6 +74,8 @@
       </div>
     </div>
 
+    <a href="#steps-container" class="fa fa-angle-down go-to-section js-scroll-to"></a>
+
   </div>
 
   <div class="section -white menu-open">
@@ -84,24 +86,24 @@
   </div>
 
 <!- steps ->
-<div class="section -green -o-hidden steps-container">
+<div id="steps-container" class="section -green -o-hidden steps-container">
   <div class="section -full">
     <div class="container">
 
 
         <div class="v-base step-image is-fixed" data-top="opacity: 1; position: fixed;" data-350-top="opacity: 0; ">
           <div class="v-middle">
-          <img src="imgs/1.jpeg" alt="" >
+          <img src="imgs/1.png" alt="" >
           </div>
         </div>
 
-        <div class="v-base step-screen">
+        <div id="step-one" class="v-base step-screen">
           <div class="v-middle">
             <div class="steps-circles">
-              <a href="#" class="current">1</a>
+              <a href="#step-one" class="current js-scroll-to">1</a>
             </div>
 
-            <h2>Is this how your resume1
+            <h2>Is this how your resume
             looks now. Yeah we know.</h2>
             <p>Do you really expect to be hired with a
             resume like that?</p>
@@ -118,19 +120,19 @@
 
         <div class="v-base step-image is-fixed" data-250-top="opacity: 1; position: fixed;" data-350-top=" opacity: 0;">
           <div class="v-middle">
-          <img src="imgs/2.jpeg" alt="" >
+          <img src="imgs/2.png" alt="" >
           </div>
         </div>
 
-        <div class="v-base step-screen">
+        <div id="step-two" class="v-base step-screen">
           <div class="v-middle">
             <div class="steps-circles">
-              <a href="#" class="current">2</a>
-              <a href="#">1</a>
+              <a href="#step-two" class="current js-scroll-to">2</a>
+              <a href="#step-one" class="js-scroll-to">1</a>
             </div>
 
-            <h2>Is this how your resume1
-            looks now. Yeah we know.</h2>
+            <h2>Looks better with our
+            design, right?</h2>
             <p>Do you really expect to be hired with a
             resume like that?</p>
 
@@ -146,22 +148,23 @@
 
         <div class="v-base step-image is-fixed" data-250-top="opacity: 1; position: fixed;" data-350-top=" opacity: 0;">
           <div class="v-middle">
-          <img src="imgs/3.jpeg" alt="" >
+          <img src="imgs/3.png" alt="" class="m-margin-l10">
           </div>
         </div>
 
-        <div class="v-base step-screen">
+        <div id="step-three" class="v-base step-screen">
           <div class="v-middle">
             <div class="steps-circles">
-              <a href="#" class="current">3</a>
-              <a href="#">2</a>
-              <a href="#">1</a>
+              <a href="#step-three" class="current js-scroll-to">3</a>
+              <a href="#step-two" class="js-scroll-to">2</a>
+              <a href="#step-one" class="js-scroll-to">1</a>
             </div>
 
-            <h2>Is this how your resume1
-            looks now. Yeah we know.</h2>
+            <h2>We help you customize
+            it for your next job!</h2>
             <p>Do you really expect to be hired with a
             resume like that?</p>
+            <a href="#" class="button -trans">Coming soon</a>
 
           </div>
         </div>
@@ -181,7 +184,7 @@
     <div class="container">
 
       <div class="live-editing">
-        <h2>Live Editing</h2>
+        <h2 class="-enlarge">Live Editing</h2>
         <p>Do you really expect to be hired with a resume like that?</p>
       </div>
 
@@ -413,6 +416,20 @@
     prevArrow: '.js-prev',
     nextArrow: '.js-next'
   });
+
+  $('.js-scroll-to').on('click', function(e) {
+    e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+
 </script>
 </body>
 </html>
