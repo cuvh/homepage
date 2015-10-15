@@ -12,5 +12,6 @@
         console.log('* clobber\n');
         console.log('* server\n');
         console.log('* help\n');
+        console.log('* build\n');
     });
 })();

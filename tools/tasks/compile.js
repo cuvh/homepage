@@ -10,6 +10,14 @@
         compileDates = require('../lib/compile-dates'),
         removeDir = require('../lib/remove-dir');
 
+    var markdown = require('gulp-markdown-to-json');
+
+    gulp.task('content', ['copy-assets'], function() {
+        return gulp.src('./src/content/**/*.md')
+            .pipe(markdown())
+            .pipe(gulp.dest('./build/content'));
+    });
+
     gulp.task('compile', ['content'], function(done) {
         var compilePromises = [];
 
