@@ -7,4 +7,8 @@
     gulp.task('clobber', function() {
         return removeDir('./build');
     });
+
+    gulp.task('removeCdn', function() {
+        return removeDir('./cdn');
+    });
 })();

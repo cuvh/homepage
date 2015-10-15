@@ -14,5 +14,5 @@
 
     gulp.task('prepare-build', ['copy-assets', 'copy-fonts', 'copy-css', 'concat-js', 'minify-html']);
 
-    gulp.task('build', runSequence('prepare-build', 'rev'));
+    gulp.task('build', runSequence('clobber', 'removeCdn', 'prepare-build', 'rev'));
 })();
