@@ -30,6 +30,7 @@
             } else {
                 var templatesToCreate = [],
                     posts = [];
+                    console.log(files);
 
                 files.forEach(function(file) {
                     var fileData = JSON.parse(fs.readFileSync(file, 'utf8'));

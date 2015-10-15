@@ -1,7 +1,7 @@
 ---
 slug: about
 title: About us
-template: page.hbs
+template: posts.hbs
 ---
 
 Sweet sweet roll sweet roll dragée soufflé tootsie roll ice cream toffee. Jelly-o cake fruitcake tart. Bear claw oat cake cookie ice cream gummies.
