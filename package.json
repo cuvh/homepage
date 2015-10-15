@@ -1,7 +1,7 @@
 {
-  "name": "gulp-site-generator",
-  "version": "0.1.15",
-  "description": "Static site generator using Gulp",
+  "name": "enhancv-home",
+  "version": "2.0.0",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp test"
@@ -11,8 +11,7 @@
     "static",
     "generator"
   ],
-  "author": "Matt Levy <ducksoupdev@gmail.com>",
-  "license": "ISC",
+  "author": "Enhancv",
   "dependencies": {
     "bluebird": "^2.9.7",
     "downsize": "0.0.8",

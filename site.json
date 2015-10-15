@@ -7,11 +7,5 @@
   "concatJs": [
     "./src/js/*.js"
   ],
-  "styleSheet": "style.css",
-  "authors": {
-    "Matt Levy": {
-      "name": "Matt Levy",
-      "bio": "Practicing the art of front-end development"
-    }
-  }
+  "styleSheet": "style.css"
 }
