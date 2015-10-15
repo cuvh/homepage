@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>enchance_me_baby_one_more_time</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/font-awesome.css">
-</head>
+{{> header}}
+
 <body id="mod">
 
-  <div class="menu">
-    <a href="#" class="button -small -trans -grey">Let's Begin</a>
-    <a href="#" class="fa fa-times menu-close js-close-menu"></a>
-
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Tour</a></li>
-      <li><a href="#">The Problem</a></li>
-      <li><a href="#">The Science</a></li>
-      <li><a href="#">Examples</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">F.A.Q</a></li>
-      <li><a href="#">About us</a></li>
-    </ul>
-
-    <ul class="-secondary">
-      <li><a href="#">Partners</a></li>
-      <li><a href="#">For Companies</a></li>
-      <li><a href="#">For Universities</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-
-    <div class="social -small -left">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-linkedin"></a>
-      <a href="#" class="fa fa-google"></a>
-    </div>
-  </div>
+  {{> navigation}}
 
   <div class="section -banner -full -home -padding-s menu-open">
 
@@ -85,7 +49,7 @@
     </div>
   </div>
 
-<!- steps ->
+<!-- steps -->
 <div id="steps-container" class="section -green -o-hidden steps-container">
   <div class="section -full">
     <div class="container">
@@ -355,30 +319,7 @@
     </div>
   </div>
 
-  <footer class="section -footer text-g6">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="#" class="button -small -trans m-margin-r2">Let's Begin</a>
-          It's free
-        </div>
-        <div class="col-sm-4 m-text-center">
-          <div class="social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-google"></a>
-          </div>
-        </div>
-        <div class="col-sm-4 m-text-right">
-          <img src="/images/ench_logo.svg" alt="" class="logo">
-        </div>
-      </div>
-    </div>
-
-  </footer>
-
+{{> footer}}
 
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>

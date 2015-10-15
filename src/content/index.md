@@ -1,6 +1,6 @@
 ---
 slug: index
 title: Home
-template: index.hbs
+template: indedx.hbs
 ---
 

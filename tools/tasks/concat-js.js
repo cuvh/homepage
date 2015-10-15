@@ -9,10 +9,8 @@
 
     gulp.task('concat-js', function() {
         var siteData = JSON.parse(fs.readFileSync("./site.json", "utf8"));
-        var jsFiles = ['./src/js/*.js'];
-        if (siteData.concatJs) {
-            jsFiles = siteData.concatJs;
-        }
+        var jsFiles = ['./src/js/**/*.js'];
+
         return gulp.src(jsFiles)
             .pipe(concat('combined.js'))
             .pipe(uglify())
