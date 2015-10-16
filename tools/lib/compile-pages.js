@@ -10,17 +10,13 @@
         glob = require('glob'),
         moment = require('moment'),
         _ = require('lodash'),
-        compileOptions = require('../lib/compile-options'),
-        tags = require('../lib/tags'),
-        dates = require('../lib/dates'),
         resolvePaths = require('../lib/paths'),
-        compileDrafts = require('../lib/drafts'),
         promiseList = require('../lib/promises');
 
     var generateGlobalJSON = function(rootPath, callback) {
         var output = {};
 
-        glob(rootPath + '/src/content/*.json', {
+        glob(rootPath + '/src/config/*.json', {
             cwd: rootPath
         }, function(err, files) {
             files.forEach(function(file) {
@@ -34,7 +30,6 @@
 
     module.exports.run = function(rootPath, done, error) {
         var gulpVersion = require('gulp/package').version;
-        var compileOptionsObj = compileOptions(rootPath);
 
         generateGlobalJSON(rootPath, function(options) {
             glob(rootPath + '/src/templates/*.hbs', {
@@ -47,8 +42,8 @@
                         posts = [];
 
                     files.forEach(function(file) {
-                       // var outDir = rootPath + '/build/' + path.basename(file).replace(/\.[^/.]+$/, '');
-                       var outDir = rootPath + '/build/' + path.basename(file).replace('.hbs', '.html');
+                        // var outDir = rootPath + '/build/' + path.basename(file).replace(/\.[^/.]+$/, '');
+                        var outDir = rootPath + '/build/' + path.basename(file).replace('.hbs', '.html');
 
                         templatesToCreate.push({
                             outDir: outDir,
@@ -61,15 +56,12 @@
                     if (templatesToCreate.length) {
                         var promises = [];
                         templatesToCreate.forEach(function(templateToCreate) {
-                            _.extend(templateToCreate.templateData.post, {
-                                allDates: dates.getAllDatesAsLinks('..', posts),
-                                allTags: tags.getAllTagsAsLinks('..', posts)
-                            });
-
                             promises.push(new Promise(function(resolve, reject) {
                                 gulp.src(templateToCreate.templateSrc)
-                                    .pipe(compileHandlebars(templateToCreate.templateData, compileOptionsObj))
-                                    .pipe(rename('index.html'))
+                                    .pipe(compileHandlebars(templateToCreate.templateData, {
+                                        batch: [rootPath + "/src/templates/partials"]
+                                    }))
+                                    .pipe(rename(path.basename(templateToCreate.templateSrc.replace('.hbs', '.html'))))
                                     .pipe(gulp.dest(rootPath + '/build'))
                                     .on('error', reject)
                                     .on('end', resolve);
