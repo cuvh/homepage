@@ -28,7 +28,7 @@
         gulp.watch(['./src/js/**/*.js'], syncRun.bind(null, 'concat-js'));
         gulp.watch(['./src/images/**/*.{gif,jpg,png}'], syncRun.bind(null, 'copy-assets'));
         gulp.watch(['./src/fonts/**/*'], syncRun.bind(null, 'copy-fonts'));
-        gulp.watch(['./src/content/**/*.md'], syncRun.bind(null, 'minify-html'));
+        gulp.watch(['./src/content/**/*'], syncRun.bind(null, 'minify-html'));
         gulp.watch(['./src/templates/**/*'], syncRun.bind(null, 'minify-html'));
     });
 

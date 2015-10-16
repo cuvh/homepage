@@ -12,26 +12,23 @@
 
     var markdown = require('gulp-markdown-to-json');
 
-    gulp.task('content', ['copy-assets'], function() {
-        return gulp.src('./src/content/**/*.md')
-            .pipe(markdown())
-            .pipe(gulp.dest('./build/content'));
-    });
-
-    gulp.task('compile', ['content'], function(done) {
+    gulp.task('compile', ['copy-assets'], function(done) {
         var compilePromises = [];
+
 
         // pages
         compilePromises.push(new Promise(function(resolve, reject) {
+            console.log('compile');
             compilePages.run('.', resolve, reject);
         }));
 
+        /**
         // tags
         compilePromises.push(new Promise(function(resolve, reject) {
             compileTags.run('.', resolve, reject);
-        }));
+        })); **/
 
-        // dates
+        /*** dates
         compilePromises.push(new Promise(function(resolve, reject) {
             compileDates.run('.', resolve, reject);
         }));
@@ -39,12 +36,14 @@
         // rss feed compilation
         compilePromises.push(new Promise(function(resolve, reject) {
             compileRss.run('.', resolve, reject);
-        }));
-
+        }));**/
+        /**
         // index page generation
         compilePromises.push(new Promise(function(resolve, reject) {
             compileHome.run('.', resolve, reject);
         }));
+
+**/
 
         Promise.all(compilePromises)
             .then(function () {
