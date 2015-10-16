@@ -32,7 +32,7 @@
         var gulpVersion = require('gulp/package').version;
 
         generateGlobalJSON(rootPath, function(options) {
-            glob(rootPath + '/src/templates/*.hbs', {
+            glob(rootPath + '/src/templates/**/*.hbs', {
                 cwd: rootPath
             }, function(err, files) {
                 if (err) {
@@ -41,9 +41,21 @@
                     var templatesToCreate = [],
                         posts = [];
 
+                    files = files.filter(function(file) {
+                        return file.indexOf('/partials/') === -1;
+                    });
+
                     files.forEach(function(file) {
                         // var outDir = rootPath + '/build/' + path.basename(file).replace(/\.[^/.]+$/, '');
-                        var outDir = rootPath + '/build/' + path.basename(file).replace('.hbs', '.html');
+
+                        var subDirTree = file.replace(rootPath + '/src/templates/', '').split('/'),
+                            subDir = '';
+                        if (subDirTree.length > 1) {
+                            subDirTree.pop();
+                            subDir = subDirTree.join('/') + '/';
+                        }
+
+                        var outDir = rootPath + '/build/' + subDir;
 
                         templatesToCreate.push({
                             outDir: outDir,
@@ -62,7 +74,7 @@
                                         batch: [rootPath + "/src/templates/partials"]
                                     }))
                                     .pipe(rename(path.basename(templateToCreate.templateSrc.replace('.hbs', '.html'))))
-                                    .pipe(gulp.dest(rootPath + '/build'))
+                                    .pipe(gulp.dest(templateToCreate.outDir))
                                     .on('error', reject)
                                     .on('end', resolve);
                             }));
