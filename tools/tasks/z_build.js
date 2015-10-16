@@ -14,9 +14,9 @@
             .pipe(gulp.dest('./cdn'));
     });
 
-    gulp.task('prepare-build', ['copy-assets', 'copy-fonts', 'copy-css', 'concat-js', 'minify-html']);
+    gulp.task('build', ['clobber', 'copy-assets', 'copy-fonts', 'copy-css', 'concat-js', 'compile']);
 
-    gulp.task('build', function(cb) {
-        runSequence('clobber', 'removeCdn', 'prepare-build', 'rev', cb)
+    gulp.task('prepareForProd', function(cb) {
+        runSequence('clobber', 'removeCdn', ['copy-assets', 'copy-fonts', 'minify-css', 'minify-js', 'minify-html'], 'rev', cb)
     });
 })();

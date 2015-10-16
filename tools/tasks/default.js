@@ -3,5 +3,5 @@
 
     var gulp = require('gulp');
 
-    gulp.task('default', ['minify-html']);
+    gulp.task('default', ['develop']);
 })();

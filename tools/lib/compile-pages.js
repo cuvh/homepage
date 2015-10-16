@@ -48,21 +48,19 @@
                     files.forEach(function(file) {
                         // var outDir = rootPath + '/build/' + path.basename(file).replace(/\.[^/.]+$/, '');
 
-                        var subDirTree = file.replace(rootPath + '/src/templates/', '').split('/'),
-                            subDir = '';
+                        var subDirTree = file.replace(rootPath + '/src/templates/', '').split('/');
+                        var outDir = rootPath + '/build/';
+
                         if (subDirTree.length > 1) {
                             subDirTree.pop();
-                            subDir = subDirTree.join('/') + '/';
-                        }
-
-                        var outDir = rootPath + '/build/' + subDir;
+                            outDir += subDirTree.join('/') + '/';
+                        }                      
 
                         templatesToCreate.push({
                             outDir: outDir,
                             templateSrc: file,
                             templateData: options
                         });
-
                     });
 
                     if (templatesToCreate.length) {

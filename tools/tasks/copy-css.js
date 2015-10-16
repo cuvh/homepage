@@ -14,6 +14,11 @@
 
     gulp.task('copy-css', ['sass'], function() {
         return gulp.src(['./.tmp/css/**/*.css'])
+            .pipe(gulp.dest('./build/css'));
+    });
+
+    gulp.task('minify-css', ['sass'], function() {
+        return gulp.src(['./.tmp/css/**/*.css'])
             .pipe(minifyCSS({
                 advanced: false,
                 restructuring: false,

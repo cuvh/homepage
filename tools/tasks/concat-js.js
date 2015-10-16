@@ -1,4 +1,4 @@
-(function () {
+(function() {
     'use strict';
 
     var gulp = require('gulp'),
@@ -7,12 +7,23 @@
         rename = require('gulp-rename'),
         fs = require('fs');
 
-    gulp.task('concat-js', function() {
+    gulp.task('minify-js', function() {
         var jsFiles = ['./src/js/**/*.js'];
 
         return gulp.src(jsFiles)
             .pipe(concat('combined.js'))
             .pipe(uglify())
+            .pipe(rename({
+                suffix: '.min'
+            }))
+            .pipe(gulp.dest('./build/js'));
+    });
+
+    gulp.task('concat-js', function() {
+        var jsFiles = ['./src/js/**/*.js'];
+
+        return gulp.src(jsFiles)
+            .pipe(concat('combined.js'))
             .pipe(rename({
                 suffix: '.min'
             }))

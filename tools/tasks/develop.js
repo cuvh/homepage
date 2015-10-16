@@ -5,7 +5,7 @@
         connect = require('gulp-connect'),
         runSequence = require('gulp-run-sequence');
 
-    gulp.task('livereload-connect', ['minify-html'], function() {
+    gulp.task('livereload-connect', function() {
         connect.server({
             root: './build',
             livereload: true
@@ -28,9 +28,9 @@
         gulp.watch(['./src/js/**/*.js'], syncRun.bind(null, 'concat-js'));
         gulp.watch(['./src/images/**/*.{gif,jpg,png}'], syncRun.bind(null, 'copy-assets'));
         gulp.watch(['./src/fonts/**/*'], syncRun.bind(null, 'copy-fonts'));
-        gulp.watch(['./src/config/**/*'], syncRun.bind(null, 'minify-html'));
-        gulp.watch(['./src/templates/**/*'], syncRun.bind(null, 'minify-html'));
+        gulp.watch(['./src/config/**/*'], syncRun.bind(null, 'compile'));
+        gulp.watch(['./src/templates/**/*'], syncRun.bind(null, 'compile'));
     });
 
-    gulp.task('develop', ['livereload-connect', 'prepare-build', 'livereload-watch']);
+    gulp.task('develop', ['livereload-connect', 'build', 'livereload-watch']);
 })();

@@ -4,7 +4,7 @@
     var gulp = require('gulp'),
         connect = require('gulp-connect');
 
-    gulp.task('server', function() {
+    gulp.task('server', ['prepareForProd'], function() {
         connect.server({
             root: 'build'
         });
