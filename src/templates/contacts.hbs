@@ -1,0 +1,111 @@
+{{> header}}
+
+<body id="mod">
+
+  {{> navigation}}
+
+  <div class="section -green -full -padding-s menu-open m-text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="/images/ench_logo.svg" alt="">
+        </div>
+        <div class="col-sm-3 m-text-right cta-container">
+          <ul class="nav -right">
+            <li><a href="#">Login</a></li>
+            <a href="#" class="fa fa-bars menu-hamb js-open-menu"></a>
+           </ul>
+        </div>
+      </div>
+    <div class="container m-height-100p">
+      <div class="v-base m-height-100p">
+        <div class="v-middle">
+          <h1>Contact us, we are fun.</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section -white -padding-m">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="section-heading">Contact us</h3>
+          <form action="">
+            <div>
+              <input class="form-control" type="text" placeholder="Your name">
+            </div>
+            <div>
+              <input class="form-control" type="email" placeholder="Your email">
+            </div>
+            <div>
+              <textarea class="form-control" placeholder="Just write us about whatever concerns you."></textarea>
+            </div>
+            <div>
+              <button class="button">Send message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <h3 class="section-heading">Work with us</h3>
+          <div class="contact-info">
+            <a class="heading" href="#">invest@enhancv.com</a>
+            <div class="small-divider"></div>
+            <div class="dash"></div>
+            <p>Way people advance their career. We take your old resume/CV (or help you make one) and turn it into an omnipotent tool</p>
+          </div>
+          <div class="contact-info">
+            <a class="heading" href="#">invest@enhancv.com</a>
+            <div class="small-divider"></div>
+            <div class="dash"></div>
+            <p>We take your old resume/CV (or help you make one) and turn it into an omnipotent tool</p>
+          </div>
+          <div class="contact-info">
+            <a class="heading" href="#">press@enhancv.com</a>
+            <div class="small-divider"></div>
+            <div class="dash"></div>
+            <p>Way people advance their career. We take your old resume/CV</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{{> footer}}
+
+
+<script>
+  $(function (){
+
+    $('.js-open-menu, .js-close-menu').on('click', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('is-menu-opened');
+    });
+
+    var $stepsContainer = $('.steps-container');
+    var $stepsNextC = $stepsContainer.next('.section');
+
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+
+      if(scroll > $(window).height() - 60) {
+        $('body').removeClass('is-menu-opened');
+      }
+
+      if( scroll > 100 && !$('.cta-container').hasClass('swap') ) {
+        $('.cta-container').addClass('swap');
+      } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
+        $('.cta-container').removeClass('swap');
+      }
+
+    });
+
+  });
+
+  var s = skrollr.init();
+  $('.js-slick').slick({
+    prevArrow: '.js-prev',
+    nextArrow: '.js-next'
+  });
+</script>
+</body>
+</html>

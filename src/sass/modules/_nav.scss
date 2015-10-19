@@ -28,46 +28,18 @@
 }
 .menu-close,
 .menu-hamb {
+  font-size: 22px !important;
+  color: #fff;
   text-decoration: none;
+  transition: .2s transform ease-in-out;
   padding: 20px;
   margin-top: -20px;
-  margin-right: -40px;
-  color: #fff;
+  margin-right: -20px;
 
-  span {
-    position: relative;
-    display: block;
-    width: 22px;
-    height: 4px;
-    background: #fff;
-    font-size: 0;
-
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: -7px;
-      left: 0;
-      width: 22px;
-      height: 4px;
-      background: #fff;
-      transition: .2s transform ease-in-out;
-    }
-
-    &:after {
-      top: 7px;
-    }
-  }
-
-  &:hover {
-    span:before {
-    -webkit-transform: translateY(-3px);
-    transform: translateY(-3px);
-    }
-    span:after {
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
-    }
+  &:hover,
+  &:focus {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
 .menu-close {
@@ -141,22 +113,10 @@ $nav-width: 280px;
 .cta-container {
   left: auto;
   right: 50px;
-  margin-top: -10px;
 
   .button-cta {
     margin-top: -10px;
     display: none;
-    margin-right: -25px;
-
-    &.-trans {
-      background: #000;
-      border: none;
-
-      &:hover,
-      &:focus {
-        background: rgba(#000, .7);
-      }
-    }
   }
   .menu-hamb {
     display: inline-block;
@@ -171,25 +131,4 @@ $nav-width: 280px;
     }
   }
 
-}
-
-.go-to-section {
-  position: absolute;
-  left: 50%;
-  bottom: 130px;
-  margin-left: -28px;
-  padding: 20px;
-  font-size: 34px !important;
-  color: #fff;
-  text-decoration: none;
-  transition: .3s transform ease-in-out;
-
-  &:hover {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  @include media($screen-sm) {
-    display: none !important;
-  }
 }

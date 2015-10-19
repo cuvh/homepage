@@ -7,9 +7,9 @@
         rename = require('gulp-rename'),
         fs = require('fs');
 
-    gulp.task('minify-js', function() {
-        var jsFiles = ['./src/js/**/*.js'];
+    var jsFiles = ['./src/js/plugins/*.js', './src/js/**/*.js'];
 
+    gulp.task('minify-js', function() {
         return gulp.src(jsFiles)
             .pipe(concat('combined.js'))
             .pipe(uglify())
@@ -20,8 +20,6 @@
     });
 
     gulp.task('concat-js', function() {
-        var jsFiles = ['./src/js/**/*.js'];
-
         return gulp.src(jsFiles)
             .pipe(concat('combined.js'))
             .pipe(rename({

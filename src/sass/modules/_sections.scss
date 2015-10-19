@@ -60,6 +60,7 @@
 
   &.-full {
     height: 100vh;
+    z-index: 20;
 
     @include media($screen-md) {
       height: auto;    }

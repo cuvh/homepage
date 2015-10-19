@@ -1,0 +1,101 @@
+.about-section {
+  width: 70%;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  p {
+    max-width: 47%;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 18px;
+    word-wrap: break-word;
+  }
+
+  .underlined {
+    border-bottom: 1px solid #444;
+  }
+}
+
+.values {
+  max-width: 75%;
+
+  h2 {
+    margin-bottom: 100px;
+  }
+
+  [class*='col-'] {
+    margin-bottom: 50px;
+  }
+
+  .value-heading {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+h1.green-section-heading {
+  max-width: 80%;
+  margin: auto;
+  font-size: 30px;
+}
+
+.about-exists-section{
+  width: 70%;
+  padding: 0;
+  padding-bottom: 35px;
+  text-align: center;
+  font-size: 16px;
+
+  h2 {
+      font-size: 1.7em;
+  }
+
+  p {
+    text-align: justify;
+    max-width: 65%;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 17px;
+    word-wrap: break-word;
+    line-height: 20px;
+  }
+}
+
+.members-section{
+  width: 55%;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+
+  .member-photo{
+    margin: 25px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #C6C6C6;
+  }
+
+  .member-name{
+    margin-bottom: 1px;
+    font-size: 0.9em;
+  }
+
+  .member-job-title{
+    font-size: 0.8em;
+    color: #b8b8b8;
+  }
+}
+
+.join-our-team-section {
+  padding: 50px;
+  button.open-job-positions {
+    margin-top: 20px;
+    height: 38px;
+    line-height: 0;
+  }
+}
