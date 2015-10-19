@@ -16,3 +16,31 @@
     min-width: 120px;
   }
 }
+
+.media-fimage {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  @include media($screen-lg) {
+    max-width: 250px;
+  }
+
+  @include media($screen-md) {
+    max-width: 180px;
+  }
+
+  @include media($screen-sm) {
+    display: none;
+  }
+
+  &.-right {
+    left: auto;
+    right: 0;
+  }
+
+  &.-bottom {
+    top: auto;
+    bottom: 0;
+  }
+}

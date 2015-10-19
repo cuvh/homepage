@@ -34,22 +34,50 @@
   transition: .2s transform ease-in-out;
   padding: 20px;
   margin-top: -20px;
-  margin-right: -20px;
+  margin-right: -40px;
+  color: #fff;
 
-  &:hover,
-  &:focus {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+  span {
+    position: relative;
+    display: block;
+    width: 19px;
+    height: 2px;
+    background: #fff;
+    font-size: 0;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 19px;
+      height: 2px;
+      background: #fff;
+      transition: .2s transform ease-in-out;
+    }
+
+    &:after {
+      top: 6px;
+    }
+  }
+
+  &:hover {
+    span:before {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+    span:after {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
   }
 }
 .menu-close {
   margin-left: 20px;
-
-  &:hover,
-  &:focus {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
+  width: 14px;
+  height: 14px;
+  background: url('../images/close-sign.png') center center no-repeat;
 }
 
 $nav-width: 280px;
@@ -78,7 +106,12 @@ $nav-width: 280px;
       text-decoration: none;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        color: #666;
+      }
+
+      &.is-selected:before {
+        content: '— '
       }
     }
 
@@ -93,12 +126,29 @@ $nav-width: 280px;
   transition: .3s transform ease-in-out;
 }
 .is-menu-opened {
+  overflow: hidden;
+
   .menu-open {
     -webkit-transform: translateX(-$nav-width);
     transform: translateX(-$nav-width);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, .4);
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+      z-index: 19;
+    }
   }
   .menu-hamb {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -113,11 +163,24 @@ $nav-width: 280px;
 .cta-container {
   left: auto;
   right: 50px;
+  margin-top: -10px;
 
   .button-cta {
     margin-top: -10px;
     display: none;
+    margin-right: -25px;
+
+    &.-trans {
+      background: #000;
+      border: none;
+
+      &:hover,
+      &:focus {
+        background: rgba(#000, .7);
+      }
+    }
   }
+
   .menu-hamb {
     display: inline-block;
   }
@@ -131,4 +194,27 @@ $nav-width: 280px;
     }
   }
 
+}
+
+.go-to-section {
+  position: absolute;
+  left: 50%;
+  bottom: 150px;
+  margin-left: -10px;
+  padding: 20px;
+  width: 20px;
+  height: 18px;
+  background: url('../images/arrow-down.png') center center no-repeat;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s transform ease-in-out;
+
+  &:hover {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  @include media($screen-sm) {
+    display: none !important;
+  }
 }

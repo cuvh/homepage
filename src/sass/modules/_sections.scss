@@ -2,14 +2,13 @@
   position: relative;
 
   &.-banner {
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   &.-padding-s {
@@ -22,6 +21,14 @@
 
   &.-padding-l {
     padding: 100px 0;
+  }
+
+  &.-padding-xl {
+    padding: 120px 0;
+  }
+
+  &.-padding-xxl {
+    padding: 150px 0;
   }
 
   &.-home {
@@ -60,7 +67,6 @@
 
   &.-full {
     height: 100vh;
-    z-index: 20;
 
     @include media($screen-md) {
       height: auto;    }
@@ -82,6 +88,15 @@
   &.-dark {
     background: $ench-dark-color;
     color: #fff;
+  }
+
+  &.-steps {
+    border-top: 4px solid #c7c7c7;
+    background: url('../images/resume-bg-01.jpg');
+  }
+
+  &.-pre-footer {
+    background-image: url(/images/footer-bg.jpg);
   }
 
   &.-footer {

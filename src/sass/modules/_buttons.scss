@@ -19,7 +19,7 @@
   }
 
   &.-white {
-    color: $ench-color;
+    color: #444;
     background: #fff;
 
     &:hover,
@@ -33,7 +33,7 @@
     font-size: 16px;
     line-height: 40px;
     height: 40px;
-    padding:  0 20px;
+    padding:  0 18px;
     min-width: auto;
     border: 1px solid #fff;
     color: #fff;
@@ -42,10 +42,22 @@
     &:focus {
       background: rgba(#fff, .3);
     }
+
+    &.-grey {
+      border-color: #444;
+      color: #444;
+      background: transparent;
+
+      &:hover,
+      &:focus {
+        background: rgba(#444, .3);
+      }
+    }
   }
 
   &.-grey {
-    border: 1px solid #aaa;
-    color: #aaa;
+    border: 1px solid #333;
+    background: #333333;
+    color: #fff;
   }
 }
