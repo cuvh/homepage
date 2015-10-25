@@ -121,6 +121,7 @@
 }
 
 .live-editing {
+  position: absolute;
   margin-top: 150px;
   max-width: 15%;
 
@@ -131,7 +132,7 @@
 
 .live-editing-image {
   float: right;
-  width: 75%;
+  width: 65%;
 }
 
 .v-base {

@@ -1,6 +1,7 @@
 $(function() {
     $('.js-open-menu, .js-close-menu').on('click', function(e) {
         e.preventDefault();
+        $('html, body').scrollTop(0);
         $('body').toggleClass('is-menu-opened');
     });
 
