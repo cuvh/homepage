@@ -24,10 +24,10 @@ $(function() {
 });
 
 var s = skrollr.init();
-$('.js-slick').slick({
-    prevArrow: '.js-prev',
-    nextArrow: '.js-next'
-});
+// $('.js-slick').slick({
+//     prevArrow: '.js-prev',
+//     nextArrow: '.js-next'
+// });
 
 $('.js-scroll-to').on('click', function(e) {
     e.preventDefault();

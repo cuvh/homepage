@@ -68,6 +68,10 @@ h2 {
 
   &.-enlarge {
     font-size: 42px;
+
+    @include media($screen-sm) {
+      font-size: 28px;
+    }
   }
 }
 

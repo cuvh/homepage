@@ -50,4 +50,19 @@
   .m-text-np {
     white-space: nowrap;
   }
+
+  @include media($screen-sm) {
+    .m-d-none-sm {
+      display: none;
+    }
+    .m-text-center-sm {
+      text-align: center;
+    }
+    .m-margin-l0-sm {
+      margin-left: 0;
+    }
+    .m-margin-b5-sm {
+      margin-bottom: 50px;
+    }
+  }
 }

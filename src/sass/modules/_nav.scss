@@ -7,6 +7,12 @@
     text-align: center;
   }
 
+  &.-main {
+    @include media($screen-sm) {
+      margin-top: 60px;
+    }
+  }
+
   li {
     display: inline-block;
   }
@@ -121,34 +127,51 @@ $nav-width: 280px;
       margin-bottom: 5px;
     }
   }
+
+  @include media($screen-sm) {
+    transition: .3s transform ease-in-out;
+    transform: translateY(-100%);
+    height: auto;
+    z-index: 40;
+    max-width: 100%;
+  }
+
 }
 .menu-open {
   transition: .3s transform ease-in-out;
 }
-.is-menu-opened {
-  overflow: hidden;
+@include media-min($screen-sm) {
+  .is-menu-opened {
+    overflow: hidden;
 
-  .menu-open {
-    -webkit-transform: translateX(-$nav-width);
-    transform: translateX(-$nav-width);
+    .menu-open {
+      -webkit-transform: translateX(-$nav-width);
+      transform: translateX(-$nav-width);
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, .4);
-      -ms-user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      user-select: none;
-      z-index: 19;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .4);
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        z-index: 19;
+      }
+    }
+    .menu-hamb {
+      display: none !important;
     }
   }
-  .menu-hamb {
-    display: none !important;
+}
+
+@include media($screen-sm) {
+  .is-menu-opened .menu {
+    transform: translateY(0);
   }
 }
 
@@ -158,12 +181,23 @@ $nav-width: 280px;
   top: 50px;
   left: 50px;
   z-index: 200;
+
+  @include media($screen-sm) {
+    top: 20px;
+    left: 20px;
+  }
 }
 
 .cta-container {
   left: auto;
   right: 50px;
   margin-top: -10px;
+
+  @include media($screen-sm) {
+    left: auto;
+    top: 25px;
+    right: 40px;
+  }
 
   .button-cta {
     margin-top: -10px;
@@ -178,6 +212,10 @@ $nav-width: 280px;
       &:focus {
         background: rgba(#000, .7);
       }
+    }
+
+    @include media($screen-sm) {
+      margin-top: -5px;
     }
   }
 

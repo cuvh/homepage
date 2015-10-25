@@ -56,7 +56,7 @@
     }
 
     @include media($screen-sm) {
-      padding: 20px;
+      padding: 20px 0;
       height: auto !important;
 
       .container {
@@ -121,7 +121,7 @@
       height: auto;
       text-align: center;
       line-height: 60px;
-      padding: 50px;
+      padding: 50px 0;
     }
 
     .logo {
@@ -139,11 +139,31 @@
   h2 {
     margin-bottom: 35px;
   }
+
+  @include media($screen-md) {
+    max-width: none;
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  @include media($screen-sm) {
+    position: static;
+    margin-top: 30px;
+    width: 50%;
+  }
 }
 
 .live-editing-image {
   float: right;
   width: 65%;
+
+  @include media($screen-md) {
+    width: 60%;
+  }
+
+  @include media($screen-sm) {
+    width: 50%;
+  }
 }
 
 .v-base {
