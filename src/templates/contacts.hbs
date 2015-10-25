@@ -10,10 +10,7 @@
           <img src="/images/ench_logo.svg" alt="">
         </div>
         <div class="col-sm-3 m-text-right cta-container">
-          <ul class="nav -right">
-            <li><a href="#">Login</a></li>
-            <a href="#" class="fa fa-bars menu-hamb js-open-menu"></a>
-           </ul>
+          <a href="#" class="menu-hamb js-open-menu"><span>Toggle menu</span></a>
         </div>
       </div>
     <div class="container">
@@ -25,7 +22,7 @@
     </div>
   </div>
 
-  <div class="section -white -padding-m contacts-section">
+  <div class="section -white -padding-m contacts-section menu-open">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -73,39 +70,5 @@
 {{> footer}}
 
 
-<script>
-  $(function (){
-
-    $('.js-open-menu, .js-close-menu').on('click', function(e) {
-      e.preventDefault();
-      $('body').toggleClass('is-menu-opened');
-    });
-
-    var $stepsContainer = $('.steps-container');
-    var $stepsNextC = $stepsContainer.next('.section');
-
-    $(window).scroll(function (event) {
-      var scroll = $(window).scrollTop();
-
-      if(scroll > $(window).height() - 60) {
-        $('body').removeClass('is-menu-opened');
-      }
-
-      if( scroll > 100 && !$('.cta-container').hasClass('swap') ) {
-        $('.cta-container').addClass('swap');
-      } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
-        $('.cta-container').removeClass('swap');
-      }
-
-    });
-
-  });
-
-  var s = skrollr.init();
-  $('.js-slick').slick({
-    prevArrow: '.js-prev',
-    nextArrow: '.js-next'
-  });
-</script>
 </body>
 </html>

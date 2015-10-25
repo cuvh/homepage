@@ -89,6 +89,11 @@
   &.-green {
     background: $ench-color;
     color: #fff;
+    z-index: 20;
+
+    + .section.-white {
+      z-index: 21;
+    }
   }
 
   &.-dark {
