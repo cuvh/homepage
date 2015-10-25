@@ -1,1 +1,10 @@
-{"title":"Enhancv"}
+{
+	"title": "Enhancv",
+	"get_started": "http://staging.enhancv.com.s3-website-us-east-1.amazonaws.com/",
+	"blog": "http://blog.enhancv.com/",
+	"examples": "http://help.enhancv.com/",
+	"fb": "http://facebook.com/enhancv",
+	"linkedin": "http://linkedin.com/company/enhancv",
+	"twitter": "http://twitter.com/enhancv",
+	"google": "http://plus.google.com/101937788764621640784"
+}
