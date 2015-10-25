@@ -63,6 +63,12 @@
         max-width: 100%;
       }
     }
+
+    .button.-prim + span {
+      line-height: 48px;
+      display: inline-block;
+      overflow: hidden;
+    }
   }
 
   &.-full {

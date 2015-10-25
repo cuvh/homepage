@@ -18,6 +18,12 @@
     background: rgba($ench-color, .9);
   }
 
+  &.-small {
+    line-height: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
   &.-white {
     color: #444;
     background: #fff;
@@ -59,6 +65,18 @@
     border: 1px solid #333;
     background: #333333;
     color: #fff;
+  }
+
+  &.-disabled {
+    border: 1px dashed #333;
+    background: transparent;
+    color: #333;
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
   }
 
   &.-prim {
