@@ -7,7 +7,8 @@
 
     gulp.task('rev', function() {
         var revAll = new RevAll({
-            dontRenameFile: ['.html']
+            dontRenameFile: ['.html'],
+            dontUpdateReference: ['.html']
         });
         gulp.src('./build/**/*')
             .pipe(revAll.revision())
