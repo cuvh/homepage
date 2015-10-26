@@ -1,18 +1,29 @@
+@mixin transition($seconds) {
+	-webkit-transition: all ease-in $seconds;
+	-moz-transition: all ease-in $seconds;
+	-ms-transition: all ease-in $seconds;
+	-o-transition: all ease-in $seconds;
+	transition: all ease-in $seconds;
+}
+
+h2 {
+  margin-bottom: 40px;
+  font-size: 27px;
+}
+
+p {
+  font-size: 19px;
+}
+
 .about-section {
   width: 70%;
   padding: 0;
   text-align: center;
-  font-size: 18px;
-
-  h2 {
-    margin-bottom: 40px;
-  }
 
   p {
     max-width: 47%;
     margin: auto;
     padding-top: 25px;
-    font-size: 18px;
     word-wrap: break-word;
   }
 
@@ -26,6 +37,7 @@
 
   h2 {
     margin-bottom: 100px;
+    font-size: 32px;
   }
 
   [class*='col-'] {
@@ -34,8 +46,27 @@
 
   .value-heading {
     display: block;
+    font-size: 19px;
     margin-bottom: 30px;
   }
+}
+
+.mission {
+  padding-top: 165px !important;
+  padding-bottom: 165px !important;
+
+  h1 {
+    font-size: 32px !important;
+  }
+}
+
+.why-we-exist {
+  padding-top: 130px !important;
+  padding-bottom: 130px !important;
+}
+
+#values {
+  background-color: #333;
 }
 
 h1.green-section-heading {
@@ -44,58 +75,92 @@ h1.green-section-heading {
   font-size: 30px;
 }
 
-.about-exists-section{
+.about-exists-section {
   width: 70%;
   padding: 0;
   padding-bottom: 35px;
   text-align: center;
-  font-size: 16px;
-
-  h2 {
-      font-size: 1.7em;
-  }
 
   p {
     text-align: justify;
     max-width: 65%;
     margin: auto;
     padding-top: 25px;
-    font-size: 17px;
     word-wrap: break-word;
-    line-height: 20px;
+    line-height: 1.5;
   }
 }
 
-.members-section{
-  width: 55%;
+.members-section {
+  width: 65%;
   padding: 0;
   text-align: center;
   font-size: 16px;
+  
+  .member-details {
+    visibility: hidden;
+    opacity: 0;
+    
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    text-align: left;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    @include transition(0.2s);
+    
+    p {
+      font-size: 16px;
+      color: #333;
+      @include transition(0.2s);
+    }
+  }
 
-  .member-photo{
-    margin: 25px auto;
-    width: 100px;
-    height: 100px;
+  .member-photo {
+    margin: 20px auto 35px auto;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
-    background-color: #C6C6C6;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include transition(0.2s);
   }
 
-  .member-name{
-    margin-bottom: 1px;
-    font-size: 0.9em;
+  .member-name {
+    margin-bottom: 5px;
+    font-size: 21px;
+    color: #00c092;
+    @include transition(0.2s);
   }
 
-  .member-job-title{
-    font-size: 0.8em;
-    color: #b8b8b8;
+  .member-job-title {
+    font-size: 16px;
+    color: #adadad;
+    @include transition(0.15s);
   }
 }
 
 .join-our-team-section {
   padding: 50px;
-  button.open-job-positions {
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .open-job-positions {
     margin-top: 20px;
-    height: 38px;
     line-height: 0;
+    border: 0;
+    padding: 13px 32px;
+  }
+
+  .open-job-positions:focus {
+    outline: 0;
   }
 }

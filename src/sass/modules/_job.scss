@@ -15,6 +15,15 @@
 
   .job-header {
     margin-bottom: 60px;
+
+    .back-link {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: #00C092;
+    }
   }
 
   .job-content {
@@ -66,7 +75,7 @@
       padding-top: 29px;
     }
 
-    .qualifications {      
+    .qualifications {
       p {
         margin-bottom: 10px;
       }
@@ -74,7 +83,7 @@
       h3 {
         font-weight: 700;
       }
-      
+
       h3:first-child {
         padding-top: 15px;
       }
@@ -101,7 +110,7 @@
 
 .apply-form {
   margin-top: 80px;
-  
+
   .apply-for-job {
     margin-bottom: 52px;
   }
@@ -112,13 +121,13 @@
 
   .right {
     padding-left: 50px;
-    
+
     .tell-me {
       .button {
         background-color: #666;
         height: 40px;
         width: 220px;
-        
+
         p {
           font-size: 14px;
           text-align: left;
@@ -144,25 +153,25 @@
   .file-upload {
     position: relative;
     overflow: hidden;
-    
+
     p {
       cursor: pointer;
       padding-left: 25px;
       margin: 13px 0 !important;
     }
-    
+
     .upload {
       width: 100%;
       height: 40px;
       opacity: 0;
       cursor: pointer;
-      
+
       position: absolute;
       top: 0;
       right: 0;
       margin: 0;
       padding: 0;
-      
+
       &:hover,
       &:focus,
       &:active {
@@ -173,7 +182,7 @@
 
   .tell-me {
     margin-bottom: 33px;
-    
+
     p {
       margin-bottom: 11px;
     }
@@ -188,7 +197,7 @@
       line-height: 0;
       cursor: pointer;
     }
-    
+
     .button:hover,
     .button:focus,
     .button:active {
@@ -201,7 +210,7 @@
   .job {
     padding: 0 30px;
   }
-  
+
   .form-control {
     width: 100% !important;
   }
@@ -211,11 +220,11 @@
   .job-left-wrapper {
     width: 100% !important;
   }
-  
+
   .right {
     padding: 0 !important;
   }
-  
+
   	[class*='col-'] {
       padding: 0;
     }

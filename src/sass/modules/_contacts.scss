@@ -1,28 +1,44 @@
-.heading {
-  display: block;
-  color: #00c092;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400;
-  padding-bottom: 10px;
-}
+.contacts-section {
+  .heading {
+    display: block;
+    color: #00c092;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
 
-.small-divider {
-  width: 25px;
-  height: 2px;
-  margin-bottom: 10px;
-  background-color: #00c092;
-}
+  .small-divider {
+    width: 25px;
+    height: 2px;
+    margin-bottom: 10px;
+    background-color: #00c092;
+  }
 
-.contact-info {
-  margin-bottom: 50px;
-}
+  .contact-info {
+    margin-bottom: 50px;
+  }
 
-.button {
-  border: 0;
-}
+  .button {
+    border: 0;
+  }
 
-.section-heading {
-  font-size: 27px;
-  margin-bottom: 70px;
+  .section-heading {
+    font-size: 27px;
+    margin-bottom: 70px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 10px 33px;
+    font-size: 14px;
+    line-height: 0;
+  }
+
+  .button:focus {
+    outline: 0;
+  }
 }
