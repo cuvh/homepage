@@ -86,6 +86,22 @@
     }
   }
 
+  &.-disabled.coming-soon-green {
+    border: 2px dashed #245e4f;
+    background: transparent;
+    color: #00c091;
+    cursor: default;
+    font-size: 16px;
+    padding: 0 20px;
+    vertical-align: middle;
+    float: right;
+
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
+  }
+
   &.-prim {
     position: relative;
     background: #ec9231;
