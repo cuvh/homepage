@@ -71,6 +71,46 @@
     }
   }
 
+  &.-promocode {
+    background-image: url(/images/promocode.png);
+    padding-bottom: 170px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    z-index: 20;
+
+    + .section.-white {
+      height: 120px;
+      line-height: 120px;
+      margin-top: -120px;
+      z-index: 21;
+
+      @include media($screen-sm) {
+        margin-top: 0;
+      }
+    }
+
+    //nav issue
+    @include media($screen-md) {
+      height: 100vh !important;
+    }
+
+    @include media($screen-sm) {
+      padding: 20px 0 120px 0;
+      height: auto !important;
+
+      .container {
+        max-width: 100%;
+      }
+    }
+
+    .button.-prim + span {
+      line-height: 48px;
+      display: inline-block;
+      overflow: hidden;
+    }
+  }
+
   &.-full {
     height: 100vh;
 
