@@ -6,6 +6,15 @@
 	transition: all ease-in $seconds;
 }
 
+.about-header {
+	background:
+    linear-gradient(
+      rgba(0, 192, 146, 0.9),
+      rgba(0, 192, 146, 0.9)
+    ),
+    url('/images/about/about-header.jpg') !important;
+}
+
 h2 {
   margin-bottom: 40px;
   font-size: 27px;
@@ -52,8 +61,14 @@ p {
 }
 
 .mission {
+	background:
+    linear-gradient(
+      rgba(0, 192, 146, 0.9),
+      rgba(0, 192, 146, 0.9)
+    ),
+    url('/images/about/about-mission.jpg') !important;
   padding-top: 165px !important;
-  padding-bottom: 165px !important;
+  padding-bottom: 160px !important;
 
   h1 {
     font-size: 32px !important;
@@ -66,7 +81,7 @@ p {
 }
 
 #values {
-  background-color: #333;
+  background: url('/images/about/about-values-background.jpg');
 }
 
 h1.green-section-heading {
@@ -96,11 +111,11 @@ h1.green-section-heading {
   padding: 0;
   text-align: center;
   font-size: 16px;
-  
+
   .member-details {
     visibility: hidden;
     opacity: 0;
-    
+
     padding: 30px;
     width: 100%;
     height: 100%;
@@ -108,13 +123,13 @@ h1.green-section-heading {
     border: 1px solid #c6c6c6;
     border-radius: 5px;
     text-align: left;
-    
+
     position: absolute;
     top: 0;
     left: 0;
     margin: auto;
     @include transition(0.2s);
-    
+
     p {
       font-size: 16px;
       color: #333;
@@ -163,4 +178,47 @@ h1.green-section-heading {
   .open-job-positions:focus {
     outline: 0;
   }
+}
+
+.fit-here-section {
+	// padding: 200px 100px !important;
+	// background: url('/images/about/about-join.jpg') no-repeat !important;
+	// background-size: 100% !important;
+
+	img {
+		width: 100%;
+	}
+
+	.you-fit-here {
+		background-color: #00c091;
+		color: #fff;
+		border-radius: 5px;
+
+		position: absolute;
+		top: 43%;
+		left: 23%;
+
+		a {
+			display: block;
+			padding: 20px 30px;
+			font-size: 21px;
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a:after {
+			top: 100%;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: rgba(0, 192, 145, 0);
+			border-top-color: #00c091;
+			border-width: 10px;
+			margin-left: -10px;
+		}
+	}
 }
