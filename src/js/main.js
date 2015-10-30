@@ -1,5 +1,5 @@
 $(function() {
-    $('.js-open-menu, .js-close-menu').on('click', function(e) {
+    $(document).on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {
         e.preventDefault();
         $('html, body').scrollTop(0);
         $('body').toggleClass('is-menu-opened');
