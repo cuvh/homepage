@@ -99,6 +99,10 @@ $nav-width: 280px;
   height: 100vh;
   z-index: 19;
 
+  .buttons-container {
+    min-height: calc(100% - 50px);
+  }
+
   ul {
     margin-top: 30px;
     list-style-type: none;
