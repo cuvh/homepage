@@ -2,12 +2,11 @@
 	"_default": {
 		"description": "description",
 		"keywords": "keywords",
-		"image": "yep"
+		"image": "/images/social-image.jpg"
 	},
 	"index": {
 		"description": "Enhancv helps you create compelling human-centric resumes that unveil the real person behind.",
 		"keywords": "resume, creative resume, human-centric resume, performance-based resume, online resume, cv, career, job search, resume builder, create a resume, create resumes, create cv, resume design, cv design, performance-based cv, human-centric cv",
-		"image": "nope",
 		"title": "Get the job you deserve"
 	},
 	"contacts": {
@@ -31,8 +30,7 @@
 		"title": "Jobs at Enhancv"
 	},
 	"jobs_list": {
-		"description": "desc",
-		"keywords": "enhancv"
+		
 	},
 	"partners": {
 		"description": "Our partners back us up, anytime, anywhere.",
