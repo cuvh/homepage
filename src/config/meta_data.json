@@ -5,29 +5,38 @@
 		"image": "yep"
 	},
 	"index": {
-		"description": "desc",
-		"keywords": "enhancv",
+		"description": "Enhancv helps you create compelling human-centric resumes that unveil the real person behind.",
+		"keywords": "resume, creative resume, human-centric resume, performance-based resume, online resume, cv, career, job search, resume builder, create a resume, create resumes, create cv, resume design, cv design, performance-based cv, human-centric cv",
 		"image": "nope",
-		"title": "teeet"
+		"title": "Get the job you deserve"
 	},
 	"contacts": {
-		"description": "desc",
-		"keywords": "enhancv"
+		"description": "If you want to get in touch, please, fill in the contact form or send us an email.",
+		"keywords": "contacts, get in touch, work with us, write to us, contact form, contact Enhancv",
+		"title": "Contact Enhancv"
+	},
+	"about": {
+		"title": "About Enhancv",
+		"description": "Our mission is to help talented people unleash their full potential by giving them the opportunity to create resumes that show who they really are.",
+		"keywords": "about Enhancv, about the resume builder / enhancer, about us, our mission, why using Enhancv"
 	},
 	"examples": {
-		"description": "desc",
-		"keywords": "enhancv"
+		"description": "See some great examples of our amazing resumes and see how yours could look like. Try Enhancv and unlock your potential!",
+		"keywords": "examples of resumes, examples, resume examples, resume inspiration, cv examples, examples of cv, creative resumes, creative CVs",
+		"title": "Examples of resumes by Enhancv"
 	},
 	"jobs": {
-		"description": "desc",
-		"keywords": "enhancv"
+		"description": "Do you want to join a motivated and talented team of entrepreneurs and talented product builders? Write to us and we will get in touch if you are a good match for us.",
+		"keywords": "jobs, careers, job openings, jobs at Enhancv, open positions, hire",
+		"title": "Jobs at Enhancv"
 	},
 	"jobs_list": {
 		"description": "desc",
 		"keywords": "enhancv"
 	},
 	"partners": {
-		"description": "desc",
-		"keywords": "enhancv yesss"
+		"description": "Our partners back us up, anytime, anywhere.",
+		"keywords": "Enhancv partners, about our partners, partners, our partners",
+		"title": "Partners of Enhancv"
 	}
 }
