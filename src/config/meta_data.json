@@ -1,0 +1,33 @@
+{
+	"_default": {
+		"description": "description",
+		"keywords": "keywords",
+		"image": "yep"
+	},
+	"index": {
+		"description": "desc",
+		"keywords": "enhancv",
+		"image": "nope",
+		"title": "teeet"
+	},
+	"contacts": {
+		"description": "desc",
+		"keywords": "enhancv"
+	},
+	"examples": {
+		"description": "desc",
+		"keywords": "enhancv"
+	},
+	"jobs": {
+		"description": "desc",
+		"keywords": "enhancv"
+	},
+	"jobs_list": {
+		"description": "desc",
+		"keywords": "enhancv"
+	},
+	"partners": {
+		"description": "desc",
+		"keywords": "enhancv yesss"
+	}
+}
