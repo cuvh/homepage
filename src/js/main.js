@@ -7,6 +7,7 @@ $(function() {
 
     var $stepsContainer = $('.steps-container');
     var $stepsNextC = $stepsContainer.next('.section');
+    var lastFsiPos = 0;
 
     $(window).scroll(function(event) {
         var scroll = $(window).scrollTop();
@@ -19,6 +20,14 @@ $(function() {
             $('.cta-container').addClass('swap');
         } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
             $('.cta-container').removeClass('swap');
+        }
+
+        var scrolFsi = $('.js-first-si').offset();
+        if(scroll > scrolFsi.top && !$('.js-first-si').hasClass('is-fixedy')) {
+            lastFsiPos = scrolFsi.top;
+            $('.js-first-si').addClass('is-fixedy');
+        } else if (scroll < lastFsiPos) {
+            $('.js-first-si').removeClass('is-fixedy');
         }
     });
 });

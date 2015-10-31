@@ -6,6 +6,9 @@
   h2 + p {
     max-width: 320px;
   }
+  > div {
+    position: relative !important;
+  }
 
   @include media($screen-sm) {
     max-width: 100%;
@@ -44,6 +47,10 @@
     @include media($screen-md) {
       position: static !important;
     }
+  }
+
+  &.is-fixedy {
+    position: fixed !important;
   }
 
 }
