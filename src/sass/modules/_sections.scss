@@ -39,7 +39,7 @@
     color: #fff;
     z-index: 20;
 
-    + .section.-white {
+    + .section.-white, + .section.-mobile-only + .section.-white {
       height: 120px;
       line-height: 120px;
       z-index: 21;
@@ -51,15 +51,18 @@
 
     //nav issue
     @include media($screen-md) {
-      height: 100vh !important;
+      height: 100vh;
     }
 
     @include media($screen-sm) {
       padding: 20px 0;
-      height: auto !important;
 
       .container {
-        max-width: 100%;
+        display: none;
+      }
+
+      .home-banner-nav {
+        display: none;
       }
     }
 
@@ -70,6 +73,27 @@
     }
   }
 
+  &.-mobile-only {
+    display: none;
+    height: 210px !important;
+    line-height: 20px !important;
+    border-bottom: 1px solid #e1e1e1;
+
+    .container {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      max-width: 100% !important;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    @include media($screen-sm) {
+      display: block;
+    }
+  }
+
   &.-promocode {
     background-image: url(/images/promocode.png);
     padding-bottom: 170px;
@@ -77,17 +101,6 @@
     padding-right: 50px;
     color: #fff;
     z-index: 20;
-
-    + .section.-white {
-      height: 120px;
-      line-height: 120px;
-      margin-top: -120px;
-      z-index: 21;
-
-      @include media($screen-sm) {
-        margin-top: 0;
-      }
-    }
 
     //nav issue
     @include media($screen-md) {
@@ -110,12 +123,22 @@
     }
   }
 
-  &.-full {
+  &.-main-full {
     height: -webkit-calc(100vh - 120px);
     height: calc(100vh - 120px);
 
     @include media($screen-md) {
-      height: auto;    }
+      height: auto;    
+    }
+
+    @include media($screen-sm) {
+      height: -webkit-calc(100vh - 210px);
+      height: calc(100vh - 210px);
+    }
+  }
+
+  &.-full {
+    min-height: 100vh;
   }
 
   &.-o-hidden {
