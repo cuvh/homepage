@@ -1,3 +1,7 @@
+.is-menu-opened {
+  overflow: hidden;
+}
+
 .nav {
   font-family: $base-font-family;
   font-size: 0;
@@ -101,6 +105,7 @@ $nav-width: 280px;
 
   .buttons-container {
     min-height: calc(100% - 50px);
+    position: relative;
   }
 
   ul {
@@ -140,8 +145,10 @@ $nav-width: 280px;
     transition: .3s transform ease-in-out;
     transform: translateY(-100%);
     height: auto;
+    height: 100vh;
     z-index: 40;
-    max-width: 100%;
+    width: 100%;
+    text-align: center;
   }
 
 }
@@ -181,6 +188,16 @@ $nav-width: 280px;
   .is-menu-opened .menu {
     transform: translateY(0);
   }
+
+  .js-close-menu {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+
+  .button-cta {
+    display: none !important;
+  } 
 }
 
 .cta-container,

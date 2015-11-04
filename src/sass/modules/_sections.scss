@@ -40,7 +40,7 @@
     z-index: 20;
 
     + .section.-white, + .section.-mobile-only + .section.-white {
-      height: 120px;
+      min-height: 120px;
       line-height: 120px;
       z-index: 21;
 
@@ -70,6 +70,13 @@
       line-height: 48px;
       display: inline-block;
       overflow: hidden;
+    }
+
+    @include media($screen-sm) {
+      .ench-logo {
+        position: absolute;
+        top: 0px;
+      }
     }
   }
 
@@ -165,7 +172,6 @@
   }
 
   &.-steps {
-    border-top: 4px solid #c7c7c7;
     background: url('../images/resume-bg-01.jpg');
   }
 
