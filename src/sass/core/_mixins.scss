@@ -21,6 +21,14 @@
   }
 }
 
+@mixin transition($seconds) {
+	-webkit-transition: all ease-in $seconds;
+	-moz-transition: all ease-in $seconds;
+	-ms-transition: all ease-in $seconds;
+	-o-transition: all ease-in $seconds;
+	transition: all ease-in $seconds;
+}
+
 @mixin media($num) {
   @media only screen and (max-width: $num) {
     @content;

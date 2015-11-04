@@ -1,10 +1,4 @@
-@mixin transition($seconds) {
-	-webkit-transition: all ease-in $seconds;
-	-moz-transition: all ease-in $seconds;
-	-ms-transition: all ease-in $seconds;
-	-o-transition: all ease-in $seconds;
-	transition: all ease-in $seconds;
-}
+
 
 .about-header {
 	background:
@@ -125,6 +119,7 @@ h1.green-section-heading {
   .member-details {
     visibility: hidden;
     opacity: 0;
+    overflow-y: scroll;
 
     padding: 30px;
     width: 100%;
@@ -144,6 +139,21 @@ h1.green-section-heading {
       font-size: 16px;
       color: #333;
       @include transition(0.2s);
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        padding-right: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.10);
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.15);
     }
   }
 
@@ -238,4 +248,35 @@ h1.green-section-heading {
 			}
 		}
 	}
+}
+
+@media (max-width: 800px) {
+  .about-exists-section {
+    width: 100% !important;
+  }
+  
+  .about-exists-section p {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {  
+  .fit-here-section .you-fit-here a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .fit-here-section .you-fit-here {
+    top: 35%;
+    left: 18%;
+  }
+}
+
+@media (max-width: 390px) {
+  .fit-here-section .you-fit-here {
+    top: 25%;
+    left: 10%;
+  }
 }
