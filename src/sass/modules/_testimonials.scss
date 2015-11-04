@@ -13,6 +13,25 @@
 .testimonial {
   text-align: left;
 
+  .testimonial-container, .testimonial-information {
+    overflow: hidden;
+  }
+
+  .testimonial-container {
+    margin-bottom: 30px;
+  }
+
+  .testimonial-information {
+    min-height: 80px;
+    padding-left: 40px;
+    display: table;
+
+    .testimonial-information-center {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
   img {
     float: left;
     width: 80px;
@@ -21,14 +40,10 @@
   }
   h3 {
     color: $ench-color;
-    margin-bottom: 0;
-    margin-left: 120px;
-    padding-top: 18px;
+    margin: 0;
 
     + span {
       display: inline-block;
-      margin-left: 40px;
-      margin-bottom: 40px;
     }
   }
 
