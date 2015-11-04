@@ -1,20 +1,21 @@
+.job-header {
+  background:
+    linear-gradient(
+      rgba(0, 192, 146, 0.9),
+      rgba(0, 192, 146, 0.9)
+    ),
+    url('/images/job/job-header-image.jpg') !important;
+}
+
 .job {
   padding: 0 70px;
 
-  .job-header {
+  .job-title-header {
+    margin-bottom: 60px;
+    
     .col-sm-5, .col-sm-7 {
       padding: 0;
     }
-  }
-
-  .back-arrow {
-    font-size: 28px;
-    margin-right: 20px;
-    vertical-align: bottom;
-  }
-
-  .job-header {
-    margin-bottom: 60px;
 
     .back-link {
       color: inherit;
@@ -24,6 +25,12 @@
     .back-link:hover {
       color: #00C092;
     }
+  }
+
+  .back-arrow {
+    font-size: 28px;
+    margin-right: 20px;
+    vertical-align: bottom;
   }
 
   .job-content {
