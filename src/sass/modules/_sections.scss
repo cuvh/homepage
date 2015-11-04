@@ -302,3 +302,9 @@
     }
   }
 }
+
+@include media($screen-sm) {
+  .coming-soon-green {
+    display: none !important;
+  }
+}
