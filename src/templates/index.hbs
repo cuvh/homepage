@@ -3,28 +3,28 @@
 
   {{> navigation}}
 
-  <div class="section -banner -full -home -padding-s menu-open">
+  <div class="section -banner -main-full -home -padding-s menu-open">
 
-      <div class="row">
-        <div class="col-sm-3">
+    <div class="row">
+      <div class="col-sm-3">
 
-          <img src="/images/ench_logo.svg" alt="" class="ench-logo">
+        <img src="/images/ench_logo.svg" alt="" class="ench-logo">
 
-        </div>
-        <div class="col-sm-6">
-
-          <ul class="nav -center -main">
-            <li><a href="#steps-container" class="js-scroll-to">Tour</a></li>
-            <li><a href="{{global.examples}}" target="_blank">Examples</a></li>
-            <li><a href="{{global.blog}}" target="_blank">Blog</a></li>
-          </ul>
-
-        </div>
-        <div class="col-sm-3 m-text-right cta-container">
-          <a href="#" class="menu-hamb js-open-menu"><span>Toggle menu</span></a>
-          <a href="{{global.get_started}}" class="button -small -trans button-cta">Let’s Begin</a>
-        </div>
       </div>
+      <div class="col-sm-6 home-banner-nav">
+
+        <ul class="nav -center -main">
+          <li><a href="#steps-container" class="js-scroll-to">Tour</a></li>
+          <li><a href="{{global.examples}}" target="_blank">Examples</a></li>
+          <li><a href="{{global.blog}}" target="_blank">Blog</a></li>
+        </ul>
+
+      </div>
+      <div class="col-sm-3 m-text-right cta-container">
+        <a href="#" class="menu-hamb js-open-menu"><span>Toggle menu</span></a>
+        <a href="{{global.get_started}}" class="button -small -trans button-cta">Let’s Begin</a>
+      </div>
+    </div>
 
     <div class="container m-height-100p">
       <div class="v-base m-height-100p">
@@ -38,6 +38,13 @@
 
     <a href="#steps-container" class="go-to-section js-scroll-to"></a>
 
+  </div>
+
+  <div class="section m-text-center -mobile-only -white menu-open">
+    <div class="container m-text-center">
+      <h1>Get the job<br> you deserve!</h1>
+      <a href="{{global.get_started}}" class="button -prim">Let’s Begin</a>
+    </div>
   </div>
 
   <div class="section -white menu-open">
@@ -246,9 +253,15 @@
               <div class="col-sm-6">
 
                 <div class="testimonial">
-                  <img src="/images/vgetova.png" alt="">
-                  <h3>Velina Getova</h3>
-                  <span>Career Coach & Senior Recruiter</span>
+                  <div class="testimonial-container">
+                    <img src="/images/vgetova.png" alt="">
+                      <div class="testimonial-information">
+                        <div class="testimonial-information-center">
+                          <h3>Velina Getova</h3>
+                          <span>Career Coach & Senior Recruiter</span>
+                        </div>
+                      </div>
+                  </div>
                   <p>If everyone followed Enhancv professional advice finding the right person wouldn’t have been such a challenge!</p>
                 </div>
 
@@ -258,9 +271,15 @@
               <div class="col-sm-6">
 
                 <div class="testimonial">
-                  <img src="/images/god.png" alt="">
-                  <h3>God</h3>
-                  <span>Master of all</span>
+                  <div class="testimonial-container">
+                    <img src="/images/god.png" alt="">
+                      <div class="testimonial-information">
+                        <div class="testimonial-information-center">
+                          <h3>God</h3>
+                          <span>Master of all</span>
+                        </div>
+                      </div>
+                  </div>
                   <p>These guys are doing a god job, helping fellow humans nail their dreams faster.</p>
                 </div>
 
