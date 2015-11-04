@@ -135,7 +135,7 @@
     height: calc(100vh - 120px);
 
     @include media($screen-md) {
-      height: auto;    
+      height: auto;
     }
 
     @include media($screen-sm) {
