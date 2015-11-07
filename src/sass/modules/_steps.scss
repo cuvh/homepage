@@ -89,3 +89,9 @@
     }
   }
 }
+
+.v-middle-image {
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
