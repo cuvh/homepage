@@ -64,6 +64,27 @@
       position: static;
     }
   }
+
+  @include media($screen-md) {
+    display: none;
+  }
+}
+
+.steps-container-mobile {
+  display: block;
+  padding-bottom: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+
+  @include media-min($screen-md) {
+    display: none;
+  }
 }
 
 .steps-circles {

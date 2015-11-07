@@ -43,7 +43,7 @@
     + .section.-white, + .section.-mobile-only + .section.-white {
       min-height: 120px;
       line-height: 120px;
-      z-index: 21;
+      z-index: 19;
 
       @include media($screen-sm) {
         margin-top: 0;

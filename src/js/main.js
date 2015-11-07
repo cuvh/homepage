@@ -22,15 +22,6 @@ $(function() {
         } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
             $('.cta-container').removeClass('swap');
         }
-
-        return;
-        var scrolFsi = $('.js-first-si').offset();
-        if(scroll > scrolFsi.top && !$('.js-first-si').hasClass('is-fixedy')) {
-            lastFsiPos = scrolFsi.top;
-            $('.js-first-si').addClass('is-fixedy');
-        } else if (scroll < lastFsiPos) {
-            $('.js-first-si').removeClass('is-fixedy');
-        }
     });
 
     var s = skrollr.init({
