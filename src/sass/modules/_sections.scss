@@ -146,6 +146,7 @@
   }
 
   &.-full {
+    min-height: 600px; // fallback
     min-height: 100vh;
   }
 

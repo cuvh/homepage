@@ -23,6 +23,7 @@ $(function() {
             $('.cta-container').removeClass('swap');
         }
 
+        return;
         var scrolFsi = $('.js-first-si').offset();
         if(scroll > scrolFsi.top && !$('.js-first-si').hasClass('is-fixedy')) {
             lastFsiPos = scrolFsi.top;

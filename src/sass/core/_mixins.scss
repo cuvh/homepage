@@ -22,11 +22,19 @@
 }
 
 @mixin transition($seconds) {
-	-webkit-transition: all ease-in $seconds;
-	-moz-transition: all ease-in $seconds;
-	-ms-transition: all ease-in $seconds;
-	-o-transition: all ease-in $seconds;
-	transition: all ease-in $seconds;
+  -webkit-transition: all ease-in $seconds;
+  -moz-transition: all ease-in $seconds;
+  -ms-transition: all ease-in $seconds;
+  -o-transition: all ease-in $seconds;
+  transition: all ease-in $seconds;
+}
+
+@mixin transform($prop) {
+	-webkit-transform: $prop;
+	-moz-transform: $prop;
+	-ms-transform: $prop;
+	-o-transform: $prop;
+	transform: $prop;
 }
 
 @mixin media($num) {
