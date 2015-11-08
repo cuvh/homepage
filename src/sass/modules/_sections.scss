@@ -192,6 +192,8 @@
     line-height: 120px;
     font-size: 16px;
     padding: 0 50px;
+    position: relative;
+    z-index: 50;
 
     .lets-begin:hover,
     .lets-begin:focus {
@@ -247,7 +249,7 @@
 .live-editing {
   position: absolute;
   margin-top: 150px;
-  max-width: 15%;
+  max-width: 30%;
 
 
   h2 {
@@ -256,6 +258,10 @@
 
   p {
     font-size: 16px;
+  }
+
+  @include media-min(1280px) {
+    max-width: 20%;
   }
 
   @include media($screen-md) {
