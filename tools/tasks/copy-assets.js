@@ -8,8 +8,8 @@
             .pipe(gulp.dest('./build/fonts'));
     });
 
-    gulp.task('copy-assets', ['image-min'], function() {
-        return gulp.src(['./src/favicon.ico', './src/*.png'])
+    gulp.task('copy-assets', function() {
+        return gulp.src(['./src/favicon.ico'])
             .pipe(gulp.dest('./build'));
     });
 })();
