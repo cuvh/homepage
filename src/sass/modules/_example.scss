@@ -134,6 +134,12 @@
 			margin: auto;
 			padding: 50px 0;
 			max-width: 65%;
+
+			@media (max-width: 820px) {
+				& {
+					max-width: 90%;
+				}
+			}
 		}
 	}
 }
