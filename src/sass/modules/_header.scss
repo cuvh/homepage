@@ -14,24 +14,28 @@
 	h1 {
 		font-size: 48px;
 	}
-	
+
+	h1.header-title {
+		margin:0;
+	}
+
 	@media (max-width: 770px) {
 		& .col-sm-3 {
 			float: left;
 			margin-left: 5%;
 		}
-		
+
 		& .col-sm-3.m-text-right {
 			right: 7%;
 			top: 60px;
 		}
 	}
-	
+
 	@media (max-width: 450px) {
 		& .col-sm-3.m-text-right {
 			right: 14%;
 		}
-		
+
 		& .col-sm-3.m-text-right a {
 			padding: 0 15px;
 		}
