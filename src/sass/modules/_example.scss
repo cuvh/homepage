@@ -69,6 +69,7 @@
 
 	.example-image > img {
 		@include transition(.15s);
+        width: 100%;
 	}
 
 	.example-image:hover > img,
