@@ -163,6 +163,7 @@ h1.green-section-heading {
     height: 130px;
     border-radius: 100%;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     @include transition(0.2s);
   }
@@ -190,7 +191,7 @@ h1.green-section-heading {
 
   .open-job-positions {
     margin-top: 20px;
-    line-height: 0;
+    line-height: 20px;
     border: 0;
     padding: 13px 32px;
   }

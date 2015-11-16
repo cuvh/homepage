@@ -22,10 +22,10 @@ $(document).ready(function() {
         }
     });
 
-    var lightbox = $('.lightbox'),
-        innerLightbox = $('.inner-lightbox');
+    //var lightbox = $('.lightbox'),
+        //innerLightbox = $('.inner-lightbox');
 
-    function removeClassHide() {
+    function removeClassHide(lightbox, innerLightbox) {
         lightbox.removeClass('hide');
         lightbox.addClass('show');
         lightbox.css('opacity', '0.7');
@@ -35,7 +35,7 @@ $(document).ready(function() {
         innerLightbox.css('opacity', '1');
     }
 
-    function removeClassShow() {
+    function removeClassShow(lightbox, innerLightbox) {
         lightbox.removeClass('show');
         lightbox.addClass('hide');
         lightbox.css('opacity', '0');
@@ -46,25 +46,32 @@ $(document).ready(function() {
     }
 
     $('a.example-image').click(function() {
-        if (lightbox.hasClass('hide') && innerLightbox.hasClass('hide')) {
-            removeClassHide();
-            $(innerLightbox).click(function() {
-                removeClassShow();
-            });
+      var lightBoxId = $(this).attr('href');
+      var innerLightbox = $(lightBoxId);
+      var lightbox = $('.lightbox');
+      $('body').css('overflow-y', 'hidden');
 
-            $(lightbox).click(function() {
-                removeClassShow();
-            });
-        } else {
-            removeClassShow();
-            $(document).click(function() {
-                removeClassHide();
-            });
+      if (lightbox.hasClass('hide') && innerLightbox.hasClass('hide')) {
+          removeClassHide(lightbox, innerLightbox);
+          $(innerLightbox).click(function() {
+            $('body').css('overflow-y', 'initial');
+            $('.inner-lightbox').css('height', '');
+              removeClassShow(lightbox, innerLightbox);
+          });
 
-            $(lightbox).click(function() {
-                removeClassHide();
-            });
-        }
+          $(lightbox).click(function() {
+              removeClassShow(lightbox, innerLightbox);
+          });
+      } else {
+          removeClassShow(lightbox, innerLightbox);
+          $(document).click(function() {
+              removeClassHide(lightbox, innerLightbox);
+          });
+
+          $(lightbox).click(function() {
+              removeClassHide(lightbox, innerLightbox);
+          });
+      }
     });
 
     $(function() {
@@ -75,7 +82,9 @@ $(document).ready(function() {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top
-                    }, 1000);
+                    }, 1000, 'swing', function(){
+                      $('.inner-lightbox').css('height', '100vh');
+                    });
                     return false;
                 }
             }
