@@ -13,6 +13,10 @@
 .testimonial {
   text-align: left;
 
+  p {
+    line-height: 1.4;
+  }
+
   .testimonial-container, .testimonial-information {
     overflow: hidden;
   }

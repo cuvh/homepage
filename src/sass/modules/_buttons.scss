@@ -28,6 +28,7 @@
   &.lets-begin:focus,
   &.menu-close:hover,
   &.menu-close:focus {
+    color: $ench-dark-color !important;
     background: #fff !important;
   }
 
@@ -87,7 +88,7 @@
   }
 
   &.-disabled.coming-soon-green {
-    border: 2px dashed #245e4f;
+    border: 1px dashed #245e4f;
     background: transparent;
     color: #00c091;
     cursor: default;

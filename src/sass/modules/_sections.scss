@@ -330,6 +330,10 @@
     margin-bottom: 25px;
   }
 
+  p {
+    font-size: 16px;
+  }
+
   @include media($screen-sm) {
     margin-bottom: 70px;
 

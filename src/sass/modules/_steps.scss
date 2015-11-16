@@ -58,6 +58,16 @@
 
 }
 
+.steps-container, .steps-container-mobile {
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
 .steps-container {
   &.visible-steps {
     .step-image.is-fixed {
