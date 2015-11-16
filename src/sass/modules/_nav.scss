@@ -204,7 +204,7 @@ $nav-width: 310px;
 
   .button-cta {
     display: none !important;
-  } 
+  }
 }
 
 .cta-container,
@@ -238,7 +238,7 @@ $nav-width: 310px;
 
     &.-trans {
       background: #000;
-      border: none;
+      //border: none;
 
       &:hover,
       &:focus {
@@ -295,7 +295,7 @@ $nav-width: 310px;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
-      
+
   50% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
@@ -312,7 +312,7 @@ $nav-width: 310px;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
-      
+
   50% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
@@ -329,7 +329,7 @@ $nav-width: 310px;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
-      
+
   50% {
     -webkit-transform: translateY(10px);
     transform: translateY(10px);
