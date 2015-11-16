@@ -20,22 +20,27 @@
   li {
     display: inline-block;
   }
+}
 
-  a {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
-    padding: 0 25px;
-    text-decoration: none;
-    opacity: .75;
+.nav a, .nav-login-button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0 25px;
+  text-decoration: none;
+  opacity: .75;
 
-
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
+
+.nav-login-button {
+  position: relative;
+  top: 5px;
+}
+
 .menu-close,
 .menu-hamb {
   font-size: 22px !important;
