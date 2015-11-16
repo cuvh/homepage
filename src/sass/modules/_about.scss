@@ -197,6 +197,12 @@ h1.green-section-heading {
   .open-job-positions:focus {
     outline: 0;
   }
+
+	@media (max-width: 768px) {
+		& {
+			padding: 0;
+		}
+	}
 }
 
 .fit-here-section {
@@ -271,6 +277,12 @@ h1.green-section-heading {
   .fit-here-section .you-fit-here {
     top: 35%;
     left: 18%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fit-here-section .you-fit-here {
+    display: none;
   }
 }
 
