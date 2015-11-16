@@ -90,7 +90,7 @@
   background: url('../images/close-sign.png') center center no-repeat;
 }
 
-$nav-width: 280px;
+$nav-width: 310px;
 .menu {
   position: absolute;
   width: $nav-width;
@@ -106,6 +106,8 @@ $nav-width: 280px;
   .buttons-container {
     min-height: calc(100% - 50px);
     position: relative;
+    padding-left: 21px;
+    padding-top: 6px;
   }
 
   ul {
