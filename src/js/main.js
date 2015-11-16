@@ -28,6 +28,8 @@ $(function() {
         mobileCheck: function() {
             return false;
         },
+        smoothScrollingDuration: 1,
+        smoothScrolling: true,
         forceHeight: false
     });
     // $('.js-slick').slick({
