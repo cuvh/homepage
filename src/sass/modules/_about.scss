@@ -1,5 +1,3 @@
-
-
 .about-header {
 	background:
     linear-gradient(
@@ -77,9 +75,27 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+	.mission {
+		padding-top: 70px !important;
+		padding-bottom: 70px !important;
+	}
+
+	.mission h1 {
+		font-size: 28px !important;
+	}
+}
+
 .why-we-exist {
   padding-top: 130px !important;
   padding-bottom: 130px !important;
+}
+
+@media (max-width: 768px) {
+	.why-we-exist {
+		padding-top: 50px !important;
+		padding-bottom: 70px !important;
+	}
 }
 
 #values {
