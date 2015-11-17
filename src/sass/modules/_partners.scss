@@ -5,6 +5,12 @@
       rgba(0, 192, 146, 0.9)
     ),
     url('/images/partners/partners-header-image.jpg') !important;
+  
+  @media (max-width: 770px) {    
+    & {
+      height: 100vh !important;
+    }
+  }
 }
 
 .partners-logos {
@@ -35,3 +41,4 @@
   -webkit-transition: all ease-in 0.2s;
   -moz-transition: all ease-in 0.2s;
 }
+
