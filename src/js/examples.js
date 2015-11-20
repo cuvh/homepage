@@ -22,9 +22,6 @@ $(document).ready(function() {
         }
     });
 
-    //var lightbox = $('.lightbox'),
-        //innerLightbox = $('.inner-lightbox');
-
     function removeClassHide(lightbox, innerLightbox) {
         lightbox.removeClass('hide');
         lightbox.addClass('show');
@@ -50,17 +47,29 @@ $(document).ready(function() {
       var innerLightbox = $(lightBoxId);
       var lightbox = $('.lightbox');
       $('body').css('overflow-y', 'hidden');
+      $('.fixed-header-elements').css('cssText', 'z-index: 20 !important');
+      $('a.lightbox-hide').css('opacity', 1);
 
       if (lightbox.hasClass('hide') && innerLightbox.hasClass('hide')) {
           removeClassHide(lightbox, innerLightbox);
           $(innerLightbox).click(function() {
+            $('a.lightbox-hide').css('opacity', 0);
             $('body').css('overflow-y', 'initial');
             $('.inner-lightbox').css('height', '');
-              removeClassShow(lightbox, innerLightbox);
+            removeClassShow(lightbox, innerLightbox);
+            $('.fixed-header-elements').css('z-index', 25);
+          });
+          
+          $('a.lightbox-hide').click(function () {
+            $('a.lightbox-hide').css('opacity', 0);
+            $('body').css('overflow-y', 'initial');
+            $('.inner-lightbox').css('height', '');
+            removeClassShow(lightbox, innerLightbox);
+            $('.fixed-header-elements').css('z-index', 25);
           });
 
           $(lightbox).click(function() {
-              removeClassShow(lightbox, innerLightbox);
+            removeClassShow(lightbox, innerLightbox);
           });
       } else {
           removeClassShow(lightbox, innerLightbox);

@@ -116,6 +116,23 @@
 
 		@include transition(.15s);
 	}
+	
+	a.lightbox-hide {
+		display: inline-block;
+		padding: 5px;
+		cursor: pointer;
+		opacity: 0;
+		
+		position: fixed;
+		top: 40px;
+		right: 50px;
+		z-index: 103;
+		
+		i {
+			font-size: 24px;
+			color: #fff;
+		}
+	}
 
 	.inner-lightbox {
 		width: 100%;
