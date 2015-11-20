@@ -272,16 +272,15 @@ $nav-width: 310px;
   .menu-hamb {
     display: inline-block;
   }
+}
 
-  &.swap {
-    .button-cta {
-      display: inline-block;
-    }
-    .menu-hamb {
-      display: none;
-    }
+.-home .swap {
+  .button-cta {
+    display: inline-block;
   }
-
+  .menu-hamb {
+    display: none;
+  }
 }
 
 .go-to-section {
