@@ -272,10 +272,11 @@
 
   @include media($screen-sm) {
     position: static;
-    margin-top: 30px;
+    margin-top: 0;
     width: 100%;
 
     h2 {
+      margin-top: 0;
       margin-bottom: 15px;
     }
   }
