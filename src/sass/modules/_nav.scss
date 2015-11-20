@@ -220,6 +220,24 @@ $nav-width: 310px;
   }
 }
 
+@media (max-width: 800px) {
+  .cta-container,
+  .ench-logo {
+    position: initial;
+  }
+  
+  .cta-container {
+    float: right !important;
+    margin-right: 50px;
+  }
+}
+
+.-home {
+  .cta-container {
+    margin-right: 0;
+  }
+}
+
 .cta-container {
   left: auto;
   right: 50px;
