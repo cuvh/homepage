@@ -34,8 +34,10 @@ $(document).ready(function(){
               if (logoTop >= whiteSectionTop && logoTop <= whiteSectionBottom) {
                  if(whiteSection.css('background-color') == 'rgb(255, 255, 255)'){
                     $('.ench-logo path, .ench-logo polygon').css("fill", "#07c1a3");
+                    $('.menu-hamb span').addClass('green-hamburger');
                  } else {
                     $('.ench-logo path, .ench-logo polygon').css("fill", "white");
+                    $('.menu-hamb span').removeClass('green-hamburger');
                 }
              }
           });

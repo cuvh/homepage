@@ -60,6 +60,15 @@
     background: #fff;
     font-size: 0;
 
+    &.green-hamburger {
+      background: #07c1a3;
+
+      &:before,
+      &:after {
+        background: #07c1a3;
+      }
+    }
+
     &:before,
     &:after {
       content: '';
@@ -225,7 +234,7 @@ $nav-width: 310px;
   .ench-logo {
     position: initial;
   }
-  
+
   .cta-container {
     float: right !important;
     margin-right: 50px;
