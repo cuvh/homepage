@@ -219,7 +219,7 @@ $nav-width: 310px;
 .cta-container,
 .ench-logo {
   position: fixed;
-  top: 50px;
+  top: 55px;
   left: 50px;
   z-index: 200;
 
@@ -244,6 +244,13 @@ $nav-width: 310px;
 .-home {
   .cta-container {
     margin-right: 0;
+    
+    @media (max-width: 770px) {
+      & {
+        margin-top: -5px;
+        margin-right: 50px;
+      }
+    }
   }
 }
 
