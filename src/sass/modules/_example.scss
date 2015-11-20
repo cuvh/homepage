@@ -125,7 +125,7 @@
 		
 		position: fixed;
 		top: 40px;
-		right: 50px;
+		right: 4%;
 		z-index: 103;
 
 		@include transition(.15s);
@@ -165,7 +165,7 @@
 
 			@media (max-width: 820px) {
 				& {
-					max-width: 90%;
+					max-width: 85%;
 				}
 			}
 		}
