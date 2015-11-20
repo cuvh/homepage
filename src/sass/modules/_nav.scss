@@ -216,7 +216,11 @@ $nav-width: 310px;
   }
 
   .button-cta {
-    display: none !important;
+    // display: none !important;
+    opacity: 0 !important;
+    
+    @include transition(0.15s);
+    transition-delay: 1s;
   }
 }
 
@@ -271,8 +275,14 @@ $nav-width: 310px;
 
   .button-cta {
     margin-top: -10px;
-    display: none;
+    // display: none;
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
     margin-right: -25px;
+    
+    @include transition(0.1s);
+    transition-delay: 0.1s;
 
     &.-trans {
       background: #000;
@@ -291,15 +301,34 @@ $nav-width: 310px;
 
   .menu-hamb {
     display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    
+    @include transition(0.1s);
+    transition-delay: 0.1s;
+  }
+}
+
+.-home {
+  .menu-hamb,
+  .button-cta {
+    float: right;
+    margin-top: 0;
+  }
+  
+  .button-cta {
+    margin-right: -40px;
   }
 }
 
 .-home .swap {
   .button-cta {
-    display: inline-block;
+    visibility: visible;
+    opacity: 1;
   }
   .menu-hamb {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
