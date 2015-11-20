@@ -127,10 +127,20 @@
 		top: 40px;
 		right: 50px;
 		z-index: 103;
+
+		@include transition(.15s);
+		
+		&:hover > i,
+		&:focus > i,
+		&:active > i {
+			color: rgba(255, 255, 255, 0.7);
+		}
 		
 		i {
 			font-size: 24px;
 			color: #fff;
+
+			@include transition(.15s);
 		}
 	}
 
