@@ -165,6 +165,10 @@ $nav-width: 310px;
     z-index: 40;
     width: 100%;
     text-align: center;
+    
+    .buttons-container {
+      padding: 0;
+    }
   }
 
 }
