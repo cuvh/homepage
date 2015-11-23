@@ -165,7 +165,7 @@ $nav-width: 310px;
     z-index: 40;
     width: 100%;
     text-align: center;
-    
+
     .buttons-container {
       padding: 0;
       height: calc(100% - 50px);
@@ -228,13 +228,13 @@ $nav-width: 310px;
   .js-close-menu {
     position: absolute;
     right: 40px;
-    top: 20px;
+    top: 10px;
   }
 
   .button-cta {
     // display: none !important;
     opacity: 0 !important;
-    
+
     @include transition(0.15s);
     transition-delay: 1s;
   }
@@ -268,7 +268,7 @@ $nav-width: 310px;
 .-home {
   .cta-container {
     margin-right: 0;
-    
+
     @media (max-width: 770px) {
       & {
         margin-top: -5px;
@@ -296,7 +296,7 @@ $nav-width: 310px;
     visibility: hidden;
     opacity: 0;
     margin-right: -25px;
-    
+
     @include transition(0.1s);
     transition-delay: 0.1s;
 
@@ -319,7 +319,7 @@ $nav-width: 310px;
     display: inline-block;
     visibility: visible;
     opacity: 1;
-    
+
     @include transition(0.1s);
     transition-delay: 0.1s;
   }
@@ -331,7 +331,7 @@ $nav-width: 310px;
     float: right;
     margin-top: 0;
   }
-  
+
   .button-cta {
     margin-right: -40px;
   }
