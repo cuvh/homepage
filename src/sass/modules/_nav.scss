@@ -168,6 +168,22 @@ $nav-width: 310px;
     
     .buttons-container {
       padding: 0;
+      height: calc(100% - 50px);
+    
+      ul {
+        margin: 0;
+        height: calc(100% - 50px);
+        position: relative;
+        
+        .menu-item-wrapper {
+          position: absolute;
+          top: 47%;
+          right: 0;
+          left: 0;
+          
+          margin-top: -5em;
+        }
+      }
     }
   }
 
