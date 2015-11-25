@@ -78,6 +78,20 @@
   @include media($screen-md) {
     display: none;
   }
+  
+  .progress-bullets {
+    position: fixed;
+    top: calc(50% - 48px);
+    right: 3%;
+    
+    .circle {
+      width: 8px;
+      height: 8px;
+      background-color: #B6B4B9; // #424242
+      border-radius: 50%;
+      margin: 6px 0;
+    }
+  }
 }
 
 .steps-container-mobile {
