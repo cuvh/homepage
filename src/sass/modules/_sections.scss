@@ -249,7 +249,7 @@
   @media(max-width: 1000px) {
     .live-editing-image {
       width: 50%;
-      
+
       img {
         float: right;
       }
@@ -257,35 +257,35 @@
   }
 }
 
-.as-seen-on {  
+.as-seen-on {
   img {
     width: 50%;
   }
-  
+
   @media (min-width: $screen-sm) {
     img {
       width: 100%;
     }
-    
+
     [class*="col-"] {
       float: left;
       margin: 0;
       padding: 0 25px;
     }
   }
-  
+
   @media (max-width: 400px) {
     img {
       width: 70%;
     }
   }
-  
+
   @media (max-width: 300px) {
     img {
       width: 80%;
     }
   }
-  
+
   @media (max-width: 250px) {
     img {
       width: 100%;
@@ -373,7 +373,16 @@
 
 .feature {
   margin-bottom: 50px;
-  
+
+  svg {
+    width: 40px;
+    height: 40px;
+
+    path, polygon, rect {
+      fill: #00c091;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
