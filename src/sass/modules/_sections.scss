@@ -149,6 +149,14 @@
       height: calc(100vh - 210px);
     }
   }
+  
+  &.-home.-main-full {
+    @media (max-width: $screen-sm) and (orientation: landscape) {
+      & {
+        height: calc(100vh - 50px);
+      }
+    }
+  }
 
   &.-full {
     min-height: 600px; // fallback
