@@ -149,7 +149,7 @@
       height: calc(100vh - 210px);
     }
   }
-  
+
   &.-home.-main-full {
     @media (max-width: $screen-sm) and (orientation: landscape) {
       & {
@@ -313,6 +313,11 @@
 
   p {
     font-size: 16px;
+  }
+
+  @media(min-width: 2000px)
+  {
+    left: 20%
   }
 
   @include media-min(1280px) {
