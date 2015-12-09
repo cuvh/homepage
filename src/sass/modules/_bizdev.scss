@@ -90,8 +90,15 @@
 			color: #00c091;
 		}
 
-		.bonus-content {
+		div.col-sm-10 {
 			margin-left: 15px;
+		}
+
+		@media (max-width: $screen-xs) {
+			div.col-sm-10 {
+				margin-top: 10px;
+				margin-left: 0;
+			}
 		}
 	}
 }
