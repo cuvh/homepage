@@ -30,11 +30,16 @@
 		"title": "Jobs at Enhancv"
 	},
 	"jobs_list": {
-		
+
 	},
 	"partners": {
 		"description": "Our partners back us up, anytime, anywhere.",
 		"keywords": "Enhancv partners, about our partners, partners, our partners",
 		"title": "Partners of Enhancv"
+	},
+	"bizdev": {
+		"description": "Our partners back us up, anytime, anywhere.",
+		"keywords": "Enhancv partners, about our partners, partners, our partners",
+		"title": "Biz Dev Partners at Enhancv"
 	}
 }
