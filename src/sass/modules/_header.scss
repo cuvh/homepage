@@ -10,20 +10,20 @@
 			height: auto !important;
 		}
 	}
-  
+
     @media (max-width: 770px) {
       & {
         height: 100vh !important;
         padding-bottom: 0;
-        
+
           .container {
             height: 100% !important;
             padding: 0;
-                      
+
             .v-base {
               height: 100% !important;
               padding: 0;
-              
+
               h1 {
                 margin: 0 !important;
                 padding: 10px 0;
@@ -64,9 +64,9 @@
 			right: 14%;
 		}
 
-		& .col-sm-3.m-text-right a {
-			padding: 0 15px;
-		}
+			// & .col-sm-3.m-text-right a {
+			// 	padding: 0 15px;
+			// }
 	}
 }
 

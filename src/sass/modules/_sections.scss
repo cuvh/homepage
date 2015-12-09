@@ -87,7 +87,7 @@
   }
 
   &.-mobile-only {
-    display: none;
+    display: n;
     height: 210px !important;
     line-height: 20px !important;
     border-bottom: 1px solid #e1e1e1;
@@ -418,8 +418,14 @@
   }
 }
 
-@include media($screen-sm) {
+// @include media($screen-sm) {
+//   .coming-soon-green {
+//     margin-top: -45px;
+//   }
+// }
+
+@media(max-width: 768px){
   .coming-soon-green {
-    display: none !important;
+    margin-top: -45px;
   }
 }
