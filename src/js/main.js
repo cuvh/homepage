@@ -10,7 +10,7 @@ $(function() {
     var lastFsiPos = 0;
 
     $(window).scroll(function(event) {
-        
+
         var scroll = $(window).scrollTop();
 
         if (scroll > $(window).height() - 60) {
