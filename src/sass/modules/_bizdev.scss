@@ -80,6 +80,12 @@
 		div.list-item {
 			margin-bottom: 15px;
 		}
+
+		@media (max-width: 800px) {
+			[class*="col-"]:nth-child(odd) {
+				margin-bottom: 15px;
+			}
+		}
 	}
 
 	.bonus {
@@ -94,11 +100,16 @@
 			margin-left: 15px;
 		}
 
-		@media (max-width: $screen-xs) {
+		@media (max-width: 800px) {
 			div.col-sm-10 {
 				margin-top: 10px;
 				margin-left: 0;
 			}
 		}
+	}
+
+	.sub-heading {
+		font-size: 22px;
+		opacity: 0.9;
 	}
 }
