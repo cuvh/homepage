@@ -101,7 +101,15 @@
   margin-left: 20px;
   width: 14px;
   height: 14px;
-  background: url('../images/close-sign.png') center center no-repeat;
+  opacity: 0.2;
+  font-size: 18px !important;
+  padding: 0;
+  padding-left: 20px;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 $nav-width: 310px;
@@ -170,38 +178,38 @@ $nav-width: 310px;
     .buttons-container {
       padding: 0;
       height: calc(100% - 50px);
-    
+
       ul {
         margin: 0;
         height: calc(100% - 50px);
         position: relative;
-        
+
         .menu-item-wrapper {
           position: absolute;
           top: 47%;
           right: 0;
           left: 0;
-          
+
           margin-top: -5em;
         }
       }
     }
   }
-  
+
   @media (max-width: $screen-sm) and (orientation: landscape) {
     overflow-y: scroll;
-    
+
     .buttons-container {
       height: auto;
       padding: 0;
-    
+
       ul {
         margin-top: 30px;
-        
+
         li:last-child {
           margin-bottom: 18px;
         }
-        
+
         .menu-item-wrapper {
           position: initial;
         }
