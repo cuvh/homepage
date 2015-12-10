@@ -1,7 +1,7 @@
 .step-screen {
   padding-right: 100px;
   max-width: 550px;
-  width: 50%;
+  width: 35%;
   position: absolute;
   top: 50%;
   @include transform(translateY(-50%));
@@ -58,13 +58,19 @@
 
 }
 
-.steps-container, .steps-container-mobile {
+.steps-container {
   h2 {
     font-size: 32px;
   }
 
   p {
     font-size: 16px;
+  }
+}
+
+.steps-container-mobile {
+  h2 {
+    font-size: 24px;
   }
 }
 
@@ -107,6 +113,11 @@
 
   .steps-mobile-image {
     position: relative;
+    margin-bottom: 70px;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   h2 {
