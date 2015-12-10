@@ -99,6 +99,7 @@
 }
 .menu-close {
   margin-left: 20px;
+  margin-top: 10px;
   width: 14px;
   height: 14px;
   opacity: 0.2;
@@ -129,7 +130,7 @@ $nav-width: 310px;
     min-height: calc(100% - 50px);
     position: relative;
     padding-left: 21px;
-    padding-top: 6px;
+    padding-top: 20px;
   }
 
   ul {
@@ -277,7 +278,7 @@ $nav-width: 310px;
   z-index: 200;
 
   @include media($screen-sm) {
-    top: 20px;
+    top: 5px !important;
     left: 20px;
   }
 }
