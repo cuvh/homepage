@@ -50,7 +50,7 @@
 	@media (max-width: 770px) {
 		& .col-sm-3 {
 			float: left;
-			margin-left: 10px;
+			margin-left: 20px;
 		}
 
 		& .col-sm-3.m-text-right {
@@ -71,5 +71,6 @@
 }
 
 .fixed-header-elements {
+		padding-top: 25px !important;
     z-index: 25 !important;
 }

@@ -287,6 +287,8 @@ $nav-width: 310px;
   .cta-container,
   .ench-logo {
     position: initial;
+    // position: absolute;
+    // left: 0;
   }
 
   .cta-container {
@@ -311,7 +313,7 @@ $nav-width: 310px;
 .cta-container {
   left: auto;
   right: 50px;
-  margin-top: -10px;
+  margin-top: -4px;
 
   @include media($screen-sm) {
     left: auto;
@@ -363,7 +365,13 @@ $nav-width: 310px;
   .menu-hamb,
   .button-cta {
     float: right;
-    margin-top: 0;
+    margin-top: -5px;
+
+    @media (max-width: 770px) {
+      & {
+        margin-top: 0;
+      }
+    }
   }
 
   .button-cta {
