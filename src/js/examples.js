@@ -16,6 +16,13 @@ $(document).ready(function() {
         });
     }
 
+    var $windowWidth = $(window).width();
+    if ($windowWidth <= 768) {
+        movePersonData('prepend');
+    } else {
+        movePersonData('append');
+    }
+
     $(window).resize(function() {
         var $windowWidth = $(window).width();
         if ($windowWidth <= 768) {
