@@ -1,16 +1,19 @@
 $(document).ready(function() {
     function movePersonData(method) {
-        var $titleBottom = $('.title-bottom'),
-            $titleBottomPersonData = $('.title-bottom .person-data'),
-            personHtml = $titleBottomPersonData.html(),
-            divPersonData = '<div class="-padding-m person-data">' + personHtml + '</div>';
+        var $titleBottom = $('.title-bottom');
+        $titleBottom.each(function(){
+          var $thisTitleBottom = $(this);
+          var $titleBottomPersonData = $thisTitleBottom.find('.person-data');
+          var personHtml = $titleBottomPersonData.html();
+          var divPersonData = '<div class="-padding-m person-data">' + personHtml + '</div>';
 
-        $titleBottomPersonData.remove();
-        if (method == "append") {
-            $titleBottom.append(divPersonData);
-        } else if (method == "prepend") {
-            $titleBottom.prepend(divPersonData);
-        }
+          $titleBottomPersonData.remove();
+          if (method == "append") {
+              $thisTitleBottom.append(divPersonData);
+          } else if (method == "prepend") {
+              $thisTitleBottom.prepend(divPersonData);
+          }
+        });
     }
 
     $(window).resize(function() {
@@ -59,7 +62,7 @@ $(document).ready(function() {
             removeClassShow(lightbox, innerLightbox);
             $('.fixed-header-elements').css('z-index', 25);
           });
-          
+
           $('a.lightbox-hide').click(function () {
             $('a.lightbox-hide').css('opacity', 0);
             $('body').css('overflow-y', 'initial');
