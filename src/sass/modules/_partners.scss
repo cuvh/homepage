@@ -33,11 +33,13 @@
     margin-bottom: 30px;
     padding: 30px;
 
-    @media (max-width: 768px) {
-      & {
-        padding: 40px !important;
-      }
-    }
+
+}
+
+@media (max-width: 768px) {
+  .partners-logos .col-centered {
+    padding: 40px !important;
+  }
 }
 
 .partner-link:hover > img {
