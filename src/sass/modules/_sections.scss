@@ -37,7 +37,7 @@
 
   &.-home {
     background-color: #00c092;
-    background-image: url(/images/home.jpg);
+    background-image: url(/images/landing-img-01.jpg);
     padding-bottom: 170px;
     padding-left: 50px;
     padding-right: 50px;
@@ -62,6 +62,7 @@
 
     @include media($screen-sm) {
       padding: 20px 0;
+      background-image: url(/images/mob-landing-img-01.jpg);
 
       .container {
         display: none;
