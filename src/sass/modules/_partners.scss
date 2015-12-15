@@ -1,10 +1,6 @@
 .partners-header {
-  background:
-    linear-gradient(
-      rgba(0, 192, 146, 0.9),
-      rgba(0, 192, 146, 0.9)
-    ),
-    url('/images/partners/partners-header-image.jpg') !important;
+  background-image: url('/images/partners/partners-header-image.jpg') !important;
+  background-color: rgb(0, 192, 146);
 
   @media (max-width: 770px) {
     & {

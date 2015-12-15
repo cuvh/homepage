@@ -1,11 +1,6 @@
 .bizdev-header {
-	background:
-    linear-gradient(
-      rgba(0, 192, 146, 0.9),
-      rgba(0, 192, 146, 0.9)
-    ),
-    url('/images/bizdev/header-image.jpg') !important;
-
+		background-image: url('/images/bizdev/header-image.jpg') !important;
+		background-color: rgb(0, 192, 146);
 	.button {
 		margin-top: 30px;
 		background: #333;
