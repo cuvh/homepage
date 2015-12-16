@@ -48,13 +48,12 @@
                     files.forEach(function(file) {
                         // var outDir = rootPath + '/build/' + path.basename(file).replace(/\.[^/.]+$/, '');
 
-                        var subDirTree = file.replace(rootPath + '/src/templates/', '').split('/');
+                        var subDirTree = file.replace(rootPath + '/src/templates/', '').split('.')[0];
                         var outDir = rootPath + '/build/';
 
-                        if (subDirTree.length > 1) {
-                            subDirTree.pop();
-                            outDir += subDirTree.join('/') + '/';
-                        }                      
+                        if (subDirTree !== 'index') {
+                            outDir = rootPath + '/build/' + subDirTree;
+                        }
 
                         templatesToCreate.push({
                             outDir: outDir,
@@ -71,7 +70,7 @@
                                     .pipe(compileHandlebars(templateToCreate.templateData, {
                                         batch: [rootPath + "/src/templates/partials"]
                                     }))
-                                    .pipe(rename(path.basename(templateToCreate.templateSrc.replace('.hbs', '.html'))))
+                                    .pipe(rename(path.basename('index.html')))
                                     .pipe(gulp.dest(templateToCreate.outDir))
                                     .on('error', reject)
                                     .on('end', resolve);
