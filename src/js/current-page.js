@@ -7,7 +7,7 @@
   $('.menu ul a').each(function(){
     var $this = $(this);
 
-    if (page == '/') {
+    if (page == '/' && pathName != '/bizdevs/') {
       if ($this.attr('href') == '/index.html') {
         var name = $this.text();
 
