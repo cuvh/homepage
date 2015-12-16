@@ -30,6 +30,10 @@
 }
 .section.examples-section{
 	background: transparent;
+
+  @media (min-width: $screen-sm) and (min-height: 2150px) {
+    height: calc(100vh - 408px);
+  }
 }
 
 .example {
@@ -191,6 +195,14 @@
 			}
 		}
 	}
+}
+
+.-section.-footer {
+  @media (min-width: $screen-md) and (min-height: 1050px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 @media(max-width: 768px) {

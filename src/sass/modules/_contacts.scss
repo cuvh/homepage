@@ -46,4 +46,16 @@
   .button:focus {
     outline: 0;
   }
+
+  @media (min-width: $screen-sm) and (min-height: 1050px) {
+    height: calc(100vh - 472px);
+  }
+}
+
+.-section.-footer {
+  @media (min-width: $screen-md) and (min-height: 1050px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }

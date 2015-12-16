@@ -45,3 +45,17 @@
   -webkit-transition: all ease-in 0.2s;
   -moz-transition: all ease-in 0.2s;
 }
+
+.-section.-footer {
+  @media (min-width: $screen-md) and (min-height: 1050px) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.partners-section {
+  @media (min-width: $screen-sm) and (min-height: 1050px) {
+    height: calc(100vh - 472px);
+  }
+}
