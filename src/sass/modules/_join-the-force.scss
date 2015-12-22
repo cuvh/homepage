@@ -1,0 +1,62 @@
+.starwars-header {
+  background: url('/images/star-wars-bg.jpg') !important;
+
+  .wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .blue-header-title {
+    color: #11dcfa;
+    font-size: 62px !important;
+    text-align: left;
+  }
+
+  .header-text {
+    color: #fbec0b;
+    font-size: 27px;
+    text-align: left;
+  }
+}
+
+.join-the-force-values {
+  background: #fff !important;
+
+  h2 {
+    color: #444;
+    font-size: 42px;
+  }
+  .title-row {
+    .value-heading {
+      color: #444;
+      font-size: 27px;
+    }
+  }
+
+  .value-heading {
+    color: #11dcfa;
+    font-size: 21px;
+  }
+
+  .value-desc {
+    color: #444;
+    font-size: 16px;
+  }
+}
+
+.becoming-part {
+  background: url('/images/star-wars-bg.jpg') !important;
+
+  .value-desc {
+    font-size: 21px;
+  }
+}
+
+.starwars-form {
+  background: #fff !important;
+
+  h2 {
+    color: #444;
+    font-size: 42px;
+  }
+}
