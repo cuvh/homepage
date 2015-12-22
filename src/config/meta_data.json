@@ -32,6 +32,12 @@
 	"jobs_list": {
 
 	},
+	"joinTheForce": {
+		"description": "On a small, relatively unknown planet known as Bulgaria, a young startup called Enhancv was mobilizing its forces.",
+		"keywords": "front-end, Front-End, javascript, Javascript, Jedi Master, jedi master",
+		"title": "Join the Force",
+		"image": "/images/front-end-jedi-master.png"
+	},
 	"partners": {
 		"description": "Our partners back us up, anytime, anywhere.",
 		"keywords": "Enhancv partners, about our partners, partners, our partners",
