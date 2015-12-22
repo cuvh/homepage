@@ -49,14 +49,75 @@
 
   .value-desc {
     font-size: 21px;
+    vertical-align: middle;
+  }
+
+  .becoming-part-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 25px;
+    margin-top: -5px;
+    vertical-align: middle;
+    float: left;
+
+    g path{
+      fill: #11dcfa !important;
+    }
   }
 }
 
 .starwars-form {
   background: #fff !important;
+  padding-bottom: 0 !important;
 
   h2 {
     color: #444;
     font-size: 42px;
+  }
+
+  form .button {
+    border: 0;
+    font-size: 14px;
+    padding: 0;
+    outline: 0;
+    height: 40px;
+    width: 150px;
+    line-height: 0;
+    cursor: pointer;
+  }
+
+  .file-upload {
+    position: relative;
+    overflow: hidden;
+    background-color: #666;
+    margin-bottom: 10px;
+
+    p {
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    .upload {
+      width: 100%;
+      height: 100px;
+      opacity: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .filename {
+    color: #444;
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+
+    @media (max-width: 940px){
+      margin-right: 0;
+    }
   }
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.ench-logo, .feature img').each(function(){
+    $('.ench-logo, .feature img, .becoming-part-icon').each(function(){
         var $img = $(this);
         var imgID = $img.attr('id');
         var imgClass = $img.attr('class');
