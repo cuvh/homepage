@@ -106,27 +106,27 @@
   <div class="section -green -padding-s starwars-form" id="values">
   <div class="container values">
     <h2>Join the Force</h2>
-    <div class="row">
+    <div class="row" id="frm">
       <div class="col-sm-3"></div>
       <div class="col-sm-6">
-        <form action="">
+        <form action="http://static.enhancv.com/send-mail/index.php" enctype="multipart/form-data" method="post">
           <div>
-            <input class="form-control" type="text" placeholder="Your name">
+            <input class="form-control" type="text" name="fullname" placeholder="Your name">
           </div>
           <div>
-            <input class="form-control" type="email" placeholder="Your email">
+            <input class="form-control" type="email" name="email" placeholder="Your email">
           </div>
           <div>
-            <textarea class="form-control" placeholder="Tell us one thing that you are most proud of? Why exactly this?"></textarea>
+            <textarea class="form-control" placeholder="Tell us one thing that you are most proud of? Why exactly this?" name="most-proud"></textarea>
           </div>
           <div>
-            <textarea class="form-control" placeholder="Give us a link(s) to your previous Force-Creations"></textarea>
+            <textarea class="form-control" placeholder="Give us a link(s) to your previous Force-Creations" name="force-creations"></textarea>
           </div>
           <div>
           <span class="filename">No file selected</span>
             <div class="file-upload button">
               <p>Attach resume</p>
-              <input type="file" class="upload" placeholder="Your name">
+              <input type="file" class="upload" placeholder="Your name" name="resume-upload">
             </div>
           </div>
           <div>
@@ -136,6 +136,7 @@
       </div>
     </div>
   </div>
+</div>
 
 {{> footer}}
 
