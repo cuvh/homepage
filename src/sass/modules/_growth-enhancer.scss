@@ -1,0 +1,49 @@
+.growth-enhancer-header {
+	background-image: url('/images/growth-enhancer/header-image.jpg') !important;
+	background-color: rgb(0, 192, 146);
+  font-size: 50px;
+
+  .container {
+    padding: 500px 0 140px 0;
+
+    h1 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.5em;
+    }
+  }
+
+  @include media($screen-lg) {
+    font-size: 35px;
+
+    .container {
+      padding: 200px 0 56px 0;
+    }
+  }
+
+  @include media($screen-sm) {
+    height: auto !important;
+    font-size: 30px;
+  }
+}
+
+.growth-enhancer-about {
+  padding-bottom: 140px !important;
+
+  .about-section {
+    width: 65%;
+    padding: 20px 0;
+
+    h2 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    p {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+}
