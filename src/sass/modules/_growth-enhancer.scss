@@ -29,10 +29,8 @@
   }
 }
 
-.growth-enhancer-about {
-  padding-bottom: 110px !important;
-
-  .about-section {
+.growth-enhancer-section {
+	.about-section {
     width: 65%;
     padding: 20px 0;
 
@@ -43,11 +41,75 @@
 
     p {
       max-width: 100%;
+			font-size: 21px;
       text-align: left;
     }
   }
 }
 
+.growth-enhancer-about {
+  padding-bottom: 110px !important;
+}
+
 .growth-enhancer-resume {
 	background: url('../images/resume-bg.jpg') !important;
+
+	.resume-section {
+		margin-top: 55px;
+
+		[class*="col-"]:nth-child(even) {
+			padding-right: 0;
+		}
+
+		[class*="col-"]:nth-child(odd) {
+			padding-left: 0;
+		}
+
+		p {
+			padding: 0;
+		}
+
+		.-table {
+			margin-bottom: 45px;
+		}
+
+		.-circle {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			border: 1px solid #444;
+			color: #444;
+
+			p {
+				font-weight: 800;
+				width: auto;
+				line-height: 35px;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+
+		.-content {
+			padding-left: 25px;
+
+			.heading {
+				font-weight: 700;
+				font-size: 19px;
+				margin-bottom: 25px;
+			}
+
+			.desc {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.-table {
+	display: table;
+}
+
+.-table-cell {
+	display: table-cell;
 }
