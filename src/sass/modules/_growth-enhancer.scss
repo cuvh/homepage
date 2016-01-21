@@ -113,3 +113,18 @@
 .-table-cell {
 	display: table-cell;
 }
+
+.why-join-us {
+	h2 {
+		color: #00c091;
+	}
+	.bullet {
+		span {
+			color: #fff !important;
+		}
+	}
+	.bullet:before {
+			float: left;
+			margin-top: 16px;
+		}
+}
