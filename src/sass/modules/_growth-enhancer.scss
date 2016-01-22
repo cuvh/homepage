@@ -117,6 +117,7 @@
 
 	.carrousel {
 		.content {
+			width: 100%;
 			display: inline-block;
 			position: relative;
 
@@ -131,11 +132,15 @@
 				margin: auto;
 
 				&.right {
-					right: -13%;
+					right: 5%;
 				}
 
 				&.left {
-					left: -13%;
+					left: 5%;
+				}
+
+				@media(max-width: $screen-sm) {
+					display: none;
 				}
 			}
 		}
@@ -146,7 +151,7 @@
 			text-align: center;
 			margin-top: 80px;
 
-			.circle {
+			.circle-control {
 				margin: 0 4px;
 				display: inline-block;
 				width: 8px;
