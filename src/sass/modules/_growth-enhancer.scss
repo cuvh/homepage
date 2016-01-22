@@ -117,10 +117,38 @@
 	}
 }
 
+.title-row .value-heading {
+	color: #444 !important;
+}
+
+.value-heading {
+  font-size: 32px;
+  text-align: left !important;
+  color: #00c091 !important;
+}
+
+.growth-enhancer-section {
+
+  .value-desc {
+    color: #fff;
+  }
+}
+
+
 .carrousel-wrapper {
 	h2 {
 		margin-bottom: 70px;
-	}
+    color: #00c091;
+    text-align: center;
+  }
+
+  .value-heading {
+    color: #fff;
+  }
+
+  a {
+    cursor: pointer;
+  }
 
 	.carrousel {
 		.content {
