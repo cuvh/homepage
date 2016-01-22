@@ -169,6 +169,12 @@
 	}
 }
 
+.images {
+	[class*="col-"] {
+		padding: 10px;
+	}
+}
+
 .-table {
 	display: table;
 }
