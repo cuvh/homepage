@@ -30,6 +30,10 @@
 }
 
 .growth-enhancer-section {
+	h2 {
+		text-align: center;
+	}
+
 	.about-section {
     width: 65%;
     padding: 20px 0;
@@ -102,6 +106,22 @@
 				font-size: 16px;
 				font-weight: 500;
 			}
+		}
+	}
+}
+
+.carrousel-wrapper {
+	position: relative;
+
+	img.arrow {
+		position: absolute;
+
+		&.right {
+			right: 5%;
+		}
+
+		&.left {
+			left: 5%;
 		}
 	}
 }
