@@ -110,6 +110,16 @@
 	}
 }
 
+.title-row {
+	.value-heading {
+		color: #444 !important;
+	}
+}
+
+.value-heading {
+	color: #00c091 !important;
+}
+
 .carrousel-wrapper {
 	h2 {
 		margin-bottom: 70px;
@@ -173,7 +183,7 @@
 	[class*="col-"] {
 		padding: 0;
 		overflow: hidden;
-		
+
 
 		img {
 			width: 100%;
