@@ -24,7 +24,7 @@
 
   @include media($screen-sm) {
     height: auto !important;
-		
+
     .container {
 	    font-size: 30px;
 		}
@@ -224,7 +224,20 @@
 
 .images {
 	[class*="col-"] {
-		padding: 10px;
+		padding: 5px;
+
+		[class*="col-"] {
+			padding: 0;
+		}
+	}
+
+	.clipping-mask {
+		overflow: hidden;
+		text-align: center;
+
+		img {
+			vertical-align: middle;
+		}
 	}
 }
 
