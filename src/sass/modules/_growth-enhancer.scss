@@ -5,7 +5,7 @@
 	height: 100vh !important;
 
   .container {
-    padding: 300px 0 140px 0;
+    padding: 25% 0 140px 0;
 
     h1 {
       font-size: 1em;
@@ -16,11 +16,11 @@
     }
   }
 
-  @include media($screen-lg) {
+  @include media($screen-lg + 500px) {
     font-size: 35px;
 
     .container {
-      padding: 200px 0 56px 0;
+      padding: 30% 0 56px 0;
     }
   }
 
@@ -28,6 +28,12 @@
     height: auto !important;
     font-size: 30px;
   }
+
+	@media(max-width: 1000px) {
+    .container {
+      padding: 50px 0 0 0;
+    }
+	}
 }
 
 .growth-enhancer-section {
