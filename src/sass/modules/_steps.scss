@@ -4,6 +4,9 @@
   width: 35%;
   position: absolute;
   top: 50%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:hidden;
+  @include transform(translateZ(0));
   @include transform(translateY(-50%));
 
   h2 + p {
@@ -26,6 +29,7 @@
   text-align: left;
   margin-left: 0px;
   opacity: 0;
+  @include transform(translateZ(0));
   // transition: .3s opacity ease-in-out;
 
   img {
@@ -89,6 +93,9 @@
     position: fixed;
     top: calc(50% - 48px);
     right: 103px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:hidden;
+    @include transform(translateZ(0));
 
     .circle {
       width: 8px;
@@ -96,7 +103,6 @@
       background-color: #B6B4B9; // #424242
       border-radius: 50%;
       margin: 10px 0;
-
       @include transition(.2s);
     }
 
@@ -160,5 +166,6 @@
 .v-middle-image {
   position: absolute;
   top: 50%;
+  @include transform(translateZ(0));
   @include transform(translateY(-50%));
 }

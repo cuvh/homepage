@@ -1,19 +1,24 @@
 $(function() {
-    $(document).on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {
+    var $window = $(window), $document = $(document);
+
+    $document.on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {
         e.preventDefault();
+        var $body = $('body');
+        $body.removeClass('is-menu-opened');
+        $(".menu-open").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
+            var $body = $('body');
+            if ($body.hasClass('is-menu-open')) {
+                $body.addClass('is-menu-opened');
+            }
+        });
         $('html, body').scrollTop(0);
-        $('body').toggleClass('is-menu-opened');
+        $body.toggleClass('is-menu-open');
     });
 
-    var $stepsContainer = $('.steps-container');
-    var $stepsNextC = $stepsContainer.next('.section');
-    var lastFsiPos = 0;
+    $window.on('scroll', function() {
+        var $windowEl = $(this), scroll = $windowEl.scrollTop();
 
-    $(window).scroll(function(event) {
-
-        var scroll = $(window).scrollTop();
-
-        if (scroll > $(window).height() - 60) {
+        if (scroll > $windowEl.height() - 60) {
             $('body').removeClass('is-menu-opened');
         }
 
@@ -21,6 +26,11 @@ $(function() {
             $('.cta-container').addClass('swap');
         } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
             $('.cta-container').removeClass('swap');
+        }
+    }).on('load resize', function () {
+        var $windowWidth = $(this).width();
+        if ($windowWidth > 768 && $windowWidth < 941) {
+            $('#home-main-banner').css('height', $('.section.-home').outerHeight(true));
         }
     });
 
@@ -32,10 +42,11 @@ $(function() {
         smoothScrolling: true,
         forceHeight: false
     });
-    // $('.js-slick').slick({
-    //     prevArrow: '.js-prev',
-    //     nextArrow: '.js-next'
-    // });
+
+    $window.on('load', function() {
+        $(this).trigger('resize');
+        s.refresh();
+    });
 
     $('.js-scroll-to').on('click', function(e) {
         e.preventDefault();
@@ -48,5 +59,12 @@ $(function() {
         }, 900, 'swing', function() {
             window.location.hash = target;
         });
+    });
+
+    $('#home-main-banner').waitForImages({
+        finished: function (){
+            $(this).css('opacity', 1);
+        },
+        waitForAll:true
     });
 });

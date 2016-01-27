@@ -1,9 +1,46 @@
+.main-banner {
+  position: absolute;
+  z-index: 19;
+  background-color: #00c092;
+  background-image: url(/images/landing-img-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  @include transition(1.0s);
+  @include media($screen-sm) {
+    background-image: url(/images/mob-landing-img-01.jpg);
+  }
+  &.-main-full {
+    height: -webkit-calc(100vh - 120px);
+    height: calc(100vh - 120px);
+
+    @include media($screen-md) {
+      height: auto;
+    }
+
+    @include media($screen-sm) {
+      height: -webkit-calc(100vh - 210px);
+      height: calc(100vh - 210px);
+    }
+    @media (max-width: $screen-sm) and (orientation: landscape) {
+      & {
+        height: calc(100vh - 50px);
+      }
+    }
+  }
+}
 .section {
   position: relative;
 
   &.-banner {
     background-repeat: no-repeat;
-    // background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -36,8 +73,6 @@
   }
 
   &.-home {
-    background-color: #00c092;
-    background-image: url(/images/landing-img-01.jpg);
     padding-bottom: 170px;
     padding-left: 50px;
     padding-right: 50px;
@@ -62,7 +97,6 @@
 
     @include media($screen-sm) {
       padding: 20px 0;
-      background-image: url(/images/mob-landing-img-01.jpg);
 
       .container {
         display: none;
@@ -308,7 +342,6 @@
   margin-top: 150px;
   padding-bottom: 20px;
   max-width: 30%;
-
 
   h2 {
     margin-bottom: 35px;

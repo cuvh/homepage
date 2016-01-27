@@ -1,76 +1,76 @@
 .header-s {
-	height: auto !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
+    height: auto !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
 
-	.container {
-		padding: 60px 0;
+    .container {
+        padding: 60px 0;
 
-		.v-base {
-			height: auto !important;
-		}
-	}
-
-    @media (max-width: 770px) {
-      & {
-        height: 100vh !important;
-        padding-bottom: 0;
-
-          .container {
-            height: 100% !important;
-            padding: 0;
-
-            .v-base {
-              height: 100% !important;
-              padding: 0;
-
-              h1 {
-                margin: 0 !important;
-                padding: 10px 0;
-              }
-            }
-          }
-      }
+        .v-base {
+            height: auto !important;
+        }
     }
 
-	h1 {
-		font-size: 48px;
-	}
+    @media (max-width: 770px) {
+        & {
+            height: 100vh !important;
+            padding-bottom: 0;
 
-	@include media($screen-sm) {
-		h1 {
-	    font-size: 36px;
-		}
-  }
+            .container {
+                height: 100% !important;
+                padding: 0;
 
-	h1.header-title {
-		margin:0;
-	}
+                .v-base {
+                    height: 100% !important;
+                    padding: 0;
 
-	@media (max-width: 770px) {
-		& .col-sm-3 {
-			float: left;
-			margin-left: 20px;
-		}
+                    h1 {
+                        margin: 0 !important;
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
 
-		& .col-sm-3.m-text-right {
-			right: 40px;
-			// top: 55px;
-		}
-	}
+    h1 {
+        font-size: 48px;
+    }
 
-	@media (max-width: 450px) {
-		& .col-sm-3.m-text-right {
-			right: 14%;
-		}
+    @include media($screen-sm) {
+        h1 {
+            font-size: 36px;
+        }
+    }
 
-			// & .col-sm-3.m-text-right a {
-			// 	padding: 0 15px;
-			// }
-	}
+    h1.header-title {
+        margin: 0;
+    }
+
+    @media (max-width: 770px) {
+        & .col-sm-3 {
+            float: left;
+            margin-left: 20px;
+        }
+
+        & .col-sm-3.m-text-right {
+            right: 40px;
+            // top: 55px;
+        }
+    }
+
+    @media (max-width: 450px) {
+        & .col-sm-3.m-text-right {
+            right: 14%;
+        }
+
+        // & .col-sm-3.m-text-right a {
+        // 	padding: 0 15px;
+        // }
+    }
 }
 
 .fixed-header-elements {
-		padding-top: 25px !important;
+    padding-top: 25px !important;
     z-index: 25 !important;
 }

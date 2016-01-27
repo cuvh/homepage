@@ -1,5 +1,8 @@
-.is-menu-opened {
+.is-menu-open {
   overflow: hidden;
+  .menu {
+    opacity: 1;
+  }
 }
 
 .nav {
@@ -124,7 +127,8 @@ $nav-width: 310px;
   color: #555;
   overflow-y: auto;
   height: 100vh;
-  z-index: 19;
+  z-index: 20;
+  opacity: 0;
 
   .buttons-container {
     min-height: calc(100% - 50px);
@@ -222,13 +226,19 @@ $nav-width: 310px;
   transition: .3s transform ease-in-out;
 }
 @include media-min($screen-sm) {
-  .is-menu-opened {
+  .is-menu-open {
     overflow: hidden;
 
     .menu-open {
       -webkit-transform: translateX(-$nav-width);
       transform: translateX(-$nav-width);
-
+    }
+    .menu-hamb {
+      display: none !important;
+    }
+  }
+  .is-menu-opened {
+    .menu-open {
       &:before {
         content: '';
         position: absolute;
@@ -244,14 +254,11 @@ $nav-width: 310px;
         z-index: 10000;
       }
     }
-    .menu-hamb {
-      display: none !important;
-    }
   }
 }
 
 @include media($screen-sm) {
-  .is-menu-opened .menu {
+  .is-menu-open .menu {
     transform: translateY(0);
   }
 
@@ -278,7 +285,7 @@ $nav-width: 310px;
   z-index: 200;
 
   @include media($screen-sm) {
-    top: 5px !important;
+    top: 25px !important;
     left: 20px;
   }
 }
