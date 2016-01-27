@@ -1,4 +1,18 @@
 $(function() {
+
+    if(navigator.appVersion.indexOf('Edge') > -1) { // if IE
+        $('body').on("mousewheel", function () {
+            // remove default behavior
+            event.preventDefault();
+
+            //scroll without smoothing
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
+    }
+
+
     var $window = $(window), $document = $(document);
 
     $document.on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {

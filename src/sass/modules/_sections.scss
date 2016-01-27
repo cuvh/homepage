@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   opacity: 0;
-  @include transition(1.0s);
+  @include transition(1.0s !important);
   @include media($screen-sm) {
     background-image: url(/images/mob-landing-img-01.jpg);
   }
