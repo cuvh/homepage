@@ -34,12 +34,12 @@
     }
 
     h1 {
-        font-size: 48px;
+        @include font-size(48px);
     }
 
     @include media($screen-sm) {
         h1 {
-            font-size: 36px;
+            @include font-size(36px);
         }
     }
 
@@ -63,10 +63,6 @@
         & .col-sm-3.m-text-right {
             right: 14%;
         }
-
-        // & .col-sm-3.m-text-right a {
-        // 	padding: 0 15px;
-        // }
     }
 }
 

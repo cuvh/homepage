@@ -12,8 +12,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0;
-  @include transition(1.0s !important);
+  @include opacity(0);
+  @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
   @include media($screen-sm) {
     background-image: url(/images/mob-landing-img-01.jpg);
   }
@@ -133,7 +133,7 @@
       max-width: 100% !important;
 
       h1 {
-        font-size: 30px;
+        @include font-size(30px);
       }
     }
 
@@ -234,7 +234,7 @@
     background: #1a1a1a;
     height: 120px;
     line-height: 120px;
-    font-size: 16px;
+    @include font-size(16px);
     padding: 0 50px;
     position: relative;
     z-index: 21;
@@ -265,7 +265,7 @@
     }
 
     .logo {
-      opacity: .5;
+      @include opacity(0.5);
     }
   }
 }
@@ -348,7 +348,7 @@
   }
 
   p {
-    font-size: 16px;
+    @include font-size(16px);
   }
 
   @media(min-width: 2000px)
@@ -441,7 +441,7 @@
   }
 
   p {
-    font-size: 16px;
+    @include font-size(16px);
   }
 
   @include media($screen-sm) {

@@ -1,198 +1,198 @@
 .starwars-header {
- background: url('/images/star-wars-bg.jpg') !important;
+    background: url('/images/star-wars-bg.jpg') !important;
 
- .wrapper {
-   padding-top: 245px;
-   padding-bottom: 165px;
- }
+    .wrapper {
+        padding-top: 245px;
+        padding-bottom: 165px;
+    }
 
- .blue-header-title {
-   color: #11dcfa ;
-   font-size: 62px !important;
-   text-align: left;
-   padding-bottom: 90px;
-   margin: 0;
- }
+    .blue-header-title {
+        color: #11dcfa;
+        @include font-size(62px, true);
+        text-align: left;
+        padding-bottom: 90px;
+        margin: 0;
+    }
 
- .header-text {
-   color: #fbec0b ;
-   font-size: 27px;
-   text-align: left;
-   margin: 0;
- }
+    .header-text {
+        color: #fbec0b;
+        @include font-size(27px);
+        text-align: left;
+        margin: 0;
+    }
 
- @media (max-width: $screen-sm) {
-   & {
-     height: auto !important;
-   }
+    @media (max-width: $screen-sm) {
+        & {
+            height: auto !important;
+        }
 
-   .wrapper {
-     padding-top: 100px;
-     padding-bottom: 30px;
-   }
+        .wrapper {
+            padding-top: 100px;
+            padding-bottom: 30px;
+        }
 
-   .blue-header-title {
-     font-size: 42px !important;
-     padding-bottom: 40px !important;
-   }
+        .blue-header-title {
+            @include font-size(42px, true);
+            padding-bottom: 40px !important;
+        }
 
-   .header-text {
-     font-size: 21px;
-   }
- }
+        .header-text {
+            @include font-size(21px);
+        }
+    }
 
- @media (max-width: $screen-xs) {
-   & {
-     height: auto !important;
-   }
+    @media (max-width: $screen-xs) {
+        & {
+            height: auto !important;
+        }
 
-   .wrapper {
-     padding-top: 90px;
-     padding-bottom: 35px;
-   }
- }
+        .wrapper {
+            padding-top: 90px;
+            padding-bottom: 35px;
+        }
+    }
 }
 
 .join-the-force-values {
- background: #fff !important;
+    background: #fff !important;
 
- .right-side {
-   div {
-     padding: 35px 0 35px 15px;
-   }
- }
+    .right-side {
+        div {
+            padding: 35px 0 35px 15px;
+        }
+    }
 
- .left-side {
-   div {
-     padding: 35px 15px 35px 0;
-   }
- }
+    .left-side {
+        div {
+            padding: 35px 15px 35px 0;
+        }
+    }
 
- h2 {
-   color: #444;
-   font-size: 42px;
-   margin-bottom: 45px;
- }
+    h2 {
+        color: #444;
+        @include font-size(42px);
+        margin-bottom: 45px;
+    }
 
- .title-row {
-   padding-bottom: 25px !important;
+    .title-row {
+        padding-bottom: 25px !important;
 
-   .value-heading {
-     color: #444;
-     font-size: 27px;
-     margin: 0;
-   }
- }
+        .value-heading {
+            color: #444;
+            @include font-size(27px);
+            margin: 0;
+        }
+    }
 
- .value-heading {
-   color: #11dcfa ;
-   font-size: 21px;
- }
+    .value-heading {
+        color: #11dcfa;
+        @include font-size(21px);
+    }
 
- .value-desc {
-   color: #444;
-   font-size: 16px;
- }
+    .value-desc {
+        color: #444;
+        @include font-size(16px);
+    }
 
- @media (max-width: $screen-sm) {
-   .left-side,
-   .right-side {
-     div {
-       padding: 20px 0;
-     }
-   }
- }
+    @media (max-width: $screen-sm) {
+        .left-side,
+        .right-side {
+            div {
+                padding: 20px 0;
+            }
+        }
+    }
 }
 
 .becoming-part {
- background: url('/images/star-wars-bg.jpg') !important;
+    background: url('/images/star-wars-bg.jpg') !important;
 
- [class*="col-"] {
-   margin-bottom: 30px;
- }
+    [class*="col-"] {
+        margin-bottom: 30px;
+    }
 
- .value-desc {
-   color: #fff;
-   font-size: 21px;
-   vertical-align: middle;
- }
+    .value-desc {
+        color: #fff;
+        @include font-size(21px);
+        vertical-align: middle;
+    }
 
- .becoming-part-icon {
-   width: 35px;
-   height: 35px;
-   margin-right: 25px;
-   margin-top: -5px;
-   vertical-align: middle;
-   float: left;
+    .becoming-part-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 25px;
+        margin-top: -5px;
+        vertical-align: middle;
+        float: left;
 
-   g path{
-     fill: #11dcfa  !important;
-   }
- }
+        g path {
+            fill: #11dcfa !important;
+        }
+    }
 
- @media (max-width: $screen-xs) {
-   .value-desc {
-     font-size: 18px;
-   }
+    @media (max-width: $screen-xs) {
+        .value-desc {
+            @include font-size(18px);
+        }
 
-   .becoming-part-icon {
-     width: 25px;
-   }
- }
+        .becoming-part-icon {
+            width: 25px;
+        }
+    }
 }
 
 .starwars-form {
- background: #fff !important;
+    background: #fff !important;
 
- h2 {
-   color: #444;
-   font-size: 42px;
-   margin-bottom: 20px;
- }
+    h2 {
+        color: #444;
+        @include font-size(42px);
+        margin-bottom: 20px;
+    }
 
- form .button {
-   border: 0;
-   font-size: 14px;
-   padding: 0;
-   outline: 0;
-   height: 40px;
-   width: 150px;
-   line-height: 0;
-   cursor: pointer;
- }
+    form .button {
+        border: 0;
+        @include font-size(14px);
+        padding: 0;
+        outline: 0;
+        height: 40px;
+        width: 150px;
+        line-height: 0;
+        cursor: pointer;
+    }
 
- .file-upload {
-   position: relative;
-   overflow: hidden;
-   background-color: #666;
-   margin-bottom: 10px;
+    .file-upload {
+        position: relative;
+        overflow: hidden;
+        background-color: #666;
+        margin-bottom: 10px;
 
-   p {
-     font-size: 14px;
-     margin-top: 12px;
-   }
+        p {
+            @include font-size(14px);
+            margin-top: 12px;
+        }
 
-   .upload {
-     width: 100%;
-     height: 100px;
-     opacity: 0;
-     cursor: pointer;
-     position: absolute;
-     top: 0;
-     right: 0;
-     margin: 0;
-     padding: 0;
-   }
- }
+        .upload {
+            width: 100%;
+            height: 100px;
+            @include opacity(0);
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
 
- .filename {
-   color: #444;
-   float: right;
-   margin-right: 100px;
-   margin-top: 10px;
+    .filename {
+        color: #444;
+        float: right;
+        margin-right: 100px;
+        margin-top: 10px;
 
-   @media (max-width: 940px){
-     margin-right: 0;
-   }
- }
+        @media (max-width: 940px) {
+            margin-right: 0;
+        }
+    }
 }

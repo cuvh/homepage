@@ -12,7 +12,7 @@ $small-social-size: 28px;
     background: #666;
     text-decoration: none;
     color: #1a1a1a;
-    transition: .2s background ease-in-out;
+    @include transition-full(background .2s ease-in-out);
 
     &:hover,
     &:focus {

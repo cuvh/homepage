@@ -1,6 +1,6 @@
 $(function() {
 
-    if(navigator.appVersion.indexOf('Edge') > -1) { // if IE
+    if(navigator.appVersion.indexOf('Edge') > -1) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
         $('body').on("mousewheel", function () {
             // remove default behavior
             event.preventDefault();
@@ -12,17 +12,30 @@ $(function() {
         });
     }
 
-
     var $window = $(window), $document = $(document);
+
+    var disableScroll = function () {
+        $('body').css({overflow: 'hidden'});
+        $document.on("touchmove.nav", function (e) {
+            e.preventDefault();
+        });
+    };
+
+    var enableScroll = function () {
+        $('body').css({'overflow-y': 'auto', 'overflow-x': 'hidden !important'});
+        $document.off("touchmove.nav");
+    };
 
     $document.on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');
+        enableScroll();
         $(".menu-open").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
             var $body = $('body');
             if ($body.hasClass('is-menu-open')) {
                 $body.addClass('is-menu-opened');
+                disableScroll();
             }
         });
         $('html, body').scrollTop(0);

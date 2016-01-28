@@ -28,9 +28,8 @@
   width: 50%;
   text-align: left;
   margin-left: 0px;
-  opacity: 0;
+  @include opacity(0);
   @include transform(translateZ(0));
-  // transition: .3s opacity ease-in-out;
 
   img {
     max-width: 415px;
@@ -41,7 +40,7 @@
   }
 
   @include media($screen-sm) {
-    opacity: 1 !important;
+    @include opacity(1, true);
     width: 100%;
     text-align: center;
   }
@@ -64,17 +63,17 @@
 
 .steps-container {
   h2 {
-    font-size: 32px;
+    @include font-size(32px);
   }
 
   p {
-    font-size: 16px;
+    @include font-size(16px);
   }
 }
 
 .steps-container-mobile {
   h2 {
-    font-size: 24px;
+    @include font-size(24px);
   }
 }
 

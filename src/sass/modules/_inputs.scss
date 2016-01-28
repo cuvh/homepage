@@ -4,11 +4,9 @@
   margin-bottom: 15px;
   border: 2px solid #c6c6c6;
   border-radius: 20px;
-
   font-style: italic;
-  font-size: 14px;
+  @include font-size(14px);
   color: #c6c6c6;
-
   box-shadow: none;
   outline: 0;
 }
