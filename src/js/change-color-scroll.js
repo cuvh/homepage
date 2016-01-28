@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $('.ench-logo, .feature img, .becoming-part-icon').each(function(){
+$(document).ready(function() {
+    $('.ench-logo, .feature img, .becoming-part-icon').each(function() {
         var $img = $(this);
         var imgID = $img.attr('id');
         var imgClass = $img.attr('class');
@@ -20,13 +20,12 @@ $(document).ready(function(){
 
             $img.replaceWith($svg);
 
-        }, 'xml').then(function(){
+        }, 'xml').then(function() {
           $(window).scroll(function () {
             var logo = $('.ench-logo');
             var logoTop = logo.position().top;
-            var logoBottom = logoTop + logo.outerHeight();
 
-            $(".section").each(function(){
+            $(".section").each(function() {
               var whiteSection = $(this);
               var whiteSectionTop = whiteSection.position().top - $(window).scrollTop() + 15;
               var whiteSectionBottom = whiteSection.position().top - $(window).scrollTop() + whiteSection.height();

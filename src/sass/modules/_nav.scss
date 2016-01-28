@@ -1,466 +1,430 @@
-.is-menu-opened {
-  overflow: hidden;
+.is-menu-open {
+    overflow: hidden;
+    .menu {
+        @include opacity(1);
+    }
 }
 
 .nav {
-  font-family: $base-font-family;
-  font-size: 0;
-  list-style-type: none;
+    font-family: $base-font-family;
+    font-size: 0;
+    list-style-type: none;
 
-  &.-center {
-    text-align: center;
-  }
-
-  &.-main {
-    @include media($screen-sm) {
-      margin-top: 60px;
+    &.-center {
+        text-align: center;
     }
-  }
 
-  li {
-    display: inline-block;
-  }
+    &.-main {
+        @include media($screen-sm) {
+            margin-top: 60px;
+        }
+    }
+
+    li {
+        display: inline-block;
+    }
 }
 
 .nav a, .nav-login-button {
-  display: inline-block;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  padding: 0 25px;
-  text-decoration: none;
-  opacity: .75;
+    display: inline-block;
+    @include font-size(16px);
+    line-height: 24px;
+    color: #fff;
+    padding: 0 25px;
+    text-decoration: none;
+    @include opacity(0.75);
 
-  &:hover {
-    opacity: 1;
-  }
+    &:hover {
+        @include opacity(1);
+    }
 }
 
 .nav-login-button {
-  position: relative;
-  top: 5px;
+    position: relative;
+    top: 5px;
 }
 
 .menu-close,
 .menu-hamb {
-  font-size: 22px !important;
-  color: #fff;
-  text-decoration: none;
-  transition: .2s transform ease-in-out;
-  padding: 20px;
-  margin-top: -20px;
-  margin-right: -40px;
-  color: #fff;
+    @include font-size(22px, true);
+    color: #fff;
+    text-decoration: none;
+    @include transition-full(transform .2s ease-in-out);
+    padding: 20px;
+    margin-top: -20px;
+    margin-right: -40px;
+    color: #fff;
 
-  span {
-    position: relative;
-    display: block;
-    width: 19px;
-    height: 2px;
-    background: #fff;
-    font-size: 0;
+    span {
+        position: relative;
+        display: block;
+        width: 19px;
+        height: 2px;
+        background: #fff;
+        font-size: 0;
 
-    &.green-hamburger {
-      background: #07c1a3;
+        &.green-hamburger {
+            background: #07c1a3;
 
-      &:before,
-      &:after {
-        background: #07c1a3;
-      }
+            &:before,
+            &:after {
+                background: #07c1a3;
+            }
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 0;
+            width: 19px;
+            height: 2px;
+            background: #fff;
+            @include transition-full(transform .2s ease-in-out);
+        }
+
+        &:after {
+            top: 6px;
+        }
     }
 
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: -6px;
-      left: 0;
-      width: 19px;
-      height: 2px;
-      background: #fff;
-      transition: .2s transform ease-in-out;
+    &:hover {
+        span:before {
+            @include transform(translateY(-3px));
+        }
+        span:after {
+            @include transform(translateY(3px));
+        }
     }
-
-    &:after {
-      top: 6px;
-    }
-  }
-
-  &:hover {
-    span:before {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
-    }
-    span:after {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
-    }
-  }
 }
-.menu-close {
-  margin-left: 5px;
-  margin-top: 10px;
-  width: 14px;
-  height: 14px;
-  opacity: 0.2;
-  font-size: 18px !important;
-  padding: 0;
-  padding-left: 20px;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
+.menu-close {
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 14px;
+    height: 14px;
+    @include opacity(0.2);
+    @include font-size(18px, true);
+    padding: 0;
+    padding-left: 20px;
+
+    &:hover,
+    &:focus {
+        @include opacity(1);
+    }
 }
 
 $nav-width: 310px;
 .menu {
-  position: absolute;
-  width: $nav-width;
-  top: 0;
-  right: 0;
-  background: #1a1a1a;
-  padding: 30px 30px 30px 50px;
-  color: #555;
-  overflow-y: auto;
-  height: 100vh;
-  z-index: 19;
-
-  .buttons-container {
-    min-height: calc(100% - 50px);
-    position: relative;
-    padding-left: 21px;
-    padding-top: 20px;
-  }
-
-  ul {
-    margin-top: 30px;
-    list-style-type: none;
-    margin-left: 0;
-
-    a {
-      display: inline-block;
-      color: #fff;
-      margin-bottom: 12px;
-      font-size: 20px;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: none;
-        color: #666;
-      }
-
-      &.is-selected:before {
-        content: '— '
-      }
-    }
-
-    &.-secondary a {
-      font-size: 16px;
-      color: #666;
-      margin-bottom: 5px;
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
-
-  @include media($screen-sm) {
-    transition: .3s transform ease-in-out;
-    transform: translateY(-100%);
-    height: auto;
+    position: absolute;
+    width: $nav-width;
+    top: 0;
+    right: 0;
+    background: #1a1a1a;
+    padding: 30px 30px 30px 50px;
+    color: #555;
+    overflow-y: auto;
     height: 100vh;
-    z-index: 40;
-    width: 100%;
-    text-align: center;
-    padding-left: 30px;
+    z-index: 20;
+    @include opacity(0);
 
     .buttons-container {
-      padding: 0;
-      height: calc(100% - 50px);
-
-      ul {
-        margin: 0;
-        height: calc(100% - 50px);
+        min-height: calc(100% - 50px);
         position: relative;
-
-        .menu-item-wrapper {
-          position: absolute;
-          top: 47%;
-          right: 0;
-          left: 0;
-
-          margin-top: -5em;
-        }
-      }
+        padding-left: 21px;
+        padding-top: 20px;
     }
-  }
 
-  @media (max-width: $screen-sm) and (orientation: landscape) {
-    overflow-y: scroll;
-
-    .buttons-container {
-      height: auto;
-      padding: 0;
-
-      ul {
+    ul {
         margin-top: 30px;
+        list-style-type: none;
+        margin-left: 0;
 
-        li:last-child {
-          margin-bottom: 18px;
+        a {
+            display: inline-block;
+            color: #fff;
+            margin-bottom: 12px;
+            @include font-size(20px);
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                color: #666;
+            }
+
+            &.is-selected:before {
+                content: '— '
+            }
         }
 
-        .menu-item-wrapper {
-          position: initial;
+        &.-secondary a {
+            @include font-size(16px);
+            color: #666;
+            margin-bottom: 5px;
+
+            &:hover {
+                @include opacity(0.5);
+            }
         }
-      }
     }
-  }
+
+    @include media($screen-sm) {
+        @include transition-full(transform .3s ease-in-out);
+        @include transform(translateY(-100%));
+        height: auto;
+        height: 100vh;
+        z-index: 40;
+        width: 100%;
+        text-align: center;
+        padding-left: 30px;
+
+        .buttons-container {
+            padding: 0;
+            height: calc(100% - 50px);
+
+            ul {
+                margin: 0;
+                height: calc(100% - 50px);
+                position: relative;
+
+                .menu-item-wrapper {
+                    position: absolute;
+                    top: 47%;
+                    right: 0;
+                    left: 0;
+
+                    margin-top: -5em;
+                }
+            }
+        }
+    }
+
+    @media (max-width: $screen-sm) and (orientation: landscape) {
+        overflow-y: scroll;
+
+        .buttons-container {
+            height: auto;
+            padding: 0;
+
+            ul {
+                margin-top: 30px;
+
+                li:last-child {
+                    margin-bottom: 18px;
+                }
+
+                .menu-item-wrapper {
+                    position: initial;
+                }
+            }
+        }
+    }
 }
+
 .menu-open {
-  transition: .3s transform ease-in-out;
+    @include transition-full(transform .3s ease-in-out);
 }
+
 @include media-min($screen-sm) {
-  .is-menu-opened {
-    overflow: hidden;
+    .is-menu-open {
+        overflow: hidden;
 
-    .menu-open {
-      -webkit-transform: translateX(-$nav-width);
-      transform: translateX(-$nav-width);
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, .4);
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-        z-index: 10000;
-      }
+        .menu-open {
+            @include transform(translateX(-$nav-width));
+        }
+        .menu-hamb {
+            display: none !important;
+        }
     }
-    .menu-hamb {
-      display: none !important;
+    .is-menu-opened {
+        .menu-open {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, .4);
+                -ms-user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                user-select: none;
+                z-index: 10000;
+            }
+        }
     }
-  }
 }
 
 @include media($screen-sm) {
-  .is-menu-opened .menu {
-    transform: translateY(0);
-  }
+    .is-menu-open .menu {
+        @include transform(translateY(0));
+    }
 
-  .js-close-menu {
-    position: absolute;
-    right: 20%;
-    top: 0;
-  }
+    .js-close-menu {
+        position: absolute;
+        right: 20%;
+        top: 0;
+    }
 
-  .button-cta {
-    // display: none !important;
-    opacity: 0 !important;
-
-    @include transition(0.15s);
-    transition-delay: 1s;
-  }
+    .button-cta {
+        // display: none !important;
+        @include opacity(0, true);
+        @include transition(0.15s);
+        transition-delay: 1s;
+    }
 }
 
 .cta-container,
 .ench-logo {
-  position: fixed;
-  top: 55px;
-  left: 50px;
-  z-index: 200;
+    position: fixed;
+    top: 55px;
+    left: 50px;
+    z-index: 200;
 
-  @include media($screen-sm) {
-    top: 5px !important;
-    left: 20px;
-  }
+    @include media($screen-sm) {
+        top: 25px !important;
+        left: 20px;
+    }
 }
 
 @media (max-width: 800px) {
-  .cta-container,
-  .ench-logo {
-    position: initial;
-    // position: absolute;
-    // left: 0;
-  }
+    .cta-container,
+    .ench-logo {
+        position: initial;
+        // position: absolute;
+        // left: 0;
+    }
 
-  .cta-container {
-    float: right !important;
-    margin-right: 50px;
-  }
+    .cta-container {
+        float: right !important;
+        margin-right: 50px;
+    }
 }
 
 .-home {
-  .cta-container {
-    margin-right: 0;
+    .cta-container {
+        margin-right: 0;
 
-    @media (max-width: 770px) {
-      & {
-        margin-top: -5px;
-        margin-right: 50px;
-      }
+        @media (max-width: 770px) {
+            & {
+                margin-top: -5px;
+                margin-right: 50px;
+            }
+        }
     }
-  }
 }
 
 .cta-container {
-  left: auto;
-  right: 50px;
-  margin-top: -4px;
-
-  @include media($screen-sm) {
     left: auto;
-    top: 25px;
-    right: 40px;
-  }
-
-  .button-cta {
-    margin-top: -10px;
-    // display: none;
-    display: inline-block;
-    visibility: hidden;
-    opacity: 0;
-    margin-right: -25px;
-
-    @include transition(0.5s);
-    transition-delay: 0.1s;
-
-    &.-trans {
-      background: #000;
-      //border: none;
-
-      &:hover,
-      &:focus {
-        background: rgba(#000, .7);
-      }
-    }
+    right: 50px;
+    margin-top: -4px;
 
     @include media($screen-sm) {
-      margin-top: -5px;
+        left: auto;
+        top: 25px;
+        right: 40px;
     }
-  }
 
-  .header-button {
-    border: none !important;
-  }
+    .button-cta {
+        margin-top: -10px;
+        // display: none;
+        display: inline-block;
+        visibility: hidden;
+        @include opacity(0);
+        margin-right: -25px;
+        @include transition(0.5s);
+        transition-delay: 0.1s;
 
-  .menu-hamb {
-    display: inline-block;
-    visibility: visible;
-    opacity: 1;
+        &.-trans {
+            background: #000;
 
-    @include transition(0.5s);
-    transition-delay: 0.1s;
-  }
+            &:hover,
+            &:focus {
+                background: rgba(#000, .7);
+            }
+        }
+
+        @include media($screen-sm) {
+            margin-top: -5px;
+        }
+    }
+
+    .header-button {
+        border: none !important;
+    }
+
+    .menu-hamb {
+        display: inline-block;
+        visibility: visible;
+        @include opacity(1);
+        @include transition(0.5s);
+        transition-delay: 0.1s;
+    }
 }
 
 .-home {
-  .menu-hamb,
-  .button-cta {
-    float: right;
-    margin-top: -5px;
+    .menu-hamb,
+    .button-cta {
+        float: right;
+        margin-top: -5px;
 
-    @media (max-width: 770px) {
-      & {
-        margin-top: 0;
-      }
+        @media (max-width: 770px) {
+            & {
+                margin-top: 0;
+            }
+        }
     }
-  }
 
-  .button-cta {
-    margin-right: -40px;
-  }
+    .button-cta {
+        margin-right: -40px;
+    }
 }
 
 .-home .swap {
-  .button-cta {
-    visibility: visible;
-    opacity: 1;
-  }
-  .menu-hamb {
-    visibility: hidden;
-    opacity: 0;
-  }
+    .button-cta {
+        visibility: visible;
+        @include opacity(1);
+    }
+    .menu-hamb {
+        visibility: hidden;
+        @include opacity(0);
+    }
 }
 
 .go-to-section {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  margin-left: -10px;
-  padding: 20px;
-  width: 20px;
-  height: 18px;
-  background: url('../images/arrow-down.png') center center no-repeat;
-  color: #fff;
-  text-decoration: none;
-  animation: 1s gotosection infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -10px;
+    padding: 20px;
+    width: 20px;
+    height: 18px;
+    background: url('../images/arrow-down.png') center center no-repeat;
+    color: #fff;
+    text-decoration: none;
+    &.active {
+        @include animation('gotosection 1s linear infinite');
+    }
 
-  &:hover {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
+    /*&:hover {
+        @include transform(translateY(10px));
+    }*/
 
-  @include media($screen-sm) {
-    display: none !important;
-  }
+    @include media($screen-sm) {
+        display: none !important;
+    }
 }
 
-
-@-moz-keyframes gotosection {
-  0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-
-  50% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes gotosection {
-  0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-
-  50% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-
-@keyframes gotosection {
-  0% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-
-  50% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
+@include keyframes(gotosection) {
+    0% {
+        @include transform(translateY(0px));
+    }
+    50% {
+        @include transform(translateY(10px));
+    }
+    100% {
+        @include transform(translateY(0px));
+    }
 }

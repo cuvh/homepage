@@ -8,5 +8,5 @@
         filename = filename.substring(lastIndex + 1);
     }
     $('.filename').text(filename);
-});
+  });
 }());
