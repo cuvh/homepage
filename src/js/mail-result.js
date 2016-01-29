@@ -4,8 +4,14 @@ $(document).ready(function() {
   var hash = window.location.href.substring(window.location.href.indexOf("?"));
 
   if (hash === "?sent=true") {
-    window.location.hash = "#frm";
-    $(".starwars-form .container").html("<h2>Thank you, we will contact you soon! <br>May the force be with you!</h2>");
+    if (pathname == "/join-the-force.html") {
+      window.location.hash = "#frm";
+      $(".starwars-form .container").html("<h2>Thank you, we will contact you soon! <br>May the force be with you!</h2>");
+    }
+    else if (pathname == "/growth-enhancer.html") {
+      window.location.hash = "#frm";
+      $(".growth-enhancer-form .container").html("<h2>Thank you, we will contact you soon!</h2>");
+    }
   }
 
 }());
