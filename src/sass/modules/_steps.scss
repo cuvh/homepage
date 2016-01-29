@@ -95,7 +95,11 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility:hidden;
     @include transform(translateZ(0));
+    @include opacity(0);
 
+    &.loaded {
+      @include opacity(1);
+    }
     .circle {
       width: 8px;
       height: 8px;
@@ -104,7 +108,6 @@
       margin: 10px 0;
       @include transition(.2s);
     }
-
     @media(max-width: 1260px) {
       display: none;
     }

@@ -1,7 +1,7 @@
 .is-menu-open {
     overflow: hidden;
     .menu {
-        @include opacity(1);
+        //z-index: 20;
     }
 }
 
@@ -42,6 +42,12 @@
 .nav-login-button {
     position: relative;
     top: 5px;
+}
+
+@include media($screen-md) {
+    .home-banner-nav .js-scroll-to {
+        display: none;
+    }
 }
 
 .menu-close,
@@ -126,8 +132,11 @@ $nav-width: 310px;
     color: #555;
     overflow-y: auto;
     height: 100vh;
-    z-index: 20;
+    z-index: 19;
     @include opacity(0);
+    &.loaded {
+        @include opacity(1);
+    }
 
     .buttons-container {
         min-height: calc(100% - 50px);
@@ -231,14 +240,6 @@ $nav-width: 310px;
         overflow: hidden;
 
         .menu-open {
-            @include transform(translateX(-$nav-width));
-        }
-        .menu-hamb {
-            display: none !important;
-        }
-    }
-    .is-menu-opened {
-        .menu-open {
             &:before {
                 content: '';
                 position: absolute;
@@ -253,6 +254,15 @@ $nav-width: 310px;
                 user-select: none;
                 z-index: 10000;
             }
+            @include transform(translateX(-$nav-width));
+        }
+        .menu-hamb {
+            display: none !important;
+        }
+    }
+    .is-menu-opened {
+        .menu-open {
+
         }
     }
 }
@@ -404,17 +414,16 @@ $nav-width: 310px;
     background: url('../images/arrow-down.png') center center no-repeat;
     color: #fff;
     text-decoration: none;
+
     &.active {
         @include animation('gotosection 1s linear infinite');
     }
-
+    @include media($screen-md) {
+        display: none !important;
+    }
     /*&:hover {
         @include transform(translateY(10px));
     }*/
-
-    @include media($screen-sm) {
-        display: none !important;
-    }
 }
 
 @include keyframes(gotosection) {

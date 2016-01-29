@@ -23,6 +23,7 @@
 
 .section.examples-section {
     background: transparent;
+    position: static;
 
     @media (min-width: $screen-sm) and (min-height: 2150px) {
         height: calc(100vh - 408px);
