@@ -82,17 +82,21 @@ $(document).ready(function(){
     moveRight();
   });
 
-  swipedetect($('.carrousel-wrapper').get(0), function(swipeDir){
-    if (swipeDir == 'left') {
-      moveRight();
-    }
-    if (swipeDir == 'right') {
-      moveLeft();
-    }
-    else {
-        return true;
-    }
-  });
+  var carousel = $('.carrousel-wrapper').get(0);
+  if (carousel) {
+    swipedetect(carousel, function(swipeDir){
+      if (swipeDir == 'left') {
+        moveRight();
+      }
+      if (swipeDir == 'right') {
+        moveLeft();
+      }
+      else {
+          return true;
+      }
+    });
+  }
+
 
   $('.circle-control').click(function(){
     var $this = $(this);
