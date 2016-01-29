@@ -101,6 +101,8 @@ $(function() {
             waitForAll: true
         });
     } else {
-        $('.menu').addClass('loaded');
+        $window.on('load', function() {
+            $('.menu').addClass('loaded');
+        });
     }
 });

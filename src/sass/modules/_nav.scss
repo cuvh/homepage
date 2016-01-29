@@ -1,8 +1,5 @@
 .is-menu-open {
     overflow: hidden;
-    .menu {
-        //z-index: 20;
-    }
 }
 
 .nav {
@@ -296,6 +293,12 @@ $nav-width: 310px;
     @include media($screen-sm) {
         top: 25px !important;
         left: 20px;
+    }
+}
+
+.cta-container {
+    &.in-back {
+        z-index: -1;
     }
 }
 
