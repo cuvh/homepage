@@ -43,10 +43,12 @@
         }
 
         .job-image {
-            background-color: #aaa;
             width: 100%;
-            height: 270px;
             border-radius: 5px;
+
+            img {
+              border-radius: 5px;
+            }
         }
 
         .job-info {
