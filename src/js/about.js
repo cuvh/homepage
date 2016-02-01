@@ -1,19 +1,16 @@
 $(document).ready(function () {
-    var $window = $(window), $windowWidth = $window.width();
-    if ($windowWidth <= 768) {
-        $('.open-job-positions').html('Apply');
-    } else {
-        $('.open-job-positions').html('Apply at work@enhancv.com');
-    }
+    var $window = $(window), $openPositions = $('.open-job-positions');
 
-    $window.on('resize', function () {
-        var $windowWidth = $(this).width();
-        if ($windowWidth <= 768) {
-            $('.open-job-positions').html('Apply');
-        } else {
-            $('.open-job-positions').html('Apply at work@enhancv.com');
-        }
-    });
+    if ($openPositions.length > 0) {
+        $window.on('load resize', function () {
+            var $windowWidth = $(this).width();
+            if ($windowWidth <= 768) {
+                $openPositions.html('Apply');
+            } else {
+                $openPositions.html('Apply at work@enhancv.com');
+            }
+        });
+    }
 
     var $memberWrapper = $('.member-wrapper');
 

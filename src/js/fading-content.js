@@ -3,5 +3,6 @@ $(document).ready(function () {
 });
 
 $(window).on('beforeunload', function () {
+  $('.menu').removeClass('loaded');
   $('body').css('opacity', 0);
 });

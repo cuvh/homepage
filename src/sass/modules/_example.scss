@@ -137,6 +137,8 @@
         top: 47px;
         right: 4%;
         z-index: 103;
+        width: 0;
+        height: 0;
         @include transition(.15s);
 
         &:hover > i,

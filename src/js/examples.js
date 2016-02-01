@@ -45,36 +45,33 @@ $(document).ready(function () {
         innerLightbox.css('opacity', '0');
     }
 
+    function handleHide(lightbox, innerLightbox, $menuContainer) {
+        $('a.lightbox-hide').css({'opacity': 0, 'width': 0, 'height': 0});
+        $('body').css('overflow-y', 'auto');
+        $('.inner-lightbox').css('height', '');
+        removeClassShow(lightbox, innerLightbox);
+        $('.fixed-header-elements').css('z-index', 25);
+        $menuContainer.removeClass('in-back');
+    }
+
     $('a.example-image').on('click', function () {
         var lightBoxId = $(this).attr('href');
         var innerLightbox = $(lightBoxId);
         var lightbox = $('.lightbox');
         $('body').css('overflow-y', 'hidden');
         $('.fixed-header-elements').css('cssText', 'z-index: 20 !important');
-        $('a.lightbox-hide').css('opacity', 1);
+        $('a.lightbox-hide').css({'opacity': 1, 'width': 'auto', 'height': 'auto'});
         var $menuContainer = $('.examples-header').find('.cta-container');
         $menuContainer.addClass('in-back');
 
         if (lightbox.hasClass('hide') && innerLightbox.hasClass('hide')) {
             removeClassHide(lightbox, innerLightbox);
             $(innerLightbox).on('click', function () {
-                $('a.lightbox-hide').css('opacity', 0);
-                $('body').css('overflow-y', 'initial');
-                $('.inner-lightbox').css('height', '');
-                removeClassShow(lightbox, innerLightbox);
-                $('.fixed-header-elements').css('z-index', 25);
-                $menuContainer.removeClass('in-back');
+                handleHide(lightbox, innerLightbox, $menuContainer);
             });
-
             $('a.lightbox-hide').on('click', function () {
-                $('a.lightbox-hide').css('opacity', 0);
-                $('body').css('overflow-y', 'initial');
-                $('.inner-lightbox').css('height', '');
-                removeClassShow(lightbox, innerLightbox);
-                $('.fixed-header-elements').css('z-index', 25);
-                $menuContainer.removeClass('in-back');
+                handleHide(lightbox, innerLightbox, $menuContainer);
             });
-
             $(lightbox).on('click', function () {
                 removeClassShow(lightbox, innerLightbox);
             });
@@ -83,7 +80,6 @@ $(document).ready(function () {
             $(document).on('click', function () {
                 removeClassHide(lightbox, innerLightbox);
             });
-
             $(lightbox).on('click', function () {
                 removeClassHide(lightbox, innerLightbox);
             });

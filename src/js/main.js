@@ -1,15 +1,34 @@
 $(function() {
 
-    if(navigator.appVersion.indexOf('Edge') > -1) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
-        $('body').on("mousewheel", function () {
-            // remove default behavior
-            event.preventDefault();
+    function whichTransitionEvent() {
+        var el = document.createElement('fake'),
+            transEndEventNames = {
+                'WebkitTransition' : 'webkitTransitionEnd', // Saf 6, Android Browser
+                'MozTransition' : 'transitionend', // only for FF < 15
+                'transition' : 'transitionend' // IE10, Opera, Chrome, FF 15+, Saf 7+
+            };
 
-            //scroll without smoothing
-            var wheelDelta = event.wheelDelta;
-            var currentScrollPosition = window.pageYOffset;
-            window.scrollTo(0, currentScrollPosition - wheelDelta);
-        });
+        for (var t in transEndEventNames) {
+            if ( el.style[t] !== undefined ) {
+                return transEndEventNames[t];
+            }
+        }
+    }
+
+    var transEndEventName = whichTransitionEvent();
+
+    if ($('.wrap-examples').length == 0) {
+        if (navigator.appVersion.indexOf('Edge') > -1 || navigator.userAgent.match(/Trident\/7\./)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+            $('body').on("mousewheel", function () {
+                // remove default behavior
+                event.preventDefault();
+
+                //scroll without smoothing
+                var wheelDelta = event.wheelDelta;
+                var currentScrollPosition = window.pageYOffset;
+                window.scrollTo(0, currentScrollPosition - wheelDelta);
+            });
+        }
     }
 
     var $window = $(window), $document = $(document);
@@ -28,13 +47,15 @@ $(function() {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');
-        $(".menu-open").one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
+        $(".menu-open").one(transEndEventName, function() {
             var $body = $('body');
             if ($body.hasClass('is-menu-open')) {
+                $('.cta-container').addClass('hide');
                 $body.addClass('is-menu-opened');
                 disableScrollTouch();
             } else {
-               enableScrollTouch();
+                $('.cta-container').removeClass('hide');
+                enableScrollTouch();
             }
         });
         $('html, body').scrollTop(0);
@@ -69,7 +90,6 @@ $(function() {
         s.refresh();
     });
 
-
     $('.js-scroll-to').on('click', function(e) {
         e.preventDefault();
 
@@ -93,16 +113,23 @@ $(function() {
         $sectionHome.waitForImages({
             finished: function () {
                 var $el = $(this);
-                $el.one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function () {
-                    $('.menu').addClass('loaded');
-                    $('#steps-container').find('.progress-bullets').addClass('loaded');
-                }).css('opacity', 1);
+                $el.on(transEndEventName, function (e) {
+                    console.log(e.originalEvent.propertyName);
+                    if (e.originalEvent.propertyName == 'opacity') {
+                        $('.menu').addClass('loaded');
+                        $('#steps-container').find('.progress-bullets').addClass('loaded');
+                        $(this).unbind(transEndEventName, arguments.callee); //unbind *just this handler*
+                    }
+                });
+                $el.css('opacity', 1);
             },
             waitForAll: true
         });
     } else {
         $window.on('load', function() {
-            $('.menu').addClass('loaded');
+            setTimeout(function() {
+                $('.menu').addClass('loaded');
+            }, 400);
         });
     }
 });
