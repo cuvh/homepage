@@ -99,12 +99,6 @@ $(document).ready(function () {
                             $('.inner-lightbox').css('height', '100vh');
                         }
                     });
-
-                    /*$('html,body').animate({
-                     scrollTop: target.offset().top
-                     }, 1000, 'swing', function(){
-                     $('.inner-lightbox').css('height', '100vh');
-                     });*/
                     return false;
                 }
             }

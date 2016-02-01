@@ -1,5 +1,7 @@
 $(function() {
 
+    var scrollrPages = ["", "index.html", "join-the-force.html", "growth-enhancer.html"];
+
     function whichTransitionEvent() {
         var el = document.createElement('fake'),
             transEndEventNames = {
@@ -23,10 +25,12 @@ $(function() {
                 // remove default behavior
                 event.preventDefault();
 
-                //scroll without smoothing
-                var wheelDelta = event.wheelDelta;
-                var currentScrollPosition = window.pageYOffset;
-                window.scrollTo(0, currentScrollPosition - wheelDelta);
+                if ($(this).css('overflow') != 'hidden') {
+                    //scroll without smoothing
+                    var wheelDelta = event.wheelDelta;
+                    var currentScrollPosition = window.pageYOffset;
+                    window.scrollTo(0, currentScrollPosition - wheelDelta);
+                }
             });
         }
     }
@@ -76,19 +80,27 @@ $(function() {
         }
     });
 
-    var s = skrollr.init({
-        mobileCheck: function() {
-            return false;
-        },
-        smoothScrollingDuration: 1,
-        smoothScrolling: true,
-        forceHeight: false
-    });
+    var s;
 
-    $window.on('load', function() {
-        $(this).trigger('resize');
-        s.refresh();
-    });
+    if ($.inArray(location.pathname.substring(1), scrollrPages) > -1) {
+        s = skrollr.init({
+            mobileCheck: function () {
+                return false;
+            },
+            smoothScrollingDuration: 1,
+            smoothScrolling: true,
+            forceHeight: false
+        });
+
+        $window.on('load', function () {
+            $(this).trigger('resize');
+            s.refresh();
+        });
+    } else {
+        $window.on('load', function () {
+            $(this).trigger('resize');
+        });
+    }
 
     $('.js-scroll-to').on('click', function(e) {
         e.preventDefault();
@@ -100,11 +112,6 @@ $(function() {
             easing: 'swing'
         });
 
-        /*$('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function() {
-            window.location.hash = target;
-        });*/
     });
 
     $('.apply-btn').on('click', function(e) {
