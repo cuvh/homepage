@@ -107,6 +107,15 @@ $(function() {
         });*/
     });
 
+    $('.apply-btn').on('click', function(e) {
+      var $target = $('.apply-form');
+
+      $target.animatescroll({
+          easing: 'swing'
+      });
+
+    });
+
     var $sectionHome = $('.section.-home');
 
     if ($sectionHome.length > 0) {

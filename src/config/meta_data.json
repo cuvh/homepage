@@ -38,11 +38,17 @@
 		"title": "Join the Force",
 		"image": "/images/front-end-jedi-master.png"
 	},
+	"designer": {
+		"description": "We are looking for a part-time graphic designer, possible a recent grad, who will help our growth team with stunning visual designs.",
+		"keywords": "graphic, designer, job, enhancv, part, time, part-time",
+		"title": "Part-time Graphic Designer",
+		"image": "/images/job/graphic-designer/image.jpg"
+	},
 	"growthEnhancer": {
 		"description": "On a small, relatively unknown planet known as Bulgaria, a young startup called Enhancv was mobilizing its forces.",
-		"keywords": "front-end, Front-End, javascript, Javascript, Jedi Master, jedi master",
+		"keywords": "marketing, Marketing, job, growth, enhancv",
 		"title": "Growth Enhancer",
-		"image": "/images/front-end-jedi-master.png"
+		"image": "/images/growth-enhancer/og-image.jpg"
 	},
 	"partners": {
 		"description": "Our partners back us up, anytime, anywhere.",
