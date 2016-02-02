@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     if ($('.progress-bullets').length > 0) {
-        $(window).on('scroll', function () {
+        $(window).on('scroll', $.throttle(50, function() {
             $('.v-middle-image').each(function () {
                 if ($(this).css('opacity') > 0) {
                     var step = $(this).data('anchor-target');
@@ -17,6 +17,6 @@
                     }
                 }
             });
-        });
+        }));
     }
 }());

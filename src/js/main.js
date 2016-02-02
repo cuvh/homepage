@@ -19,8 +19,11 @@ $(function() {
 
     var transEndEventName = whichTransitionEvent();
 
+    var browser = $.ua.browser.name, browserVersion = parseInt($.ua.browser.version.split('.')[0], 10);
+
     if ($('.wrap-examples').length == 0) {
-        if (navigator.appVersion.indexOf('Edge') > -1 || navigator.userAgent.match(/Trident\/7\./)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+        if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+            console.log('HEREEEE');
             $('body').on("mousewheel", function () {
                 // remove default behavior
                 event.preventDefault();
@@ -66,7 +69,7 @@ $(function() {
         $body.toggleClass('is-menu-open');
     });
 
-    $window.on('scroll', function() {
+    $window.on('scroll', $.throttle(150, function() {
         var $windowEl = $(this), scroll = $windowEl.scrollTop();
 
         if (scroll > $windowEl.height() - 60) {
@@ -78,7 +81,7 @@ $(function() {
         } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
             $('.cta-container').removeClass('swap');
         }
-    });
+    }));
 
     var s;
 
@@ -87,8 +90,7 @@ $(function() {
             mobileCheck: function () {
                 return false;
             },
-            smoothScrollingDuration: 1,
-            smoothScrolling: true,
+            smoothScrolling: false,
             forceHeight: false
         });
 
@@ -111,16 +113,14 @@ $(function() {
         $target.animatescroll({
             easing: 'swing'
         });
-
     });
 
-    $('.apply-btn').on('click', function(e) {
-      var $target = $('.apply-form');
+    $('.apply-btn').on('click', function() {
+        var $target = $('.apply-form');
 
-      $target.animatescroll({
+        $target.animatescroll({
           easing: 'swing'
-      });
-
+        });
     });
 
     var $sectionHome = $('.section.-home');
@@ -130,7 +130,6 @@ $(function() {
             finished: function () {
                 var $el = $(this);
                 $el.on(transEndEventName, function (e) {
-                    console.log(e.originalEvent.propertyName);
                     if (e.originalEvent.propertyName == 'opacity') {
                         $('.menu').addClass('loaded');
                         $('#steps-container').find('.progress-bullets').addClass('loaded');
