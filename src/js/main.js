@@ -62,13 +62,11 @@ $(function() {
         $('html, body').scrollTop(0);
         $body.toggleClass('is-menu-open');
         if ($body.hasClass('is-menu-open')) {
-            console.log('aaaaaaa3');
             $('.cta-container').addClass('hide');
-            //disableScrollTouch();
+            disableScrollTouch();
         } else {
-            console.log('aaaaaaa4');
             $('.cta-container').removeClass('hide');
-            //enableScrollTouch();
+            enableScrollTouch();
         }
     });
 
