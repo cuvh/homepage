@@ -103,10 +103,10 @@
 }
 
 .menu-close {
-    margin-left: 5px;
+    margin-left: 35px;
     margin-top: 10px;
-    width: 14px;
-    height: 14px;
+    //width: 14px;
+    //height: 14px;
     @include opacity(0.2);
     @include font-size(18px, true);
     padding: 0;
@@ -258,11 +258,6 @@ $nav-width: 310px;
             display: none !important;
         }
     }
-    .is-menu-opened {
-        .menu-open {
-
-        }
-    }
 }
 
 @include media($screen-sm) {
@@ -272,8 +267,9 @@ $nav-width: 310px;
 
     .js-close-menu {
         position: absolute;
-        right: 20%;
+        right: 14%;
         top: 0;
+        margin-left: 5px;
     }
 
     .button-cta {
@@ -425,9 +421,6 @@ $nav-width: 310px;
     @include media($screen-md) {
         display: none !important;
     }
-    /*&:hover {
-        @include transform(translateY(10px));
-    }*/
 }
 
 @include keyframes(gotosection) {
