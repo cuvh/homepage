@@ -2,6 +2,7 @@ $(document).ready(function() {
   'use strict';
 
   var hash = window.location.href.substring(window.location.href.indexOf("?"));
+  var pathname = window.location.pathname;
 
   if (hash === "?sent=true") {
     if (pathname == "/join-the-force.html") {
