@@ -178,8 +178,10 @@ $nav-width: 310px;
     @include media($screen-sm) {
         @include transition-full(transform .3s ease-in-out);
         @include transform(translateY(-100%));
-        height: auto;
-        height: 100vh;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        margin: auto;
         z-index: 40;
         width: 100%;
         text-align: center;
@@ -191,15 +193,14 @@ $nav-width: 310px;
 
             ul {
                 margin: 0;
-                height: calc(100% - 50px);
+                //height: calc(100% - 50px);
                 position: relative;
 
-                .menu-item-wrapper {
+                &.menu-item-wrapper {
                     position: absolute;
                     top: 47%;
                     right: 0;
                     left: 0;
-
                     margin-top: -5em;
                 }
             }
