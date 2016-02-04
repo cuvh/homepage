@@ -23,7 +23,6 @@ $(function() {
 
     if ($('.wrap-examples').length == 0) {
         if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
-            console.log('HEREEEE');
             $('body').on("mousewheel", function () {
                 // remove default behavior
                 event.preventDefault();
@@ -54,22 +53,26 @@ $(function() {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');
-        $(".menu-open").one(transEndEventName, function() {
-            var $body = $('body');
-            if ($body.hasClass('is-menu-open')) {
-                $('.cta-container').addClass('hide');
-                $body.addClass('is-menu-opened');
-                disableScrollTouch();
-            } else {
-                $('.cta-container').removeClass('hide');
-                enableScrollTouch();
+        $(".menu-open:first").one(transEndEventName, function() {
+            var $bodyEl = $('body');
+            if ($bodyEl.hasClass('is-menu-open')) {
+                $bodyEl.addClass('is-menu-opened');
             }
         });
         $('html, body').scrollTop(0);
         $body.toggleClass('is-menu-open');
+        if ($body.hasClass('is-menu-open')) {
+            console.log('aaaaaaa3');
+            $('.cta-container').addClass('hide');
+            //disableScrollTouch();
+        } else {
+            console.log('aaaaaaa4');
+            $('.cta-container').removeClass('hide');
+            //enableScrollTouch();
+        }
     });
 
-    $window.on('scroll', $.throttle(150, function() {
+    $window.on('scroll', function() {
         var $windowEl = $(this), scroll = $windowEl.scrollTop();
 
         if (scroll > $windowEl.height() - 60) {
@@ -81,7 +84,7 @@ $(function() {
         } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
             $('.cta-container').removeClass('swap');
         }
-    }));
+    });
 
     var s;
 
