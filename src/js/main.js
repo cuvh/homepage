@@ -136,7 +136,7 @@ $(function() {
                         $(this).unbind(transEndEventName, arguments.callee); //unbind *just this handler*
                     }
                 });
-                $el.removeClass('whirl no-overlay');
+                $('#homeLoader').remove();
                 $el.css('opacity', 1);
             },
             waitForAll: true
