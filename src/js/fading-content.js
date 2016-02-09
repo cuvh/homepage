@@ -1,10 +1,19 @@
-history.navigationMode = 'compatible';
+var pageShown = function () {
+  $('body').css('opacity', 1);
+};
+
+var pageHidde = function () {
+  $('.menu').removeClass('loaded');
+  $('body').css('opacity', 0);
+};
+
+window.addEventListener("pageshow", pageShown, false);
+window.addEventListener("pagehide", pageHidde, false);
 
 $(document).ready(function () {
-  $('body').css('opacity', 1);
+  pageShown();
 });
 
 $(window).on('beforeunload', function () {
-  $('.menu').removeClass('loaded');
-  $('body').css('opacity', 0);
+  pageHidde();
 });
