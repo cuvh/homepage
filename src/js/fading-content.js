@@ -1,3 +1,5 @@
+history.navigationMode = 'compatible';
+
 $(document).ready(function () {
   $('body').css('opacity', 1);
 });
