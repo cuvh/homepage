@@ -85,7 +85,7 @@
     @include media($screen-sm) {
       .ench-logo {
         position: absolute;
-        top: 0px;
+        top: 0px !important;
       }
     }
   }

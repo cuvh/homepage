@@ -211,7 +211,7 @@ $nav-width: 310px;
         overflow-y: scroll;
 
         .buttons-container {
-            height: auto;
+            min-height: 100vh;
             padding: 0;
 
             ul {
