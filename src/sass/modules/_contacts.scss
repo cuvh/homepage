@@ -14,6 +14,7 @@
     }
 
     .small-divider {
+        display: inline-block;
         width: 25px;
         height: 2px;
         margin-bottom: 10px;
@@ -49,6 +50,30 @@
 
     @media (min-width: $screen-sm) and (min-height: 1050px) {
         height: calc(100vh - 472px);
+    }
+
+    @media (max-width: 1000px) {
+      .small-divider {
+        text-align: center;
+      }
+
+      [class*="col-"] {
+        width: 100%;
+        text-align: center;
+      }
+
+      .map {
+        width: 100%;
+        margin-top: 30px;
+        overflow-x: hidden;
+        padding-left: 0;
+
+        iframe {
+          width: 1000px !important;
+          display: inline-block;
+          text-align: center;
+        }
+      }
     }
 }
 
