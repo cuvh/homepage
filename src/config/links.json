@@ -1,12 +1,9 @@
 {
-	"title": "Enhancv",
 	"get_started": "http://app.enhancv.com/",
 	"blog": "http://blog.enhancv.com/",
 	"examples": "http://help.enhancv.com/",
 	"fb": "http://facebook.com/enhancv",
 	"linkedin": "http://linkedin.com/company/enhancv",
 	"twitter": "http://twitter.com/enhancv",
-	"google": "http://plus.google.com/101937788764621640784",
-	"ga_code": "UA-52969150-1",
-	"intercom_key": "ifmk136d"
+	"google": "http://plus.google.com/101937788764621640784"
 }
