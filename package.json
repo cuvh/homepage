@@ -4,10 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "author": "Enhancv",
-  "scripts" : {
-    "test" : "eslint src/js"
+  "scripts": {
+    "test": "node_modules/eslint/bin/eslint.js src/js"
   },
   "devDependencies": {
+    "eslint": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^3.0.0",
