@@ -13,21 +13,21 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: "YOUR AWS ACCESS KEY"
-    secret_access_key: "YOUR AWS SECRET KEY"
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
     bucket: "enhancv.com"
     local_dir: cdn
     skip_cleanup: true
     on:
-      repo: Enhancv/homepage
+      repo: enhancv/homepage
       branch: master
 
   - provider: s3
-    access_key_id: "YOUR AWS ACCESS KEY"
-    secret_access_key: "YOUR AWS SECRET KEY"
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
     bucket: "dev-home.enhancv.com"
     local_dir: cdn
     skip_cleanup: true
     on:
-      repo: Enhancv/homepage
+      repo: enhancv/homepage
       branch: develop
