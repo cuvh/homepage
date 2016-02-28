@@ -1,3 +1,4 @@
+/*eslint-env node */
 (function() {
     'use strict';
 
@@ -52,16 +53,19 @@
             root: './build',
             livereload: true
         });
+
+        gulp.watch(['./src/sass/**/*.scss'], ['css', 'reload']);
+        gulp.watch(['./src/js/**/*.js'], ['js', 'reload']);
+        gulp.watch(['./src/{images,fonts}/**/*'], ['assets', 'reload']);
+        gulp.watch(['./src/{config,templates}/**/*'], ['html', 'reload']);
     });
 
-    gulp.task('watch', function() {
-        gulp.watch(['./src/sass/**/*.scss'], ['css']);
-        gulp.watch(['./src/js/**/*.js'], ['js']);
-        gulp.watch(['./src/{images,fonts}/**/*'], ['assets']);
-        gulp.watch(['./src/{config,templates}/**/*'], ['html']);
+    gulp.task('reload', function () {
+        gulp.src('./build/*.html')
+            .pipe(connect.reload());
     });
 
-    gulp.task('develop', ['connect', 'build', 'watch']);
+    gulp.task('develop', ['build', 'connect']);
 
     gulp.task('production', ['build'], function () {
         var revAll = new RevAll({

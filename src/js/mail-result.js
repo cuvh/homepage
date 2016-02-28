@@ -17,6 +17,6 @@ $(document).ready(function() {
             window.location.hash = "#frm";
             $(".graphic-designer-form").html("<h2>Thank you, we will contact you soon!</h2>");
         }
-    }s
+    }
 
 }());
