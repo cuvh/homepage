@@ -10,6 +10,7 @@
     var rename = require('gulp-rename');
     var sourcemaps = require('gulp-sourcemaps');
     var connect = require('gulp-connect');
+    var RevAll = require('gulp-rev-all');
 
     gulp.task('html', function () {
         gulp.src('./src/templates/pages/**/*.hbs')
@@ -61,4 +62,15 @@
     });
 
     gulp.task('develop', ['connect', 'build', 'watch']);
+
+    gulp.task('production', ['build'], function () {
+        var revAll = new RevAll({
+            dontRenameFile: ['.html'],
+            dontUpdateReference: ['.html'],
+        });
+
+        gulp.src('build/**')
+            .pipe(revAll.revision())
+            .pipe(gulp.dest('./cdn'));
+    });
 })();

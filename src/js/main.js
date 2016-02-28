@@ -120,7 +120,7 @@ $(function() {
         var $target = $('.apply-form');
 
         $target.animatescroll({
-          easing: 'swing'
+            easing: 'swing'
         });
     });
 
