@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "globals": {
+        "skrollr": true
+    },
+    "rules": {
+        "indent": 2,
+        "no-undef": 2
+    }
+}
