@@ -13,6 +13,17 @@ before_install:
 before_deploy:
   - gulp production
 
+after_deploy:
+  - >
+    curl -X POST \
+        --data-urlencode "payload={
+            \"channel\": \"#ci\",
+            \"username\": \"webhookbot\",
+            \"text\": \"$TRAVIS_BRANCH deployed\",
+            \"icon_emoji\": \":shipit:\"
+        }" \
+        https://hooks.slack.com/services/T0294QTKB/B0PLXDQKT/$SLACK_SECRET
+
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
