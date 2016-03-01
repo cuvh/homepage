@@ -13,7 +13,7 @@ Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered H
 ### Running
 
 * To run in development mode run `gulp develop`, a non-mified version of the site will be run on port 8080 with livereload on all files
-* To build the production code(Cloudfront/S3) run `gulp prepareForProd`. The files, ready to be pushed to the server, will be generated in the `cdn` directory, revved and minified
+* To build the production code(Cloudfront/S3) run `gulp production`. The files, ready to be pushed to the server, will be generated in the `cdn` directory, revved and minified
 * To test production-ready code on the local machine run `gulp server`. A revved/minified code will be compiled and a server will be started on port 8080
 
 ### Development
