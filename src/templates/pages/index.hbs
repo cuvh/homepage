@@ -1,0 +1,350 @@
+{{#extend "layout"}}
+    {{#content "body"}}
+        <div class="whirl no-overlay" id="homeLoader"></div>
+
+        <div class="section -banner -main-full -home -padding-s menu-open">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="/" >
+                        <img src="/images/ench_logo.svg" alt="Enhancv Logo" class="ench-logo">
+                    </a>
+                </div>
+                <div class="col-sm-6 home-banner-nav">
+                    <ul class="nav -center -main">
+                        <li><a href="#steps-container" class="js-scroll-to">Tour</a></li>
+                        <li><a href="/examples.html">Examples</a></li>
+                        <li><a href="{{links.blog}}" target="_blank">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 m-text-right cta-container">
+                    <a href="#" class="menu-hamb js-open-menu"><span>Toggle menu</span></a>
+                    <a href="{{links.get_started}}" class="button -small -trans button-cta header-button">Let’s Begin</a>
+                </div>
+            </div>
+
+            <div class="container m-height-100p">
+                <div class="v-base m-height-100p">
+                    <div class="v-middle">
+                        <h1>Get the job<br> you deserve!</h1>
+                        <a href="{{links.get_started}}" class="button m-margin-r4 -prim">Try it Free</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#steps-container" class="" data-bottom-top="@class:go-to-section js-scroll-to active;"
+               data-top-bottom="@class:go-to-section js-scroll-to"></a>
+
+        </div>
+
+        <div class="section m-text-center -mobile-only -white menu-open">
+            <div class="container m-text-center">
+                <h1>Get the job<br> you deserve!</h1>
+                <a href="{{links.get_started}}" class="button -prim">Let’s Begin</a>
+            </div>
+        </div>
+
+        <div class="section -white menu-open as-seen-on">
+            <div class="container m-text-center">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <span style="vertical-align: middle;" class="text-s text-g6 m-margin-r2 m-text-np">As seen on</span>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/partners/forbes-logo.png" alt="Forbes Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/partners/business-insider-logo.png" alt="Business Insider Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/partners/yahoo-finance-logo.png" alt="Yahoo Finance Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/partners/product-hunt-logo.png" alt="Product Hunt Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/partners/aol-jobs-logo.png" alt="Aol Jobs Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- steps -->
+        <div class="steps-container-mobile section -steps menu-open">
+            <div class="container m-text-center">
+                <div>
+                    <h2>Is this what your resume looks like?</h2>
+
+                    <p>If so, you are one of the 98% of the people who still believe this is the best way to get a job</p>
+                </div>
+
+                <div class="steps-mobile-image">
+                    <img src="/images/resume-mobile-01.png"/>
+                </div>
+
+                <div>
+                    <h2>Meet the modern resume</h2>
+
+                    <p>Enhancv helps you create performance-based resumes that unveil the real person behind them</p>
+                </div>
+
+                <div class="steps-mobile-image">
+                    <img src="/images/resume-mobile-02.png" alt="">
+                </div>
+
+                <div>
+                    <h2>Customize to every different job</h2>
+
+                    <p>We help you customize your resume to each job you are applying for and triple your interview chances</p>
+                </div>
+
+                <div class="steps-mobile-image">
+                    <img src="/images/resume-mobile-03.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="steps-container" class="section -steps -o-hidden steps-container">
+
+            <div class="v-base step-image is-fixed js-first-si" style="position:fixed;opacity:1;top:100vh;"
+                 data-bottom-top="transform:translateY(0%);" data-top="transform:translateY(-100%);"
+                 data-bottom="transform:translateY(-100%);" data-top-bottom="transform:translateY(-200%);"
+                 data-anchor-target="#steps-container">
+                <div class="v-middle-image">
+                    <img src="/images/resume-state-01.png" alt="">
+                </div>
+                <div class="v-middle-image" data-bottom-top="opacity:0;" data-300-center-top="opacity:1;"
+                     data-anchor-target="#step-two">
+                    <img src="/images/resume-state-02.png" alt="">
+                </div>
+                <div class="v-middle-image"
+                     data--150-bottom-top="opacity:0;"
+                     data--300-bottom-top="opacity:1;"
+                     data-300-top-bottom="opacity:1;"
+                     data-150-top-bottom="opacity:0;"
+                     data-anchor-target="#step-two">
+                    <div style="position:relative;top:-5px;left:-20px;">
+                        <img src="/images/2-1.png" alt="">
+                    </div>
+                </div>
+                <div class="v-middle-image" data-bottom-top="opacity:0;" data-300-center-top="opacity:1;"
+                     data-anchor-target="#step-three">
+                    <div style="position:relative;top:33px;left:100px;">
+                        <img src="/images/3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-bullets">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+            <div class="section -full">
+                <div class="container">
+                    <div id="step-one" class="step-screen">
+                        <div data-center="opacity:1;" data-top="opacity:0;">
+                            <h2>Is this how your resume looks like?</h2>
+
+                            <p>If so, you are one of the 98% of the people who still believe this is the best way to get a
+                                job</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section -full">
+                <div class="container">
+                    <div id="step-two" class="step-screen">
+                        <div data-bottom-top="opacity:0;" data-center="opacity:1;" data-top-bottom="opacity:0;">
+                            <h2>Meet the modern resume</h2>
+
+                            <p>Enhancv helps you create performance-based resumes that unveil the real person behind them</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section -full">
+                <div class="container">
+                    <div id="step-three" class="step-screen">
+                        <div data-bottom-top="opacity:0;" data-center="opacity:1;">
+                            <h2>Customize to every different job</h2>
+
+                            <p>We help you customize your resume to each job you are applying for and triple your interview
+                                chances</p>
+                            <a class="button -disabled -small m-margin-b5-sm">Coming soon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section -white -builder -padding-m live-editing-container">
+
+            <div class="live-editing-image">
+                <img src="/images/builder-01.jpg" alt="">
+            </div>
+
+            <div class="container">
+                <div class="live-editing">
+                    <h2 class="-enlarge">Show who you really are</h2>
+
+                    <p>Enhancv helps you express your true personality and show the real person behind the resume</p>
+                </div>
+            </div>
+
+            <!-- optimize this -->
+            <img class="live-editing-image-mobile" src="/images/builder-01.jpg" alt="">
+
+        </div>
+
+        <div class="section -dark -full -padding-s">
+
+            <div class="container">
+
+                <div class="v-base -h50 m-padding-b0-sm">
+                    <div class="v-bottom">
+
+                        <div class="row">
+
+                            <div class="col-md-4 col-sm-12 feature">
+
+                                <img src="/images/icon-01.svg" alt="">
+
+                                <h3>Tips & Examples</h3>
+
+                                <p class="text-g9">Our guidelines summarize some of the best career advice out there from some
+                                    of the most influential talent managers, career coaches and entrepreneurs</p>
+
+                            </div>
+                            <div class="col-md-4 col-sm-12 feature">
+
+                                <img src="/images/icon-02.svg" alt="">
+
+                                <h3>Design Customization</h3>
+
+                                <p class="text-g9">Add your personal touch by customizing your resume design the way you like it
+                                    most.</p>
+
+                            </div>
+                            <div class="col-md-4 col-sm-12 feature">
+
+                                <img src="/images/icon-03.svg" alt="">
+                                <a class="button -disabled -small m-margin-b5-sm coming-soon-green">Coming soon</a>
+
+                                <h3>Content Analyzer</h3>
+
+                                <p class="text-g9">Our smart text analyzers instantly discover all mistakes you’ve made and
+                                    automatically give you suggestions how to improve them</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-12 feature">
+
+                        <img src="/images/icon-04.svg" alt="">
+
+                        <h3>Human-centric</h3>
+
+                        <p class="text-g9">We have included various new sections that go deep into your personal life and reveal
+                            important facts about who you really are</p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 feature">
+
+                        <img src="/images/icon-05.svg" alt="">
+
+                        <h3>PDF Export</h3>
+
+                        <p class="text-g9">After polishing the content of your resume you can download and save it as a .pdf
+                            file</p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 feature">
+
+                        <img src="/images/icon-06.svg" alt="">
+
+                        <h3>ATS Optimized</h3>
+
+                        <p class="text-g9">The resume format we are using is readable by most Applicant Tracking Systems, as it was built upon the most-used guidelines</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section -white">
+            <h2 class="testimonial-section-title m-text-center">What do employers say about Enhancv?</h2>
+
+            <div class="v-base">
+                <div class="v-middle">
+
+                    <div class="container">
+
+                        <div class="js-slick">
+                            <div class="row gutter100">
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <div class="testimonial-container">
+                                            <img src="/images/vgetova.png" alt="">
+
+                                            <div class="testimonial-information">
+                                                <div class="testimonial-information-center">
+                                                    <h3>Velina Getova</h3>
+                                                    <span>Career Coach & Senior Recruiter</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>If everyone followed Enhancv`s professional advice finding the right person wouldn’t
+                                            have been such a challenge!</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <div class="testimonial-container">
+                                            <img src="/images/god.png" alt="">
+
+                                            <div class="testimonial-information">
+                                                <div class="testimonial-information-center">
+                                                    <h3>God</h3>
+                                                    <span>Creator of Mankind</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>These guys are doing God’s work, helping their fellow humans nail their dream jobs faster.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section -green -padding-xxl m-text-center -pre-footer">
+            <img src="/images/footer-img-03.png" class="media-fimage" alt="">
+            <img src="/images/footer-img-02.png" class="media-fimage -right -bottom" alt="">
+
+            <div class="container">
+
+                <h2 class="m-margin-t0 -enlarge">Ready to get started?</h2>
+
+                <a href="{{links.get_started}}" class="button -white">Let’s Begin</a>
+
+            </div>
+        </div>
+    {{/content}}
+{{/extend}}

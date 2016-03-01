@@ -4,6 +4,9 @@
   width: 35%;
   position: absolute;
   top: 50%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:hidden;
+  @include transform(translateZ(0));
   @include transform(translateY(-50%));
 
   h2 + p {
@@ -25,8 +28,8 @@
   width: 50%;
   text-align: left;
   margin-left: 0px;
-  opacity: 0;
-  // transition: .3s opacity ease-in-out;
+  @include opacity(0);
+  @include transform(translateZ(0));
 
   img {
     max-width: 415px;
@@ -37,7 +40,7 @@
   }
 
   @include media($screen-sm) {
-    opacity: 1 !important;
+    @include opacity(1, true);
     width: 100%;
     text-align: center;
   }
@@ -60,17 +63,17 @@
 
 .steps-container {
   h2 {
-    font-size: 32px;
+    @include font-size(32px);
   }
 
   p {
-    font-size: 16px;
+    @include font-size(16px);
   }
 }
 
 .steps-container-mobile {
   h2 {
-    font-size: 24px;
+    @include font-size(24px);
   }
 }
 
@@ -89,17 +92,22 @@
     position: fixed;
     top: calc(50% - 48px);
     right: 103px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:hidden;
+    @include transform(translateZ(0));
+    @include opacity(0);
 
+    &.loaded {
+      @include opacity(1);
+    }
     .circle {
       width: 8px;
       height: 8px;
       background-color: #B6B4B9; // #424242
       border-radius: 50%;
       margin: 10px 0;
-
       @include transition(.2s);
     }
-
     @media(max-width: 1260px) {
       display: none;
     }
@@ -160,5 +168,6 @@
 .v-middle-image {
   position: absolute;
   top: 50%;
+  @include transform(translateZ(0));
   @include transform(translateY(-50%));
 }

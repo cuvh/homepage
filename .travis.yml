@@ -1,0 +1,48 @@
+language: node_js
+sudo: false
+node_js:
+  - "4.1"
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - npm install -g gulp
+
+before_deploy:
+  - gulp production
+
+after_deploy:
+  - >
+    curl -X POST \
+        --data-urlencode "payload={
+            \"channel\": \"#ci\",
+            \"username\": \"webhookbot\",
+            \"text\": \"$TRAVIS_BRANCH deployed\",
+            \"icon_emoji\": \":shipit:\"
+        }" \
+        https://hooks.slack.com/services/T0294QTKB/B0PLXDQKT/$SLACK_SECRET
+
+deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: "enhancv.com"
+    local_dir: cdn
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: enhancv/homepage
+      branch: master
+
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: "dev-home.enhancv.com"
+    local_dir: cdn
+    acl: public_read
+    skip_cleanup: true
+    on:
+      repo: enhancv/homepage
+      branch: develop

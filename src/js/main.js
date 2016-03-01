@@ -1,19 +1,79 @@
 $(function() {
-    $(document).on('click', '.js-open-menu, .js-close-menu, .is-menu-opened .menu-open', function(e) {
+
+    var scrollrPages = ["", "index.html", "join-the-force.html", "growth-enhancer.html"];
+
+    function whichTransitionEvent() {
+        var el = document.createElement('fake'),
+            transEndEventNames = {
+                'WebkitTransition' : 'webkitTransitionEnd', // Saf 6, Android Browser
+                'MozTransition' : 'transitionend', // only for FF < 15
+                'transition' : 'transitionend' // IE10, Opera, Chrome, FF 15+, Saf 7+
+            };
+
+        for (var t in transEndEventNames) {
+            if ( el.style[t] !== undefined ) {
+                return transEndEventNames[t];
+            }
+        }
+    }
+
+    var transEndEventName = whichTransitionEvent();
+
+    var browser = $.ua.browser.name, browserVersion = parseInt($.ua.browser.version.split('.')[0], 10);
+
+    if ($('.wrap-examples').length == 0) {
+        if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+            $('body').on("mousewheel", function () {
+                // remove default behavior
+                event.preventDefault();
+
+                if ($(this).css('overflow') != 'hidden') {
+                    //scroll without smoothing
+                    var wheelDelta = event.wheelDelta;
+                    var currentScrollPosition = window.pageYOffset;
+                    window.scrollTo(0, currentScrollPosition - wheelDelta);
+                }
+            });
+        }
+    }
+
+    var $window = $(window), $document = $(document);
+
+    var disableScrollTouch = function () {
+        $document.on("touchmove.nav", function (e) {
+            e.preventDefault();
+        });
+    };
+
+    var enableScrollTouch = function () {
+        $document.off("touchmove.nav");
+    };
+
+    $document.on('click', '.js-open-menu, .js-close-menu, .is-menu-open .menu-open', function(e) {
         e.preventDefault();
+        var $body = $('body');
+        $body.removeClass('is-menu-opened');
+        $(".menu-open:first").one(transEndEventName, function() {
+            var $bodyEl = $('body');
+            if ($bodyEl.hasClass('is-menu-open')) {
+                $bodyEl.addClass('is-menu-opened');
+            }
+        });
         $('html, body').scrollTop(0);
-        $('body').toggleClass('is-menu-opened');
+        $body.toggleClass('is-menu-open');
+        if ($body.hasClass('is-menu-open')) {
+            $('.cta-container').addClass('hide');
+            disableScrollTouch();
+        } else {
+            $('.cta-container').removeClass('hide');
+            enableScrollTouch();
+        }
     });
 
-    var $stepsContainer = $('.steps-container');
-    var $stepsNextC = $stepsContainer.next('.section');
-    var lastFsiPos = 0;
+    $window.on('scroll', function() {
+        var $windowEl = $(this), scroll = $windowEl.scrollTop();
 
-    $(window).scroll(function(event) {
-
-        var scroll = $(window).scrollTop();
-
-        if (scroll > $(window).height() - 60) {
+        if (scroll > $windowEl.height() - 60) {
             $('body').removeClass('is-menu-opened');
         }
 
@@ -24,18 +84,26 @@ $(function() {
         }
     });
 
-    var s = skrollr.init({
-        mobileCheck: function() {
-            return false;
-        },
-        smoothScrollingDuration: 1,
-        smoothScrolling: true,
-        forceHeight: false
-    });
-    // $('.js-slick').slick({
-    //     prevArrow: '.js-prev',
-    //     nextArrow: '.js-next'
-    // });
+    var s;
+
+    if ($.inArray(location.pathname.substring(1), scrollrPages) > -1) {
+        s = skrollr.init({
+            mobileCheck: function () {
+                return false;
+            },
+            smoothScrolling: false,
+            forceHeight: false
+        });
+
+        $window.on('load', function () {
+            $(this).trigger('resize');
+            s.refresh();
+        });
+    } else {
+        $window.on('load', function () {
+            $(this).trigger('resize');
+        });
+    }
 
     $('.js-scroll-to').on('click', function(e) {
         e.preventDefault();
@@ -43,10 +111,42 @@ $(function() {
         var target = this.hash;
         var $target = $(target);
 
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function() {
-            window.location.hash = target;
+        $target.animatescroll({
+            easing: 'swing'
         });
     });
+
+    $('.apply-btn').on('click', function() {
+        var $target = $('.apply-form');
+
+        $target.animatescroll({
+            easing: 'swing'
+        });
+    });
+
+    var $sectionHome = $('.section.-home');
+
+    if ($sectionHome.length > 0) {
+        $sectionHome.waitForImages({
+            finished: function () {
+                var $el = $(this);
+                $el.on(transEndEventName, function (e) {
+                    if (e.originalEvent.propertyName == 'opacity') {
+                        $('.menu').addClass('loaded');
+                        $('#steps-container').find('.progress-bullets').addClass('loaded');
+                        $(this).unbind(transEndEventName, arguments.callee); //unbind *just this handler*
+                    }
+                });
+                $('#homeLoader').remove();
+                $el.css('opacity', 1);
+            },
+            waitForAll: true
+        });
+    } else {
+        $window.on('load', function() {
+            setTimeout(function() {
+                $('.menu').addClass('loaded');
+            }, 400);
+        });
+    }
 });
