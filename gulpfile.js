@@ -14,58 +14,55 @@
     var RevAll = require('gulp-rev-all');
 
     gulp.task('html', function () {
-        gulp.src('./src/templates/pages/**/*.hbs')
+        return gulp.src('src/templates/pages/**/*.hbs')
             .pipe(hb()
-                .data('./src/config/links.json')
-                .partials('./src/templates/partials/**/*.hbs')
+                .data('src/config/links.json')
+                .partials('src/templates/partials/**/*.hbs')
                 .helpers(hbLayouts)
             )
             .pipe(rename({extname: '.html'}))
-            .pipe(gulp.dest('./build'));
+            .pipe(gulp.dest('build'));
     });
 
     gulp.task('css', function () {
-        gulp.src('./src/sass/**/*.scss')
+        return gulp.src('src/sass/**/*.scss')
             .pipe(sourcemaps.init())
             .pipe(sass())
             .pipe(sourcemaps.write('.'))
-            .pipe(gulp.dest('./build/css'));
+            .pipe(gulp.dest('build/css'));
     });
 
     gulp.task('assets', function () {
-        gulp.src('./assets/**/*')
-            .pipe(gulp.dest('./build'));
+        return gulp.src('assets/**/*')
+            .pipe(gulp.dest('build'));
     });
 
     gulp.task('js', function () {
-        gulp.src(['./src/js/plugins/*.js', './src/js/**/*.js'])
+        return gulp.src(['src/js/plugins/*.js', 'src/js/**/*.js'])
             .pipe(sourcemaps.init())
             .pipe(concat('combined.min.js'))
             .pipe(uglify())
             .pipe(sourcemaps.write('.'))
-            .pipe(gulp.dest('./build/js'));
+            .pipe(gulp.dest('build/js'));
     });
 
     gulp.task('build', ['html', 'css', 'assets', 'js']);
 
-    gulp.task('connect', function() {
+    gulp.task('develop', ['build'], function() {
         connect.server({
-            root: './build',
+            root: 'build',
             livereload: true
         });
 
-        gulp.watch(['./src/sass/**/*.scss'], ['css', 'reload']);
-        gulp.watch(['./src/js/**/*.js'], ['js', 'reload']);
-        gulp.watch(['./src/{images,fonts}/**/*'], ['assets', 'reload']);
-        gulp.watch(['./src/{config,templates}/**/*'], ['html', 'reload']);
+        gulp.watch(['src/sass/**/*.scss'], ['css', 'reload']);
+        gulp.watch(['src/js/**/*.js'], ['js', 'reload']);
+        gulp.watch(['src/{images,fonts}/**/*'], ['assets', 'reload']);
+        gulp.watch(['src/{config,templates}/**/*'], ['html', 'reload']);
     });
 
     gulp.task('reload', function () {
-        gulp.src('./build/*.html')
-            .pipe(connect.reload());
+        gulp.src('build/*.html').pipe(connect.reload());
     });
-
-    gulp.task('develop', ['build', 'connect']);
 
     gulp.task('production', ['build'], function () {
         var revAll = new RevAll({
@@ -73,8 +70,8 @@
             dontUpdateReference: ['.html'],
         });
 
-        gulp.src('build/**')
+        return gulp.src('build/**')
             .pipe(revAll.revision())
-            .pipe(gulp.dest('./cdn'));
+            .pipe(gulp.dest('cdn'));
     });
 })();
