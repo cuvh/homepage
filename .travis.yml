@@ -19,6 +19,7 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: "enhancv.com"
     local_dir: cdn
+    acl: public_read
     skip_cleanup: true
     on:
       repo: enhancv/homepage
@@ -29,6 +30,7 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: "dev-home.enhancv.com"
     local_dir: cdn
+    acl: public_read
     skip_cleanup: true
     on:
       repo: enhancv/homepage
