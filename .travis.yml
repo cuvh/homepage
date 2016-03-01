@@ -18,7 +18,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: "enhancv.com"
-    local_dir: cdn
+    local_dir: $TRAVIS_BUILD_DIR/cdn
     acl: public_read
     skip_cleanup: true
     on:
@@ -29,7 +29,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
     bucket: "dev-home.enhancv.com"
-    local_dir: cdn
+    local_dir: $TRAVIS_BUILD_DIR/cdn
     acl: public_read
     skip_cleanup: true
     on:
