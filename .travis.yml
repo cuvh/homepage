@@ -10,6 +10,14 @@ cache:
 before_install:
   - npm install -g gulp
 
+before_script:
+    gulp build
+    gulp server &
+
+script:
+    npm run lint
+    npm test
+
 before_deploy:
   - gulp production
 
