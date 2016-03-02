@@ -9,14 +9,13 @@ cache:
 
 before_install:
   - npm install -g gulp
+  - npm install -g http-server
 
 before_script:
-    gulp build
-    gulp server &
-
-script:
-    npm run lint
-    npm test
+  - npm run lint
+  - gulp build
+  - cd build && http-server -a localhost --silent &
+  - sleep 2
 
 before_deploy:
   - gulp production
