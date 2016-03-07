@@ -4,7 +4,8 @@
         "jquery": true
     },
     "globals": {
-        "skrollr": true
+        "skrollr": true,
+        "casper": true
     },
     "rules": {
         "indent": 2,

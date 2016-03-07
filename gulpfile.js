@@ -48,12 +48,14 @@
 
     gulp.task('build', ['html', 'css', 'assets', 'js']);
 
-    gulp.task('develop', ['build'], function() {
+    gulp.task('server', function () {
         connect.server({
             root: 'build',
             livereload: true
         });
+    });
 
+    gulp.task('develop', ['build', 'server'], function() {
         gulp.watch(['src/sass/**/*.scss'], ['css', 'reload']);
         gulp.watch(['src/js/**/*.js'], ['js', 'reload']);
         gulp.watch(['src/{images,fonts}/**/*'], ['assets', 'reload']);
