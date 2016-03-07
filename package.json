@@ -10,6 +10,7 @@
   "devDependencies": {
     "eslint": "^2.2.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-connect": "^2.3.1",
     "gulp-hb": "^4.0.3",

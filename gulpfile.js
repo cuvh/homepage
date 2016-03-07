@@ -12,6 +12,7 @@
     var sourcemaps = require('gulp-sourcemaps');
     var connect = require('gulp-connect');
     var RevAll = require('gulp-rev-all');
+    var autoprefixer = require('gulp-autoprefixer');
 
     gulp.task('html', function () {
         return gulp.src('src/templates/pages/**/*.hbs')
@@ -28,6 +29,7 @@
         return gulp.src('src/sass/**/*.scss')
             .pipe(sourcemaps.init())
             .pipe(sass())
+            .pipe(autoprefixer())
             .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('build/css'));
     });
