@@ -8,6 +8,7 @@
     "test": "node_modules/eslint/bin/eslint.js {src/js,gulpfile.js}"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
     "eslint": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
