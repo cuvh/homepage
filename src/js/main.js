@@ -22,7 +22,7 @@ $(function() {
     var browser = $.ua.browser.name, browserVersion = parseInt($.ua.browser.version.split('.')[0], 10);
 
     if ($('.wrap-examples').length == 0) {
-        if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+        /*if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
             $('body').on("mousewheel", function () {
                 // remove default behavior
                 event.preventDefault();
@@ -34,7 +34,7 @@ $(function() {
                     window.scrollTo(0, currentScrollPosition - wheelDelta);
                 }
             });
-        }
+        }*/
     }
 
     var $window = $(window), $document = $(document);
@@ -87,7 +87,7 @@ $(function() {
     var s;
 
     if ($.inArray(location.pathname.substring(1), scrollrPages) > -1) {
-        s = skrollr.init({
+        /*s = skrollr.init({
             mobileCheck: function () {
                 return false;
             },
@@ -98,7 +98,7 @@ $(function() {
         $window.on('load', function () {
             $(this).trigger('resize');
             s.refresh();
-        });
+        });*/
     } else {
         $window.on('load', function () {
             $(this).trigger('resize');
