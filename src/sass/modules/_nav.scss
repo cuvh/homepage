@@ -111,6 +111,7 @@ $nav-width: 310px;
             transition: opacity .3s .15s ease-in-out, visibility .3s .15s ease-in-out, margin .3s .15s ease-out, color .15s 0s ease-in;
             opacity: 0;
             visibility: hidden;
+            margin-left: 5%;
 
             &:hover {
                 text-decoration: none;
@@ -178,7 +179,6 @@ $nav-width: 310px;
         overflow-y: scroll;
 
         .buttons-container {
-            min-height: 100vh;
             padding: 0;
 
             ul {
@@ -190,6 +190,20 @@ $nav-width: 310px;
             }
         }
     }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+    user-select: none;
+    z-index: 26;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .2s;
 }
 
 @include media-min($screen-sm) {
@@ -219,9 +233,74 @@ $nav-width: 310px;
 }
 
 @include media($screen-sm) {
-    .menu {
-        ul a {
-            margin-left: 0;
+    .is-menu-open {
+        overflow: hidden;
+
+        .side-nav {
+            transform: translateY(0);
+            width: 100%;
+            overflow: hidden;
+
+            .menu {
+                width: 100%;
+            }
+        }
+    }
+
+    .js-close-menu {
+        position: absolute;
+        right: 14%;
+        top: 0;
+        margin-left: 5px;
+    }
+
+    .button-cta {
+        @include opacity(0, true);
+        @include transition(0.15s);
+        transition-delay: 1s;
+    }
+}
+
+.cta-container,
+.ench-logo {
+    position: fixed;
+    top: 55px;
+    left: 50px;
+    z-index: 200;
+
+    @include media($screen-sm) {
+        top: 25px !important;
+        left: 20px;
+    }
+}
+
+.cta-container {
+    &.in-back {
+        z-index: -1;
+    }
+}
+
+@media (max-width: 800px) {
+    .cta-container,
+    .ench-logo {
+        position: initial;
+    }
+
+    .cta-container {
+        float: right !important;
+        margin-right: 50px;
+    }
+}
+
+.-home {
+    .cta-container {
+        margin-right: 0;
+
+        @media (max-width: 770px) {
+            & {
+                margin-top: -5px;
+                margin-right: 50px;
+            }
         }
     }
 
