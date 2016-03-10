@@ -111,7 +111,6 @@ $nav-width: 310px;
             transition: opacity .3s .15s ease-in-out, visibility .3s .15s ease-in-out, margin .3s .15s ease-out, color .15s 0s ease-in;
             opacity: 0;
             visibility: hidden;
-            margin-left: 5%;
 
             &:hover {
                 text-decoration: none;
@@ -179,6 +178,7 @@ $nav-width: 310px;
         overflow-y: scroll;
 
         .buttons-container {
+            min-height: 100vh;
             padding: 0;
 
             ul {
@@ -188,6 +188,10 @@ $nav-width: 310px;
                     position: initial;
                 }
             }
+        }
+
+        .social {
+            padding-top: 40px;
         }
     }
 }
@@ -233,6 +237,12 @@ $nav-width: 310px;
 }
 
 @include media($screen-sm) {
+    .menu {
+        ul a {
+            margin-left: 0;
+        }
+    }
+
     .is-menu-open {
         overflow: hidden;
 
@@ -243,6 +253,11 @@ $nav-width: 310px;
 
             .menu {
                 width: 100%;
+
+                ul a {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }
