@@ -24,10 +24,9 @@
 }
 
 .step-image {
-  //float: right;
-  width: 50%;
+  width: 520px;
   position: absolute;
-  right: 0;
+  left: 50%;
   text-align: left;
   margin-left: 0;
   @include transform(translateZ(0));
@@ -44,20 +43,6 @@
     @include opacity(1, true);
     width: 100%;
     text-align: center;
-  }
-
-  &.is-fixed {
-    // position: fixed;
-    top: 0;
-    left: 50%;
-
-    @include media($screen-md) {
-      position: static !important;
-    }
-  }
-
-  &.is-fixedy {
-    position: fixed !important;
   }
 }
 
