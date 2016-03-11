@@ -1,28 +1,28 @@
 $(document).ready(function () {
-    var $sections = $(".section"),
-        $menuHamb = $('.menu-hamb span'),
-        $logo,
-        $svgEls;
+    var $sections = $(".section");
+    var $menuHamb = $('.menu-hamb span');
+    var $logo;
+    var $svgEls;
 
     function getCoords(elem) {
-        var box = elem.getBoundingClientRect(),
-            body = document.body,
-            docEl = document.documentElement,
-            scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop,
-            scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft,
-            clientTop = docEl.clientTop || body.clientTop || 0,
-            clientLeft = docEl.clientLeft || body.clientLeft || 0,
-            top  = box.top +  scrollTop - clientTop,
-            left = box.left + scrollLeft - clientLeft;
+        var box = elem.getBoundingClientRect();
+        var body = document.body;
+        var docEl = document.documentElement;
+        var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
+        var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+        var clientTop = docEl.clientTop || body.clientTop || 0;
+        var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+        var top  = box.top +  scrollTop - clientTop;
+        var left = box.left + scrollLeft - clientLeft;
 
         return { top: Math.round(top), left: Math.round(left) };
     }
 
     $('.ench-logo, .feature img, .becoming-part-icon').each(function () {
-        var $img = $(this),
-            imgID = $img.attr('id'),
-            imgClass = $img.attr('class'),
-            imgURL = $img.attr('src');
+        var $img = $(this);
+        var imgID = $img.attr('id');
+        var imgClass = $img.attr('class');
+        var imgURL = $img.attr('src');
 
         $.get(imgURL, function (data) {
 
@@ -55,9 +55,9 @@ $(document).ready(function () {
             var logoTop = getCoords($logo[0]).top;
 
             $sections.each(function () {
-                var sectionTop = getCoords(this).top,
-                    whiteSectionTop = sectionTop,
-                    whiteSectionBottom = sectionTop + this.offsetHeight;
+                var sectionTop = getCoords(this).top;
+                var whiteSectionTop = sectionTop;
+                var whiteSectionBottom = sectionTop + this.offsetHeight;
 
                 if (logoTop >= whiteSectionTop && logoTop <= whiteSectionBottom) {
                     if ($(this).css('background-color') == 'rgb(255, 255, 255)') {

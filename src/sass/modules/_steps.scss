@@ -4,8 +4,7 @@
     width: 35%;
     position: absolute;
     top: 50%;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
     @include transform(translateZ(0));
     @include transform(translateY(-50%));
 
@@ -68,8 +67,7 @@
         position: fixed;
         top: calc(50% - 48px);
         right: 103px;
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
         @include transform(translateZ(0));
         @include opacity(0);
 

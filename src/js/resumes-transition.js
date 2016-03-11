@@ -5,11 +5,11 @@ $(function () {
 
         if ($stepsContainer.length > 0) {
 
-            var sh = parseInt($stepsContainer.outerHeight(true)),
-                $stepImage = $('.v-base.step-image'),
-                wh = $(this).height(),
-                ih = parseInt($stepImage.outerHeight(true)),
-                offsetTop = $stepImage.find('.v-middle-image:first').position().top;
+            var sh = parseInt($stepsContainer.outerHeight(true));
+            var $stepImage = $('.v-base.step-image');
+            var wh = $(this).height();
+            var ih = parseInt($stepImage.outerHeight(true));
+            var offsetTop = $stepImage.find('.v-middle-image:first').position().top;
 
             var controller = new ScrollMagic.Controller();
             var scene = new ScrollMagic.Scene({
