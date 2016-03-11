@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-sm-6 home-banner-nav">
                     <ul class="navigation-bar -center -main">
-                        <li><a href="#steps-container" class="js-scroll-to">Tour</a></li>
+                        <li><a href="#stepsContainer" class="js-scroll-to">Tour</a></li>
                         <li><a href="/examples.html">Examples</a></li>
                         <li><a href="{{links.blog}}" target="_blank">Blog</a></li>
                     </ul>
@@ -32,9 +32,7 @@
                 </div>
             </div>
 
-            <a href="#steps-container" class="" data-bottom-top="@class:go-to-section js-scroll-to active;"
-               data-top-bottom="@class:go-to-section js-scroll-to"></a>
-
+            <a href="#stepsContainer" class="go-to-section js-scroll-to"></a>
         </div>
 
         <div class="section m-text-center -mobile-only -white menu-open">
@@ -79,7 +77,10 @@
                 </div>
 
                 <div class="steps-mobile-image">
-                    <img src="/images/resume-mobile-01.png"/>
+                    <img
+                     src="/images/resume-mobile-01.png"
+                     width="520"
+                     height="603">
                 </div>
 
                 <div>
@@ -89,7 +90,10 @@
                 </div>
 
                 <div class="steps-mobile-image">
-                    <img src="/images/resume-mobile-02.png" alt="">
+                    <img
+                     src="/images/resume-mobile-02.png"
+                     width="520"
+                     height="603">
                 </div>
 
                 <div>
@@ -99,38 +103,56 @@
                 </div>
 
                 <div class="steps-mobile-image">
-                    <img src="/images/resume-mobile-03.png" alt="">
+                    <img
+                     src="/images/resume-mobile-03.png"
+                     width="520"
+                     height="603">
                 </div>
             </div>
         </div>
 
-        <div id="steps-container" class="section -steps -o-hidden steps-container">
-
-            <div class="v-base step-image is-fixed js-first-si" style="position:fixed;opacity:1;top:100vh;"
-                 data-bottom-top="transform:translateY(0%);" data-top="transform:translateY(-100%);"
-                 data-bottom="transform:translateY(-100%);" data-top-bottom="transform:translateY(-200%);"
-                 data-anchor-target="#steps-container">
+        <div
+         id="stepsContainer"
+         class="section -steps -o-hidden steps-container">
+            <div class="v-base step-image">
                 <div class="v-middle-image">
-                    <img src="/images/resume-state-01.png" alt="">
+                    <img
+                     src="/images/resume-state-01.png"
+                     width="520"
+                     height="603">
                 </div>
-                <div class="v-middle-image" data-bottom-top="opacity:0;" data-300-center-top="opacity:1;"
-                     data-anchor-target="#step-two">
-                    <img src="/images/resume-state-02.png" alt="">
+                <div
+                 class="v-middle-image"
+                 id="cv-image-2"
+                 data-anchor-target="#step-two"
+                 style="opacity:0;">
+                    <img
+                     src="/images/resume-state-02.png"
+                     width="520"
+                     height="603">
                 </div>
-                <div class="v-middle-image"
-                     data--150-bottom-top="opacity:0;"
-                     data--300-bottom-top="opacity:1;"
-                     data-300-top-bottom="opacity:1;"
-                     data-150-top-bottom="opacity:0;"
-                     data-anchor-target="#step-two">
+                <div
+                 class="v-middle-image"
+                 id="cv-image-3"
+                 data-anchor-target="#step-two"
+                 style="opacity:0;">
                     <div style="position:relative;top:-5px;left:-20px;">
-                        <img src="/images/2-1.png" alt="">
+                        <img
+                         src="/images/2-1.png"
+                         width="520"
+                         height="603">
                     </div>
                 </div>
-                <div class="v-middle-image" data-bottom-top="opacity:0;" data-300-center-top="opacity:1;"
-                     data-anchor-target="#step-three">
+                <div
+                 class="v-middle-image"
+                 id="cv-image-4"
+                 data-anchor-target="#step-three"
+                 style="opacity:0;">
                     <div style="position:relative;top:33px;left:100px;">
-                        <img src="/images/3.png" alt="">
+                        <img
+                         src="/images/3.png"
+                         width="520"
+                         height="603">
                     </div>
                 </div>
             </div>
@@ -144,7 +166,7 @@
             <div class="section -full">
                 <div class="container">
                     <div id="step-one" class="step-screen">
-                        <div data-center="opacity:1;" data-top="opacity:0;">
+                        <div>
                             <h2>Is this how your resume looks like?</h2>
 
                             <p>If so, you are one of the 98% of the people who still believe this is the best way to get a
@@ -156,8 +178,8 @@
 
             <div class="section -full">
                 <div class="container">
-                    <div id="step-two" class="step-screen">
-                        <div data-bottom-top="opacity:0;" data-center="opacity:1;" data-top-bottom="opacity:0;">
+                    <div id="step-two" class="step-screen" style="opacity:0;">
+                        <div>
                             <h2>Meet the modern resume</h2>
 
                             <p>Enhancv helps you create performance-based resumes that unveil the real person behind them</p>
@@ -168,8 +190,8 @@
 
             <div class="section -full">
                 <div class="container">
-                    <div id="step-three" class="step-screen">
-                        <div data-bottom-top="opacity:0;" data-center="opacity:1;">
+                    <div id="step-three" class="step-screen" style="opacity:0;">
+                        <div>
                             <h2>Customize to every different job</h2>
 
                             <p>We help you customize your resume to each job you are applying for and triple your interview

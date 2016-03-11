@@ -13,6 +13,9 @@
     var connect = require('gulp-connect');
     var RevAll = require('gulp-rev-all');
     var autoprefixer = require('gulp-autoprefixer');
+    var imagemin = require('gulp-imagemin');
+    var pngquant = require('imagemin-pngquant');
+    var imageminJpegtran = require('imagemin-jpegtran');
 
     gulp.task('html', function () {
         return gulp.src('src/templates/pages/**/*.hbs')
@@ -36,6 +39,14 @@
 
     gulp.task('assets', function () {
         return gulp.src('assets/**/*')
+            .pipe(imagemin({
+                progressive: true,
+                svgoPlugins: [
+                    {removeViewBox: false},
+                    {cleanupIDs: false}
+                ],
+                use: [pngquant(), imageminJpegtran()]
+            }))
             .pipe(gulp.dest('build'));
     });
 
