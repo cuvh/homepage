@@ -22,7 +22,7 @@ $(function() {
     var browser = $.ua.browser.name, browserVersion = parseInt($.ua.browser.version.split('.')[0], 10);
 
     if ($('.wrap-examples').length == 0) {
-        /*if (browser == 'Edge' || (browser == 'IE' && $.inArray(browserVersion, [10, 11]) > -1)) { // if IE Edge disable smooth scrolling because it messes up scrolling animation
+        if (browser == 'Edge') {
             $('body').on("mousewheel", function () {
                 // remove default behavior
                 event.preventDefault();
@@ -34,7 +34,7 @@ $(function() {
                     window.scrollTo(0, currentScrollPosition - wheelDelta);
                 }
             });
-        }*/
+        }
     }
 
     var $window = $(window), $document = $(document);
@@ -71,34 +71,29 @@ $(function() {
     });
 
     $window.on('scroll', function() {
-        var $windowEl = $(this), scroll = $windowEl.scrollTop();
+        var $windowEl = $(this), scroll = $windowEl.scrollTop(), $ctaContainer = $('.cta-container');
 
         if (scroll > $windowEl.height() - 60) {
             $('body').removeClass('is-menu-opened');
         }
 
-        if (scroll > 100 && !$('.cta-container').hasClass('swap')) {
-            $('.cta-container').addClass('swap');
-        } else if (scroll < 101 && $('.cta-container').hasClass('swap')) {
-            $('.cta-container').removeClass('swap');
+        if (scroll > 100 && !$ctaContainer.hasClass('swap')) {
+            $ctaContainer.addClass('swap');
+        } else if (scroll < 101 && $ctaContainer.hasClass('swap')) {
+            $ctaContainer.removeClass('swap');
         }
     });
 
-    var s;
-
     if ($.inArray(location.pathname.substring(1), scrollrPages) > -1) {
-        /*s = skrollr.init({
-            mobileCheck: function () {
-                return false;
-            },
-            smoothScrolling: false,
-            forceHeight: false
-        });
-
-        $window.on('load', function () {
-            $(this).trigger('resize');
-            s.refresh();
-        });*/
+        var controller = new ScrollMagic.Controller();
+        var sceneArrowDown = new ScrollMagic.Scene({
+            duration: $window.height(),
+            offset: 0,
+            triggerHook: "onEnter",
+            triggerElement: '.go-to-section.js-scroll-to'
+        })
+        .setClassToggle(".go-to-section.js-scroll-to", "active")
+        .addTo(controller);
     } else {
         $window.on('load', function () {
             $(this).trigger('resize');
@@ -133,7 +128,7 @@ $(function() {
                 $el.on(transEndEventName, function (e) {
                     if (e.originalEvent.propertyName == 'opacity') {
                         $('.menu').addClass('loaded');
-                        $('#steps-container').find('.progress-bullets').addClass('loaded');
+                        $('#stepsContainer').find('.progress-bullets').addClass('loaded');
                         $(this).unbind(transEndEventName, arguments.callee); //unbind *just this handler*
                     }
                 });
