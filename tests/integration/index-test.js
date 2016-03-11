@@ -27,7 +27,7 @@ casper.test.begin('Index page', 13, function(test) {
         );
 
         test.assertSelectorHasText(
-            'a[href="#steps-container"]',
+            'a[href="#stepsContainer"]',
             'Tour',
             'Should have tour link that scrolls to #steps-container'
         );
