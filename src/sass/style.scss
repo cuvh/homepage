@@ -1,5 +1,10 @@
-@import "./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets";
-@import "./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+
+// Extend bootstrap styles
+@import "bootstrap-mods/variables";
+@import "bootstrap";
+@import "bootstrap-mods/navbar";
+@import "bootstrap-mods/buttons";
+
 @import "core/settings";
 @import "core/mixins";
 @import "core/extends";

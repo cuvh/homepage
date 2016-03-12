@@ -51,7 +51,7 @@ $(document).ready(function () {
         $('.inner-lightbox').css('height', '');
         removeClassShow(lightbox, innerLightbox);
         $('.fixed-header-elements').css('z-index', 25);
-        $menuContainer.removeClass('in-back');
+        $menuContainer.removeClass('hidden');
     }
 
     $('a.example-image').on('click', function () {
@@ -61,8 +61,8 @@ $(document).ready(function () {
         $('body').css('overflow-y', 'hidden');
         $('.fixed-header-elements').css('cssText', 'z-index: 20 !important');
         $('a.lightbox-hide').css({'opacity': 1, 'width': 'auto', 'height': 'auto'});
-        var $menuContainer = $('.examples-header').find('.cta-container');
-        $menuContainer.addClass('in-back');
+        var $menuContainer = $('.examples-header').find('nav');
+        $menuContainer.addClass('hidden');
 
         if (lightbox.hasClass('hide') && innerLightbox.hasClass('hide')) {
             removeClassHide(lightbox, innerLightbox);

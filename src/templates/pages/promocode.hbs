@@ -14,15 +14,17 @@
     {{#content "image"}}/images/promoOGImage.jpg{{/content}}
 
     {{#content "body"}}
-        <div class="section -banner -full -promocode -padding-s menu-open">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img src="/images/ench_logo.svg" alt="" class="ench-logo">
-                </div>
-                <div class="col-sm-6"></div>
-                <div class="col-sm-3 m-text-right cta-container">
-                </div>
+        <nav class="navbar navbar-padded navbar-fixed-top">
+            <div class="container-fluid">
+                <a
+                 class="navbar-brand"
+                 href="/">
+                    {{> enhancv-logo }}
+                </a>
             </div>
+        </nav>
+
+        <div class="section -banner -full -promocode -padding-s menu-open">
             <div class="container m-height-100p">
                 <div class="v-base m-height-100p">
                     <div class="v-middle">
