@@ -31,7 +31,12 @@
     gulp.task('css', function () {
         return gulp.src('src/sass/**/*.scss')
             .pipe(sourcemaps.init())
-            .pipe(sass())
+            .pipe(
+                sass({
+                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets']
+                })
+                .on('error', sass.logError)
+            )
             .pipe(autoprefixer())
             .pipe(sourcemaps.write('.'))
             .pipe(gulp.dest('build/css'));
