@@ -9,17 +9,20 @@
     display: block;
 
     .icon-bar {
+        position: relative;
         background-color: white;
         width: 19px;
         transition: transform .2s ease-in-out, background-color .2s linear;
     }
 
     &:hover {
+        transform: translate(0, 0);
+
         .icon-bar-up {
-            transform: translateY(-3px);
+            transform: translate(0, -3px);
         }
         .icon-bar-down {
-            transform: translateY(3px);
+            transform: translate(0, 3px);
         }
     }
 }
