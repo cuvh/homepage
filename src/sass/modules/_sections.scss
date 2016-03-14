@@ -235,6 +235,7 @@
 
     .logo {
       @include opacity(0.5);
+      width: 143px;
     }
   }
 }
