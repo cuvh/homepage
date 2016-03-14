@@ -1,4 +1,11 @@
+@import "bootstrap/variables";
 @import "bootstrap-mods/variables";
+
+@media (max-width: $screen-sm) {
+    .navbar-static-sm {
+        position: absolute;
+    }
+}
 
 .navbar-brand svg {
     transition: fill .2s linear;
@@ -68,4 +75,8 @@
 
 .navbar-padded {
     padding: 40px 20px 0px 40px;
+
+    @media (max-width: $screen-sm) {
+        padding: 5px 0 0 0;
+    }
 }
