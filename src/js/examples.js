@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     function handleHide(lightbox, innerLightbox, $menuContainer) {
         $('a.lightbox-hide').css({'opacity': 0, 'width': 0, 'height': 0});
-        $('body').css('overflow-y', 'auto');
+        $('body').css('overflow', 'auto');
         $('.inner-lightbox').css('height', '');
         removeClassShow(lightbox, innerLightbox);
         $('.fixed-header-elements').css('z-index', 25);
@@ -58,7 +58,7 @@ $(document).ready(function () {
         var lightBoxId = $(this).attr('href');
         var innerLightbox = $(lightBoxId);
         var lightbox = $('.lightbox');
-        $('body').css('overflow-y', 'hidden');
+        $('body').css('overflow', 'hidden');
         $('.fixed-header-elements').css('cssText', 'z-index: 20 !important');
         $('a.lightbox-hide').css({'opacity': 1, 'width': 'auto', 'height': 'auto'});
         var $menuContainer = $('.examples-header').find('nav');
