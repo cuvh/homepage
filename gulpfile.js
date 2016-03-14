@@ -44,6 +44,11 @@
 
     gulp.task('assets', function () {
         return gulp.src('assets/**/*')
+            .pipe(gulp.dest('build'));
+    });
+
+    gulp.task('assets-production', function () {
+        return gulp.src('assets/**/*')
             .pipe(imagemin({
                 progressive: true,
                 svgoPlugins: [
@@ -65,6 +70,7 @@
     });
 
     gulp.task('build', ['html', 'css', 'assets', 'js']);
+    gulp.task('build-production', ['html', 'css', 'assets-production', 'js']);
 
     gulp.task('server', function () {
         connect.server({
@@ -76,7 +82,7 @@
     gulp.task('develop', ['build', 'server'], function() {
         gulp.watch(['src/sass/**/*.scss'], ['css', 'reload']);
         gulp.watch(['src/js/**/*.js'], ['js', 'reload']);
-        gulp.watch(['src/{images,fonts}/**/*'], ['assets', 'reload']);
+        gulp.watch(['assets/{images,fonts}/**/*'], ['assets', 'reload']);
         gulp.watch(['src/{config,templates}/**/*'], ['html', 'reload']);
     });
 
@@ -84,7 +90,7 @@
         gulp.src('build/*.html').pipe(connect.reload());
     });
 
-    gulp.task('production', ['build'], function () {
+    gulp.task('production', ['build-production'], function () {
         var revAll = new RevAll({
             dontRenameFile: ['.html'],
             dontUpdateReference: ['.html'],
