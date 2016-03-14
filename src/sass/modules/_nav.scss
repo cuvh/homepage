@@ -52,14 +52,16 @@
     margin-top: 10px;
     //width: 14px;
     //height: 14px;
-    @include opacity(0.2);
-    @include font-size(18px, true);
+    opacity: 0.2;
+    font-size: 18px;
     padding: 0;
     padding-left: 20px;
+    color: white;
 
     &:hover,
     &:focus {
-        @include opacity(1);
+        color: white;
+        opacity: 1;
     }
 }
 
