@@ -196,14 +196,7 @@ $nav-width: 310px;
     }
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .4);
-    user-select: none;
+.modal-backdrop {
     z-index: 26;
     opacity: 0;
     visibility: hidden;
@@ -220,7 +213,7 @@ $nav-width: 310px;
 
     .is-menu-open {
         .modal-backdrop {
-            opacity: 1;
+            opacity: .4;
             visibility: visible;
         }
 

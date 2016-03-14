@@ -59,7 +59,7 @@ $(function() {
                 $bodyEl.addClass('is-menu-opened');
             }
         });
-        // $('html, body').scrollTop(0);
+
         $body.toggleClass('is-menu-open');
         if ($body.hasClass('is-menu-open')) {
             $('.navbar-toggle,.progress-bullets').addClass('hide');
