@@ -1,0 +1,5 @@
+@import "bootstrap/mixins";
+
+.btn-black {
+    @include button-variant(#fff, #000, #000);
+}

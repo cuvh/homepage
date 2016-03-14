@@ -4,23 +4,47 @@
     {{/content}}
 
     {{#content "body"}}
-        <div class="section -full m-text-center -error menu-open">
-            <div class="row">
-                <div class="col-sm-3">
-                    <a href="/"><img src="/images/ench_logo.svg" alt="" class="ench-logo"></a>
+        <nav class="navbar navbar-padded navbar-fixed-top">
+            <div class="container-fluid">
+                <a
+                 class="navbar-brand"
+                 href="/">
+                    {{> enhancv-logo }}
+                </a>
+
+                <div class="nav navbar-right">
+                    <a
+                     class="btn btn-link"
+                     href="http://help.enhancv.com">
+                        Help
+                    </a>
+                    <a
+                     class="btn btn-default"
+                     href="{{links.get_started}}">
+                        Login
+                    </a>
                 </div>
-                <div class="col-sm-6"></div>
-                <div class="col-sm-3 m-text-right cta-container">
-                    <a class="nav-login-button nav-item" href="http://help.enhancv.com">Help</a>
-                    <a class="nav-login-button button line">Login</a>
-                </div>
+
             </div>
+        </nav>
+
+        <div class="section -full m-text-center -error menu-open">
             <div class="container">
                 <div class="v-base">
                     <div class="v-middle">
                         <h1>Error 404 <br> This is not the page you are looking for.</h1>
-                        <a class="nav-login-button button line back-button" href="/">Homepage</a>
-                        <a class="nav-login-button button line back-button" href="http://app.enhancv.com">Build your resume</a>
+
+                        <a
+                         class="btn btn-default"
+                         href="/">
+                            Homepage
+                        </a>
+
+                        <a
+                         class="btn btn-default"
+                         href="http://app.enhancv.com">
+                            Build your resume
+                        </a>
                     </div>
                 </div>
             </div>

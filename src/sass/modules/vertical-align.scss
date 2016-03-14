@@ -1,0 +1,11 @@
+// Vertically align elements
+// https://medium.com/@ivankerin/how-to-really-centre-an-html-div-bba17650a071
+.vertical-align-base {
+    position: relative;
+}
+.vertical-align {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

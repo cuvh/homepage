@@ -1,0 +1,71 @@
+@import "bootstrap-mods/variables";
+
+.navbar-brand svg {
+    transition: fill .2s linear;
+}
+
+// Always show navbar-toggle and add a hover effect
+.navbar-toggle {
+    display: block;
+
+    .icon-bar {
+        background-color: white;
+        width: 19px;
+        transition: transform .2s ease-in-out, background-color .2s linear;
+    }
+
+    &:hover {
+        .icon-bar-up {
+            transform: translateY(-3px);
+        }
+        .icon-bar-down {
+            transform: translateY(3px);
+        }
+    }
+}
+
+.navbar-toggle-replace.shown + .navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-replace {
+    float: right;
+    opacity: 0;
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    visibility: hidden;
+
+    &.shown {
+        max-width: 200px;
+        visibility: visible;
+        padding-left: $padding-base-horizontal;
+        padding-right: $padding-base-horizontal;
+        opacity: 1;
+    }
+}
+
+// Switch navbar elements to primary color
+.navbar-color-primary {
+    .navbar-toggle .icon-bar {
+        background-color: $brand-primary;
+    }
+    .navbar-brand svg {
+        fill: $brand-primary;
+    }
+}
+
+// Allow clicking through navbar elements,
+// but still be able to click on nav buttons
+.navbar-click-through {
+    pointer-events: none;
+    .nav {
+        pointer-events: auto;
+    }
+}
+
+.navbar-padded {
+    padding: 40px 20px 0px 40px;
+}

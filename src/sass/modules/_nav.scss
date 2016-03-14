@@ -47,74 +47,21 @@
     }
 }
 
-.menu-close,
-.menu-hamb {
-    @include font-size(22px, true);
-    color: #fff;
-    text-decoration: none;
-    @include transition-full(transform .2s ease-in-out);
-    padding: 20px;
-    margin-top: -20px;
-    margin-right: -40px;
-    color: #fff;
-
-    span {
-        position: relative;
-        display: block;
-        width: 19px;
-        height: 2px;
-        background: #fff;
-        font-size: 0;
-
-        &.green-hamburger {
-            background: #07c1a3;
-
-            &:before,
-            &:after {
-                background: #07c1a3;
-            }
-        }
-
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            top: -6px;
-            left: 0;
-            width: 19px;
-            height: 2px;
-            background: #fff;
-            @include transition-full(transform .2s ease-in-out);
-        }
-
-        &:after {
-            top: 6px;
-        }
-    }
-
-    &:hover {
-        span:before {
-            @include transform(translateY(-3px));
-        }
-        span:after {
-            @include transform(translateY(3px));
-        }
-    }
-}
-
 .menu-close {
     margin-left: 35px;
     margin-top: 10px;
     //width: 14px;
     //height: 14px;
-    @include opacity(0.2);
-    @include font-size(18px, true);
+    opacity: 0.2;
+    font-size: 18px;
     padding: 0;
     padding-left: 20px;
+    color: white;
 
     &:hover,
     &:focus {
-        @include opacity(1);
+        color: white;
+        opacity: 1;
     }
 }
 
@@ -129,7 +76,6 @@ $nav-width: 310px;
     color: #555;
     overflow-y: auto;
     height: 100vh;
-    z-index: 19;
     @include opacity(0);
     &.loaded {
         @include opacity(1);
@@ -254,9 +200,6 @@ $nav-width: 310px;
             }
             @include transform(translateX(-$nav-width));
         }
-        .menu-hamb {
-            display: none !important;
-        }
     }
 }
 
@@ -270,136 +213,6 @@ $nav-width: 310px;
         right: 14%;
         top: 0;
         margin-left: 5px;
-    }
-
-    .button-cta {
-        // display: none !important;
-        @include opacity(0, true);
-        @include transition(0.15s);
-        transition-delay: 1s;
-    }
-}
-
-.cta-container,
-.ench-logo {
-    position: fixed;
-    top: 55px;
-    left: 50px;
-    z-index: 200;
-
-    @include media($screen-sm) {
-        top: 25px !important;
-        left: 20px;
-    }
-}
-
-.cta-container {
-    &.in-back {
-        z-index: -1;
-    }
-}
-
-@media (max-width: 800px) {
-    .cta-container,
-    .ench-logo {
-        position: initial;
-        // position: absolute;
-        // left: 0;
-    }
-
-    .cta-container {
-        float: right !important;
-        margin-right: 50px;
-    }
-}
-
-.-home {
-    .cta-container {
-        margin-right: 0;
-
-        @media (max-width: 770px) {
-            & {
-                margin-top: -5px;
-                margin-right: 50px;
-            }
-        }
-    }
-}
-
-.cta-container {
-    left: auto;
-    right: 50px;
-    margin-top: -4px;
-
-    @include media($screen-sm) {
-        left: auto;
-        top: 25px;
-        right: 40px;
-    }
-
-    .button-cta {
-        margin-top: -10px;
-        // display: none;
-        display: inline-block;
-        visibility: hidden;
-        @include opacity(0);
-        margin-right: -25px;
-        @include transition(0.5s);
-        transition-delay: 0.1s;
-
-        &.-trans {
-            background: #000;
-
-            &:hover,
-            &:focus {
-                background: rgba(#000, .7);
-            }
-        }
-
-        @include media($screen-sm) {
-            margin-top: -5px;
-        }
-    }
-
-    .header-button {
-        border: none !important;
-    }
-
-    .menu-hamb {
-        display: inline-block;
-        visibility: visible;
-        @include opacity(1);
-        @include transition(0.5s);
-        transition-delay: 0.1s;
-    }
-}
-
-.-home {
-    .menu-hamb,
-    .button-cta {
-        float: right;
-        margin-top: -5px;
-
-        @media (max-width: 770px) {
-            & {
-                margin-top: 0;
-            }
-        }
-    }
-
-    .button-cta {
-        margin-right: -40px;
-    }
-}
-
-.-home .swap {
-    .button-cta {
-        visibility: visible;
-        @include opacity(1);
-    }
-    .menu-hamb {
-        visibility: hidden;
-        @include opacity(0);
     }
 }
 
