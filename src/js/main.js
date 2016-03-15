@@ -49,7 +49,7 @@ $(function() {
         $document.off("touchmove.nav");
     };
 
-    $document.on('click', '.js-open-menu, .js-close-menu, .is-menu-open .menu-open', function(e) {
+    $document.on('click', '.js-open-menu, .js-close-menu, .modal-backdrop', function(e) {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');
@@ -59,13 +59,13 @@ $(function() {
                 $bodyEl.addClass('is-menu-opened');
             }
         });
-        $('html, body').scrollTop(0);
+
         $body.toggleClass('is-menu-open');
         if ($body.hasClass('is-menu-open')) {
-            $('.navbar-toggle,.navbar-brand,.progress-bullets').addClass('hide');
+            $('.navbar-toggle,.progress-bullets').addClass('hide');
             disableScrollTouch();
         } else {
-            $('.navbar-toggle,.navbar-brand,.progress-bullets').removeClass('hide');
+            $('.navbar-toggle,.progress-bullets').removeClass('hide');
             enableScrollTouch();
         }
     });

@@ -1,5 +1,5 @@
 .is-menu-open {
-    overflow: hidden;
+    overflow-y: visible;
 }
 
 .navigation-bar {
@@ -29,10 +29,10 @@
     color: #fff;
     padding: 0 25px;
     text-decoration: none;
-    @include opacity(0.75);
+    opacity: .75;
 
     &:hover {
-        @include opacity(1);
+        opacity: 1;
     }
 }
 
@@ -47,13 +47,12 @@
     }
 }
 
+
 .menu-close {
-    margin-left: 35px;
+    margin-left: 25px;
     margin-top: 10px;
-    //width: 14px;
-    //height: 14px;
-    opacity: 0.2;
-    font-size: 18px;
+    opacity: .2;
+    @include font-size(18px, true);
     padding: 0;
     padding-left: 20px;
     color: white;
@@ -66,19 +65,29 @@
 }
 
 $nav-width: 310px;
-.menu {
-    position: absolute;
-    width: $nav-width;
-    top: 0;
-    right: 0;
-    background: #1a1a1a;
-    padding: 30px 30px 30px 50px;
-    color: #555;
-    overflow-y: auto;
+
+.side-nav {
+    z-index: $zindex-modal;
+    width: 0;
+    right: $nav-width;
+    margin-right: -$nav-width;
+    position: fixed;
     height: 100vh;
-    @include opacity(0);
-    &.loaded {
-        @include opacity(1);
+    transition: width ease-in-out .25s;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .menu {
+        position: absolute;
+        width: $nav-width;
+        top: 0;
+        right: 0;
+        background: #1a1a1a;
+        padding: 30px 30px 30px 50px;
+        color: #555;
+        overflow-y: auto;
+        height: 100vh;
+        z-index: 19;
     }
 
     .buttons-container {
@@ -99,6 +108,9 @@ $nav-width: 310px;
             margin-bottom: 12px;
             @include font-size(20px);
             text-decoration: none;
+            transition: opacity .3s .15s ease-in-out, visibility .3s .15s ease-in-out, margin .3s .15s ease-out, color .15s 0s ease-in;
+            opacity: 0;
+            visibility: hidden;
 
             &:hover {
                 text-decoration: none;
@@ -121,9 +133,13 @@ $nav-width: 310px;
         }
     }
 
+    &.loaded {
+        opacity: 1;
+    }
+
     @include media($screen-sm) {
         @include transition-full(transform .3s ease-in-out);
-        @include transform(translateY(-100%));
+        transform: translateY(-100%);
         position: fixed;
         left: 0;
         bottom: 0;
@@ -132,6 +148,12 @@ $nav-width: 310px;
         width: 100%;
         text-align: center;
         padding-left: 30px;
+        overflow: hidden;
+
+        .menu {
+            width: 100%;
+            height: 100vh;
+        }
 
         .buttons-container {
             padding: 0;
@@ -139,7 +161,6 @@ $nav-width: 310px;
 
             ul {
                 margin: 0;
-                //height: calc(100% - 50px);
                 position: relative;
 
                 &.menu-item-wrapper {
@@ -161,51 +182,153 @@ $nav-width: 310px;
             padding: 0;
 
             ul {
-                margin-top: 30px;
-
-                li:last-child {
-                    margin-bottom: 18px;
-                }
+                padding: 10px 0;
 
                 .menu-item-wrapper {
                     position: initial;
                 }
             }
         }
+
+        .social {
+            padding-top: 40px;
+        }
     }
 }
 
-.menu-open {
-    @include transition-full(transform .3s ease-in-out);
+.modal-backdrop {
+    z-index: 26;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .2s;
 }
 
 @include media-min($screen-sm) {
-    .is-menu-open {
-        overflow: hidden;
+    .menu {
+        ul a {
+            margin-left: 8%;
+            margin-top: 0;
+        }
+    }
 
-        .menu-open {
-            &:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, .4);
-                -ms-user-select: none;
-                -moz-user-select: none;
-                -webkit-user-select: none;
-                user-select: none;
-                z-index: 10000;
+    .is-menu-open {
+        .modal-backdrop {
+            opacity: .4;
+            visibility: visible;
+        }
+
+        .side-nav {
+            width: $nav-width;
+
+            ul a {
+                opacity: 1;
+                visibility: visible;
+                margin-left: 0;
             }
-            @include transform(translateX(-$nav-width));
         }
     }
 }
 
 @include media($screen-sm) {
-    .is-menu-open .menu {
-        @include transform(translateY(0));
+    .menu {
+        ul a {
+            margin-left: 0;
+        }
+    }
+
+    .is-menu-open {
+        overflow: hidden;
+
+        .side-nav {
+            transform: translateY(0);
+            width: 100%;
+            overflow: hidden;
+
+            .menu {
+                width: 100%;
+
+                ul a {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .js-close-menu {
+        position: absolute;
+        right: 14%;
+        top: 0;
+        margin-left: 5px;
+    }
+
+    .button-cta {
+        @include opacity(0, true);
+        @include transition(0.15s);
+        transition-delay: 1s;
+    }
+}
+
+.cta-container,
+.ench-logo {
+    position: fixed;
+    top: 55px;
+    left: 50px;
+    z-index: 200;
+
+    @include media($screen-sm) {
+        top: 25px !important;
+        left: 20px;
+    }
+}
+
+.cta-container {
+    &.in-back {
+        z-index: -1;
+    }
+}
+
+@media (max-width: 800px) {
+    .cta-container,
+    .ench-logo {
+        position: initial;
+    }
+
+    .cta-container {
+        float: right !important;
+        margin-right: 50px;
+    }
+}
+
+.-home {
+    .cta-container {
+        margin-right: 0;
+
+        @media (max-width: 770px) {
+            & {
+                margin-top: -5px;
+                margin-right: 50px;
+            }
+        }
+    }
+
+    .is-menu-open {
+        overflow: hidden;
+
+        .side-nav {
+            transform: translateY(0);
+            width: 100%;
+            overflow: hidden;
+
+            .menu {
+                width: 100%;
+
+                ul a {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
     }
 
     .js-close-menu {
@@ -238,12 +361,12 @@ $nav-width: 310px;
 
 @include keyframes(gotosection) {
     0% {
-        @include transform(translateY(0px));
+        transform: translateY(0);
     }
     50% {
-        @include transform(translateY(10px));
+        transform: translateY(10px);
     }
     100% {
-        @include transform(translateY(0px));
+        transform: translateY(0);
     }
 }

@@ -4,12 +4,14 @@
 @import "bootstrap";
 @import "bootstrap-mods/navbar";
 @import "bootstrap-mods/buttons";
+@import "bootstrap-mods/modals";
 
 @import "core/settings";
 @import "core/mixins";
 @import "core/extends";
 @import "core/normalize";
 @import "core/utils";
+@import "core/page-skeleton";
 
 @import "modules/loader";
 @import "modules/grid";
