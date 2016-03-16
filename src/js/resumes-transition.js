@@ -12,16 +12,17 @@ $(function () {
             var offsetTop = $stepImage.find('.v-middle-image:first').position().top;
 
             var controller = new ScrollMagic.Controller();
-            var scene = new ScrollMagic.Scene({
+            window.scene = new ScrollMagic.Scene({
                 duration: (sh - ih),
                 offset: 50,
                 triggerHook: "onLeave",
                 triggerElement: '#stepsContainer'
             })
             .setPin(".v-base.step-image")
+            .setClassToggle(".v-base.step-image", "fixed")
             .addTo(controller);
 
-            var sceneFadeOut1 = new ScrollMagic.Scene({
+            window.sceneFadeOut1 = new ScrollMagic.Scene({
                 duration: (wh / 2 + offsetTop),
                 offset: 0,
                 triggerHook: "onCenter",
@@ -38,7 +39,7 @@ $(function () {
                 TweenMax.to('#cv-image-4', 0.4, {opacity: 1, delay: 0.4})
             ]);
 
-            var sceneFadeOut2 = new ScrollMagic.Scene({
+            window.sceneFadeOut2 = new ScrollMagic.Scene({
                 duration: (wh / 2 + offsetTop),
                 offset: 150,
                 triggerHook: "onCenter",
@@ -55,7 +56,7 @@ $(function () {
                 TweenMax.to('#cv-image-3', 1, {opacity: 1, delay: 0.2})
             ]);
 
-            var sceneFadeIn1 = new ScrollMagic.Scene({
+            window.sceneFadeIn1 = new ScrollMagic.Scene({
                 duration: (wh / 2 + offsetTop),
                 offset: 0,
                 triggerHook: "onLeave",
@@ -64,7 +65,7 @@ $(function () {
             .setTween(tweenFadeIn1)
             .addTo(controller);
 
-            var sceneFadeIn2 = new ScrollMagic.Scene({
+            window.sceneFadeIn2 = new ScrollMagic.Scene({
                 duration: (wh / 2 + offsetTop),
                 offset: 0,
                 triggerHook: "onLeave",
@@ -73,6 +74,29 @@ $(function () {
             .setTween(TweenMax.to('#step-three', 0.4, {opacity: 1}))
             .addTo(controller);
 
+        }
+    }).on('resize', function() {
+        var $stepsContainer = $('#stepsContainer');
+
+        if ($stepsContainer.length > 0) {
+
+            var sh = parseInt($stepsContainer.outerHeight(true));
+            var $stepImage = $('.v-base.step-image');
+            var wh = $(this).height();
+            var ih = parseInt($stepImage.outerHeight(true));
+            var offsetTop = $stepImage.find('.v-middle-image:first').position().top;
+            var duration = (wh / 2 + offsetTop);
+
+            window.sceneFadeOut1.duration(duration);
+            window.sceneFadeOut1.update(true);
+            window.scene.duration((sh - ih));
+            window.scene.update(true);
+            window.sceneFadeOut2.duration(duration);
+            window.sceneFadeOut2.update(true);
+            window.sceneFadeIn1.duration(duration);
+            window.sceneFadeIn1.update(true);
+            window.sceneFadeIn2.duration(duration);
+            window.sceneFadeIn2.update(true);
         }
     });
 });
