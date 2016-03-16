@@ -14,12 +14,12 @@ $(function () {
             var controller = new ScrollMagic.Controller();
             window.scene = new ScrollMagic.Scene({
                 duration: (sh - ih),
-                offset: 50,
+                offset: 0,
                 triggerHook: "onLeave",
                 triggerElement: '#stepsContainer'
             })
             .setPin(".v-base.step-image")
-            .setClassToggle(".v-base.step-image", "fixed")
+            .setClassToggle(".v-base.step-image", "centered")
             .addTo(controller);
 
             window.sceneFadeOut1 = new ScrollMagic.Scene({
