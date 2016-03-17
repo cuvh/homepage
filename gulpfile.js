@@ -33,7 +33,8 @@
             .pipe(sourcemaps.init())
             .pipe(
                 sass({
-                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets']
+                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets'],
+                    outputStyle: 'compressed'
                 })
                 .on('error', sass.logError)
             )
