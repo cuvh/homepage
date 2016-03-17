@@ -61,7 +61,7 @@ deploy:
     cache_control:
       - max-age=2592000
       - no-cache:
-        - **/*.html
+        - index.html
     on:
       repo: enhancv/homepage
       branch: develop
