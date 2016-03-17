@@ -49,7 +49,7 @@ $(function() {
         $document.off("touchmove.nav");
     };
 
-    $document.on('click', '.js-open-menu, .js-close-menu, .modal-backdrop', function(e) {
+    $document.on('click', '.js-open-menu, .js-close-menu, .menu-backdrop', function(e) {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');
