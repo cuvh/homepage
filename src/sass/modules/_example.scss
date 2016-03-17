@@ -2,35 +2,34 @@
     width: 100%;
     margin: 0 auto;
 }
-
 .examples-header {
     .header-title {
         margin-bottom: -20px !important;
     }
 }
-
 .wrap-examples {
     background: url('/images/error/error-background.jpg');
     position: relative;
 }
-
 .section.examples-section {
     background: transparent;
     position: static;
-
     @media (min-width: $screen-sm) and (min-height: 2150px) {
         height: calc(100vh - 408px);
     }
 }
-
 .hide {
     display: none;
 }
-
 .show {
     display: initial;
 }
-
+.modal-open {
+    .modal-backdrop.in {
+        background-color: $ench-color;
+        opacity: 0.7;
+    }
+}
 .example-section {
     position: static;
     text-align: center;
@@ -40,30 +39,43 @@
         box-shadow: none;
         border-radius: 0;
         background: transparent;
+    }
 
-        img:last-child {
-            margin-top: 100px;
+    .close {
+        font-weight: normal;
+        text-shadow: none;
+        opacity: 1;
+        outline: 0;
+
+        position: fixed;
+        top: 50px;
+        right: 50px;
+
+        i {
+            color: #fff;
+            font-size: 19px;
+        }
+
+        &:hover > i {
+            opacity: 0.7;
         }
     }
 
     [class*='col-'] {
         position: static;
     }
-
     a {
         text-decoration: none;
         display: inline-block;
         position: relative;
         cursor: pointer;
     }
-
     .zoom-in {
         color: #333;
         text-align: center;
         visibility: hidden;
         @include opacity(0);
         @include transition(.15s);
-
         .circle {
             display: block;
             margin: auto;
@@ -80,35 +92,29 @@
             background-color: #fff;
         }
     }
-
     .example-image > img {
         @include transition(.15s);
         width: 100%;
     }
-
     .example-image:hover > img,
     .example-image:focus > img,
     .example-image:active > img {
         @include opacity(0.7);
     }
-
     .example-image:hover .zoom-in,
     .example-image:focus .zoom-in,
     .example-image:active .zoom-in {
         visibility: visible;
         @include opacity(1);
     }
-
     .person-data {
         padding-top: 66px;
         padding-bottom: 71px;
-
         .person-name {
             margin-top: 0;
             margin-bottom: 10px;
             @include font-size(24px);
         }
-
         .person-job-position {
             margin-bottom: 0 !important;
             @include font-size(16px, true);
@@ -116,7 +122,6 @@
         }
     }
 }
-
 .-section.-footer {
     @media (min-width: $screen-md) and (min-height: 1050px) {
         position: absolute;
@@ -124,7 +129,6 @@
         width: 100%;
     }
 }
-
 @media(max-width: 768px) {
     .circle {
         width: 60px !important;
