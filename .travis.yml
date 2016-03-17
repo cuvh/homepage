@@ -50,18 +50,6 @@ deploy:
     local_dir: cdn
     acl: public_read
     skip_cleanup: true
-    expires:
-      - "2020-01-01 00:00:00 -0000":
-        - "**/*.png"
-        - "**/*.jpg"
-        - "**/*.gif"
-        - "**/*.js"
-        - "**/*.css"
-        - "**/*.svg"
-    cache_control:
-      - max-age=2592000
-      - no-cache:
-        - index.html
     on:
       repo: enhancv/homepage
       branch: develop
