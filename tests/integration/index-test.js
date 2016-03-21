@@ -40,7 +40,7 @@ casper.test.begin('Index page', 13, function(test) {
 
         test.assertSelectorHasText(
             'h1',
-            'Get the job',
+            'Get the job you deserve',
             'Should have a main title'
         );
 

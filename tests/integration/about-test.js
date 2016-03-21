@@ -38,7 +38,7 @@ casper.test.begin('About page', 18, function (test) {
 
         test.assertSelectorHasText(
             '.about-header h1',
-            'Enhancv brings you resumes that are all',
+            'Enhancv brings you resumes that are all about you',
             'Should have a main title'
         );
 
