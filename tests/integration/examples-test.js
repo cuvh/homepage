@@ -28,7 +28,7 @@ casper.test.begin('Examples page', 8, function (test) {
 
         test.assertSelectorHasText(
             'h1',
-            'We\'ll get you hired! Prove that you are worthy',
+            'We\'ll get you hired!',
             'Should have a main title'
         );
 
