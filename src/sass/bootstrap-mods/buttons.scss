@@ -1,5 +1,7 @@
 @import "bootstrap/mixins";
+@import "bootstrap-mods/variables";
 @import "core/mixins";
+@import "core/settings";
 
 // BUTTON STYLES
 .btn {
@@ -11,17 +13,39 @@
     @include button-variant(#fff, #000, #000);
 }
 
-.btn-primary {
+.btn-warning {
     border: 0;
 
-    &:hover {
-        color: $btn-warning-bg;
-        background-color: $btn-warning-color;
+    &.invert-color {
+        &:hover {
+            color: $btn-warning-bg;
+            background-color: $btn-warning-color;
+        }
     }
+}
+
+.btn-transparent {
+    color: #fff;
+    background-color: transparent;
+
+    &.invert-color {
+        &:hover {
+            background-color: #fff;
+            color: $ench-dark-color;
+        }
+    }
+}
+
+.btn-line {
+    border: 1px solid #fff;
 }
 
 // BUTTON SIZES
 .btn-lg {
     min-width: 160px;
     @include button-size(12px, 25px, 19px, normal, 35px);
+}
+
+.btn-sm {
+    @include button-size(10px, 18px, 16px, normal, 35px);
 }
