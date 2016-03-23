@@ -1,5 +1,27 @@
 @import "bootstrap/mixins";
+@import "core/mixins";
 
+// BUTTON STYLES
+.btn {
+    @include transition-full(background .2s ease-in-out);
+}
+
+// BUTTON COLORS
 .btn-black {
     @include button-variant(#fff, #000, #000);
+}
+
+.btn-primary {
+    border: 0;
+
+    &:hover {
+        color: $btn-warning-bg;
+        background-color: $btn-warning-color;
+    }
+}
+
+// BUTTON SIZES
+.btn-lg {
+    min-width: 160px;
+    @include button-size(12px, 25px, 19px, normal, 35px);
 }
