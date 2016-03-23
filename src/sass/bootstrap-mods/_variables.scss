@@ -19,7 +19,7 @@
 $brand-primary: #07c1a3;
 // $brand-success:         #5cb85c
 // $brand-info:            #5bc0de
-// $brand-warning:         #f0ad4e
+$brand-warning: #ec9231;
 // $brand-danger:          #d9534f
 
 
@@ -166,9 +166,9 @@ $btn-default-border:             #fff;
 // $btn-info-bg:                    $brand-info
 // $btn-info-border:                darken($btn-info-bg, 5%)
 
-// $btn-warning-color:              #fff
-// $btn-warning-bg:                 $brand-warning
-// $btn-warning-border:             darken($btn-warning-bg, 5%)
+$btn-warning-color: #fff;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: darken($btn-warning-bg, 5%);
 
 // $btn-danger-color:               #fff
 // $btn-danger-bg:                  $brand-danger
