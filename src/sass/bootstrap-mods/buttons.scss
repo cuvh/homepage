@@ -5,7 +5,14 @@
 
 // BUTTON STYLES
 .btn {
+    border: 0;
     @include transition-full(background .2s ease-in-out);
+
+    &:active,
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
 }
 
 // BUTTON COLORS
@@ -15,6 +22,12 @@
 
 .btn-white {
     @include button-variant($ench-dark-color, #fff, #fff);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: rgba(#fff, .7);
+    }
 }
 
 .btn-warning {
@@ -46,6 +59,11 @@
 
 // BUTTON SIZES
 .btn-lg {
+    min-width: 160px;
+    @include button-size(14px, 25px, inherit, normal, 35px);
+}
+
+.btn-md {
     min-width: 160px;
     @include button-size(12px, 25px, inherit, normal, 35px);
 }
