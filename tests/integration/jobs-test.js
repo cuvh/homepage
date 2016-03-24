@@ -2,9 +2,9 @@ casper.test.begin('Jobs page', 7, function (test) {
     casper.start('http://127.0.0.1:8080/jobs.html', function () {
 
         var jobs = {
-            '/join-the-force.html': 'Front-End Jedi Master',
-            '/growth-enhancer.html': 'Digital Marketing Enhancer',
-            '/job/graphic-designer.html': 'Part-time Graphic Designer',
+            // '/join-the-force.html': 'Front-End Jedi Master',
+            // '/growth-enhancer.html': 'Digital Marketing Enhancer',
+            // '/job/graphic-designer.html': 'Part-time Graphic Designer',
         };
 
         test.assertTitle('Jobs at Enhancv');
