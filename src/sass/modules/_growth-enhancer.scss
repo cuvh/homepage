@@ -127,6 +127,9 @@
             display: none;
         }
     }
+    .carousel-indicators {
+        bottom: -45px;
+    }
 }
 .images {
     [class*="col-"] {
