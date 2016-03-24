@@ -114,23 +114,6 @@
         color: #fff;
     }
 }
-#carousel-values {
-    h2 {
-        margin-bottom: 70px;
-    }
-    img.arrow {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        @media(max-width: $screen-sm) {
-            display: none;
-        }
-    }
-    .carousel-indicators {
-        bottom: -45px;
-    }
-}
 .images {
     [class*="col-"] {
         padding: 5px;
