@@ -9,6 +9,7 @@
     @include transition-full(background .2s ease-in-out);
 
     &:active,
+    &:active:focus,
     &:focus {
         outline: 0;
         box-shadow: none;
@@ -41,6 +42,12 @@
     }
 }
 
+.btn-primary {
+    &:hover {
+        background-color: rgba($ench-color, .9);
+    }
+}
+
 .btn-transparent {
     color: #fff;
     background-color: transparent;
@@ -70,4 +77,8 @@
 
 .btn-sm {
     @include button-size(10px, 18px, inherit, normal, 35px);
+}
+
+.btn-xs {
+    @include button-size(8px, 15px, inherit, normal, 35px);
 }
