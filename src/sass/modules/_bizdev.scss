@@ -1,16 +1,6 @@
 .bizdev-header {
     background-image: url('/images/bizdev/header-image.jpg') !important;
     background-color: rgb(0, 192, 146);
-    .button {
-        margin-top: 30px;
-        background: #333;
-
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: lighten(#333, 5);
-        }
-    }
 }
 
 .bizdev-section {
