@@ -66,16 +66,6 @@
             }
         }
 
-        .button {
-            border: 0;
-            @include font-size(14px);
-            padding: 0;
-            outline: 0;
-            height: 37px;
-            width: 160px;
-            line-height: 0;
-        }
-
         .job-text {
             padding-top: 29px;
         }
@@ -125,21 +115,6 @@
 
     .right {
         padding-left: 50px;
-
-        .tell-me {
-            .button {
-                background-color: #666;
-                height: 40px;
-                width: 220px;
-
-                p {
-                    @include font-size(14px);
-                    text-align: left;
-                    margin-top: 10px;
-                    padding-left: 25px;
-                }
-            }
-        }
     }
 
     textarea.form-control {
@@ -188,23 +163,6 @@
 
         p {
             margin-bottom: 11px;
-        }
-
-        .button {
-            border: 0;
-            @include font-size(14px);
-            padding: 0;
-            outline: 0;
-            height: 40px;
-            width: 200px;
-            line-height: 0;
-            cursor: pointer;
-        }
-
-        .button:hover,
-        .button:focus,
-        .button:active {
-            background-color: rgba(102, 102, 102, 0.9);
         }
     }
 }

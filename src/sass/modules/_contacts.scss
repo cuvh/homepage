@@ -25,10 +25,6 @@
         margin-bottom: 50px;
     }
 
-    .button {
-        border: 0;
-    }
-
     .section-heading {
         @include font-size(27px);
         margin-bottom: 70px;
@@ -36,16 +32,6 @@
 
     p {
         @include font-size(14px);
-    }
-
-    .button {
-        padding: 10px 33px;
-        @include font-size(14px);
-        line-height: 0;
-    }
-
-    .button:focus {
-        outline: 0;
     }
 
     @media (min-width: $screen-sm) and (min-height: 1050px) {
