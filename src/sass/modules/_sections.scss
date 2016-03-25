@@ -90,6 +90,37 @@
     }
   }
 
+  &.-values {
+      background: url('/images/about/about-values-background.jpg');
+
+      h2 {
+          margin-bottom: 100px;
+          color: #00c091;
+          text-align: center;
+      }
+
+      [class*='col-'] {
+          margin-bottom: 50px;
+      }
+
+      .value-heading {
+          display: block;
+          @include font-size(21px);
+          font-weight: 300;
+          color: #00c091;
+          margin-bottom: 30px;
+      }
+
+      .value-desc {
+          @include font-size(16px);
+          color: rgba(255, 255, 255, 0.5);
+
+          &.-white {
+              color: #fff;
+          }
+      }
+  }
+
   &.-mobile-only {
     display: none;
     height: 210px !important;
