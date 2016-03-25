@@ -8,9 +8,9 @@
     border: 0;
     @include transition-full(background .2s ease-in-out);
 
-    &:active,
-    &:active:focus,
-    &:focus {
+    &:focus, &.focus,
+    &:active:focus, &:active.focus,
+    &.active:focus, &.active.focus {
         outline: 0;
         box-shadow: none;
     }
