@@ -6,6 +6,7 @@
     font-family: $base-font-family;
     font-size: 0;
     list-style-type: none;
+    margin: 0;
 
     &.-center {
         text-align: center;
@@ -19,6 +20,7 @@
 
     li {
         display: inline-block;
+        margin: 0;
     }
 }
 
