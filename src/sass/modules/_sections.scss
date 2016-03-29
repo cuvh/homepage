@@ -76,12 +76,6 @@
       }
     }
 
-    .button.-prim + span {
-      line-height: 48px;
-      display: inline-block;
-      overflow: hidden;
-    }
-
     @include media($screen-sm) {
       .ench-logo {
         position: absolute;
@@ -162,12 +156,6 @@
       .container {
         max-width: 100%;
       }
-    }
-
-    .button.-prim + span {
-      line-height: 48px;
-      display: inline-block;
-      overflow: hidden;
     }
   }
 

@@ -147,17 +147,6 @@
         margin-bottom: 20px;
     }
 
-    form .button {
-        border: 0;
-        @include font-size(14px);
-        padding: 0;
-        outline: 0;
-        height: 40px;
-        width: 150px;
-        line-height: 0;
-        cursor: pointer;
-    }
-
     .file-upload {
         position: relative;
         overflow: hidden;
