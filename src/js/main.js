@@ -2,6 +2,9 @@ $(function() {
 
     var scrollrPages = ["", "index.html", "join-the-force.html", "growth-enhancer.html"];
 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     function whichTransitionEvent() {
         var el = document.createElement('fake'),
             transEndEventNames = {
