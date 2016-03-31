@@ -16,24 +16,31 @@
     var imagemin = require('gulp-imagemin');
     var pngquant = require('imagemin-pngquant');
     var imageminJpegtran = require('imagemin-jpegtran');
+    var htmlmin = require('gulp-htmlmin');
 
-    gulp.task('html', function () {
+    gulp.task('html', function() {
         return gulp.src('src/templates/pages/**/*.hbs')
             .pipe(hb()
                 .data('src/config/links.json')
                 .partials('src/templates/partials/**/*.hbs')
                 .helpers(hbLayouts)
             )
-            .pipe(rename({extname: '.html'}))
+            .pipe(htmlmin({
+                collapseWhitespace: true
+            }))
+            .pipe(rename({
+                extname: '.html'
+            }))
             .pipe(gulp.dest('build'));
     });
 
-    gulp.task('css', function () {
+    gulp.task('css', function() {
         return gulp.src('src/sass/**/*.scss')
             .pipe(sourcemaps.init())
             .pipe(
                 sass({
-                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets']
+                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets'],
+                    outputStyle: 'compressed'
                 })
                 .on('error', sass.logError)
             )
@@ -42,26 +49,27 @@
             .pipe(gulp.dest('build/css'));
     });
 
-    gulp.task('assets', function () {
+    gulp.task('assets', function() {
         return gulp.src('assets/**/*')
             .pipe(gulp.dest('build'));
     });
 
-    gulp.task('assets-production', function () {
+    gulp.task('assets-production', function() {
         return gulp.src('assets/**/*')
             .pipe(imagemin({
                 progressive: true,
-                svgoPlugins: [
-                    {removeViewBox: false},
-                    {cleanupIDs: false}
-                ],
+                svgoPlugins: [{
+                    removeViewBox: false
+                }, {
+                    cleanupIDs: false
+                }],
                 use: [pngquant(), imageminJpegtran()]
             }))
             .pipe(gulp.dest('build'));
     });
 
     gulp.task('js', function () {
-        return gulp.src(['src/js/plugins/*.js', 'src/js/**/*.js'])
+        return gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,tooltip}.js', 'src/js/plugins/*.js', 'src/js/**/*.js'])
             .pipe(sourcemaps.init())
             .pipe(concat('combined.min.js'))
             .pipe(uglify())
@@ -72,7 +80,7 @@
     gulp.task('build', ['html', 'css', 'assets', 'js']);
     gulp.task('build-production', ['html', 'css', 'assets-production', 'js']);
 
-    gulp.task('server', function () {
+    gulp.task('server', function() {
         connect.server({
             root: 'build',
             livereload: true
@@ -86,11 +94,11 @@
         gulp.watch(['src/{config,templates}/**/*'], ['html', 'reload']);
     });
 
-    gulp.task('reload', function () {
+    gulp.task('reload', function() {
         gulp.src('build/*.html').pipe(connect.reload());
     });
 
-    gulp.task('production', ['build-production'], function () {
+    gulp.task('production', ['build-production'], function() {
         var revAll = new RevAll({
             dontRenameFile: ['.html'],
             dontUpdateReference: ['.html'],

@@ -1,0 +1,38 @@
+.predictify-nav {
+    position: absolute;
+}
+
+.section.predictify-as-seen-on img {
+    width: 75%;
+}
+
+.section.-home.predictify-header {
+    background-image: url('/images/predictify/bg-img-01.jpg');
+    background-position: center top;
+    padding-bottom: 0;
+}
+.section.predictify-features {
+    background-image: url('/images/predictify/predictify-lines-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e6e6e6;
+    .value-heading,
+    .value-desc {
+        color: #333;
+    }
+}
+.section.predictify-footer {
+    border-top: 1px solid #4d4d4d;
+    background-color: #333;
+
+    span {
+        color: #4d4d4d;
+    }
+
+    a.go-to-top {
+        color: #fff;
+        i {
+            font-size: 14px;
+        }
+    }
+}

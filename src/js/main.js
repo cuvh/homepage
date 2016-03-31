@@ -2,6 +2,9 @@ $(function() {
 
     var scrollrPages = ["", "index.html", "join-the-force.html", "growth-enhancer.html"];
 
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     function whichTransitionEvent() {
         var el = document.createElement('fake'),
             transEndEventNames = {
@@ -49,7 +52,7 @@ $(function() {
         $document.off("touchmove.nav");
     };
 
-    $document.on('click', '.js-open-menu, .js-close-menu, .modal-backdrop', function(e) {
+    $document.on('click', '.js-open-menu, .js-close-menu, .menu-backdrop', function(e) {
         e.preventDefault();
         var $body = $('body');
         $body.removeClass('is-menu-opened');

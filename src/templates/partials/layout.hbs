@@ -1,100 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>
         {{#block "title"}}Get the job you deserve - Enhancv{{/block}}
     </title>
-    <meta
-     name="description"
+    <meta name="description"
      content="{{#block "description"}}Enhancv helps you create compelling human-centric resumes that unveil the real person behind.{{/block}}">
-    <meta
-     name="keywords"
+    <meta name="keywords"
      content="{{#block "keywords"}}resume, creative resume, human-centric resume, performance-based resume, online resume, cv, career, job search, resume builder, create a resume, create resumes, create cv, resume design, cv design, performance-based cv, human-centric cv{{/block}}">
 
-    <meta
-     property="fb:app_id"
+    <meta property="fb:app_id"
      content="336323213188520" />
 
-    <meta
-     property="og:title"
+    <meta property="og:title"
      content="{{#block "title"}}{{/block}}">
-    <meta
-     property="og:description"
+    <meta property="og:description"
      content="{{#block "description"}}{{/block}}">
-    <meta
-     property="og:image"
+    <meta property="og:image"
      content="{{#block "image"}}/images/social-image.jpg{{/block}}">
 
-    <meta
-     name="viewport"
+    <meta name="viewport"
      content="width=device-width, initial-scale=1">
 
-    <link
-     rel="shortcut icon"
+    <link rel="shortcut icon"
      type="image/png"
      href="/images/favicon.png">
 
-    <link
-     href="https://fonts.googleapis.com/css?family=Roboto:300"
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300"
      rel="stylesheet">
-    <link
-     rel="stylesheet"
+    <link rel="stylesheet"
      href="/css/style.css">
-    <link
-     rel="stylesheet"
-     href="/css/font-awesome.css">
+    <link rel="stylesheet"
+     href="/css/font-awesome.css"> {{> google-analytics}}
 
-    {{> google-analytics}}
+     {{#block "sumome"}}
+     {{/block}}
 </head>
+
 <body id="mod">
-    <div class="modal-backdrop fade"></div>
+    <div class="modal-backdrop menu-backdrop fade"></div>
     {{> yandex-counter}}
 
     <div class="side-nav">
         <div class="menu">
             <div class="buttons-container">
-                <a
-                 href="{{links.get_started}}"
-                 class="button -small -trans -white lets-begin">
+                <a href="{{links.get_started}}"
+                 class="btn btn-transparent btn-line btn-sm invert-color lets-begin">
                     Let's Begin
                 </a>
-                <a
-                 href="#"
+                <a href="#"
                  class="menu-close js-close-menu">
                     <i class="icon icon-close-2"></i>
                 </a>
 
                 <ul class="menu-item-wrapper">
-                   <li><a href="/index.html">Home</a></li>
-                   <li><a href="/examples.html">Examples</a></li>
-                   <li><a href="/partners.html">Partners</a></li>
-                   <li><a href="/about.html">About</a></li>
-                   <li><a href="/jobs.html">Jobs</a></li>
-                   <li><a href="/contacts.html">Contacts</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/examples.html">Examples</a></li>
+                    <li><a href="/partners.html">Partners</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/jobs.html">Jobs</a></li>
+                    <li><a href="/contacts.html">Contacts</a></li>
                 </ul>
             </div>
             <div class="social -small -left">
-                <a
-                 href="{{links.fb}}"
+                <a href="{{links.fb}}"
                  target="_blank"
                  class="fa fa-facebook">
                 </a>
 
-                <a
-                 href="{{links.twitter}}"
+                <a href="{{links.twitter}}"
                  target="_blank"
                  class="fa fa-twitter">
                 </a>
 
-                <a
-                 href="{{links.linkedin}}"
+                <a href="{{links.linkedin}}"
                  target="_blank"
                  class="fa fa-linkedin">
                 </a>
 
-                <a
-                 href="{{links.google}}"
+                <a href="{{links.google}}"
                  target="_blank"
                  class="fa fa-google">
                 </a>
@@ -105,75 +91,65 @@
     {{#block "body"}}
     {{/block}}
 
-    <footer class="section -footer text-g6 menu-open">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 m-d-none-sm">
-                    <a
-                     href="{{links.get_started}}"
-                     class="button -small -trans m-margin-r2 lets-begin">
+    {{#block "footer"}}
+        <footer class="section -footer text-g6 menu-open">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 m-d-none-sm">
+                        <a href="{{links.get_started}}"
+                         class="btn btn-transparent btn-line btn-sm invert-color m-margin-r2 lets-begin">
                         Let's Begin
-                    </a>
+                    </a> It's Free
+                    </div>
+                    <div class="col-sm-4 m-text-center">
+                        <div class="social">
+                            <a href="{{links.fb}}"
+                             target="_blank"
+                             class="fa fa-facebook">
+                            </a>
 
-                    It's Free
-                </div>
-                <div class="col-sm-4 m-text-center">
-                    <div class="social">
-                        <a
-                         href="{{links.fb}}"
-                         target="_blank"
-                         class="fa fa-facebook">
-                        </a>
+                            <a href="{{links.twitter}}"
+                             target="_blank"
+                             class="fa fa-twitter">
+                            </a>
 
-                        <a
-                         href="{{links.twitter}}"
-                         target="_blank"
-                         class="fa fa-twitter">
-                        </a>
+                            <a href="{{links.linkedin}}"
+                             target="_blank"
+                             class="fa fa-linkedin">
+                            </a>
 
-                        <a
-                         href="{{links.linkedin}}"
-                         target="_blank"
-                         class="fa fa-linkedin">
-                        </a>
-
-                        <a
-                         href="{{links.google}}"
-                         target="_blank"
-                         class="fa fa-google">
+                            <a href="{{links.google}}"
+                             target="_blank"
+                             class="fa fa-google">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 m-text-right m-d-none-sm">
+                        <a href="/">
+                            <img src="/images/ench_logo.svg"
+                             alt="Enhancv logo"
+                             class="logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-4 m-text-right m-d-none-sm">
-                    <a href="/">
-                        <img
-                         src="/images/ench_logo.svg"
-                         alt="Enhancv logo"
-                         class="logo">
-                    </a>
-                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    {{/block}}
 
-    <script
-     src="http://code.jquery.com/jquery-1.11.3.min.js"
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"
      type="text/javascript"></script>
 
-    <script
-     src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"
      type="text/javascript"></script>
 
-    <script
-     src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"
      type="text/javascript"></script>
 
-    <script
-     src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"
      type="text/javascript"></script>
 
-    <script
-     src="/js/combined.min.js"
+    <script src="/js/combined.min.js"
      type="text/javascript"></script>
 </body>
+
 </html>
