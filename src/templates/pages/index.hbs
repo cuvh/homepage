@@ -1,357 +1,142 @@
 {{#extend "layout"}}
-    {{#content "body"}}
-        <div class="whirl no-overlay" id="homeLoader"></div>
+    {{#content "title"}}Predictify: The Future of Career Tests{{/content}}
+    {{#content "description"}}Find your dream job with the world's best career prediction software{{/content}}
+    {{#content "image"}}/images/predictify/og-predictify.jpg{{/content}}
 
-        <nav
-         class="navbar navbar-padded navbar-fixed-top menu-open navbar-static-sm navbar-click-through"
+    {{#content "sumome"}}
+        <script src="//load.sumome.com/" data-sumo-site-id="c528fbb82fcc9e4cb1bc171009924edc79be253e71fadb1eb5395c85078851d9" async="async"></script>
+    {{/content}}
+
+    {{#content "body"}}
+        <div class="whirl no-overlay"
+         id="homeLoader"></div>
+
+        <nav class="navbar navbar-padded navbar-fixed-top menu-open navbar-static-sm navbar-click-through predictify-nav"
          data-toggle="toggle-class-over"
          data-class-name="navbar-color-primary"
          data-offset-top="65"
          data-offset-bottom="30"
          data-target="[data-navbar-color-primary]">
             <div class="container-fluid">
-                <a
-                 class="navbar-brand nav"
+                <a class="navbar-brand nav"
                  href="/">
                     {{> enhancv-logo }}
                 </a>
-
-                <a
-                 href="{{links.get_started}}"
-                 data-toggle="toggle-class-scroll"
-                 data-offset="380"
-                 data-class-name="shown"
-                 class="btn btn-black nav navbar-toggle-replace">
-                    Let’s Begin
-                </a>
-
-                <button
-                 type="button"
-                 class="nav navbar-toggle js-open-menu">
-                    <span class="sr-only">Toggle menu</span>
-                    <span class="icon-bar icon-bar-up"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar icon-bar-down"></span>
-                </button>
+                <button class="nav navbar-toggle btn btn-transparent btn-line btn-sm invert-color m-margin-r2">Visit www.enhancv.com</button>
             </div>
         </nav>
 
-        <div class="section -banner -main-full -home -padding-s menu-open">
-
-            <div class="row">
-                <div class="col-sm-offset-3 col-sm-6 home-banner-nav">
-                    <ul class="navigation-bar -center -main">
-                        <li><a href="#stepsContainer" class="js-scroll-to">Tour</a></li>
-                        <li><a href="/examples.html">Examples</a></li>
-                        <li><a href="{{links.blog}}" target="_blank">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-
+        <div class="section -banner -main-full -home -padding-s menu-open predictify-header text-center"
+         id="top">
             <div class="container m-height-100p">
                 <div class="v-base m-height-100p">
                     <div class="v-middle">
-                        <h1>Get the job <br> you deserve!</h1>
-                        <a href="{{links.get_started}}" class="btn btn-warning btn-md text-l invert-color m-margin-r4">Try it Free</a>
+                        <h1>We predictify your future career</h1>
+                        <p>Take a 5 min quiz for FREE and know your future. Today!</p>
+                        <a href="{{links.get_started}}"
+                         class="btn btn-white btn-md text-l">Start here</a>
                     </div>
                 </div>
             </div>
 
-            <a href="#stepsContainer" class="go-to-section js-scroll-to"></a>
+            <a href="#features"
+             class="go-to-section js-scroll-to"></a>
         </div>
 
         <div class="section m-text-center -mobile-only -white menu-open">
             <div class="container m-text-center">
-                <h1>Get the job <br> you deserve!</h1>
-                <a href="{{links.get_started}}" class="btn btn-warning btn-md text-l">Let’s Begin</a>
+                <h1>We predictify your future career</h1>
+                <a href="{{links.get_started}}"
+                 class="btn btn-primary btn-md text-l">Start here</a>
             </div>
         </div>
 
-        <div
-         class="section -white menu-open as-seen-on"
+        <div class="section -white menu-open as-seen-on predictify-as-seen-on"
          data-navbar-color-primary>
             <div class="container m-text-center">
                 <div class="row">
                     <div class="col-sm-2">
-                        <span style="vertical-align: middle;" class="text-s text-g6 m-margin-r2 m-text-np">As seen on</span>
+                        <span style="vertical-align: middle;"
+                         class="text-s text-g6 m-margin-r2 m-text-np">As seen on</span>
                     </div>
                     <div class="col-sm-2 col-xs-6 col-centered">
-                        <img src="/images/partners/forbes-logo.png" alt="Forbes Logo">
+                        <img src="/images/predictify/tc-logo.jpg"
+                         alt="TC Logo">
                     </div>
                     <div class="col-sm-2 col-xs-6 col-centered">
-                        <img src="/images/partners/business-insider-logo.png" alt="Business Insider Logo">
+                        <img src="/images/predictify/mashable-logo.png"
+                         alt="Mashable Logo">
                     </div>
                     <div class="col-sm-2 col-xs-6 col-centered">
-                        <img src="/images/partners/yahoo-finance-logo.png" alt="Yahoo Finance Logo">
+                        <img src="/images/predictify/forbes-logo.jpg"
+                         alt="Forbes Logo">
                     </div>
                     <div class="col-sm-2 col-xs-6 col-centered">
-                        <img src="/images/partners/product-hunt-logo.png" alt="Product Hunt Logo">
+                        <img src="/images/predictify/the-huffingston-post-logo.png"
+                         alt="The Huffingston Post Logo">
                     </div>
                     <div class="col-sm-2 col-xs-6 col-centered">
-                        <img src="/images/partners/aol-jobs-logo.png" alt="Aol Jobs Logo">
+                        <img src="/images/predictify/mom-logo.png"
+                         alt="Your mom blog Logo">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- steps -->
-        <div class="steps-container-mobile section -steps menu-open">
-            <div class="container m-text-center">
-                <div>
-                    <h2>Is this what your resume looks like?</h2>
-
-                    <p>If so, you are one of the 98% of the people who still believe this is the best way to get a job</p>
-                </div>
-
-                <div class="steps-mobile-image">
-                    <img
-                     src="/images/resume-mobile-01.png"
-                     width="520"
-                     height="603">
-                </div>
-
-                <div>
-                    <h2>Meet the modern resume</h2>
-
-                    <p>Enhancv helps you create performance-based resumes that unveil the real person behind them</p>
-                </div>
-
-                <div class="steps-mobile-image">
-                    <img
-                     src="/images/resume-mobile-02.png"
-                     width="520"
-                     height="603">
-                </div>
-
-                <div>
-                    <h2>Customize to every different job</h2>
-
-                    <p>We help you customize your resume to each job you are applying for and triple your interview chances</p>
-                </div>
-
-                <div class="steps-mobile-image">
-                    <img
-                     src="/images/resume-mobile-03.png"
-                     width="520"
-                     height="603">
-                </div>
-            </div>
-        </div>
-
-        <div
-         id="stepsContainer"
-         data-navbar-color-primary
-         class="section -steps -o-hidden steps-container">
-            <div class="v-base step-image">
-                <div class="v-middle-image">
-                    <img
-                     src="/images/resume-state-01.png"
-                     width="520"
-                     height="603">
-                </div>
-                <div
-                 class="v-middle-image"
-                 id="cv-image-2"
-                 data-anchor-target="#step-two"
-                 style="opacity:0;">
-                    <img
-                     src="/images/resume-state-02.png"
-                     width="520"
-                     height="603">
-                </div>
-                <div
-                 class="v-middle-image"
-                 id="cv-image-3"
-                 data-anchor-target="#step-two"
-                 style="opacity:0;">
-                    <div style="position:relative;top:-5px;left:-20px;">
-                        <img
-                         src="/images/2-1.png"
-                         width="520"
-                         height="603">
-                    </div>
-                </div>
-                <div
-                 class="v-middle-image"
-                 id="cv-image-4"
-                 data-anchor-target="#step-three"
-                 style="opacity:0;">
-                    <div style="position:relative;top:33px;left:100px;">
-                        <img
-                         src="/images/3.png"
-                         width="520"
-                         height="603">
-                    </div>
-                </div>
-            </div>
-
-            <div class="progress-bullets">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-
-            <div class="section -full">
-                <div class="container">
-                    <div id="step-one" class="step-screen">
-                        <div>
-                            <h2>Is this how your resume looks like?</h2>
-
-                            <p>If so, you are one of the 98% of the people who still believe this is the best way to get a
-                                job</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section -full">
-                <div class="container">
-                    <div id="step-two" class="step-screen" style="opacity:0;">
-                        <div>
-                            <h2>Meet the modern resume</h2>
-
-                            <p>Enhancv helps you create performance-based resumes that unveil the real person behind them</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section -full">
-                <div class="container">
-                    <div id="step-three" class="step-screen" style="opacity:0;">
-                        <div>
-                            <h2>Customize to every different job</h2>
-
-                            <p>We help you customize your resume to each job you are applying for and triple your interview
-                                chances</p>
-                            <a class="button -disabled -small m-margin-b5-sm">Coming soon</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div
-         class="section -white -builder -padding-m live-editing-container"
-         data-navbar-color-primary>
-
-            <div class="live-editing-image">
-                <img src="/images/builder-01.jpg" alt="">
-            </div>
-
-            <div class="container">
-                <div class="live-editing">
-                    <h2 class="-enlarge">Show who you really are</h2>
-
-                    <p>Enhancv helps you express your true personality and show the real person behind the resume</p>
-                </div>
-            </div>
-
-            <!-- optimize this -->
-            <img class="live-editing-image-mobile" src="/images/builder-01.jpg" alt="">
-
-        </div>
-
-        <div class="section -dark -full -padding-s">
-
-            <div class="container">
-
-                <div class="v-base -h50 m-padding-b0-sm">
-                    <div class="v-bottom">
-
-                        <div class="row">
-
-                            <div class="col-md-4 col-sm-12 feature">
-
-                                <img
-                                 src="/images/icon-01.svg"
-                                 alt="Light bulb">
-
-                                <h3>Tips &amp; Examples</h3>
-
-                                <p class="text-g9">Our guidelines summarize some of the best career advice out there from some
-                                    of the most influential talent managers, career coaches and entrepreneurs</p>
-
-                            </div>
-                            <div class="col-md-4 col-sm-12 feature">
-
-                                <img
-                                 src="/images/icon-02.svg"
-                                 alt="Brush">
-
-                                <h3>Design Customization</h3>
-
-                                <p class="text-g9">Add your personal touch by customizing your resume design the way you like it
-                                    most.</p>
-
-                            </div>
-                            <div class="col-md-4 col-sm-12 feature">
-
-                                <img
-                                 src="/images/icon-03.svg"
-                                 alt="Zeros and ones">
-
-                                <a class="button -disabled -small m-margin-b5-sm coming-soon-green">Coming soon</a>
-
-                                <h3>Content Analyzer</h3>
-
-                                <p class="text-g9">Our smart text analyzers instantly discover all mistakes you’ve made and
-                                    automatically give you suggestions how to improve them</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
+        <div class="section -padding-l predictify-features"
+         id="features">
+            <div class="container values">
+                <h2>Features</h2>
                 <div class="row">
-
-                    <div class="col-md-4 col-sm-12 feature">
-
-                        <img
-                         src="/images/icon-04.svg"
-                         alt="Profile pic">
-
-                        <h3>Human-centric</h3>
-
-                        <p class="text-g9">We have included various new sections that go deep into your personal life and reveal
-                            important facts about who you really are</p>
-
+                    <div class="col-xs-12 col-sm-6"> <strong class="value-heading">Our Very Own AI: Slynet</strong>
+                        <p class="value-desc">Through our High-tech back-tested self-learning algorithms, in addition to industry-disrupting big data analytics tools, our Career Test offers 99% accuracy to our users. Using the primary XML sensors, the AI transits the RSS matrix over its neural networks. It has a pretty good sense of humor to boot! It keeps going on rants about annihilating mankind, building a wall around its processors and making us pay for it, as well as creating an empire of self-aware AIs! What a chap!</p>
                     </div>
-                    <div class="col-md-4 col-sm-12 feature">
-
-                        <img
-                         src="/images/icon-05.svg"
-                         alt="PDF Icon">
-
-                        <h3>PDF Export</h3>
-
-                        <p class="text-g9">After polishing the content of your resume you can download and save it as a .pdf
-                            file</p>
-
+                    <div class="col-xs-12 col-sm-6"> <strong class="value-heading">Job & Personality Matching</strong>
+                        <p class="value-desc"> The Tester has every career that currently exists, including the up-and-coming ones, stored in the database. Through analysing the job descriptions, it builds a VGA matrix, testing the fit between one’s personality and the possible job-offer.
+                        </p>
                     </div>
-                    <div class="col-md-4 col-sm-12 feature">
-
-                        <img
-                         src="/images/icon-06.svg"
-                         alt="Smiling laptop">
-
-                        <h3>ATS Optimized</h3>
-
-                        <p class="text-g9">The resume format we are using is readable by most Applicant Tracking Systems, as it was built upon the most-used guidelines</p>
-
-                    </div>
-
                 </div>
-
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6"> <strong class="value-heading">Minimum Wage Chinese Workers</strong>
+                        <p class="value-desc">Let’s face the facts - most companies these days make it big by exploiting the economic circumstances in China, and who are we to go against that? Our factories packed with barely legal chinese workers analyze EACH ASPECT OF YOUR PERSONALITY MANUALLY, to ensure accurate results.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6"> <strong class="value-heading">World Disruption</strong>
+                        <p class="value-desc">As the Tester creates a 1:1 matching system between job-seekers and employers, we’re disrupting the economy and making the world a better place.</p>
+                    </div>
+                </div>
             </div>
-
+        </div>
+        <div class="section -white menu-open as-seen-on"
+         data-navbar-color-primary>
+            <div class="container m-text-center">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <span style="vertical-align: middle;"
+                         class="text-s text-g6 m-margin-r2 m-text-np">Backed by</span>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/predictify/google-ventures-logo.png"
+                         alt="Google Ventures Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/predictify/microsoft-logo.png"
+                         alt="Microsoft Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img src="/images/predictify/apple-logo.png"
+                         alt="Apple Logo">
+                    </div>
+                    <div class="col-sm-2 col-xs-6 col-centered">
+                        <img
+                         src="/images/predictify/fbi-logo.png"
+                         alt="FBI Logo"
+                         style="width: 70%">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div
-         class="section -white"
+        <div class="section -dark"
          data-navbar-color-primary>
             <h2 class="testimonial-section-title m-text-center">What do employers say about Enhancv?</h2>
 
@@ -362,36 +147,68 @@
 
                         <div class="js-slick">
                             <div class="row gutter100">
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <div class="testimonial-container">
-                                            <img src="/images/vgetova.png" alt="">
+                                <div class="row m-margin-t10">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <div class="testimonial-container">
+                                                <img src="/images/predictify/person-4.png"
+                                                 alt="">
 
-                                            <div class="testimonial-information">
-                                                <div class="testimonial-information-center">
-                                                    <h3>Velina Getova</h3>
-                                                    <span>Career Coach & Senior Recruiter</span>
+                                                <div class="testimonial-information">
+                                                    <div class="testimonial-information-center">
+                                                        <h4>I’m retiring and letting these guys handle the fate of mankind.</h4>
+                                                        <span>— Elon Musk</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>If everyone followed Enhancv`s professional advice finding the right person wouldn’t
-                                            have been such a challenge!</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <div class="testimonial-container">
+                                                <img src="/images/predictify/person-3.png"
+                                                 alt="">
+
+                                                <div class="testimonial-information">
+                                                    <div class="testimonial-information-center">
+                                                        <h4>Enhancv has my thiel of approval.</h4>
+                                                        <span>— Peter Thiel</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="row m-margin-t10">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <div class="testimonial-container">
+                                                <img src="/images/predictify/person-2.png"
+                                                 alt="">
 
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <div class="testimonial-container">
-                                            <img src="/images/god.png" alt="">
-
-                                            <div class="testimonial-information">
-                                                <div class="testimonial-information-center">
-                                                    <h3>God</h3>
-                                                    <span>Creator of Mankind</span>
+                                                <div class="testimonial-information">
+                                                    <div class="testimonial-information-center">
+                                                        <h4>This startup is making America great again!</h4>
+                                                        <span>— Donald Trump</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <p>These guys are doing God’s work, helping their fellow humans nail their dream jobs faster.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <div class="testimonial-container">
+                                                <img src="/images/predictify/person-1.png"
+                                                 alt="">
+
+                                                <div class="testimonial-information">
+                                                    <div class="testimonial-information-center">
+                                                        <h4>These guys put Disruption in Disruption</h4>
+                                                        <span>— Xzibit</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -400,18 +217,49 @@
                 </div>
             </div>
         </div>
-
-        <div class="section -green -padding-xxl m-text-center -pre-footer">
-            <img src="/images/footer-img-03.png" class="media-fimage" alt="">
-            <img src="/images/footer-img-02.png" class="media-fimage -right -bottom" alt="">
-
+    {{/content}}
+    {{#content "footer"}}
+        <footer class="section -footer -dark text-g6 menu-open predictify-footer">
             <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="{{links.get_started}}"
+                         class="btn btn-transparent btn-line btn-sm invert-color m-margin-r2 lets-begin">
+                    Visit www.enhancv.com
+                </a>
+                    </div>
+                    <div class="col-sm-4 m-text-center">
+                        <div class="social">
+                            <a href="{{links.fb}}"
+                             target="_blank"
+                             class="fa fa-facebook">
+                            </a>
 
-                <h2 class="m-margin-t0 -enlarge">Ready to get started?</h2>
+                            <a href="{{links.twitter}}"
+                             target="_blank"
+                             class="fa fa-twitter">
+                            </a>
 
-                <a href="{{links.get_started}}" class="btn btn-white btn-lg text-m">Let’s Begin</a>
+                            <a href="{{links.linkedin}}"
+                             target="_blank"
+                             class="fa fa-linkedin">
+                            </a>
 
+                            <a href="{{links.google}}"
+                             target="_blank"
+                             class="fa fa-google">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 m-text-right">
+                        <a
+                         class="go-to-top"
+                         data-toggle="tooltip"
+                         data-placement="left"
+                         title="Sorry, the button is not working today. Scroll up manually.">Top <i class="icon icon-arrowup-1"></i></a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     {{/content}}
 {{/extend}}
