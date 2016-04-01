@@ -1,3 +1,5 @@
+@import "bootstrap-mods/variables";
+
 .is-menu-open {
     overflow-y: visible;
 }
@@ -6,39 +8,28 @@
     font-family: $base-font-family;
     font-size: 0;
     list-style-type: none;
-
-    &.-center {
-        text-align: center;
-    }
-
-    &.-main {
-        @include media($screen-sm) {
-            margin-top: 60px;
-        }
-    }
+    margin: 0;
+    text-align: center;
 
     li {
         display: inline-block;
+        margin: 0;
+
+        a {
+            display: inline-block;
+            @include font-size(16px);
+            line-height: 24px;
+            color: #fff;
+            padding: 0 25px;
+            text-decoration: none;
+            opacity: .75;
+            transition: opacity .2s ease-in;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
-}
-
-.navigation-bar a, .navigation-bar-login-button {
-    display: inline-block;
-    @include font-size(16px);
-    line-height: 24px;
-    color: #fff;
-    padding: 0 25px;
-    text-decoration: none;
-    opacity: .75;
-
-    &:hover {
-        opacity: 1;
-    }
-}
-
-.nav-login-button {
-    position: relative;
-    top: 5px;
 }
 
 @include media($screen-md) {
@@ -47,15 +38,14 @@
     }
 }
 
-
 .menu-close {
-    margin-left: 25px;
-    margin-top: 10px;
+    float: right;
+    margin-top: 11px;
     opacity: .2;
     @include font-size(18px, true);
     padding: 0;
-    padding-left: 20px;
     color: white;
+    transition: opacity .2s ease-in;
 
     &:hover,
     &:focus {
@@ -83,7 +73,7 @@ $nav-width: 310px;
         top: 0;
         right: 0;
         background: #1a1a1a;
-        padding: 30px 30px 30px 50px;
+        padding: 40px 50px 30px 50px;
         color: #555;
         overflow-y: auto;
         height: 100vh;
@@ -93,8 +83,7 @@ $nav-width: 310px;
     .buttons-container {
         min-height: calc(100% - 50px);
         position: relative;
-        padding-left: 21px;
-        padding-top: 20px;
+        padding-left: 20px;
     }
 
     ul {
@@ -121,16 +110,6 @@ $nav-width: 310px;
                 content: '— '
             }
         }
-
-        &.-secondary a {
-            @include font-size(16px);
-            color: #666;
-            margin-bottom: 5px;
-
-            &:hover {
-                @include opacity(0.5);
-            }
-        }
     }
 
     &.loaded {
@@ -143,21 +122,32 @@ $nav-width: 310px;
         position: fixed;
         left: 0;
         bottom: 0;
-        margin: auto;
-        z-index: 40;
-        width: 100%;
+        z-index: $zindex-mobile-navbar;
         text-align: center;
-        padding-left: 30px;
         overflow: hidden;
+        margin: auto;
+        width: 100%;
 
         .menu {
             width: 100%;
             height: 100vh;
+            padding: 30px 40px 30px 40px;
+
+            ul a {
+                margin-left: 0;
+            }
         }
 
         .buttons-container {
             padding: 0;
             height: calc(100% - 50px);
+
+            .lets-begin {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
             ul {
                 margin: 0;
@@ -165,10 +155,10 @@ $nav-width: 310px;
 
                 &.menu-item-wrapper {
                     position: absolute;
-                    top: 47%;
+                    top: 50%;
                     right: 0;
                     left: 0;
-                    margin-top: -5em;
+                    transform: translateY(-50%);
                 }
             }
         }
@@ -182,16 +172,13 @@ $nav-width: 310px;
             padding: 0;
 
             ul {
+                margin-top: 30px;
                 padding: 10px 0;
 
                 .menu-item-wrapper {
                     position: initial;
                 }
             }
-        }
-
-        .social {
-            padding-top: 40px;
         }
     }
 }
@@ -232,12 +219,6 @@ $nav-width: 310px;
 }
 
 @include media($screen-sm) {
-    .menu {
-        ul a {
-            margin-left: 0;
-        }
-    }
-
     .is-menu-open {
         overflow: hidden;
 
@@ -256,64 +237,9 @@ $nav-width: 310px;
             }
         }
     }
-
-    .js-close-menu {
-        position: absolute;
-        right: 14%;
-        top: 0;
-        margin-left: 5px;
-    }
-
-    .button-cta {
-        @include opacity(0, true);
-        @include transition(0.15s);
-        transition-delay: 1s;
-    }
-}
-
-.cta-container,
-.ench-logo {
-    position: fixed;
-    top: 55px;
-    left: 50px;
-    z-index: 200;
-
-    @include media($screen-sm) {
-        top: 25px !important;
-        left: 20px;
-    }
-}
-
-.cta-container {
-    &.in-back {
-        z-index: -1;
-    }
-}
-
-@media (max-width: 800px) {
-    .cta-container,
-    .ench-logo {
-        position: initial;
-    }
-
-    .cta-container {
-        float: right !important;
-        margin-right: 50px;
-    }
 }
 
 .-home {
-    .cta-container {
-        margin-right: 0;
-
-        @media (max-width: 770px) {
-            & {
-                margin-top: -5px;
-                margin-right: 50px;
-            }
-        }
-    }
-
     .is-menu-open {
         overflow: hidden;
 
