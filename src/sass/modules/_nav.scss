@@ -1,3 +1,5 @@
+@import "bootstrap-mods/variables";
+
 .is-menu-open {
     overflow-y: visible;
 }
@@ -52,12 +54,11 @@
 
 
 .menu-close {
-    margin-left: 25px;
-    margin-top: 10px;
+    float: right;
+    margin-top: 13px;
     opacity: .2;
     @include font-size(18px, true);
     padding: 0;
-    padding-left: 20px;
     color: white;
     transition: opacity .2s ease-in;
 
@@ -87,7 +88,7 @@ $nav-width: 310px;
         top: 0;
         right: 0;
         background: #1a1a1a;
-        padding: 30px 30px 30px 50px;
+        padding: 40px 50px 30px 50px;
         color: #555;
         overflow-y: auto;
         height: 100vh;
@@ -98,7 +99,6 @@ $nav-width: 310px;
         min-height: calc(100% - 50px);
         position: relative;
         padding-left: 21px;
-        padding-top: 20px;
     }
 
     ul {
@@ -148,20 +148,27 @@ $nav-width: 310px;
         left: 0;
         bottom: 0;
         margin: auto;
-        z-index: 40;
+        z-index: $zindex-mobile-navbar;
         width: 100%;
         text-align: center;
-        padding-left: 30px;
         overflow: hidden;
 
         .menu {
             width: 100%;
             height: 100vh;
+            padding: 30px 40px 30px 40px;
         }
 
         .buttons-container {
             padding: 0;
             height: calc(100% - 50px);
+
+            .lets-begin {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
 
             ul {
                 margin: 0;
@@ -169,7 +176,7 @@ $nav-width: 310px;
 
                 &.menu-item-wrapper {
                     position: absolute;
-                    top: 47%;
+                    top: 45%;
                     right: 0;
                     left: 0;
                     margin-top: -5em;
@@ -259,12 +266,6 @@ $nav-width: 310px;
                 }
             }
         }
-    }
-
-    .js-close-menu {
-        position: absolute;
-        right: 25px;
-        top: 5px;
     }
 
     .button-cta {
