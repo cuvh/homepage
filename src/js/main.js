@@ -83,10 +83,6 @@ $(function() {
         })
         .setClassToggle(".go-to-section.js-scroll-to", "active")
         .addTo(controller);
-    } else {
-        $window.on('load', function () {
-            $(this).trigger('resize');
-        });
     }
 
     $('.js-scroll-to').on('click', function(e) {
