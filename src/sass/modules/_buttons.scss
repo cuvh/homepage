@@ -1,0 +1,19 @@
+.btn-dashed {
+    border: 1px dashed $ench-color;
+}
+
+.btn-transparent {
+    color: #fff;
+    background-color: transparent;
+
+    &.invert-color {
+        &:hover {
+            background-color: #fff;
+            color: $ench-dark-color;
+        }
+    }
+}
+
+.btn-line {
+    border: 1px solid #fff;
+}

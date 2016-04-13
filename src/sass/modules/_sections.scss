@@ -205,8 +205,11 @@
 
 .section.-white {
     min-height: 120px;
-    line-height: 120px;
     z-index: 19;
+}
+
+.section.-home+.section.-white, .section.-home+.section.-mobile-only+.section.-white {
+    line-height: 120px;
     @include media($screen-sm) {
         margin-top: 0;
         line-height: 50px;
