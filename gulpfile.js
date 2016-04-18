@@ -100,8 +100,8 @@
 
     gulp.task('production', ['build-production'], function() {
         var revAll = new RevAll({
-            dontRenameFile: ['.html'],
-            dontUpdateReference: ['.html'],
+            dontRenameFile: [/social-image.jpg/g, '.html'],
+            dontUpdateReference: [/social-image.jpg/g, '.html'],
         });
 
         return gulp.src('build/**')
