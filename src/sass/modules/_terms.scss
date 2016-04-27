@@ -1,0 +1,40 @@
+.terms-header {
+    .helper {
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: 770px) {
+        height: auto !important;
+        padding-bottom: 0 !important;
+
+        .helper {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+.terms-section {
+    .heading {
+        color: $base-color;
+        margin-bottom: 45px;
+        @include font-size(32px);
+    }
+
+    .update-date {
+        color: #adadad;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 45px;
+        font-weight: 400;
+        color: $ench-dark-color;
+        @include font-size(14px);
+
+        strong {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+    }
+}
