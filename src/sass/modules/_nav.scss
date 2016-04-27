@@ -73,7 +73,7 @@ $nav-width: 310px;
         top: 0;
         right: 0;
         background: #1a1a1a;
-        padding: 40px 50px 30px 50px;
+        padding: 30px 50px 30px 50px;
         color: #555;
         overflow-y: auto;
         height: 100vh;
@@ -118,7 +118,7 @@ $nav-width: 310px;
 
     @include media($screen-sm) {
         @include transition-full(transform .3s ease-in-out);
-        transform: translateY(-100%);
+        transform: translateY(calc(-100% - 70px));
         position: fixed;
         left: 0;
         bottom: 0;
