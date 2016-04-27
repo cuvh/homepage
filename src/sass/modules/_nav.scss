@@ -22,8 +22,8 @@
             color: #fff;
             padding: 0 25px;
             text-decoration: none;
-            opacity: .75;
-            transition: opacity .2s ease-in;
+            opacity: 0.75;
+            transition: opacity 0.2s ease-in;
 
             &:hover {
                 opacity: 1;
@@ -41,11 +41,11 @@
 .menu-close {
     float: right;
     margin-top: 11px;
-    opacity: .2;
+    opacity: 0.2;
     @include font-size(18px, true);
     padding: 0;
     color: white;
-    transition: opacity .2s ease-in;
+    transition: opacity 0.2s ease-in;
 
     &:hover,
     &:focus {
@@ -63,7 +63,7 @@ $nav-width: 310px;
     margin-right: -$nav-width;
     position: fixed;
     height: 100vh;
-    transition: width ease-in-out .25s;
+    transition: width ease-in-out 0.25s;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -73,7 +73,7 @@ $nav-width: 310px;
         top: 0;
         right: 0;
         background: #1a1a1a;
-        padding: 30px 50px 30px 50px;
+        padding: 30px 50px;
         color: #555;
         overflow-y: auto;
         height: 100vh;
@@ -97,7 +97,7 @@ $nav-width: 310px;
             margin-bottom: 12px;
             @include font-size(20px);
             text-decoration: none;
-            transition: opacity .3s .15s ease-in-out, visibility .3s .15s ease-in-out, margin .3s .15s ease-out, color .15s 0s ease-in;
+            transition: opacity 0.3s 0.15s ease-in-out, visibility 0.3s 0.15s ease-in-out, margin 0.3s 0.15s ease-out, color 0.15s 0s ease-in;
             opacity: 0;
             visibility: hidden;
 
@@ -107,8 +107,23 @@ $nav-width: 310px;
             }
 
             &.is-selected:before {
-                content: '— '
+                content: '— ';
             }
+        }
+    }
+
+    .secondary-menu {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-left: 20px;
+
+        a {
+            text-decoration: none;
+            color: #666;
+            @include font-size(16px);
         }
     }
 
@@ -131,7 +146,7 @@ $nav-width: 310px;
         .menu {
             width: 100%;
             height: 100vh;
-            padding: 30px 40px 30px 40px;
+            padding: 20px 40px;
 
             ul a {
                 margin-left: 0;
@@ -149,17 +164,16 @@ $nav-width: 310px;
                 transform: translateX(-50%);
             }
 
-            ul {
-                margin: 0;
-                position: relative;
+            .menu-item-wrapper {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+                transform: translateY(-50%);
+            }
 
-                &.menu-item-wrapper {
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    left: 0;
-                    transform: translateY(-50%);
-                }
+            .secondary-menu {
+                padding: 0;
             }
         }
     }
@@ -168,7 +182,7 @@ $nav-width: 310px;
         overflow-y: scroll;
 
         .buttons-container {
-            min-height: 100vh;
+            min-height: calc(100vh + 100px);
             padding: 0;
 
             ul {
@@ -185,11 +199,11 @@ $nav-width: 310px;
 
 .menu-backdrop {
     background: rgba(0, 0, 0, .4);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     visibility: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out 0.2s;
 }
 
 @include media-min($screen-sm) {
@@ -202,7 +216,7 @@ $nav-width: 310px;
 
     .is-menu-open {
         .menu-backdrop {
-            opacity: .4;
+            opacity: 0.4;
             visibility: visible;
         }
 
@@ -282,6 +296,7 @@ $nav-width: 310px;
     &.active {
         @include animation('gotosection 1s linear infinite');
     }
+
     @include media($screen-md) {
         display: none !important;
     }
@@ -291,9 +306,11 @@ $nav-width: 310px;
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }
