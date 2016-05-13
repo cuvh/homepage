@@ -37,4 +37,10 @@
             font-weight: 700;
         }
     }
+
+    li {
+        font-weight: 400;
+        color: $ench-dark-color;
+        @include font-size(14px);
+    }
 }
