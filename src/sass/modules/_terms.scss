@@ -32,6 +32,7 @@
         @include font-size(14px);
 
         strong {
+            @include font-size(16px);
             display: block;
             margin-bottom: 15px;
             font-weight: 700;
