@@ -24,6 +24,11 @@
                 .data('src/config/links.json')
                 .partials('src/templates/partials/**/*.hbs')
                 .helpers(hbLayouts)
+                .helpers({
+                    json: function (context) {
+                        return JSON.stringify(context);
+                    }
+                })
             )
             .pipe(htmlmin({
                 collapseWhitespace: true
@@ -68,8 +73,14 @@
             .pipe(gulp.dest('build'));
     });
 
-    gulp.task('js', function () {
-        return gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,tooltip}.js', 'src/js/plugins/*.js', 'src/js/**/*.js'])
+    gulp.task('js', function() {
+        return gulp.src([
+                'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,tooltip}.js',
+                'node_modules/jquery-visibility/jquery-visibility.js',
+                'node_modules/is-in-viewport/lib/isInViewport.js',
+                'src/js/plugins/*.js',
+                'src/js/**/*.js'
+            ])
             .pipe(sourcemaps.init())
             .pipe(concat('combined.min.js'))
             .pipe(uglify())

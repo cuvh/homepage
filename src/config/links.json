@@ -6,5 +6,12 @@
 	"linkedin": "http://linkedin.com/company/enhancv",
 	"twitter": "http://twitter.com/enhancv",
 	"google": "http://plus.google.com/101937788764621640784",
-	"predictify": "/quiz.html"
+	"predictify": "/quiz.html",
+	"videos": {
+		"stock_footage_ballet_start": "inspire you to do better!",
+		"stock_footage_space_start": "change our daily lives!",
+		"stock_footage_clothing_start": "love what they do, no matter what!",
+		"stock_footage_cybernetic_start": "invent your future!",
+		"stock_footage_happy_start": "dance no matter what!"
+	}
 }

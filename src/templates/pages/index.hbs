@@ -38,7 +38,16 @@
 
         <div class="section -banner -main-full -home -padding-s menu-open">
 
-            <div class="row">
+            <div class="videos-container" id="videosContainer" data-update="video-playlist">
+              {{#each links.videos}}
+                <video class="autoPlayWhenVisible" data-caption="{{this}}" height="100%" width="100%" preload="none" id="{{@key}}" webkit-playsinline>
+                  <source src="/videos/{{@key}}/video.mp4" type='video/mp4'>
+                  <source src="/videos/{{@key}}/video.webm" type='video/webm;codecs="vp8, vorbis"'>
+                </video>
+              {{/each}}
+            </div>
+
+            <div class="row main-links">
                 <div class="col-sm-offset-3 col-sm-6 home-banner-nav">
                     <ul class="navigation-bar -center -main">
                         <li><a href="#stepsContainer" class="js-scroll-to">Tour</a></li>
@@ -48,13 +57,9 @@
                 </div>
             </div>
 
-            <div class="container m-height-100p">
-                <div class="v-base m-height-100p">
-                    <div class="v-middle">
-                        <h1>Get the job <br> you deserve!</h1>
-                        <a href="{{links.get_started}}" class="btn btn-warning btn-md text-l invert-color m-margin-r4">Try it Free</a>
-                    </div>
-                </div>
+            <div class="container">
+                <h1>Resumes for people who will<br> <span data-update="video-caption" id="video_caption">&nbsp;</span></h1>
+                <a href="{{links.get_started}}" class="btn btn-primary btn-md text-l invert-color">Build your future</a>
             </div>
 
             <a href="#stepsContainer" class="go-to-section js-scroll-to"></a>
