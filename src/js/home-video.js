@@ -3,9 +3,9 @@ $(document).ready(function () {
 		videoId: '128418807',
 		wrapperZIndex: 19,
 		parameters: {
+			api: 1,
 			background: 1,
 			color: '00c092',
-			api: 1,
 			player_id: 'vimelar-player',
 		}
 	};
@@ -67,15 +67,15 @@ $(document).ready(function () {
 	function showIframe(event) {
 		if (event) {
 			if (window.matchMedia("(min-width: 768px)").matches) {
-				if (!$('#vimelar-player').length) {
+				if (!$('#vimelar-player').length && !/Edge/.test(navigator.userAgent)) {
 					initHomeVideo();
-				} else {
+				} else if (!/Edge/.test(navigator.userAgent)) {
 					$homeSection.css({'background': "none"});
 				}
 			} else {
 				$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
 			}
-		} else if (window.matchMedia("(min-width: 768px)").matches) {
+		} else if (window.matchMedia("(min-width: 768px)").matches && !/Edge/.test(navigator.userAgent)) {
 			initHomeVideo();
 		}
 	}

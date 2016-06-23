@@ -38,6 +38,7 @@
         background: url('/images/home-video-bg.png') center center no-repeat #00c092;
         background-size: cover;
         position: relative;
+        overflow: hidden;
         @include opacity(0);
         @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
 
