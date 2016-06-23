@@ -36,16 +36,18 @@
             </div>
         </nav>
 
-        <div class="section -banner -main-full -home -padding-s menu-open">
+        <div class="section -banner -main-full -home -padding-s menu-open" id="videosContainer">
 
-            <div class="videos-container" id="videosContainer" data-update="video-playlist">
-              {{#each links.videos}}
-                <video class="autoPlayWhenVisible" data-caption="{{this}}" height="100%" width="100%" preload="none" id="{{@key}}" webkit-playsinline>
-                  <source src="/videos/{{@key}}/video.mp4" type='video/mp4'>
-                  <source src="/videos/{{@key}}/video.webm" type='video/webm;codecs="vp8, vorbis"'>
-                </video>
-              {{/each}}
-            </div>
+          <!--<div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" id="player_1" src="" data-src="{{links.video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>-->
+
+            <!--<div class="videos-container" id="videosContainer">
+              &lt;!&ndash;<img id="home_video_poster" src="/images/home-video-bg.png" alt="Enhancv Resumes For All People Video Poster" />&ndash;&gt;
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="object-fit: cover;" class="embed-responsive-item" id="player_1" src="" data-src="{{links.video}}" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+            </div>-->
 
             <div class="row main-links">
                 <div class="col-sm-offset-3 col-sm-6 home-banner-nav">
@@ -58,7 +60,15 @@
             </div>
 
             <div class="container">
-                <h1>Resumes for people who will<br> <span data-update="video-caption" id="video_caption">&nbsp;</span></h1>
+                <h1>
+                  Resumes for people who will<br>
+                  <span class="video-caption active" style="display:block;">&nbsp;</span>
+                  <span class="video-caption" data-show-on="3">inspire you to do better!</span>
+                  <span class="video-caption" data-show-on="6">change our daily lives!</span>
+                  <span class="video-caption" data-show-on="9">love what they do, no matter what!</span>
+                  <span class="video-caption" data-show-on="12">invent your future!</span>
+                  <span class="video-caption" data-show-on="15">dance no matter what!</span>
+                </h1>
                 <a href="{{links.get_started}}" class="btn btn-primary btn-md text-l invert-color">Build your future</a>
             </div>
 

@@ -1,31 +1,87 @@
-var handleAutoPlayVisible = function() {
-	var r = !!navigator.userAgent.match(/(iPad|iPhone|iPod)/g);
+$(document).ready(function () {
+	var options = {
+		videoId: '128418807',
+		wrapperZIndex: 19,
+		parameters: {
+			background: 1,
+			color: '00c092',
+			api: 1,
+			player_id: 'vimelar-player',
+		}
+	};
 
-	$(window).on('load scroll', function() {
-		$("video.autoPlayWhenVisible:visible").each(function() {
-			if (0 == r) {
-				var video = this;
-				if ($(video).is(":in-viewport")) {
-					video.play();
+	var $homeSection = $('.section.-home');
+
+	function initHomeVideo() {
+		$('#videosContainer').vimelar(options);
+
+		var $vimeoVideo = $('#vimelar-player');
+
+		$f($vimeoVideo[0]).addEvent('ready', function (player_id) {
+			var froogaloop = $f(player_id);
+
+			$(document).on({
+				'show': function () {
+					froogaloop.api('play');
+				},
+				'hide': function () {
+					froogaloop.api('pause');
+				}
+			});
+
+			$(window).on('load scroll', function() {
+				if ($vimeoVideo.is(":in-viewport")) {
+					froogaloop.api('play');
 				} else {
-					video.pause();
+					froogaloop.api('pause');
+				}
+			});
+
+			froogaloop.addEvent('playProgress', function(data) {
+				//console.log('playProgress event : ' + data.seconds + ' : ' + data.percent + ' : ' + data.duration);
+				var $videoCaptions = $('.video-caption');
+				var $nextCaption = $videoCaptions.filter(function() {
+					var $caption = $(this);
+					return $caption.data('showOn') == parseInt(data.seconds) && !$caption.hasClass('active');
+				});
+				var $currentCaption = $videoCaptions.filter(function() {
+					return $(this).hasClass('active');
+				});
+
+				if (window.matchMedia("(min-width: 768px)").matches) {
+					$homeSection.css({'background': "none"});
+				}
+
+				if ($currentCaption.length && $nextCaption.length) {
+					$currentCaption.fadeOut(500, function () {
+						$currentCaption.removeClass('active');
+						$nextCaption.fadeIn(500).addClass('active');
+					});
+				} else if ($nextCaption.length) {
+					$nextCaption.fadeIn(500).addClass('active');
+				}
+			});
+		});
+	}
+
+	function showIframe(event) {
+		if (event) {
+			if (window.matchMedia("(min-width: 768px)").matches) {
+				if (!$('#vimelar-player').length) {
+					initHomeVideo();
+				} else {
+					$homeSection.css({'background': "none"});
 				}
 			} else {
-				$(this).attr("controls", "true");
+				$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
 			}
-		});
-	});
-};
-
-$(document).ready(function () {
-	$(document).on({
-		'show': function () {
-			$('#videosContainer video:visible').get(0).play();
-		},
-		'hide': function () {
-			$('#videosContainer video:visible').get(0).pause();
+		} else if (window.matchMedia("(min-width: 768px)").matches) {
+			initHomeVideo();
 		}
-	});
+	}
 
-	handleAutoPlayVisible();
+	$(window).on('resize', showIframe);
+
+	// Initialize it once on document ready
+	showIframe();
 });

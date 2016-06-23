@@ -27,7 +27,7 @@
         padding: 150px 0;
     }
     &.-steps {
-        z-index: 20;
+        z-index: 16;
     }
     &.-home {
         padding-bottom: 170px;
@@ -35,14 +35,11 @@
         padding-right: 50px;
         color: #fff;
         z-index: 18;
-        background-color: #00c092;
+        background: url('/images/home-video-bg.png') center center no-repeat #00c092;
+        background-size: cover;
         position: relative;
-        //background-image: url("/images/landing-img-01.jpg");
         @include opacity(0);
         @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
-        @include media($screen-sm) {
-            //background-image: url("/images/mob-landing-img-01.jpg");
-        }
 
         //nav issue
         @include media($screen-md) {
@@ -63,24 +60,6 @@
                 top: 0 !important;
             }
         }
-        .videos-container {
-            position: relative;
-            display: block;
-            width: auto;
-            height: 100%;
-            margin: 0 -50px 0 -50px;
-
-            > video {
-                width: 100%;
-                height: auto;
-                min-height: 100%;
-                position: absolute;
-                top: -50px;
-                left: 0;
-                z-index: -1;
-                display: none;
-            }
-        }
         > .container {
             height: auto;
             text-align: center;
@@ -89,8 +68,9 @@
             left: 50%;
             transform: translateX(-50%);
 
-            #video_caption {
+            .video-caption {
                 min-height: 60px;
+                display: none;
             }
         }
         .main-links {
@@ -201,6 +181,7 @@
     &.-dark {
         background: $ench-dark-color;
         color: #fff;
+        z-index: 20;
     }
     &.-steps {
         background: url('../images/resume-bg-01.jpg');
