@@ -6,6 +6,7 @@
 
         .panel-heading {
             background-color: transparent;
+            word-wrap: break-word;
 
             .panel-title {
                 color: $ench-color;
@@ -20,7 +21,7 @@
                         width: 15px;
                         height: 2px;
                         background-color: $ench-color;
-                        transition: all .2s ease-in;
+                        transition: all 0.2s ease-in;
                     }
 
                     .vertical {
@@ -57,6 +58,76 @@
 
             p:first-child {
                 margin-top: 0;
+            }
+        }
+    }
+}
+
+#subscribe {
+    form {
+        max-width: 500px;
+        margin: auto;
+
+        .form-control {
+            margin: auto;
+            height: 49px;
+            border-radius: 60px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 300;
+            outline: 0;
+            box-shadow: none;
+            padding-left: 20px;
+            line-height: 49px;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+
+            &:-moz-placeholder {
+                color: #fff;
+            }
+
+            &::-moz-placeholder {
+                color: #fff;
+            }
+
+            &:-ms-input-placeholder {
+                color: #fff;
+            }
+        }
+
+        .btn {
+            margin-top: 30px;
+            float: right;
+        }
+
+        .notifier {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 49px;
+            vertical-align: middle;
+            margin-top: 30px;
+            float: left;
+        }
+
+        @media screen and (max-width: $screen-sm) {
+            .btn,
+            .notifier {
+                text-align: center;
+                float: none;
+            }
+
+            .notiier {
+                width: 100%;
             }
         }
     }
