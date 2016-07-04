@@ -28,6 +28,7 @@
 
         // build container
         $('<iframe />', {
+            //sandbox: 'allow-same-origin allow-scripts allow-popups',
             name: 'myFrame',
             id: 'vimelar-player',
             src: '//player.vimeo.com/video/' + options.videoId + (typeof options.parameters !== "undefined" ? '?' + $.param(options.parameters) : ''),
