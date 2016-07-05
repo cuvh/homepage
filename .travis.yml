@@ -40,7 +40,6 @@ deploy:
     acl: public_read
     skip_cleanup: true
     cache_control: "max-age=14400"
-    expires: "access plus 4 hours"
     on:
       repo: enhancv/homepage
       branch: master
