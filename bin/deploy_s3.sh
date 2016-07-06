@@ -1,3 +1,11 @@
+mkdir cdn_htmls
+cd cdn
+find . -name '*.html' -exec cp --parents \{\} ../cdn_htmls \;
+find . -name '*.html' -exec rm \{\} \;
+cd ..
+find cdn_htmls
+find cdn
+
 echo "[PRODUCTION DEPLOY] Installing AWS CLI..."
 pip install awscli
 
