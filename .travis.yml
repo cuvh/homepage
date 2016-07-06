@@ -23,6 +23,9 @@ before_deploy:
   - cd cdn
   - find . -name '*.html' -exec cp --parents \{\} ../cdn_htmls \;
   - find . -name '*.html' -exec rm \{\} \;
+  - cd ..
+  - find cdn_htmls
+  - find cdn
 
 after_deploy:
   - >
