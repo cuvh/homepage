@@ -26,6 +26,7 @@ before_deploy:
   - cd ..
   - find cdn_htmls
   - find cdn
+  - chmod 777 bin/deploy_s3.sh
 
 after_deploy:
   - >
@@ -52,6 +53,7 @@ deploy:
       
   - provider: script
     script: AWSBUCKET="dev-home.enhancv.com" bin/deploy_s3.sh
+    skip_cleanup: true
     on:
       repo: enhancv/homepage
       branch: develop
