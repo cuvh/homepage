@@ -19,13 +19,6 @@ before_script:
 
 before_deploy:
   - gulp production
-  - mkdir cdn_htmls
-  - cd cdn
-  - find . -name '*.html' -exec cp --parents \{\} ../cdn_htmls \;
-  - find . -name '*.html' -exec rm \{\} \;
-  - cd ..
-  - find cdn_htmls
-  - find cdn
   - chmod 777 bin/deploy_s3.sh
 
 after_deploy:
