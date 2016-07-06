@@ -19,6 +19,10 @@ before_script:
 
 before_deploy:
   - gulp production
+  - mkdir cdn_htmls
+  - cd cdn
+  - find . -name '*.html' -exec cp --parents \{\} ../cdn_htmls \;
+  - find . -name '*.html' -exec rm \{\} \;
 
 after_deploy:
   - >
@@ -50,8 +54,19 @@ deploy:
     local_dir: cdn
     acl: public_read
     skip_cleanup: true
-    cache_control: "max-age=14400"
-    expires: "access plus 4 hours"
+    cache_control: "max-age=999"
+    on:
+      repo: enhancv/homepage
+      branch: develop
+      
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: "dev-home.enhancv.com"
+    local_dir: cdn_htmls
+    acl: public_read
+    skip_cleanup: true
+    cache_control: "max-age=88"
     on:
       repo: enhancv/homepage
       branch: develop
