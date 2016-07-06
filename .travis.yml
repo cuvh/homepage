@@ -33,12 +33,8 @@ after_deploy:
         https://hooks.slack.com/services/T0294QTKB/B0PLXDQKT/$SLACK_SECRET
 
 deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: "enhancv.com"
-    local_dir: cdn
-    acl: public_read
+  - provider: script
+    script: AWSBUCKET="enhancv.com" bin/deploy_s3.sh
     skip_cleanup: true
     on:
       repo: enhancv/homepage
