@@ -7,7 +7,7 @@ find cdn_htmls
 find cdn
 
 echo "[PRODUCTION DEPLOY] Installing AWS CLI..."
-pip install awscli
+pip install --user awscli
 
 echo "[PRODUCTION DEPLOY] Uploading HTMLS to S3..."
 aws s3 sync ./cdn s3://$AWSBUCKET --acl public-read --exclude "*.js.map" --cache-control "public, max-age=15"
