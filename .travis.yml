@@ -19,6 +19,7 @@ before_script:
 
 before_deploy:
   - gulp production
+  - chmod 777 bin/deploy_s3.sh
 
 after_deploy:
   - >
@@ -32,26 +33,17 @@ after_deploy:
         https://hooks.slack.com/services/T0294QTKB/B0PLXDQKT/$SLACK_SECRET
 
 deploy:
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: "enhancv.com"
-    local_dir: cdn
-    acl: public_read
+  - provider: script
+    script: AWSBUCKET="enhancv.com" bin/deploy_s3.sh
     skip_cleanup: true
+    cache_control: "max-age=14400"
     on:
       repo: enhancv/homepage
       branch: master
-
-  - provider: s3
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
-    bucket: "dev-home.enhancv.com"
-    local_dir: cdn
-    acl: public_read
+      
+  - provider: script
+    script: AWSBUCKET="dev-home.enhancv.com" bin/deploy_s3.sh
     skip_cleanup: true
-    cache_control: "max-age=14400"
-    expires: "access plus 4 hours"
     on:
       repo: enhancv/homepage
       branch: develop
