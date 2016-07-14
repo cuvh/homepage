@@ -69,7 +69,7 @@
     });
 
     gulp.task('js', function () {
-        return gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,tooltip}.js', 'src/js/plugins/*.js', 'src/js/**/*.js'])
+        return gulp.src(['node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,collapse,transition,tooltip}.js', 'src/js/plugins/*.js', 'src/js/**/*.js'])
             .pipe(sourcemaps.init())
             .pipe(concat('combined.min.js'))
             .pipe(uglify())
