@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var options = {
-		videoId: '128418807',
+		videoId: '177081809',
 		wrapperZIndex: 19,
 		parameters: {
 			api: 1,
@@ -49,7 +49,8 @@ $(document).ready(function () {
 				});
 
 				if (window.matchMedia("(min-width: 768px)").matches) {
-					$homeSection.css({'background': "none"});
+					//$homeSection.css({'background': "none"});
+					$homeSection.removeClass('with-background');
 				}
 
 				if ($currentCaption.length && $nextCaption.length) {
@@ -70,10 +71,12 @@ $(document).ready(function () {
 				if (!$('#vimelar-player').length && !/Edge/.test(navigator.userAgent)) {
 					initHomeVideo();
 				} else if (!/Edge/.test(navigator.userAgent)) {
-					$homeSection.css({'background': "none"});
+					//$homeSection.css({'background': "none"});
+					$homeSection.removeClass('with-background');
 				}
 			} else {
-				$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
+				//$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
+				$homeSection.addClass('with-background');
 			}
 		} else if (window.matchMedia("(min-width: 768px)").matches && !/Edge/.test(navigator.userAgent)) {
 			initHomeVideo();

@@ -35,16 +35,17 @@
         padding-right: 50px;
         color: #fff;
         z-index: 18;
-        background: url('/images/home-video-bg.png') center center no-repeat #00c092;
-        background-size: cover;
+        background: none;
         position: relative;
         overflow: hidden;
         @include opacity(0);
         @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
 
         //nav issue
-        @include media($screen-md) {
-            height: 100vh;
+        @media only screen and (min-width: ($screen-sm + 1px)) and (max-width: $screen-md) {
+            &.-main-full {
+                height: calc(100vh - 120px);
+            }
         }
         @include media($screen-sm) {
             padding: 20px 0;
@@ -60,6 +61,11 @@
                 position: absolute;
                 top: 0 !important;
             }
+        }
+
+        &.with-background {
+            background: url('/images/home-video-bg.jpg') center center no-repeat #00c092;
+            background-size: cover;
         }
         > .container {
             height: auto;
@@ -153,13 +159,13 @@
             height: calc(100vh - 210px);
         }
     }
-    &.-home.-main-full {
+    /*&.-home.-main-full {
         @media (max-width: $screen-sm) and (orientation: landscape) {
             & {
                 height: calc(100vh - 50px);
             }
         }
-    }
+    }*/
     &.-full {
         min-height: 600px; // fallback
         min-height: 100vh;
