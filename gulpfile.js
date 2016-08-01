@@ -75,16 +75,16 @@
 
     gulp.task('js', function() {
         return gulp.src([
-			'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,collapse,transition,tooltip}.js',
-			'node_modules/jquery-visibility/jquery-visibility.js',
-			'src/js/plugins/*.js',
-			'src/js/**/*.js'
-		])
-		.pipe(sourcemaps.init())
-		.pipe(concat('combined.min.js'))
-		.pipe(uglify())
-		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('build/js'));
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,collapse,transition,tooltip}.js',
+            'node_modules/jquery-visibility/jquery-visibility.js',
+            'src/js/plugins/*.js',
+            'src/js/**/*.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('combined.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('build/js'));
     });
 
     gulp.task('build', ['html', 'css', 'assets', 'js']);
