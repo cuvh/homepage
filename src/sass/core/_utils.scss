@@ -74,3 +74,79 @@
     }
   }
 }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1 !important;
+  }
+
+  50% {
+    opacity: 0.5 !important;
+  }
+
+  100% {
+    opacity: 0 !important;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1 !important;
+  }
+}
+
+@keyframes fadeOutToNone {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    display: none !important;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAppear {
+  0% {
+    opacity: 0;
+    display: inline-block !important;
+  }
+
+  50% {
+    opacity: 0.5;
+    display: inline-block !important;
+  }
+
+  100% {
+    opacity: 1;
+    display: inline-block !important;
+  }
+}
+
+.fade-out-disappear {
+  animation: fadeOutToNone 0.5s ease-in-out forwards;
+}
+
+.fade-in-appear {
+  animation: fadeInAppear 0.5s ease-in-out 0.6s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out 1 forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out 0.6s forwards;
+}

@@ -30,10 +30,13 @@ body {
   background: $ench-color;
   font: 300 #{$base-font-size}/1.25 $base-font-family, sans-serif;
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   @include transition-full(all 0.4s ease);
+
+  &.sticky-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 }
 
 // Correct 'block' display not defined in IE 8/9.
