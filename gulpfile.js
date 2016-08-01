@@ -77,7 +77,6 @@
         return gulp.src([
                 'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,collapse,transition,tooltip}.js',
                 'node_modules/jquery-visibility/jquery-visibility.js',
-                'node_modules/is-in-viewport/lib/isInViewport.js',
                 'src/js/plugins/*.js',
                 'src/js/**/*.js'
             ])
