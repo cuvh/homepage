@@ -241,7 +241,13 @@
          data-navbar-color-primary>
 
             <div class="live-editing-image">
-                <img src="/images/builder-01.jpg" alt="">
+                <picture>
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="/images/builder-01.jpg" media="(min-width: 1950px)">
+                  <source srcset="/images/builder-01-medium.jpg" media="(min-width: 1500px)">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img srcset="/images/builder-01-small.jpg" alt="Enhancv resume builder (small)">
+                </picture>
             </div>
 
             <div class="container">
@@ -253,8 +259,7 @@
             </div>
 
             <!-- optimize this -->
-            <img class="live-editing-image-mobile" src="/images/builder-01.jpg" alt="">
-
+            <img class="live-editing-image-mobile" src="/images/builder-01-small.jpg" alt="Enhancv resume builder">
         </div>
 
         <div class="section -dark -full -padding-s">

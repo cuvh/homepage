@@ -327,6 +327,7 @@
 .live-editing-image {
     float: right;
     width: 65%;
+    text-align: right;
     @include media($screen-md) {
         width: 60%;
     }

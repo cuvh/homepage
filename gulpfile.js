@@ -44,7 +44,7 @@
             .pipe(sourcemaps.init())
             .pipe(
                 sass({
-                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets'],
+                    includePaths: ['./node_modules/bootstrap-sass/assets/stylesheets', './src/sass'],
                     outputStyle: 'compressed'
                 })
                 .on('error', sass.logError)
@@ -75,7 +75,7 @@
 
     gulp.task('js', function() {
         return gulp.src([
-                'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,tooltip}.js',
+                'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{modal,collapse,transition,tooltip}.js',
                 'node_modules/jquery-visibility/jquery-visibility.js',
                 'node_modules/is-in-viewport/lib/isInViewport.js',
                 'src/js/plugins/*.js',
