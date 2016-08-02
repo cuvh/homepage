@@ -50,7 +50,12 @@
         @include media($screen-sm) {
             padding: 20px 0;
             .container {
-                display: none;
+                width: 100%;
+                padding: 0;
+
+                .main-caption {
+                    font-size: 1.7rem;
+                }
             }
             .home-banner-nav {
                 display: none;
