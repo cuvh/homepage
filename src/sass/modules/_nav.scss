@@ -194,6 +194,7 @@ $nav-width: 310px;
 
     @media (max-width: $screen-sm) and (orientation: landscape) {
         overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
 
         .buttons-container {
             min-height: calc(100vh + 100px);
