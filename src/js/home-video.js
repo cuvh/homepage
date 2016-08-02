@@ -40,18 +40,19 @@ $(document).ready(function () {
 			froogaloop.addEvent('playProgress', function(data) {
 				//console.log('playProgress event : ' + data.seconds + ' : ' + data.percent + ' : ' + data.duration);
 				var $videoCaptions = $('.video-caption');
-				var $nextCaption = $videoCaptions.filter(function() {
-					var $caption = $(this);
-					return $caption.data('showOn') == parseInt(data.seconds) && !$caption.hasClass('active');
-				});
 				var $currentCaption = $videoCaptions.filter(function() {
 					return $(this).hasClass('active');
 				});
+				var $nextCaption = $videoCaptions.filter(function() {
+					var $caption = $(this);
+					return $caption.data('showOn') == parseInt(data.seconds) && !$caption.hasClass('active') && $caption.html() !== $currentCaption.html();
+				});
+
 
 				if (window.matchMedia("(min-width: 768px)").matches) {
 					$homeSection.removeClass('with-background');
 					$homeSection.css({'background': "none"});
-					$('#vimelar-overlay').css({'background': "none"});
+					//$('#vimelar-overlay').css({'background': "none"});
 				}
 
 				if ($currentCaption.length && $nextCaption.length) {
@@ -74,6 +75,7 @@ $(document).ready(function () {
 				} else if (!/Edge/.test(navigator.userAgent)) {
 					//$homeSection.css({'background': "none"});
 					$homeSection.removeClass('with-background');
+					$homeSection.css({'background': "none"});
 				}
 			} else {
 				//$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});

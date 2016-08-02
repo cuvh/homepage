@@ -3,9 +3,6 @@
     &.-banner {
         background-repeat: no-repeat;
         background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
         background-size: cover;
     }
     &.-padding-s {
@@ -41,16 +38,22 @@
         @include opacity(0);
         @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
 
-        //nav issue
         @media only screen and (min-width: ($screen-sm + 1px)) and (max-width: $screen-md) {
-            &.-main-full {
-                height: calc(100vh - 120px);
+            > .container {
+                bottom: 170px !important;
             }
         }
         @include media($screen-sm) {
             padding: 20px 0;
-            .container {
-                display: none;
+
+            > .container {
+                width: 100%;
+                padding: 0;
+                bottom: 15% !important;
+
+                .main-caption {
+                    font-size: 1.7rem;
+                }
             }
             .home-banner-nav {
                 display: none;
@@ -76,7 +79,7 @@
             height: auto;
             text-align: center;
             position: absolute;
-            bottom: 15%;
+            bottom: 230px;
             left: 50%;
             transform: translateX(-50%);
 
@@ -84,6 +87,9 @@
                 min-height: 60px;
                 display: none;
             }
+        }
+        .go-to-section {
+            bottom: 170px;
         }
         .main-links {
             position: absolute;
@@ -148,29 +154,15 @@
         @include media($screen-sm) {
             padding: 20px 0 120px;
             height: auto !important;
+
             .container {
                 max-width: 100%;
             }
         }
     }
     &.-main-full {
-        height: -webkit-calc(100vh - 120px);
-        height: calc(100vh - 120px);
-        @include media($screen-md) {
-            height: auto;
-        }
-        @include media($screen-sm) {
-            height: -webkit-calc(100vh - 210px);
-            height: calc(100vh - 210px);
-        }
+        height: 100vh;
     }
-    /*&.-home.-main-full {
-        @media (max-width: $screen-sm) and (orientation: landscape) {
-            & {
-                height: calc(100vh - 50px);
-            }
-        }
-    }*/
     &.-full {
         min-height: 600px; // fallback
         min-height: 100vh;
@@ -197,6 +189,7 @@
     }
     &.-steps {
         background: url('../images/resume-bg-01.jpg');
+        overflow-x: hidden;
     }
     &.-pre-footer {
         background-image: url("/images/footer-bg.jpg");
@@ -274,6 +267,11 @@
     }
 }
 .as-seen-on {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     img {
         width: 50%;
     }
