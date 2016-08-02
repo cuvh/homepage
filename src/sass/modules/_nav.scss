@@ -151,11 +151,17 @@ $nav-width: 310px;
             ul a {
                 margin-left: 0;
             }
+
+            .social {
+                margin-top: 30px;
+            }
         }
 
         .buttons-container {
             padding: 0;
-            height: calc(100% - 50px);
+            overflow-y: auto;
+            min-height: calc(100% - 80px);
+            height: auto;
 
             .lets-begin {
                 position: absolute;
@@ -174,6 +180,7 @@ $nav-width: 310px;
 
             .secondary-menu {
                 padding: 0;
+                bottom: -50px;
             }
         }
     }
