@@ -37,7 +37,7 @@
             webkitallowfullscreen: 1,
             mozallowfullscreen: 1,
             allowfullscreen: 1
-        }).prependTo('body').wrap('<div id="vimelar-container" style="overflow:hidden;position:absolute;z-index:17;width:100%;height:100%;"></div>').after('<div id="vimelar-overlay" style="width:100%;height:100%;z-index:2;position:absolute;left:0;top:0;background:#00c092;"></div>');
+        }).prependTo('body').wrap('<div id="vimelar-container" style="overflow:hidden;position:absolute;z-index:17;width:100%;height:100%;"></div>').after('<div id="vimelar-overlay" style="width:100%;height:100%;z-index:2;position:absolute;left:0;top:0;"></div>');
 
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
