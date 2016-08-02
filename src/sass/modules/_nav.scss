@@ -95,7 +95,7 @@ $nav-width: 310px;
             display: inline-block;
             color: #fff;
             margin-bottom: 12px;
-            @include font-size(20px);
+            @include font-size(16px);
             text-decoration: none;
             transition: opacity 0.3s 0.15s ease-in-out, visibility 0.3s 0.15s ease-in-out, margin 0.3s 0.15s ease-out, color 0.15s 0s ease-in;
             opacity: 0;
@@ -131,6 +131,14 @@ $nav-width: 310px;
         opacity: 1;
     }
 
+    @media only screen and (min-height: 481px) {
+        .buttons-container {
+            .menu-item-wrapper a {
+                @include font-size(20px);
+            }
+        }
+    }
+
     @include media($screen-sm) {
         @include transition-full(transform .3s ease-in-out);
         transform: translateY(calc(-100% - 70px));
@@ -159,7 +167,6 @@ $nav-width: 310px;
 
         .buttons-container {
             padding: 0;
-            overflow-y: auto;
             min-height: calc(100% - 80px);
             height: auto;
 
@@ -175,18 +182,18 @@ $nav-width: 310px;
                 top: 50%;
                 right: 0;
                 left: 0;
-                transform: translateY(-50%);
+                transform: translateY(-65%);
             }
 
             .secondary-menu {
                 padding: 0;
-                bottom: -50px;
+                bottom: -35px;
             }
         }
     }
 
     @media (max-width: $screen-sm) and (orientation: landscape) {
-        overflow-y: scroll;
+        overflow-y: auto !important;
 
         .buttons-container {
             min-height: calc(100vh + 100px);
@@ -209,8 +216,6 @@ $nav-width: 310px;
     transition: all 0.2s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    visibility: hidden;
-    transition: all ease-in-out 0.2s;
 }
 
 @include media-min($screen-sm) {
