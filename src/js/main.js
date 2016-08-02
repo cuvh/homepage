@@ -117,6 +117,7 @@ $(function() {
                     }
                 });
                 $('#homeLoader').remove();
+                $('body').removeClass('content-loading');
                 $el.css('opacity', 1);
             },
             waitForAll: true

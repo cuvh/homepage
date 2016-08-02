@@ -37,6 +37,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
+
+  &.content-loading {
+    overflow: hidden;
+  }
 }
 
 // Correct 'block' display not defined in IE 8/9.

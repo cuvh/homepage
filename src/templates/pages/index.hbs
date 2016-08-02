@@ -1,4 +1,9 @@
 {{#extend "layout"}}
+
+    {{#content "bodyClass"}}
+      content-loading
+    {{/content}}
+
     {{#content "body"}}
         <div class="whirl no-overlay" id="homeLoader"></div>
 
@@ -63,15 +68,8 @@
             <a href="#stepsContainer" class="go-to-section js-scroll-to"></a>
         </div>
 
-        <!--<div class="section m-text-center -mobile-only -white menu-open">
-            <div class="container m-text-center">
-                <h1>Get the job <br> you deserve!</h1>
-                <a href="{{links.get_started}}" class="btn btn-warning btn-md text-l">Let’s Begin</a>
-            </div>
-        </div>-->
-
         <div
-         class="section -white menu-open as-seen-on"
+         class="section -white menu-open as-seen-on hidden-xs"
          data-navbar-color-primary>
             <div class="container m-text-center">
                 <div class="row">
