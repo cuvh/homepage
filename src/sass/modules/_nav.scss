@@ -285,7 +285,6 @@ $nav-width: 310px;
     position: absolute;
     left: 50%;
     bottom: 50px;
-    margin-left: -10px;
     padding: 20px;
     width: 20px;
     height: 18px;
@@ -304,14 +303,14 @@ $nav-width: 310px;
 
 @include keyframes(gotosection) {
     0% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translate(-50%, 10px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 }

@@ -49,8 +49,9 @@ $(document).ready(function () {
 				});
 
 				if (window.matchMedia("(min-width: 768px)").matches) {
-					//$homeSection.css({'background': "none"});
 					$homeSection.removeClass('with-background');
+					$homeSection.css({'background': "none"});
+					$('#vimelar-overlay').css({'background': "none"});
 				}
 
 				if ($currentCaption.length && $nextCaption.length) {
