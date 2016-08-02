@@ -51,7 +51,7 @@ $(document).ready(function () {
 
 				if (window.matchMedia("(min-width: 768px)").matches) {
 					$homeSection.removeClass('with-background');
-					//$homeSection.css({'background': "none"});
+					$homeSection.css({'background': "none"});
 					//$('#vimelar-overlay').css({'background': "none"});
 				}
 
@@ -75,6 +75,7 @@ $(document).ready(function () {
 				} else if (!/Edge/.test(navigator.userAgent)) {
 					//$homeSection.css({'background': "none"});
 					$homeSection.removeClass('with-background');
+					$homeSection.css({'background': "none"});
 				}
 			} else {
 				//$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
