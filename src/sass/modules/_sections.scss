@@ -42,11 +42,11 @@
         @include transition-full(transform .3s ease-in-out, opacity 1.3s ease-in-out !important);
 
         //nav issue
-        @media only screen and (min-width: ($screen-sm + 1px)) and (max-width: $screen-md) {
+        /*@media only screen and (min-width: ($screen-sm + 1px)) and (max-width: $screen-md) {
             &.-main-full {
                 height: calc(100vh - 120px);
             }
-        }
+        }*/
         @include media($screen-sm) {
             padding: 20px 0;
             .container {
@@ -154,15 +154,16 @@
         }
     }
     &.-main-full {
-        height: -webkit-calc(100vh - 120px);
-        height: calc(100vh - 120px);
-        @include media($screen-md) {
+        height: 100vh;
+        //height: -webkit-calc(100vh - 120px);
+        //height: calc(100vh - 120px);
+        /*@include media($screen-md) {
             height: auto;
         }
         @include media($screen-sm) {
             height: -webkit-calc(100vh - 210px);
             height: calc(100vh - 210px);
-        }
+        }*/
     }
     /*&.-home.-main-full {
         @media (max-width: $screen-sm) and (orientation: landscape) {
