@@ -1,4 +1,4 @@
-casper.test.begin('Examples page', 8, function (test) {
+casper.test.begin('Examples page', 7, function (test) {
     casper.start('http://127.0.0.1:8080/examples.html', function () {
 
         var resumes = [
