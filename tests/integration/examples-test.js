@@ -2,10 +2,9 @@ casper.test.begin('Examples page', 8, function (test) {
     casper.start('http://127.0.0.1:8080/examples.html', function () {
 
         var resumes = [
-            'Georgi Ivanov',
-            'Yasmin Tezdzhan',
-            'Valentina Milanova',
-            'Jonathan Seagull',
+            'John Rogers',
+            'Steve Brown',
+            'Jackie White',
         ];
 
         test.assertTitle('Examples of resumes by Enhancv');
@@ -36,7 +35,7 @@ casper.test.begin('Examples page', 8, function (test) {
             test.assertSelectorHasText(
                 'h2',
                 resumes[i],
-                'Has resume of '+resumes[i]
+                'Has resume of ' + resumes[i]
             );
         }
     }).run(function () {
