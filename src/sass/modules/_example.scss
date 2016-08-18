@@ -46,10 +46,10 @@
         text-shadow: none;
         opacity: 1;
         outline: 0;
-
         position: fixed;
         top: 50px;
         right: 50px;
+        z-index: 100;
 
         i {
             color: #fff;
@@ -58,6 +58,17 @@
 
         &:hover > i {
             opacity: 0.7;
+        }
+
+
+
+        @include media($screen-sm) {
+            top: 5px !important;
+            right: 22px !important;
+
+            i {
+                font-size: 17px !important;
+            }
         }
     }
 
@@ -96,10 +107,14 @@
         @include transition(.15s);
         width: 100%;
     }
-    .example-image:hover > img,
-    .example-image:focus > img,
-    .example-image:active > img {
-        @include opacity(0.7);
+    .example-image:hover,
+    .example-image:focus,
+    .example-image:active {
+        outline: 0 none;
+
+        & > img {
+            @include opacity(0.7);
+        }
     }
     .example-image:hover .zoom-in,
     .example-image:focus .zoom-in,
