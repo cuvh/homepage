@@ -28,7 +28,6 @@
 
   .testimonial-information {
     min-height: 80px;
-    padding-left: 40px;
     display: table;
 
     .testimonial-information-center {
@@ -37,12 +36,6 @@
     }
   }
 
-  img {
-    float: left;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
   h3 {
     color: $ench-color;
     margin: 0;
