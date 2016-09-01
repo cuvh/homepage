@@ -7,13 +7,17 @@ casper.test.begin('About page', 16, function (test) {
             'Dimitar Vouldjeff',
             'Viktor Kirilov',
             'Kaloyan Toshev',
-            'Nick Greene',
             'Kaloyan Toshev',
             'Krasimir Stoyanov',
             'Alexander Ginovski',
             'Velina Getova',
             'Ivaylo Hristov',
             'Yasmin',
+            'Slav Dachev',
+            'Ivan Kerin',
+            'Petya Blagoeva',
+            'Plami Doncheva',
+            'Tatiana Rehmova'
         ];
 
         test.assertTitle('About Enhancv');
