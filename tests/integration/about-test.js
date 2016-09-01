@@ -1,4 +1,4 @@
-casper.test.begin('About page', 16, function (test) {
+casper.test.begin('About page', 20, function (test) {
     casper.start('http://127.0.0.1:8080/about.html', function () {
 
         var team = [
