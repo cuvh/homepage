@@ -1,4 +1,4 @@
-casper.test.begin('About page', 20, function (test) {
+casper.test.begin('About page', 19, function (test) {
     casper.start('http://127.0.0.1:8080/about.html', function () {
 
         var team = [
@@ -15,7 +15,6 @@ casper.test.begin('About page', 20, function (test) {
             'Yasmin',
             'Slav Dachev',
             'Ivan Kerin',
-            'Petya Blagoeva',
             'Plami Doncheva',
             'Tatiana Rehmova'
         ];
