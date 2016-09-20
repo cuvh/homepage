@@ -1,4 +1,4 @@
-casper.test.begin('About page', 16, function (test) {
+casper.test.begin('About page', 19, function (test) {
     casper.start('http://127.0.0.1:8080/about.html', function () {
 
         var team = [
@@ -7,13 +7,16 @@ casper.test.begin('About page', 16, function (test) {
             'Dimitar Vouldjeff',
             'Viktor Kirilov',
             'Kaloyan Toshev',
-            'Nick Greene',
             'Kaloyan Toshev',
             'Krasimir Stoyanov',
             'Alexander Ginovski',
             'Velina Getova',
             'Ivaylo Hristov',
             'Yasmin',
+            'Slav Dachev',
+            'Ivan Kerin',
+            'Plami Doncheva',
+            'Tatiana Rehmova'
         ];
 
         test.assertTitle('About Enhancv');
