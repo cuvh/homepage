@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	var $homeSection = $('.section.-home');
+
 	var options = {
 		videoId: '177081809',
 		wrapperZIndex: 19,
@@ -7,12 +9,15 @@ $(document).ready(function () {
 			background: 1,
 			color: '00c092',
 			player_id: 'vimelar-player',
+		},
+		onError: function () {
+			$homeSection.addClass('with-background');
 		}
 	};
 
-	var $homeSection = $('.section.-home');
-
 	function initHomeVideo() {
+		clearTimeout(window.vimelarIframeError);
+
 		$('#videosContainer').vimelar(options);
 
 		var $vimeoVideo = $('#vimelar-player');
@@ -48,9 +53,9 @@ $(document).ready(function () {
 					return $caption.data('showOn') == parseInt(data.seconds) && !$caption.hasClass('active') && $caption.html() !== $currentCaption.html();
 				});
 
-
 				if (window.matchMedia("(min-width: 768px)").matches) {
 					$homeSection.removeClass('with-background');
+					clearTimeout(window.vimelarIframeError);
 					//$homeSection.css({'background': "none"});
 					//$('#vimelar-overlay').css({'background': "none"});
 				}
@@ -79,6 +84,7 @@ $(document).ready(function () {
 			} else {
 				//$homeSection.css({'background': "url('/images/home-video-bg.png') center center no-repeat #00c092"});
 				$homeSection.addClass('with-background');
+				clearTimeout(window.vimelarIframeError);
 			}
 		} else if (window.matchMedia("(min-width: 768px)").matches && !/Edge/.test(navigator.userAgent)) {
 			initHomeVideo();

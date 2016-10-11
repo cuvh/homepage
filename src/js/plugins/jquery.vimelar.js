@@ -15,7 +15,9 @@
         ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
         videoId: '8970192',
         width: $(window).width(),
-        wrapperZIndex: 99
+        wrapperZIndex: 99,
+        errorTimeout: 16000, // 16 seconds
+        onError: function () {}
     };
 
     // methods
@@ -40,6 +42,8 @@
         }).prependTo('body').wrap('<div id="vimelar-container" style="overflow:hidden;position:absolute;z-index:17;width:100%;height:100%;background:#000;"></div>').after('<div id="vimelar-overlay" style="width:100%;height:100%;z-index:2;position:absolute;left:0;top:0;"></div>');
 
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
+
+        window.vimelarIframeError = setTimeout(options.onError, options.errorTimeout);
 
         // resize handler updates width, height and offset of player after resize/init
         var resize = function() {
