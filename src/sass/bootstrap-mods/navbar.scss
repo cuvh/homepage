@@ -13,6 +13,8 @@
 
 // Always show navbar-toggle and add a hover effect
 .navbar-toggle {
+    position: fixed;
+    right: 50px;
     display: block;
     padding: 5px 0 0 0;
     margin: 0;
@@ -46,6 +48,8 @@
 }
 
 .navbar-toggle-replace {
+    position: fixed;
+    right: 50px;
     float: right;
     opacity: 0;
     max-width: 0;
@@ -87,12 +91,19 @@
     margin: 0;
     padding: 0;
     height: auto;
+    position: fixed;
+    left: 50px;
 }
 
 .navbar-padded {
     padding: 50px 35px 0 35px;
     margin: 0;
     border: 0;
+
+    .login-btn {
+        margin-right: 30px;
+        margin-top: -5px;
+    }
 
     @media (max-width: $screen-sm) {
         padding: 20px 20px 0 20px;
