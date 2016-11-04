@@ -95,6 +95,14 @@
     left: 50px;
 }
 
+@media (max-width: $screen-xs) {
+    .navbar-brand,
+    .navbar-toggle-replace,
+    .navbar-toggle {
+        position: static;
+    }
+}
+
 .navbar-padded {
     padding: 50px 35px 0 35px;
     margin: 0;
@@ -103,6 +111,14 @@
     .login-btn {
         margin-right: 30px;
         margin-top: -5px;
+
+        @media (max-width: $screen-sm) {
+            margin-right: 45px;
+        }
+
+        @media (max-width: $screen-xs) {
+            display: none;
+        }
     }
 
     @media (max-width: $screen-sm) {
