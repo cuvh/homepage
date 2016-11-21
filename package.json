@@ -5,8 +5,7 @@
   "main": "gulpfile.js",
   "author": "Enhancv",
   "scripts": {
-    "lint": "node node_modules/eslint/bin/eslint.js {src/js,gulpfile.js}",
-    "test": "python node_modules/casperjs/bin/casperjs test tests"
+    "lint": "node node_modules/eslint/bin/eslint.js {src/js,gulpfile.js}"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
