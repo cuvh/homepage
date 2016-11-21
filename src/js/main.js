@@ -129,4 +129,11 @@ $(function() {
             }, 400);
         });
     }
+
+    $('[data-action]').on('click', function () {
+        const action = $(this).attr('action');
+        const label = $(this).attr('label');
+
+        ga('send', 'event', 'Header button A/B', action, label);
+    });
 });
