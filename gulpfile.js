@@ -10,8 +10,9 @@ dotenv.config({ silent: true });
 const $ = plugins();
 const isDev = process.env.NODE_ENV !== 'production';
 
-gulp.task('build', gulp.series(clean, pages, images, fonts, sass, icons, javascript));
-gulp.task('default', gulp.series('build', server, watch));
+gulp.task('assemble', gulp.series(clean, pages, images, fonts, sass, icons, javascript));
+gulp.task('build', gulp.series('assemble', revisionFiles));
+gulp.task('default', gulp.series('assemble', server, watch));
 gulp.task('fontastic', function () {
     return gulp.src('package.json')
         .pipe($.fontastic({
@@ -63,11 +64,11 @@ function sass () {
     ] };
 
     return gulp.src('src/assets/scss/app.scss')
-        .pipe($.if(!isDev, $.sourcemaps.init()))
+        .pipe($.if(isDev, $.sourcemaps.init()))
         .pipe($.sass(sassOptions).on('error', $.sass.logError))
         .pipe($.autoprefixer({ browsers: ['last 2 versions'] }))
-        // .pipe($.if(isDev, $.uncss({ html: ['dist/**/*.html'] })))
-        .pipe($.if(!isDev, $.sourcemaps.write()))
+        .pipe($.if(!isDev, $.uglifycss()))
+        .pipe($.if(isDev, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/css'));
 }
 
@@ -78,23 +79,32 @@ function javascript () {
             'bower_components/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
             'src/assets/js/**/*',
         ])
-        .pipe($.if(!isDev, $.sourcemaps.init()))
-        .pipe($.concat('combined.min.js'))
-        // .pipe($.uglify())
-        .pipe($.if(!isDev, $.sourcemaps.write()))
+        .pipe($.if(isDev, $.sourcemaps.init()))
+        .pipe($.concat('combined.js'))
+        .pipe($.if(!isDev, $.uglify()))
+        .pipe($.if(isDev, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/js'));
 }
 
 // Start a server with LiveReload to preview the site in
-function server(done) {
+function server (done) {
     browser.init({ server: 'dist' });
     done();
 }
 
 // Reset Panini's cache of layouts and partials
-function resetPages(done) {
+function resetPages (done) {
     panini.refresh();
     done();
+}
+
+function revisionFiles () {
+    return gulp.src('dist/**')
+        .pipe($.revAll.revision({
+            dontRenameFile: [/social-image.jpg/g, '.html'],
+            dontUpdateReference: [/social-image.jpg/g, '.html'],
+        }))
+        .pipe(gulp.dest('cdn'));
 }
 
 // Watch for file changes

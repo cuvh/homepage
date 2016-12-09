@@ -21,9 +21,11 @@ title: Enhancv
             <div class="embed-responsive-item">
                 <div class="center-block embed-responsive">
                     <iframe
-                     type="text/html"
-                     src="https://www.youtube.com/embed/M7lc1UVf-VE?&origin={{urls.homepage}}&modestbranding=1&rel=0&showinfo=0"
-                     frameborder="0"></iframe>
+                     src="//player.vimeo.com/video/194973425?badge=0&byline=0&portrait=0&title=0&color=#2DC08D"
+                     frameborder="0"
+                     webkitallowfullscreen
+                     mozallowfullscreen
+                     allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -71,7 +73,7 @@ title: Enhancv
                  data-ride="carousel"
                  data-switch-toggle="#tip-titles"
                  data-indicators="#tips-indicators,#tips-dots"
-                 data-interval="8000">
+                 data-interval="false">
                     <ul
                      id="tips-dots"
                      class="visible-xs carousel-indicators">
@@ -96,31 +98,144 @@ title: Enhancv
 
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="{{root}}img/tips/tip1.png" alt="...">
+                            <img
+                             width="1958"
+                             height="2770"
+                             src="/img/homepage/tips/write.jpg"
+                             alt="Condensed resume">
                             <ul class="dots">
-                                <li style="left: 10%; top: 10%;">
-                                    <button
-                                     type="button"
-                                     class="btn btn-sm btn-dot"
-                                     data-toggle="popover"
-                                     data-placement="top"
-                                     data-container="#tips"
-                                     data-trigger="focus"
-                                     title="Some title"
-                                     data-content="And here's some amazing content. It's very engaging. Right?">
-                                        <i class="icon-dot-circle-o"></i>
-                                    </button>
-                                </li>
+                                {{>tip
+                                 x='34%'
+                                 y='21.3%'
+                                 text='Instead of listing responsibilities, show your impact in this role.'
+                                }}
+
+                                {{>tip
+                                 x='29%'
+                                 y='49%'
+                                 text='Didn`t quite earn the degree? Mention it anyway.'
+                                }}
+
+                                {{>tip
+                                 x='83%'
+                                 y='47%'
+                                 text='Tailor this section to what you want to show. A day at work, your weekend, the interests and initiatives you are dedicated to.'
+                                }}
+
+                                {{>tip
+                                 x='73%'
+                                 y='15.5%'
+                                 text='Show your personality, dedication and passion through your personal initiatives and activities.'
+                                }}
+
+                                {{>tip
+                                 x='23.2%'
+                                 y='14.8%'
+                                 text='Tailor the generic title sections to your needs.'
+                                }}
+
+                                {{>tip
+                                 x='68%'
+                                 y='77%'
+                                 text='Include any academic scholarships, sports medals, or professional awards.'
+                                }}
+
+                                {{>tip
+                                 x='18.5%'
+                                 y='79.4%'
+                                 text='Mention any relevant licenses, certificates and trainings.'
+                                }}
+
+                                {{>tip
+                                 x='14.3%'
+                                 y='56.2%'
+                                 text='Show what excites you through your favourite books.'
+                                }}
+
+                                {{>tip
+                                 x='67%'
+                                 y='69%'
+                                 text='Include your mother tongue, the languages you have basic understanding of, and the ones you are fluent in'
+                                }}
                             </ul>
                         </div>
                         <div class="item">
-                            <img src="{{root}}img/tips/tip2.png" alt="...">
+                            <img src="/img/homepage/tips/write.jpg">
                         </div>
                         <div class="item">
-                            <img src="{{root}}img/tips/tip1.png" alt="...">
+                            <img src="/img/homepage/tips/mistakes.jpg">
+                            <ul class="dots">
+                                {{>tip
+                                 x='68.5%'
+                                 y='26.2%'
+                                 text='Include a valuable metric. For example, include the number of half-marathons you ran.'
+                                }}
+                                {{>tip
+                                 x='29.5%'
+                                 y='27.2%'
+                                 text='Give specific examples about the initiatives and their impact'
+                                }}
+                                {{>tip
+                                 x='50.1%'
+                                 y='31.4%'
+                                 text='Include a valuable metric. For example "15 posts as guest blogger'
+                                }}
+                                {{>tip
+                                 x='26.4%'
+                                 y='50%'
+                                 text='This is a cliche, so it adds no value. Remove it or consider rephrasing it.'
+                                }}
+                                {{>tip
+                                 x='64.5%'
+                                 y='39%'
+                                 text='You are using a weak verb. Replace it with an active verb that has a similar meaning and better communicates the impact. For example, use "built" instead of "did".'
+                                }}
+                                {{>tip
+                                 x='90.8%'
+                                 y='31.9%'
+                                 text='This word doesn’t add any value to the sentence. Consider removing it.'
+                                }}
+                                {{>tip
+                                 x='58.9%'
+                                 y='37.3%'
+                                 text='You have already used this icon. To select a different one, click on the icon.'
+                                }}
+                            </ul>
                         </div>
                         <div class="item">
-                            <img src="{{root}}img/tips/tip2.png" alt="...">
+                            <img src="/img/homepage/tips/write.jpg">
+                            <ul class="dots">
+                                {{>tip
+                                 x='23%'
+                                 y='8.5%'
+                                 text='You\'re more than a marketer! I think you should mention your engineering background, Steve.'
+                                }}
+                                {{>tip
+                                 x='69%'
+                                 y='77%'
+                                 text='When were in Germany you did very well. Add it as Basic level?'
+                                }}
+                                {{>tip
+                                 x='69%'
+                                 y='28.5%'
+                                 text='Great idea to add this! You should definitely mention in it during the interview.'
+                                }}
+                                {{>tip
+                                 x='31%'
+                                 y='37%'
+                                 text='You onboarded Jenny and Peter when they joined the team - worth mentioning?'
+                                }}
+                                {{>tip
+                                 x='37%'
+                                 y='91.7%'
+                                 text='Maybe feature 2-3 of your publications? Would cool to show them what you\'ve actually written.'
+                                }}
+                                {{>tip
+                                 x='77%'
+                                 y='39%'
+                                 text='Mention in the title that you were 14 back then.'
+                                }}
+                            </ul>
                         </div>
                     </div>
 
@@ -226,17 +341,17 @@ title: Enhancv
                         <div class="item active item-bg">
                             <img
                              class="img-responsive"
-                             src="{{root}}img/tips/feature1.png">
+                             src="/img/tips/feature1.png">
                         </div>
                         <div class="item item-bg">
                             <img
                              class="img-responsive"
-                             src="{{root}}img/tips/feature1.png">
+                             src="/img/tips/feature1.png">
                         </div>
                         <div class="item item-bg">
                             <img
                              class="img-responsive"
-                             src="{{root}}img/tips/feature1.png">
+                             src="/img/tips/feature1.png">
                         </div>
                     </div>
 
@@ -264,7 +379,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/mistake.svg"
+             src="/img/homepage/selected-features/mistake.svg"
              alt="circled cross">
             <h3 class="h4 top-sm">No more mistakes</h3>
             <p class="text-muted">
@@ -275,7 +390,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/pdf.svg"
+             src="/img/homepage/selected-features/pdf.svg"
              alt="pdf file icon">
 
             <h3 class="h4 top-sm">Professional PDF export</h3>
@@ -287,7 +402,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/happy.svg"
+             src="/img/homepage/selected-features/happy.svg"
              alt="happy face">
 
             <h3 class="h4 top-sm">Stress-free</h3>
@@ -301,7 +416,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/design.svg"
+             src="/img/homepage/selected-features/design.svg"
              alt="brush">
 
             <h3 class="h4 top-sm">Customize your resume design</h3>
@@ -313,7 +428,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/ats.svg"
+             src="/img/homepage/selected-features/ats.svg"
              alt="smiling laptop">
 
             <h3 class="h4 top-sm">ATS optimized</h3>
@@ -325,7 +440,7 @@ title: Enhancv
             <img
              width="36"
              height="36"
-             src="{{root}}img/homepage/selected-features/hr.svg"
+             src="/img/homepage/selected-features/hr.svg"
              alt="hr heart">
 
             <h3 class="h4 top-sm">HRs love it</h3>
@@ -434,7 +549,7 @@ title: Enhancv
 </div>
 
 <div class="container homepage-companies">
-    <h4>Companies who hired applicants with our resumes</h4>
+    <h4 class="text-center">Companies who hired applicants with our resumes</h4>
     <div class="row">
         <div class="col-sm-2"></div>
     </div>

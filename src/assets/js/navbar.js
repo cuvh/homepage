@@ -1,6 +1,6 @@
 +function ($) {
-    const $navbar = $('.navbar');
-    let sticked = false;
+    var $navbar = $('.navbar');
+    var sticked = false;
 
     $navbar.Stickyfill();
 

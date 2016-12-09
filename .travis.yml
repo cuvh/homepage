@@ -1,15 +1,25 @@
+language: node_js
+node_js:
+- 6.9.1
+cache:
+  directories:
+  - node_modules
+  - bower_components
+script:
+- yarn run bower
+- yarn build
 deploy:
   - provider: s3
     access_key_id:
-      secure: H0o3sNSxY7SLmj40g5jegQ3V7E0xjcCVLUXn3tV4b3B1GYl3PaqTzBBbNPRo2ImP9bHXLFDHq8G9HOMJt/QWXDQgvnJuN8tXdfT7T0tk3YhVoHYtUtzuHSFdQz3SeAK2K4fnMEDCYT/kKHK/gZ+wUIuFZ+ghdgxwhPNhJgBp/OsN32wG2EWxVFA8OVmRit8NFX9xLS/STqmk2u2HoQZRBFGiZ76FVq3Hmcd89CzRrkMmFHBVGKm0zZBXgZHj9/1JCa5i6OQBxjJ9VLGMDexZ61CyTg1HUl44ysZqzDBr7ErfpiXxeOUjm6KIBEelGhhhZWsEuj1JRdEA22k7EybbBMKM0t0KSuSJqmFTl4hpawdzkn0fE6ETrp8VT8iaoxtP2cxYa1RV4j2zTE/84xpQJrGjzOERzDgMrMcQqn+6y20NoYoeI7/j+cLQa77aGVdrBQsZNvDU6AABPNBPA0DSJX2PsYUVF+tnGX8n/fOGpaCwcNBtvPXM4UdRhfE8pqY//66Tt8nQuo5tQNVupazb7synoXpEeDoKtrCVgFwKi6U2YGtDCrPyV0JfG3hsyHlxxgDcaa1t0gwXyIti/ERJYr5cg9Ml7TVC9pDFAYztDUPtu/Pfa5Mb36hf6x7gG9jUlsJbx+oI69QlN/GdL6Cxvf/9jzo273hQXUpaoLyIJiw=
+      secure: gpZpI9Sj/qpUev8NLapV5pw47DSPVN3SZ9hUjuaFIWAs7s9F71679Fs+ivaeu54K3aWkA5Mvo6NKpS9rMs01gobfWBhy7jI8QEkdhVbKmwpvyUZ8UQ4N9NduZpsdzFyVqsnoQgUFrDwiF/n+GYv4ueftMeLM8C1Bl5jyInq117EDdfOMaF06edUS8vpVqtYyO6Br+M1+PYTEgKM+tOKSfW7CtEqHluvomTRhyCiijP4Sz3bG1uXGvGcUvhIs0xkQGM9UA56NxlLpYa2QP3gTPOxBYvkHfQdrIC8ah1XMsrCkkWyf35X++E5IgND74BgUa5cs5h7/7hyBUWkyvpsNQJHqpnjgmQqp/bDRKrRPMWlgYhBghTjfCdUk5fw0/9b+ZiWwNZ+MbrLvpmKge7aQR1p+hG5Qc98Vj6sFbin9ZgV3z4o9Takg2xJZssTwP/txhLvUxVxiMYr6ZYVCXUfHlnE5KQVnj6SMhEV87mDGE4Q20tlopBYDFPDfxqMEg+EJSVdZIDf93AUItuoE2dd+/KsVh6NZZRsYhHcaYsFc/MziEpGTNm1RFwdLu3BoY52YEifDD6jYSyWWK0NpkDCJsEN0lt8U6/+HsSUSFZvtue7uEzfrZ6P5VXh5xcOrnRZEPnLdwDT06JsWaodE9W/S9ne2lAzWmCqb2llboGnkfsc=
     secret_access_key:
-      secure: H0o3sNSxY7SLmj40g5jegQ3V7E0xjcCVLUXn3tV4b3B1GYl3PaqTzBBbNPRo2ImP9bHXLFDHq8G9HOMJt/QWXDQgvnJuN8tXdfT7T0tk3YhVoHYtUtzuHSFdQz3SeAK2K4fnMEDCYT/kKHK/gZ+wUIuFZ+ghdgxwhPNhJgBp/OsN32wG2EWxVFA8OVmRit8NFX9xLS/STqmk2u2HoQZRBFGiZ76FVq3Hmcd89CzRrkMmFHBVGKm0zZBXgZHj9/1JCa5i6OQBxjJ9VLGMDexZ61CyTg1HUl44ysZqzDBr7ErfpiXxeOUjm6KIBEelGhhhZWsEuj1JRdEA22k7EybbBMKM0t0KSuSJqmFTl4hpawdzkn0fE6ETrp8VT8iaoxtP2cxYa1RV4j2zTE/84xpQJrGjzOERzDgMrMcQqn+6y20NoYoeI7/j+cLQa77aGVdrBQsZNvDU6AABPNBPA0DSJX2PsYUVF+tnGX8n/fOGpaCwcNBtvPXM4UdRhfE8pqY//66Tt8nQuo5tQNVupazb7synoXpEeDoKtrCVgFwKi6U2YGtDCrPyV0JfG3hsyHlxxgDcaa1t0gwXyIti/ERJYr5cg9Ml7TVC9pDFAYztDUPtu/Pfa5Mb36hf6x7gG9jUlsJbx+oI69QlN/GdL6Cxvf/9jzo273hQXUpaoLyIJiw=
-    bucket: "dev-home.enhancv.com"
+      secure: VvJbV6bTkxX/9luxSEixGqg+nM9jZ8Ned7nMK0OyTQMCisBRPNHJa0xKNite7AgX781+KapCTQ9f6YjEa+fHa3u/XElTjaiWqe82s32jxwsNf03BDAEafAoCHPxaWkJfiBNbOCBeoMhFTCK8yUmq9oY1jPvOlUaa2Z9Zw2BrYRA7UfhiHCuQAU358zveyh01TFO/A2CbcLfa75KCsLXxG2r715kDLQXxB6tr85s9UvRvbW6Zaj4l2VKgKRQs7Clo96IMMpIm8yHmIZyjk8MMA5ZRAwCVQ9JvATGqjy8bznHqceTXGrD7MRMYNH/yDNC4f7CMygRTo8U7beVOzvwvH2cJ0P6eHOLu02DSzoq1W02NwepSedtbuxsKv+r+tyHr2V7R1tnLuzX2F5zA+MPdigdTxjirzIWGBYiw0ASqW3uDaT1p75NA+WvtZUf25lAFI4cpE+0yfzk8uVqO/zwlliirICCDpOcDhd0NlMC34bEl+MpA3rHQxxe0swt6g0kgZ5lNa+CBGpGw68JIqWfZTKqK9R1Yeqr3dXYW23mHeVNnlGun+us/SWc2FJdmkh5QZEkD+63nrMi892SxH5JRxC1Uq8MtTFA1YQ9L8rMuTV4SuTE/JbMddTgNtoykcyza9G++6nQuF8P2905p9XBaGxot4sN0Gf2S8o9P8sckwHU=
+    bucket: dev-home.enhancv.com
     skip_cleanup: true
-    local_dir: dist
+    local_dir: cdn
     cache_control:
-      - no-cache: '*.html'
-        "max-age: 15592000": '*.{css,js,jpg,png,svg,eot,ttf,woff}'
+    - no-cache: "*.html"
+      'max-age: 15592000': "*.{css,js,jpg,png,svg,eot,ttf,woff}"
     on:
       repo: enhancv/homepage
-      branch: develop
+      branch: staging
