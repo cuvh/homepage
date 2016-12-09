@@ -6,8 +6,8 @@ cache:
   - node_modules
   - bower_components
 script:
-- yarn run bower
-- yarn build
+- npm run bower
+- npm build
 deploy:
   - provider: s3
     access_key_id:
