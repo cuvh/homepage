@@ -5,8 +5,12 @@
   "main": "index.js",
   "author": "Ivan Kerin <ikerin@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/enhancv/homepage",
-  "devDependencies": {
+  "scripts": {
+    "start": "node_modules/.bin/gulp default",
+    "build": "node_modules/.bin/gulp build",
+    "bower": "node_modules/.bin/bower install"
+  },
+  "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "bower": "^1.8.0",
     "browser-sync": "^2.18.2",
@@ -24,10 +28,5 @@
     "gulp-if": "^2.0.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.9.1"
-  },
-  "scripts": {
-    "start": "node_modules/.bin/gulp default",
-    "build": "node_modules/.bin/gulp build",
-    "bower": "node_modules/.bin/bower install"
   }
 }
