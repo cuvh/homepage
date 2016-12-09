@@ -10,7 +10,7 @@ install:
 - npm install
 - npm run bower
 script:
-- npm build
+- npm run build
 deploy:
   - provider: s3
     access_key_id:
@@ -21,8 +21,8 @@ deploy:
     skip_cleanup: true
     local_dir: cdn
     cache_control:
-    - no-cache: "*.html"
-      'max-age: 15592000': "*.{css,js,jpg,png,svg,eot,ttf,woff}"
+      - no-cache: "*.html"
+        'max-age: 15592000': "*.{css,js,jpg,png,svg,eot,ttf,woff}"
     on:
       repo: enhancv/homepage
       branch: staging
