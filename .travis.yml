@@ -5,8 +5,11 @@ cache:
   directories:
   - node_modules
   - bower_components
-script:
+
+install:
+- npm install
 - npm run bower
+script:
 - npm build
 deploy:
   - provider: s3
