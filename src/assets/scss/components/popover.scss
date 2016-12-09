@@ -1,0 +1,87 @@
+//
+// Popovers
+// --------------------------------------------------
+
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $zindex-popover;
+  display: none;
+  max-width: $popover-max-width;
+  padding: 1px;
+  // Our parent element can be arbitrary since popovers are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  @include reset-text;
+  font-size: $font-size-large;
+
+  background-color: $popover-bg;
+  background-clip: padding-box;
+  border-radius: $border-radius-large;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+
+  // Offset the popover to account for the popover arrow
+  &.top     { margin-top: -$popover-arrow-width/2; }
+  &.right   { margin-left: $popover-arrow-width/2; }
+  &.bottom  { margin-top: $popover-arrow-width/2; }
+  &.left    { margin-left: -$popover-arrow-width/2; }
+}
+
+.popover-title {
+  margin: 0; // reset heading margin
+  padding: 30px 30px 20px 30px;
+  font-size: $font-size-base;
+  color: $muted-color;
+  background-color: $popover-title-bg;
+  border-bottom: none;
+  border-radius: ($border-radius-large - 1) ($border-radius-large - 1) 0 0;
+}
+
+.popover-content {
+  padding: 0 30px 30px 30px;
+}
+
+// Arrows
+//
+// .arrow is outer, .arrow:after is inner
+
+.popover > .arrow {
+  &,
+  &:after {
+    position: absolute;
+    display: block;
+    width: $popover-arrow-width;
+    height: $popover-arrow-width;
+  }
+}
+.popover > .arrow:after {
+  content: url(/img/curvy-arrow-white.svg);
+}
+
+.popover {
+  &.top > .arrow {
+    left: 50%;
+    margin-left: -$popover-arrow-width/2;
+    bottom: -$popover-arrow-width + 10px;
+  }
+  &.right > .arrow {
+    top: 50%;
+    left: -$popover-arrow-width + 10px;
+    margin-top: -$popover-arrow-width/2;
+    transform: rotate(90deg);
+  }
+  &.bottom > .arrow {
+    left: 50%;
+    margin-left: -$popover-arrow-width/2;
+    top: -$popover-arrow-width/2 - 3px;
+    transform: rotate(180deg);
+  }
+
+  &.left > .arrow {
+    top: 50%;
+    right: -$popover-arrow-width/2 - 2px;
+    margin-top: -$popover-arrow-width/2;
+    transform: rotate(-90deg);
+  }
+}

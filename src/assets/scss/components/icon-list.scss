@@ -1,0 +1,14 @@
+ul.icons-list {
+    list-style: none;
+
+    li {
+        position: relative;
+        margin-bottom: 8px;
+        & > i:first-child {
+            position: absolute;
+            top: 3px;
+            vertical-align: middle;
+            left: -30px;
+        }
+    }
+}

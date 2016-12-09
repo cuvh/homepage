@@ -1,0 +1,175 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+// Wrapper for the slide container and indicators
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    > .item {
+        display: none;
+        position: relative;
+        transition: left .6s ease-in-out;
+        transition: transform .6s ease-in-out;
+
+        // Account for jankitude on images
+        > img,
+        > a > img {
+            @include img-responsive;
+            line-height: 1;
+        }
+
+        &.next,
+        &.active.right {
+            transform: translate3d(100%, 0, 0);
+            left: 0;
+        }
+        &.prev,
+        &.active.left {
+            transform: translate3d(-100%, 0, 0);
+            left: 0;
+        }
+        &.next.left,
+        &.prev.right,
+        &.active {
+            transform: translate3d(0, 0, 0);
+            left: 0;
+        }
+    }
+
+    > .active,
+    > .next,
+    > .prev {
+        display: block;
+    }
+
+    > .active {
+        left: 0;
+    }
+
+    > .next,
+    > .prev {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    > .next {
+        left: 100%;
+    }
+    > .prev {
+        left: -100%;
+    }
+    > .next.left,
+    > .prev.right {
+        left: 0;
+    }
+
+    > .active.left {
+        left: -100%;
+    }
+    > .active.right {
+        left: 100%;
+    }
+
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel-control {
+    display: none;
+}
+
+// Optional indicator pips
+//
+// Add an unordered list with the following class and add a list item for each
+// slide your carousel holds.
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    margin-left: -30%;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        width:  12px;
+        height: 12px;
+        text-indent: -999px;
+        border-radius: 10px;
+        opacity: 0.5;
+        background-color: $text-color;
+        margin-left: 20px;
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    li.active, li:hover {
+        width:  12px;
+        height: 12px;
+        opacity: 1;
+    }
+}
+
+
+// Scale up controls for tablets and up
+@media screen and (min-width: $screen-sm-min) {
+
+    // Scale up the controls a smidge
+    .carousel-control {
+        display: block;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        height: 100px;
+        width: 44px;
+        border: 1px solid white;
+        border-radius: 22px;
+        margin-top: -50px;
+        line-height: 104px;
+        color: white;
+        font-size: 25px;
+        box-shadow: none;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            background-color: rgba(white, 0.2);
+            color: white;
+            text-decoration: none;
+        }
+
+        &.left {
+            left: -123px;
+        }
+
+        &.right {
+            right: -123px;
+        }
+        .icon-prev,
+        .icon-next {
+            width: 20px;
+            height: 20px;
+        }
+        // Hover/focus state
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}

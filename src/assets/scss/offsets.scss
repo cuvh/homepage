@@ -1,0 +1,30 @@
+$spacer: 5px;
+$directions: 'top' 'bottom' 'left' 'right';
+
+@each $direction in $directions {
+	.no-#{$direction} {
+		margin-#{$direction}: 0 !important;
+	}
+	.#{$direction}-xty {
+		margin-#{$direction}: ceil($spacer/2); // 3px
+	}
+	.#{$direction}-ty {
+		margin-#{$direction}: $spacer; // 5px
+	}
+	.#{$direction}-xs {
+		margin-#{$direction}: $spacer*2; // 10px
+	}
+	.#{$direction}-sm {
+		margin-#{$direction}: $spacer*4; // 20px
+	}
+	.#{$direction}-md {
+		margin-#{$direction}: $spacer*6; // 30px
+	}
+	.#{$direction}-lg {
+		margin-#{$direction}: $spacer*12; // 60px
+	}
+}
+
+.no-margin {
+	margin: 0 !important;
+}

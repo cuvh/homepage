@@ -1,8 +1,5 @@
-/.idea
 node_modules
-.sass_cache
-*.psd
-.tmp
-build
-cdn
-.DS_Store
+bower_components
+dist
+yarn-error.log
+npm-debug.log

@@ -1,49 +1,15 @@
-language: node_js
-sudo: false
-node_js:
-  - "4.1"
-
-cache:
-  directories:
-    - node_modules
-
-before_install:
-  - npm install -g gulp
-  - npm install -g http-server
-
-before_script:
-  - npm run lint
-  - gulp build
-  - cd build && http-server -a localhost --silent &
-  - sleep 2
-
-before_deploy:
-  - gulp production
-  - chmod 777 bin/deploy_s3.sh
-
-after_deploy:
-  - >
-    curl -X POST \
-        --data-urlencode "payload={
-            \"channel\": \"#ci\",
-            \"username\": \"webhookbot\",
-            \"text\": \"$TRAVIS_BRANCH deployed\",
-            \"icon_emoji\": \":shipit:\"
-        }" \
-        https://hooks.slack.com/services/T0294QTKB/B0PLXDQKT/$SLACK_SECRET
-
 deploy:
-  - provider: script
-    script: AWSBUCKET="enhancv.com" bin/deploy_s3.sh
+  - provider: s3
+    access_key_id:
+      secure: H0o3sNSxY7SLmj40g5jegQ3V7E0xjcCVLUXn3tV4b3B1GYl3PaqTzBBbNPRo2ImP9bHXLFDHq8G9HOMJt/QWXDQgvnJuN8tXdfT7T0tk3YhVoHYtUtzuHSFdQz3SeAK2K4fnMEDCYT/kKHK/gZ+wUIuFZ+ghdgxwhPNhJgBp/OsN32wG2EWxVFA8OVmRit8NFX9xLS/STqmk2u2HoQZRBFGiZ76FVq3Hmcd89CzRrkMmFHBVGKm0zZBXgZHj9/1JCa5i6OQBxjJ9VLGMDexZ61CyTg1HUl44ysZqzDBr7ErfpiXxeOUjm6KIBEelGhhhZWsEuj1JRdEA22k7EybbBMKM0t0KSuSJqmFTl4hpawdzkn0fE6ETrp8VT8iaoxtP2cxYa1RV4j2zTE/84xpQJrGjzOERzDgMrMcQqn+6y20NoYoeI7/j+cLQa77aGVdrBQsZNvDU6AABPNBPA0DSJX2PsYUVF+tnGX8n/fOGpaCwcNBtvPXM4UdRhfE8pqY//66Tt8nQuo5tQNVupazb7synoXpEeDoKtrCVgFwKi6U2YGtDCrPyV0JfG3hsyHlxxgDcaa1t0gwXyIti/ERJYr5cg9Ml7TVC9pDFAYztDUPtu/Pfa5Mb36hf6x7gG9jUlsJbx+oI69QlN/GdL6Cxvf/9jzo273hQXUpaoLyIJiw=
+    secret_access_key:
+      secure: H0o3sNSxY7SLmj40g5jegQ3V7E0xjcCVLUXn3tV4b3B1GYl3PaqTzBBbNPRo2ImP9bHXLFDHq8G9HOMJt/QWXDQgvnJuN8tXdfT7T0tk3YhVoHYtUtzuHSFdQz3SeAK2K4fnMEDCYT/kKHK/gZ+wUIuFZ+ghdgxwhPNhJgBp/OsN32wG2EWxVFA8OVmRit8NFX9xLS/STqmk2u2HoQZRBFGiZ76FVq3Hmcd89CzRrkMmFHBVGKm0zZBXgZHj9/1JCa5i6OQBxjJ9VLGMDexZ61CyTg1HUl44ysZqzDBr7ErfpiXxeOUjm6KIBEelGhhhZWsEuj1JRdEA22k7EybbBMKM0t0KSuSJqmFTl4hpawdzkn0fE6ETrp8VT8iaoxtP2cxYa1RV4j2zTE/84xpQJrGjzOERzDgMrMcQqn+6y20NoYoeI7/j+cLQa77aGVdrBQsZNvDU6AABPNBPA0DSJX2PsYUVF+tnGX8n/fOGpaCwcNBtvPXM4UdRhfE8pqY//66Tt8nQuo5tQNVupazb7synoXpEeDoKtrCVgFwKi6U2YGtDCrPyV0JfG3hsyHlxxgDcaa1t0gwXyIti/ERJYr5cg9Ml7TVC9pDFAYztDUPtu/Pfa5Mb36hf6x7gG9jUlsJbx+oI69QlN/GdL6Cxvf/9jzo273hQXUpaoLyIJiw=
+    bucket: "dev-home.enhancv.com"
     skip_cleanup: true
-    cache_control: "max-age=14400"
-    on:
-      repo: enhancv/homepage
-      branch: master
-      
-  - provider: script
-    script: AWSBUCKET="dev-home.enhancv.com" bin/deploy_s3.sh
-    skip_cleanup: true
+    local_dir: dist
+    cache_control:
+      - no-cache: '*.html'
+        "max-age: 15592000": '*.{css,js,jpg,png,svg,eot,ttf,woff}'
     on:
       repo: enhancv/homepage
       branch: develop

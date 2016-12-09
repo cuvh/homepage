@@ -1,0 +1,94 @@
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button
+             type="button"
+             data-toggle="navbar"
+             class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <div class="navbar-mobile-hidden">
+                    <span class="icon-bar first"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar last"></span>
+                </div>
+                <div class="close navbar-mobile-visible">
+                    &times;
+                </div>
+            </button>
+            <a
+             class="navbar-brand"
+             href="/">
+                <img
+                 class="hidden-xs"
+                 src="{{root}}img/logo-with-text.svg"
+                 alt="Enhancv Logo">
+                <img
+                 class="visible-xs"
+                 src="{{root}}img/logo.svg"
+                 alt="Enhancv Logo">
+            </a>
+
+            <div class="navbar-center">
+                <ul class="list-unstyled navbar-mobile-menu navbar-mobile-visible bottom-md">
+                    <li {{#if isHomepage }} class="active" {{/if}}>
+                        <a href="/">Homepage</a>
+                    </li>
+                    <li {{#if isPricing }} class="active" {{/if}}>
+                        <a href="/pricing">Pricing</a>
+                    </li>
+                    <li {{#if isAbout }} class="active" {{/if}}>
+                        <a href="/about">About</a>
+                    </li>
+                    <li {{#if isExamples }} class="active" {{/if}}>
+                        <a href="/examples">Examples</a>
+                    </li>
+                    <li>
+                        <a href="https://blog.enhancv.com">Blog</a>
+                    </li>
+                </ul>
+                <div class="bottom-xs navbar-mobile-visible">
+                    <a
+                     href="{{ urls.builder }}"
+                     class="visible-xs btn btn-default">
+                        Sign In
+                    </a>
+                </div>
+                <a
+                 href="{{ urls.builder }}"
+                 class="visible-xs btn btn-primary">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <a
+             href="{{ urls.builder }}"
+             class="btn btn-primary navbar-btn navbar-right left-xs">
+                Sign Up
+            </a>
+
+            <a
+             href="{{ urls.builder }}"
+             class="btn btn-default navbar-btn navbar-right left-xs">
+                Sign In
+            </a>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li {{#if isPricing }} class="active" {{/if}}>
+                    <a href="/pricing">Pricing</a>
+                </li>
+                <li {{#if isAbout }} class="active" {{/if}}>
+                    <a href="/about">About</a>
+                </li>
+                <li {{#if isExamples }} class="active" {{/if}}>
+                    <a href="/examples">Examples</a>
+                </li>
+                <li>
+                    <a href="https://blog.enhancv.com">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

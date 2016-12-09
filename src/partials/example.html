@@ -1,0 +1,43 @@
+<a
+ href="#{{ id }}"
+ data-toggle="modal"
+ class="btn btn-example">
+    <img
+     class="img-responsive"
+     width="1240"
+     height="1755"
+     src="{{root}}img/examples/{{ thumb }}"
+     alt="John rogers resume">
+    <i class="icon-search-plus"></i>
+</a>
+
+<h2 class="h4 top-sm text-center bottom-md">
+    {{ name }}
+</h2>
+
+<div
+ id="{{ id }}"
+ tabindex="-1"
+ class="modal fade">
+    <div class="modal-dialog modal-lg modal-example">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img
+                 width="1240"
+                 height="1755"
+                 class="img-responsive"
+                 src="{{root}}img/examples/{{ page1 }}"
+                 alt="{{ name }} resume page 1">
+
+                {{#if page2 }}
+                    <img
+                     width="1240"
+                     height="1755"
+                     class="img-responsive top-md"
+                     src="{{root}}img/examples/{{ page2 }}"
+                     alt="{{ name }} resume page 2">
+                {{/if }}
+            </div>
+        </div>
+    </div>
+</div>

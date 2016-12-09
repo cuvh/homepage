@@ -1,0 +1,49 @@
+<div class="member center-block bottom-md">
+
+    <div
+     class="member-thumb"
+     style="background-image: url({{root}}img/about/member/{{ image }})"></div>
+
+    <a
+     class="member-content text-center"
+     data-toggle="modal"
+     href="#{{ id }}-modal">
+        <div class="member-text">
+            <p class="member-title bottom-xs">{{ name }}</p>
+            <p class="no-margin text-muted">{{ position }}</p>
+        </div>
+    </a>
+
+    <div
+     id="{{ id }}-modal"
+     tabindex="-1"
+     class="modal fade">
+        <div class="modal-dialog member-modal">
+            <div class="modal-content">
+                <div class="embed-responsive embed-responsive-member">
+                    <div
+                     style="background-image: url({{root}}img/about/member/{{ image }})"
+                     class="embed-responsive-item"></div>
+                </div>
+                <button
+                 type="button"
+                 class="close"
+                 data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                    <h3 class="h5">{{ name }}</h3>
+
+                    <p class="text-primary">
+                        {{ position }}
+                    </p>
+
+                    {{#if description }}
+                        <p>{{ description }}</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

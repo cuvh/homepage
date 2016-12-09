@@ -1,0 +1,55 @@
+// Nav tips
+// -------------------------
+.nav-tips {
+    display: inline-block;
+    > li {
+        display: inline-block;
+        position: relative;
+
+        // Links rendered as pills
+        > a {
+            border-radius: 25px;
+            background-color: white;
+            min-width: 107px;
+            color: $text-color;
+        }
+        + li {
+            margin-left: 7px;
+        }
+        &.with-mark:after {
+            position: absolute;
+            content: '';
+            background-color: #FF0030;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            top: -5px;
+            right: 20px;
+        }
+
+        // Active state
+        &.active > a {
+            position: relative;
+
+            &:after {
+                content: url(/img/curvy-arrow.svg);
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                transform: translateX(-50%);
+                width: 25px;
+                height: 20px;
+            }
+
+            &,
+            &:hover,
+            &:focus {
+                background-color: $gray-dark;
+                color: white;
+            }
+        }
+    }
+}
+.nav-tips-bordered > li > a {
+    border: 1px solid $border-color;
+}

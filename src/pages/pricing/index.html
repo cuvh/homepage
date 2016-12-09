@@ -1,0 +1,293 @@
+---
+isPricing: true
+title: Pricing for Enhancv
+---
+
+<div class="container container-page">
+    <h1 class="text-center">
+        "The best pricing page I've ever seen"
+    </h1>
+
+    <div class="row plans top-lg">
+        <div class="col-sm-4">
+            <div class="panel panel-price panel-default text-center">
+                <div class="panel-body">
+                    <h2>Basic</h2>
+                    <div>
+                        <span class="text-muted">
+                            Free forever
+                        </span>
+                    </div>
+                    <div class="plan-price">
+                        <div class="plan-price-text">
+                            <div class="price-row">
+                                <small>$</small> 0
+                            </div>
+                        </div>
+                    </div>
+                    <a
+                     class="btn btn-default btn-block bottom-sm"
+                     href="{{ urls.builder }}">
+                        Sign Up for Free
+                    </a>
+                    <div class="plan-text text-muted">
+                        Your current plan
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-price panel-price-best panel-primary text-center">
+                <img
+                 class="panel-badge"
+                 src="{{root}}img/best-choice.svg"
+                 width="75"
+                 height="75"
+                 alt="BEST CHOICE"/>
+
+                <div class="panel-body">
+                    <h2>Pro</h2>
+                    <div>
+                        <span class="text-primary">
+                            Triples your chance for interview
+                        </span>
+                    </div>
+                    <div class="plan-price">
+                        <div class="plan-price-text text-primary">
+                            <div
+                             id="monthly-price"
+                             class="price-row fade in">
+                                <small>$</small> 14.90 <small>/m</small>
+                            </div>
+
+                            <div
+                             id="yearly-price"
+                             class="hidden fade price-row">
+                                <small>$</small> 11.20 <small>/m</small>
+                            </div>
+                        </div>
+                        <div
+                         class="btn-group"
+                         data-toggle="buttons">
+                            <label
+                             data-toggle="switch-toggle"
+                             data-target="#monthly-price"
+                             class="btn btn-underlined active">
+                               <input
+                                type="radio"
+                                name="pricing"
+                                autocomplete="off"
+                                checked>
+                                Monthly
+                            </label>
+
+                            <label
+                             data-toggle="switch-toggle"
+                             data-target="#yearly-price"
+                             class="btn btn-underlined">
+                               <input
+                                type="radio"
+                                name="pricing"
+                                autocomplete="off">
+                                Annually
+                            </label>
+                        </div>
+                    </div>
+                    <a
+                     class="btn btn-primary btn-block bottom-sm"
+                     href="{{ urls.builder }}/plans">
+                        Upgrade Now
+                    </a>
+                    <a
+                     class="btn btn-default btn-block"
+                     href="{{ urls.builder }}/plans">
+                        Get 1 Month for Free
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-price panel-price-promo panel-default text-center">
+                <div class="panel-body">
+                    <h2>Student</h2>
+                    <div>
+                        <span class="text-muted">
+                            Student-friendly
+                        </span>
+                    </div>
+                    <div class="plan-price">
+                        <div class="plan-price-text text-promo">
+                            <div class="price-row">
+                                <small>$</small> 11.20 <small>/m</small>
+                            </div>
+                        </div>
+                        <div class="plan-text text-muted">
+                            <span>
+                                Billed annually
+                            </span>
+                        </div>
+                    </div>
+                    <a
+                     class="btn btn-default btn-block bottom-sm"
+                     href="{{ urls.builder }}">
+                        Start as a student
+                    </a>
+                    <div class="plan-text text-promo">
+                        Verify to get one month for free
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row top-lg plans">
+        <div class="col-sm-4">
+            <div class="plan-details">
+                <h3 class="visible-xs top-md bottom-sm">
+                    Basic
+                </h3>
+                <ul class="icons-list">
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        2 Resumes
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Collect friends' feedback
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Content analyzer
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Up to 15 items
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic sections
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic icons
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic colors
+                    </li>
+                    <li class="text-muted">
+                        <i class="icon-times"></i>
+                        Support
+                    </li>
+                    <li class="text-muted">
+                        <i class="icon-times"></i>
+                        Remove Enhancv logo
+                    </li>
+                    <li class="text-muted">
+                        <i class="icon-times"></i>
+                        Compact template
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="plan-details">
+                <h3 class="visible-xs top-md bottom-sm">
+                    Pro
+                </h3>
+                <ul class="icons-list">
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        10 Resumes
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Collect friends' feedback
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Content analyzer
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Unlimited items
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic + Pro sections
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic + Pro icons
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Basic + Pro colors
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Support
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Remove Enhancv logo
+                    </li>
+                    <li>
+                        <i class="icon-check text-primary"></i>
+                        Compact template
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="plan-details">
+                <h3 class="visible-xs top-md bottom-sm">
+                    Student
+                </h3>
+                <ul class="icons-list">
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        10 Resumes
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Collect friends' feedback
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Content analyzer
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Unlimited items
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Basic + Pro sections
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Basic + Pro icons
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Basic + Pro colors
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Support
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Remove Enhancv logo
+                    </li>
+                    <li>
+                        <i class="icon-check text-promo"></i>
+                        Compact template
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

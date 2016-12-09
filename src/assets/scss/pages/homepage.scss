@@ -1,0 +1,118 @@
+.homepage-intro {
+    position: relative;
+    background: linear-gradient(181.04deg, #FFFFFF 0%, $brand-primary 100%);
+
+    .homepage-lines {
+        background: url(/img/homepage/lines-bg.png);
+        background: image-set( url(/img/homepage/lines-bg.png) 1x, url(/img/homepage/lines-bg@2x.png) 2x);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
+        height: 600px;
+    }
+    .container {
+        position: relative;
+    }
+}
+.homepage-tips {
+    position: relative;
+    background: $brand-primary;
+}
+.homepage-tips > .container {
+    position: relative;
+}
+
+.embed-responsive-homepage-video {
+    background-image: url(/img/homepage/macbook.png);
+    background-image: image-set( url(/img/homepage/macbook.png) 1x, url(/img/homepage/macbook@2x.png) 2x);
+    background-size: cover;
+    padding-bottom: 58%;
+}
+
+@media screen and (min-width: $screen-sm-min) {
+    .embed-responsive-homepage-video {
+        margin-left: 5.5%;
+        margin-right: 5.5%;
+        padding-bottom: 52%;
+    }
+}
+
+.embed-responsive-homepage-video .embed-responsive {
+    margin: 4% 12.35% 0 12.35%;
+    padding-bottom: 47.4%;
+}
+
+.homepage-tips-carousel {
+    margin-bottom: -100px;
+    .carousel-inner {
+        box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
+    }
+}
+
+.homepage-new-features {
+    margin-top: 190px;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216,216,216,0.4) 100%);
+}
+
+.homepage-features {
+
+    .item-bg {
+        background-image: url(/img/homepage/macbook.png);
+        background-image: image-set( url(/img/homepage/macbook.png) 1x, url(/img/homepage/macbook@2x.png) 2x);
+        background-size: 122%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 5.2% 4.2% 0 4.2%;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        .carousel-control {
+            color: $text-color;
+            border-color: $border-color;
+
+            &:hover,
+            &:focus {
+                background-color: rgba($border-color, 0.2);
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.homepage-quotes {
+    background-color: $brand-primary;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    .author-title {
+        opacity: 0.5;
+    }
+    .carousel-indicators li {
+        background-color: white;
+    }
+}
+
+.homepage-feature-icon {
+    font-size: 30px;
+    color: $brand-primary;
+}
+.homepage-selected-features {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+
+@media screen and (max-width: $screen-sm) {
+    #features-texts {
+        min-height: 120px;
+    }
+    #tip-titles {
+        min-height: 105px;
+    }
+    .homepage-quotes {
+        padding-bottom: 180px;
+    }
+}
