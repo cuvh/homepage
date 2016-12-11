@@ -5,9 +5,7 @@ cache:
   pip: true
   directories:
   - node_modules
-  - bower_components
 script:
-- yarn run bower
 - NODE_ENV=production yarn build
 before_deploy:
 - pip install --user awscli

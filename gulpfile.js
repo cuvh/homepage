@@ -59,8 +59,8 @@ function icons () {
 
 function sass () {
     const sassOptions = { includePaths: [
-        'bower_components/bootstrap-sass/assets/stylesheets',
-        'bower_components/clippings-layout-grid/sass',
+        'node_modules/bootstrap-sass/assets/stylesheets',
+        'node_modules/layout-grid/sass',
     ] };
 
     return gulp.src('src/assets/scss/app.scss')
@@ -74,9 +74,9 @@ function sass () {
 
 function javascript () {
     return gulp.src([
-            'bower_components/jquery/dist/jquery.slim.js',
-            'bower_components/Stickyfill/dist/stickyfill.js',
-            'bower_components/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/stickyfill/src/stickyfill.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
             'src/assets/js/**/*',
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
