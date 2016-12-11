@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 dotenv.config({ silent: true });
 
 const $ = plugins();
-const isDev = process.env.NODE_ENV !== 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 gulp.task('assemble', gulp.series(clean, pages, images, fonts, sass, icons, javascript));
 gulp.task('build', gulp.series('assemble', revisionFiles));
@@ -64,11 +64,11 @@ function sass () {
     ] };
 
     return gulp.src('src/assets/scss/app.scss')
-        .pipe($.if(isDev, $.sourcemaps.init()))
+        .pipe($.if(!isProd, $.sourcemaps.init()))
         .pipe($.sass(sassOptions).on('error', $.sass.logError))
         .pipe($.autoprefixer({ browsers: ['last 2 versions'] }))
-        .pipe($.if(!isDev, $.uglifycss()))
-        .pipe($.if(isDev, $.sourcemaps.write()))
+        .pipe($.if(isProd, $.uglifycss()))
+        .pipe($.if(!isProd, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/css'));
 }
 
@@ -79,10 +79,10 @@ function javascript () {
             'bower_components/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
             'src/assets/js/**/*',
         ])
-        .pipe($.if(isDev, $.sourcemaps.init()))
+        .pipe($.if(!isProd, $.sourcemaps.init()))
         .pipe($.concat('combined.js'))
-        .pipe($.if(!isDev, $.uglify()))
-        .pipe($.if(isDev, $.sourcemaps.write()))
+        .pipe($.if(isProd, $.uglify()))
+        .pipe($.if(!isProd, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/js'));
 }
 
