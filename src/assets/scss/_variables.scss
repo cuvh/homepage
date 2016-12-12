@@ -608,14 +608,14 @@ $modal-title-line-height:     $line-height-base !default;
 //** Background color of modal content area
 $modal-content-bg:                             #fff !default;
 //** Modal content border color
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-border-color:                   transparent;
 //** Modal content border color **for IE8**
-$modal-content-fallback-border-color:          #999 !default;
+$modal-content-fallback-border-color:          #fff;
 
 //** Modal backdrop background color
-$modal-backdrop-bg:           #000 !default;
+$modal-backdrop-bg:           $brand-primary;
 //** Modal backdrop opacity
-$modal-backdrop-opacity:      .5 !default;
+$modal-backdrop-opacity:      .8;
 //** Modal header border color
 $modal-header-border-color:   #e5e5e5 !default;
 //** Modal footer border color
