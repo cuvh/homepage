@@ -5,7 +5,7 @@
     $navbar.Stickyfill();
 
     $(window).scroll(function () {
-        if (document.body.scrollTop > 10) {
+        if ($(document).scrollTop() > 10) {
             if (!sticked) {
                 sticked = true;
                 $navbar.addClass("navbar-stick");

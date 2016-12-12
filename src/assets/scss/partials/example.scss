@@ -3,6 +3,11 @@
     border-radius: 0;
     padding: 0;
     position: relative;
+    display: block;
+
+    img {
+        -ms-interpolation-mode: bicubic;
+    }
 
     &:hover i {
         color: $brand-primary;

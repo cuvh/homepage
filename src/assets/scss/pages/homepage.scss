@@ -26,8 +26,7 @@
 }
 
 .embed-responsive-homepage-video {
-    background-image: url(/img/homepage/macbook.png);
-    background-image: image-set( url(/img/homepage/macbook.png) 1x, url(/img/homepage/macbook@2x.png) 2x);
+    background-image: url(/img/homepage/macbook.svg);
     background-size: cover;
     padding-bottom: 58%;
 }
@@ -47,7 +46,7 @@
 
 .homepage-tips-carousel {
     margin-bottom: -100px;
-    .carousel-inner {
+    .carousel-inner .item {
         box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
     }
 }
@@ -60,8 +59,7 @@
 .homepage-features {
 
     .item-bg {
-        background-image: url(/img/homepage/macbook.png);
-        background-image: image-set( url(/img/homepage/macbook.png) 1x, url(/img/homepage/macbook@2x.png) 2x);
+        background-image: url(/img/homepage/macbook.svg);
         background-size: 122%;
         background-repeat: no-repeat;
         background-position: top center;
@@ -84,14 +82,19 @@
 
 .homepage-quotes {
     background-color: $brand-primary;
-    padding-top: 120px;
-    padding-bottom: 120px;
 
     .author-title {
         opacity: 0.5;
     }
     .carousel-indicators li {
         background-color: white;
+    }
+
+    .quote-content {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -104,19 +107,37 @@
     padding-bottom: 120px;
 }
 
+.homepage-quotes .carousel-indicators {
+    bottom: 20px;
+}
+
 .homepage-companies {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
+.homepage-company {
+    height: 70px;
+    line-height: 70px;
+
+    img {
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: $screen-sm) {
     #features-texts {
-        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 130px;
     }
     #tip-titles {
         min-height: 105px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .homepage-quotes {
-        padding-bottom: 180px;
-    }
+
 }

@@ -150,10 +150,8 @@
             $next[0].offsetWidth // force reflow
             $active.addClass(direction)
             $next.addClass(direction)
-            $next.parent().css('min-height', Math.max($active[0].offsetHeight, $next[0].offsetHeight));
             $active
                 .one('bsTransitionEnd', function () {
-                    $next.parent().css('min-height', '');
                     $next.removeClass([type, direction].join(' ')).addClass('active')
                     $active.removeClass(['active', direction].join(' '))
                     that.sliding = false
