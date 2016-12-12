@@ -2,7 +2,11 @@
 
     <div
      class="member-thumb"
-     style="background-image: url(/img/about/member/{{ image }})"></div>
+     style="
+      background-image: url(/img/about/member/{{ image }}.jpg);
+      background-image: -webkit-image-set( url(/img/about/member/{{ image }}.jpg) 1x, url(/img/about/member/{{ image }}@2x.jpg) 2x );
+      background-image: image-set( url(/img/about/member/{{ image }}.jpg) 1x, url(/img/about/member/{{ image }}@2x.jpg) 2x );
+      "></div>
 
     <a
      class="member-content text-center"
@@ -22,7 +26,11 @@
             <div class="modal-content">
                 <div class="embed-responsive embed-responsive-member">
                     <div
-                     style="background-image: url(/img/about/member/{{ image }})"
+                     style="
+                      background-image: url(/img/about/member/{{ image }}.jpg);
+                      background-image: -webkit-image-set( url(/img/about/member/{{ image }}.jpg) 1x, url(/img/about/member/{{ image }}@2x.jpg) 2x );
+                      background-image: image-set( url(/img/about/member/{{ image }}.jpg) 1x, url(/img/about/member/{{ image }}@2x.jpg) 2x );
+                      "
                      class="embed-responsive-item"></div>
                 </div>
                 <button
