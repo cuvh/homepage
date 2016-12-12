@@ -42,6 +42,49 @@
                     {{#if description }}
                         <p>{{ description }}</p>
                     {{/if}}
+
+                    <div class="top-sm">
+                        {{#if pdf }}
+                            <a
+                             href="/img/about/member/{{ pdf }}"
+                             class="btn btn-default right-xs"
+                             target="_blank">
+                                View Resume
+                            </a>
+                        {{/if }}
+                        {{#if github }}
+                            <a
+                             href="https://github.com/{{ github }}"
+                             class="btn btn-link btn-member-icon"
+                             target="_blank">
+                                <i class="icon-github-alt"></i>
+                            </a>
+                        {{/if }}
+                        {{#if twitter }}
+                            <a
+                             href="https://twitter.com/{{ twitter }}"
+                             class="btn btn-link btn-member-icon"
+                             target="_blank">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        {{/if }}
+                        {{#if facebook }}
+                            <a
+                             href="https://facebook.com/{{ facebook }}"
+                             class="btn btn-link btn-member-icon"
+                             target="_blank">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        {{/if }}
+                        {{#if instagram }}
+                            <a
+                             href="https://instagram.com/{{ instagram }}"
+                             class="btn btn-link btn-member-icon"
+                             target="_blank">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        {{/if }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -39,6 +39,16 @@
         color: $brand-primary;
     }
 }
+.btn-member-icon {
+    color: $text-color;
+    padding: $padding-base-vertical 5px;
+
+    &:hover {
+        color: lighten($text-color, 20%);
+        text-decoration: none;
+    }
+}
+
 @media screen and (min-width: $screen-sm-min) {
     .member-modal {
         width: 420px;
