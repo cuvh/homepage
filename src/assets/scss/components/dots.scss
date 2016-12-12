@@ -20,8 +20,8 @@
     padding: 0;
     border: 0;
     background: white;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     color: white;
     box-shadow: 0 3px 9px 0 rgba(0,0,0,0.5);
@@ -31,7 +31,8 @@
     }
 
     i {
-        font-size: 31px;
+        pointer-events: none;
+        font-size: 26px;
         line-height: 10px;
         display: inline-block;
         margin-top: -3px;

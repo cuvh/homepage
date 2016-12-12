@@ -113,8 +113,8 @@
 
     li {
         display: inline-block;
-        width:  12px;
-        height: 12px;
+        width:  8px;
+        height: 8px;
         text-indent: -999px;
         border-radius: 10px;
         opacity: 0.5;
@@ -127,8 +127,8 @@
     }
 
     li.active, li:hover {
-        width:  12px;
-        height: 12px;
+        width:  8px;
+        height: 8px;
         opacity: 1;
     }
 }

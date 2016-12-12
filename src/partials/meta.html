@@ -1,0 +1,18 @@
+<title>
+    {{#if title }}
+        {{ title }}
+    {{ else }}
+        Enhancv helps you create compelling human-centric resumes that unveil the real person behind.
+    {{/if }}
+</title>
+{{#ifequal process.env.NODE_ENV "development" }}
+    <meta name="robots" content="noindex">
+{{/ifequal }}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/css/app.css">
+<link rel="stylesheet" type="text/css" href="/icons/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+<link rel="shortcut icon" href="/img/favicon.png">
+<meta itemprop="image" content="{{ urls.homepage }}/img/social-image.jpg">
+<link rel="icon" type="image/x-icon" href="/img/favicon.png">

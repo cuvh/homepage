@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        {{#ifequal process.env.NODE_ENV "development" }}
-            <meta name="robots" content="noindex">
-        {{/ifequal }}
-        <title>{{subject}}</title>
-        <link rel="stylesheet" type="text/css" href="/css/app.css">
-        <link rel="stylesheet" type="text/css" href="/icons/styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+        {{> meta }}
     </head>
     <body>
         {{> header }}

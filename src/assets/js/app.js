@@ -1,4 +1,14 @@
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints;
+}
+
 $(function () {
-    $('[data-toggle="popover"]').popover();
+    if (isTouchDevice()) {
+        $('body').css('cursor', 'pointer');
+        $('[data-toggle="popover"]').popover({ trigger: 'hover' });
+    } else {
+        $('[data-toggle="popover"]').popover({ trigger: 'focus' });
+    }
+
     $('.carousel').bcSwipe();
 })
