@@ -10,10 +10,11 @@
     border-radius: 50%;
     display: block;
     margin: 0;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
 }
 .member-content {
-    opacity: 0;
-    transition: opacity 0.2s ease-out;
     position: absolute;
     border-radius: 50%;
     top: 0;
@@ -23,7 +24,7 @@
     background: rgba($gray-lighter, 0.85);
 
     &:hover {
-        opacity: 1;
+        z-index: 1;
     }
 
     .member-text {
