@@ -44,7 +44,6 @@ function pages () {
 // Copy and compress images
 function images () {
     return gulp.src('src/assets/img/**/*')
-        .pipe($.imagemin())
         .pipe(gulp.dest('./dist/img'));
 }
 
