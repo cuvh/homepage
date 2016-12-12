@@ -1,3 +1,88 @@
+@mixin button-explicit($color, $background, $border, $hover-color, $hover-background, $hover-border, $active-color, $active-background, $active-border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus {
+    color: $hover-color;
+    background-color: $hover-background;
+        border-color: $hover-border;
+  }
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-background;
+        border-color: $hover-border;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $active-color;
+    background-color: $active-background;
+        border-color: $active-border;
+
+    &:hover,
+    &:focus,
+    &.focus {
+    color: $active-color;
+    background-color: darken($active-background, 10%);
+        border-color: darken($active-border, 10%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+.btn.btn-default {
+    @include button-explicit(
+        $btn-default-color,
+        $btn-default-bg,
+        $btn-default-border,
+
+        $brand-primary,
+        $btn-default-bg,
+        $brand-primary,
+
+        $brand-primary,
+        lighten($brand-primary, 50%),
+        $brand-primary
+    );
+}
+
+.btn.btn-primary {
+    @include button-explicit(
+        $btn-primary-color,
+        $btn-primary-bg,
+        $btn-primary-border,
+
+        $btn-primary-color,
+        darken($btn-primary-bg, 10%),
+        $btn-primary-border,
+
+        $btn-primary-color,
+        darken($btn-primary-bg, 20%),
+        $btn-primary-border
+    );
+}
+
 .btn-facebook {
     @include button-variant(white, $facebook-color, $facebook-color);
     text-align: left;

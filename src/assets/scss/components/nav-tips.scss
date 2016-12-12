@@ -27,6 +27,22 @@
             right: 20px;
         }
 
+        & > a {
+            @include button-explicit(
+                $btn-default-color,
+                $btn-default-bg,
+                $btn-default-border,
+
+                $brand-primary,
+                $btn-default-bg,
+                $brand-primary,
+
+                $brand-primary,
+                lighten($brand-primary, 50%),
+                $brand-primary
+            );
+        }
+
         // Active state
         &.active > a {
             position: relative;
@@ -44,6 +60,7 @@
             &,
             &:hover,
             &:focus {
+                border-color: $gray-dark;
                 background-color: $gray-dark;
                 color: white;
             }
