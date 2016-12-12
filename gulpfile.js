@@ -77,6 +77,7 @@ function javascript () {
             'node_modules/jquery/dist/jquery.js',
             'node_modules/stickyfill/src/stickyfill.js',
             'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
+            'node_modules/switch-toggle/src/switchToggle.js',
             'src/assets/js/**/*',
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))

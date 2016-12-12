@@ -3993,6 +3993,10 @@ svgo@^0.7.0:
     sax "~1.2.1"
     whet.extend "~0.9.9"
 
+switch-toggle:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/switch-toggle/-/switch-toggle-1.0.1.tgz#77df51ddb7062f7335c437047a2e5258712b25b6"
+
 tar-pack@~3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/tar-pack/-/tar-pack-3.3.0.tgz#30931816418f55afc4d21775afdd6720cee45dae"
