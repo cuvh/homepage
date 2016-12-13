@@ -2,13 +2,14 @@
     {{#if title }}
         {{ title }}
     {{ else }}
-        Enhancv helps you create compelling human-centric resumes that unveil the real person behind.
+        Enhancv
     {{/if }}
 </title>
 {{#ifequal process.env.NODE_ENV "development" }}
     <meta name="robots" content="noindex">
 {{/ifequal }}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="{{#if description}}{{ description }}{{ else }}Enhancv helps you create compelling human-centric resumes that unveil the real person behind.{{/if }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="/css/app.css">
 <link rel="stylesheet" type="text/css" href="/icons/styles.css">
