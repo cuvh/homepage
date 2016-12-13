@@ -101,6 +101,7 @@ function resetPages (done) {
 function revisionFiles () {
     return gulp.src('dist/**')
         .pipe($.revAll.revision({
+            dontSearchFile: ['.pdf'],
             dontRenameFile: [/social-image.jpg/g, '.html'],
             dontUpdateReference: [/social-image.jpg/g, '.html'],
         }))
