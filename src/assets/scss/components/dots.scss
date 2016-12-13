@@ -30,7 +30,7 @@
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
     }
 
-    i {
+    i:before {
         pointer-events: none;
         font-size: 26px;
         line-height: 10px;
@@ -38,4 +38,24 @@
         margin-top: -3px;
         margin-left: -3px;
     }
+}
+
+.btn-dot-ordered {
+    border-radius: 50%;
+    background-color: $btn-danger-bg;
+    border: 4px solid white;
+    text-align: center;
+    color: white;
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,0.5);
+    padding: 3px 9px;
+
+    &:hover {
+        color: white;
+    }
+
+    &:active, &:focus, &:active:focus {
+        color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+    }
+
 }

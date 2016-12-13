@@ -30,6 +30,18 @@ body {
     display: none;
 }
 
+.navbar-mobile-visible-sticky {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out;
+}
+
+.navbar.navbar-stick {
+    .navbar-mobile-visible-sticky {
+        opacity: 1;
+    }
+}
+
 ul.navbar-mobile-menu {
     text-align: center;
     display: none;

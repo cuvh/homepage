@@ -4,15 +4,9 @@
      class="btn btn-sm btn-dot"
      style="background-color: {{ color }}"
      data-toggle="popover"
-     {{#if dot_title }}
-     title="{{ dot_title }}"
-     {{/if}}
-     {{#if image }}
+     title="{{ text }}"
      data-html="true"
      data-content="<img src='{{ image }}' srcset='{{ image }} 1x, {{ image2 }} 2x' width='{{ width }}' height='{{ height }}' style='display: block'>"
-     {{ else }}
-     data-content="{{ text }}"
-     {{/if}}
      data-placement="top"
      data-container="#tips">
         <i class="icon-dot-circle-o"></i>
