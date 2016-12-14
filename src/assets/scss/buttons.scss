@@ -108,6 +108,13 @@
     &:hover {
         color: white;
     }
+
+    &:active, .active, .active:focus, .active.focus {
+        background: darken(#B443BB, 10%);
+        background:
+            radial-gradient(circle farthest-corner at 20% 250%, darken(#ffcd69, 10%) 30%, darken(#fa9137, 10%) 41%, darken(#eb4141, 10%) 47%, transparent 78%),
+            linear-gradient(135deg, darken(#234bd7, 10%) 0, darken(#c33cbe, 10%) 78%);
+    }
 }
 
 .btn {
