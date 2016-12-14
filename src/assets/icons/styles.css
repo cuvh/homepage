@@ -68,3 +68,6 @@
 .icon-github-alt:before {
   content: "\67";
 }
+.icon-info-circle:before {
+  content: "\6a";
+}

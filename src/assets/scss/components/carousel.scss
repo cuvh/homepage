@@ -158,7 +158,6 @@
         &:focus {
             background-color: rgba(white, 0.2);
             color: white;
-            text-decoration: none;
         }
 
         &.left {
@@ -172,11 +171,6 @@
         .icon-next {
             width: 20px;
             height: 20px;
-        }
-        // Hover/focus state
-        &:hover,
-        &:focus {
-            text-decoration: none;
         }
     }
 }

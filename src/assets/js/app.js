@@ -10,5 +10,7 @@ $(function () {
         $('[data-toggle="popover"]').popover({ trigger: 'focus' });
     }
 
+    $('[data-toggle="tooltip"]').tooltip({ trigger: 'hover' });
+
     $('.carousel').bcSwipe();
 })
