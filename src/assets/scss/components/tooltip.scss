@@ -39,6 +39,7 @@
   height: 0;
   border-color: transparent;
   border-style: solid;
+  pointer-events: none;
 }
 
 .tooltip > .tooltip-arrow {
@@ -57,7 +58,7 @@
 .tooltip {
   &.top > .tooltip-arrow {
     left: 50%;
-    margin-left: -$tooltip-arrow-width/2 - 2px;
+    margin-left: -$tooltip-arrow-width/2 - 3px;
     bottom: -$tooltip-arrow-width + 18px;
   }
   &.right > .tooltip-arrow {
