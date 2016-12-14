@@ -111,7 +111,12 @@
 }
 
 .btn {
-    &:active, &:focus, &:active:focus {
+    &.active:focus,
+    &.active.focus,
+    &.active,
+    &:active,
+    &:focus,
+    &:active:focus {
         outline: none;
     }
 
