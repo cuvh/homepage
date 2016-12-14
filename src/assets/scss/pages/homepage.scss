@@ -1,19 +1,19 @@
 .homepage-intro {
     position: relative;
     padding-top: 30px;
-    background: linear-gradient(181.04deg, #FFFFFF 0%, $brand-primary 100%);
+    background: linear-gradient(181.04deg, #FFFFFF 0%, $brand-primary 50%);
 
     .homepage-lines {
         background: url(/img/homepage/lines-bg.png);
-        background: image-set( url(/img/homepage/lines-bg.png) 1x, url(/img/homepage/lines-bg@2x.png) 2x);
-        background-size: cover;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         margin-top: 50px;
         height: 100%;
-        min-height: 600px;
     }
     .container {
         position: relative;
