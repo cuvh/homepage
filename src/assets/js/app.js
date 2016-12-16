@@ -7,9 +7,7 @@ $(function () {
         $('body').css('cursor', 'pointer');
         $('[data-toggle="popover"]').popover({ trigger: 'hover' });
     } else {
-        $('[data-toggle="popover"]')
-            .popover({ trigger: 'focus' })
-            .first().popover('show');
+        $('[data-toggle="popover"]').popover({ trigger: 'focus' });
     }
 
     $(document).on('show.bs.popover', function (event) {
@@ -19,4 +17,8 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip({ trigger: 'hover' });
 
     $('.carousel').bcSwipe();
+
+    $(window).load(function () {
+        $('[data-toggle="popover"]').first().popover('show');
+    })
 })
