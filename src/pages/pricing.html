@@ -71,7 +71,7 @@ title: Pricing for Enhancv
                          data-toggle="buttons">
                             <label
                              data-toggle="switch-toggle"
-                             data-target="#monthly-price"
+                             data-target="#monthly-price,#upgrade-monthly"
                              class="btn btn-underlined active">
                                <input
                                 type="radio"
@@ -83,7 +83,7 @@ title: Pricing for Enhancv
 
                             <label
                              data-toggle="switch-toggle"
-                             data-target="#yearly-price"
+                             data-target="#yearly-price,#upgrade-yearly"
                              class="btn btn-underlined">
                                <input
                                 type="radio"
@@ -93,14 +93,24 @@ title: Pricing for Enhancv
                             </label>
                         </div>
                     </div>
-                    <a
-                     class="btn btn-primary btn-block bottom-sm"
-                     href="{{ urls.builder }}/plans">
-                        Upgrade Now
-                    </a>
+                    <div>
+                        <a
+                         id="upgrade-monthly"
+                         class="btn btn-primary btn-block bottom-sm"
+                         href="{{ urls.builder }}/checkout/2">
+                            Buy Now
+                        </a>
+                        <a
+                         id="upgrade-yearly"
+                         class="btn btn-primary btn-block bottom-sm hidden no-top"
+                         href="{{ urls.builder }}/checkout/3">
+                            Buy Now
+                        </a>
+                    </div>
+
                     <a
                      class="btn btn-default btn-block"
-                     href="{{ urls.builder }}/plans">
+                     href="{{ urls.builder }}/getInviteLink">
                         Get 1 Month for Free
                     </a>
                 </div>
@@ -129,7 +139,7 @@ title: Pricing for Enhancv
                     </div>
                     <a
                      class="btn btn-default btn-block bottom-sm"
-                     href="{{ urls.builder }}">
+                     href="{{ urls.builder }}/plans/student">
                         Start as a student
                     </a>
                     <div class="plan-text text-promo">
