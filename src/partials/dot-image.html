@@ -3,8 +3,14 @@
      tabindex="0"
      class="btn btn-sm btn-dot"
      style="background-color: {{ color }}"
-     data-toggle="popover"
      title="{{ text }}"
+
+     data-track="event"
+     data-category="Homepage"
+     data-action="Click Dot {{ container }}"
+     data-label="{{ color }}"
+
+     data-toggle="popover"
      data-html="true"
      data-content="<img src='{{ image }}' srcset='{{ image }} 1x, {{ image2 }} 2x' width='{{ width }}' height='{{ height }}' style='display: block'>"
      data-placement="top"
