@@ -39,6 +39,7 @@ body {
 .navbar.navbar-stick {
     .navbar-mobile-visible-sticky {
         opacity: 1;
+        pointer-events: auto;
     }
 }
 
