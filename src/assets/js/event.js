@@ -4,7 +4,7 @@
             var data = $(this).data();
 
             window.dataLayer.push({
-                'event': data.category,
+                event: 'UAEvent',
                 eventCategory: data.category,
                 eventAction: data.action,
                 eventLabel: data.label,
