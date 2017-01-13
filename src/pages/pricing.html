@@ -5,42 +5,60 @@ title: Pricing for Enhancv
 
 <div class="container container-page bottom-lg">
     <h1 class="text-center">
-        Upgrade and stand out
+        Now is the time to stand out
     </h1>
 
     <div class="row plans top-lg">
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
+        <div class="col-sm-6">
             <div class="panel panel-price panel-default text-center">
                 <div class="panel-body">
-                    <h2>Basic</h2>
+                    <h2 class="no-top">Basic</h2>
                     <div>
                         <span class="text-muted">
-                            &nbsp;
+                            Basically, for an awesome resume
                         </span>
                     </div>
                     <div class="plan-price">
                         <div class="plan-price-text">
                             <div class="price-row">
-                                <small>$</small> 0
+                                <small>$</small> 4.99
                             </div>
                         </div>
+                        <div class="form-control-static">
+                            <span class="text-muted">
+                                Monthly subscription
+                            </span>
+                        </div>
                     </div>
-                    <a
-                     class="btn btn-default btn-block bottom-sm"
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Click Basic"
-                     data-label="Sign Up for Free"
-                     href="{{ urls.builder }}">
-                        Sign Up for Free
-                    </a>
-                    <div class="plan-text text-muted">
-                        Your current plan
+                    <div class="bottom-sm">
+                        <a
+                         class="btn btn-default "
+                         data-track="event"
+                         data-category="Pricing"
+                         data-action="Click Basic"
+                         data-label="Buy now"
+                         href="{{ urls.builder }}">
+                            Start 14-Day Trial Now
+                        </a>
                     </div>
                 </div>
             </div>
+            <ul class="icons-list clearfix">
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>1</strong> Resume
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>Basic</strong> sections
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Collect feedback
+                </li>
+            </ul>
         </div>
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
+        <div class="col-sm-6">
             <div class="panel panel-price panel-price-best panel-primary text-center">
                 <img
                  class="panel-badge"
@@ -50,123 +68,137 @@ title: Pricing for Enhancv
                  alt="BEST CHOICE"/>
 
                 <div class="panel-body">
-                    <h2>Pro</h2>
+                    <h2 class="no-top">Pro</h2>
                     <div>
-                        <span class="text-primary">
-                            Triples your chance for interview
+                        <span class="text-muted">
+                            Pro resumes that stand out
                         </span>
                     </div>
                     <div class="plan-price">
                         <div class="plan-price-text text-primary">
                             <div
                              id="monthly-price"
-                             class="price-row fade in">
-                                <small>$</small> 14.90 <small>/m</small>
+                             class="price-row fade hidden">
+                                <small>$</small> 19.99 <small>/m</small>
                             </div>
 
                             <div
-                             id="yearly-price"
+                             id="quarterly-price"
+                             class="fade in price-row">
+                                <small>$</small> 14.99 <small>/m</small>
+                            </div>
+
+                            <div
+                             id="semiannual-price"
                              class="hidden fade price-row">
-                                <small>$</small> 11.20 <small>/m</small>
+                                <small>$</small> 10.99 <small>/m</small>
                             </div>
                         </div>
-                        <div
-                         class="btn-group"
-                         data-toggle="buttons">
+                        <div data-toggle="buttons">
                             <label
                              data-toggle="switch-toggle"
                              data-target="#monthly-price,#upgrade-monthly"
-                             class="btn btn-underlined active">
-                               <input
-                                type="radio"
-                                name="pricing"
-                                autocomplete="off"
-                                checked>
+                             class="btn btn-underlined">
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off"
+                                 checked>
                                 Monthly
                             </label>
 
                             <label
                              data-toggle="switch-toggle"
-                             data-target="#yearly-price,#upgrade-yearly"
+                             data-target="#quarterly-price,#upgrade-quarterly"
+                             class="btn btn-underlined active">
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off">
+                                Quarterly
+                            </label>
+
+                            <label
+                             data-toggle="switch-toggle"
+                             data-target="#semiannual-price,#upgrade-semiannual"
                              class="btn btn-underlined">
-                               <input
-                                type="radio"
-                                name="pricing"
-                                autocomplete="off">
-                                Annually
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off">
+                                Semiannual
                             </label>
                         </div>
                     </div>
-                    <div>
-                        <a
-                         id="upgrade-monthly"
-                         class="btn btn-primary btn-block bottom-sm"
-                         data-track="event"
-                         data-category="Pricing"
-                         data-action="Click Pro Monthly"
-                         data-label="Buy Now"
-                         href="{{ urls.builder }}/checkout/2">
-                            Buy Now
-                        </a>
-                        <a
-                         id="upgrade-yearly"
-                         class="btn btn-primary btn-block bottom-sm hidden no-top"
-                         data-track="event"
-                         data-category="Pricing"
-                         data-action="Click Pro Yearly"
-                         data-label="Buy Now"
-
-                         href="{{ urls.builder }}/checkout/3">
-                            Buy Now
-                        </a>
-                    </div>
-
-                    <a
-                     class="btn btn-default btn-block"
-                     href="{{ urls.builder }}/getInviteLink">
-                        Get 1 Month for Free
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
-            <div class="panel panel-price panel-price-promo panel-default text-center">
-                <div class="panel-body">
-                    <h2>Student</h2>
-                    <div>
-                        <span class="text-muted">
-                            Student-friendly
-                        </span>
-                    </div>
-                    <div class="plan-price">
-                        <div class="plan-price-text text-promo">
-                            <div class="price-row">
-                                <small>$</small> 2.90 <small>/m</small>
-                            </div>
+                    <div class="row small-row">
+                        <div class="col-xs-6 col-sm-12 col-md-6 bottom-sm">
+                            <a
+                             class="btn btn-default btn-block"
+                             href="{{ urls.builder }}/getInviteLink">
+                                Get 1 Month for Free
+                            </a>
                         </div>
-                        <div class="plan-text text-muted">
-                            <span>
-                                Billed annually
-                            </span>
+                        <div class="col-xs-6 col-sm-12 col-md-6 bottom-sm">
+                            <a
+                             id="upgrade-monthly"
+                             class="btn btn-primary no-top btn-block"
+                             data-track="event"
+                             data-category="Pricing"
+                             data-action="Click Pro Monthly"
+                             data-label="Buy Now"
+                             href="{{ urls.builder }}/checkout/5">
+                                Buy Now
+                            </a>
+                            <a
+                             id="upgrade-quarterly"
+                             class="btn btn-primary no-top hidden btn-block"
+                             data-track="event"
+                             data-category="Pricing"
+                             data-action="Click Pro Quarterly"
+                             data-label="Buy Now"
+
+                             href="{{ urls.builder }}/checkout/6">
+                                Buy Now
+                            </a>
+                            <a
+                             id="upgrade-semiannual"
+                             class="btn btn-primary no-top hidden btn-block"
+                             data-track="event"
+                             data-category="Pricing"
+                             data-action="Click Pro Semuannual"
+                             data-label="Buy Now"
+                             href="{{ urls.builder }}/checkout/7">
+                                Buy Now
+                            </a>
                         </div>
-                    </div>
-                    <a
-                     class="btn btn-default btn-block bottom-sm"
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Click Student"
-                     data-label="Start as a student"
-                     href="{{ urls.builder }}/plans/student">
-                        Start as a student
-                    </a>
-                    <div class="plan-text text-promo">
-                        Promo expires on Jan 31st, 2017
                     </div>
                 </div>
             </div>
+            <ul class="icons-list clearfix">
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>10</strong> Resume
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>Pro</strong> sections
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Collect feedback
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Compact template
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Enhancv support
+                </li>
+            </ul>
         </div>
     </div>
-
+<!--
     <div class="row plans">
         <div class="col-sm-4">
             <div class="plan-details">
@@ -343,5 +375,5 @@ title: Pricing for Enhancv
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
