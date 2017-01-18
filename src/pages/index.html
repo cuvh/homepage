@@ -37,400 +37,128 @@ title: Enhancv
     <div class="container">
         <div class="row top-md">
             <div class="col-sm-10 col-sm-offset-1">
-                <h2
-                 id="tip-titles"
-                 class="h1 text-inverse text-center">
-                    <span class="fade in">
-                        No writer’s block with our contextual tips
-                    </span>
-                    <span class="fade hidden">
-                        Create a memorable resume that stands out
-                    </span>
-                    <span class="fade hidden">
-                        Gives you suggestions how to avoid common mistakes
-                    </span>
-                    <span class="fade hidden">
-                        Allows you to easily collect friends’ feedback
-                    </span>
+                <h2 class="h1 text-inverse text-center">
+                    Gives you suggestions how to avoid common mistakes
                 </h2>
-
             </div>
         </div>
-        <div class="text-center top-md hidden-xs">
-            <ul
-             class="nav nav-tips"
-             id="tips-indicators">
-                <li class="active">
-                    <a
-                     href="#tips"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Write"
-                     data-slide-to="0">
-                        Write
-                    </a>
-                </li>
-                <li>
-                    <a
-                     href="#tips"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Customize"
-                     data-slide-to="1">
-                        Customize
-                    </a>
-                </li>
-                <li class="with-mark">
-                    <a
-                     href="#tips"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Avoid Mistakes"
-                     data-slide-to="2">
-                        Avoid Mistakes
-                    </a>
-                </li>
-                <li class="with-mark">
-                    <a
-                     href="#tips"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Get Feedback"
-                     data-slide-to="3">
-                        Get Feedback
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="row">
+        <div class="row top-md">
             <div class="col-sm-8 col-sm-offset-2">
-                <div
-                 class="homepage-tips-carousel carousel slide top-md"
-                 id="tips"
-                 data-ride="carousel"
-                 data-switch-toggle="#tip-titles"
-                 data-indicators="#tips-indicators,#tips-dots"
-                 data-interval="false">
-                    <ul
-                     id="tips-dots"
-                     class="visible-xs carousel-indicators">
-                        <li
-                         data-target="#tips"
-                         class="active"
-                         data-slide-to="0">
-                        </li>
-                        <li
-                         data-target="#tips"
-                         data-slide-to="1">
-                        </li>
-                        <li
-                         data-target="#tips"
-                         data-slide-to="2">
-                        </li>
-                        <li
-                         data-target="#tips"
-                         data-slide-to="3">
-                        </li>
+                <div class="embed-responsive embed-responsive-homepage-tips">
+                    <img
+                     width="595"
+                     height="841"
+                     class="embed-responsive-item"
+                     src="/img/homepage/tips.jpg"
+                     srcset="/img/homepage/tips/resume.jpg 1x, /img/homepage/tips/resume@2x.jpg 2x"
+                     alt="Condensed resume">
+                    <ul class="dots">
+                        <!-- Customize -->
+
+                        {{>dot-image
+                         color='#22CAFC'
+                         x='17%'
+                         y='4.5%'
+                         title='Customize colors'
+                         image='/img/homepage/tips/customize-colors.png'
+                         image2='/img/homepage/tips/customize-colors@2x.png'
+                         width='186'
+                         height='189'
+                        }}
+
+                        {{>dot-image
+                         color='#22CAFC'
+                         x='6%'
+                         y='21%'
+                         title='Customize fonts'
+                         image='/img/homepage/tips/customize-fonts.png'
+                         image2='/img/homepage/tips/customize-fonts@2x.png'
+                         width='181'
+                         height='178'
+                        }}
+
+                        {{>dot-image
+                         color='#22CAFC'
+                         x='58.5%'
+                         y='20%'
+                         title='Customize icons'
+                         image='/img/homepage/tips/customize-icons.png'
+                         image2='/img/homepage/tips/customize-icons@2x.png'
+                         width='225'
+                         height='215'
+                        }}
+
+                        {{>dot-image
+                         color='#22CAFC'
+                         x='78%'
+                         y='4%'
+                         title='Customize background'
+                         image='/img/homepage/tips/customize-backgrounds.png'
+                         image2='/img/homepage/tips/customize-backgrounds@2x.png'
+                         width='186'
+                         height='188'
+                        }}
+
+                        <!-- Tips -->
+
+                        {{>dot
+                         color='#FD9526'
+                         x='8%'
+                         y='30%'
+                         title='Get Contextual Tips'
+                         text='Instead of listing responsibilities, show your impact in the role'
+                        }}
+
+                        {{>dot
+                         color='#FD9526'
+                         x='92.5%'
+                         y='21%'
+                         title='Get Contextual Tips'
+                         text='Show your personality, dedication, and passion through your personal activities and initiatives.'
+                        }}
+
+                        {{>dot
+                         color='#FD9526'
+                         x='6%'
+                         y='82.2%'
+                         title='Get Contextual Tips'
+                         text='Mention any relevant licenses, certificates, and trainings.'
+                        }}
+
+                        {{>dot
+                         color='#FD9526'
+                         x='68%'
+                         y='80%'
+                         title='Get Contextual Tips'
+                         text='Include any academic scholarships, sports medals, or professional awards.'
+                        }}
+
+                        <!-- Mistakes -->
+
+                        {{>dot
+                         color='#FF0030'
+                         x='28%'
+                         y='35.4%'
+                         title='Avoid Common Mistakes'
+                         text='Be specific and include valuable metrics. For example, “published 15 posts as a guest blogger”'
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='58.5%'
+                         y='41.1%'
+                         title='Avoid Common Mistakes'
+                         text='"Do" is a weak verb. Replace it with an active verb that has a similar meaning and better communicates the impact. For example, use "built" instead of "did".'
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='91.3%'
+                         y='32.9%'
+                         title='Avoid Common Mistakes'
+                         text='"Actually" doesn\'t add any value to the sentence. Consider removing it.'
+                        }}
                     </ul>
-
-                    <div class="carousel-inner">
-                        <div
-                         id="tips-write"
-                         class="item embed-responsive embed-responsive-homepage-tips active">
-                            <img
-                             width="1958"
-                             height="2770"
-                             class="embed-responsive-item"
-                             src="/img/homepage/tips/write.jpg"
-                             srcset="/img/homepage/tips/write.jpg 1x, /img/homepage/tips/write@2x.jpg 2x"
-                             alt="Condensed resume">
-                            <ul class="dots">
-                                {{>dot
-                                 color='#0087FF'
-                                 x='34%'
-                                 y='21.3%'
-                                 text='Instead of listing responsibilities, show your impact in this role.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#FF004E'
-                                 x='29%'
-                                 y='49%'
-                                 text='Didn’t quite earn the degree? Mention it anyway.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#FF9500'
-                                 x='83%'
-                                 y='47%'
-                                 text='Tailor this section to what you want to show. A day at work, your weekend, the interests and initiatives you are dedicated to.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#A600B6'
-                                 x='73%'
-                                 y='15.5%'
-                                 text='Show your personality, dedication and passion through your personal initiatives and activities.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#56D700'
-                                 x='23.2%'
-                                 y='14.8%'
-                                 text='Tailor the generic title sections to your specific needs.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#7A4600'
-                                 x='68%'
-                                 y='77%'
-                                 text='Include any academic scholarships, sports medals, or professional awards.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#A7957F'
-                                 x='18.5%'
-                                 y='79.4%'
-                                 text='Mention any relevant licenses, certificates and trainings.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#666666'
-                                 x='14.3%'
-                                 y='56.2%'
-                                 text='Show what excites you through your favourite books.'
-                                 container='#tips-write'
-                                }}
-
-                                {{>dot
-                                 color='#885372'
-                                 x='67%'
-                                 y='69%'
-                                 text='Include your mother tongue, the languages you have basic understanding of, and the ones you are fluent in'
-                                 container='#tips-write'
-                                }}
-                            </ul>
-                        </div>
-                        <div
-                         id="tips-customize"
-                         class="item embed-responsive embed-responsive-homepage-tips">
-                            <img
-                             width="1958"
-                             height="2770"
-                             class="embed-responsive-item"
-                             src="/img/homepage/tips/write.jpg"
-                             srcset="/img/homepage/tips/write.jpg 1x, /img/homepage/tips/write@2x.jpg 2x"
-                             alt="Condensed resume">
-                            <ul class="dots">
-                                {{>dot-image
-                                 color='#FF4900'
-                                 x='80.5%'
-                                 y='7.2%'
-                                 text='Backgrounds'
-                                 image='/img/homepage/tips/customize-backgrounds.png'
-                                 image2='/img/homepage/tips/customize-backgrounds@2x.png'
-                                 width='186'
-                                 height='188'
-                                 container='#tips-customize'
-                                }}
-                                {{>dot-image
-                                 color='#FF00B6'
-                                 x='5.5%'
-                                 y='38.2%'
-                                 text='Colors'
-                                 image='/img/homepage/tips/customize-colors.png'
-                                 image2='/img/homepage/tips/customize-colors@2x.png'
-                                 width='186'
-                                 height='189'
-                                 container='#tips-customize'
-                                }}
-                                {{>dot-image
-                                 color='#2F00DA'
-                                 x='28.5%'
-                                 y='17.2%'
-                                 text='Fonts'
-                                 image='/img/homepage/tips/customize-fonts.png'
-                                 image2='/img/homepage/tips/customize-fonts@2x.png'
-                                 width='181'
-                                 height='178'
-                                 container='#tips-customize'
-                                }}
-                                {{>dot-image
-                                 color='#00CAFF'
-                                 x='64.5%'
-                                 y='17.2%'
-                                 text='Icons'
-                                 image='/img/homepage/tips/customize-icons.png'
-                                 image2='/img/homepage/tips/customize-icons@2x.png'
-                                 width='225'
-                                 height='215'
-                                 container='#tips-customize'
-                                }}
-                            </ul>
-                        </div>
-                        <div
-                         id="tips-avoid-mistakes"
-                         class="item embed-responsive embed-responsive-homepage-tips">
-                            <img
-                             width="1958"
-                             height="2770"
-                             class="embed-responsive-item"
-                             src="/img/homepage/tips/mistakes.jpg"
-                             srcset="/img/homepage/tips/mistakes.jpg 1x, /img/homepage/tips/mistakes@2x.jpg 2x"
-                             alt="Resume with highlighted mistakes">
-
-                            <ul class="dots">
-                                {{>dot
-                                 color='#003F00'
-                                 x='68.5%'
-                                 y='26.2%'
-                                 text='Include a valuable metric. For example, include the number of half-marathons you ran.'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#9B6E38'
-                                 x='29.5%'
-                                 y='27.2%'
-                                 text='Give specific examples about the initiatives and their impact'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#0087FF'
-                                 x='50.1%'
-                                 y='31.4%'
-                                 text='Include a valuable metric. For example, "15 posts as guest blogger"'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#FF004E'
-                                 x='26.4%'
-                                 y='50%'
-                                 text='This is a cliche, so it adds little value. Consider replacing it.'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#FF9500'
-                                 x='64.5%'
-                                 y='39%'
-                                 text='You are using a weak verb. Replace it with an active verb that has a similar meaning and better communicates the impact. For example, use "built" instead of "did".'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#A600B6'
-                                 x='90.8%'
-                                 y='31.9%'
-                                 text='This word doesn’t add any value to the sentence. Consider removing it.'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                                {{>dot
-                                 color='#56D700'
-                                 x='58.9%'
-                                 y='37.3%'
-                                 text='You have already used this icon. Consider selecting a different one.'
-                                 container='#tips-avoid-mistakes'
-                                }}
-                            </ul>
-                        </div>
-                        <div
-                         id="tips-get-feedback"
-                         class="item embed-responsive embed-responsive-homepage-tips">
-                            <img
-                             width="1958"
-                             height="2770"
-                             class="embed-responsive-item"
-                             src="/img/homepage/tips/write.jpg"
-                             srcset="/img/homepage/tips/write.jpg 1x, /img/homepage/tips/write@2x.jpg 2x"
-                             alt="Resume with feedback">
-
-                            <ul class="dots">
-                                {{>dot-ordered
-                                 color='#7A4600'
-                                 number='1'
-                                 x='30%'
-                                 y='7.2%'
-                                 text='You\'re more than a marketer! I think you should mention your engineering background, Steve.'
-                                 container='#tips-get-feedback'
-                                }}
-                                {{>dot-ordered
-                                 color='#A7957F'
-                                 number='2'
-                                 x='69%'
-                                 y='71%'
-                                 text='Add German as basic level? You spoke so well during our trip to Berlin.'
-                                 container='#tips-get-feedback'
-                                }}
-                                {{>dot-ordered
-                                 color='#666666'
-                                 number='3'
-                                 x='69%'
-                                 y='28.5%'
-                                 text='Great idea - mention in it during the interview.'
-                                 container='#tips-get-feedback'
-                                }}
-                                {{>dot-ordered
-                                 color='#885372'
-                                 number='4'
-                                 x='31%'
-                                 y='37%'
-                                 text='You onboarded Jenny and Peter when they joined the team - worth mentioning?'
-                                 container='#tips-get-feedback'
-                                }}
-                                {{>dot-ordered
-                                 color='#FF4900'
-                                 number='5'
-                                 x='37%'
-                                 y='91.7%'
-                                 text='Feature 2-3 of your publications? Would be cool to show them what you\'ve actually written.'
-                                 container='#tips-get-feedback'
-                                }}
-                                {{>dot-ordered
-                                 color='#FF00B6'
-                                 number='6'
-                                 x='77%'
-                                 y='39%'
-                                 text='Mention in the title that you were 14 back then.'
-                                 container='#tips-get-feedback'
-                                }}
-                            </ul>
-                        </div>
-                    </div>
-
-                    <a
-                     class="left carousel-control"
-                     href="#tips"
-
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Arrow"
-
-                     data-slide="prev">
-                        <i class="icon-angle-left"></i>
-                    </a>
-
-                    <a
-                     class="right carousel-control"
-                     href="#tips"
-
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Overview"
-                     data-label="Arrow"
-
-                     data-slide="next">
-                        <i class="icon-angle-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
@@ -439,7 +167,7 @@ title: Enhancv
 <div class="homepage-new-features">
     <div class="container">
         <div class="text-center">
-            <h2 class="h1 text-center">New Features</h2>
+            <h2 class="h1 text-center">High Time for Your Resume to Level Up</h2>
             <ul
              class="nav nav-tips nav-tips-bordered top-md hidden-xs"
              id="features-indicators">
@@ -449,9 +177,9 @@ title: Enhancv
                      data-track="event"
                      data-category="Homepage"
                      data-action="Click New Features"
-                     data-label="Friends’ Feedback"
+                     data-label="Content Analyzer"
                      data-slide-to="0">
-                        Friends’ Feedback
+                        Content Analyzer
                     </a>
                 </li>
                 <li class="with-mark">
@@ -460,9 +188,9 @@ title: Enhancv
                      data-track="event"
                      data-category="Homepage"
                      data-action="Click New Features"
-                     data-label="Content Analyzer"
+                     data-label="Friends’ Feedback"
                      data-slide-to="1">
-                        Content Analyzer
+                        Friends’ Feedback
                     </a>
                 </li>
             </ul>
@@ -472,15 +200,15 @@ title: Enhancv
          id="features-texts"
          class="text-center top-md">
             <div class="fade in">
-                <h2 class="no-top bottom-xs">Friends’ Feedback Posted Just Like Sticky Notes</h2>
-                <p class="text-muted no-margin">
-                    Allows you to quickly collect friends’ feedback and immediately find and fix the embarrassing mistakes
-                </p>
-            </div>
-            <div class="fade hidden">
                 <h2 class="no-top bottom-xs">Real-time Suggestions at Your Fingertips</h2>
                 <p class="text-muted no-margin">
                     Analyzes your content and gives you suggestions how to improve your wording, just as you type in
+                </p>
+            </div>
+            <div class="fade hidden">
+                <h2 class="no-top bottom-xs">Friends’ Feedback Posted Just Like Sticky Notes</h2>
+                <p class="text-muted no-margin">
+                    Allows you to quickly collect friends’ feedback and immediately find and fix the embarrassing mistakes
                 </p>
             </div>
         </div>
@@ -513,16 +241,16 @@ title: Enhancv
                              width="867"
                              height="542"
                              class="img-responsive"
-                             src="/img/homepage/new-features/feedback.jpg"
-                             srcset="/img/homepage/new-features/feedback.jpg 1x, /img/homepage/new-features/feedback@2x.jpg 2x">
+                             src="/img/homepage/new-features/mistakes.jpg"
+                             srcset="/img/homepage/new-features/mistakes.jpg 1x, /img/homepage/new-features/mistakes@2x.jpg 2x">
                         </div>
                         <div class="item item-bg">
                             <img
                              width="867"
                              height="542"
                              class="img-responsive"
-                             src="/img/homepage/new-features/mistakes.jpg"
-                             srcset="/img/homepage/new-features/mistakes.jpg 1x, /img/homepage/new-features/mistakes@2x.jpg 2x">
+                             src="/img/homepage/new-features/feedback.jpg"
+                             srcset="/img/homepage/new-features/feedback.jpg 1x, /img/homepage/new-features/feedback@2x.jpg 2x">
                         </div>
                     </div>
 
@@ -607,12 +335,38 @@ title: Enhancv
             <img
              width="36"
              height="36"
+             src="/img/homepage/selected-features/hr.svg"
+             alt="hr heart">
+
+            <h3 class="h4 top-sm">HRs love it</h3>
+            <p class="text-muted">
+                Helps you address the key aspects important for HRs, as a professional and an individual
+            </p>
+        </div>
+        <div class="col-sm-4 col-xs-12 top-md">
+            <img
+             width="36"
+             height="36"
              src="/img/homepage/selected-features/ats.svg"
              alt="smiling laptop">
 
             <h3 class="h4 top-sm">ATS optimized</h3>
             <p class="text-muted">
                 Exports your resume as a PDF readable by most Applicant Tracking Systems out there
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-xs-12 top-md">
+            <img
+             width="36"
+             height="36"
+             src="/img/homepage/selected-features/design.svg"
+             alt="brush">
+
+            <h3 class="h4 top-sm">Discover &amp; highlight your strengths</h3>
+            <p class="text-muted">
+                Helps you identify your talents, build them into strengths, enjoy personal and professional success.
             </p>
         </div>
         <div class="col-sm-4 col-xs-12 top-md">
@@ -622,9 +376,21 @@ title: Enhancv
              src="/img/homepage/selected-features/hr.svg"
              alt="hr heart">
 
-            <h3 class="h4 top-sm">HRs love it</h3>
+            <h3 class="h4 top-sm">Tailor each resume to its specific goal</h3>
             <p class="text-muted">
-                Helps you address the key aspects important for HRs, as a professional and an individual
+                Create up to 10 different active resumes each tailored to specific job openings/purposes.
+            </p>
+        </div>
+        <div class="col-sm-4 col-xs-12 top-md">
+            <img
+             width="36"
+             height="36"
+             src="/img/homepage/selected-features/ats.svg"
+             alt="smiling laptop">
+
+            <h3 class="h4 top-sm">Ability to create cover letters </h3>
+            <p class="text-muted">
+                You can use the existing resume template to write cover letters or letters of intent to accompany your resume.
             </p>
         </div>
     </div>
@@ -641,6 +407,19 @@ title: Enhancv
                  data-interval="false">
                     <div class="carousel-inner">
                         <div class="item text-center text-inverse active">
+                            <div class="quote-content">
+                                <div class="h2 no-top">
+                                    “My colleagues from Microsoft loved my resume - it is visually compelling, highlights my achievements, and shows my personality.”
+                                </div>
+                                <div class="top-sm">
+                                    — André Nunes Pedro
+                                </div>
+                                <em class="author-title">
+                                    Marketing Manager at Microsoft
+                                </em>
+                            </div>
+                        </div>
+                        <div class="item text-center text-inverse">
                             <div class="quote-content">
                                 <div class="h2 no-top">
                                     “My resume stood out among 20,000 applications.”

@@ -18,5 +18,5 @@ $(function () {
 
     $('.carousel').bcSwipe();
 
-    $('[data-toggle="popover"]').first().popover('show');
+    $('[data-toggle="popover"]').eq(4).popover('show');
 })
