@@ -49,13 +49,9 @@
 .embed-responsive-homepage-tips {
     padding-bottom: 141.47%;
     overflow: visible;
-}
-
-.homepage-tips-carousel {
     margin-bottom: -100px;
-    .carousel-inner .item {
-        box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
-    }
+    z-index: 1;
+    box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
 }
 
 .homepage-new-features {
