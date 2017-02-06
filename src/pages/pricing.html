@@ -5,42 +5,58 @@ title: Pricing for Enhancv
 
 <div class="container container-page bottom-lg">
     <h1 class="text-center">
-        Upgrade and stand out
+        Now is the time to stand out
     </h1>
 
     <div class="row plans top-lg">
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
+        <div class="col-sm-6">
             <div class="panel panel-price panel-default text-center">
                 <div class="panel-body">
-                    <h2>Basic</h2>
+                    <h2 class="no-top">Basic</h2>
                     <div>
                         <span class="text-muted">
-                            &nbsp;
+                            Basically, for an awesome resume
                         </span>
                     </div>
                     <div class="plan-price">
                         <div class="plan-price-text">
                             <div class="price-row">
-                                <small>$</small> 0
+                                <small>$</small> 4.99 <small>/m</small>
                             </div>
                         </div>
+                        <div class="form-control-static">
+                            <span class="text-muted">
+                                Monthly subscription
+                            </span>
+                        </div>
                     </div>
-                    <a
-                     class="btn btn-default btn-block bottom-sm"
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Click Basic"
-                     data-label="Sign Up for Free"
-                     href="{{ urls.builder }}">
-                        Sign Up for Free
-                    </a>
-                    <div class="plan-text text-muted">
-                        Your current plan
+                    <div class="bottom-sm">
+                        <a
+                         data-gtm="pricing-start-trial"
+                         class="btn btn-default "
+                         href="{{ urls.builder }}">
+                            Start a Free 14-Day Trial
+                        </a>
+                        <p class="top-ty no-credit-card">No credit card required</p>
                     </div>
                 </div>
             </div>
+            <ul class="icons-list clearfix">
+                <li>
+                    <i class="icon-check text-muted"></i>
+                    <strong>1</strong> Resume
+                </li>
+                <li>
+                    <i class="icon-check text-muted"></i>
+                    <strong>Basic</strong> sections
+                </li>
+                <li>
+                    <i class="icon-check text-muted"></i>
+                    Collect feedback
+                </li>
+            </ul>
         </div>
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
+        <div class="col-sm-6">
             <div class="panel panel-price panel-price-best panel-primary text-center">
                 <img
                  class="panel-badge"
@@ -50,298 +66,128 @@ title: Pricing for Enhancv
                  alt="BEST CHOICE"/>
 
                 <div class="panel-body">
-                    <h2>Pro</h2>
+                    <h2 class="no-top">Pro</h2>
                     <div>
-                        <span class="text-primary">
-                            Triples your chance for interview
+                        <span class="text-muted">
+                            Pro resumes that stand out
                         </span>
                     </div>
                     <div class="plan-price">
                         <div class="plan-price-text text-primary">
                             <div
                              id="monthly-price"
-                             class="price-row fade in">
-                                <small>$</small> 14.90 <small>/m</small>
+                             class="price-row fade hidden">
+                                <small>$</small> 19.99 <small>/m</small>
                             </div>
 
                             <div
-                             id="yearly-price"
+                             id="quarterly-price"
+                             class="fade in price-row">
+                                <small>$</small> 14.99 <small>/m</small>
+                            </div>
+
+                            <div
+                             id="semiannual-price"
                              class="hidden fade price-row">
-                                <small>$</small> 11.20 <small>/m</small>
+                                <small>$</small> 10.99 <small>/m</small>
                             </div>
                         </div>
-                        <div
-                         class="btn-group"
-                         data-toggle="buttons">
+                        <div data-toggle="buttons">
                             <label
+                             data-gtm="pricing-monthly-show"
                              data-toggle="switch-toggle"
                              data-target="#monthly-price,#upgrade-monthly"
-                             class="btn btn-underlined active">
-                               <input
-                                type="radio"
-                                name="pricing"
-                                autocomplete="off"
-                                checked>
+                             class="btn btn-underlined">
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off">
                                 Monthly
                             </label>
 
                             <label
+                             data-gtm="pricing-quarterly-show"
                              data-toggle="switch-toggle"
-                             data-target="#yearly-price,#upgrade-yearly"
+                             data-target="#quarterly-price,#upgrade-quarterly"
+                             class="btn btn-underlined active">
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off"
+                                 checked>
+                                Quarterly
+                            </label>
+
+                            <label
+                             data-gtm="pricing-semiannual-show"
+                             data-toggle="switch-toggle"
+                             data-target="#semiannual-price,#upgrade-semiannual"
                              class="btn btn-underlined">
-                               <input
-                                type="radio"
-                                name="pricing"
-                                autocomplete="off">
-                                Annually
+                                <input
+                                 type="radio"
+                                 name="pricing"
+                                 autocomplete="off">
+                                Semiannual
                             </label>
                         </div>
                     </div>
-                    <div>
-                        <a
-                         id="upgrade-monthly"
-                         class="btn btn-primary btn-block bottom-sm"
-                         data-track="event"
-                         data-category="Pricing"
-                         data-action="Click Pro Monthly"
-                         data-label="Buy Now"
-                         href="{{ urls.builder }}/checkout/2">
-                            Buy Now
-                        </a>
-                        <a
-                         id="upgrade-yearly"
-                         class="btn btn-primary btn-block bottom-sm hidden no-top"
-                         data-track="event"
-                         data-category="Pricing"
-                         data-action="Click Pro Yearly"
-                         data-label="Buy Now"
-
-                         href="{{ urls.builder }}/checkout/3">
-                            Buy Now
-                        </a>
-                    </div>
-
-                    <a
-                     class="btn btn-default btn-block"
-                     href="{{ urls.builder }}/getInviteLink">
-                        Get 1 Month for Free
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 bottom-lg">
-            <div class="panel panel-price panel-price-promo panel-default text-center">
-                <div class="panel-body">
-                    <h2>Student</h2>
-                    <div>
-                        <span class="text-muted">
-                            Student-friendly
-                        </span>
-                    </div>
-                    <div class="plan-price">
-                        <div class="plan-price-text text-promo">
-                            <div class="price-row">
-                                <small>$</small> 2.90 <small>/m</small>
-                            </div>
+                    <div class="row small-row bottom-sm">
+                        <div class="col-xs-6 col-sm-12 col-md-6 bottom-sm">
+                            <a
+                             class="btn btn-default btn-block"
+                             data-gtm="pricing-invite-friends"
+                             href="{{ urls.builder }}/getInviteLink">
+                                Get 1 Month for Free
+                            </a>
                         </div>
-                        <div class="plan-text text-muted">
-                            <span>
-                                Billed annually
-                            </span>
+                        <div class="col-xs-6 col-sm-12 col-md-6 bottom-sm">
+                            <a
+                             id="upgrade-monthly"
+                             class="btn btn-primary no-top hidden btn-block"
+                             data-gtm="pricing-pro-monthly"
+                             href="{{ urls.builder }}/checkout/6">
+                                Buy Now
+                            </a>
+                            <a
+                             id="upgrade-quarterly"
+                             data-gtm="pricing-pro-quarterly"
+                             class="btn btn-primary no-top  btn-block"
+                             href="{{ urls.builder }}/checkout/7">
+                                Buy Now
+                            </a>
+                            <a
+                             id="upgrade-semiannual"
+                             data-gtm="pricing-pro-semiannual"
+                             class="btn btn-primary no-top hidden btn-block"
+                             href="{{ urls.builder }}/checkout/8">
+                                Buy Now
+                            </a>
                         </div>
-                    </div>
-                    <a
-                     class="btn btn-default btn-block bottom-sm"
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Click Student"
-                     data-label="Start as a student"
-                     href="{{ urls.builder }}/plans/student">
-                        Start as a student
-                    </a>
-                    <div class="plan-text text-promo">
-                        Promo expires on Feb 5th, 2017
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="row plans">
-        <div class="col-sm-4">
-            <div class="plan-details">
-                <h3 class="visible-xs top-md bottom-sm">
-                    Basic
-                </h3>
-                <ul class="icons-list">
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>1</strong> Resume
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Up to <strong>15</strong> items
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic</strong> sections
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic</strong> icons
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic</strong> colors
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Collect friends' feedback
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Content analyzer
-                        <a
-                         tabindex="0"
-                         class="btn btn-xs btn-link about-info-icon"
-                         data-toggle="tooltip"
-                         title="Analyzes your content and gives you suggestions how to improve the wording"
-                         data-container="body"
-                         data-placement="top">
-                            <i class="icon-info-circle"></i>
-                        </a>
-                    </li>
-                    <li class="text-muted">
-                        <i class="icon-times"></i>
-                        Support
-                    </li>
-                    <li class="text-muted">
-                        <i class="icon-times"></i>
-                        Remove Enhancv logo
-                    </li>
-                    <li class="text-muted">
-                        <i class="icon-times"></i>
-                        Compact template
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="plan-details">
-                <h3 class="visible-xs top-md bottom-sm">
-                    Pro
-                </h3>
-                <ul class="icons-list">
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>10</strong> Resumes
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Unlimited</strong> items
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> sections
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> icons
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> colors
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Collect friends' feedback
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Content analyzer
-                        <a
-                         tabindex="0"
-                         class="btn btn-xs btn-link about-info-icon"
-                         data-toggle="tooltip"
-                         title="Analyzes your content and gives you suggestions how to improve the wording"
-                         data-container="body"
-                         data-placement="top">
-                            <i class="icon-info-circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Support
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Remove Enhancv logo
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Compact template
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="plan-details">
-                <h3 class="visible-xs top-md bottom-sm">
-                    Student
-                </h3>
-                <ul class="icons-list">
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>10</strong> Resumes
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Unlimited</strong> items
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> sections
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> icons
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        <strong>Basic + Pro</strong> colors
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Collect friends' feedback
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Content analyzer
-                        <a
-                         tabindex="0"
-                         class="btn btn-xs btn-link about-info-icon"
-                         data-toggle="tooltip"
-                         title="Analyzes your content and gives you suggestions how to improve the wording"
-                         data-container="body"
-                         data-placement="top">
-                            <i class="icon-info-circle"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Support
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Remove Enhancv logo
-                    </li>
-                    <li>
-                        <i class="icon-check text-primary"></i>
-                        Compact template
-                    </li>
-                </ul>
-            </div>
+            <ul class="icons-list clearfix">
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>10</strong> Resume
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    <strong>Pro</strong> sections
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Collect feedback
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Compact template
+                </li>
+                <li>
+                    <i class="icon-check text-primary"></i>
+                    Enhancv support
+                </li>
+            </ul>
         </div>
     </div>
 </div>

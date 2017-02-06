@@ -1,14 +1,19 @@
 ul.icons-list {
     list-style: none;
+    padding: 0;
 
     li {
         position: relative;
-        margin-bottom: 8px;
+        margin-bottom: 3px;
+        float: left;
+        width: 27%;
+        margin-left: 6.3%;
+
         & > i:first-child {
             position: absolute;
             top: 3px;
             vertical-align: middle;
-            left: -30px;
+            left: -16%;
         }
     }
 }
