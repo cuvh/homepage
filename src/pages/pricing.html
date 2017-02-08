@@ -92,11 +92,30 @@ title: Pricing for Enhancv
                                 <small>$</small> 10.99 <small>/m</small>
                             </div>
                         </div>
+                        <div class="form-control-static text-muted">
+                            <span
+                             id="monthly-billing"
+                             class="fade hidden">
+                                Billed monthly
+                            </span>
+
+                            <span
+                             id="quarterly-billing"
+                             class="fade in">
+                                Billed every 3 months
+                            </span>
+
+                            <span
+                             id="semiannual-billing"
+                             class="fade hidden">
+                                Billed every 6 months
+                            </span>
+                        </div>
                         <div data-toggle="buttons">
                             <label
                              data-gtm="pricing-monthly-show"
                              data-toggle="switch-toggle"
-                             data-target="#monthly-price,#upgrade-monthly"
+                             data-target="#monthly-price,#upgrade-monthly,#monthly-billing"
                              class="btn btn-underlined">
                                 <input
                                  type="radio"
@@ -108,7 +127,7 @@ title: Pricing for Enhancv
                             <label
                              data-gtm="pricing-quarterly-show"
                              data-toggle="switch-toggle"
-                             data-target="#quarterly-price,#upgrade-quarterly"
+                             data-target="#quarterly-price,#upgrade-quarterly,#quarterly-billing"
                              class="btn btn-underlined active">
                                 <input
                                  type="radio"
@@ -121,7 +140,7 @@ title: Pricing for Enhancv
                             <label
                              data-gtm="pricing-semiannual-show"
                              data-toggle="switch-toggle"
-                             data-target="#semiannual-price,#upgrade-semiannual"
+                             data-target="#semiannual-price,#upgrade-semiannual,#semiannual-billing"
                              class="btn btn-underlined">
                                 <input
                                  type="radio"
