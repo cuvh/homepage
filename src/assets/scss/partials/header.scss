@@ -3,11 +3,21 @@
     top: 0;
     margin-top: -80px;
     z-index: $zindex-navbar;
-    transition: box-shadow 0.2s ease-out;
 }
-
-.navbar.navbar-stick {
-    box-shadow: 0 5px 10px rgba(black, 0.05);
+.navbar:after {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 60;
+    background: linear-gradient(180deg, rgba(216,216,216,0.2) 0%, rgba(216,216,216,0) 100%);
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+.navbar.navbar-stick:after {
+    opacity: 1;
+}
+.navbar a {
+    outline: none;
 }
 
 body {
