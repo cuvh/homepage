@@ -1,7 +1,7 @@
 .dating-resume-hero {
     position: relative;
-    padding-top: 340px;
-    padding-bottom: 120px;
+    padding-top: 140px;
+    padding-bottom: 60px;
     color: white;
     background-color: $brand-primary;
 
@@ -18,7 +18,14 @@
         background-position: center;
         z-index: 0;
     }
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding-top: 340px;
+        padding-bottom: 120px;
+
+    }
 }
+
 .text-with-primary a {
     color: $brand-primary;
 }
@@ -81,8 +88,8 @@ ul.snake-time-events {
             position: absolute;
         }
         &:after {
-            content: '·';
-            font-size: 130px;
+            content: '●';
+            font-size: 51px;
             position: absolute;
             line-height: 0px;
             top: 50%;

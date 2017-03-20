@@ -16,7 +16,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
 <link rel="icon" type="image/png" href="/img/favicon.png">
-<meta itemprop="image" content="{{ urls.homepage }}/img/social-image.jpg">
+
+{{#if metaImage }}
+    <meta itemprop="image" content="{{ metaImage }}">
+{{ else }}
+    <meta itemprop="image" content="{{ urls.homepage }}/img/social-image.jpg">
+{{/if }}
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
