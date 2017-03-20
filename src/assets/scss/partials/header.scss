@@ -1,10 +1,16 @@
-.navbar {
+.navbar-landing {
+    margin-bottom: -90px;
+    margin-top: 30px;
+    position: relative;
+    z-index: $zindex-navbar;
+}
+.navbar.navbar-sticky {
     position: sticky;
     top: 0;
     margin-top: -80px;
     z-index: $zindex-navbar;
 }
-.navbar:after {
+.navbar.navbar-sticky:after {
     position: absolute;
     height: 10px;
     width: 100%;
@@ -13,14 +19,14 @@
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
-.navbar.navbar-stick:after {
+.navbar.navbar-sticky.navbar-stick:after {
     opacity: 1;
 }
 .navbar a {
     outline: none;
 }
 
-body {
+body.with-sticky-navbar {
     padding-top: 100px;
 }
 

@@ -11,6 +11,7 @@ aws s3api put-object --bucket $BUCKET --acl public-read --key "bizdev.html" --we
 aws s3api put-object --bucket $BUCKET --acl public-read --key "bizdev.html" --website-redirect-location "/"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "contacts.html" --website-redirect-location "/"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "promocode.html" --website-redirect-location "/"
+aws s3api put-object --bucket $BUCKET --acl public-read --key "dating-resume" --website-redirect-location "/dating-resume.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "pricing" --website-redirect-location "/pricing.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "about" --website-redirect-location "/about.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "examples" --website-redirect-location "/examples.html"
