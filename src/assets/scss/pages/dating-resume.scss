@@ -89,7 +89,8 @@ ul.snake-time-events {
         }
         &:after {
             content: '\25CF';
-            font-size: 51px;
+            font-family: Roboto;
+            font-size: 46px;
             position: absolute;
             line-height: 0px;
             top: 50%;
@@ -119,7 +120,7 @@ ul.snake-time-events {
             left: 0;
         }
         &:after {
-            left: -16px;
+            left: -13px;
         }
     }
 
@@ -134,7 +135,7 @@ ul.snake-time-events {
             right: 0;
         }
         &:after {
-            right: -16px;
+            right: -13px;
         }
     }
 
