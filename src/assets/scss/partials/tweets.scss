@@ -1,0 +1,21 @@
+.tweets-container {
+    > .h1 {
+        margin-bottom: 40px;
+        font-family: Roboto;
+        font-size: 21px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 24px;
+        color: #333;
+    }
+
+    .twitter-tweet {
+        display: block;
+
+        @media (max-width: $screen-sm-max) {
+            float: none !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+}
