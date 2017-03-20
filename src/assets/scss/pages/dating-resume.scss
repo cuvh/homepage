@@ -1,0 +1,237 @@
+.dating-resume-hero {
+    position: relative;
+    padding-top: 340px;
+    padding-bottom: 120px;
+    color: white;
+    background-color: $brand-primary;
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(/img/dating-resume/hero.jpg);
+        opacity: 0.4;
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+}
+
+.embed-responsive-dating-resume {
+    padding-bottom: 141.47%;
+    overflow: visible;
+    margin-bottom: 100px;
+    z-index: 1;
+    box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
+}
+
+.dating-resume {
+    position: relative;
+    padding-top: 30px;
+    background: linear-gradient(180deg, $brand-primary 0%, #FFFFFF 100%);
+
+    .dating-resume-lines {
+        background: url(/img/homepage/lines-bg.png);
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-top: 150px;
+        height: 100%;
+    }
+    .container {
+        position: relative;
+    }
+}
+
+.dating-resume-bio {
+    .img-responsive {
+        display: inline-block;
+    }
+    .dating-resume-bio-text {
+        margin-top: -20px;
+        background-color: $inverse-color;
+        padding: 40px;
+        box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
+    }
+}
+
+ul.snake-time-events {
+    list-style: none;
+    margin: 0;
+
+    li {
+        padding: 30px 30px;
+        margin-bottom: -1px;
+
+        &:before {
+            content: '';
+            height: 100%;
+            top: 0;
+            border: 1px solid $border-color;
+            position: absolute;
+        }
+        &:after {
+            content: '·';
+            font-size: 130px;
+            position: absolute;
+            line-height: 0px;
+            top: 50%;
+        }
+    }
+
+    li.primary-dot:after {
+        color: $brand-primary;
+    }
+
+    li.danger-dot:after {
+        color: $brand-danger;
+    }
+
+    li.warning-dot:after {
+        color: $brand-warning;
+    }
+
+    li:nth-child(odd) {
+        text-align: left;
+        position: relative;
+
+        &:before {
+            border-right: 0;
+            border-bottom-left-radius: 40px;
+            border-top-left-radius: 40px;
+            left: 0;
+        }
+        &:after {
+            left: -16px;
+        }
+    }
+
+    li:nth-child(even) {
+        text-align: right;
+        position: relative;
+
+        &:before {
+            border-left: 0;
+            border-bottom-right-radius: 40px;
+            border-top-right-radius: 40px;
+            right: 0;
+        }
+        &:after {
+            right: -16px;
+        }
+    }
+
+    li:first-child:before {
+        top: 50%;
+        height: 50%;
+        border-top-left-radius: 0;
+        border-top: 0;
+    }
+
+    li:last-child:before {
+        height: 50%;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+    }
+
+    li:before {
+        width: 60%;
+    }
+    li:nth-child(odd) {
+        margin-left: 10%;
+    }
+
+    li:nth-child(even) {
+        margin-right: 10%;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        li:before {
+            width: 30%;
+        }
+        li:nth-child(odd) {
+            margin-left: 30%;
+        }
+
+        li:nth-child(even) {
+            margin-right: 30%;
+        }
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        li:before {
+            width: 17%;
+        }
+        li:nth-child(odd) {
+            margin-left: 40%;
+        }
+
+        li:nth-child(even) {
+            margin-right: 40%;
+        }
+    }
+}
+
+.mouse {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    margin: -12px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.mouse:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    margin-left:  -3px;
+    background-color: white;
+    border-radius: 2px;
+    animation: mouse-wheel 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes mouse-wheel {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(0);
+        height: 4px;
+    }
+    50% {
+        transform: translateY(0);
+        height: 20px;
+    }
+    70% {
+        transform: translateY(15px);
+        height: 4px;
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
