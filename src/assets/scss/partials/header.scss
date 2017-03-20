@@ -3,6 +3,16 @@
     margin-top: 30px;
     position: relative;
     z-index: $zindex-navbar;
+
+    @media screen and (max-width: $screen-xs-max) {
+        .btn-transparent.navbar-btn {
+            max-width: 44%;
+        }
+        .navbar-brand {
+            max-width: 27%;
+            padding: 20px 7px;
+        }
+    }
 }
 .navbar.navbar-sticky {
     position: sticky;
