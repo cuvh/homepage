@@ -67,6 +67,38 @@
     );
 }
 
+.btn.btn-transparent {
+    @include button-explicit(
+        $inverse-color,
+        transparent,
+        rgba($inverse-color, 0.4),
+
+        $inverse-color,
+        transparent,
+        $inverse-color,
+
+        $inverse-color,
+        transparent,
+        $inverse-color
+    );
+}
+
+.btn.btn-light {
+    @include button-explicit(
+        $btn-default-color,
+        $btn-default-bg,
+        transparent,
+
+        rgba($btn-default-color, 0.5),
+        rgba($btn-default-bg, 0.5),
+        transparent,
+
+        $btn-default-color,
+        rgba($btn-default-bg, 0.5),
+        transparent
+    );
+}
+
 .btn.btn-primary {
     @include button-explicit(
         $btn-primary-color,
