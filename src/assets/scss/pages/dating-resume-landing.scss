@@ -88,8 +88,12 @@
         top: 0;
         left: 0;
         right: 0;
-        margin-top: 390px;
+        margin-top: 320px;
         height: 100%;
+
+        @media screen and (min-width: 1500px) {
+            margin-top: 0 !important;
+        }
     }
     .container {
         position: relative;
