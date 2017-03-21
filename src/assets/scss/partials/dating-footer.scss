@@ -5,6 +5,17 @@
         color: #fff;
     }
 
+    .btn.btn-light {
+        padding: 17px 20px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        line-height: 19px;
+        border-radius: 100px;
+        -webkit-font-smoothing: initial;
+        -moz-osx-font-smoothing: initial;
+    }
+
     p {
         opacity: 0.4;
         font-family: Roboto;
