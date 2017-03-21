@@ -1,10 +1,4 @@
-<title>
-    {{#if title }}
-        {{ title }}
-    {{ else }}
-        Enhancv
-    {{/if }}
-</title>
+<title>{{#if title }}{{ title }}{{ else }}Enhancv{{/if }}</title>
 {{#ifequal process.env.NODE_ENV "development" }}
     <meta name="robots" content="noindex">
 {{/ifequal }}
