@@ -1,4 +1,4 @@
-.tweets-container {
+.tweets-container, .tweets-timeline-container {
     > .h1 {
         margin-bottom: 40px;
         font-family: Roboto;
@@ -19,5 +19,21 @@
             margin-left: auto !important;
             margin-right: auto !important;
         }
+    }
+}
+
+.tweets-timeline-container {
+
+    > .h1 {
+        color: #B3B3B3;
+    }
+
+    .timeline-inner {
+        border: 1px solid #E6E6E6;
+        border-radius: 5px;
+        padding: 0 18px;
+        display: block;
+        margin: 0 auto;
+        max-width: 515px;
     }
 }
