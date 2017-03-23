@@ -5,7 +5,19 @@
         color: #fff;
     }
 
-    .btn.btn-light {
+    p {
+        opacity: 0.4;
+        font-family: Roboto;
+        font-size: 14px;
+        text-align: center;
+        line-height: 16px;
+        color: #FFF;
+    }
+}
+
+.dating-footer, .tweets-container {
+
+    .btn.btn-light, .btn.btn-primary {
         padding: 17px 20px;
         font-size: 16px;
         font-weight: 300;
@@ -14,14 +26,5 @@
         border-radius: 100px;
         -webkit-font-smoothing: initial;
         -moz-osx-font-smoothing: initial;
-    }
-
-    p {
-        opacity: 0.4;
-        font-family: Roboto;
-        font-size: 14px;
-        text-align: center;
-        line-height: 16px;
-        color: #FFF;
     }
 }

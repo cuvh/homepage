@@ -29,6 +29,10 @@
                 vertical-align: middle;
                 display: inline-block;
             }
+
+            @media screen and (max-width: $screen-xs-max) {
+                transform: scale(0.8);
+            }
         }
     }
 }

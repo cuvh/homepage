@@ -17,6 +17,18 @@
         background-size: cover;
         background-position: center;
         z-index: 0;
+
+        @media screen and (max-width: $screen-xs-max) {
+            background: url(/img/dating-resume/hero-mobile.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        .big-title {
+            font-size: 26px;
+        }
     }
 
     @media screen and (min-width: $screen-sm-min) {
