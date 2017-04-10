@@ -1,0 +1,71 @@
+.header {
+    background: url(/img/landing-pages/experienced/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.steps {
+    .step {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &.padding-step {
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+
+        .inner-step {
+            flex: 0 0 50%;
+
+            &.overflow-container {
+                position: relative;
+                top: 100px;
+            }
+
+            .inner-text {
+                width: 360px;
+                margin: 0 auto;
+            }
+        }
+
+        &:nth-child(2n) {
+            background: #f5f5f5;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            flex-direction: column;
+
+            .inner-step {
+                &.overflow-container {
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+.use-cases {
+    hr {
+        border-top: 1px solid #2DC08D;
+        width: 25px;
+    }
+}
+
+.call-to-action {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #fff;
+    background:
+     linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+     url(/img/landing-pages/experienced/footer.jpg);
+    background:
+     linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+     -webkit-image-set( url(/img/landing-pages/experienced/footer.jpg) 1x, url(/img/landing-pages/experienced/footer.jpg) 2x);
+    background:
+     linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+     image-set( url(/img/landing-pages/experienced/footer.jpg) 1x, url(/img/landing-pages/experienced/footer.jpg) 2x);
+    background-size: cover;
+    background-position: center;
+}

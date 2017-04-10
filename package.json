@@ -6,8 +6,8 @@
   "author": "Ivan Kerin <ikerin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node_modules/.bin/gulp default",
-    "build": "node_modules/.bin/gulp build"
+    "start": "node node_modules/gulp/bin/gulp default",
+    "build": "node node_modules/gulp/bin/gulp build"
   },
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
