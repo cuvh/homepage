@@ -36,6 +36,18 @@
 
         @media (max-width: $screen-xs-max) {
             flex-direction: column;
+            padding-top: 50px !important;
+            padding-bottom: 50px !important;
+
+            &:nth-child(2n) {
+                .inner-step:first-child {
+                    order: 2;
+                }
+
+                .inner-step:last-child {
+                    order: 1
+                }
+            }
 
             .inner-step {
                 &.overflow-container {
