@@ -4,20 +4,23 @@ title: Experienced Users
 
 <div>
     <div class="text-center header">
-        <h1>The resume that opens doors for you</h1>
-        <div class="top-sm">
-            <a
-             href="{{ urls.builder }}"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Craft Your Resume"
-             class="btn btn-primary btn-lg">
-                Craft Your Resume
-            </a>
-            <p class="top-sm">
-                Free 14-day trial, no credit card required
-            </p>
+        <div class="gradient-overlay"></div>
+        <div class="header-content">
+            <h1>The resume that opens doors for you</h1>
+            <div class="top-sm">
+                <a
+                 href="{{ urls.builder }}"
+                 data-track="event"
+                 data-category="Homepage"
+                 data-action="Click Signup"
+                 data-label="Craft Your Resume"
+                 class="btn btn-primary btn-lg">
+                    Craft Your Resume
+                </a>
+                <p class="top-sm">
+                    Free 14-day trial, no credit card required
+                </p>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -28,11 +31,11 @@ title: Experienced Users
     <div class="step">
             <div class="inner-step">
                 <div class="inner-text">
-                    <h3 class="text-primary">Show vast experience in a slick format</h3>
+                    <h3 class="text-primary no-top">Show vast experience in a slick format</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure dolorem non ipsam pariatur, optio aspernatur animi illum. Saepe, quisquam! Voluptates qui deleniti molestias ad magnam quas, sit ea? Minus!</p>
                 </div>
             </div>
-            <div class="inner-step text-center overflow-container">
+            <div class="inner-step text-center overflow-container" id="experienced-tips">
                 <img
                  class="img-responsive"
                  width="491"
@@ -40,6 +43,35 @@ title: Experienced Users
                  src="/img/landing-pages/experienced/1.png"
                  srcset="/img/landing-pages/experienced/1.png 1x, /img/landing-pages/experienced/1.png 2x"
                  alt="Condensed resume">
+
+                 <ul class="dots">
+                    {{>dot
+                     color='#FA931A'
+                     x='65%'
+                     y='18%'
+                     title='Get Contextual Tips'
+                     text='Instead of listing responsibilities, show your impact in the role'
+                     containerId='experienced-tips'
+                    }}
+
+                    {{>dot
+                     color='#0380F8'
+                     x='25%'
+                     y='18%'
+                     title='Get Contextual Tips'
+                     text='Instead of listing responsibilities, show your impact in the role'
+                     containerId='experienced-tips'
+                    }}
+
+                    {{>dot
+                     color='#FE0152'
+                     x='25%'
+                     y='40%'
+                     title='Get Contextual Tips'
+                     text='Instead of listing responsibilities, show your impact in the role'
+                     containerId='experienced-tips'
+                    }}
+                </ul>
             </div>
     </div>
     <div class="step">
@@ -54,7 +86,7 @@ title: Experienced Users
             </div>
             <div class="inner-step">
                 <div class="inner-text">
-                    <h3 class="text-primary">Show vast experience in a slick format</h3>
+                    <h3 class="text-primary no-top">Show vast experience in a slick format</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure dolorem non ipsam pariatur, optio aspernatur animi illum. Saepe, quisquam! Voluptates qui deleniti molestias ad magnam quas, sit ea? Minus!</p>
                 </div>
             </div>
@@ -62,7 +94,7 @@ title: Experienced Users
     <div class="step padding-step">
             <div class="inner-step">
                <div class="inner-text">
-                    <h3 class="text-primary">Show vast experience in a slick format</h3>
+                    <h3 class="text-primary no-top">Show vast experience in a slick format</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure dolorem non ipsam pariatur, optio aspernatur animi illum. Saepe, quisquam! Voluptates qui deleniti molestias ad magnam quas, sit ea? Minus!</p>
                 </div>
             </div>
@@ -262,29 +294,29 @@ title: Experienced Users
     <h1 class="text-center">Use cases</h1>
     <div class="row">
         <div class="col-sm-4 col-xs-12 top-md">
-            <span class="h2 text-primary">01</span>
+            <span class="h2 text-primary hidden-xs">01</span>
             <h3 class="h4 top-xs">Headhunting</h3>
             <hr/>
         </div>
         <div class="col-sm-4 col-xs-12 top-md">
-            <span class="h2 text-primary">02</span>
+            <span class="h2 text-primary hidden-xs">02</span>
             <h3 class="h4 top-xs">Industry transition</h3>
             <hr/>
         </div>
         <div class="col-sm-4 col-xs-12 top-md">
-            <span class="h2 text-primary">03</span>
+            <span class="h2 text-primary hidden-xs">03</span>
             <h3 class="h4 top-xs">Personal branding</h3>
             <hr/>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-4 col-xs-12 top-md">
-            <span class="h2 text-primary">04</span>
+            <span class="h2 text-primary hidden-xs">04</span>
             <h3 class="h4 top-xs">Recommendations</h3>
             <hr/>
         </div>
         <div class="col-sm-4 col-xs-12 top-md">
-            <span class="h2 text-primary">05</span>
+            <span class="h2 text-primary hidden-xs">05</span>
             <h3 class="h4 top-xs">Winning a sought-after position</h3>
             <hr/>
         </div>
