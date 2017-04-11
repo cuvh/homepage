@@ -93,3 +93,34 @@ body.navbar-mobile-active {
         display: block;
     }
 }
+
+.navbar.navbar-transparent {
+    transition: background 0.25s ease-in-out;
+
+    .nav a {
+        color: rgba(255,255,255,0.7);
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: rgba(255,255,255,0.8);
+        }
+    }
+
+    &:after {
+        background: none;
+    }
+
+    &.navbar-stick {
+        background: #fff;
+
+        .nav a {
+            color: $gray-light;
+
+            &:hover,
+            &:focus {
+                color: #333;
+            }
+        }
+    }
+}

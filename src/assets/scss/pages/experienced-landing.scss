@@ -1,0 +1,14 @@
+.experienced {
+    .header {
+        background-image: url(/img/landing-pages/experienced/header.jpg);
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n) {
+                background: #f5f5f5;
+            }
+        }
+    }
+}
+

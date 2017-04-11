@@ -1,0 +1,21 @@
+.students {
+   .header {
+        background-image: url(/img/landing-pages/students/header.jpg);
+
+        .header-content {
+            position: absolute;
+            bottom: 45px;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n + 1) {
+                background: #f5f5f5;
+            }
+        }
+    }
+}
+

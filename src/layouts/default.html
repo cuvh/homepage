@@ -3,8 +3,10 @@
     <head>
         {{> meta }}
     </head>
-    <body class="with-sticky-navbar">
-        {{> header }}
+    <body {{#unless isNotSticky}} class="with-sticky-navbar" {{/unless}}>
+        {{> header
+            navigation=navigation
+        }}
 
         {{> body }}
 
