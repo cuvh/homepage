@@ -55,17 +55,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="{{ urls.blog }}" target="_blank">Blog</a>
                     </li>
                 </ul>
-                <div class="bottom-xs navbar-mobile-visible">
-                    <a
-                     href="{{ urls.builder }}/onboarding/login"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Signup"
-                     data-label="Sign In"
-                     class="visible-xs btn btn-default">
-                        Sign In
-                    </a>
-                </div>
+                {{#unless noSignIn }}
+                    <div class="bottom-xs navbar-mobile-visible">
+                        <a
+                         href="{{ urls.builder }}/onboarding/login"
+                         data-track="event"
+                         data-category="Homepage"
+                         data-action="Click Signup"
+                         data-label="Sign In"
+                         class="visible-xs btn btn-default">
+                            Sign In
+                        </a>
+                    </div>
+                {{/unless}}
                 <a
                  href="{{ urls.builder }}"
                  data-track="event"
@@ -89,16 +91,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              class="btn btn-primary navbar-btn navbar-right left-xs">
                 Sign Up
             </a>
-
-            <a
-             href="{{ urls.builder }}/onboarding/login"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Sign In"
-             class="btn btn-default navbar-btn navbar-right left-xs">
-                Sign In
-            </a>
+            {{#unless noSignIn }}
+                <a
+                 href="{{ urls.builder }}/onboarding/login"
+                 data-track="event"
+                 data-category="Homepage"
+                 data-action="Click Signup"
+                 data-label="Sign In"
+                 class="btn btn-default navbar-btn navbar-right left-xs">
+                    Sign In
+                </a>
+            {{/unless}}
 
             <ul class="nav navbar-nav navbar-right">
                 <li {{#if isPricing }} class="active" {{/if}}>
