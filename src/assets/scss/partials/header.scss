@@ -97,6 +97,10 @@ body.navbar-mobile-active {
 .navbar.navbar-transparent {
     transition: background 0.25s ease-in-out;
 
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
     .nav a {
         color: rgba(255,255,255,0.7);
 
@@ -113,6 +117,10 @@ body.navbar-mobile-active {
 
     &.navbar-stick {
         background: #fff;
+
+        .navbar-toggle .icon-bar {
+            background-color: #000;
+        }
 
         .nav a {
             color: $gray-light;

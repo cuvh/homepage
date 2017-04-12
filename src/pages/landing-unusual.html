@@ -1,15 +1,14 @@
 ---
-title: Freelancer Users
+title: Unusual Cases
 noSignIn: true
-navigation: transparent
-isNotSticky: true
 ---
 
-<div class="landing-homepage freelancers">
+<div class="landing-homepage unusual">
     <div>
         <div class="text-center header">
             <div class="header-content">
                 <h1>The resume that opens doors for you</h1>
+                <h2 class="h4">Use your creativity with Enhancv</h2>
                 <div class="top-sm">
                     <a
                      href="{{ urls.builder }}"
@@ -17,7 +16,7 @@ isNotSticky: true
                      data-category="Homepage"
                      data-action="Click Signup"
                      data-label="Craft Your Resume"
-                     class="btn btn-primary btn-lg">
+                     class="btn btn-light btn-lg">
                         Craft Your Resume
                     </a>
                     <p class="top-sm">
@@ -31,14 +30,14 @@ isNotSticky: true
         </div>
     </div>
     <div class="steps">
-        <div class="step">
+        <div class="step padding-step">
                 <div class="inner-step">
                     <div class="inner-text">
                         <h3 class="text-primary no-top">Show vast experience in a slick format</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure dolorem non ipsam pariatur, optio aspernatur animi illum. Saepe, quisquam! Voluptates qui deleniti molestias ad magnam quas, sit ea? Minus!</p>
                     </div>
                 </div>
-                <div class="inner-step text-center overflow-container" id="landing-tips">
+                <div class="inner-step text-center" id="landing-tips">
                     <img
                      class="img-responsive"
                      width="491"
@@ -77,8 +76,8 @@ isNotSticky: true
                     </ul>
                 </div>
         </div>
-        <div class="step">
-                <div class="inner-step text-center overflow-container">
+        <div class="step padding-step">
+                <div class="inner-step text-center">
                     <img
                      class="img-responsive"
                      width="474"
@@ -94,21 +93,32 @@ isNotSticky: true
                     </div>
                 </div>
         </div>
-        <div class="step padding-step">
+        <div class="step padding-step examples-step">
+
+                <h3 class="text-center bottom-lg">Examples</h3>
                 <div class="inner-step">
-                   <div class="inner-text">
-                        <h3 class="text-primary no-top">Show vast experience in a slick format</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur iure dolorem non ipsam pariatur, optio aspernatur animi illum. Saepe, quisquam! Voluptates qui deleniti molestias ad magnam quas, sit ea? Minus!</p>
-                    </div>
+                    {{>example
+                        id="john-rogers"
+                        name="John Rogers"
+                        thumb="john-rogers-1.png"
+                        page1="john-rogers-1.png"
+                        page2="john-rogers-2.png"}}
                 </div>
-                <div class="inner-step text-center">
-                    <img
-                     class="img-responsive"
-                     width="641"
-                     height="408"
-                     src="/img/landing-pages/experienced/3.png"
-                     srcset="/img/landing-pages/experienced/3.png 1x, /img/landing-pages/experienced/3.png 2x"
-                     alt="Condensed resume">
+                <div class="inner-step">
+                     {{>example
+                        id="john-rogers"
+                        name="John Rogers"
+                        thumb="john-rogers-1.png"
+                        page1="john-rogers-1.png"
+                        page2="john-rogers-2.png"}}
+                </div>
+                <div class="inner-step">
+                     {{>example
+                        id="john-rogers"
+                        name="John Rogers"
+                        thumb="john-rogers-1.png"
+                        page1="john-rogers-1.png"
+                        page2="john-rogers-2.png"}}
                 </div>
         </div>
     </div>
@@ -327,7 +337,7 @@ isNotSticky: true
     </div>
     <div class="call-to-action">
         <div class="text-center">
-            <h2 class="h1">Try out with a 14-day free trial</h2>
+            <h2 class="h1">What do you need a resume for today?</h2>
             <a
              href="{{ urls.builder }}"
              data-track="event"

@@ -40,6 +40,10 @@
     }
 
     .steps {
+        #landing-tips {
+            position: relative;
+        }
+
         .popover, .popover-title {
             background: $brand-primary;
             color: #fff;
