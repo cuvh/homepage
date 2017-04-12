@@ -1,16 +1,7 @@
 .unusual {
    .header {
-        background:
-         linear-gradient(180deg, rgba($brand-primary,0.5) 0%, $brand-primary 100%),
-         url(/img/landing-pages/experienced/header.jpg);
-        background:
-         linear-gradient(180deg, rgba($brand-primary,0.5) 0%, $brand-primary 100%),
-         -webkit-image-set( url(/img/landing-pages/experienced/header.jpg) 1x, url(/img/landing-pages/experienced/header.jpg) 2x);
-        background:
-         linear-gradient(180deg, rgba($brand-primary,0.5) 0%, $brand-primary 100%),
-         image-set( url(/img/landing-pages/experienced/header.jpg) 1x, url(/img/landing-pages/experienced/header.jpg) 2x);
-         background-size: cover;
-         background-position: center;
+        background-image: url(/img/landing-pages/unusual/header.jpg);
+        height: 720px;
 
         .header-content {
             position: absolute;

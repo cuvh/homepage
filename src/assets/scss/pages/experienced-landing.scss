@@ -1,6 +1,12 @@
 .experienced {
     .header {
         background-image: url(/img/landing-pages/experienced/header.jpg);
+        height: 680px;
+
+        @media screen and (max-width: $screen-xs-max) {
+            background-image: url(/img/landing-pages/experienced/header-mobile.jpg);
+            background-position-x: 75%;
+        }
     }
 
     .steps {
