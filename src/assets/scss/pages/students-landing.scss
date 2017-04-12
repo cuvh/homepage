@@ -5,9 +5,11 @@
 
         .header-content {
             position: absolute;
-            bottom: 45px;
+            bottom: 50px;
             left: 0;
             right: 0;
+            max-width: 500px;
+            margin: 0 auto;
         }
 
         .solid-overlay {
