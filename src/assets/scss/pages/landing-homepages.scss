@@ -1,4 +1,8 @@
 .landing-homepage {
+    .btn {
+        font-weight: 300;
+    }
+
     .header {
         background-size: cover;
         background-position: center;
@@ -28,6 +32,10 @@
             bottom: 0;
             left: 0;
             right: 0;
+
+            p {
+                color: $gray-light;
+            }
         }
     }
 
@@ -117,5 +125,10 @@
          image-set( url(/img/landing-pages/experienced/footer.jpg) 1x, url(/img/landing-pages/experienced/footer.jpg) 2x);
         background-size: cover;
         background-position: center;
+    }
+
+    .btn-lg {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }

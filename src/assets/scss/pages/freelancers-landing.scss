@@ -1,0 +1,25 @@
+.freelancers {
+   .header {
+        background-image: url(/img/landing-pages/experienced/header.jpg);
+
+        .header-content {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+
+            h1 {
+                color: #fff;
+            }
+        }
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n) {
+                background: #f5f5f5;
+            }
+        }
+    }
+}
+
