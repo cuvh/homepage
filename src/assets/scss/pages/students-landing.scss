@@ -24,5 +24,19 @@
             }
         }
     }
+
+    .call-to-action {
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         url(/img/landing-pages/students/footer.jpg);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         -webkit-image-set( url(/img/landing-pages/students/footer.jpg) 1x, url(/img/landing-pages/students/footer.jpg) 2x);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         image-set( url(/img/landing-pages/students/footer.jpg) 1x, url(/img/landing-pages/students/footer.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+    }
 }
 
