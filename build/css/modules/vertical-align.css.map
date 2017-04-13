@@ -1,1 +1,0 @@
-{"version":3,"sources":["vertical-align.css"],"names":[],"mappings":"AAAA,qBAAqB,iBAAiB,CAAC,gBAAgB,kBAAkB,QAAQ,SAAS,wCAAA,AAA+B,+BAAA,CAAC","file":"modules/vertical-align.css","sourcesContent":[".vertical-align-base{position:relative}.vertical-align{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}\n"],"sourceRoot":"/source/"}
