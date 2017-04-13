@@ -3,7 +3,7 @@
     <head>
         {{> meta }}
     </head>
-    <body {{#unless isNotSticky}} class="with-sticky-navbar" {{/unless}}>
+    <body {{#if isLandingHomepage}} class="landing-homepage-body" {{else}} class="with-sticky-navbar" {{/if}}>
         {{> header
             navigation=navigation
         }}

@@ -45,6 +45,12 @@
             position: relative;
         }
 
+        .shadowed-image {
+           box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15);
+           -moz-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15);
+           -webkit-box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.15);
+        }
+
         .popover, .popover-title {
             background: $brand-primary;
             color: #fff;
@@ -71,6 +77,11 @@
                 &.overflow-container {
                     position: relative;
                     top: 100px;
+                }
+
+                &.overflow-container-top {
+                    position: relative;
+                    top: -100px;
                 }
 
                 .inner-text {

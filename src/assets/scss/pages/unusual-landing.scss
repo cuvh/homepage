@@ -2,10 +2,11 @@
    .header {
         background-image: url(/img/landing-pages/unusual/header.jpg);
         height: 720px;
+        max-height: 100vh;
 
         .header-content {
             position: absolute;
-            top: 40px;
+            top: 80px;
             left: 0;
             right: 0;
             color: #fff;
@@ -34,6 +35,20 @@
                 }
             }
         }
+    }
+
+    .call-to-action {
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         url(/img/landing-pages/unusual/footer.jpg);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         -webkit-image-set( url(/img/landing-pages/unusual/footer.jpg) 1x, url(/img/landing-pages/unusual/footer.jpg) 2x);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         image-set( url(/img/landing-pages/unusual/footer.jpg) 1x, url(/img/landing-pages/unusual/footer.jpg) 2x);
+        background-size: cover;
+        background-position: center;
     }
 }
 
