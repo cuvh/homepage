@@ -65,6 +65,8 @@
             align-items: center;
             justify-content: space-around;
             flex-wrap: nowrap;
+            padding-left: 40px;
+            padding-right: 40px;
 
             &.padding-step {
                 padding-top: 140px;
@@ -72,7 +74,7 @@
             }
 
             .inner-step {
-                flex: 0 0 auto;
+                flex: 0 1 auto;
 
                 &.overflow-container {
                     position: relative;
@@ -92,7 +94,8 @@
 
             @media (max-width: $screen-xs-max) {
                 flex-direction: column;
-                padding: 80px 40px !important;
+                padding-top: 80px !important;
+                padding-bottom: 80px !important;
 
                 &:nth-child(2n) {
                     .inner-step:first-child {
@@ -109,6 +112,10 @@
                         top: 0;
                     }
 
+                    &.overflow-container-top {
+                        top: 0;
+                    }
+
                     .inner-text {
                         margin-bottom: 35px;
                         padding-left: 40px;
@@ -120,6 +127,8 @@
     }
 
     .use-cases {
+        margin-bottom: 45px;
+
         hr {
             border-top: 1px solid #2DC08D;
             width: 25px;
@@ -127,8 +136,8 @@
     }
 
     .call-to-action {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 225px;
+        padding-bottom: 225px;
         color: #fff;
     }
 
