@@ -3,7 +3,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<nav class="navbar navbar-default navbar-sticky navbar-static-top">
+<nav class="navbar navbar-transparent navbar-sticky navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <button
@@ -23,18 +23,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a
              class="navbar-brand"
              href="/">
-                <img
-                 class="hidden-xs"
-                 src="/img/logo-with-text.svg"
-                 width="143"
-                 height="22"
-                 alt="Enhancv Logo">
-                <img
-                 class="visible-xs"
-                 src="/img/logo.svg"
-                 width="46"
-                 height="22"
-                 alt="Enhancv Logo">
+                <div class="hidden-sticky">
+                    <img
+                     class="hidden-xs"
+                     src="/img/logo-with-text-white.svg"
+                     width="143"
+                     height="22"
+                     alt="Enhancv Logo">
+                    <img
+                     class="visible-xs"
+                     src="/img/logo-white.svg"
+                     width="46"
+                     height="22"
+                     alt="Enhancv Logo">
+                </div>
+                <div class="visible-sticky">
+                    <img
+                     class="hidden-xs"
+                     src="/img/logo-with-text.svg"
+                     width="143"
+                     height="22"
+                     alt="Enhancv Logo">
+                    <img
+                     class="visible-xs"
+                     src="/img/logo.svg"
+                     width="46"
+                     height="22"
+                     alt="Enhancv Logo">
+                </div>
             </a>
 
             <div class="navbar-center">
@@ -72,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                  data-category="Homepage"
                  data-action="Click Signup"
                  data-label="Sign Up"
-                 class="visible-xs btn btn-primary navbar-mobile-visible-sticky">
+                 class="visible-xs btn {{#if invertedColors}} btn-default {{else}} btn-primary {{/if}} navbar-mobile-visible-sticky">
                     Sign Up
                 </a>
             </div>
@@ -86,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              data-category="Homepage"
              data-action="Click Signup"
              data-label="Sign Up"
-             class="btn btn-primary navbar-btn navbar-right left-xs">
+             class="btn {{#if invertedColors}} btn-default {{else}} btn-primary {{/if}} navbar-btn navbar-right left-xs">
                 Sign Up
             </a>
             <a

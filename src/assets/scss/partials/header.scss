@@ -118,8 +118,24 @@ body.navbar-mobile-active {
         background: none;
     }
 
+    .hidden-sticky {
+        display: block;
+    }
+
+    .visible-sticky {
+        display: none;
+    }
+
     &.navbar-stick {
         background: #fff;
+
+        .hidden-sticky {
+            display: none !important;
+        }
+
+        .visible-sticky {
+            display: block !important;
+        }
 
         .navbar-toggle .icon-bar {
             background-color: #000;
