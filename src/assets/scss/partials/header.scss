@@ -104,6 +104,22 @@ body.navbar-mobile-active {
         background-color: #fff;
     }
 
+    .btn-primary {
+        @include button-explicit(
+            $btn-primary-color,
+            $btn-primary-bg,
+            $btn-primary-border,
+
+            $btn-primary-color,
+            darken($btn-primary-bg, 10%),
+            darken($btn-primary-bg, 10%),
+
+            $btn-primary-color,
+            darken($btn-primary-bg, 20%),
+            darken($btn-primary-bg, 20%)
+        );
+    }
+
     .nav a {
         color: rgba(255,255,255,0.7);
 
