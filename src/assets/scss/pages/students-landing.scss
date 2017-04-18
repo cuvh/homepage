@@ -1,20 +1,28 @@
 .students {
    .header {
-        background-image: url(/img/landing-pages/students/header.jpg);
-        height: 800px;
+        background-image: url(/img/landing-pages/students/header-big.jpg);
+        height: 500px;
         max-height: 100vh;
 
-        .header-content {
-            position: absolute;
-            bottom: 50px;
-            left: 0;
-            right: 0;
-            max-width: 500px;
-            margin: 0 auto;
+        @media (min-width: 1400px) {
+            background-image: url(/img/landing-pages/students/header-small.jpg);
         }
 
         .solid-overlay {
             height: 300px;
+        }
+    }
+
+    .header-content {
+        height: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+
+        & > div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 

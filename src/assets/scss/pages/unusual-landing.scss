@@ -26,6 +26,9 @@
             }
 
             &.examples-step {
+                max-width: 1280px;
+                margin: 0 auto;
+
                 h3 {
                     flex: 0 0 100%;
                 }

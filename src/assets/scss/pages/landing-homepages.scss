@@ -7,10 +7,6 @@
 }
 
 .landing-homepage {
-    .btn {
-        font-weight: 300;
-    }
-
     .header {
         background-size: cover;
         background-position: center;
@@ -81,17 +77,25 @@
                 padding-bottom: 140px;
             }
 
-            .inner-step {
-                flex: 0 1 auto;
-
-                &.overflow-container {
+            &.overflow-container {
+                .inner-step {
                     position: relative;
                     top: 100px;
                 }
+            }
 
-                &.overflow-container-top {
+            &.overflow-container-top {
+                .inner-step {
                     position: relative;
                     top: -100px;
+                }
+            }
+
+            .inner-step {
+                flex: 0 1 auto;
+
+                &:first-child {
+                    margin-right: 20px;
                 }
 
                 .inner-text {
@@ -115,15 +119,13 @@
                     }
                 }
 
+                &.overflow-container, &.overflow-container-top {
+                    .inner-step {
+                        top: 0;
+                    }
+                }
+
                 .inner-step {
-                    &.overflow-container {
-                        top: 0;
-                    }
-
-                    &.overflow-container-top {
-                        top: 0;
-                    }
-
                     .inner-text {
                         margin-bottom: 35px;
                         padding-left: 40px;
@@ -135,7 +137,7 @@
     }
 
     .use-cases {
-        margin-bottom: 45px;
+        margin-bottom: 65px;
 
         hr {
             border-top: 1px solid #2DC08D;
@@ -147,6 +149,10 @@
         padding-top: 225px;
         padding-bottom: 225px;
         color: #fff;
+
+        .h1 {
+            margin-top: 0 !important;
+        }
     }
 
     .btn-lg {
