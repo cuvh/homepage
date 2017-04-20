@@ -39,21 +39,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="navbar-center">
                 <ul class="list-unstyled navbar-mobile-menu navbar-mobile-visible bottom-md">
-                    <li {{#if isHomepage }} class="active" {{/if}}>
-                        <a href="/">Homepage</a>
-                    </li>
-                    <li {{#if isPricing }} class="active" {{/if}}>
-                        <a href="/pricing.html">Pricing</a>
-                    </li>
-                    <li {{#if isAbout }} class="active" {{/if}}>
-                        <a href="/about.html">About</a>
-                    </li>
-                    <li {{#if isExamples }} class="active" {{/if}}>
-                        <a href="/examples.html">Examples</a>
-                    </li>
-                    <li>
-                        <a href="{{ urls.blog }}" target="_blank">Blog</a>
-                    </li>
+                    {{#if isAiesec}}
+                        <li {{#if isPricing }} class="active" {{/if}}>
+                            <a href="/pricing.html">Pricing</a>
+                        </li>
+                        <li {{#if isAbout }} class="active" {{/if}}>
+                            <a href="/about.html">About</a>
+                        </li>
+                    {{else}}
+                        <li {{#if isHomepage }} class="active" {{/if}}>
+                            <a href="/">Homepage</a>
+                        </li>
+                        <li {{#if isPricing }} class="active" {{/if}}>
+                            <a href="/pricing.html">Pricing</a>
+                        </li>
+                        <li {{#if isAbout }} class="active" {{/if}}>
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li {{#if isExamples }} class="active" {{/if}}>
+                            <a href="/examples.html">Examples</a>
+                        </li>
+                        <li>
+                            <a href="{{ urls.blog }}" target="_blank">Blog</a>
+                        </li>
+                    {{/if}}
                 </ul>
                 <div class="bottom-xs navbar-mobile-visible">
                     <a
@@ -100,18 +109,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </a>
 
             <ul class="nav navbar-nav navbar-right">
-                <li {{#if isPricing }} class="active" {{/if}}>
-                    <a href="/pricing.html">Pricing</a>
-                </li>
-                <li {{#if isAbout }} class="active" {{/if}}>
-                    <a href="/about.html">About</a>
-                </li>
-                <li {{#if isExamples }} class="active" {{/if}}>
-                    <a href="/examples.html">Examples</a>
-                </li>
-                <li>
-                    <a href="https://blog.enhancv.com">Blog</a>
-                </li>
+                {{#if isAiesec}}
+                    <li {{#if isPricing }} class="active" {{/if}}>
+                        <a href="/pricing.html">Pricing</a>
+                    </li>
+                    <li {{#if isAbout }} class="active" {{/if}}>
+                        <a href="/about.html">About</a>
+                    </li>
+                {{else}}
+                    <li {{#if isHomepage }} class="active" {{/if}}>
+                        <a href="/">Homepage</a>
+                    </li>
+                    <li {{#if isPricing }} class="active" {{/if}}>
+                        <a href="/pricing.html">Pricing</a>
+                    </li>
+                    <li {{#if isAbout }} class="active" {{/if}}>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li {{#if isExamples }} class="active" {{/if}}>
+                        <a href="/examples.html">Examples</a>
+                    </li>
+                    <li>
+                        <a href="{{ urls.blog }}" target="_blank">Blog</a>
+                    </li>
+                {{/if}}
             </ul>
         </div>
     </div>

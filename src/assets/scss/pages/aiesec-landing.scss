@@ -1,0 +1,111 @@
+.aiesec {
+   .header {
+        background-image: url(/img/landing-pages/aiesec/header.jpg);
+        background-image: 
+            -webkit-image-set( url(/img/landing-pages/aiesec/header.jpg) 1x, url(/img/landing-pages/aiesec/header@x2.jpg) 2x);
+        background-image:
+            image-set( url(/img/landing-pages/aiesec/header.jpg) 1x, url(/img/landing-pages/aiesec/header@x2.jpg) 2x);
+        height: 500px;
+        max-height: 100vh;
+        background-position-y: 10%; 
+
+        .solid-overlay {
+            height: 300px;
+        }
+    }
+
+    .header-content {
+        height: 350px;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+
+        .especially {
+            font-size: $font-size-large;
+        }
+
+        & > div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n + 1) {
+                background: #f5f5f5;
+            }
+        }
+    }
+
+    .use-cases {
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+
+    .underline {
+        border-bottom: 1px solid #fff;
+    }
+
+    .call-to-action {
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         url(/img/landing-pages/aiesec/footer.jpg);
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         -webkit-image-set( url(/img/landing-pages/aiesec/footer.jpg) 1x, url(/img/landing-pages/aiesec/footer@x2.jpg) 2x);
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         image-set( url(/img/landing-pages/aiesec/footer.jpg) 1x, url(/img/landing-pages/aiesec/footer@x2.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+
+        .h4 {
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .promo {
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         url(/img/landing-pages/aiesec/promo.jpg);
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         -webkit-image-set( url(/img/landing-pages/aiesec/promo.jpg) 1x, url(/img/landing-pages/aiesec/promo@x2.jpg) 2x);
+        background:
+         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
+         image-set( url(/img/landing-pages/aiesec/promo.jpg) 1x, url(/img/landing-pages/aiesec/promo@x2.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        & > div {
+            max-width: 720px;
+            margin: auto;
+        }
+
+        .promocode-box {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 40px 40px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+
+            hr {
+                width: 40px;
+            }
+
+            h2, h3 {
+                margin: 0;
+            }
+        }
+    }
+}
+
