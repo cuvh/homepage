@@ -92,4 +92,78 @@ body.navbar-mobile-active {
     .navbar-mobile-visible {
         display: block;
     }
+    .navbar-transparent {
+        margin-top: 0;
+    }
+}
+
+.navbar.navbar-transparent {
+    transition: background 0.25s ease-in-out;
+
+    .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .btn-primary {
+        @include button-explicit(
+            $btn-primary-color,
+            $btn-primary-bg,
+            $btn-primary-border,
+
+            $btn-primary-color,
+            darken($btn-primary-bg, 10%),
+            darken($btn-primary-bg, 10%),
+
+            $btn-primary-color,
+            darken($btn-primary-bg, 20%),
+            darken($btn-primary-bg, 20%)
+        );
+    }
+
+    .nav a {
+        color: rgba(255,255,255,0.7);
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: rgba(255,255,255,0.8);
+        }
+    }
+
+    &:after {
+        background: none;
+    }
+
+    .hidden-sticky {
+        display: block;
+    }
+
+    .visible-sticky {
+        display: none;
+    }
+
+    &.navbar-stick {
+        background: #fff;
+
+        .hidden-sticky {
+            display: none !important;
+        }
+
+        .visible-sticky {
+            display: block !important;
+        }
+
+        .navbar-toggle .icon-bar {
+            background-color: #000;
+        }
+
+        .nav a {
+            color: $gray-light;
+
+            &:hover,
+            &:focus {
+                color: #333;
+            }
+        }
+    }
 }

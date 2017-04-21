@@ -19,4 +19,8 @@ $(function () {
     $('.carousel').bcSwipe();
 
     $('[data-toggle="popover"]').eq(4).popover('show');
+
+    $(window).load(function() {
+        $('#landing-tips [data-toggle="popover"]').eq(0).popover('show');
+    });
 })

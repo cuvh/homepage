@@ -75,7 +75,11 @@ function javascript () {
     return gulp.src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/stickyfill/src/stickyfill.js',
-            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/{transition,tooltip,popover,button,modal}.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
             'node_modules/switch-toggle/src/switchToggle.js',
             'src/assets/js/**/*',
         ])

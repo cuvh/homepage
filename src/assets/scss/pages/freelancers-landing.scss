@@ -1,0 +1,41 @@
+.freelancers {
+   .header {
+        background-image: url(/img/landing-pages/freelancers/header.jpg);
+        height: 800px;
+        max-height: 100vh;
+
+        .header-content {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+
+            h1 {
+                color: #fff;
+            }
+        }
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n) {
+                background: #f5f5f5;
+            }
+        }
+    }
+
+    .call-to-action {
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         url(/img/landing-pages/freelancers/footer.jpg);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         -webkit-image-set( url(/img/landing-pages/freelancers/footer.jpg) 1x, url(/img/landing-pages/freelancers/footer.jpg) 2x);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         image-set( url(/img/landing-pages/freelancers/footer.jpg) 1x, url(/img/landing-pages/freelancers/footer.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+    }
+}
+

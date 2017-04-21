@@ -17,3 +17,4 @@ aws s3api put-object --bucket $BUCKET --acl public-read --key "about" --website-
 aws s3api put-object --bucket $BUCKET --acl public-read --key "examples" --website-redirect-location "/examples.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "terms" --website-redirect-location "/terms.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "privacy" --website-redirect-location "/privacy.html"
+aws s3api put-object --bucket $BUCKET --acl public-read --key "aiesec" --website-redirect-location "/aiesec.html"

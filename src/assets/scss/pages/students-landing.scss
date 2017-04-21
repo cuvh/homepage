@@ -1,0 +1,51 @@
+.students {
+   .header {
+        background-image: url(/img/landing-pages/students/header-big.jpg);
+        height: 500px;
+        max-height: 100vh;
+
+        @media (min-width: 1400px) {
+            background-image: url(/img/landing-pages/students/header-small.jpg);
+        }
+
+        .solid-overlay {
+            height: 300px;
+        }
+    }
+
+    .header-content {
+        height: 300px;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+
+        & > div {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .steps {
+        .step {
+            &:nth-child(2n + 1) {
+                background: #f5f5f5;
+            }
+        }
+    }
+
+    .call-to-action {
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         url(/img/landing-pages/students/footer.jpg);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         -webkit-image-set( url(/img/landing-pages/students/footer.jpg) 1x, url(/img/landing-pages/students/footer.jpg) 2x);
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         image-set( url(/img/landing-pages/students/footer.jpg) 1x, url(/img/landing-pages/students/footer.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
