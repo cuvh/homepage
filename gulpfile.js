@@ -85,6 +85,7 @@ function javascript () {
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
         .pipe($.concat('combined.js'))
+        .pipe($.replace('process.env.TAPFILIATE_ID', JSON.stringify(process.env.TAPFILIATE_ID)))
         .pipe($.if(isProd, $.uglify()))
         .pipe($.if(!isProd, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/js'));
