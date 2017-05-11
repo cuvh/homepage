@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        {{> meta }}
+    </head>
+    <body class="landing-homepage-body">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8QM55B"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <nav class="navbar navbar-transparent navbar-sticky navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button
+                     type="button"
+                     data-toggle="navbar"
+                     class="navbar-toggle collapsed">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="navbar-mobile-hidden">
+                            <span class="icon-bar first"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar last"></span>
+                        </div>
+                        <div class="close navbar-mobile-visible">
+                            &times;
+                        </div>
+                    </button>
+                    <a
+                     class="navbar-brand"
+                     href="/">
+                        <div class="hidden-sticky">
+                            <img
+                             class="hidden-xs"
+                             src="/img/logo-with-text-white.svg"
+                             width="143"
+                             height="22"
+                             alt="Enhancv Logo">
+                            <img
+                             class="visible-xs"
+                             src="/img/logo-white.svg"
+                             width="46"
+                             height="22"
+                             alt="Enhancv Logo">
+                        </div>
+                        <div class="visible-sticky">
+                            <img
+                             class="hidden-xs"
+                             src="/img/logo-with-text.svg"
+                             width="143"
+                             height="22"
+                             alt="Enhancv Logo">
+                            <img
+                             class="visible-xs"
+                             src="/img/logo.svg"
+                             width="46"
+                             height="22"
+                             alt="Enhancv Logo">
+                        </div>
+                    </a>
+
+                    <div class="navbar-center">
+                        <ul class="list-unstyled navbar-mobile-menu navbar-mobile-visible bottom-md">
+                            <li {{#if isHomepage }} class="active" {{/if}}>
+                                <a href="/">Homepage</a>
+                            </li>
+                            <li {{#if isPricing }} class="active" {{/if}}>
+                                <a href="/pricing.html">Pricing</a>
+                            </li>
+                            <li {{#if isAbout }} class="active" {{/if}}>
+                                <a href="/about.html">About</a>
+                            </li>
+                            <li {{#if isExamples }} class="active" {{/if}}>
+                                <a href="/examples.html">Examples</a>
+                            </li>
+                            <li>
+                                <a href="{{ urls.blog }}" target="_blank">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="bottom-xs navbar-mobile-visible">
+                            <a
+                             href="{{ urls.builder }}/login"
+                             data-track="event"
+                             data-category="Homepage"
+                             data-action="Click Signup"
+                             data-label="Sign In"
+                             class="visible-xs btn btn-default btn-sign-in">
+                                Sign In
+                            </a>
+                        </div>
+                        <a
+                         href="{{ urls.builder }}/login"
+                         data-track="event"
+                         data-category="Homepage"
+                         data-action="Click Signup"
+                         data-label="Sign Up"
+                         class="visible-xs btn btn-default navbar-mobile-visible-sticky">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    <a
+                     href="{{ urls.builder }}/login"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Sign Up"
+                     class="btn btn-default navbar-btn navbar-right left-xs">
+                        Sign Up
+                    </a>
+                    <a
+                     href="{{ urls.builder }}/login"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Sign In"
+                     class="btn btn-default navbar-btn navbar-right left-xs btn-sign-in">
+                        Sign In
+                    </a>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li {{#if isPricing }} class="active" {{/if}}>
+                            <a href="/pricing.html">Pricing</a>
+                        </li>
+                        <li {{#if isAbout }} class="active" {{/if}}>
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li {{#if isExamples }} class="active" {{/if}}>
+                            <a href="/examples.html">Examples</a>
+                        </li>
+                        <li>
+                            <a href="https://blog.enhancv.com">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        {{> body }}
+
+        {{> footer-compact }}
+
+        <script src="/js/combined.js"></script>
+    </body>
+</html>
+

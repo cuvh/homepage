@@ -23,4 +23,25 @@ $(function () {
     $(window).load(function() {
         $('#landing-tips [data-toggle="popover"]').eq(0).popover('show');
     });
+
+    // Tandem tags filter 
+    $('.tandem .tandem-all').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.tandem .abillity-tandem-1, .tandem .abillity-tandem-2').show();
+    })
+
+    $('.tandem .tandem-1').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.tandem .abillity-tandem-1').show();
+        $('.tandem .abillity-tandem-2').hide();
+    })
+
+    $('.tandem .tandem-2').click(function() {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.tandem .abillity-tandem-2').show();
+        $('.tandem .abillity-tandem-1').hide();
+    })
 })
