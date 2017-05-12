@@ -1,4 +1,15 @@
 .tandem {
+    .btn.btn-lg {
+        background-color: #BD10E0;
+        color: #fff;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
     .header {
         position: relative;
         height: auto;
@@ -16,11 +27,6 @@
         .second-header {
             padding-top: 135px;
             padding-bottom: 75px; 
-
-            .btn {
-                background-color: #BD10E0;
-                color: #fff;
-            }
 
             .second-header-content {
                 h1  {
@@ -62,6 +68,10 @@
                 height: 1px;
                 width: 50px;
                 margin-left: 0;
+            }
+
+            &:first-child {
+                padding-top: 60px;
             }
 
             .abillities-row {
@@ -271,8 +281,50 @@
         }
     }
 
+    @media (max-width: $screen-xs) {
+        .header-content {
+            height: 80vh;
+        }
+
+        .second-header-content {
+            h1 {
+                font-size: 24px;
+            }
+
+            p, h2 {
+                font-size: 13px !important;
+            }
+        }
+
+        .call-to-action {
+            .h1 {
+                font-size: 24px;
+            }
+
+            h3, .caption {
+                font-size: 13px;
+            }
+        }
+
+        .btn-lg {
+            font-size: 14px;
+            padding: 11px 20px;
+        }
+
+        .carousel .h2 {
+            font-size: 20px;
+        }
+    }
+
     @media (max-width: $screen-sm) {
         .step {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:first-child {
+                padding-bottom: 0 !important;
+            }
+
             .inner-text {
                 text-align: center;
 
