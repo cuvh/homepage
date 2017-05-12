@@ -57,6 +57,10 @@
                 font-size: 19px;
                 font-weight: 300;
                 font-family: Roboto;
+
+                .tandem-logo {
+                    margin-top: -5px;
+                }
             }
         }
     }
@@ -171,10 +175,16 @@
         }
 
         p {
+            margin-top: 20px;
             font-size: 19px;
             color: #fff;
             font-weight: 300;
-            margin-top: 20px;
+
+            a {
+                font-size: 19px;
+                color: #fff;
+                font-weight: 300;
+            }
         }
 
         .arrow {
@@ -188,6 +198,7 @@
             border-radius: 100%;
             background-repeat: no-repeat;
             background-position: center;
+            margin: auto;
         }
 
         .step-1 {
@@ -230,7 +241,7 @@
             flex-direction: row;
 
             & > div {
-                flex: 0 0 10%;
+                flex: 0 0 15%;
             }
 
             @media (max-width: 600px) {
