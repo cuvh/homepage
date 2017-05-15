@@ -11,10 +11,27 @@
 <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
 <link rel="icon" type="image/png" href="/img/favicon.png">
 
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Enhancv" />
+
 {{#if metaImage }}
     <meta itemprop="image" content="{{ metaImage }}">
+    <meta name="twitter:image" content="{{ metaImage }}" />
+    <meta property="og:image" content="{{ metaImage }}" />
 {{ else }}
     <meta itemprop="image" content="{{ urls.homepage }}/img/social-image.jpg">
+    <meta name="twitter:image" content="{{ urls.homepage }}/img/social-image.jpg" />
+    <meta property="og:image" content="{{ urls.homepage }}/img/social-image.jpg" />
+{{/if }}
+
+{{#if title }}
+<meta name="twitter:title" content="{{ title }}" />
+<meta property="og:title" content="{{ title }}" />
+{{/if }}
+
+{{#if description }}
+<meta name="twitter:description" content="{{ description }}" />
+<meta property="og:description" content="{{ description }}" />
 {{/if }}
 
 <!-- Google Tag Manager -->
