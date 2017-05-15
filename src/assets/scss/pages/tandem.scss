@@ -1,0 +1,355 @@
+.tandem {
+    .btn-tandem {
+        @include button-explicit(
+            white,
+            #BD10E0,
+            transparent,
+
+            rgba(white, 0.5),
+            lighten(#BD10E0, 5),
+            transparent,
+
+            rgba(white, 0.5),
+            darken(#BD10E0, 5),
+            transparent
+        );
+    }
+
+    .header {
+        position: relative;
+        height: auto;
+
+        .header-content {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            background: linear-gradient(0deg, #2D86B2 0%, #2DC08D 100%);
+            height: 100vh;
+            color: #fff;
+        }
+
+        .second-header {
+            min-height: 100vh;
+            padding-top: 135px;
+            margin-bottom: 70px;
+
+            .second-header-content {
+                h1  {
+                    color: #fff;
+                }
+
+                p, h2 {
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #fff;
+                }
+            }
+
+            img.hero-image {
+                transform: translateY(70px);
+                margin-top: -40px;
+            }
+
+            & > .second-header-content {
+                max-width: 700px;
+                margin: auto;
+            }
+
+        }
+        .collaboration {
+            color: #333;
+            font-size: 19px;
+            font-weight: 300;
+            font-family: Roboto;
+
+            img.tandem-logo {
+                vertical-align: -12px;
+                margin-left: -1px;
+            }
+        }
+    }
+
+    .steps {
+        .step {
+            border-top: 1px solid #e6e6e6;
+
+            hr {
+                background-color: #b3b3b3;
+                height: 1px;
+                width: 50px;
+                margin-left: 0;
+            }
+
+            &:first-child {
+                padding-top: 60px;
+            }
+
+            .abillities-row {
+                display: inline-block;
+            }
+
+            .tags-wrapper {
+                margin-bottom: 30px;
+
+                .btn {
+                    padding: 12px 25px;
+
+                    &.tandem-all {
+                        border: 1px solid #BD10E0;
+
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            background-color: #BD10E0;
+                            color: #fff;
+                        }
+                    }
+
+                    &.tandem-1 {
+                        border: 1px solid #4A90E2;
+
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            background-color: #4A90E2;
+                            color: #fff;
+                        }
+                    }
+
+                    &.tandem-2 {
+                        border: 1px solid #2DC08D;
+
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            background-color: #2DC08D;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .abillities-rect {
+                display: inline-block;
+                height: 120px;
+                width: 120px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                background-color: rgb(219, 233, 249);
+                position: relative;
+
+                &.abillity-tandem-2 {
+                    background-color: rgb(214, 243, 233);
+
+                    i {
+                        color: #2DC08D;
+                    }
+                }
+
+                i {
+                    font-size: 50px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: #4A90E2;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .use-cases {
+        span {
+            font-size: 14px;
+            color: #808080;
+        }
+    }
+
+    .how-to-create {
+        background-color: #2D86B2;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        h2 {
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 19px;
+            color: #fff;
+            font-weight: 300;
+
+            a {
+                font-size: 19px;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+
+        .arrow {
+            top: -110px;
+            position: relative;
+        }
+
+        .step-circle {
+            height: 160px;
+            width: 160px;
+            border-radius: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+        }
+
+        .step-1 {
+            .step-circle {
+                background-color: #accedf;
+                background-image: url(/img/landing-pages/tandem/step-1.png);
+                background-image:
+                    -webkit-image-set( url(/img/landing-pages/tandem/step-1.png) 1x, url(/img/landing-pages/tandem/step-1@2x.png) 2x);
+                background-image:
+                    image-set( url(/img/landing-pages/tandem/step-1.png) 1x, url(/img/landing-pages/tandem/step-1@2x.png) 2x);
+            }
+        }
+
+        .step-2 {
+            .step-circle {
+                background-color: #d5e6ef;
+                background-image: url(/img/landing-pages/tandem/step-2.png);
+                background-image:
+                    -webkit-image-set( url(/img/landing-pages/tandem/step-2.png) 1x, url(/img/landing-pages/tandem/step-2@2x.png) 2x);
+                background-image:
+                    image-set( url(/img/landing-pages/tandem/step-2.png) 1x, url(/img/landing-pages/tandem/step-2@2x.png) 2x);
+            }
+        }
+
+        .step-3 {
+            .step-circle {
+                background-color: #fff;
+                background-image: url(/img/landing-pages/tandem/step-3.png);
+                background-image:
+                    -webkit-image-set( url(/img/landing-pages/tandem/step-3.png) 1x, url(/img/landing-pages/tandem/step-3@2x.png) 2x);
+                background-image:
+                    image-set( url(/img/landing-pages/tandem/step-3.png) 1x, url(/img/landing-pages/tandem/step-3@2x.png) 2x);
+            }
+        }
+
+        & > div {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            flex-direction: row;
+
+            & > div {
+                flex: 0 0 15%;
+            }
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+                & > div {
+                    margin: 5px auto;
+
+                    .step-circle {
+                        margin: auto;
+                    }
+                }
+
+                .arrow {
+                    position: initial;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    .call-to-action {
+        background-image: url(/img/landing-pages/tandem/footer.png);
+        background-image:
+            -webkit-image-set( url(/img/landing-pages/tandem/footer.png) 1x, url(/img/landing-pages/tandem/footer@2x.png) 2x);
+        background-image:
+            image-set( url(/img/landing-pages/tandem/footer.png) 1x, url(/img/landing-pages/tandem/footer@2x.png) 2x);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        h2, h3 {
+            color: #333;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        .caption {
+            font-size: 14px;
+            color: #808080;
+        }
+    }
+
+    @media (max-width: $screen-xs) {
+        .header-content {
+            height: 80vh;
+        }
+
+        .second-header-content {
+            h1 {
+                font-size: 24px;
+            }
+
+            p, h2 {
+                font-size: 13px !important;
+            }
+        }
+
+        .call-to-action {
+            .h1 {
+                font-size: 24px;
+            }
+
+            h3, .caption {
+                font-size: 13px;
+            }
+        }
+
+        .btn-lg {
+            font-size: 14px;
+            padding: 11px 20px;
+        }
+
+        .carousel .h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: $screen-sm) {
+        .step {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:first-child {
+                padding-bottom: 0 !important;
+            }
+
+            .inner-text {
+                margin-left: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+
+                hr {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+

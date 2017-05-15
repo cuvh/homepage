@@ -98,10 +98,27 @@ body.navbar-mobile-active {
 }
 
 .navbar.navbar-transparent {
+    border-top: none;
     transition: background 0.25s ease-in-out;
 
     .navbar-toggle .icon-bar {
         background-color: #fff;
+    }
+
+    .btn.btn-default {
+        @include button-explicit(
+            $btn-default-color,
+            $btn-default-bg,
+            transparent,
+
+            $brand-primary,
+            $btn-default-bg,
+            transparent,
+
+            $brand-primary,
+            lighten($brand-primary, 50%),
+            transparent
+        );
     }
 
     .btn-primary {
@@ -121,7 +138,7 @@ body.navbar-mobile-active {
     }
 
     .nav a {
-        color: rgba(255,255,255,0.7);
+        color: rgba(255,255,255,1);
 
         &:hover,
         &:focus {
