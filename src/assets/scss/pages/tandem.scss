@@ -1,3 +1,15 @@
+.tandem-landing-body {
+    .navbar-stick .btn.btn-default {
+        color: #fff !important;
+        background-color: $btn-primary-bg !important;
+        border-color: $btn-primary-bg !important;
+
+        &:hover {
+            background-color: darken($btn-primary-bg, 10%) !important;
+        }
+    }
+}
+
 .tandem {
     .btn-tandem {
         @include button-explicit(
@@ -32,7 +44,7 @@
         .second-header {
             min-height: 100vh;
             padding-top: 135px;
-            margin-bottom: 70px;
+            margin-bottom: 20px;
 
             .second-header-content {
                 h1  {
@@ -298,6 +310,11 @@
     @media (max-width: $screen-xs) {
         .header-content {
             height: 80vh;
+        }
+
+        .how-to-create {
+            padding-left: 50px;
+            padding-right: 50px;
         }
 
         .second-header-content {
