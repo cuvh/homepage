@@ -104,6 +104,22 @@ body.navbar-mobile-active {
         background-color: #fff;
     }
 
+    .btn.btn-default {
+        @include button-explicit(
+            $btn-default-color,
+            $btn-default-bg,
+            transparent,
+
+            $brand-primary,
+            $btn-default-bg,
+            transparent,
+
+            $brand-primary,
+            lighten($brand-primary, 50%),
+            transparent
+        );
+    }
+
     .btn-primary {
         @include button-explicit(
             $btn-primary-color,
