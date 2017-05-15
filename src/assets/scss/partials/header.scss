@@ -98,6 +98,7 @@ body.navbar-mobile-active {
 }
 
 .navbar.navbar-transparent {
+    border-top: none;
     transition: background 0.25s ease-in-out;
 
     .navbar-toggle .icon-bar {
