@@ -1,15 +1,18 @@
 .tandem {
-    .btn.btn-lg {
-        background-color: #BD10E0;
-        color: #fff;
-        border: 1px solid transparent;
+    .btn-tandem {
+        @include button-explicit(
+            white,
+            #BD10E0,
+            transparent,
 
-        &:hover,
-        &:focus,
-        &:active {
-            color: rgba(255, 255, 255, 0.5);
-            border: 1px solid transparent;
-        }
+            rgba(white, 0.5),
+            lighten(#BD10E0, 5),
+            transparent,
+
+            rgba(white, 0.5),
+            darken(#BD10E0, 5),
+            transparent
+        );
     }
 
     .header {
@@ -28,7 +31,7 @@
 
         .second-header {
             padding-top: 135px;
-            padding-bottom: 75px; 
+            padding-bottom: 75px;
 
             .second-header-content {
                 h1  {
@@ -102,9 +105,9 @@
                     }
 
                     &.tandem-1 {
-                        border: 1px solid #4A90E2; 
+                        border: 1px solid #4A90E2;
 
-                        &:hover, 
+                        &:hover,
                         &:focus,
                         &.active {
                             background-color: #4A90E2;
@@ -115,7 +118,7 @@
                     &.tandem-2 {
                         border: 1px solid #2DC08D;
 
-                        &:hover, 
+                        &:hover,
                         &:focus,
                         &.active {
                             background-color: #2DC08D;
@@ -128,7 +131,7 @@
             .abillities-rect {
                 display: inline-block;
                 height: 120px;
-                width: 120px;   
+                width: 120px;
                 margin-right: 20px;
                 margin-bottom: 20px;
                 border-radius: 5px;
@@ -194,7 +197,7 @@
 
         .step-circle {
             height: 160px;
-            width: 160px; 
+            width: 160px;
             border-radius: 100%;
             background-repeat: no-repeat;
             background-position: center;
@@ -205,7 +208,7 @@
             .step-circle {
                 background-color: #accedf;
                 background-image: url(/img/landing-pages/tandem/step-1.png);
-                background-image: 
+                background-image:
                     -webkit-image-set( url(/img/landing-pages/tandem/step-1.png) 1x, url(/img/landing-pages/tandem/step-1@2x.png) 2x);
                 background-image:
                     image-set( url(/img/landing-pages/tandem/step-1.png) 1x, url(/img/landing-pages/tandem/step-1@2x.png) 2x);
@@ -216,7 +219,7 @@
             .step-circle {
                 background-color: #d5e6ef;
                 background-image: url(/img/landing-pages/tandem/step-2.png);
-                background-image: 
+                background-image:
                     -webkit-image-set( url(/img/landing-pages/tandem/step-2.png) 1x, url(/img/landing-pages/tandem/step-2@2x.png) 2x);
                 background-image:
                     image-set( url(/img/landing-pages/tandem/step-2.png) 1x, url(/img/landing-pages/tandem/step-2@2x.png) 2x);
@@ -227,7 +230,7 @@
             .step-circle {
                 background-color: #fff;
                 background-image: url(/img/landing-pages/tandem/step-3.png);
-                background-image: 
+                background-image:
                     -webkit-image-set( url(/img/landing-pages/tandem/step-3.png) 1x, url(/img/landing-pages/tandem/step-3@2x.png) 2x);
                 background-image:
                     image-set( url(/img/landing-pages/tandem/step-3.png) 1x, url(/img/landing-pages/tandem/step-3@2x.png) 2x);
@@ -267,7 +270,7 @@
 
     .call-to-action {
         background-image: url(/img/landing-pages/tandem/footer.png);
-        background-image: 
+        background-image:
             -webkit-image-set( url(/img/landing-pages/tandem/footer.png) 1x, url(/img/landing-pages/tandem/footer@2x.png) 2x);
         background-image:
             image-set( url(/img/landing-pages/tandem/footer.png) 1x, url(/img/landing-pages/tandem/footer@2x.png) 2x);
@@ -280,12 +283,6 @@
 
         h3 {
             font-size: 16px;
-        }
-
-        .btn {
-            font-size: 16px;
-            background-color: #BD10E0;
-            color: #fff;   
         }
 
         .caption {
