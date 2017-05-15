@@ -30,8 +30,9 @@
         }
 
         .second-header {
+            min-height: 100vh;
             padding-top: 135px;
-            padding-bottom: 75px;
+            margin-bottom: 70px;
 
             .second-header-content {
                 h1  {
@@ -45,25 +46,26 @@
                 }
             }
 
+            img.hero-image {
+                transform: translateY(70px);
+                margin-top: -40px;
+            }
+
             & > .second-header-content {
                 max-width: 700px;
                 margin: auto;
             }
 
-            img {
-                max-width: 100%;
-                height: auto;
-            }
+        }
+        .collaboration {
+            color: #333;
+            font-size: 19px;
+            font-weight: 300;
+            font-family: Roboto;
 
-            .collaboration {
-                color: #333;
-                font-size: 19px;
-                font-weight: 300;
-                font-family: Roboto;
-
-                .tandem-logo {
-                    margin-top: -5px;
-                }
+            img.tandem-logo {
+                vertical-align: -12px;
+                margin-left: -1px;
             }
         }
     }
@@ -170,7 +172,9 @@
 
     .how-to-create {
         background-color: #2D86B2;
-        padding: 60px 0;
+
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         h2 {
             color: #fff;
@@ -336,6 +340,9 @@
             }
 
             .inner-text {
+                margin-left: 0;
+                padding-left: 0;
+                padding-right: 0;
                 text-align: center;
 
                 hr {
