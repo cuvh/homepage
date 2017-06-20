@@ -1,0 +1,181 @@
+---
+title: "Get Enhancv button for your site"
+description: "Our mission is to help talented people unleash their full potential by giving them the opportunity to create resumes that show who they really are."
+---
+
+<div class="widget-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h1>Spend time interviewing only the right people</h1>
+                <p>Enhancv's format highlights applicants' achievements and personality within an informative design that enables you to make faster and better decisions. Place an Enhancv button on your job page and encourage applicants to create a resume you would love.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 widget-header-image">
+                <img src="https://i.imgur.com/QbAG56R.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="code-generator">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5">
+                <h2>Generate button</h2>
+                <div class="widget-generate">
+                    <div class="row radio-button-group">
+                        <div class="col-xs-5">
+                            Button type
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button checked"
+                             data-name="type"
+                             data-value="standard"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="standard">
+                                Standard
+                            </span>
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button"
+                             data-name="type"
+                             data-value="compact"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="compact">
+                                Compact
+                            </span>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                    <div class="row radio-button-group">
+                        <div class="col-xs-5">
+                            Wording
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button checked"
+                             data-name="wording"
+                             data-value="resume"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="resume">
+                                Resume
+                            </span>
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button"
+                             data-name="wording"
+                             data-value="cv"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="cv">
+                                CV
+                            </span>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                    <div class="row radio-button-group">
+                        <div class="col-xs-5">
+                            Style
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button checked"
+                             data-name="style"
+                             data-value="light"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="light">
+                                Light
+                            </span>
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button"
+                             data-name="style"
+                             data-value="dark"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="dark">
+                                Dark
+                            </span>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                    <div class="row radio-button-group">
+                        <div class="col-xs-5">
+                            Standard text
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button checked"
+                             data-name="text"
+                             data-value="default"></div>
+
+                            <span
+                             class="radio-button-label"
+                             data-for-value="default">
+                                Default
+                            </span>
+                        </div>
+                        <div class="col-xs-3">
+                            <div
+                             class="radio-button"
+                             show-custom-text-textarea
+                             data-name="text"
+                             data-value="custom"></div>
+
+                            <span
+                             class="radio-button-label"
+                             show-custom-text-textarea
+                             data-for-value="custom">
+                                Custom
+                            </span>
+                        </div>
+                        <div class="col-xs-1"></div>
+                    </div>
+                </div>
+
+                <textarea
+                 class="widget-custom-text hidden"
+                 placeholder="We'd love to see both your achievements and personality"></textarea>
+
+                <button
+                 class="btn btn-primary col-xs-12 widget-generate-button">
+                    Generate Button
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-7">
+                <h2>Preview</h2>
+                <div class="widget-preview-container" id="enhancv-widget">
+                </div>
+
+                <div id="copy-code-wrapper" class="hidden">
+                    <h2>Code</h2>
+                    <textarea class="widget-code" id="widget-code" readonly="readonly"></textarea>
+                    <button class="btn btn-default pull-right">
+                        Copy Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{>testimonials}}
+
+<script>
+// default preview
+!function(e,n){"undefined"==typeof e[n]&&(e[n]={}),e[n]={type:"standard",wording:"resume",style:"light",element:"#enhancv-widget"}}(window,"ENHANCV_WIDGET_OPTIONS");
+</script>
+<script src="https://enhancv.com/widgets/index.js"></script>

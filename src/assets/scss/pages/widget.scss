@@ -1,0 +1,73 @@
+.widget-header {
+    background-color: $brand-primary;
+    padding-top: 50px;
+    color: #fff;
+
+    img {
+        max-width: 100%;
+    }
+
+    .widget-header-image {
+        text-align: center;
+    }
+
+    @media(min-width: $screen-lg) {
+        h1 {
+            margin-top: 80px;
+        }
+    }
+}
+
+.widget-generate-button {
+    margin-bottom: 10px;
+}
+
+.widget-preview-container {
+    width: 100%;
+    padding: 50px 40px;
+    text-align: center;
+    background: $gray-lighter;
+    border-radius: $border-radius-large;
+}
+
+.widget-generate, .widget-custom-text {
+    padding: 5px;
+    border: 1px solid $gray-lighter;
+    border-radius: $border-radius-large;
+}
+
+.widget-generate {
+    color: $gray-light;
+    margin-bottom: 10px;
+
+    .row {
+        margin: 10px 0;
+    }
+}
+
+.widget-custom-text {
+    width: 100%;
+    resize: none;
+    padding: 15px 20px;
+    margin-bottom: 5px;
+}
+
+.widget-code {
+    width: 100%;
+    min-height: 120px;
+    margin: 10px 0;
+    resize: none;
+    padding: 15px;
+    color: $gray-light;
+    background: $code-color;
+    border-radius: $border-radius-large;
+    border: 0px;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.code-generator {
+    padding: 50px 0;
+}
