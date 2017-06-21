@@ -30,8 +30,15 @@ window.addEventListener('load', function () {
 
         $('#widget-code').val(
             '<script>!function(e,n){"undefined"==typeof e[n]&&(e[n]={}),e[n]=' + JSON.stringify(finalJSON) + '}(window,"ENHANCV_WIDGET_OPTIONS");<\/script>' + 
-            '<div id="enhancv-widget"></div><script src="https://enhancv.com/widgets/index.js"></script>'
+            '<div id="enhancv-widget"></div><script src="https://enhancv.com/widgets/button.js"></script>'
         );
+
+        if (finalJSON.style === 'dark') {
+            $('.widget-preview-container').addClass('dark');
+        } else {
+            $('.widget-preview-container').removeClass('dark');
+        }
+
         $('#copy-code-wrapper').removeClass('hidden');
     });
 });

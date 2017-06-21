@@ -24,8 +24,12 @@
     width: 100%;
     padding: 50px 40px;
     text-align: center;
-    background: $gray-lighter;
     border-radius: $border-radius-large;
+    background: $gray-lighter;
+
+    &.dark {
+        background: $dark-color;
+    }
 }
 
 .widget-generate, .widget-custom-text {
