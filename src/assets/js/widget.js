@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
         $('[data-for-value="custom"]').click();
     });
 
-    $(document).on('click', '.widget-generate-button', function () {
+    $(document).on('click', '.radio-button,.radio-button-label', function () {
         var output = {};
         $('.radio-button-group').each(function () {
             var key = $(this).find('.radio-button').first().data('name');
