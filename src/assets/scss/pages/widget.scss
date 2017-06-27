@@ -30,6 +30,10 @@
     &.dark {
         background: $dark-color;
     }
+
+    @media (max-width: 630px) {
+        padding: 10px !important;
+    }
 }
 
 .widget-generate, .widget-custom-text {
