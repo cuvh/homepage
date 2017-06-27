@@ -20,6 +20,7 @@
     margin-top: -81px;
     z-index: $zindex-navbar;
 }
+
 .navbar.navbar-sticky:after {
     position: absolute;
     height: 10px;
@@ -29,11 +30,20 @@
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
+
 .navbar.navbar-sticky.navbar-stick:after {
     opacity: 1;
 }
-.navbar a {
-    outline: none;
+
+.navbar {
+    > li > a {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+    
+    a {
+        outline: none;
+    }
 }
 
 body.with-sticky-navbar {
