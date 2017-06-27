@@ -49,6 +49,12 @@
     .row {
         margin: 10px 0;
     }
+
+    @media (max-width: 500px) {
+        .radio-button-label {
+            display: block;
+        }
+    }
 }
 
 .widget-custom-text {
