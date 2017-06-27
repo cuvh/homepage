@@ -7,7 +7,7 @@ window.addEventListener('load', function () {
         $('[data-for-value="custom"]').click();
     });
 
-    $(document).on('click', '.radio-button,.radio-button-label', function () {
+    function onChange () {
         var output = {};
         $('.radio-button-group').each(function () {
             var key = $(this).find('.radio-button').first().data('name');
@@ -40,5 +40,8 @@ window.addEventListener('load', function () {
         }
 
         $('#copy-code-wrapper').removeClass('hidden');
-    });
+    }
+
+    $(document).on('click', '.radio-button,.radio-button-label', onChange);
+    $(document).on('blur', '.widget-custom-text', onChange);
 });

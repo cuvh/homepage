@@ -28,4 +28,6 @@ $radio-button-size: 14px;
 
 .radio-button-label {
 	cursor: pointer;
+    position: relative;
+    top: -1px;
 }
