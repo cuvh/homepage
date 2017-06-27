@@ -35,15 +35,15 @@
     opacity: 1;
 }
 
-.navbar {
+.nav.navbar-nav {
     > li > a {
         padding-left: 14px;
         padding-right: 14px;
     }
-    
-    a {
-        outline: none;
-    }
+}
+
+.navbar a {
+    outline: none;
 }
 
 body.with-sticky-navbar {
