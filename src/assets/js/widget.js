@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+(function() {
     var maxLength = 90;
 
     $(document).on("keyup keydown", ".widget-custom-text", function() {
@@ -17,10 +17,6 @@ window.addEventListener("load", function() {
         $(".widget-custom-text-container").removeClass("hidden");
         $(".widget-custom-text-container textarea").focus();
     });
-
-    // $(".widget-custom-text").focus(function() {
-    //     $('[data-for-value="custom"]').click();
-    // });
 
     function onChange() {
         var output = {};
@@ -63,4 +59,4 @@ window.addEventListener("load", function() {
     $(document).on("blur keydown keyup", ".widget-custom-text", onChange);
 
     onChange();
-});
+})();
