@@ -116,5 +116,15 @@
     color: #363636;
     font-size: 15px;
     position: relative;
-    top: -1px;
+    left: -10px;
+}
+
+.widget-disabled {
+    background: rgba(255, 255, 255, 0.70);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
 }

@@ -1,5 +1,5 @@
 (function() {
-    var maxLength = 90;
+    var maxLength = 70;
 
     $(document).on("keyup keydown", ".widget-custom-text", function() {
         var remaining = maxLength - $(this).val().length;
@@ -14,19 +14,38 @@
     });
 
     $("[show-custom-text-textarea]").click(function() {
-        $(".widget-custom-text-container").removeClass("hidden");
-        $(".widget-custom-text-container textarea").focus();
+        setTimeout(function() {
+            $(".widget-custom-text-container textarea").focus();
+        });
     });
 
     function onChange() {
         var output = {};
         $(".radio-button-group").each(function() {
             var key = $(this).find(".radio-button").first().data("name");
-            var value = $(this).find(".radio-button.checked").data("value");
+            var value = $(this).find(".checked").data("value");
             output[key] = value;
         });
 
         var labelText = output.text === "custom" ? $(".widget-custom-text").val() : undefined;
+
+        if (output.style === "dark") {
+            $(".widget-preview-container").addClass("dark");
+        } else {
+            $(".widget-preview-container").removeClass("dark");
+        }
+
+        if (output.type === "compact") {
+            $(".disabled-on-compact").removeClass("hidden");
+        } else {
+            $(".disabled-on-compact").addClass("hidden");
+        }
+
+        if (output.text !== "custom" || output.type === "compact") {
+            $(".widget-custom-text-container").addClass("hidden");
+        } else {
+            $(".widget-custom-text-container").removeClass("hidden");
+        }
 
         var finalJSON = {
             type: output.type,
@@ -45,12 +64,6 @@
                 '}(window,"ENHANCV_WIDGET_OPTIONS");</script>' +
                 '<div id="enhancv-widget"></div><script src="https://enhancv.com/widgets/button.js"></script>'
         );
-
-        if (finalJSON.style === "dark") {
-            $(".widget-preview-container").addClass("dark");
-        } else {
-            $(".widget-preview-container").removeClass("dark");
-        }
 
         $("#copy-code-wrapper").removeClass("hidden");
     }
