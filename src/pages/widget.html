@@ -50,7 +50,8 @@ description: "Our mission is to help talented people unleash their full potentia
                                 Compact
                             </span>
                         </div>
-                        <div class="col-xs-1"></div>
+                        <div class="col-xs-1">
+                        </div>
                     </div>
                     <div class="row radio-button-group">
                         <div class="col-xs-5">
@@ -114,7 +115,7 @@ description: "Our mission is to help talented people unleash their full potentia
                     </div>
                     <div class="row radio-button-group">
                         <div class="col-xs-5">
-                            Standard text
+                            Text
                         </div>
                         <div class="col-xs-3">
                             <div
@@ -142,13 +143,25 @@ description: "Our mission is to help talented people unleash their full potentia
                                 Custom
                             </span>
                         </div>
-                        <div class="col-xs-1"></div>
+                        <div class="col-xs-1">
+                            <div
+                             class="icon icon-info-circle widget-info-circle hidden-xs"
+                             data-container="body"
+                             data-toggle="tooltip"
+                             data-placement="top"
+                             title="You can tailor a message to your applicants or ask them to include specific sections, e.g. “We'd love to learn how a day of your life looks like”."></div>
+                        </div>
                     </div>
                 </div>
 
-                <textarea
-                 class="widget-custom-text hidden"
-                 placeholder="We'd love to see both your achievements and personality"></textarea>
+                <div class="widget-custom-text-container hidden">
+                    <textarea
+                     class="widget-custom-text"
+                     placeholder="Enter your custom text"
+                     maxLength="90"></textarea>
+
+                    <span class="widget-custom-counter">90</span>
+                </div>
 
                 <!--<button
                  class="btn btn-primary col-xs-12 widget-generate-button">

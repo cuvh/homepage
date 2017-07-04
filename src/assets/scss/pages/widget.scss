@@ -40,7 +40,8 @@
     }
 }
 
-.widget-generate, .widget-custom-text {
+.widget-generate,
+.widget-custom-text {
     padding: 5px;
     border: 1px solid $gray-lighter;
     border-radius: $border-radius-large;
@@ -92,4 +93,28 @@
 
 .code-generator {
     padding: 50px 0;
+}
+
+.widget-custom-text-container {
+    position: relative;
+}
+
+.widget-custom-counter {
+    position: absolute;
+    z-index: 1;
+    bottom: 12px;
+    right: 5px;
+    font-size: 12px;
+
+    &.red {
+        color: red;
+    }
+}
+
+.widget-info-circle {
+    display: inline-block;
+    color: #363636;
+    font-size: 15px;
+    position: relative;
+    top: -1px;
 }
