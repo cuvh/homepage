@@ -5,6 +5,7 @@ const del = require("del");
 const browser = require("browser-sync");
 const dotenv = require("dotenv");
 const imageminMozjpeg = require("imagemin-mozjpeg");
+const imageminPngquant = require("imagemin-pngquant");
 
 dotenv.config({ silent: true });
 
@@ -58,7 +59,7 @@ function images() {
                     [
                         $.imagemin.gifsicle({ interlaced: true }),
                         imageminMozjpeg({ progressive: true, quality: 97 }),
-                        $.imagemin.optipng({ optimizationLevel: 10 }),
+                        imageminPngquant({ quality: 97 }),
                         $.imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
                     ],
                     {
