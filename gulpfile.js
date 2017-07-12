@@ -5,6 +5,7 @@ const del = require("del");
 const browser = require("browser-sync");
 const dotenv = require("dotenv");
 const imagemin = require("gulp-imagemin");
+const imageminMozjpeg = require("imagemin-mozjpeg");
 const htmlmin = require("gulp-htmlmin");
 
 dotenv.config({ silent: true });
@@ -50,7 +51,23 @@ function pages() {
 
 // Copy and compress images
 function images() {
-    return gulp.src("src/assets/img/**/*").pipe(imagemin()).pipe(gulp.dest("./dist/img"));
+    return gulp
+        .src("src/assets/img/**/*")
+        .pipe(
+            imagemin(
+                [
+                    imagemin.gifsicle({ interlaced: true }),
+                    // imagemin.jpegtran({ progressive: true }),
+                    imageminMozjpeg({ progressive: true, quality: 90 }),
+                    imagemin.optipng({ optimizationLevel: 10 }),
+                    imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
+                ],
+                {
+                    verbose: true,
+                }
+            )
+        )
+        .pipe(gulp.dest("./dist/img"));
 }
 
 function fonts() {
