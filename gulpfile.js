@@ -58,7 +58,7 @@ function images() {
                 $.imagemin(
                     [
                         $.imagemin.gifsicle({ interlaced: true }),
-                        imageminMozjpeg({ progressive: true, quality: 97 }),
+                        imageminMozjpeg({ progressive: true, quality: 91 }),
                         imageminPngquant({ quality: 97 }),
                         $.imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
                     ],
