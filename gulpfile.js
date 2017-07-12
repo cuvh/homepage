@@ -58,7 +58,7 @@ function images() {
                 [
                     imagemin.gifsicle({ interlaced: true }),
                     // imagemin.jpegtran({ progressive: true }),
-                    imageminMozjpeg({ progressive: true, quality: 90 }),
+                    imageminMozjpeg({ progressive: true, quality: 97 }),
                     imagemin.optipng({ optimizationLevel: 10 }),
                     imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
                 ],
