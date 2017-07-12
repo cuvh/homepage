@@ -12,6 +12,8 @@ dotenv.config({ silent: true });
 const $ = plugins();
 const isProd = process.env.NODE_ENV === "production";
 
+console.log(`production: ${isProd}`);
+
 gulp.task("assemble", gulp.series(clean, pages, images, fonts, sass, icons, javascript));
 gulp.task("build", gulp.series("assemble", revisionFiles));
 gulp.task("default", gulp.series("assemble", server, watch));
