@@ -4,9 +4,7 @@ const plugins = require("gulp-load-plugins");
 const del = require("del");
 const browser = require("browser-sync");
 const dotenv = require("dotenv");
-const imagemin = require("gulp-imagemin");
 const imageminMozjpeg = require("imagemin-mozjpeg");
-const htmlmin = require("gulp-htmlmin");
 
 dotenv.config({ silent: true });
 
@@ -45,7 +43,7 @@ function pages() {
                 data: "src/data/",
             })
         )
-        .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+        .pipe($.htmlmin({ collapseWhitespace: true, removeComments: true }))
         .pipe(gulp.dest("dist"));
 }
 
@@ -54,17 +52,19 @@ function images() {
     return gulp
         .src("src/assets/img/**/*")
         .pipe(
-            imagemin(
-                [
-                    imagemin.gifsicle({ interlaced: true }),
-                    // imagemin.jpegtran({ progressive: true }),
-                    imageminMozjpeg({ progressive: true, quality: 97 }),
-                    imagemin.optipng({ optimizationLevel: 10 }),
-                    imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
-                ],
-                {
-                    verbose: true,
-                }
+            $.if(
+                isProd,
+                $.imagemin(
+                    [
+                        $.imagemin.gifsicle({ interlaced: true }),
+                        imageminMozjpeg({ progressive: true, quality: 97 }),
+                        $.imagemin.optipng({ optimizationLevel: 10 }),
+                        $.imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
+                    ],
+                    {
+                        verbose: true,
+                    }
+                )
             )
         )
         .pipe(gulp.dest("./dist/img"));

@@ -83,7 +83,7 @@
     overflow: visible;
     margin-bottom: 70px;
     z-index: 1;
-    box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dating-resume {
@@ -92,7 +92,7 @@
     background: linear-gradient(180deg, $brand-primary 0%, #FFFFFF 100%);
 
     .dating-resume-lines {
-        background: url(/img/homepage/lines-bg.png);
+        //    background: url(/img/homepage/lines-bg.png);
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
@@ -113,7 +113,6 @@
 }
 
 .dating-resume-bio {
-
     h2.top-lg {
         font-family: Roboto;
         font-size: 27px;
@@ -137,7 +136,7 @@
         margin-top: -20px;
         background-color: $inverse-color;
         padding: 40px;
-        box-shadow: 0 2px 30px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
         font-size: 16px;
         line-height: 19px;
     }
@@ -282,7 +281,7 @@ ul.snake-time-events {
     top: 10px;
     width: 4px;
     height: 4px;
-    margin-left:  -3px;
+    margin-left: -3px;
     background-color: white;
     border-radius: 2px;
     animation: mouse-wheel 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;

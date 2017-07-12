@@ -4,7 +4,7 @@
     background: linear-gradient(180deg, #FFFFFF 0%, $brand-primary 50%);
 
     .homepage-lines {
-        background: url(/img/homepage/lines-bg.png);
+        //    background: url(/img/homepage/lines-bg.png);
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
@@ -51,16 +51,15 @@
     overflow: visible;
     margin-bottom: -100px;
     z-index: 1;
-    box-shadow: 0 10px 100px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.2);
 }
 
 .homepage-new-features {
     margin-top: 190px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216,216,216,0.4) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
 }
 
 .homepage-features {
-
     .item-bg {
         background-image: url(/img/homepage/macbook.svg);
         background-size: 122%;
@@ -133,5 +132,4 @@
         flex-direction: column;
         justify-content: center;
     }
-
 }
