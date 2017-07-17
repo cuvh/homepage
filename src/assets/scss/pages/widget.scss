@@ -1,22 +1,106 @@
 .widget-header {
+    padding-top: 320px;
+    @media (max-width: 630px) {
+        padding-top: 120px;
+    }
+
+    padding-bottom: 120px;
+    color: white;
+    background: linear-gradient(180deg, rgba($brand-primary, 0.4) 0%, $brand-primary 100%),
+        url(/img/widget/header.png);
+    background: linear-gradient(180deg, rgba($brand-primary, 0.4) 0%, $brand-primary 100%),
+        url(/img/widget/header.png);
+    background: linear-gradient(180deg, rgba($brand-primary, 0.4) 0%, $brand-primary 100%),
+        url(/img/widget/header.png);
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+.widget-resume {
+    h2 {
+        line-height: 1.23;
+    }
+
+    .bullets-panel {
+        @media (min-width: 1200px) {
+            padding-top: 110px !important;
+        }
+    }
+
+    .widget-resume-image-wrapper {
+        display: inline-block;
+        position: relative;
+    }
+
+    .widget-resume-bullet {
+        margin-top: 20px;
+    }
+
+    .circle {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        background-color: $brand-primary;
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .positioned-circle {
+        position: absolute;
+    }
+
+    .widget-resume-bullets-text {
+        display: inline;
+        font-size: 19px;
+        font-weight: 300;
+        margin-left: 16px;
+    }
+
+    .line {
+        height: 1px;
+        width: 40px;
+        background: #B3B3B3;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.widget-screen {
     background-color: $brand-primary;
     padding-top: 50px;
     color: #fff;
 
     img {
         max-width: 100%;
-
-        @media (min-width: 992px) and (max-width: 1199px) {
-            margin-top: 63px;
-        }
     }
 
     p {
         margin-top: 20px;
     }
 
-    .widget-header-image {
+    .widget-screen-image {
         text-align: center;
+        padding-top: 30px;
+    }
+
+    .widget-screen-text {
+        padding: 50px;
+        padding-top: 65px;
+    }
+
+    .widget-screen-mobile-text {
+        margin-bottom: 60px;
     }
 }
 
