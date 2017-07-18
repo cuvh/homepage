@@ -19,6 +19,14 @@
         });
     });
 
+    $(document).on('click', '.scroll-down', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 60
+        }, 500);
+    });
+
     function onChange() {
         var output = {};
         $(".radio-button-group").each(function() {
