@@ -37,6 +37,7 @@
 @import "pages/tandem";
 @import "pages/text-page";
 @import "pages/404";
+@import "pages/widget";
 
 // partials
 @import "partials/footer";
@@ -47,3 +48,5 @@
 @import "partials/tweets";
 @import "partials/as-seen";
 @import "partials/dating-footer";
+
+@import "../icons/styles.css";
