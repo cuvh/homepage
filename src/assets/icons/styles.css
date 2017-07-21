@@ -71,3 +71,9 @@
 .icon-info-circle:before {
   content: "\6a";
 }
+.icon-circle-o:before {
+  content: "\6c";
+}
+.icon-angle-down:before {
+  content: "\6d";
+}
