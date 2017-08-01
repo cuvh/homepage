@@ -1,0 +1,116 @@
+.career-page {
+    .career-header {
+        padding-top: 320px;
+        @media (max-width: 630px) {
+            padding-top: 120px;
+        }
+
+        padding-bottom: 40px;
+        color: white;
+        background: 
+         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+         url(/img/career/header.jpg);
+        background:
+         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+         -webkit-image-set( url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
+        background:
+         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+         image-set( url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
+        background-size: cover;
+        background-position: center;
+
+        h1 {
+            font-size: 42px;
+        }
+
+        .scroll-down {
+            width: 40px;
+            height: 40px;
+            margin: auto;
+            display: block;
+            margin-top: 25px;
+            animation: bounce 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+
+            i {
+                color: #fff;
+                font-size: 26px;
+            }
+        }
+    }
+
+    .btn {
+        border-radius: 5px;
+    }
+
+    .jobs-list {
+        padding: 32px;
+
+        .h5 {
+            margin-bottom: 32px;
+        }
+
+        .main-text {
+            font-size: 19px;
+            line-height: 23px;
+            font-weight: 300;
+        }
+
+        .secondary-text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .list-group {
+            margin-bottom: 0;
+
+            .list-group-item {
+                display: flex;
+                align-items: center;
+
+                .secondary-text {
+                    color: #808080;
+                }
+            }
+        }
+
+        .info-group {
+            margin-top: 48px;
+
+            .main-text {
+                margin-bottom: 24px;
+            }
+
+            .btn-muted {
+                margin-top: 16px;
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .jobs-list {
+            .list-group {
+                .list-group-item {
+                    .main-text {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+
+                    .secondary-text {
+                        font-size: 12px;
+                    }
+
+                    .btn {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .career-header {
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+}
