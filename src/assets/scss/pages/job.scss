@@ -1,4 +1,7 @@
 .job {
+    padding-top: 56px;
+    padding-bottom: 56px;
+
     h1 {
         margin-bottom: 16px;
         font-weight: 300;
@@ -43,6 +46,20 @@
 
         .form-group {
             margin-bottom: 24px;
+        }
+    }
+    
+    .go-back {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 56px;
+
+        i {
+            font-size: 24px;
+
+            &:before {
+                font-size: 20px;
+            }
         }
     }
     
