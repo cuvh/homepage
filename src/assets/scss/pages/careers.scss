@@ -84,6 +84,21 @@
                 margin-top: 16px;
                 margin-bottom: 48px;
             }
+
+            .member-thumb {
+                width: 72px;
+                height: 72px;
+                padding: 0;
+                display: inline-block;
+                margin-left: -10px;
+                margin-bottom: 24px;
+
+                @media (max-width: $screen-xs-min) {
+                    &.hide-xs-min {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 
