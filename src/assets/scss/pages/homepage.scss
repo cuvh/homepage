@@ -138,223 +138,233 @@
 
 .homepage.new {
     .homepage-intro {
-    position: relative;
-    padding-top: 30px;
-    background: linear-gradient(180deg, #FFFFFF 0%, $brand-primary 50%);
+        position: relative;
+        padding-top: 30px;
+        background: linear-gradient(180deg, #FFFFFF 0%, $brand-primary 50%);
 
-    .homepage-lines {
-        //    background: url(/img/homepage/lines-bg.png);
-        background-size: contain;
-        background-position: top;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin-top: 50px;
-        height: 100%;
+        .homepage-lines {
+            //    background: url(/img/homepage/lines-bg.png);
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin-top: 50px;
+            height: 100%;
+        }
+        .container {
+            position: relative;
+        }
     }
-    .container {
+    .homepage-tips {
+        position: relative;
+        background: $brand-primary;
+    }
+    .homepage-tips > .container {
         position: relative;
     }
-}
-.homepage-tips {
-    position: relative;
-    background: $brand-primary;
-}
-.homepage-tips > .container {
-    position: relative;
-}
 
-.embed-responsive-homepage-video {
-    background-image: url(/img/homepage/macbook.svg);
-    background-size: cover;
-    padding-bottom: 58%;
-}
-
-@media screen and (min-width: $screen-sm-min) {
     .embed-responsive-homepage-video {
-        margin-left: 5.5%;
-        margin-right: 5.5%;
-        padding-bottom: 52%;
+        background-image: url(/img/homepage/macbook.svg);
+        background-size: cover;
+        padding-bottom: 58%;
     }
-}
 
-.embed-responsive-wrapper {
-    position: relative;
-    top: 80px;
-}
-
-.embed-responsive-homepage-video .embed-responsive {
-    margin: 4% 12.35% 0 12.35%;
-    padding-bottom: 47.4%;
-}
-
-.embed-responsive-homepage-tips {
-    padding-bottom: 91.91374663%;
-    overflow: visible;
-    margin-bottom: 0;
-    z-index: 1;
-    box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
-
-    @media (max-width: $screen-xs-max) {
-        margin-top: 200px;
-    }
-}
-
-.homepage-new-features {
-    margin-top: 50px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
-}
-
-.who-are-you {
-    margin-top: 80px;
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
-    overflow: hidden;
-
-    .row {
-        margin-top: 100px;
-
-        @media (max-width: $screen-xs-max) {
-            margin-top: 60px;
+    @media screen and (min-width: $screen-sm-min) {
+        .embed-responsive-homepage-video {
+            margin-left: 5.5%;
+            margin-right: 5.5%;
+            padding-bottom: 52%;
         }
     }
 
-    .embed-responsive-state {
+    .embed-responsive-wrapper {
+        position: relative;
+        top: 80px;
+    }
+
+    .embed-responsive-homepage-video .embed-responsive {
+        margin: 4% 12.35% 0 12.35%;
+        padding-bottom: 47.4%;
+    }
+
+    .embed-responsive-homepage-tips {
         padding-bottom: 91.91374663%;
         overflow: visible;
         margin-bottom: 0;
         z-index: 1;
         box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
+
+        @media (max-width: $screen-xs-max) {
+            margin-top: 200px;
+        }
     }
 
-    @media (min-width: $screen-sm-min) {
-        .select-state {
-            padding: 20px;
-            max-width: 314px;
-            cursor: pointer;
-            border: 1px solid transparent;
+    .homepage-new-features {
+        margin-top: 50px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
 
-            h3 {
-                margin-top: 0;
-            }
+        .new-badge {
+            position: absolute;
+            top: -50px;
+            left: 70%;
 
-            p {
-                margin: 0;
-            }
-
-            &.active {
-                color: $brand-primary;
-                border: 1px solid $brand-primary;
-                border-radius: 5px;
+            @media (max-width: $screen-xs-min) {
+                transform: scale(0.6);
             }
         }
     }
 
-    @media(max-width: $screen-xs-max) {
-        .select-state:not(.active) {
-            display: none;
-        }
+    .who-are-you {
+        margin-top: 80px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
+        overflow: hidden;
 
-        .carousel-indicators {
-            padding: 0;
-            margin: 20px 0 20px 0;
-            position: static;
-            width: auto;
-        }
-    }
-}
-
-.tips {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
-    overflow: hidden;
-
-    @media(min-width: $screen-sm-min) {
         .row {
-            position: relative;
+            margin-top: 100px;
 
-            .right-content {
-                position: absolute;
-                top: 50%;
-                right: 0;
-                transform: translateY(-50%);
+            @media (max-width: $screen-xs-max) {
+                margin-top: 60px;
+            }
+        }
+
+        .embed-responsive-state {
+            padding-bottom: 91.91374663%;
+            overflow: visible;
+            margin-bottom: 0;
+            z-index: 1;
+            box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        @media (min-width: $screen-sm-min) {
+            .select-state {
+                padding: 20px;
+                max-width: 314px;
+                cursor: pointer;
+                border: 1px solid transparent;
+
+                h3 {
+                    margin-top: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                &.active {
+                    color: $brand-primary;
+                    border: 1px solid $brand-primary;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        @media(max-width: $screen-xs-max) {
+            .select-state:not(.active) {
+                display: none;
+            }
+
+            .carousel-indicators {
+                padding: 0;
+                margin: 20px 0 20px 0;
+                position: static;
+                width: auto;
             }
         }
     }
-}
 
-.homepage-features {
-    .item-bg {
-        background-image: url(/img/homepage/macbook.svg);
-        background-size: 122%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        padding: 5.2% 4.2% 0 4.2%;
+    .tips {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(216, 216, 216, 0.4) 100%);
+        overflow: hidden;
+
+        @media(min-width: $screen-sm-min) {
+            .row {
+                position: relative;
+
+                .right-content {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
     }
 
-    @media screen and (min-width: $screen-sm-min) {
-        .carousel-control {
-            color: $text-color;
-            border-color: $border-color;
+    .homepage-features {
+        .item-bg {
+            background-image: url(/img/homepage/macbook.svg);
+            background-size: 122%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            padding: 5.2% 4.2% 0 4.2%;
+        }
 
-            &:hover,
-            &:focus {
-                background-color: rgba($border-color, 0.2);
+        @media screen and (min-width: $screen-sm-min) {
+            .carousel-control {
                 color: $text-color;
+                border-color: $border-color;
+
+                &:hover,
+                &:focus {
+                    background-color: rgba($border-color, 0.2);
+                    color: $text-color;
+                }
             }
         }
     }
-}
 
-.homepage-quotes {
-    background-color: $brand-primary;
+    .homepage-quotes {
+        background-color: $brand-primary;
 
-    .author-title {
-        opacity: 0.5;
-    }
-    .carousel-indicators li {
-        background-color: white;
-    }
+        .author-title {
+            opacity: 0.5;
+        }
+        .carousel-indicators li {
+            background-color: white;
+        }
 
-    .quote-content {
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: $screen-sm-min) {
         .quote-content {
-            height: 400px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            .quote-content {
+                height: 400px;
+            }
         }
     }
-}
 
-.homepage-feature-icon {
-    font-size: 30px;
-    color: $brand-primary;
-}
-.homepage-selected-features {
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-.homepage-quotes .carousel-indicators {
-    bottom: 20px;
-}
-
-@media screen and (max-width: $screen-sm) {
-    #features-texts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 130px;
+    .homepage-feature-icon {
+        font-size: 30px;
+        color: $brand-primary;
     }
-    #tip-titles {
-        min-height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .homepage-selected-features {
+        padding-top: 60px;
+        padding-bottom: 120px;
     }
-}
+
+    .homepage-quotes .carousel-indicators {
+        bottom: 20px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        #features-texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 130px;
+        }
+        #tip-titles {
+            min-height: 105px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
