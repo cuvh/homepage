@@ -47,6 +47,20 @@
         .form-group {
             margin-bottom: 24px;
         }
+        
+        .apply-button {
+            text-align: right;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            padding: 40px 20px;
+            border-radius: 0;
+            
+            .apply-button {
+                text-align: left;
+                margin-top: 16px;
+            }
+        }
     }
     
     .go-back {
@@ -68,4 +82,11 @@
             margin-left: 60px;
         }
     }   
+}
+
+.green-block {
+    background-color: $brand-primary;
+    color: #fff;
+    padding-top: 108px;
+    padding-bottom: 108px;
 }

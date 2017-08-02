@@ -1,4 +1,28 @@
 .career-page {
+    .btn-default {
+        border: 1px solid transparent !important;
+
+        &:hover,
+        &:focus {
+            color: $text-color;
+            background-color: rgba(#FFF, 0.6);
+        }
+
+        &:active {
+            color: $text-color;
+            background-color: rgba(#FFF, 0.4);
+            border-color: transparent;
+
+            &:hover,
+            &:focus,
+            &.focus {
+                color: $text-color;
+                background-color: rgba(#FFF, 0.4);
+                border-color: transparent;
+            }
+        }
+    }
+
     .career-header {
         padding-top: 320px;
         @media (max-width: 630px) {
