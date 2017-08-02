@@ -50,4 +50,10 @@ $(function() {
         $(".tandem .abillity-tandem-2").show();
         $(".tandem .abillity-tandem-1").hide();
     });
+
+    $('.who-are-you .select-state, .who-are-you .carousel-indicators li').click(function() {
+        setTimeout(function() {
+            $('.state-view.active [data-toggle="popover"]').first().popover('show');
+        }, 610)
+    });
 });
