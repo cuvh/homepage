@@ -4,11 +4,11 @@
             return;
         }
 
-        if (!validateInput('#message-1', "Don't be shy and share your thoughts with us")) {
+        if (!validateInput('#message-1', "Don't be shy and share your thoughts with us :)")) {
             return;
         }
 
-        if (!validateInput('#message-2', "Don't be shy and share your thoughts with us")) {
+        if (!validateInput('#message-2', "Don't be shy and share your thoughts with us :)")) {
             return;
         }
 
@@ -19,9 +19,13 @@
         var message1 = $('#message-1').val();
         var message2 = $('#message-2').val();
 
+        var question1 = $('#message-1').parent().find('label').text();
+        var question2 = $('#message-2').parent().find('label').text();
+
         var data = {
+            jobTitle: $('#job-title').val(),
             email: $('#email').val(),
-            message: message1 + '\n\n' + message2,
+            message: question1 + '\n' + message1 + '\n\n' + question2 + '\n' + message2,
             file: {}
         };
 
