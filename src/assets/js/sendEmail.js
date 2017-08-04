@@ -35,9 +35,10 @@
 
             $.ajax({
                 method: 'POST',
-                url: 'https://un8y965yv2.execute-api.us-east-1.amazonaws.com/submitform/submit-form',
+                url: 'https://cu6wdvhnai.execute-api.us-east-1.amazonaws.com/dev/submit-form',
                 dataType: 'json',
                 contentType: 'application/json',
+                crossDomain: true,
                 processData: false,
                 data: JSON.stringify(data),
                 success: function(data) {
