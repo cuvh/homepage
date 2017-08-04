@@ -84,6 +84,15 @@
     }   
 }
 
+.modal-body {
+    padding: 32px;
+    p {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+}
+
 .green-block {
     background-color: $brand-primary;
     color: #fff;

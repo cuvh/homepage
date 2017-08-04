@@ -23,7 +23,7 @@ metaImage: "/img/career/share-image.jpg"
                         <strong>The opportunity:</strong>
                     </p>
                     <p>We are now looking for a Head of Marketing to join our team in Dublin. With you joining us, we’d accomplish two of our main goals - rebranding and respectively hitting the US market with a louder and bolder statement. The long term challenge is to fix what we believe is a seriously broken industry - Talent Acquisition, by disrupting both the ancient black &amp; white resume and the dominance of professional networks.  Above all, your work will impact the way people apply for their dream jobs and whether they get them or not.</p>
-                    <p>You would become part of a company that has an experimentation mentality, data driven culture and growth habits. We’ve been featured in almost every major US tech media outreaching journalists from Sofia, Bulgaria. We grow for 5 weeks from 3k to 70k MRR with zero budget. Now we are on the hunt for the next big thing - becoming  job applicants’ one-stop shop for self-marketing &amp; self-discovery.</p>
+                    <p>You would become part of a company that has an experimentation mentality, data-driven culture and growth habits. We’ve been featured in almost every major US tech media outreaching journalists from Sofia, Bulgaria. We grow for 5 weeks from 3k to 70k MRR with zero budget. Now we are on the hunt for the next big thing-becoming job applicants’ one-stop shop for self-marketing &amp; self-discovery.</p>
                     <p>If you want to lead the company’s communication and brand strategy achieving this and you do find yourself in the words below, let’s do it together.</p>
                     <p>
                         <strong>What you’re going to do:</strong>
@@ -53,35 +53,52 @@ metaImage: "/img/career/share-image.jpg"
                             <li>You’re not just used to remote working teams, international traveling and different cultures, but you actually thrive in such environment.</li>
                         </ul>
                     </p>
-                    <p>Enhancv already powers 300 000+ users to land their jobs at companies such as Tesla, Microsoft, Facebook, Google, and Spotify. With your help we’d like to add a few zero’s to that number.</p>
-                    <p class="text-center">Enhancv is an equal opportunities employer.</p>
+                    <p>Enhancv already powers 300 000+ users to land their jobs at companies such as Tesla, Microsoft, Facebook, Google, and Spotify. With your help, we’d like to add a few zero’s to that number.</p>
+                    <p class="text-center">We’re looking forward to receiving your application by 13th of August.<br/><strong>Enhancv is an equal opportunities employer.</strong></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 application-form">
                     <div class="form-group">
-                        <label for="email">Write your E-Mail address</label>
+                        <label for="email">Your email address</label>
                         <input 
                          type="email" 
-                         class="form-control" 
+                         class="form-control"
                          id="email" 
-                         placeholder="We need it so we can contact you">
+                         placeholder="To have it handy when contacting you">
                     </div>
                     <div class="form-group">
-                        <label for="excitement">What makes you excited about working at Enhancv?</label>
+                        <label for="excitement">Why you picked us?</label>
                         <textarea 
-                         class="form-control" 
-                         id="excitement" 
-                         placeholder="Just let it flow"
+                         class="form-control"
+                         id="message-1" 
+                         placeholder="Tell us in your own words"
+                         rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="excitement">Why we should pick you?</label>
+                        <textarea 
+                         class="form-control"
+                         id="message-2" 
+                         placeholder="Tell us in your own words"
                          rows="5"></textarea>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-9">
-                            <button class="btn btn-default right-sm">Attach Resume</button>
-                            <span>vanio_resume_01.pdf</span>
+                            <label 
+                             for="resume" 
+                             class="btn btn-default right-sm">Attach Resume</label>
+                            <span id="resume-name">No resume selected</span>
+                            <input 
+                             type="file" 
+                             value="Attach Resume"
+                             class="hidden"
+                             id="resume" />
                         </div>
                         <div class="col-sm-3 apply-button">
-                            <button class="btn btn-primary btn-padded">Apply</button>
+                            <button 
+                             class="btn btn-primary btn-padded" 
+                             id="send-application">Apply</button>
                         </div>
                     </div>
                 </div>
@@ -114,5 +131,24 @@ metaImage: "/img/career/share-image.jpg"
          class="btn btn-default btn-padded top-sm">
             View here
          </a>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="success-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="modal-title text-muted secondary-text">Success</span>
+          </div>
+          <div class="modal-body text-center">
+            <img 
+             src="img/career/party.png" 
+             width="70" 
+             height="70"
+             class="bottom-lg" />
+            <p>Thank you! We've received your application and we can't wait to go through it! We'll contact you shortly regarding next steps. The Enhancv Team</p>
+          </div>
+        </div>
+      </div>
     </div>            
 </div>
+
