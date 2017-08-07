@@ -64,12 +64,13 @@ var applicationForm = {
                 beforeSend: function() {
                     $('#send-application').disabled(true);
                     $('#send-application').text("Sending...");
-                }
+                },
                 success: function(data) {
                     $('#success-modal').modal();
                 },
-                error: function(data){
-
+                complete: function() {
+                    $('#send-application').disabled(false);
+                    $('#send-application').text("Apply");
                 }
             });
         };
