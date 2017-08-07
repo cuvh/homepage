@@ -67,6 +67,22 @@
     );
 }
 
+.btn.btn-muted {
+    @include button-explicit(
+        $btn-default-color,
+        #E6E6E6,
+        transparent,
+
+        $btn-default-color,
+        rgba($gray-dark, 0.2),
+        transparent,
+
+        $btn-default-color,
+        rgba($gray-dark, 0.4),
+        transparent
+    );
+}
+
 .btn.btn-transparent {
     @include button-explicit(
         $inverse-color,
@@ -178,4 +194,8 @@
     i:before {
         font-size: 30px;
     }
+}
+
+.btn-padded {
+    padding: 10px 40px !important;
 }
