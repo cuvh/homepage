@@ -1,31 +1,47 @@
+var applicationForm = {
+    email: {
+        presence: { message: "Please fill in your email" },
+        email: true,
+    },
+
+    motivation: {
+        presence: { message: "Don't be shy and share your thoughts with us :)" },
+    },
+
+    strengths: {
+        presence: { message: "Don't be shy and share your thoughts with us :)" },
+    },
+
+    resume: {
+        presence: { message: "Please attach your resume" },
+    }
+};
+
 (function() {
-    $('#send-application').click(function(event) {
-        if(!validateInput('#email', "Please fill in your email")) {
+    $('#application-form').submit(function(event) {
+        event.preventDefault();
+        var data = validate.collectFormValues(event.target);
+        var errors = validate(data, applicationForm, { fullMessages: false }); 
+
+        $('.has-error').removeClass('has-error');
+        $('.error-message').remove();
+
+        if (errors) {
+            for (var name in errors) {
+                $('[name="' + name + '"').parent().append('<div class="text-danger error-message top-xs">' + errors[name] + '</div>');
+                $('[name="' + name + '"').parent().addClass('has-error');
+            }
+
             return;
         }
 
-        if (!validateInput('#message-1', "Don't be shy and share your thoughts with us :)")) {
-            return;
-        }
-
-        if (!validateInput('#message-2', "Don't be shy and share your thoughts with us :)")) {
-            return;
-        }
-
-        if(!validateInput('#resume', "Please attach your resume")) {
-            return;
-        }
-
-        var message1 = $('#message-1').val();
-        var message2 = $('#message-2').val();
-
-        var question1 = $('#message-1').parent().find('label').text();
-        var question2 = $('#message-2').parent().find('label').text();
+        var questionMotivation = $('#motivation').parent().find('label').text();
+        var questionStrengths = $('#strengths').parent().find('label').text();
 
         var data = {
-            jobTitle: $('#job-title').val(),
-            email: $('#email').val(),
-            message: question1 + '\n' + message1 + '\n\n' + question2 + '\n' + message2,
+            jobTitle: data.jobTitle,
+            email: data.email,
+            message: questionMotivation + '\n' + data.motivation + '\n\n' + questionStrengths + '\n' + data.strengths,
             file: {}
         };
 
@@ -62,19 +78,4 @@
 
         $('#resume-name').text(file.name || 'No resume selected');
     });
-
-    function validateInput(inputElement, errorMessage) {
-        var $inputElement = $(inputElement);
-
-        $('.has-error').removeClass('has-error');
-        $('.error-message').remove();
-
-        if (!$inputElement.val()) {
-            $inputElement.parent().append('<div class="text-danger error-message top-xs">' + errorMessage + '</div>');
-            $inputElement.parent().addClass('has-error');
-            return false;
-        }
-
-        return true;
-    }
 })();

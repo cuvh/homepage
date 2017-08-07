@@ -58,31 +58,36 @@ metaImage: "/img/career/share-image.jpg"
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 application-form">
+                <form 
+                 class="col-md-10 col-md-offset-1 application-form"
+                 id="application-form">
                     <input 
                      type="hidden" 
                      value="Head of Marketing"
-                     id="job-title" />
+                     name="jobTitle"/>
                     <div class="form-group">
                         <label for="email">Your email address:</label>
                         <input 
                          type="email" 
                          class="form-control"
+                         name="email"
                          id="email">
                     </div>
                     <div class="form-group">
-                        <label for="excitement">Why you picked us:</label>
+                        <label for="motivation">Why you picked us:</label>
                         <textarea 
                          class="form-control"
-                         id="message-1" 
+                         name="motivation"
+                         id="motivation" 
                          placeholder="Tell us what excites you about this role, team, company, or industry."
                          rows="5"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="excitement">Why we should pick you:</label>
+                        <label for="strengths">Why we should pick you:</label>
                         <textarea 
                          class="form-control"
-                         id="message-2" 
+                         name="strengths"
+                         id="strengths" 
                          placeholder="Show us that you have the things we’re looking for in terms of expertise and attitude."
                          rows="5"></textarea>
                     </div>
@@ -96,15 +101,17 @@ metaImage: "/img/career/share-image.jpg"
                              type="file" 
                              value="Attach Resume"
                              class="hidden"
+                             name="resume"
                              id="resume" />
                         </div>
                         <div class="col-sm-3 apply-button">
-                            <button 
+                            <button
+                             type="submit" 
                              class="btn btn-primary btn-padded" 
                              id="send-application">Apply</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
