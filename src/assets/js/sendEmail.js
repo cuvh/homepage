@@ -61,6 +61,10 @@ var applicationForm = {
                 crossDomain: true,
                 processData: false,
                 data: JSON.stringify(data),
+                beforeSend: function() {
+                    $('#send-application').disabled(true);
+                    $('#send-application').text("Sending...");
+                }
                 success: function(data) {
                     $('#success-modal').modal();
                 },
