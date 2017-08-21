@@ -1,0 +1,13 @@
+.non-creatives {
+    .call-to-action {
+        background:
+         linear-gradient(180deg, rgba($brand-primary,0.8) 0%, $brand-primary 100%),
+         url(/img/landing-pages/non-creatives/footer.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .non-creatives-formatting-text {
+        padding-top: 35px;
+    }
+}
+

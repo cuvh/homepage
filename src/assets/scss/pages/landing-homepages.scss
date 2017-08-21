@@ -81,6 +81,24 @@
                 padding-bottom: 140px;
             }
 
+            &.striped-step-md {
+                background-color:#F5F5F5;
+                margin-top: 150px;
+
+                .inner-step {
+                    margin-top: -150px;
+                }
+            }
+
+            &.striped-step-sm {
+                background-color:#F5F5F5;
+                margin-top: 150px;
+
+                .inner-step {
+                    margin-top: -100px;
+                }
+            }
+
             .inner-step {
                 flex: 0 1 auto;
 
@@ -116,6 +134,14 @@
 
                     .inner-step:last-child {
                         order: 1
+                    }
+                }
+
+                &.striped-step-md, &.striped-step-sm {
+                    margin-top: 0;
+
+                    .inner-step {
+                        margin-top: 0;
                     }
                 }
 
