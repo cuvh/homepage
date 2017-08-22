@@ -77,3 +77,6 @@
 .icon-angle-down:before {
   content: "\6d";
 }
+.icon-link:before {
+  content: "\6e";
+}
