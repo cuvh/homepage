@@ -6,6 +6,112 @@
         background-size: cover;
         background-position: center;
     }
+
+    .header-1 {
+        background: url('/img/landing-pages/non-creatives/Architect.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Architect.jpg');
+        background-position: top;
+    }
+
+    .header-2 {
+        background: url('/img/landing-pages/non-creatives/Designer.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Designer.jpg');
+        background-position: top;
+    }
+
+    .header-3 {
+        background: url('/img/landing-pages/non-creatives/Doctor.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Doctor.jpg');
+        background-position: top;
+    }
+
+    .header-4 {
+        background: url('/img/landing-pages/non-creatives/Fashion-Designer.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Fashion-Designer.jpg');
+        background-position: top;
+    }
+
+    .header-5 {
+        background: url('/img/landing-pages/non-creatives/Marketer.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Marketer.jpg');
+        background-position: top;
+    }
+
+    .header-6 {
+        background: url('/img/landing-pages/non-creatives/Pilot.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Pilot.jpg');
+        background-position: top;
+    }
+
+    .header-7 {
+        background: url('/img/landing-pages/non-creatives/Researcher.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Researcher.jpg');
+        background-position: top;
+    }
+
+    .header-8 {
+        background: url('/img/landing-pages/non-creatives/Student.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Student.jpg');
+        background-position: top;
+    }
+
+    .header-9 {
+        background: url('/img/landing-pages/non-creatives/Journalist.jpg');
+        background:
+         linear-gradient(180deg, rgba(black, 0.3) 0%, rgba(black, 0) 20%, rgba(black, 0) 100%),
+         url('/img/landing-pages/non-creatives/Journalist.jpg');
+        background-position: top;
+    }
+
+    .step-1 {
+        margin-top: 160px;
+        .inner-step-image {
+            transform: translateX(100px);
+        }
+    }
+
+    .step-2 {
+        margin-top: 75px;
+        .inner-step-image {
+            transform: translateX(-35px);
+        }
+    }
+
+    .step-3 {
+        padding-bottom: 30px;
+        .inner-step-image {
+            transform: translateX(70px);
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .step {
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .step .inner-step-image {
+            transform: none;
+        }
+    }
+
     .non-creatives-formatting-text {
         padding-top: 35px;
     }
