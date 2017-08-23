@@ -62,14 +62,14 @@ var applicationForm = {
                 processData: false,
                 data: JSON.stringify(data),
                 beforeSend: function() {
-                    $('#send-application').disabled(true);
+                    $('#send-application').prop("disabled", true);
                     $('#send-application').text("Sending...");
                 },
                 success: function(data) {
                     $('#success-modal').modal();
                 },
                 complete: function() {
-                    $('#send-application').disabled(false);
+                    $('#send-application').prop("disabled", false);
                     $('#send-application').text("Apply");
                 }
             });
