@@ -2,7 +2,20 @@ function isTouchDevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints;
 }
 
+function preloadImages(images) {
+    console.log(images);
+    if (images.length > 0) {
+        var img = new Image ();
+        img.onload = function() {
+            preloadImages(images.slice(1));
+        }
+        img.src = images[0];
+    }
+}
+
 $(function() {
+    preloadImages($.map($('div[data-preload]'), function (item){ return (item.dataset && item.dataset.preload) }));
+
     // load lines background after all resources are downloaded
     $(".dating-resume-lines, .homepage-lines").css(
         "background-image",
