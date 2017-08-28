@@ -68,6 +68,34 @@
           content: url(/img/curvy-arrow-green.svg);
         }
 
+        .striped-step-md {
+            background-color:#F5F5F5;
+            margin-top: 150px;
+
+            .inner-step {
+                margin-top: -150px;
+            }
+        }
+
+        .striped-step-sm {
+            background-color:#F5F5F5;
+            margin-top: 150px;
+
+            .inner-step {
+                margin-top: -100px;
+            }
+        }
+
+        @media (max-width: $screen-sm-max) {
+            .striped-step-md, .striped-step-sm {
+                margin-top: 0;
+
+                .inner-step {
+                    margin-top: 0;
+                }
+            }
+        }
+
         .step {
             display: flex;
             align-items: center;
@@ -118,6 +146,7 @@
                         order: 1
                     }
                 }
+
 
                 .inner-step {
                     &.overflow-container, &.overflow-container-top {

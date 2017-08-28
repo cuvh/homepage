@@ -64,7 +64,9 @@
         };
 
         window.ENHANCV_WIDGET_OPTIONS = finalJSON;
-        window.reloadEnhancvWidget();
+        if (window.reloadEnhancvWidget) {
+            window.reloadEnhancvWidget();
+        }
 
         $("#widget-code").val(
             '<script>!function(e,n){"undefined"==typeof e[n]&&(e[n]={}),e[n]=' +
