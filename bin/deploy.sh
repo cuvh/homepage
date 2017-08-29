@@ -35,6 +35,7 @@ aws s3api put-object --bucket $BUCKET --acl public-read --key "personal-branding
 aws s3api put-object --bucket $BUCKET --acl public-read --key "student-resumes" --website-redirect-location "/student-resumes.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "freelancer-resumes" --website-redirect-location "/freelancer-resumes.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "unusual-resumes" --website-redirect-location "/unusual-resumes.html"
+aws s3api put-object --bucket $BUCKET --acl public-read --key "expert-resumes" --website-redirect-location "/expert-resumes.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "aiesec" --website-redirect-location "/aiesec.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "tandem-cv" --website-redirect-location "/tandem-cv.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "enhancv-button" --website-redirect-location "/enhancv-button.html"
