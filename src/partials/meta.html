@@ -29,6 +29,10 @@
 <meta property="og:description" content="{{ description }}" />
 {{/if }}
 
+{{#if noFollow }}
+    <meta name="robots" content="noindex, nofollow">
+{{/if }}
+
 <!-- Page hiding snippet for initial hide of the page for A/B tests -->
 <style>.async-hide { opacity: 0 !important} </style>
 <script>
