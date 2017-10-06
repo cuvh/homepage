@@ -11,7 +11,12 @@
         color: #808080;
     }
 
+
     .content {
+        a {
+            text-decoration: underline;
+        }
+
         margin-top: 32px;
 
         & > * {
@@ -32,6 +37,10 @@
         }
     }
 
+    .job-text {
+        margin-bottom: 32px;
+    }
+
     .application-form {
         background-color: #E6E6E6;
         margin-top: 32px;
@@ -46,7 +55,7 @@
         .form-group {
             margin-bottom: 24px;
         }
-        
+
         .apply-button {
             text-align: right;
         }
@@ -54,14 +63,14 @@
         @media (max-width: $screen-xs-max) {
             padding: 40px 20px;
             border-radius: 0;
-            
+
             .apply-button {
                 text-align: left;
                 margin-top: 16px;
             }
         }
     }
-    
+
     .go-back {
         font-size: 16px;
         line-height: 19px;
@@ -75,12 +84,12 @@
             }
         }
     }
-    
+
     @media (min-width: $screen-sm-max) {
         .job-subtitle {
             margin-left: 60px;
         }
-    }   
+    }
 }
 
 .modal-body {
