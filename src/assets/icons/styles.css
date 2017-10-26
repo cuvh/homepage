@@ -80,3 +80,9 @@
 .icon-link:before {
   content: "\6e";
 }
+.icon-linkedin-alt:before {
+  content: "\6f";
+}
+.icon-dribbble:before {
+  content: "\70";
+}
