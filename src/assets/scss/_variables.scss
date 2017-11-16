@@ -22,6 +22,7 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 $border-color:          #B3B3B3;
+$border-color-muted:    #E6E6E6;
 $promo-color:           #E7762E;
 $inverse-color:         white;
 $muted-color:           #B2B2B2;
@@ -863,6 +864,7 @@ $pre-scrollable-max-height:   340px !default;
 $component-offset-horizontal: 180px !default;
 //** Text muted color
 $text-muted:                  $gray-light !default;
+$text-muted-deep:             $border-color !default;
 //** Abbreviations and acronyms border color
 $abbr-border-color:           $gray-light !default;
 //** Headings small color

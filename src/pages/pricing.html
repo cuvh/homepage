@@ -5,216 +5,225 @@ title: Pricing for Enhancv
 
 <div class="container container-page bottom-lg">
     <h1 class="text-center">
-        Now is the time to stand out
+        Upgrade, now is the time to stand out!
     </h1>
 
     <div class="row plans top-lg">
-        <div class="col-sm-6">
-            <div class="panel panel-price panel-default text-center">
-                <div class="panel-body">
-                    <h2 class="no-top">Basic</h2>
-                    <div>
-                        <span class="text-muted">
-                            Basically, for an awesome resume
-                        </span>
-                    </div>
-                    <div class="plan-price">
-                        <div class="plan-price-text">
-                            <div class="price-row">
-                                <small>$</small> 4.99 <small>/m</small>
+        <div class="col-sm-7 col-sm-push-5">
+            <div class="panel panel-price panel-price-best panel-primary">
+                <div>
+                    <div
+                     id="monthly-price"
+                     class="row fade hidden">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="price-row text-primary">
+                                <small>$</small>
+                                <span>19</span>
+                                <small>.99 /m</small>
                             </div>
                         </div>
-                        <div class="form-control-static">
-                            <span class="text-muted">
-                                Monthly subscription
+                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
+                            Billed <br>
+                            monthly
+                        </div>
+                    </div>
+                    <div
+                     id="quarterly-price"
+                     class="row fade in">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="price-row text-primary">
+                                <small>$</small>
+                                <span>14</span>
+                                <small>.99 /m</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep">
+                            <img
+                             class="panel-badge pull-right"
+                             src="/img/best-choice.svg"
+                             width="70"
+                             height="70"
+                             alt="BEST CHOICE"/>
+                            <span class="pull-right m-top-1 m-right-2">
+                                Billed <br>
+                                quarterly
                             </span>
                         </div>
                     </div>
-                    <div class="bottom-sm">
-                        <a
-                         data-gtm="pricing-start-trial"
-                         class="btn btn-default "
-                         href="{{ urls.builder }}">
-                            Start a Free 14-Day Trial
-                        </a>
-                        <p class="top-ty no-credit-card">No credit card required</p>
+                    <div
+                     id="semiannual-price"
+                     class="row fade hidden">
+                        <div class="col-md-6 col-xs-12">
+                            <div class="price-row text-primary">
+                                <small>$</small>
+                                <span>10</span>
+                                <small>.99 /m</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
+                            Billed <br>
+                            semianually
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="h3 m-bottom-1">
+                    Pro
+                    <span
+                     id="monthly-title"
+                     class="text-muted-deep fade hidden">
+                        Monthly
+                    </span>
+                    <span
+                     id="quarterly-title"
+                     class="text-muted-deep fade in">
+                        Quarterly
+                    </span>
+                    <span
+                     id="semiannual-title"
+                     class="text-muted-deep fade hidden">
+                        Semiannual
+                    </span>
+                </h2>
+
+                <p class="m-bottom-2">Ace resume that gets you hired and helps you land the job you have always dreamed of.</p>
+
+                <div
+                 class="btn-group btn-group-underlined m-bottom-3"
+                 data-toggle="buttons">
+                    <label
+                     data-gtm="pricing-monthly-show"
+                     data-toggle="switch-toggle"
+                     data-target="#monthly-price,#monthly-title,#monthly-btn"
+                     class="btn btn-underlined">
+                        <input
+                         type="radio"
+                         name="pricing"
+                         autocomplete="off">
+                        Monthly
+                    </label>
+
+                    <label
+                     data-gtm="pricing-quarterly-show"
+                     data-toggle="switch-toggle"
+                     data-target="#quarterly-price,#quarterly-title,#quarterly-btn"
+                     class="btn btn-underlined active">
+                        <input
+                         type="radio"
+                         name="pricing"
+                         autocomplete="off"
+                         checked>
+                        Quarterly
+                    </label>
+
+                    <label
+                     data-gtm="pricing-semiannual-show"
+                     data-toggle="switch-toggle"
+                     data-target="#semiannual-price,#semiannual-title,#semiannual-btn"
+                     class="btn btn-underlined">
+                        <input
+                         type="radio"
+                         name="pricing"
+                         autocomplete="off">
+                        Semiannual
+                    </label>
+                </div>
+
+                <button
+                 type="button"
+                 class="btn btn-link btn-block visible-xs btn-text-link btn-text-left"
+                 data-toggle="collapse"
+                 data-target="#pro-features">
+                    Show Features
+                </button>
+
+                <div>
+                    <a
+                     id="monthly-btn"
+                     class="btn m-no btn-primary btn-2 btn-block hidden"
+                     data-gtm="pricing-pro-monthly"
+                     href="{{ urls.builder }}/checkout/7">
+                        Buy Pro Now
+                    </a>
+                    <a
+                     id="quarterly-btn"
+                     data-gtm="pricing-pro-quarterly"
+                     class="btn m-no btn-primary btn-2 btn-block"
+                     href="{{ urls.builder }}/checkout/8">
+                        Buy Pro Now
+                    </a>
+                    <a
+                     id="semiannual-btn"
+                     data-gtm="pricing-pro-semiannual"
+                     class="btn m-no btn-primary btn-2 hidden btn-block"
+                     href="{{ urls.builder }}/checkout/9">
+                        Buy Pro Now
+                    </a>
+                </div>
+
+                <div class="hidden-xs m-top-4">
+                    {{> pricing-pro-features }}
+                </div>
+
+                <div class="visible-xs">
+                    <div id="pro-features" class="fade collapse">
+                        <div class="m-top-4">
+                            {{> pricing-pro-features }}
+                        </div>
                     </div>
                 </div>
             </div>
-            <ul class="icons-list clearfix bottom-lg">
-                <li>
-                    <i class="icon-check text-muted"></i>
-                    <strong>1</strong> Resume
-                </li>
-                <li>
-                    <i class="icon-check text-muted"></i>
-                    <strong>Basic</strong> sections
-                </li>
-                <li>
-                    <i class="icon-check text-muted"></i>
-                    Collect feedback
-                </li>
-                <li>
-                    <i class="icon-check text-muted"></i>
-                    <strong>15</strong> entries
-                </li>
-            </ul>
         </div>
-        <div class="col-sm-6">
-            <div class="panel panel-price panel-price-best panel-primary text-center">
-                <img
-                 class="panel-badge"
-                 src="/img/best-choice.svg"
-                 width="75"
-                 height="75"
-                 alt="BEST CHOICE"/>
-
-                <div class="panel-body">
-                    <h2 class="no-top">Pro</h2>
-                    <div>
-                        <span class="text-muted">
-                            Pro resumes that stand out
-                        </span>
-                    </div>
-                    <div class="plan-price">
-                        <div class="plan-price-text text-primary">
-                            <div
-                             id="monthly-price"
-                             class="price-row fade hidden">
-                                <small>$</small> 19.99 <small>/m</small>
-                            </div>
-
-                            <div
-                             id="quarterly-price"
-                             class="fade in price-row">
-                                <small>$</small> 14.99 <small>/m</small>
-                            </div>
-
-                            <div
-                             id="semiannual-price"
-                             class="hidden fade price-row">
-                                <small>$</small> 10.99 <small>/m</small>
-                            </div>
-                        </div>
-                        <div class="form-control-static text-muted">
-                            <span
-                             id="monthly-billing"
-                             class="fade hidden">
-                                Billed monthly
-                            </span>
-
-                            <span
-                             id="quarterly-billing"
-                             class="fade in">
-                                Billed every 3 months
-                            </span>
-
-                            <span
-                             id="semiannual-billing"
-                             class="fade hidden">
-                                Billed every 6 months
-                            </span>
-                        </div>
-                        <div data-toggle="buttons">
-                            <label
-                             data-gtm="pricing-monthly-show"
-                             data-toggle="switch-toggle"
-                             data-target="#monthly-price,#upgrade-monthly,#monthly-billing"
-                             class="btn btn-underlined">
-                                <input
-                                 type="radio"
-                                 name="pricing"
-                                 autocomplete="off">
-                                Monthly
-                            </label>
-
-                            <label
-                             data-gtm="pricing-quarterly-show"
-                             data-toggle="switch-toggle"
-                             data-target="#quarterly-price,#upgrade-quarterly,#quarterly-billing"
-                             class="btn btn-underlined active">
-                                <input
-                                 type="radio"
-                                 name="pricing"
-                                 autocomplete="off"
-                                 checked>
-                                Quarterly
-                            </label>
-
-                            <label
-                             data-gtm="pricing-semiannual-show"
-                             data-toggle="switch-toggle"
-                             data-target="#semiannual-price,#upgrade-semiannual,#semiannual-billing"
-                             class="btn btn-underlined">
-                                <input
-                                 type="radio"
-                                 name="pricing"
-                                 autocomplete="off">
-                                Semiannual
-                            </label>
+        <div class="col-sm-5 col-sm-pull-7">
+            <div class="panel panel-price panel-default">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12">
+                        <div class="price-row text-primary">
+                            <small>$</small>
+                            <span>4</span>
+                            <small>.99 /m</small>
                         </div>
                     </div>
-                    <div class="row small-row bottom-sm">
-                        <div class="col-sm-12 col-md-6 bottom-sm">
-                            <a
-                             class="btn btn-default btn-block"
-                             data-gtm="pricing-invite-friends"
-                             href="{{ urls.builder }}/settings/invite-friends">
-                                Get 1 Month for Free
-                            </a>
-                        </div>
-                        <div class="col-sm-12 col-md-6 bottom-sm">
-                            <a
-                             id="upgrade-monthly"
-                             class="btn btn-primary no-top hidden btn-block"
-                             data-gtm="pricing-pro-monthly"
-                             href="{{ urls.builder }}/checkout/7">
-                                Buy Now
-                            </a>
-                            <a
-                             id="upgrade-quarterly"
-                             data-gtm="pricing-pro-quarterly"
-                             class="btn btn-primary no-top  btn-block"
-                             href="{{ urls.builder }}/checkout/8">
-                                Buy Now
-                            </a>
-                            <a
-                             id="upgrade-semiannual"
-                             data-gtm="pricing-pro-semiannual"
-                             class="btn btn-primary no-top hidden btn-block"
-                             href="{{ urls.builder }}/checkout/9">
-                                Buy Now
-                            </a>
+                    <div class="col-md-3 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
+                        Billed <br>
+                        monthly
+                    </div>
+                </div>
+                <h2 class="h3 m-bottom-1">Basic</h2>
+
+                <p class="m-bottom-2">Ace resume that gets you hired and helps you ladning job</p>
+
+                <p class="btn-group-underlined-text text-muted-deep form-control-static m-bottom-3">
+                    Basic is only montly subscription
+                </p>
+
+                <button
+                 type="button"
+                 class="btn btn-link btn-block visible-xs btn-text-link btn-text-left"
+                 data-toggle="collapse"
+                 data-target="#basic-features">
+                    Show Features
+                </button>
+
+                <a
+                 data-gtm="pricing-start-trial"
+                 class="btn btn-block btn-2 btn-muted"
+                 href="{{ urls.builder }}">
+                    Start Free 14 Day Trial
+                </a>
+
+                <div class="m-top-4 hidden-xs">
+                    {{> pricing-basic-features }}
+                </div>
+
+                <div class="visible-xs">
+                    <div id="basic-features" class="fade collapse">
+                        <div class="m-top-4">
+                            {{> pricing-basic-features }}
                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="icons-list clearfix bottom-lg">
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    <strong>10</strong> Resumes
-                </li>
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    <strong>Pro</strong> sections
-                </li>
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    Collect feedback
-                </li>
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    Compact template
-                </li>
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    Enhancv support
-                </li>
-                <li>
-                    <i class="icon-check text-primary"></i>
-                    <strong>Unlimited</strong> entries
-                </li>
-            </ul>
         </div>
     </div>
 </div>
