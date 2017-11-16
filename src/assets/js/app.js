@@ -3,7 +3,6 @@ function isTouchDevice() {
 }
 
 function preloadImages(images) {
-    console.log(images);
     if (images.length > 0) {
         var img = new Image ();
         img.onload = function() {
