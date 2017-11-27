@@ -1,0 +1,33 @@
+<div class="experts-say-flex">
+    <div class="experts-say-flex-col" style="flex: 285">
+        <div style="display: flex; flex: 1"></div>
+        <div class="experts-say-flex-vcenter" style="max-width: 270px;">
+            <div class="popular-resumes-name">
+                {{ name }}
+            </div>
+            <div class="popular-resumes-position top-xty">
+                {{ position }}
+            </div>
+            <div class="popular-resumes-description top-xs">
+                {{ description }}
+            </div>
+            <div class="top-xs">
+                <a
+                 target="_blank"
+                 href="/successful-resumes/famous/{{ link }}.html"
+                 class="btn btn-primary">View Full resume</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="experts-say-flex-col" style="flex: 400">
+        <div class="experts-say-flex-vcenter">
+            <img
+             width="400"
+             style="max-width: 400px;"
+             class="embed-responsive-item popular-resumes-image"
+             src="/img/successful-resumes/famous/{{ image }}"
+             alt="Condensed resume">
+        </div>
+    </div>
+</div>

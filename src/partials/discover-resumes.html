@@ -3,19 +3,101 @@
         <div class="row">
             <div class="col-sm-12">
                 <h1 class="text-center top-md">View more of our top resumes</h1>
+
                 <div
-                 class="carousel slide top-md hidden-sm hidden-md hidden-lg"
+                 class="carousel slide top-md successful-resumes-carousel"
                  id="resume"
                  data-ride="carousel"
                  data-switch-toggle="#features-texts"
                  data-indicators="#features-indicators,#features-dots"
                  data-interval="false">
 
-                    <div class="carousel-inner">
-                        <div class="item active item-bg">
-                            {{>resume-container}}
+                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
+                    <div class="carousel-inner successful-resumes-carousel-items">
+                        <div class="item item-bg active">
+                            <div class="successful-resumes-carousel-align">
+                            {{>resume-container
+                                link="akshay-rao.html"
+                                name="Akshay S. Rao"
+                                tags="Internship, Engineering"
+                                secondary_tags="Fraternity"
+                                frontImage="akshay-rao-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="daniel-peterson.html"
+                                name="Daniel Peterson"
+                                tags="Customer Support, Founder"
+                                secondary_tags="GitHub"
+                                frontImage="daniel-pietersen-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="eden-ivancich.html"
+                                name="Eden Ivancich"
+                                tags="Teenager, Volunteer, Student"
+                                secondary_tags="Cooking, Football, Awards"
+                                frontImage="eden-ivancich-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="hillary-darkville.html"
+                                name="Hillary Darkville"
+                                tags="Public Health, Consulting"
+                                secondary_tags="Runner"
+                                frontImage="hillary-k-darville-resume-1.jpg"
+                            }}
+                            </div>
+                        </div>
+                        <div class="item item-bg">
+                            <div class="successful-resumes-carousel-align">
+                            {{>resume-container
+                                link="julian-prim.html"
+                                name="Julian Prim"
+                                tags="IT, Automotive, Founder"
+                                secondary_tags="Traveller, Internship, Web Development"
+                                frontImage="julian-prim-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="marcellus-nixon.html"
+                                name="Marcellus Nixon"
+                                tags="Marketing, Development"
+                                secondary_tags="penis"
+                                frontImage="marcellus-nixon-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="melanie-fischer.html"
+                                name="Melanie Fischer"
+                                tags="Sales, Brand Partnership, Customer Service"
+                                secondary_tags=""
+                                frontImage="melanie-fisher-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="sam-young.html"
+                                name="Sam Young"
+                                tags="Cooking, Career Change, IT Strategy, Business Strategy"
+                                secondary_tags="Favorite Books, Data Analytics, Investment Analysis"
+                                frontImage="sam-young-resume-1.jpg"
+                            }}
+                            </div>
+                        </div>
+                        <div class="item item-bg">
+                            <div class="successful-resumes-carousel-align">
+                            {{>resume-container
+                                link="steffany-photopoulos.html"
+                                name="Steffany Photopoulos"
+                                tags="Career Change, Business School, Medicine"
+                                secondary_tags="Traveller, Volunteer, Musician"
+                                frontImage="steffany-photopoulos-resume-1.jpg"
+                            }}
+                            {{>resume-container
+                                link="tobias-horstmann.html"
+                                name="Tobias Horstmann"
+                                tags="IT, Automotive Industry, Founder"
+                                secondary_tags="Traveller, Internship, Web Development"
+                                frontImage="tobias-horstmann-resume-1.jpg"
+                            }}
+                            </div>
                         </div>
                     </div>
+                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
 
                     <a
                      class="left carousel-control"
@@ -39,6 +121,8 @@
                         <i class="icon-angle-right"></i>
                     </a>
                 </div>
+
+
 
             </div>
         </div>

@@ -2,7 +2,11 @@
 <div class="successful-resume">
     <div class="container">
         <div class="row text-center">
-        	<h1>Successful Resumes</h1>
+            {{#if famousResume}}
+        	   <h1>Famous Resumes</h1>
+            {{else}}
+                <h1>Successful Resumes</h1>
+            {{/if }}
         	<div class="top-xs bottom-md">
                 <a class="back-button" href="/successful-resumes.html">
                     <i class="icon-angle-left"></i>
@@ -12,13 +16,32 @@
         </div>
 
         <div class="row">
-        	<div class="col-sm-6 text-center">
-        		<img
+        	<div class="col-sm-6 text-center successful-resume-image-container">
+                <img
                  width="400"
-                 style="max-width: 400px;   box-shadow: 0 3px 60px 0 rgba(0,0,0,0.3);"
-                 class="embed-responsive-item popular-resumes-image"
+                 class="embed-responsive-item popular-resumes-image back-image"
                  src="/img/successful-resumes/{{ frontImage }}"
                  alt="Condensed resume" />
+
+                <div class="front-image-container">
+            		<img
+                     width="400"
+                     class="embed-responsive-item popular-resumes-image"
+                     src="/img/successful-resumes/{{ frontImage }}"
+                     alt="Condensed resume"
+                      />
+
+                    <a
+                     class="show-button"
+                     href="#view-resume"
+                     data-toggle="modal"
+                     data-track="event"
+                     data-category="Examples"
+                     data-action="Click Example Resume"
+                     data-label="{{ name }}">
+                        <i class="icon-search-plus"></i>
+                    </a>
+                </div>
         	</div>
 
         	<div class="col-sm-6">
@@ -26,9 +49,11 @@
                     {{ name }}
         		</div>
 
+                {{#if companyLogo }}
         		<div class="successful-resume-works-at top-xs">
         			Works at <img height="30" src="/img/successful-resumes/{{ companyLogo }}" />
         		</div>
+                {{/if }}
 
         		<div class="successful-resume-description top-xs">
         			{{ description }}
@@ -36,6 +61,9 @@
 
         		<div class="successful-resume-tag-container">
                     {{#split tags}}
+                        <div class="resume-tag">{{this}}</div>
+                    {{/split}}
+                    {{#split secondary_tags}}
                         <div class="resume-tag">{{this}}</div>
                     {{/split}}
         		</div>
@@ -62,3 +90,37 @@
     </div>
 </div>
 <hr>
+
+<div
+ id="view-resume"
+ tabindex="-1"
+ class="modal fade">
+    <div class="modal-dialog modal-lg modal-example">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button
+                 type="button"
+                 data-dismiss="modal"
+                 class="close close-example">
+                    <i class="icon-times"></i>
+                </button>
+
+                <img
+                 width="1240"
+                 height="1755"
+                 class="img-responsive"
+                 src="/img/successful-resumes/{{ frontImage }}"
+                 alt="{{ name }} resume page 1">
+
+                {{#if backImage }}
+                    <img
+                     width="1240"
+                     height="1755"
+                     class="img-responsive top-md"
+                     src="/img/successful-resumes/{{ backImage }}"
+                     alt="{{ name }} resume page 2">
+                {{/if }}
+            </div>
+        </div>
+    </div>
+</div>

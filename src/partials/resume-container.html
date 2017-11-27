@@ -1,18 +1,19 @@
 <div class="resume-container">
     <a
-     href="/successful-resumes/jonhsua-carpenter.html"
+     href="/successful-resumes/{{ link }}"
      class="resume-image"
-     style="background: url('/img/discover/resume_test.png')">
+     style="background: url('/img/successful-resumes/thumb/{{ frontImage }}')">
     </a>
 
     <a
-     href="/successful-resumes/jonhsua-carpenter.html"
+     href="/successful-resumes/{{ link }}"
      class="resume-name text-center top-xty">
-        Carl Petterson
+        {{ name }}
     </a>
 
-    <div class="text-center top-xty">
-        <div class="resume-tag">Marketing</div>
-        <div class="resume-tag">Design</div>
+    <div class="text-center top-xty" style="max-width: 250px;">
+        {{#split tags}}
+            <div class="resume-tag">{{this}}</div>
+        {{/split}}
     </div>
 </div>
