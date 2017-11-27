@@ -1,0 +1,44 @@
+.successful-resume {
+	.successful-resume-name {
+		height: 42px;
+		color: #333333;
+		font-family: "Geometria Light";
+		font-size: 42px;
+		font-weight: 300;
+		line-height: 53px;
+	}
+
+	.successful-resume-tag-container {
+		margin-top: $spacer*3;
+		margin-left: -$spacer;
+	}
+
+	.similar-resumes {
+		color: #808080;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.successful-resume-cta {
+		border: 1px solid #b3b3b3;
+		border-radius: 5px;
+		padding: $spacer*2;
+
+		flex-direction: row;
+		display: flex;
+
+		max-width: 370px;
+		width: 100%;
+	}
+}
+
+.back-button {
+	i {
+		font-size: 25px;
+	}
+
+	span {
+		position: relative;
+		top: -6px;
+	}
+}

@@ -1,5 +1,5 @@
-$spacer: 5px;
-$directions: 'top' 'bottom' 'left' 'right';
+$spacer: 8px;
+$directions: "top" "bottom" "left" "right";
 
 @each $direction in $directions {
 	.no-#{$direction} {

@@ -1,0 +1,64 @@
+
+<div class="successful-resume">
+    <div class="container">
+        <div class="row text-center">
+        	<h1>Successful Resumes</h1>
+        	<div class="top-xs bottom-md">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-6 text-center">
+        		<img
+                 width="400"
+                 style="max-width: 400px;   box-shadow: 0 3px 60px 0 rgba(0,0,0,0.3);"
+                 class="embed-responsive-item popular-resumes-image"
+                 src="/img/successful-resumes/{{ frontImage }}"
+                 alt="Condensed resume" />
+        	</div>
+
+        	<div class="col-sm-6">
+        		<div class="successful-resume-name">
+                    {{ name }}
+        		</div>
+
+        		<div class="successful-resume-works-at top-xs">
+        			Works at <img height="30" src="/img/successful-resumes/{{ companyLogo }}" />
+        		</div>
+
+        		<div class="successful-resume-description top-xs">
+        			{{ description }}
+        		</div>
+
+        		<div class="successful-resume-tag-container">
+                    {{#split tags}}
+                        <div class="resume-tag">{{this}}</div>
+                    {{/split}}
+        		</div>
+
+                <!--<div class="similar-resumes top-xs">
+                    283 Marketing resumes have similar resume configuration
+                </div>-->
+
+        		<!--<div class="successful-resume-cta">
+        			Want a resume like this? Hit the button and we'll give you
+        			<a href="#" class="btn btn-primary">I want this</a>
+        		</div>-->
+        	</div>
+        </div>
+
+        <div class="row text-center">
+        	<div class="top-md">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
