@@ -16,7 +16,7 @@
         </div>
 
         <div class="row">
-        	<div class="col-sm-6 text-center successful-resume-image-container">
+        	<div class="col-sm-7 text-center successful-resume-image-container">
                 <img
                  width="400"
                  class="embed-responsive-item popular-resumes-image back-image"
@@ -24,27 +24,29 @@
                  alt="Condensed resume" />
 
                 <div class="front-image-container">
-            		<img
-                     width="400"
-                     class="embed-responsive-item popular-resumes-image"
-                     src="/img/successful-resumes/{{ frontImage }}"
-                     alt="Condensed resume"
-                      />
-
                     <a
-                     class="show-button"
                      href="#view-resume"
                      data-toggle="modal"
                      data-track="event"
                      data-category="Examples"
                      data-action="Click Example Resume"
                      data-label="{{ name }}">
-                        <i class="icon-search-plus"></i>
+                		<img
+                         width="400"
+                         class="embed-responsive-item popular-resumes-image"
+                         src="/img/successful-resumes/{{ frontImage }}"
+                         alt="Condensed resume"
+                          />
+
+                        <span
+                         class="show-button">
+                            <i class="icon-search-plus"></i>
+                        </span>
                     </a>
                 </div>
         	</div>
 
-        	<div class="col-sm-6">
+        	<div class="col-sm-5">
         		<div class="successful-resume-name">
                     {{ name }}
         		</div>
