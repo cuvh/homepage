@@ -41,4 +41,10 @@
 		padding: $spacer/2 $spacer*2;
 		margin: 0 $spacer/2;
 	}
+
+	i {
+		margin-left: $spacer;
+		position: relative;
+		top: -1px;
+	}
 }

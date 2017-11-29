@@ -38,7 +38,7 @@ function onResize(items) {
 
     var width = document.body.scrollWidth;
 
-    if (width > 1240) {
+    if (width > 1200) {
         CHUNK_SIZE = 4;
     } else if (width > 992) {
         CHUNK_SIZE = 3;
