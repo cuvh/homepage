@@ -7,6 +7,13 @@
             <span class="btn btn-primary">
                 Take a closer look
             </span>
+
+            {{#if companyLogo}}
+                <div class="works-at">
+                    <div>Hired at</div>
+                    <div><img src="/img/successful-resumes/{{ companyLogo }}" /></div>
+                </div>
+            {{/if}}
         </div>
     </a>
 

@@ -102,13 +102,24 @@
                 rgba(255, 255, 255, 0) 0%,
                 rgba(255, 255, 255, 1) 70%
             );
-            opacity: 0;
 
             .btn {
+                display: none;
                 position: absolute;
                 bottom: $spacer*3;
                 right: $spacer*3;
                 left: $spacer*3;
+            }
+
+            .works-at {
+                display: block;
+                margin-top: 100px;
+
+                img {
+                    margin-top: $spacer;
+
+                    max-height: 35px;
+                }
             }
         }
 
@@ -117,8 +128,12 @@
                 border: 1px solid #2dc08d;
             }
 
-            .resume-image-bottom-gradient {
-                opacity: 1;
+            .btn {
+                display: inline-block;
+            }
+
+            .works-at {
+                display: none;
             }
 
             .resume-name {

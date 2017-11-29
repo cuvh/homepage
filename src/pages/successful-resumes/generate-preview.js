@@ -3,7 +3,7 @@ const fs = require("fs");
 const files = fs.readdirSync("./");
 
 files.forEach(file => {
-	if (file.indexOf("html") === -1) {
+	if (file.indexOf("html") === -1 || file.indexOf("daniel") !== -1) {
 		return;
 	}
 
@@ -14,7 +14,7 @@ files.forEach(file => {
 		.split("}}")[0]
 		.split("\n");
 
-	const parameters = ["name", "tags", "frontImage"];
+	const parameters = ["name", "tags", "frontImage", "companyLogo"];
 
 	console.log('<div class="item item-bg">');
 	console.log("{{>resume-container");
