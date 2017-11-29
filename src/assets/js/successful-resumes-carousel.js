@@ -2,6 +2,7 @@ function byChunks(items, chunkSize) {
     const pieces = items.length / chunkSize;
 
     var wrapper = jQuery("<div/>");
+    var dots = jQuery("<div />");
     var item;
 
     for (var i = 0; i < pieces; i++) {
@@ -18,8 +19,17 @@ function byChunks(items, chunkSize) {
                 class: "item item-bg " + (i === 0 ? "active" : ""),
             }).append(item)
         );
+
+        dots.append(
+            $("<li />", {
+                "data-target": "#resume",
+                class: i === 0 ? "active" : "",
+                "data-slide-to": i,
+            })
+        );
     }
 
+    $("#resume-dots").html(dots.html());
     $(".successful-resumes-carousel-items").html(wrapper.html());
 }
 
@@ -40,11 +50,11 @@ function onResize(items) {
     $("#resume").carousel();
 }
 
-$(function() {
+(function() {
     var items = jQuery(".resume-container");
 
     $(window).resize(function() {
         onResize(items);
     });
     onResize(items);
-});
+})();

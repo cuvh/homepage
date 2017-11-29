@@ -68,14 +68,20 @@
 }
 
 .discover-header-image-tag {
-    width: 137px;
+    width: 37%;
     position: absolute;
     top: -10px;
-    right: -35px;
+    right: -10px;
 }
 
 .discover-resumes-list {
-    margin-bottom: $spacer*8;
+    overflow: hidden;
+    padding-bottom: $spacer*8;
+
+    .carousel-indicators {
+        position: relative;
+        margin-top: -45px;
+    }
 
     .carousel-inner .item {
         text-align: center;
@@ -249,6 +255,8 @@
 }
 
 .popular-resumes {
+    overflow: hidden;
+
     .desc-text {
         max-width: 270px;
     }
