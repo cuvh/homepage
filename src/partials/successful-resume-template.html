@@ -53,7 +53,11 @@
 
                 {{#if companyLogo }}
         		<div class="successful-resume-works-at top-xs">
-        			Hired at <img height="30" src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}" />
+        			Hired at 
+                    <img
+                     height="30"
+                     src="/img/successful-resumes/company-logos/{{ companyLogo }}"
+                     srcset="/img/successful-resumes/company-logos/{{ companyLogo }} 1x, /img/successful-resumes/company-logos/2x-{{ companyLogo }} 2x" />
         		</div>
                 {{/if }}
 

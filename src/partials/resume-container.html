@@ -11,7 +11,11 @@
             {{#if companyLogo}}
                 <div class="works-at">
                     <div>Hired at</div>
-                    <div><img src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}" /></div>
+                    <div>
+                        <img
+                         src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}"
+                         srcset="/img/successful-resumes/company-logos/{{ companyLogo }} 1x, /img/successful-resumes/company-logos/2x-{{ companyLogo }} 2x" />
+                    </div>
                 </div>
             {{/if}}
         </div>
