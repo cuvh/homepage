@@ -10,7 +10,7 @@ files.forEach(file => {
 	const data = fs.readFileSync("./" + file).toString();
 
 	const block = data
-		.split("{{>successful-resume-template")[1]
+		.split("{{>successful-resumes-template")[1]
 		.split("}}")[0]
 		.split("\n");
 

@@ -1,4 +1,3 @@
-
 <div class="successful-resume">
     <div class="container">
         <div class="row text-center">
@@ -99,8 +98,11 @@
 </div>
 <hr>
 
-{{>discover-resumes
- famousResume=famousResume}}
+{{#if famousResume}}
+    {{>famous-resumes-carousel}}
+{{else}}
+    {{>successful-resumes-carousel}}
+{{/if}}
 
 <div
  id="view-resume"
