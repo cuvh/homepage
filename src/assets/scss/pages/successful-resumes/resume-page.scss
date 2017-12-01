@@ -78,3 +78,16 @@
 		box-shadow: 0 3px 150px 0 rgba(0, 0, 0, 0.125);
 	}
 }
+
+.successful-resumes-share {
+	.btn {
+		padding: $spacer/2 $spacer*2;
+		margin: 0 $spacer/2;
+	}
+
+	i {
+		margin-left: $spacer;
+		position: relative;
+		top: -1px;
+	}
+}
