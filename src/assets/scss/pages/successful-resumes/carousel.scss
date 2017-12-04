@@ -50,12 +50,12 @@
 				img {
 					margin-top: $spacer;
 
-					max-height: 35px;
+					max-height: 30px;
 				}
 			}
 		}
 
-		&:hover {
+		.resume-container-active:hover {
 			.resume-image {
 				border: 1px solid #2dc08d;
 			}

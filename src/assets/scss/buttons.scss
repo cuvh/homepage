@@ -20,6 +20,7 @@
         color: $active-color;
         background-color: $active-background;
         border-color: $active-border;
+        box-shadow: none !important;
 
         &:hover,
         &:focus,

@@ -1,31 +1,33 @@
 <div class="resume-container">
-    <a
-     href="/successful-resumes/{{prefix}}{{ link }}"
-     class="resume-image"
-     style="background: url('/img/successful-resumes/{{prefix}}thumb/2x-{{ frontImage }}')">
-        <div class="resume-image-bottom-gradient">
-            <span class="btn btn-primary">
-                Take a closer look
-            </span>
+    <div class="resume-container-active">
+        <a
+         href="/successful-resumes/{{prefix}}{{ link }}"
+         class="resume-image"
+         style="background: url('/img/successful-resumes/{{prefix}}thumb/2x-{{ frontImage }}')">
+            <div class="resume-image-bottom-gradient">
+                <span class="btn btn-primary">
+                    Take a closer look
+                </span>
 
-            {{#if companyLogo}}
-                <div class="works-at">
-                    <div>Hired at</div>
-                    <div>
-                        <img
-                         src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}"
-                         srcset="/img/successful-resumes/company-logos/{{ companyLogo }} 1x, /img/successful-resumes/company-logos/2x-{{ companyLogo }} 2x" />
+                {{#if companyLogo}}
+                    <div class="works-at">
+                        <div>Hired at</div>
+                        <div>
+                            <img
+                             src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}"
+                             srcset="/img/successful-resumes/company-logos/{{ companyLogo }} 1x, /img/successful-resumes/company-logos/2x-{{ companyLogo }} 2x" />
+                        </div>
                     </div>
-                </div>
-            {{/if}}
-        </div>
-    </a>
+                {{/if}}
+            </div>
+        </a>
 
-    <a
-     href="/successful-resumes/{{ link }}"
-     class="resume-name text-center top-xty">
-        {{ name }}
-    </a>
+        <a
+         href="/successful-resumes/{{ link }}"
+         class="resume-name text-center top-xty">
+            {{ name }}
+        </a>
+    </div>
 
     <div class="text-center top-xty" style="max-width: 250px;">
         {{#split tags}}

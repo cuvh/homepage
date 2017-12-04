@@ -75,7 +75,7 @@
 	img {
 		max-width: 400px;
 		width: 100%;
-		box-shadow: 0 3px 150px 0 rgba(0, 0, 0, 0.125);
+		box-shadow: 0 3px 75px 0 rgba(0, 0, 0, 0.125);
 	}
 }
 
@@ -89,5 +89,9 @@
 		margin-left: $spacer;
 		position: relative;
 		top: -1px;
+	}
+
+	&.move-top {
+		margin-top: $spacer*9;
 	}
 }
