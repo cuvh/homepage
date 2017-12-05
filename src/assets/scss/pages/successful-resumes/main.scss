@@ -180,3 +180,16 @@
 		}
 	}
 }
+
+#view-resume {
+	button.close {
+		background: white;
+		padding: 6px 8px;
+		border-radius: 4px;
+		opacity: 1;
+
+		i {
+			color: #000;
+		}
+	}
+}
