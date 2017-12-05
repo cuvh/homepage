@@ -1,4 +1,11 @@
 <div class="resume-container">
+    {{#if RoM}}
+        <div class="rom-tag">
+            <img
+             src="/img/discover/resume_of_the_month@2x.png">
+        </div>
+    {{/if}}
+
     <div class="resume-container-active">
         <a
          href="/successful-resumes/{{prefix}}{{ link }}"
@@ -11,7 +18,7 @@
 
                 {{#if companyLogo}}
                     <div class="works-at">
-                        <div>Hired at</div>
+                        <div>{{#if prefix}}&nbsp;{{else}}Hired at{{/if}}</div>
                         <div>
                             <img
                              src="/img/successful-resumes/company-logos/2x-{{ companyLogo }}"

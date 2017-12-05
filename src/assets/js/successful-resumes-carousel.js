@@ -31,6 +31,12 @@ function byChunks(items, chunkSize) {
 
     $("#resume-dots").html(dots.html());
     $(".successful-resumes-carousel-items").html(wrapper.html());
+
+    if (pieces > 1) {
+        $(".successful-resumes-resumes-list .carousel-control").show();
+    } else {
+        $(".successful-resumes-resumes-list .carousel-control").hide();
+    }
 }
 
 function onResize(items) {

@@ -117,6 +117,10 @@
 
 	.popular-resumes-image {
 		box-shadow: 0 3px 60px 0 rgba(0, 0, 0, 0.3);
+
+		@media screen and (min-width: $screen-sm) {
+			max-height: 565px;
+		}
 	}
 
 	.popular-resumes-name {
