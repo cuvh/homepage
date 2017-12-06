@@ -219,3 +219,16 @@
 .btn-padded {
     padding: 10px 40px !important;
 }
+
+.btn.btn-text-left {
+    text-align: left;
+}
+.btn.btn-text-link {
+    text-decoration: underline;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-2 {
+    border-radius: 5px;
+}

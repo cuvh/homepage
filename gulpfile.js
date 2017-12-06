@@ -108,6 +108,7 @@ function javascript() {
             "node_modules/bootstrap-sass/assets/javascripts/bootstrap/popover.js",
             "node_modules/bootstrap-sass/assets/javascripts/bootstrap/button.js",
             "node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
+            "node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
             "node_modules/switch-toggle/src/switchToggle.js",
             "node_modules/validate.js/validate.js",
             "src/assets/js/**/*",
