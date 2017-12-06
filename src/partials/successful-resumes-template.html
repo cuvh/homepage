@@ -1,0 +1,139 @@
+<div class="successful-resume">
+    <div class="container">
+        <div class="row text-center">
+            {{#if famousResume}}
+        	   <h1>Famous Resumes</h1>
+            {{else}}
+                <h1>Successful Resumes</h1>
+            {{/if }}
+        	<div class="top-sm bottom-md">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-7 text-center successful-resume-image-container">
+                <img
+                 width="400"
+                 class="embed-responsive-item popular-resumes-image back-image hidden-xs"
+                 src="/img/successful-resumes/{{ frontImage }}"
+                 alt="Condensed resume" />
+
+                <div class="front-image-container">
+                    <a
+                     href="#view-resume"
+                     data-toggle="modal"
+                     data-track="event"
+                     data-category="Examples"
+                     data-action="Click Example Resume"
+                     data-label="{{ name }}">
+                		<img
+                         width="400"
+                         class="embed-responsive-item popular-resumes-image"
+                         src="/img/successful-resumes/{{ frontImage }}"
+                         alt="Condensed resume"
+                          />
+
+                        <span
+                         class="show-button">
+                            <i class="icon-search-plus"></i>
+                        </span>
+                    </a>
+                </div>
+        	</div>
+
+        	<div class="col-sm-5">
+        		<div class="successful-resume-name">
+                    {{ name }}
+        		</div>
+
+                {{#if companyLogo }}
+        		<div class="successful-resume-works-at top-xs">
+        			Hired at 
+                    <img
+                     height="30"
+                     src="/img/successful-resumes/company-logos/{{ companyLogo }}"
+                     srcset="/img/successful-resumes/company-logos/{{ companyLogo }} 1x, /img/successful-resumes/company-logos/2x-{{ companyLogo }} 2x" />
+        		</div>
+                {{/if }}
+
+        		<div class="successful-resume-description top-xs">
+        			{{ description }}
+        		</div>
+
+        		<div class="successful-resume-tag-container">
+                    {{#split tags}}
+                        <div class="resume-tag">{{this}}</div>
+                    {{/split}}
+                    {{#split secondary_tags}}
+                        <div class="resume-tag">{{this}}</div>
+                    {{/split}}
+        		</div>
+
+                <!--<div class="similar-resumes top-xs">
+                    283 Marketing resumes have similar resume configuration
+                </div>-->
+
+        		<!--<div class="successful-resume-cta">
+        			Want a resume like this? Hit the button and we'll give you
+        			<a href="#" class="btn btn-primary">I want this</a>
+        		</div>-->
+        	</div>
+        </div>
+
+        {{>social-panel class="move-top" url=url}}
+
+        <div class="row text-center">
+        	<div class="top-md bottom-sm">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+{{#if famousResume}}
+    {{>famous-resumes-carousel}}
+{{else}}
+    {{>successful-resumes-carousel}}
+{{/if}}
+
+<div
+ id="view-resume"
+ tabindex="-1"
+ class="modal fade">
+    <div class="modal-dialog modal-lg modal-example">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <img
+                 width="1240"
+                 height="1755"
+                 class="img-responsive"
+                 src="/img/successful-resumes/{{ frontImage }}"
+                 alt="{{ name }} resume page 1">
+
+                {{#if backImage }}
+                    <img
+                     width="1240"
+                     height="1755"
+                     class="img-responsive top-md"
+                     src="/img/successful-resumes/{{ backImage }}"
+                     alt="{{ name }} resume page 2">
+                {{/if }}
+            </div>
+        </div>
+    </div>
+    <button
+     type="button"
+     data-dismiss="modal"
+     class="close close-example">
+        <i class="icon-times"></i>
+    </button>
+</div>

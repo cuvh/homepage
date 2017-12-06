@@ -1,0 +1,101 @@
+.successful-resume {
+	.successful-resume-name {
+		height: 42px;
+		color: #333333;
+		font-family: "Geometria Light";
+		font-size: 42px;
+		font-weight: 300;
+		line-height: 53px;
+	}
+
+	.successful-resume-tag-container {
+		margin-top: $spacer*3;
+		margin-left: -$spacer;
+	}
+
+	.successful-resume-works-at img {
+		margin-left: -$spacer/2;
+	}
+
+	.similar-resumes {
+		color: #808080;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.successful-resume-cta {
+		border: 1px solid #b3b3b3;
+		border-radius: 5px;
+		padding: $spacer*2;
+
+		flex-direction: row;
+		display: flex;
+
+		max-width: 370px;
+		width: 100%;
+	}
+}
+
+.successful-resumes-carousel-align {
+	display: flex;
+	justify-content: center;
+}
+
+.back-button {
+	i {
+		font-size: 25px;
+	}
+
+	span {
+		position: relative;
+		top: -6px;
+	}
+}
+
+.successful-resume-image-container {
+	position: relative;
+
+	.back-image {
+		position: absolute;
+		z-index: -1;
+		transform: rotate(5deg);
+	}
+
+	.front-image-container {
+		display: inline-block;
+		position: relative;
+
+		.show-button {
+			position: absolute;
+			bottom: 16px;
+			right: 16px;
+			border-radius: 5px;
+			padding: $spacer $spacer*3/2;
+			background: #363636;
+			color: #fff;
+		}
+	}
+
+	img {
+		max-width: 400px;
+		width: 100%;
+		box-shadow: 0 3px 75px 0 rgba(0, 0, 0, 0.125);
+	}
+}
+
+.successful-resumes-share {
+	.btn {
+		padding: $spacer/2 $spacer*2;
+		margin: 0 $spacer/2;
+	}
+
+	i {
+		margin-left: $spacer;
+		position: relative;
+		top: -1px;
+	}
+
+	&.move-top {
+		margin-top: $spacer*9;
+	}
+}

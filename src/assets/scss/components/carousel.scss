@@ -2,7 +2,6 @@
 // Carousel
 // --------------------------------------------------
 
-
 // Wrapper for the slide container and indicators
 .carousel {
     position: relative;
@@ -85,7 +84,6 @@
     > .active.right {
         left: 100%;
     }
-
 }
 
 // Left/right controls for nav
@@ -113,7 +111,7 @@
 
     li {
         display: inline-block;
-        width:  8px;
+        width: 8px;
         height: 8px;
         text-indent: -999px;
         border-radius: 10px;
@@ -126,29 +124,28 @@
         margin-left: 0;
     }
 
-    li.active, li:hover {
-        width:  8px;
+    li.active,
+    li:hover {
+        width: 8px;
         height: 8px;
         opacity: 1;
     }
 }
 
-
 // Scale up controls for tablets and up
 @media screen and (min-width: $screen-sm-min) {
-
     // Scale up the controls a smidge
     .carousel-control {
         display: block;
         position: absolute;
         top: 50%;
         text-align: center;
-        height: 100px;
+        height: 130px;
         width: 44px;
         border: 1px solid white;
         border-radius: 22px;
-        margin-top: -50px;
-        line-height: 104px;
+        margin-top: -65px;
+        line-height: 134px;
         color: white;
         font-size: 25px;
         box-shadow: none;
