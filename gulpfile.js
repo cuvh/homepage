@@ -134,16 +134,11 @@ function resetPages(done) {
 }
 
 function revisionFiles() {
-    const isMaster =
-        require("child_process")
-            .execSync("git branch | grep \\*")
-            .indexOf("master") !== -1;
-
     return gulp
         .src("dist/**")
         .pipe(
             $.revAll.revision({
-                prefix: isMaster && isProd ? "https://enhancv.com/" : null,
+                prefix: isProd ? "https://enhancv.com/" : null,
                 dontSearchFile: [".pdf"],
                 dontRenameFile: [/social-image.jpg/g, ".html"],
                 dontUpdateReference: [/social-image.jpg/g, ".html"],
