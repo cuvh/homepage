@@ -14,8 +14,8 @@
             </div>
         </div>
 
-        <div class="row">
-        	<div class="col-sm-7 text-center successful-resume-image-container">
+        <div class="row Grid">
+        	<div class="Grid-cell--md-7 Grid-cell--sm-12 Grid-cell--xs-12 text-center successful-resume-image-container">
                 <img
                  width="400"
                  alt="{{ name }}'s Enhancv resume front page"
@@ -47,7 +47,7 @@
                 </div>
         	</div>
 
-        	<div class="col-sm-5">
+        	<div class="Grid Grid--column Grid-cell--md-5 Grid-cell--sm-12 Grid-cell--xs-12">
         		<div class="successful-resume-name">
                     {{ name }}
         		</div>
@@ -80,10 +80,41 @@
                     283 Marketing resumes have similar resume configuration
                 </div>-->
 
-        		<!--<div class="successful-resume-cta">
-        			Want a resume like this? Hit the button and we'll give you
-        			<a href="#" class="btn btn-primary">I want this</a>
-        		</div>-->
+        		<div class="successful-resume-cta">
+        			<div class="bottom-xs cta-text">This resume was created using Enhancv</div>
+        			<div>
+                        <a
+                         href="https://app.enhancv.com"
+                         class="btn btn-primary cta-button"
+                         data-track="event"
+                         data-category="Successful Resumes"
+                         data-action="Click Button"
+                         data-label="This resume was created using enhancv">
+                            Create Your Own Resume
+                        </a>
+                        <span class="text-muted m-left-1">
+                            Free 14 Days Trial
+                        </span>
+                    </div>
+        		</div>
+
+                <script>
+                    (function () {
+                        var isFamous = {{#if famousResume}}true{{else}}false{{/if}};
+
+                        var res = localStorage.getItem('ab_test_top_resume');
+                        if (!res) {
+                            res = Math.random();
+                            localStorage.setItem('ab_test_top_resume', res);
+                        }
+
+                        if (res > 0.5) {
+                            var ctaText = 'You deserve a resume that shows relevance and self confidence';
+                            document.querySelector('.cta-text').innerHTML = ctaText;
+                            document.querySelector('.cta-button').setAttribute('data-label', ctaText);
+                        }
+                    }());
+                </script>
         	</div>
         </div>
 
