@@ -10,9 +10,9 @@
 <meta name="twitter:site" content="@Enhancv" />
 
 {{#if metaImage }}
-    <meta itemprop="image" content="{{ metaImage }}">
-    <meta name="twitter:image" content="{{ metaImage }}" />
-    <meta property="og:image" content="{{ metaImage }}" />
+    <meta itemprop="image" content="{{ urls.homepage }}{{ metaImage }}">
+    <meta name="twitter:image" content="{{ urls.homepage }}{{ metaImage }}" />
+    <meta property="og:image" content="{{ urls.homepage }}{{ metaImage }}" />
 {{ else }}
     <meta itemprop="image" content="{{ urls.homepage }}/img/social-image.jpg">
     <meta name="twitter:image" content="{{ urls.homepage }}/img/social-image.jpg" />
