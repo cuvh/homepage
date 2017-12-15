@@ -14,6 +14,17 @@
         }
     }
 }
+
+.navbar-btn {
+    margin-top: 9px !important;
+    margin-bottom: 9px !important;
+}
+
+.navbar-logo {
+    margin-top: 18px;
+    width: 44px;
+}
+
 .navbar.navbar-sticky {
     position: sticky;
     top: 0;
@@ -37,8 +48,8 @@
 
 .nav.navbar-nav {
     > li > a {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 

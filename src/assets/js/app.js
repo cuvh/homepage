@@ -84,12 +84,21 @@ $(function() {
     $(document).mousemove(function(e) {
         var x = e.clientX;
         var y = e.clientY;
+
+        var pageWidth = $(window).width();
+
         $("#parallax-1")
-            .css("left", -15 + x / 40)
+            .css("left", -(pageWidth / 40 / 2) + x / 40)
             .css("top", y / 55);
 
         $("#parallax-2")
-            .css("left", -30 + x / 15)
+            .css("left", -(pageWidth / 15 / 2) + x / 15)
             .css("top", y / 35);
+    });
+
+    $(".testimonial-image").tilt({
+        glare: true,
+        maxGlare: 1,
+        maxTilt: 35,
     });
 });

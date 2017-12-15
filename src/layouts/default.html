@@ -18,7 +18,12 @@
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script>
         window.sr = ScrollReveal();
-        sr.reveal('.homepage-panel .Grid');
+        sr.reveal('.homepage-panel .Grid', {
+            scale: 1,
+            easing: 'ease-out',
+            distance: '50px',
+            viewFactor: 0.6
+        });
         </script>
     </body>
 </html>
