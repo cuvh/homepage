@@ -4,10 +4,10 @@ title: Enhancv
 ---
 
 <div class="homepage-intro">
-    <div class="homepage-lines"></div>
     <div class="container text-center">
-        <h2>The resume that opens doors for you</h2>
-        <div class="top-sm">
+        <h1>A resume to be proud of.</h1>
+        <p class="p-big">Stand out and make sure key things come across</p>
+        <div class="m-top-3">
             <a
              href="{{ urls.builder }}"
              data-track="event"
@@ -15,399 +15,158 @@ title: Enhancv
              data-action="Click Signup"
              data-label="Craft Your Resume"
              class="btn btn-primary btn-lg">
-                Craft Your Resume
+                Create Your Resume
             </a>
-            <p class="top-sm">
-                Free 14-day trial, no credit card required
-            </p>
         </div>
-        <div class="top-lg center-block embed-responsive embed-responsive-homepage-video">
-            <div class="embed-responsive-item">
-                <div class="center-block embed-responsive">
-                    <iframe
-                     src="//player.vimeo.com/video/196268238?autoplay=1"
-                     frameborder="0"
-                     webkitallowfullscreen
-                     mozallowfullscreen
-                     allowfullscreen></iframe>
-                </div>
+    </div>
+    <!--<div class="homepage-scalable-header">
+    </div>-->
+    <div class="parallax-window homepage-scalable-header" data-parallax="scroll" data-image-src="/img/new-homepage/header.jpg"></div>
+</div>
+
+<div class="homepage-logos">
+    <div class="container">
+        <div class="Grid m-top-10">
+            <div class="Grid-cell text-center">
+                <img src="/img/new-homepage/company-logos/tesla.svg" />
+            </div>
+            <div class="Grid-cell text-center">
+                <img src="/img/new-homepage/company-logos/google.svg" />
+            </div>
+            <div class="Grid-cell text-center">
+                <img src="/img/new-homepage/company-logos/facebook.svg" />
+            </div>
+            <div class="Grid-cell text-center">
+                <img src="/img/new-homepage/company-logos/spotify.svg" />
+            </div>
+            <div class="Grid-cell hidden-sm hidden-xs text-center">
+                <img src="/img/new-homepage/company-logos/intercom.svg" />
+            </div>
+        </div>
+        <div class="m-top-5 m-bottom-6">
+            <p class="text-muted-deep text-center">Our users got noticed and hired by their top choice companies — Read more about their journey to the perfect job here.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container homepage-panel second">
+    <div class="Grid m-top-2 m-bottom-2">
+        <div class="Grid Grid--alignCenter Grid-cell--lg-4 Grid-cell--md-4 Grid-cell--md-offset-1 Grid-cell--lg-offset-1">
+            <div>
+                <h2>A resume that simply stands out</h2>
+                <p class="text-muted m-top-2 m-bottom-2">90% of applicants use a word-editing software and<br /> traditional templates. Don’t rely on a bland resume - get the recruiter’s attention with a visually appealing format.</p>
+                <a href="#" class="feature-link">— Build a modern resume</a>
+            </div>
+        </div>
+        <div class="Grid Grid--alignCenter Grid-cell--lg-7 Grid-cell--md-7 relative homepage-standout">
+            <div class="inline-block">
+                <img id="parallax-1" class="bg-image" src="/img/new-homepage/standout-01-img3-1.png" />
+                <img id="parallax-2" class="bg-image" src="/img/new-homepage/standout-01-img3-2.png" />
+                <img id="parallax-3" class="relative" src="/img/new-homepage/standout-01-img3-3.png" />
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row top-md">
-            <div class="col-sm-10 col-sm-offset-1">
-                <h3 class=" text-inverse text-center">
-                    Show who you are both as a professional and an individual
-                </h3>
+</div>
+
+<div class="homepage-spotlight">
+    <div class="container homepage-panel">
+        <div class="Grid">
+            <div class="Grid Grid--alignCenter Grid-cell--md-6 Grid-cell--lg-6 Grid-cell--md-offset-1 Grid-cell--lg-offset-1">
+                <div class="relative m-top-1">
+                    <img style="width: 100%; position: absolute; top:13px; left: 3px; width: 255px; background: white; z-index: 1;" src="/img/new-homepage/spotlight_back@2x.png" />
+                    <img style="width: 100%; position: relative; top: 23px; width: 335px; left: 164px; z-index: 2;" src="/img/new-homepage/spotlight@2x.png" />
+                </div>
             </div>
-        </div>
-        <div class="row top-md">
-            <div
-             class="col-sm-8 col-sm-offset-2">
-                <div class="embed-responsive embed-responsive-homepage-tips" id="tips">
-                    <img
-                     width="595"
-                     height="841"
-                     class="embed-responsive-item"
-                     src="/img/homepage/tips/resume.jpg"
-                     srcset="/img/homepage/tips/resume.jpg 1x, /img/homepage/tips/resume@2x.jpg 2x"
-                     alt="Condensed resume">
-                    <ul class="dots">
-                        <!-- Customize -->
-
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='17%'
-                         y='4.5%'
-                         title='Customize Colors'
-                         image='/img/homepage/tips/customize-colors.png'
-                         image2='/img/homepage/tips/customize-colors@2x.png'
-                         width='186'
-                         height='189'
-                         containerId='tips'
-                        }}
-
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='6%'
-                         y='21%'
-                         title='Customize Fonts'
-                         image='/img/homepage/tips/customize-fonts.png'
-                         image2='/img/homepage/tips/customize-fonts@2x.png'
-                         width='181'
-                         height='178'
-                         containerId='tips'
-                        }}
-
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='58.5%'
-                         y='20%'
-                         title='Customize Icons'
-                         image='/img/homepage/tips/customize-icons.png'
-                         image2='/img/homepage/tips/customize-icons@2x.png'
-                         width='225'
-                         height='215'
-                         containerId='tips'
-                        }}
-
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='78%'
-                         y='4%'
-                         title='Customize Background'
-                         image='/img/homepage/tips/customize-backgrounds.png'
-                         image2='/img/homepage/tips/customize-backgrounds@2x.png'
-                         width='186'
-                         height='188'
-                         containerId='tips'
-                        }}
-
-                        <!-- Tips -->
-
-                        {{>dot
-                         color='#FD9526'
-                         x='8%'
-                         y='30%'
-                         title='Get Contextual Tips'
-                         text='Instead of listing responsibilities, show your impact in the role'
-                         containerId='tips'
-                        }}
-
-                        {{>dot
-                         color='#FD9526'
-                         x='92.5%'
-                         y='21%'
-                         title='Get Contextual Tips'
-                         text='Show your personality, dedication, and passion through your personal activities and initiatives.'
-                         containerId='tips'
-                        }}
-
-                        {{>dot
-                         color='#FD9526'
-                         x='6%'
-                         y='82.2%'
-                         title='Get Contextual Tips'
-                         text='Mention any relevant licenses, certificates, and trainings.'
-                         containerId='tips'
-                        }}
-
-                        {{>dot
-                         color='#FD9526'
-                         x='68%'
-                         y='80%'
-                         title='Get Contextual Tips'
-                         text='Include any academic scholarships, sports medals, or professional awards.'
-                         containerId='tips'
-                        }}
-
-                        <!-- Mistakes -->
-
-                        {{>dot
-                         color='#FF0030'
-                         x='28%'
-                         y='35.4%'
-                         title='Avoid Common Mistakes'
-                         text='Be specific and include valuable metrics. For example, “published 15 posts as a guest blogger”'
-                         containerId='tips'
-                        }}
-
-                        {{>dot
-                         color='#FF0030'
-                         x='58.5%'
-                         y='41.1%'
-                         title='Avoid Common Mistakes'
-                         text='"Do" is a weak verb. Replace it with an active verb that has a similar meaning and better communicates the impact. For example, use "built" instead of "did".'
-                         containerId='tips'
-                        }}
-
-                        {{>dot
-                         color='#FF0030'
-                         x='91.3%'
-                         y='32.9%'
-                         title='Avoid Common Mistakes'
-                         text='"Actually" doesn\'t add any value to the sentence. Consider removing it.'
-                         containerId='tips'
-                        }}
-                    </ul>
+            <div class="Grid Grid--alignCenter Grid-cell--md-4 Grid-cell--lg-4">
+                <div class="m-left-1">
+                    <h2>Put your achievements in the spotlight</h2>
+                    <p class="text-muted m-top-2 m-bottom-2">
+                        With most resumes, the key things don't come across. Bring your most important accomplishments forward and show what you’re capable of achieving.
+                    </p>
+                    <a href="#" class="feature-link">—  Show them what you have to offer</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="homepage-new-features">
-    <div class="container">
-        <div class="text-center">
-            <h3 class=" text-center">High Time for Your Resume to Level Up</h3>
-            <ul
-             class="nav nav-tips nav-tips-bordered top-md hidden-xs"
-             id="features-indicators">
-                <li class="active with-mark">
-                    <a
-                     href="#features"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Content Analyzer"
-                     data-slide-to="0">
-                        Content Analyzer
-                    </a>
-                </li>
-                <li class="with-mark">
-                    <a
-                     href="#features"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Friends’ Feedback"
-                     data-slide-to="1">
-                        Friends’ Feedback
-                    </a>
-                </li>
-            </ul>
-        </div>
 
-        <div
-         id="features-texts"
-         class="text-center top-md">
-            <div class="fade in">
-                <h3 class="no-top bottom-xs">Real-time Suggestions at Your Fingertips</h3>
-                <p class="text-muted no-margin">
-                    Analyzes your content and gives you real-time suggestions on how to improve
+<div class="container homepage-panel">
+    <div class="Grid m-top-2 m-bottom-2">
+        <div class="Grid Grid--alignCenter Grid-cell--lg-4 Grid-cell--md-4 Grid-cell--md-offset-1 Grid-cell--lg-offset-1">
+            <div>
+                <h2>Building a resume shouldn’t be frustrating</h2>
+                <p class="text-muted m-top-2 m-bottom-2">
+                    With Enhancv, editing your resume is easy. Just focus on<br /> the content and let us take care the formatting.
                 </p>
+                <a href="#" class="feature-link">—  See it in action with our free trial</a>
             </div>
-            <div class="fade hidden">
-                <h3 class="no-top bottom-xs">Friends’ Feedback Posted Just Like Sticky Notes</h3>
-                <p class="text-muted no-margin">
-                    Allows you to quickly collect feedback and make improvements
+        </div>
+        <div class="Grid Grid--alignCenter Grid-cell--lg-7 Grid-cell--md-7 relative">
+            <img src="/img/new-homepage/customize.png" style="margin-top: -45px;" />
+        </div>
+    </div>
+</div>
+
+<div class="homepage-benefits">
+    <div class="container">
+        <div class="Grid m-top-11 m-bottom-10">
+            <div class="Grid-cell text-center">
+                <div><img style="width: 40px; height: 40px;" src="https://i.imgur.com/4mCr2Pa.png" /></div>
+                <h4 class="m-top-no m-bottom-1">Simple editing</h4>
+                <p class="text-muted">Make changes straight on the page and preview how the resume looks without downloading it.</p>
+            </div>
+            <div class="Grid-cell text-center">
+                <div><img style="width: 40px; height: 40px;" src="https://i.imgur.com/4mCr2Pa.png" /></div>
+                <h4 class="m-top-no m-bottom-1">Simple editing</h4>
+                <p class="text-muted">Make changes straight on the page and preview how the resume looks without downloading it.</p>
+            </div>
+            <div class="Grid-cell text-center">
+                <div><img style="width: 40px; height: 40px;" src="https://i.imgur.com/4mCr2Pa.png" /></div>
+                <h4 class="m-top-no m-bottom-1">Simple editing</h4>
+                <p class="text-muted">Make changes straight on the page and preview how the resume looks without downloading it.</p>
+            </div>
+            <div class="Grid-cell text-center">
+                <div><img style="width: 40px; height: 40px;" src="https://i.imgur.com/4mCr2Pa.png" /></div>
+                <h4 class="m-top-no m-bottom-1">Simple editing</h4>
+                <p class="text-muted">Make changes straight on the page and preview how the resume looks without downloading it.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container homepage-testimonials homepage-panel">
+    <div class="Grid">
+        <div class="Grid Grid--alignCenter Grid-cell--md-3 Grid-cell--lg-3 text-center Grid-cell--md-offset-1 Grid-cell--lg-offset-1">
+            <img data-tilt style="width: 100%; max-width: 228px; margin: 0 auto;" src="/img/new-homepage/testimonials/img@2x.png" />
+        </div>
+        <div class="Grid Grid--alignCenter Grid-cell--md-6 Grid-cell--lg-6 Grid-cell--md-offset-1 Grid-cell--lg-offset-1">
+            <div class="m-left-1">
+                <h1>“A recruiter at a top 5 investment bank in London told me my CV was a breath of fresh air and invited me to my first interview in a bulge bank”</h1>
+                <p class="text-muted m-top-2">
+                    Edward Kennedy — Alumni from University College Dublin
                 </p>
             </div>
         </div>
-        <div class="row top-md">
-            <div class="col-sm-10 col-sm-offset-1">
-                <div
-                 class="homepage-features carousel slide top-md"
-                 id="features"
-                 data-ride="carousel"
-                 data-switch-toggle="#features-texts"
-                 data-indicators="#features-indicators,#features-dots"
-                 data-interval="false">
-                    <ul
-                     id="features-dots"
-                     class="visible-xs carousel-indicators">
-                        <li
-                         data-target="#features"
-                         class="active"
-                         data-slide-to="0">
-                        </li>
-                        <li
-                         data-target="#features"
-                         data-slide-to="1">
-                        </li>
-                    </ul>
+    </div>
+</div>
 
-                    <div class="carousel-inner">
-                        <div class="item active item-bg">
-                            <img
-                             width="867"
-                             height="542"
-                             class="img-responsive"
-                             src="/img/homepage/new-features/mistakes.jpg"
-                             srcset="/img/homepage/new-features/mistakes.jpg 1x, /img/homepage/new-features/mistakes@2x.jpg 2x">
-                        </div>
-                        <div class="item item-bg">
-                            <img
-                             width="867"
-                             height="542"
-                             class="img-responsive"
-                             src="/img/homepage/new-features/feedback.jpg"
-                             srcset="/img/homepage/new-features/feedback.jpg 1x, /img/homepage/new-features/feedback@2x.jpg 2x">
-                        </div>
-                    </div>
-
+<div class="homepage-cta">
+    <div class="container">
+        <div class="Grid">
+            <div class="Grid Grid-cell Grid--alignCenter text-center">
+                <div class="Grid-cell">
+                    <h1>Keep being awesome but let<br /> us help you expose it.</h1>
                     <a
-                     class="left carousel-control"
-                     href="#features"
+                     href="https://app.enhancv.com"
                      data-track="event"
                      data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Arrow"
-                     data-slide="prev">
-                        <i class="icon-angle-left"></i>
-                    </a>
-
-                    <a
-                     class="right carousel-control"
-                     href="#features"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Arrow"
-                     data-slide="next">
-                        <i class="icon-angle-right"></i>
+                     data-action="Click Signup"
+                     data-label="Craft Your Resume"
+                     class="btn btn-default btn-lg m-top-2">
+                        Get Your Resume
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container text-center homepage-selected-features">
-    <div class="row">
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/mistake.svg"
-             alt="circled cross">
-            <h4 class=" top-sm">No more mistakes</h4>
-            <p class="text-muted">
-                Allows you to share your resume with friends for feedback and ideas.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/pdf.svg"
-             alt="pdf file icon">
-
-            <h4 class=" top-sm">Professional PDF export</h4>
-            <p class="text-muted">
-                Makes sure that the PDF you export looks exactly the way you designed it.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/happy.svg"
-             alt="happy face">
-
-            <h4 class=" top-sm">Stress-free</h4>
-            <p class="text-muted">
-                Enjoy a stress-free process with contextual tips and inspiring examples.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/design.svg"
-             alt="brush">
-
-            <h4 class=" top-sm">Customize your resume design</h4>
-            <p class="text-muted">
-                Helps you create a memorable resume that stands out from the crowd.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/hr.svg"
-             alt="hr heart">
-
-            <h4 class=" top-sm">HRs love it</h4>
-            <p class="text-muted">
-                Helps you address the key aspects important for HRs, as a professional and an individual.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/ats.svg"
-             alt="smiling laptop">
-
-            <h4 class=" top-sm">ATS optimized</h4>
-            <p class="text-muted">
-                Exports your resume as a PDF readable by most Applicant Tracking Systems out there.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/diamond.svg"
-             alt="diamond">
-
-            <h4 class=" top-sm">Discover &amp; highlight your strengths</h4>
-            <p class="text-muted">
-                Helps you communicate your talents, strengths, and personality for personal and professional success.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/ten-files.svg"
-             alt="ten files">
-
-            <h4 class=" top-sm">Tailor each resume to its specific goal</h4>
-            <p class="text-muted">
-                Create up to 10 different active resumes, each tailored to specific job openings/purposes.
-            </p>
-        </div>
-        <div class="col-sm-4 col-xs-12 top-md">
-            <img
-             width="36"
-             height="36"
-             src="/img/homepage/selected-features/letter.svg"
-             alt="Cover letter">
-
-            <h4 class=" top-sm">Allows you to create beautiful cover letters</h4>
-            <p class="text-muted">
-                You can use the existing resume template to write cover letters or letters of intent to accompany your resume.
-            </p>
-        </div>
-    </div>
-</div>
-
-{{>testimonials}}
-
-{{>companies }}

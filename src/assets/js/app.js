@@ -4,16 +4,20 @@ function isTouchDevice() {
 
 function preloadImages(images) {
     if (images.length > 0) {
-        var img = new Image ();
+        var img = new Image();
         img.onload = function() {
             preloadImages(images.slice(1));
-        }
+        };
         img.src = images[0];
     }
 }
 
 $(function() {
-    preloadImages($.map($('div[data-preload]'), function (item){ return (item.dataset && item.dataset.preload) }));
+    preloadImages(
+        $.map($("div[data-preload]"), function(item) {
+            return item.dataset && item.dataset.preload;
+        })
+    );
 
     // load lines background after all resources are downloaded
     $(".dating-resume-lines, .homepage-lines").css(
@@ -29,17 +33,23 @@ $(function() {
     }
 
     $(document).on("show.bs.popover", function(event) {
-        $('[data-toggle="popover"]').not(event.target).popover("hide");
+        $('[data-toggle="popover"]')
+            .not(event.target)
+            .popover("hide");
     });
 
     $('[data-toggle="tooltip"]').tooltip({ trigger: "hover" });
 
     $(".carousel").bcSwipe();
 
-    $('[data-toggle="popover"]').eq(4).popover("show");
+    $('[data-toggle="popover"]')
+        .eq(4)
+        .popover("show");
 
     $(window).load(function() {
-        $('#landing-tips [data-toggle="popover"]').eq(0).popover("show");
+        $('#landing-tips [data-toggle="popover"]')
+            .eq(0)
+            .popover("show");
     });
 
     // Tandem tags filter
@@ -63,9 +73,23 @@ $(function() {
         $(".tandem .abillity-tandem-1").hide();
     });
 
-    $('.who-are-you .select-state, .who-are-you .carousel-indicators li').click(function() {
+    $(".who-are-you .select-state, .who-are-you .carousel-indicators li").click(function() {
         setTimeout(function() {
-            $('.state-view.active [data-toggle="popover"]').first().popover('show');
-        }, 610)
+            $('.state-view.active [data-toggle="popover"]')
+                .first()
+                .popover("show");
+        }, 610);
+    });
+
+    $(document).mousemove(function(e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        $("#parallax-1")
+            .css("left", -15 + x / 40)
+            .css("top", y / 55);
+
+        $("#parallax-2")
+            .css("left", -30 + x / 15)
+            .css("top", y / 35);
     });
 });

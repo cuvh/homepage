@@ -11,7 +11,7 @@ $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 13.5%) !default; // #222
 $gray-dark: lighten($gray-base, 20%) !default; // #333
 $gray: lighten($gray-base, 33.5%) !default; // #555
-$gray-light: lighten($gray-base, 46.7%) !default; // #777
+$gray-light: #808080 !default; // #777
 $gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
 
 $brand-primary: #2dc08d;
@@ -60,7 +60,7 @@ $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !defau
 $font-family-base: $font-family-sans-serif !default;
 
 $font-size-base: 14px !default;
-$font-size-large: ceil(($font-size-base * 1.15)) !default; // ~16px
+$font-size-large: 16px !default; // ~16px
 $font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1: 42px;
@@ -74,6 +74,7 @@ $font-size-h6: ceil(($font-size-base * 0.85)) !default; // ~12px
 $line-height-base: 1.428571429 !default; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
+$line-height-computed: 16px;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family: "Playfair Display", serif;
@@ -103,8 +104,8 @@ $icon-font-svg-id: "glyphicons_halflingsregular" !default;
 $padding-base-vertical: 11px;
 $padding-base-horizontal: 20px;
 
-$padding-large-vertical: 17px;
-$padding-large-horizontal: 25px;
+$padding-large-vertical: 12px;
+$padding-large-horizontal: 23px;
 
 $padding-small-vertical: 5px !default;
 $padding-small-horizontal: 10px !default;
@@ -183,9 +184,7 @@ $btn-link-disabled-color: $gray-light !default;
 // Allows for customizing button radius independently from global border radius
 // $btn-border-radius-base:         ($line-height-computed + ($padding-base-vertical * 2) + 2) / 2;
 $btn-border-radius: 5px;
-$btn-border-radius-large: (
-		ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2
-	) / 2;
+$btn-border-radius-large: 5px;
 $btn-border-radius-small: (
 		floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
 	) / 2;

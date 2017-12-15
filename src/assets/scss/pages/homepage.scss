@@ -1,7 +1,35 @@
+$homepage-background: #eaf8f3;
+
+.homepage {
+    background: $homepage-background;
+
+    .navbar-default {
+        background: transparent;
+        border: 0px;
+
+        transition: background 0.4s;
+    }
+
+    .navbar-stick {
+        background: #fff;
+    }
+}
+
+.homepage-scalable-header {
+    background: url(/img/new-homepage/header.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 760px;
+    margin-top: 17px;
+}
+
 .homepage-intro {
     position: relative;
-    padding-top: 30px;
-    background: linear-gradient(180deg, #ffffff 0%, $brand-primary 50%);
+    background: $homepage-background;
+
+    h1 {
+        margin-top: 67px;
+    }
 
     .homepage-lines {
         //    background: url(/img/homepage/lines-bg.png);
@@ -27,31 +55,30 @@
     position: relative;
 }
 
-.embed-responsive-homepage-video {
-    background-image: url(/img/homepage/macbook.svg);
-    background-size: cover;
-    padding-bottom: 58%;
+.homepage-logos,
+.homepage-spotlight,
+.homepage-benefits {
+    background: #fff;
 }
 
-@media screen and (min-width: $screen-sm-min) {
-    .embed-responsive-homepage-video {
-        margin-left: 5.5%;
-        margin-right: 5.5%;
-        padding-bottom: 52%;
+.homepage-standout {
+    img {
+        width: 100%;
+    }
+
+    .bg-image {
+        position: absolute;
     }
 }
 
-.embed-responsive-homepage-video .embed-responsive {
-    margin: 4% 12.35% 0 12.35%;
-    padding-bottom: 47.4%;
+.homepage-logos {
+    .container {
+        height: 226px;
+    }
 }
 
-.embed-responsive-homepage-tips {
-    padding-bottom: 141.47%;
-    overflow: visible;
-    margin-bottom: -100px;
-    z-index: 1;
-    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.2);
+.homepage-benefits {
+    height: 340px;
 }
 
 .homepage-new-features {
@@ -59,323 +86,36 @@
     background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
 }
 
-.homepage-features {
-    .item-bg {
-        background-image: url(/img/homepage/macbook.svg);
-        background-size: 122%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        padding: 5.2% 4.2% 0 4.2%;
+.homepage-cta {
+    background: $brand-primary;
+
+    h1 {
+        color: $inverse-color;
+    }
+
+    .container {
+        height: 500px;
+    }
+
+    .Grid {
+        height: 100%;
     }
 }
 
-@media screen and (min-width: $screen-sm-min) {
-    .carousel-control {
-        color: $text-color;
-        border-color: $border-color;
-
-        &:hover,
-        &:focus {
-            background-color: rgba($border-color, 0.2);
-            color: $text-color;
-        }
+.homepage-testimonials {
+    h1 {
+        line-height: 56px;
     }
 }
 
-.homepage-quotes {
-    background-color: $brand-primary;
+.homepage-panel {
+    height: 720px;
 
-    .author-title {
-        opacity: 0.5;
-    }
-    .carousel-indicators li {
-        background-color: white;
-    }
-
-    .quote-content {
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: $screen-sm-min) {
-        .quote-content {
-            height: 400px;
-        }
-
-        .carousel-control {
-            color: #fff;
-            border-color: #fff;
-
-            &:hover,
-            &:focus {
-                background-color: rgba(255, 255, 255, 0.2);
-                color: #fff;
-            }
-        }
-    }
-}
-
-.homepage-feature-icon {
-    font-size: 30px;
-    color: $brand-primary;
-}
-.homepage-selected-features {
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-.homepage-quotes .carousel-indicators {
-    bottom: 20px;
-}
-
-@media screen and (max-width: $screen-sm) {
-    #features-texts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 130px;
-    }
-    #tip-titles {
-        min-height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-// New homepage css old will be removed after A/B test
-
-.homepage.new {
-    .homepage-intro {
-        position: relative;
-        padding-top: 30px;
-        background: linear-gradient(180deg, #ffffff 0%, $brand-primary 50%);
-
-        .homepage-lines {
-            //    background: url(/img/homepage/lines-bg.png);
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin-top: 50px;
-            height: 100%;
-        }
-        .container {
-            position: relative;
-        }
-    }
-    .homepage-tips {
-        position: relative;
-        background: $brand-primary;
-    }
-    .homepage-tips > .container {
-        position: relative;
-    }
-
-    .embed-responsive-homepage-video {
-        background-image: url(/img/homepage/macbook.svg);
-        background-size: cover;
-        padding-bottom: 58%;
-    }
-
-    @media screen and (min-width: $screen-sm-min) {
-        .embed-responsive-homepage-video {
-            margin-left: 5.5%;
-            margin-right: 5.5%;
-            padding-bottom: 52%;
-        }
-    }
-
-    .embed-responsive-wrapper {
-        position: relative;
-        top: 80px;
-    }
-
-    .embed-responsive-homepage-video .embed-responsive {
-        margin: 4% 12.35% 0 12.35%;
-        padding-bottom: 47.4%;
-    }
-
-    .embed-responsive-homepage-tips {
-        padding-bottom: 91.91374663%;
-        overflow: visible;
-        margin-bottom: 0;
-        z-index: 1;
-        box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
-
-        @media (max-width: $screen-xs-max) {
-            margin-top: 200px;
-        }
-    }
-
-    .homepage-new-features {
-        margin-top: 50px;
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-
-        .new-badge {
-            position: absolute;
-            top: -50px;
-            left: 70%;
-
-            @media (max-width: $screen-xs-min) {
-                transform: scale(0.6);
-            }
-        }
-    }
-
-    .who-are-you {
-        margin-top: 80px;
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-        overflow: hidden;
-
-        .row {
-            margin-top: 100px;
-
-            @media (max-width: $screen-xs-max) {
-                margin-top: 60px;
-            }
-        }
-
-        .embed-responsive-state {
-            padding-bottom: 91.91374663%;
-            overflow: visible;
-            margin-bottom: 0;
-            z-index: 1;
-            box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
-        }
-
-        @media (min-width: $screen-sm-min) {
-            .select-state {
-                padding: 20px;
-                max-width: 314px;
-                cursor: pointer;
-                border: 1px solid transparent;
-
-                h3 {
-                    margin-top: 0;
-                }
-
-                p {
-                    margin: 0;
-                }
-
-                &.active {
-                    color: $brand-primary;
-                    border: 1px solid $brand-primary;
-                    border-radius: 5px;
-                }
-            }
-        }
-
-        @media (max-width: $screen-xs-max) {
-            .select-state:not(.active) {
-                display: none;
-            }
-
-            .carousel-indicators {
-                padding: 0;
-                margin: 20px 0 20px 0;
-                position: static;
-                width: auto;
-            }
-        }
-    }
-
-    .tips {
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-        overflow: hidden;
-
-        @media (min-width: $screen-sm-min) {
-            .row {
-                position: relative;
-
-                .right-content {
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-    }
-
-    .homepage-features {
-        .item-bg {
-            background-image: url(/img/homepage/macbook.svg);
-            background-size: 122%;
-            background-repeat: no-repeat;
-            background-position: top center;
-            padding: 5.2% 4.2% 0 4.2%;
-        }
-
-        @media screen and (min-width: $screen-sm-min) {
-            .carousel-control {
-                color: $text-color;
-                border-color: $border-color;
-
-                &:hover,
-                &:focus {
-                    background-color: rgba($border-color, 0.2);
-                    color: $text-color;
-                }
-            }
-        }
-    }
-
-    .homepage-quotes {
-        background-color: $brand-primary;
-
-        .author-title {
-            opacity: 0.5;
-        }
-        .carousel-indicators li {
-            background-color: white;
-        }
-
-        .quote-content {
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        @media screen and (min-width: $screen-sm-min) {
-            .quote-content {
-                height: 400px;
-            }
-        }
-    }
-
-    .homepage-feature-icon {
-        font-size: 30px;
+    .feature-link {
         color: $brand-primary;
     }
-    .homepage-selected-features {
-        padding-top: 60px;
-        padding-bottom: 120px;
-    }
 
-    .homepage-quotes .carousel-indicators {
-        bottom: 20px;
-    }
-
-    @media screen and (max-width: $screen-sm) {
-        #features-texts {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 130px;
-        }
-        #tip-titles {
-            min-height: 105px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+    .Grid {
+        height: 100%;
     }
 }

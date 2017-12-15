@@ -25,7 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
              href="/">
                 <img
                  class="hidden-xs"
-                 src="/img/logo-with-text.svg"
+                 src="/img/logo.svg"
                  width="143"
                  height="22"
                  alt="Enhancv Logo">
@@ -86,25 +86,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="collapse navbar-collapse">
 
-            <a
-             href="{{ urls.builder }}"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Sign Up"
-             class="btn btn-primary navbar-btn navbar-right left-xs">
-                Sign Up
-            </a>
-            <a
-             href="{{ urls.builder }}/login"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Sign In"
-             class="btn btn-default navbar-btn navbar-right left-xs btn-sign-in">
-                Sign In
-            </a>
-
             <ul class="nav navbar-nav navbar-right">
                 {{#if isAiesec}}
                     <li {{#if isPricing }} class="active" {{/if}}>
@@ -114,19 +95,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/about.html">About</a>
                     </li>
                 {{else}}
-                    <li {{#if isHomepage }} class="active" {{/if}}>
-                        <a href="/">Homepage</a>
-                    </li>
                     <li {{#if isSuccessfulResumes }} class="active" {{/if}}>
                         <a href="/successful-resumes.html">Successful Resumes</a>
                     </li>
                     <li {{#if isPricing }} class="active" {{/if}}>
                         <a href="/pricing.html">Pricing</a>
                     </li>
-                    <li>
-                        <a href="{{ urls.blog }}" target="_blank">Blog</a>
-                    </li>
                 {{/if}}
+
+                <li>
+                    <button
+                     href="{{ urls.builder }}"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Sign Up"
+                     class="btn btn-primary navbar-btn m-left-2 m-right-2">
+                        Sign Up
+                    </button>
+                </li>
+                <li {{#if isPricing }} class="active" {{/if}}>
+                    <a href="/pricing.html">Login</a>
+                </li>
             </ul>
         </div>
     </div>
