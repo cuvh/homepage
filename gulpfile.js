@@ -138,7 +138,7 @@ function revisionFiles() {
         .src("dist/**")
         .pipe(
             $.revAll.revision({
-                prefix: isProd ? "https://enhancv.com/" : null,
+                // prefix: isProd ? "https://enhancv.com/" : null,
                 dontSearchFile: [".pdf"],
                 dontRenameFile: [/social-image.jpg/g, ".html"],
                 dontUpdateReference: [/social-image.jpg/g, ".html"],
