@@ -130,6 +130,29 @@ $homepage-background: #eaf8f3;
     }
 }
 
+.homepage {
+    @media screen and (max-width: $screen-sm) {
+        //$font-size-h2: 32px;
+        //$font-size-h3: 27px;
+        //$font-size-h4: 21px;
+        //$font-size-h5: 19px;
+
+        h1 {
+            font-size: $font-size-h3;
+            line-height: 38px !important;
+        }
+
+        h2 {
+            font-size: $font-size-h4;
+            line-height: 32px !important;
+        }
+
+        h5 {
+            font-size: $font-size-h5;
+        }
+    }
+}
+
 .homepage-benefits {
     min-height: 345px;
 }
@@ -156,8 +179,16 @@ $homepage-background: #eaf8f3;
 }
 
 .homepage-testimonials {
-    display: flex;
-    align-items: center;
+    @media screen and (max-width: $screen-sm) {
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+
+    .carousel-container {
+        display: flex;
+        align-items: center;
+    }
 
     h1 {
         line-height: 56px;
@@ -178,22 +209,18 @@ $homepage-background: #eaf8f3;
 .homepage-panel {
     @media screen and (min-width: $screen-sm) {
         height: 720px;
+
+        .Grid {
+            height: 100%;
+        }
     }
 
     @media screen and (max-width: $screen-sm) {
         padding-top: 40px;
-
-        .text-center-sm {
-            text-align: center;
-        }
     }
 
     .feature-link {
         color: $brand-primary;
-    }
-
-    .Grid {
-        height: 100%;
     }
 }
 

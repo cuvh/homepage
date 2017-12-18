@@ -102,7 +102,5 @@ $(function() {
         maxTilt: 35,
     });
 
-    setTimeout(function() {
-        $(".homepage-testimonials").slick();
-    }, 1000);
+    $(".carousel-container").slick();
 });
