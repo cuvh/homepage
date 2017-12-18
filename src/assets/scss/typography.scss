@@ -17,10 +17,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 .p-big {
 	font-size: 16px;
 	color: $gray-light;
 	margin-top: -2px;
+
+	@media screen and (max-width: $screen-sm) {
+		font-size: 14px;
+	}
 }
 
 h1 {

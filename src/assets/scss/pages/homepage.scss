@@ -50,8 +50,12 @@ $homepage-background: #eaf8f3;
     position: relative;
     background: $homepage-background;
 
-    h1 {
+    .md-lg-heading-margin {
         margin-top: 70px;
+    }
+
+    .xs-sm-heading-margin {
+        margin-top: 6px;
     }
 
     .homepage-lines {
@@ -108,6 +112,11 @@ $homepage-background: #eaf8f3;
     .bg-image {
         position: absolute;
     }
+
+    @media screen and (max-width: $screen-sm) {
+        overflow: hidden;
+        margin-right: -15px;
+    }
 }
 
 .homepage-logos {
@@ -116,7 +125,7 @@ $homepage-background: #eaf8f3;
     }
 
     img {
-        max-width: 90%;
+        max-width: 60%;
     }
 }
 
@@ -139,7 +148,7 @@ $homepage-background: #eaf8f3;
 
         h1 {
             font-size: $font-size-h3;
-            line-height: 38px !important;
+            line-height: 35px !important;
         }
 
         h2 {
