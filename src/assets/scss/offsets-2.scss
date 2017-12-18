@@ -25,6 +25,10 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
     margin: 0 !important;
 }
 
+.m-top-1-negative {
+    margin-top: -$spacer;
+}
+
 .m-top-4-negative {
     margin-top: -($spacer-2 * 4);
 }

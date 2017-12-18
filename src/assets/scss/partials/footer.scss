@@ -2,21 +2,32 @@
     background-color: #1d1d1d;
     color: #808080;
 
+    .footer-get-started {
+        width: 176px;
+    }
+
     h3 {
         min-height: 22px;
     }
     .list-unstyled li {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
     }
 
     .list-unstyled li a {
         color: #fff;
+        font-size: 16px;
     }
 
     .copyright {
         font-size: 11px;
         line-height: 13px;
     }
+
+    .social-link {
+        color: #ffffff;
+        font-size: 20px;
+    }
+
     .footer-about-text {
         max-width: 500px;
     }

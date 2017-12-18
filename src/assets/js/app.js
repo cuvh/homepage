@@ -101,4 +101,8 @@ $(function() {
         maxGlare: 1,
         maxTilt: 35,
     });
+
+    setTimeout(function() {
+        $(".homepage-testimonials").slick();
+    }, 1000);
 });

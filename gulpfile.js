@@ -85,6 +85,7 @@ function sass() {
         includePaths: [
             "node_modules/bootstrap-sass/assets/stylesheets",
             "node_modules/layout-grid/sass",
+            "node_modules/slick-carousel/slick",
         ],
     };
 
@@ -112,6 +113,7 @@ function javascript() {
             "node_modules/switch-toggle/src/switchToggle.js",
             "node_modules/validate.js/validate.js",
             "node_modules/tilt.js/src/tilt.jquery.js",
+            "node_modules/slick-carousel/slick/slick.js",
             "src/assets/js/**/*",
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))

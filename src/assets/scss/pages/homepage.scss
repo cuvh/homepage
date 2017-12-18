@@ -35,6 +35,10 @@ $homepage-background: #eaf8f3;
     position: relative;
     min-height: 760px;
 
+    @media screen and (max-width: $screen-sm) {
+        min-height: 300px !important;
+    }
+
     will-change: opacity, top;
 
     opacity: 0;
@@ -84,6 +88,18 @@ $homepage-background: #eaf8f3;
     background: #fff;
 }
 
+.homepage-spotlight {
+    @media screen and (max-width: $screen-sm) {
+        .spotlight-text {
+            order: 1;
+        }
+
+        .spotlight-image {
+            order: 2;
+        }
+    }
+}
+
 .homepage-standout {
     img {
         width: 115%;
@@ -96,12 +112,26 @@ $homepage-background: #eaf8f3;
 
 .homepage-logos {
     .container {
-        height: 226px;
+        min-height: 226px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+
+.homepage-customize {
+    img {
+        max-width: 100%;
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -125px;
+        }
     }
 }
 
 .homepage-benefits {
-    height: 345px;
+    min-height: 345px;
 }
 
 .homepage-new-features {
@@ -126,13 +156,37 @@ $homepage-background: #eaf8f3;
 }
 
 .homepage-testimonials {
+    display: flex;
+    align-items: center;
+
     h1 {
         line-height: 56px;
+    }
+
+    .Grid {
+        display: flex !important;
+        height: auto !important;
+    }
+
+    .slick-list {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }
 
 .homepage-panel {
-    height: 720px;
+    @media screen and (min-width: $screen-sm) {
+        height: 720px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        padding-top: 40px;
+
+        .text-center-sm {
+            text-align: center;
+        }
+    }
 
     .feature-link {
         color: $brand-primary;
