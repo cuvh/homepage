@@ -112,8 +112,8 @@ function javascript() {
             "node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
             "node_modules/switch-toggle/src/switchToggle.js",
             "node_modules/validate.js/validate.js",
-            "node_modules/tilt.js/src/tilt.jquery.js",
-            "node_modules/slick-carousel/slick/slick.js",
+            "node_modules/tilt.js/dest/tilt.jquery.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js",
             "src/assets/js/**/*",
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
