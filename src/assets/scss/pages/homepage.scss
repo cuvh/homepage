@@ -194,6 +194,17 @@ $homepage-background: #eaf8f3;
         }
     }
 
+    .testimonial-image {
+        width: 100%;
+        max-width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: $screen-xs) {
+            max-width: 50%;
+        }
+    }
+
     .carousel-container {
         display: flex;
         align-items: center;
@@ -213,6 +224,9 @@ $homepage-background: #eaf8f3;
         flex-direction: column !important;
         align-items: center !important;
     }
+
+    img {
+    }
 }
 
 .homepage-panel {
@@ -225,7 +239,7 @@ $homepage-background: #eaf8f3;
     }
 
     @media screen and (max-width: $screen-sm) {
-        padding-top: 40px;
+        padding-top: 56px;
     }
 
     .feature-link {
