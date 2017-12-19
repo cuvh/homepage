@@ -15,6 +15,14 @@
     }
 }
 
+.navbar-spacing {
+    margin: 0 33px;
+
+    @media screen and (max-width: $screen-sm) {
+        margin: 0 16px;
+    }
+}
+
 .navbar-btn {
     margin-top: 9px !important;
     margin-bottom: 9px !important;
@@ -68,9 +76,13 @@ body.with-sticky-navbar {
     transform: translate(-50%, -50%);
 }
 
-.navbar-toggle .close {
-    font-size: 30px;
-    line-height: 14px;
+.navbar-toggle {
+    margin-right: 0px !important;
+
+    .close {
+        font-size: 30px;
+        line-height: 14px;
+    }
 }
 
 .navbar-mobile-visible {
