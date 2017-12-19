@@ -81,26 +81,28 @@ $(function() {
         }, 610);
     });
 
-    $(document).mousemove(function(e) {
-        var x = e.clientX;
-        var y = e.clientY;
+    if ($(window).width() > 768) {
+        $(document).mousemove(function(e) {
+            var x = e.clientX;
+            var y = e.clientY;
 
-        var pageWidth = $(window).width();
+            var pageWidth = $(window).width();
 
-        $("#parallax-1")
-            .css("left", -(pageWidth / 40 / 2) + x / 40)
-            .css("top", y / 55);
+            $("#parallax-1")
+                .css("left", -(pageWidth / 40 / 2) + x / 40)
+                .css("top", y / 55);
 
-        $("#parallax-2")
-            .css("left", -(pageWidth / 15 / 2) + x / 15)
-            .css("top", y / 35);
-    });
+            $("#parallax-2")
+                .css("left", -(pageWidth / 15 / 2) + x / 15)
+                .css("top", y / 35);
+        });
 
-    $(".testimonial-image").tilt({
-        glare: true,
-        maxGlare: 1,
-        maxTilt: 35,
-    });
+        $(".testimonial-image").tilt({
+            glare: true,
+            maxGlare: 1,
+            maxTilt: 35,
+        });
+    }
 
     $(".carousel-container").slick({
         dots: true,
