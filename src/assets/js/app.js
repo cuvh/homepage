@@ -102,5 +102,7 @@ $(function() {
         maxTilt: 35,
     });
 
-    $(".carousel-container").slick();
+    $(".carousel-container").slick({
+        dots: true,
+    });
 });

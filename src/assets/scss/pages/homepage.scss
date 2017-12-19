@@ -164,6 +164,12 @@ $homepage-background: #eaf8f3;
 
 .homepage-benefits {
     min-height: 345px;
+
+    @media screen and (min-width: $screen-sm) {
+        .animate-in {
+            margin-top: $spacer * 9;
+        }
+    }
 }
 
 .homepage-new-features {
@@ -180,6 +186,12 @@ $homepage-background: #eaf8f3;
 
     .container {
         height: 500px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        .container {
+            height: 334px !important;
+        }
     }
 
     .Grid {
