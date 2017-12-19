@@ -36,7 +36,17 @@
         align-items: flex-end;
     }
 
+    .links-container {
+        margin-top: $spacer * 8;
+        margin-bottom: $spacer * 9;
+    }
+
     @media (max-width: $screen-xs-max) {
+        .links-container {
+            margin-top: $spacer * 6;
+            margin-bottom: $spacer * 3;
+        }
+
         h3 {
             font-size: 16px;
         }
