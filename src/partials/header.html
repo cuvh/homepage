@@ -100,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <li>
                     <button
-                     href="{{ urls.builder }}"
+                     onclick="window.location='{{ urls.builder }}';"
                      data-track="event"
                      data-category="Homepage"
                      data-action="Click Signup"
@@ -109,8 +109,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Sign Up
                     </button>
                 </li>
-                <li {{#if isPricing }} class="active" {{/if}}>
-                    <a href="/pricing.html">Login</a>
+                <li>
+                    <a href="https://app.enhancv.com/login">Login</a>
                 </li>
             </ul>
         </div>

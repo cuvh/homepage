@@ -236,9 +236,6 @@ $homepage-background: #eaf8f3;
         flex-direction: column !important;
         align-items: center !important;
     }
-
-    img {
-    }
 }
 
 .homepage-panel {
@@ -267,6 +264,10 @@ $homepage-background: #eaf8f3;
     .container,
     .Grid {
         height: 100%;
+    }
+
+    a:hover {
+        color: #ccc;
     }
 
     .articles-wrapper {

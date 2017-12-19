@@ -8,13 +8,13 @@
 // "\2022" outputs ascii character "•"
 
 $slick-font-path: "./fonts/" !default;
-$slick-font-family: "slick" !default;
+$slick-font-family: "homepage" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: white !default;
+$slick-arrow-color: #333 !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\2190" !default;
-$slick-next-character: "\2192" !default;
+$slick-prev-character: "\61" !default;
+$slick-next-character: "\62" !default;
 $slick-dot-character: "\2022" !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -65,8 +65,9 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 120px;
+    width: 40px;
+    border-radius: 22px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
@@ -77,7 +78,7 @@ $slick-opacity-not-active: 0.25 !default;
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0;
-    border: none;
+    border: 1px solid #808080;
     outline: none;
     &:hover,
     &:focus {
@@ -93,7 +94,7 @@ $slick-opacity-not-active: 0.25 !default;
     }
     &:before {
         font-family: $slick-font-family;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 1;
         color: $slick-arrow-color;
         opacity: $slick-opacity-default;
@@ -103,10 +104,10 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: -45px;
     [dir="rtl"] & {
         left: auto;
-        right: -25px;
+        right: -45px;
     }
     &:before {
         content: $slick-prev-character;
@@ -117,9 +118,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: -45px;
     [dir="rtl"] & {
-        left: -25px;
+        left: -45px;
         right: auto;
     }
     &:before {
@@ -134,7 +135,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: 25px;
+    bottom: -25px;
     list-style: none;
     display: block;
     text-align: center;
@@ -178,12 +179,14 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
+@media screen and (min-width: $screen-sm) {
+    .slick-dots {
+        bottom: 57px;
+    }
+}
+
 @media screen and (max-width: $screen-sm) {
     .slick-dotted.slick-slider {
         margin-bottom: 48px;
-    }
-
-    .slick-dots {
-        bottom: -25px;
     }
 }
