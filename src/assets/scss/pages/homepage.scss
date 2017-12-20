@@ -166,9 +166,14 @@ $homepage-background: #eaf8f3;
     min-height: 345px;
 
     @media screen and (min-width: $screen-sm) {
-        .animate-in {
+        .animate-in,
+        .benefits-spacer {
             margin-top: $spacer * 9;
         }
+    }
+
+    img {
+        height: 24px;
     }
 }
 
@@ -258,9 +263,15 @@ $homepage-background: #eaf8f3;
     @media screen and (max-width: $screen-sm) {
         padding-top: 56px;
     }
+}
 
-    .feature-link {
+.feature-link {
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
         color: $brand-primary;
+        text-decoration: underline;
     }
 }
 

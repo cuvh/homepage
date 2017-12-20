@@ -108,3 +108,25 @@ $(function() {
         dots: true,
     });
 });
+
+window.sr = ScrollReveal();
+sr.reveal(".animate-in", {
+    scale: 1,
+    easing: "ease-out",
+    distance: "50px",
+    viewFactor: $(window).width() > 768 ? 0.6 : 0.45,
+});
+
+(function() {
+    var isDesktop = $(window).width() > 768;
+
+    for (var i = 0; i < 5; i++) {
+        sr.reveal("#benefits-item-" + i, {
+            scale: 1,
+            delay: isDesktop ? i * 100 : 0,
+            easing: "ease-out",
+            distance: "50px",
+            viewFactor: 0.6,
+        });
+    }
+})();

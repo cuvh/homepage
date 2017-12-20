@@ -157,15 +157,15 @@ $btn-font-weight: normal !default;
 
 $btn-default-color: #333 !default;
 $btn-default-bg: #fff !default;
-$btn-default-border: $border-color;
+$btn-default-border: transparent;
 
 $btn-primary-color: #fff !default;
 $btn-primary-bg: $brand-primary !default;
-$btn-primary-border: $brand-primary;
+$btn-primary-border: transparent;
 
 $btn-success-color: #fff !default;
 $btn-success-bg: $brand-success !default;
-$btn-success-border: $brand-success;
+$btn-success-border: transparent;
 
 $btn-info-color: #fff !default;
 $btn-info-bg: $brand-info !default;

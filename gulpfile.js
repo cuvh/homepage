@@ -114,6 +114,7 @@ function javascript() {
             "node_modules/validate.js/validate.js",
             "node_modules/tilt.js/dest/tilt.jquery.min.js",
             "node_modules/slick-carousel/slick/slick.min.js",
+            "node_modules/scrollreveal/dist/scrollreveal.min.js",
             "src/assets/js/**/*",
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
