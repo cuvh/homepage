@@ -2,6 +2,14 @@
     background-color: #1d1d1d;
     color: #808080;
 
+    .made-with-love {
+        text-align: center;
+
+        @media screen and (min-width: $screen-sm) {
+            text-align: right;
+        }
+    }
+
     .footer-get-started {
         width: 176px;
     }
