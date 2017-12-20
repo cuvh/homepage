@@ -117,6 +117,14 @@ sr.reveal(".animate-in", {
     viewFactor: $(window).width() > 768 ? 0.6 : 0.45,
 });
 
+sr.reveal(".spotlight-animate", {
+    scale: 1,
+    easing: "ease-out",
+    distance: "50px",
+    delay: 500,
+    viewFactor: $(window).width() > 768 ? 0.6 : 0.45,
+});
+
 (function() {
     var isDesktop = $(window).width() > 768;
 
@@ -126,7 +134,7 @@ sr.reveal(".animate-in", {
             delay: isDesktop ? i * 100 : 0,
             easing: "ease-out",
             distance: "50px",
-            viewFactor: 0.6,
+            viewFactor: isDesktop ? 0.6 : 0.45,
         });
     }
 })();

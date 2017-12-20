@@ -13,6 +13,14 @@ $homepage-background: #eaf8f3;
     .navbar-stick {
         background: #fff;
     }
+
+    .vertical-center-m-negative {
+        margin-top: -($spacer-2 * 2);
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -($spacer-2 * 4);
+        }
+    }
 }
 
 @keyframes fadein {
@@ -93,13 +101,21 @@ $homepage-background: #eaf8f3;
 }
 
 .homepage-spotlight {
-    @media screen and (max-width: $screen-sm) {
+    .spotlight-text {
+        order: 1;
+    }
+
+    .spotlight-image {
+        order: 2;
+    }
+
+    @media screen and (min-width: $screen-sm) {
         .spotlight-text {
-            order: 1;
+            order: 2;
         }
 
         .spotlight-image {
-            order: 2;
+            order: 1;
         }
     }
 }
@@ -164,11 +180,16 @@ $homepage-background: #eaf8f3;
 
 .homepage-benefits {
     min-height: 345px;
+    .benefits-spacer {
+        margin-top: 3 * $spacer;
+        margin-bottom: 5 * $spacer;
+    }
 
     @media screen and (min-width: $screen-sm) {
         .animate-in,
         .benefits-spacer {
             margin-top: $spacer * 9;
+            margin-bottom: 0px;
         }
     }
 
@@ -261,7 +282,8 @@ $homepage-background: #eaf8f3;
     }
 
     @media screen and (max-width: $screen-sm) {
-        padding-top: 56px;
+        padding-top: 48px;
+        padding-bottom: 32px;
     }
 }
 
