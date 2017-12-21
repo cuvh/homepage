@@ -146,11 +146,22 @@ $homepage-background: #eaf8f3;
 }
 
 .homepage-customize {
-    img {
+    .static-monitor {
         max-width: 100%;
 
         @media screen and (min-width: $screen-sm) {
             margin-top: -125px;
+        }
+    }
+
+    .gif-monitor {
+        position: absolute;
+        width: 63%;
+        top: 28%;
+        left: 14.1%;
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -91px;
         }
     }
 }

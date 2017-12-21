@@ -5,8 +5,8 @@ title: Enhancv
 
 <div class="homepage-intro">
     <div class="container text-center">
-        <h1 class="hidden-xs hidden-sm md-lg-heading-margin">A resume to be proud of.</h1>
-        <h1 class="hidden-md hidden-lg xs-sm-heading-margin">A resume<br /> to be proud of.</h1>
+        <h1 class="hidden-xs hidden-sm md-lg-heading-margin">A resume to be proud of</h1>
+        <h1 class="hidden-md hidden-lg xs-sm-heading-margin">A resume<br /> to be proud of</h1>
 
         <div class="m-top-0">
             <p class="p-big hidden-xs hidden-sm m-top-0">Stand out and make sure key things come across</p>
@@ -82,8 +82,7 @@ title: Enhancv
                   data-action="Click Successful Resumes"
                   href="{{ urls.builder }}"
                   class="feature-link">
-                    here
-                </a>.
+                    here</a>.
             </p>
         </div>
         <div class="m-top-3 m-bottom-4 hidden-md hidden-lg">
@@ -95,8 +94,7 @@ title: Enhancv
                   data-action="Click Successful Resumes"
                   href="{{ urls.builder }}"
                   class="feature-link">
-                    here
-                </a>.
+                    here</a>.
             </p>
         </div>
     </div>
@@ -179,7 +177,10 @@ title: Enhancv
             </div>
         </div>
         <div class="Grid Grid--alignCenter Grid-cell--lg-7 Grid-cell--sm-7 relative">
-            <img src="/img/new-homepage/customize.png" />
+            <div class="relative">
+                <img class="static-monitor" src="/img/new-homepage/customize.png" />
+                <img class="gif-monitor" src="/img/new-homepage/monitor_gif.gif" />
+            </div>
         </div>
     </div>
 </div>
@@ -218,8 +219,15 @@ title: Enhancv
     <div class="container homepage-testimonials homepage-panel">
         <div class="animate-in carousel-container">
 
-            {{> homepage-testimonial }}
-            {{> homepage-testimonial }}
+            {{> homepagetestimonial
+             text="A recruiter at a top 5 investment bank in London told me my CV was a breath of fresh air and invited me to my first interview in a bulge bank"
+             title="Edward Kennedy — Alumni from University College Dublin"
+             image="img" }}
+
+            {{> homepagetestimonial
+             text="A recruiter at a top 5 investment bank in London told me my CV was a breath of fresh air and invited me to my first interview in a bulge bank"
+             title="Edward Kennedy — Alumni from University College Dublin"
+             image="img" }}
 
         </div>
     </div>

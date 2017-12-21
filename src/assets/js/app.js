@@ -107,6 +107,9 @@ $(function() {
     $(".carousel-container").slick({
         dots: true,
     });
+
+    if (jQuery(".homepage-blog-latest").html()) {
+    }
 });
 
 window.sr = ScrollReveal();
