@@ -108,7 +108,27 @@ $(function() {
         dots: true,
     });
 
-    if (jQuery(".homepage-blog-latest").html()) {
+    if ($(".homepage-blog-latest").html()) {
+        $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
+            var articleWrapper = $("<div />");
+
+            data.items.forEach(function(item) {
+                articleWrapper.append(
+                    '<div class="inline-block m-right-5">' +
+                        '<a target="_blank" href="' +
+                        item.url +
+                        '" class="text-inverse">“' +
+                        item.title +
+                        "”</a>" +
+                        '<p class="text-muted">' +
+                        item.comments_count +
+                        " Comments</p>" +
+                        "</div>"
+                );
+            });
+
+            $(".articles-scrollable").html(articleWrapper.html());
+        });
     }
 });
 

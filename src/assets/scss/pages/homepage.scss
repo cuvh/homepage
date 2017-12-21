@@ -192,11 +192,11 @@ $homepage-background: #eaf8f3;
 .homepage-benefits {
     min-height: 345px;
     .benefits-spacer {
-        margin-top: 3 * $spacer;
+        margin-top: 2 * $spacer;
         margin-bottom: 5 * $spacer;
     }
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: $screen-md) {
         .animate-in,
         .benefits-spacer {
             margin-top: $spacer * 9;
@@ -206,6 +206,11 @@ $homepage-background: #eaf8f3;
 
     img {
         height: 24px;
+    }
+
+    .benefits-item {
+        padding-left: $spacer;
+        padding-right: $spacer;
     }
 }
 
@@ -245,12 +250,12 @@ $homepage-background: #eaf8f3;
 
     .testimonial-image {
         width: 100%;
-        max-width: 228px;
+        max-width: 270px;
         margin-left: auto;
         margin-right: auto;
 
         @media screen and (max-width: $screen-xs) {
-            max-width: 128px;
+            max-width: 168px;
         }
     }
 
@@ -318,7 +323,8 @@ $homepage-background: #eaf8f3;
         height: 100%;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
         color: #ccc;
     }
 

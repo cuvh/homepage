@@ -145,6 +145,10 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
+.slick-track {
+    display: flex !important;
+}
+
 .slick-dots {
     position: absolute;
     bottom: -25px;
