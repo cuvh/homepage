@@ -81,22 +81,26 @@ $(function() {
         }, 610);
     });
 
-    if ($(window).width() > 768) {
-        $(document).mousemove(function(e) {
-            var x = e.clientX;
-            var y = e.clientY;
+    $(document).mousemove(function(e) {
+        if ($(window).width() < 768 || isTouchDevice()) {
+            return;
+        }
 
-            var pageWidth = $(window).width();
+        var x = e.clientX;
+        var y = e.clientY;
 
-            $("#parallax-1")
-                .css("left", -(pageWidth / 40 / 2) + x / 40)
-                .css("top", y / 55);
+        var pageWidth = $(window).width();
 
-            $("#parallax-2")
-                .css("left", -(pageWidth / 15 / 2) + x / 15)
-                .css("top", y / 35);
-        });
+        $("#parallax-1")
+            .css("left", -(pageWidth / 40 / 2) + x / 40)
+            .css("top", y / 55);
 
+        $("#parallax-2")
+            .css("left", -(pageWidth / 15 / 2) + x / 15)
+            .css("top", y / 35);
+    });
+
+    if (!isTouchDevice()) {
         $(".testimonial-image").tilt({
             glare: true,
             maxGlare: 1,

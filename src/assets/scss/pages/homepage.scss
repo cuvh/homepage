@@ -256,6 +256,14 @@ $homepage-background: #eaf8f3;
         }
     }
 
+    .testimonial-valign {
+        align-items: center;
+
+        @media screen and (max-width: 412px) {
+            align-items: start;
+        }
+    }
+
     .testimonial-image {
         width: 100%;
         max-width: 270px;
