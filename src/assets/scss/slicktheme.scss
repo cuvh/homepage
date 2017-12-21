@@ -209,17 +209,6 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-.slick-slide {
-    opacity: 0;
-    transition: opacity 0.2s;
-    will-change: opacity;
-}
-
-.slick-current,
-.slick-active {
-    opacity: 1 !important;
-}
-
 .slick-disabled {
     cursor: default !important;
     opacity: 0.5 !important;
