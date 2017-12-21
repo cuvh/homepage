@@ -208,3 +208,14 @@ $slick-opacity-not-active: 0.25 !default;
         margin-bottom: 48px;
     }
 }
+
+.slick-slide {
+    opacity: 0;
+    transition: opacity 0.2s;
+    will-change: opacity;
+}
+
+.slick-current,
+.slick-active {
+    opacity: 1 !important;
+}

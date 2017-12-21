@@ -104,12 +104,14 @@ $(function() {
         $(".testimonial-image").tilt({
             glare: true,
             maxGlare: 1,
-            maxTilt: 35,
+            maxTilt: 25,
         });
     }
 
     $(".carousel-container").slick({
         dots: true,
+        infinite: false,
+        speed: 1000,
     });
 
     if ($(".homepage-blog-latest").html()) {
