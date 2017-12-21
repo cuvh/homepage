@@ -123,6 +123,14 @@ $homepage-background: #eaf8f3;
 .homepage-standout {
     img {
         width: 115%;
+
+        @media screen and (min-width: $screen-md) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $screen-lg) {
+            width: 115%;
+        }
     }
 
     .bg-image {
