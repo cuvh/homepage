@@ -24,16 +24,22 @@
 	}
 
 	.successful-resume-cta {
-		border: 1px solid #b3b3b3;
-		border-radius: 5px;
-		padding: $spacer*2;
+		max-width: 536px;
+		margin-top: 96px;
+        margin-left: auto;
+        margin-right: auto;
 
-		max-width: 370px;
-		width: 100%;
-		margin-top: auto;
+        .cta-text {
+            color: #808080;
+        }
+
+        form {
+            margin: auto;
+            max-width: 422px;
+        }
 	}
 
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-width: $screen-xs-max) {
 		.successful-resume-name,
 		.successful-resume-tag-container,
 		.successful-resume-works-at {
@@ -46,8 +52,6 @@
 
 		.successful-resume-cta {
 			margin-top: $spacer * 2;
-			margin-left: auto;
-			margin-right: auto;
 		}
 	}
 }
@@ -100,18 +104,41 @@
 }
 
 .successful-resumes-share {
+    border: 1px solid $border-color;
+    padding: $spacer * 2;
+    border-radius: 5px;
+    max-width: 368px;
+
 	.btn {
+        width: 40px;
+        height: 40px;
 		padding: $spacer/2 $spacer*2;
-		margin: 0 $spacer/2;
+		margin: 0 0 0 $spacer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:first-child {
+            margin: 0;
+        }
 	}
 
 	i {
-		margin-left: $spacer;
-		position: relative;
-		top: -1px;
+        &:before {
+            font-size: 21px;
+        }
 	}
 
 	&.move-top {
-		margin-top: $spacer*9;
+		margin-top: $spacer*7;
 	}
+
+    @media (max-width: $screen-xs-max) {
+        border: none;
+        padding: 0;
+
+        &.move-top {
+            margin-top: $spacer*4;
+        }
+    }
 }

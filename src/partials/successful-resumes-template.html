@@ -80,27 +80,8 @@
                     283 Marketing resumes have similar resume configuration
                 </div>-->
 
-        		<div class="successful-resume-cta">
-        			<div class="bottom-xs cta-text">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
-                    <form id="subscribe-form">
-            			<div class="Grid">
-                            <input
-                             type="text" 
-                             class="form-control Grid-cell m-right-1" 
-                             id="subscribe-email"
-                             placeholder="Your email"/>
-                            <button
-                             type="submit"
-                             id="subscribe-btn"
-                             class="btn btn-primary cta-button Grid-cell--auto"
-                             data-track="event"
-                             data-category="Successful Resumes"
-                             data-action="Newsletter Subscription">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
-        		</div>
+
+                {{>social-panel class="move-top" url=url facebookText=facebookText twitterText=twitterText}}
 
                 <script>
                     (function () {
@@ -122,7 +103,27 @@
         	</div>
         </div>
 
-        {{>social-panel class="move-top" url=url facebookText=facebookText twitterText=twitterText}}
+        <div class="successful-resume-cta">
+                    <div class="bottom-xs cta-text">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
+                    <form id="subscribe-form">
+                        <div class="Grid">
+                            <input
+                             type="text" 
+                             class="form-control Grid-cell m-right-1" 
+                             id="subscribe-email"
+                             placeholder="Write your email address"/>
+                            <button
+                             type="submit"
+                             id="subscribe-btn"
+                             class="btn btn-primary cta-button Grid-cell--auto"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Newsletter Subscription">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
 
         <div class="row text-center">
         	<div class="top-md bottom-sm">
