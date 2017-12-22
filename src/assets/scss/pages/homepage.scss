@@ -1,7 +1,80 @@
+$homepage-background: #eaf8f3;
+
+.homepage {
+    background: $homepage-background;
+
+    .navbar-default {
+        background: transparent;
+        border: 0px;
+
+        transition: background 0.4s;
+    }
+
+    .navbar-stick {
+        background: #fff;
+    }
+
+    .vertical-center-m-negative {
+        margin-top: -($spacer-2 * 2);
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -($spacer-2 * 4);
+        }
+    }
+}
+
+.hidden-br {
+    display: inline;
+}
+
+@media screen and (max-width: 480px) {
+    .hidden-br {
+        display: block;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        top: 50px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+.homepage-scalable-header {
+    background: url(/img/new-homepage/header.jpg);
+    background-size: cover;
+    background-position: center 0px;
+    padding-bottom: 45%;
+    margin-top: 17px;
+    position: relative;
+    min-height: 760px;
+
+    @media screen and (max-width: $screen-sm) {
+        min-height: 300px !important;
+    }
+
+    will-change: opacity, top;
+
+    opacity: 0;
+    top: 50px;
+    animation: fadein 0.6s ease-out 0.2s forwards;
+}
+
 .homepage-intro {
     position: relative;
-    padding-top: 30px;
-    background: linear-gradient(180deg, #ffffff 0%, $brand-primary 50%);
+    background: $homepage-background;
+
+    .md-lg-heading-margin {
+        margin-top: 70px;
+    }
+
+    .xs-sm-heading-margin {
+        margin-top: 6px;
+    }
 
     .homepage-lines {
         //    background: url(/img/homepage/lines-bg.png);
@@ -15,8 +88,12 @@
         margin-top: 50px;
         height: 100%;
     }
+
     .container {
+        will-change: opacity, top;
         position: relative;
+        top: 50px;
+        animation: fadein 0.6s ease-out forwards;
     }
 }
 .homepage-tips {
@@ -27,31 +104,132 @@
     position: relative;
 }
 
-.embed-responsive-homepage-video {
-    background-image: url(/img/homepage/macbook.svg);
-    background-size: cover;
-    padding-bottom: 58%;
+.homepage-logos,
+.homepage-spotlight,
+.homepage-benefits {
+    background: #fff;
 }
 
-@media screen and (min-width: $screen-sm-min) {
-    .embed-responsive-homepage-video {
-        margin-left: 5.5%;
-        margin-right: 5.5%;
-        padding-bottom: 52%;
+.homepage-spotlight {
+    .spotlight-text {
+        order: 1;
+    }
+
+    .spotlight-image {
+        order: 2;
+    }
+
+    @media screen and (min-width: $screen-sm) {
+        .spotlight-text {
+            order: 2;
+        }
+
+        .spotlight-image {
+            order: 1;
+        }
     }
 }
 
-.embed-responsive-homepage-video .embed-responsive {
-    margin: 4% 12.35% 0 12.35%;
-    padding-bottom: 47.4%;
+.spotlight-stacked-images {
+    width: 50%;
+    max-width: 255px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    transform: translateX(-50%);
 }
 
-.embed-responsive-homepage-tips {
-    padding-bottom: 141.47%;
-    overflow: visible;
-    margin-bottom: -100px;
-    z-index: 1;
-    box-shadow: 0 10px 100px 0 rgba(0, 0, 0, 0.2);
+.homepage-standout {
+    img {
+        width: 100%;
+    }
+
+    .bg-image {
+        position: absolute;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        overflow: hidden;
+        margin-right: -15px;
+    }
+}
+
+.homepage-logos {
+    .container {
+        min-height: 226px;
+    }
+
+    img {
+        max-width: 60%;
+    }
+}
+
+.homepage-customize {
+    .static-monitor {
+        max-width: 100%;
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -125px;
+        }
+    }
+
+    .gif-monitor {
+        position: absolute;
+        width: 63%;
+        top: 28%;
+        left: 14.1%;
+
+        @media screen and (min-width: $screen-sm) {
+            margin-top: -91px;
+        }
+    }
+}
+
+.homepage {
+    @media screen and (max-width: $screen-sm) {
+        //$font-size-h2: 32px;
+        //$font-size-h3: 27px;
+        //$font-size-h4: 21px;
+        //$font-size-h5: 19px;
+
+        h1 {
+            font-size: $font-size-h3;
+            line-height: 35px !important;
+        }
+
+        h2 {
+            font-size: $font-size-h4;
+            line-height: 32px !important;
+        }
+
+        h5 {
+            font-size: $font-size-h5;
+        }
+    }
+}
+
+.homepage-benefits {
+    min-height: 345px;
+    .benefits-spacer {
+        margin-top: 2 * $spacer;
+        margin-bottom: 5 * $spacer;
+    }
+
+    @media screen and (min-width: $screen-md) {
+        .animate-in,
+        .benefits-spacer {
+            margin-top: $spacer * 9;
+            margin-bottom: 0px;
+        }
+    }
+
+    img {
+        height: 24px;
+    }
+
+    .benefits-item {
+        padding-left: $spacer;
+        padding-right: $spacer;
+    }
 }
 
 .homepage-new-features {
@@ -59,323 +237,146 @@
     background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
 }
 
-.homepage-features {
-    .item-bg {
-        background-image: url(/img/homepage/macbook.svg);
-        background-size: 122%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        padding: 5.2% 4.2% 0 4.2%;
-    }
-}
+.homepage-cta {
+    background: $brand-primary;
 
-@media screen and (min-width: $screen-sm-min) {
-    .carousel-control {
-        color: $text-color;
-        border-color: $border-color;
-
-        &:hover,
-        &:focus {
-            background-color: rgba($border-color, 0.2);
-            color: $text-color;
-        }
-    }
-}
-
-.homepage-quotes {
-    background-color: $brand-primary;
-
-    .author-title {
-        opacity: 0.5;
-    }
-    .carousel-indicators li {
-        background-color: white;
+    h1 {
+        color: $inverse-color;
     }
 
-    .quote-content {
-        height: 550px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: $screen-sm-min) {
-        .quote-content {
-            height: 400px;
-        }
-
-        .carousel-control {
-            color: #fff;
-            border-color: #fff;
-
-            &:hover,
-            &:focus {
-                background-color: rgba(255, 255, 255, 0.2);
-                color: #fff;
-            }
-        }
-    }
-}
-
-.homepage-feature-icon {
-    font-size: 30px;
-    color: $brand-primary;
-}
-.homepage-selected-features {
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-.homepage-quotes .carousel-indicators {
-    bottom: 20px;
-}
-
-@media screen and (max-width: $screen-sm) {
-    #features-texts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 130px;
-    }
-    #tip-titles {
-        min-height: 105px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-// New homepage css old will be removed after A/B test
-
-.homepage.new {
-    .homepage-intro {
-        position: relative;
-        padding-top: 30px;
-        background: linear-gradient(180deg, #ffffff 0%, $brand-primary 50%);
-
-        .homepage-lines {
-            //    background: url(/img/homepage/lines-bg.png);
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin-top: 50px;
-            height: 100%;
-        }
-        .container {
-            position: relative;
-        }
-    }
-    .homepage-tips {
-        position: relative;
-        background: $brand-primary;
-    }
-    .homepage-tips > .container {
-        position: relative;
-    }
-
-    .embed-responsive-homepage-video {
-        background-image: url(/img/homepage/macbook.svg);
-        background-size: cover;
-        padding-bottom: 58%;
-    }
-
-    @media screen and (min-width: $screen-sm-min) {
-        .embed-responsive-homepage-video {
-            margin-left: 5.5%;
-            margin-right: 5.5%;
-            padding-bottom: 52%;
-        }
-    }
-
-    .embed-responsive-wrapper {
-        position: relative;
-        top: 80px;
-    }
-
-    .embed-responsive-homepage-video .embed-responsive {
-        margin: 4% 12.35% 0 12.35%;
-        padding-bottom: 47.4%;
-    }
-
-    .embed-responsive-homepage-tips {
-        padding-bottom: 91.91374663%;
-        overflow: visible;
-        margin-bottom: 0;
-        z-index: 1;
-        box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
-
-        @media (max-width: $screen-xs-max) {
-            margin-top: 200px;
-        }
-    }
-
-    .homepage-new-features {
-        margin-top: 50px;
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-
-        .new-badge {
-            position: absolute;
-            top: -50px;
-            left: 70%;
-
-            @media (max-width: $screen-xs-min) {
-                transform: scale(0.6);
-            }
-        }
-    }
-
-    .who-are-you {
-        margin-top: 80px;
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-        overflow: hidden;
-
-        .row {
-            margin-top: 100px;
-
-            @media (max-width: $screen-xs-max) {
-                margin-top: 60px;
-            }
-        }
-
-        .embed-responsive-state {
-            padding-bottom: 91.91374663%;
-            overflow: visible;
-            margin-bottom: 0;
-            z-index: 1;
-            box-shadow: 5px 0 70px 0 rgba(0, 0, 0, 0.15);
-        }
-
-        @media (min-width: $screen-sm-min) {
-            .select-state {
-                padding: 20px;
-                max-width: 314px;
-                cursor: pointer;
-                border: 1px solid transparent;
-
-                h3 {
-                    margin-top: 0;
-                }
-
-                p {
-                    margin: 0;
-                }
-
-                &.active {
-                    color: $brand-primary;
-                    border: 1px solid $brand-primary;
-                    border-radius: 5px;
-                }
-            }
-        }
-
-        @media (max-width: $screen-xs-max) {
-            .select-state:not(.active) {
-                display: none;
-            }
-
-            .carousel-indicators {
-                padding: 0;
-                margin: 20px 0 20px 0;
-                position: static;
-                width: auto;
-            }
-        }
-    }
-
-    .tips {
-        background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
-        overflow: hidden;
-
-        @media (min-width: $screen-sm-min) {
-            .row {
-                position: relative;
-
-                .right-content {
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                }
-            }
-        }
-    }
-
-    .homepage-features {
-        .item-bg {
-            background-image: url(/img/homepage/macbook.svg);
-            background-size: 122%;
-            background-repeat: no-repeat;
-            background-position: top center;
-            padding: 5.2% 4.2% 0 4.2%;
-        }
-
-        @media screen and (min-width: $screen-sm-min) {
-            .carousel-control {
-                color: $text-color;
-                border-color: $border-color;
-
-                &:hover,
-                &:focus {
-                    background-color: rgba($border-color, 0.2);
-                    color: $text-color;
-                }
-            }
-        }
-    }
-
-    .homepage-quotes {
-        background-color: $brand-primary;
-
-        .author-title {
-            opacity: 0.5;
-        }
-        .carousel-indicators li {
-            background-color: white;
-        }
-
-        .quote-content {
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        @media screen and (min-width: $screen-sm-min) {
-            .quote-content {
-                height: 400px;
-            }
-        }
-    }
-
-    .homepage-feature-icon {
-        font-size: 30px;
-        color: $brand-primary;
-    }
-    .homepage-selected-features {
-        padding-top: 60px;
-        padding-bottom: 120px;
-    }
-
-    .homepage-quotes .carousel-indicators {
-        bottom: 20px;
+    .container {
+        height: 500px;
     }
 
     @media screen and (max-width: $screen-sm) {
-        #features-texts {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 130px;
+        .container {
+            height: 334px !important;
         }
-        #tip-titles {
-            min-height: 105px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+    }
+
+    .Grid {
+        height: 100%;
+    }
+}
+
+.homepage-testimonials {
+    @media screen and (max-width: $screen-sm) {
+        .slick-arrow {
+            display: none !important;
         }
+    }
+
+    .testimonial-valign {
+        align-items: center;
+
+        @media screen and (max-width: 412px) {
+            align-items: start;
+        }
+    }
+
+    .testimonial-image {
+        width: 100%;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (max-width: $screen-xs) {
+            max-width: 168px;
+        }
+    }
+
+    .carousel-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 0%;
+        height: 100%;
+
+        @media screen and (min-width: $screen-sm) {
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
+    h1 {
+        line-height: 56px;
+    }
+
+    .Grid {
+        display: flex !important;
+        height: auto !important;
+    }
+
+    .slick-list {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+.homepage-panel {
+    @media screen and (min-width: $screen-sm) {
+        height: 720px;
+
+        .Grid {
+            height: 100%;
+        }
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        padding-top: 48px;
+        padding-bottom: 32px;
+    }
+}
+
+.feature-link {
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
+        color: $brand-primary;
+        text-decoration: underline;
+    }
+}
+
+.homepage-blog-latest {
+    background-color: #1d1d1d;
+    height: 157px;
+    border-bottom: 1px solid #363636;
+
+    .container,
+    .Grid {
+        height: 100%;
+    }
+
+    a:hover,
+    a:focus {
+        color: #ccc;
+    }
+
+    .articles-wrapper {
+        width: 100%;
+        overflow: hidden;
+        min-height: 46px;
+    }
+
+    .articles-scrollable {
+        width: 5000px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+    }
+
+    .articles-shadow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 220px;
+        pointer-events: none;
+        z-index: 10;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(29, 29, 29, 1));
     }
 }

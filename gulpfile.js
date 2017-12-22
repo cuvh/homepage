@@ -85,6 +85,7 @@ function sass() {
         includePaths: [
             "node_modules/bootstrap-sass/assets/stylesheets",
             "node_modules/layout-grid/sass",
+            "node_modules/slick-carousel/slick",
         ],
     };
 
@@ -111,6 +112,9 @@ function javascript() {
             "node_modules/bootstrap-sass/assets/javascripts/bootstrap/collapse.js",
             "node_modules/switch-toggle/src/switchToggle.js",
             "node_modules/validate.js/validate.js",
+            "node_modules/tilt.js/dest/tilt.jquery.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js",
+            "node_modules/scrollreveal/dist/scrollreveal.min.js",
             "src/assets/js/**/*",
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
@@ -138,7 +142,7 @@ function revisionFiles() {
         .src("dist/**")
         .pipe(
             $.revAll.revision({
-                prefix: isProd ? "https://enhancv.com/" : null,
+                // prefix: isProd ? "https://enhancv.com/" : null,
                 dontSearchFile: [".pdf"],
                 dontRenameFile: [/social-image.jpg/g, ".html"],
                 dontUpdateReference: [/social-image.jpg/g, ".html"],

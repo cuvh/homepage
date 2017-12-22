@@ -4,7 +4,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <nav class="navbar navbar-default navbar-sticky navbar-static-top">
-    <div class="container">
+    <div class="navbar-spacing">
         <div class="navbar-header">
             <button
              type="button"
@@ -21,19 +21,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </button>
             <a
-             class="navbar-brand"
              href="/">
                 <img
-                 class="hidden-xs"
-                 src="/img/logo-with-text.svg"
-                 width="143"
-                 height="22"
+                 class="hidden-xs navbar-logo"
+                 src="/img/logo.svg"
                  alt="Enhancv Logo">
                 <img
-                 class="visible-xs"
+                 class="visible-xs navbar-logo"
                  src="/img/logo.svg"
-                 width="46"
-                 height="22"
                  alt="Enhancv Logo">
             </a>
 
@@ -86,25 +81,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="collapse navbar-collapse">
 
-            <a
-             href="{{ urls.builder }}"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Sign Up"
-             class="btn btn-primary navbar-btn navbar-right left-xs">
-                Sign Up
-            </a>
-            <a
-             href="{{ urls.builder }}/login"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click Signup"
-             data-label="Sign In"
-             class="btn btn-default navbar-btn navbar-right left-xs btn-sign-in">
-                Sign In
-            </a>
-
             <ul class="nav navbar-nav navbar-right">
                 {{#if isAiesec}}
                     <li {{#if isPricing }} class="active" {{/if}}>
@@ -114,9 +90,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/about.html">About</a>
                     </li>
                 {{else}}
-                    <li {{#if isHomepage }} class="active" {{/if}}>
-                        <a href="/">Homepage</a>
-                    </li>
                     <li {{#if isSuccessfulResumes }} class="active" {{/if}}>
                         <a href="/successful-resumes.html">Successful Resumes</a>
                     </li>
@@ -124,9 +97,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="/pricing.html">Pricing</a>
                     </li>
                     <li>
-                        <a href="{{ urls.blog }}" target="_blank">Blog</a>
+                        <a href="https://blog.enhancv.com">Blog</a>
                     </li>
                 {{/if}}
+
+                <li>
+                    <button
+                     onclick="window.location='{{ urls.builder }}';"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Sign Up"
+                     class="btn btn-primary navbar-btn m-left-2 m-right-2">
+                        Sign Up
+                    </button>
+                </li>
+                <li>
+                    <a
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Login"
+                     href="https://app.enhancv.com/login">
+                        Login
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

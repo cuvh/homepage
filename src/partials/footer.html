@@ -1,37 +1,47 @@
 <div class="footer">
     <div class="container">
-        <div class="row text-center-xs">
-            <div class="col-md-2 col-md-push-5 col-md-offset-1 col-sm-4">
-                <h3 class="text-large no-margin">Products</h3>
-                <ul class="list-unstyled top-md bottom-lg">
-                    <li><a href="{{ urls.builder }}">Get started</a></li>
-                    <li><a href="/successful-resumes.html">Successful Resumes</a></li>
-                    <li><a href="/pricing.html">Pricing</a></li>
-                    <li><a href="https://enhancv.statuspage.io/">Status Page</a></li>
+        <div class="Grid Grid--spaceBetween m-top-6 hidden-sm hidden-md hidden-lg text-center-xs">
+            <div class="Grid Grid-cell--xs-12 Grid-cell--md-2 copyright text-center-xs">
+                <img src="/img/logo-with-text-white.svg" />
+            </div>
+        </div>
+        <div class="Grid links-container">
+            <div class="Grid-cell--sm-3 Grid-cell--md-2 Grid-cell--xs-12 text-center-xs">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://app.enhancv.com/">
+                            Create Your Resume
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/successful-resumes.html">
+                            Successful Resumes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://blog.enhancv.com/">
+                            Blog
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="col-md-2 col-md-push-5 col-sm-4">
-                <h3 class="text-large no-margin">Resources</h3>
-                <ul class="list-unstyled top-md bottom-lg">
+            <div class="Grid-cell--sm-3 Grid-cell--md-2 Grid-cell--xs-12 text-center-xs">
+                <ul class="list-unstyled">
                     <li>
                         <a
-                         href="{{ urls.blog }}/category/popular-resumes/"
+                         href="/about.html"
                          target="_blank">
-                            Popular Resumes
+                            About Enhancv
                         </a>
                     </li>
                     <li>
-                        <a
-                         href="{{ urls.blog }}/category/career-hacks/"
-                         target="_blank">
-                            Career Hacks
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                         href="{{ urls.blog }}/category/company-culture/"
-                         target="_blank">
-                            Culture Blog
+                        <a href="/careers.html">
+                            Careers
                         </a>
                     </li>
                     <li>
@@ -43,25 +53,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-2 col-md-push-5 col-sm-4">
-                <h3 class="text-large no-margin">Company</h3>
-                <ul class="list-unstyled top-md bottom-lg">
+            <div class="Grid-cell--sm-3 Grid-cell--md-2 Grid-cell--xs-12 text-center-xs">
+                <ul class="list-unstyled">
                     <li>
                         <a
-                         href="/about.html">
-                            About us
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                         href="/careers.html">
-                            Careers
+                         href="https://enhancv.statuspage.io/">
+                            Status Page
                         </a>
                     </li>
                     <li>
                         <a
                          href="/terms.html">
-                            Terms &amp; Privacy
+                            Terms & Privacy
                         </a>
                     </li>
                     <li>
@@ -73,74 +76,32 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-5 col-md-pull-7 col-sm-12">
-                <a href="/">
-                    <img
-                     width="143"
-                     height="22"
-                     src="/img/logo-with-text.svg"
-                     alt="Enhancv Logo">
-                </a>
-
-                <p class="top-md bottom-lg footer-about-text">
-                    Enhancv helps you create a memorable resume or CV that shows who you are both as a person and as a professional.
-                </p>
+            <div class="Grid Grid-cell Grid--column right-get-started">
+                <div>
+                    <a href="#" class="btn btn-default m-top-1-negative footer-get-started">
+                        Get Started
+                    </a>
+                    <div class="Grid m-top-4">
+                        <div class="Grid-cell--xs-4 Grid-cell--sm-3 Grid-cell--sm-offset-1 text-center">
+                            <a href="#" class="social-link"><i class="icon-facebook"></i></a>
+                        </div>
+                        <div class="Grid-cell--xs-4 Grid-cell--sm-4 text-center">
+                            <a href="#" class="social-link"><i class="icon-instagram"></i></a>
+                        </div>
+                        <div class="Grid-cell--xs-4 Grid-cell--sm-3 text-center">
+                            <a href="#" class="social-link"><i class="icon-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="visible-xs text-center bottom-md">
-            <a
-             href="{{ urls.facebook }}"
-             target="_blank"
-             class="btn btn-facebook btn-icon-lg">
-                <i class="icon-facebook"></i>
-            </a>
-            <a
-             href="{{ urls.twitter }}"
-             target="_blank"
-             class="btn btn-twitter btn-icon-lg left-xs">
-                <i class="icon-twitter"></i>
-            </a>
-            <a
-             href="{{ urls.instagram }}"
-             target="_blank"
-             class="btn btn-instagram btn-icon-lg left-xs">
-                <i class="icon-instagram"></i>
-            </a>
-        </div>
-        <div class="row">
-            <div class="hidden-xs col-md-2 col-md-push-5 col-md-offset-1 col-sm-4">
-                <a
-                 href="{{ urls.facebook }}"
-                 target="_blank"
-                 class="btn btn-facebook btn-block bottom-xs">
-                    <i class="icon-facebook pull-right"></i>
-                    Facebook
-                </a>
-            </div>
-            <div class="hidden-xs col-md-2 col-md-push-5 col-sm-4">
-                <a
-                 href="{{ urls.twitter }}"
-                 target="_blank"
-                 class="btn btn-twitter btn-block bottom-xs">
-                    <i class="icon-twitter pull-right"></i>
-                    Twitter
-                </a>
-            </div>
-            <div class="hidden-xs col-md-2 col-md-push-5 col-sm-4">
-                <a
-                 href="{{ urls.instagram }}"
-                 target="_blank"
-                 class="btn btn-instagram btn-block bottom-xs">
-                    <i class="icon-instagram pull-right"></i>
-                    Instagram
-                </a>
+        <div class="Grid Grid--spaceBetween m-bottom-6 text-center-xs">
+            <div class="Grid Grid-cell--xs-12 Grid-cell--sm-2 copyright top-xs text-center-xs hidden-xs">
+                <img src="/img/logo-with-text-white.svg" />
             </div>
 
-            <div class="col-md-5 col-md-pull-7 col-sm-12">
-                <p class="copyright top-xs text-center-xs">
-                    © Enhancv 2017. All rights reserved.<br>
-                    Made with love by those who care.
-                </p>
+            <div class="Grid Grid-cell--xs-12 Grid-cell--sm-10 made-with-love">
+                <p class="m-top-2" style="width: 100%;">© 2017. All rights reserved. <span class="hidden-sm hidden-md hidden-lg"><br /></span> Made with ♥︎ by those who care.</p>
             </div>
         </div>
     </div>

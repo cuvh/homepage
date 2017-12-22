@@ -1,19 +1,37 @@
 .text-inverse {
-    color: $inverse-color;
+	color: $inverse-color;
 }
 .text-large {
-    font-size: $font-size-large;
+	font-size: $font-size-large;
 }
 .text-muted-deep {
-    color: $text-muted-deep;
+	color: $text-muted-deep;
 }
 .text-promo {
-    color: $promo-color;
+	color: $promo-color;
 }
 .big-title {
-    font-size: 38px;
+	font-size: 38px;
 }
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.p-big {
+	font-size: 16px;
+	color: $gray-light;
+	margin-top: -2px;
+
+	@media screen and (max-width: $screen-sm) {
+		font-size: 14px;
+	}
+}
+
+h1 {
+	line-height: 56px;
+}
+
+h2 {
+	line-height: 43px;
 }

@@ -1,39 +1,81 @@
 .footer {
-    background-color: #E6E6E6;
+    background-color: #1d1d1d;
     color: #808080;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+    .made-with-love {
+        text-align: center;
+
+        @media screen and (min-width: $screen-sm) {
+            text-align: right;
+        }
+    }
+
+    .footer-get-started {
+        width: 176px;
+    }
 
     h3 {
         min-height: 22px;
     }
     .list-unstyled li {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
     }
 
     .list-unstyled li a {
-        color: $text-color;
+        color: #fff;
+        font-size: 16px;
     }
 
     .copyright {
         font-size: 11px;
         line-height: 13px;
     }
+
+    .social-link {
+        color: #ffffff;
+        font-size: 20px;
+    }
+
     .footer-about-text {
         max-width: 500px;
     }
 
+    .right-get-started {
+        align-items: flex-end;
+    }
+
+    .links-container {
+        margin-top: $spacer * 8;
+        margin-bottom: $spacer * 9;
+    }
+
     @media (max-width: $screen-xs-max) {
+        .links-container {
+            margin-top: $spacer * 6;
+            margin-bottom: $spacer * 3;
+        }
+
         h3 {
             font-size: 16px;
         }
+
+        .copyright {
+            img {
+                max-width: 143px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .right-get-started {
+            align-items: center;
+            margin-top: 6 * $spacer;
+        }
+
         .list-unstyled {
             margin-top: 10px;
-            margin-bottom: 60px;
         }
-        .list-unstyled li a {
-            font-size: 22px;
-        }
+
         .footer-about-text {
             margin-left: auto;
             margin-right: auto;

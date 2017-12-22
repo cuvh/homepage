@@ -2,6 +2,7 @@
     color: $color;
     background-color: $background;
     border-color: $border;
+    $hover-border: transparent;
 
     &:focus,
     &.focus {

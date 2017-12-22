@@ -3,7 +3,7 @@
     <meta name="robots" content="noindex">
 {{/ifequal }}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="description" content="{{#if description}}{{ description }}{{ else }}Enhancv helps you create compelling human-centric resumes that unveil the real person behind.{{/if }}">
+<meta name="description" content="{{#if description}}{{ description }}{{ else }}Enhancv resume builder helps you create a resume to be proud of. Stand out and make sure the key things come across.{{/if }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="twitter:card" content="summary" />
@@ -19,9 +19,14 @@
     <meta property="og:image" content="{{ urls.homepage }}/img/social-image.jpg" />
 {{/if }}
 
-{{#if title }}
-<meta name="twitter:title" content="{{ title }}" />
-<meta property="og:title" content="{{ title }}" />
+{{#if socialTitle }}
+<meta name="twitter:title" content="{{ socialTitle }}" />
+<meta property="og:title" content="{{ socialTitle }}" />
+{{else }}
+  {{#if title }}
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta property="og:title" content="{{ title }}" />
+  {{/if }}
 {{/if }}
 
 {{#if description }}
@@ -29,12 +34,17 @@
 <meta property="og:description" content="{{ description }}" />
 {{/if }}
 
+{{#if socialDescription }}
+<meta name="twitter:description" content="{{ socialDescription }}" />
+<meta property="og:description" content="{{ socialDescription }}" />
+{{/if }}
+
 {{#if noFollow }}
     <meta name="robots" content="noindex, nofollow">
 {{/if }}
 
 <!-- Page hiding snippet for initial hide of the page for A/B tests -->
-<style>.async-hide { opacity: 0 !important} </style>
+<style>.async-hide { opacity: 0 !important } </style>
 <script>
 (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
 h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
