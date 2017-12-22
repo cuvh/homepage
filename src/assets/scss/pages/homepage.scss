@@ -23,6 +23,16 @@ $homepage-background: #eaf8f3;
     }
 }
 
+.hidden-br {
+    display: inline;
+}
+
+@media screen and (max-width: 480px) {
+    .hidden-br {
+        display: block;
+    }
+}
+
 @keyframes fadein {
     from {
         opacity: 0;

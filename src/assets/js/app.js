@@ -157,6 +157,10 @@ $(function() {
             $(".articles-scrollable").html(articleWrapper.html());
         });
     }
+
+    $(".gif-monitor")
+        .removeClass("hidden")
+        .attr("src", "/img/new-homepage/monitor_gif.gif");
 });
 
 window.sr = ScrollReveal();
