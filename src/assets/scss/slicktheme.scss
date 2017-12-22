@@ -213,3 +213,8 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: default !important;
     opacity: 0.5 !important;
 }
+
+.slick-slide:focus,
+.slick-slide:active {
+    outline: 0;
+}

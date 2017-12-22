@@ -91,13 +91,15 @@ $(function() {
 
         var pageWidth = $(window).width();
 
+        var margin = pageWidth > 768 && pageWidth < 1200 ? 90 : 0;
+
         $("#parallax-1")
             .css("left", -(pageWidth / 40 / 2) + x / 40)
-            .css("top", y / 55);
+            .css("top", margin + y / 55);
 
         $("#parallax-2")
             .css("left", -(pageWidth / 15 / 2) + x / 15)
-            .css("top", y / 35);
+            .css("top", margin + y / 35);
     });
 
     if (!isTouchDevice()) {

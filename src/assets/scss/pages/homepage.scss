@@ -120,17 +120,17 @@ $homepage-background: #eaf8f3;
     }
 }
 
+.spotlight-stacked-images {
+    width: 50%;
+    max-width: 255px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    transform: translateX(-50%);
+}
+
 .homepage-standout {
     img {
-        width: 115%;
-
-        @media screen and (min-width: $screen-md) {
-            width: 100%;
-        }
-
-        @media screen and (min-width: $screen-lg) {
-            width: 115%;
-        }
+        width: 100%;
     }
 
     .bg-image {
