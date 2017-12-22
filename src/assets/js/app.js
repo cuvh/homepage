@@ -112,8 +112,7 @@ $(function() {
 
     $(".carousel-container").slick({
         dots: true,
-        infinite: false,
-        speed: 1000,
+        infinite: true,
     });
 
     if ($(".homepage-blog-latest").html()) {
