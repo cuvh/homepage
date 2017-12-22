@@ -117,8 +117,27 @@ $(function() {
     if ($(".homepage-blog-latest").html()) {
         $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
             var articleWrapper = $("<div />");
+            var months = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ];
 
             data.items.forEach(function(item) {
+                var date = new Date(item.date_published);
+
+                var formattedDate =
+                    date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+
                 articleWrapper.append(
                     '<div class="inline-block m-right-5">' +
                         '<a target="_blank" href="' +
@@ -127,8 +146,8 @@ $(function() {
                         item.title +
                         "”</a>" +
                         '<p class="text-muted">' +
-                        item.comments_count +
-                        " Comments</p>" +
+                        formattedDate +
+                        "</p>" +
                         "</div>"
                 );
             });
