@@ -58,174 +58,59 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
 </div>
 
 {{>successful-resumes-carousel}}
-<!--
-<div class="experts-say">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center top-sm bottom-xs">
-                <h2>What Experts Say</h2>
-            </div>
-        </div>
-        <div class="experts-say-flex">
-            <div class="experts-say-flex-col" style="flex: 560;">
-                <div
-                 class="embed-responsive embed-responsive-homepage-tips" id="tips"
-                 style="margin-bottom: 0px; box-shadow: none;">
-                    <img
-                     width="595"
-                     height="841"
-                     style="box-shadow: 0 3px 60px 0 rgba(255,255,255,0.8);"
-                     class="embed-responsive-item"
-                     src="/img/homepage/tips/resume.jpg"
-                     srcset="/img/homepage/tips/resume.jpg 1x, /img/homepage/tips/resume@2x.jpg 2x"
-                     alt="Condensed resume">
-                    <ul class="dots">
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='17%'
-                         y='4.5%'
-                         title='Customize Colors'
-                         image='/img/homepage/tips/customize-colors.png'
-                         image2='/img/homepage/tips/customize-colors@2x.png'
-                         width='186'
-                         height='189'
-                         containerId='tips'
-                        }}
 
-                        {{>dot-image
-                         color='#22CAFC'
-                         x='6%'
-                         y='21%'
-                         title='Customize Fonts'
-                         image='/img/homepage/tips/customize-fonts.png'
-                         image2='/img/homepage/tips/customize-fonts@2x.png'
-                         width='181'
-                         height='178'
-                         containerId='tips'
-                        }}
-                    </ul>
-                </div>
-            </div>
-            <div class="experts-say-flex-col" style="flex: 350;">
-                <div class="experts-say-flex-vcenter">
-                    <div class="experts-person">
-                        <img class="experts-picture" src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-9/14642452_660547247441762_5678361550291121736_n.jpg?oh=d535dd93b574599cf8317bd47495289e&oe=5A9C6296" />
-                        <div class="experts-hired-container">
-                            <div class="experts-hired-at">Works at</div>
-                            <img style="width: 135px" width="135px" src="/img/discover/pentagram_logo.svg">
-                        </div>
-                    </div>
-                    <div class="experts-name">
-                        Delia Wilkerson
-                    </div>
-                    <div class="experts-text top-xs">
-                        If you see yourself as a part of our team but there's currently no job opening that matches your profile, feel free to send us an application anyway. If you see yourself as a part of our team but there’s.
-                    </div>
-                    <div class="feedback-container">
-                        Want a similar feedback from your friends? Use our unique feature
-
-                        <a href="#" class="btn btn-default top-xty">Get Feedback on Your Resume</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
--->
 <div>
     <hr />
 </div>
 
 <div class="popular-resumes">
-    <div class="container top-sm">
+    <div class="container">
         <div class="text-center">
-            <h2>Famous Resumes</h2>
+            <h2 class="m-top-4 hidden-xs">Famous Resumes</h2>
+            <h3 class="m-top-1 hidden-sm hidden-md hidden-lg">Famous Resumes</h3>
         </div>
 
-        <div
-         class="carousel slide top-md"
-         id="features"
-         data-ride="carousel"
-         data-indicators="#features-dots"
-         data-interval="false">
-            <ul
-             id="features-dots"
-             class="visible-xs visible-sm carousel-indicators">
-                <li
-                 data-target="#features"
-                 class="active"
-                 data-slide-to="0">
-                </li>
-                <li
-                 data-target="#features"
-                 data-slide-to="1">
-                </li>
-            </ul>
-
-            <div class="carousel-inner">
-                <div class="item active item-bg">
-                    {{>famous-resume
-                        name="Marissa Mayer"
-                        link="marissa-mayer"
-                        description="From the first female employee at Google to CEO of Yahoo!, Mayer’s resume tells the story of a career marked by persistence, hard work, and results. She also shows how women can succeed in both the technology and business worlds."
-                        position="CEO of Yahoo"
-                        image="marissa-mayer-resume.jpg"}}
-                </div>
-                <div class="item item-bg">
-                    {{>famous-resume
-                        name="Mark Zuckerburg"
-                        link="mark-zuckerberg"
-                        description="Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Even then, his passions, philosophy, and ambitions shine through. Even without knowing what he would one day accomplish with Facebook, you can clearly see he’s going places."
-                        position="CEO of Facebook"
-                        image="mark-zuckerberg-resume.jpg"}}
-                </div>
-                <div class="item item-bg">
-                    {{>famous-resume
-                        name="Barack Obama"
-                        link="barack-obama"
-                        description="Even Presidents need resumes. Obama's shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of."
-                        position="President of United States"
-                        image="barack-obama-resume.jpg"}}
-                </div>
-                <div class="item item-bg">
-                    {{>famous-resume
-                        name="Travis Kalanick"
-                        link="travis-kalanick"
-                        description="Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times when he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO."
-                        position="CEO of Uber"
-                        image="travis-kalanick-resume.jpg"}}
-                </div>
-                <div class="item item-bg">
-                    {{>famous-resume
-                        name="Elon Musk"
-                        link="elon-musk"
-                        description="When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions."
-                        position="CEO of Tesla/SpaceX"
-                        image="elon-musk-resume-1.jpg"}}
-                </div>
+        <div class="carousel-inner carousel-famous-big">
+            <div class="item item-bg">
+                {{>famous-resume
+                    name="Marissa Mayer"
+                    link="marissa-mayer"
+                    description="From the first female employee at Google to CEO of Yahoo!, Mayer’s resume tells the story of a career marked by persistence, hard work, and results. She also shows how women can succeed in both the technology and business worlds."
+                    position="CEO of Yahoo"
+                    image="marissa-mayer-resume.jpg"}}
             </div>
-
-            <a
-             class="left carousel-control"
-             href="#features"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click New Features"
-             data-label="Arrow"
-             data-slide="prev">
-                <i class="icon-angle-left"></i>
-            </a>
-
-            <a
-             class="right carousel-control"
-             href="#features"
-             data-track="event"
-             data-category="Homepage"
-             data-action="Click New Features"
-             data-label="Arrow"
-             data-slide="next">
-                <i class="icon-angle-right"></i>
-            </a>
+            <div class="item item-bg">
+                {{>famous-resume
+                    name="Mark Zuckerburg"
+                    link="mark-zuckerberg"
+                    description="Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Even then, his passions, philosophy, and ambitions shine through. Even without knowing what he would one day accomplish with Facebook, you can clearly see he’s going places."
+                    position="CEO of Facebook"
+                    image="mark-zuckerberg-resume.jpg"}}
+            </div>
+            <div class="item item-bg">
+                {{>famous-resume
+                    name="Barack Obama"
+                    link="barack-obama"
+                    description="Even Presidents need resumes. Obama's shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of."
+                    position="President of United States"
+                    image="barack-obama-resume.jpg"}}
+            </div>
+            <div class="item item-bg">
+                {{>famous-resume
+                    name="Travis Kalanick"
+                    link="travis-kalanick"
+                    description="Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times when he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO."
+                    position="CEO of Uber"
+                    image="travis-kalanick-resume.jpg"}}
+            </div>
+            <div class="item item-bg">
+                {{>famous-resume
+                    name="Elon Musk"
+                    link="elon-musk"
+                    description="When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions."
+                    position="CEO of Tesla/SpaceX"
+                    image="elon-musk-resume-1.jpg"}}
+            </div>
         </div>
     </div>
 </div>

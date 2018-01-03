@@ -16,7 +16,7 @@ function byChunks(items, chunkSize) {
 
         wrapper.append(
             $("<div/>", {
-                class: "item item-bg " + (i === 0 ? "active" : ""),
+                class: "item item-bg m-top-5 " + (i === 0 ? "active" : ""),
             }).append(item)
         );
 
@@ -44,23 +44,35 @@ function onResize(items) {
 
     var width = document.body.scrollWidth;
 
-    if (width > 1200) {
+    if (width >= 1200) {
         CHUNK_SIZE = 4;
-    } else if (width > 992) {
+    } else if (width >= 992) {
         CHUNK_SIZE = 3;
-    } else if (width > 768) {
+    } else if (width >= 768) {
         CHUNK_SIZE = 2;
     }
 
+    if ($(".slick-slider.successful-resumes-carousel-items").length) {
+        $("#resume").slick("unslick");
+    }
+    //
     byChunks(items, CHUNK_SIZE, "hidden-xs hidden-md hidden-lg");
-    $("#resume").carousel();
+
+    $("#resume").slick({
+        dots: true,
+        infinite: true,
+    });
 }
 
 (function() {
-    var items = jQuery(".resume-container");
+    var items = jQuery(".resumes-hidden-wrapper .resume-container");
 
     $(window).resize(function() {
         onResize(items);
     });
     onResize(items);
+
+    $(".carousel-famous-big").slick({
+        dots: true,
+    });
 })();

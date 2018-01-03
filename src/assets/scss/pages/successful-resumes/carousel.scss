@@ -1,6 +1,5 @@
 .successful-resumes-resumes-list {
 	overflow: hidden;
-	padding-bottom: $spacer*8;
 
 	.rom-tag {
 		position: absolute;
@@ -128,5 +127,19 @@
 
 	i {
 		color: #000;
+	}
+}
+
+@media screen and (min-width: $screen-md-min) {
+	.carousel-famous-big .slick-dots {
+		bottom: 25px;
+	}
+}
+
+@media screen and (min-width: $screen-sm-min) {
+	.successful-resumes-resumes-list {
+		.slick-dots {
+			display: none !important;
+		}
 	}
 }

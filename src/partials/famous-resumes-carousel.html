@@ -6,73 +6,45 @@
                     View more famous resumes
                 </h2>
 
-                <div
-                 class="carousel slide top-md successful-resumes-carousel"
-                 id="resume"
-                 data-ride="carousel"
-                 data-indicators="#resume-dots"
-                 data-interval="false">
-
-                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
-                    <div class="carousel-inner successful-resumes-carousel-items">
-
-                        <div class="item item-bg active">
-                            <div class="successful-resumes-carousel-align">
-                            {{>resume-container
-                                link="marissa-mayer.html"
-                                name="Marissa Mayer"
-                                prefix="famous/"
-                                tags="CEO, Product Engineer"
-                                frontImage="marissa-mayer-resume.jpg"
-                                companyLogo="yahoo-logo.png"
-                            }}
-                            {{>resume-container
-                                link="mark-zuckerberg.html"
-                                name="Mark Zuckerberg"
-                                prefix="famous/"
-                                tags="CEO, Founder, Geek"
-                                frontImage="mark-zuckerberg-resume.jpg"
-                                companyLogo="facebook-logo.png"
-                            }}
-                            {{>resume-container
-                                link="travis-kalanick.html"
-                                name="Travis Kalanick"
-                                prefix="famous/"
-                                tags="CEO, Entrepreneur"
-                                frontImage="travis-kalanick-resume.jpg"
-                                companyLogo="uber-logo.png"
-                            }}
-                            {{>resume-container
-                                link="barack-obama.html"
-                                name="Barack Obama"
-                                prefix="famous/"
-                                tags="Politics, President"
-                                frontImage="barack-obama-resume.jpg"
-                            }}
-                            </div>
-                        </div>
-                    </div>
-                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
-
-                    <ul
-                     id="resume-dots"
-                     class="visible-xs carousel-indicators top-md bottom-md">
-                    </ul>
-
-                    <a
-                     class="left carousel-control"
-                     href="#resume"
-                     data-slide="prev">
-                        <i class="icon-angle-left"></i>
-                    </a>
-
-                    <a
-                     class="right carousel-control"
-                     href="#resume"
-                     data-slide="next">
-                        <i class="icon-angle-right"></i>
-                    </a>
+                <div class="hidden resumes-hidden-wrapper">
+                    {{>resume-container
+                        link="marissa-mayer.html"
+                        name="Marissa Mayer"
+                        prefix="famous/"
+                        tags="CEO, Product Engineer"
+                        frontImage="marissa-mayer-resume.jpg"
+                        companyLogo="yahoo-logo.png"
+                    }}
+                    {{>resume-container
+                        link="mark-zuckerberg.html"
+                        name="Mark Zuckerberg"
+                        prefix="famous/"
+                        tags="CEO, Founder, Geek"
+                        frontImage="mark-zuckerberg-resume.jpg"
+                        companyLogo="facebook-logo.png"
+                    }}
+                    {{>resume-container
+                        link="travis-kalanick.html"
+                        name="Travis Kalanick"
+                        prefix="famous/"
+                        tags="CEO, Entrepreneur"
+                        frontImage="travis-kalanick-resume.jpg"
+                        companyLogo="uber-logo.png"
+                    }}
+                    {{>resume-container
+                        link="barack-obama.html"
+                        name="Barack Obama"
+                        prefix="famous/"
+                        tags="Politics, President"
+                        frontImage="barack-obama-resume.jpg"
+                    }}
                 </div>
+
+                <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
+                <div id="resume" class="carousel-inner successful-resumes-carousel-items">
+                </div>
+                <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
+
             </div>
         </div>
     </div>

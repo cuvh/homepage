@@ -260,9 +260,9 @@ $homepage-background: #eaf8f3;
 }
 
 .homepage-testimonials {
-    @media screen and (max-width: $screen-sm) {
-        .slick-arrow {
-            display: none !important;
+    @media screen and (min-width: $screen-sm) {
+        .slick-dots {
+            bottom: 57px;
         }
     }
 

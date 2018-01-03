@@ -108,21 +108,16 @@
 
 		img {
 			max-width: 100% !important;
-			width: 100%;
 		}
-
-		padding-bottom: $spacer*6;
 	}
 
 	background-image: url(/img/homepage/lines-bg.png);
 	background-size: cover;
 
 	.popular-resumes-image {
-		box-shadow: 0 3px 60px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.3);
 
-		@media screen and (min-width: $screen-sm) {
-			max-height: 565px;
-		}
+		max-height: 565px;
 	}
 
 	.popular-resumes-name {

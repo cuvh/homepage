@@ -2,142 +2,101 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-center top-sm">
+                <h2 class="text-center m-top-6 hidden-xs">
                     View more of our top resumes
                 </h2>
+                <h3 class="text-center m-top-4 hidden-sm hidden-md hidden-lg">
+                    View more of our top resumes
+                </h3>
 
-                <div
-                 class="carousel slide top-md successful-resumes-carousel"
-                 id="resume"
-                 data-ride="carousel"
-                 data-switch-toggle="#features-texts"
-                 data-indicators="#features-indicators,#resume-dots"
-                 data-interval="false">
-
-                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
-                    <div class="carousel-inner successful-resumes-carousel-items">
-                        <div class="item item-bg active">
-                            <div class="successful-resumes-carousel-align">
-                            {{>resume-container
-                                link="akshay-rao.html"
-                                name="Akshay S. Rao"
-                                tags="Internship, Engineering"
-                                secondary_tags="Fraternity"
-                                frontImage="akshay-rao-resume-1.jpg"
-                                companyLogo="tesla-logo.png"
-                            }}
-                            {{>resume-container
-                                link="sam-young.html"
-                                name="Sam Young"
-                                tags="Career Change, IT Strategy"
-                                secondary_tags="Favorite Books, Data Analytics, Investment Analysis"
-                                frontImage="sam-young-resume-1.jpg"
-                                companyLogo="spotify-logo.png"
-                            }}
-                            {{>resume-container
-                                link="daniel-pietersen.html"
-                                name="Daniel Pietersen"
-                                tags="Customer Support, Founder"
-                                secondary_tags="GitHub"
-                                frontImage="daniel-pietersen-resume-1.jpg"
-                                companyLogo="intercom-logo.png"
-                                RoM=true
-                            }}
-                            {{>resume-container
-                                link="marcellus-nixon.html"
-                                name="Marcellus Nixon"
-                                tags="Engineering, Patent Holder"
-                                secondary_tags="penis"
-                                frontImage="marcellus-nixon-resume-1.jpg"
-                                companyLogo="verizon-logo.png"
-                            }}
-                            </div>
-                        </div>
-                        <div class="item item-bg">
-                            <div class="successful-resumes-carousel-align">
-                            {{>resume-container
-                                link="julian-prim.html"
-                                name="Julian Prim"
-                                tags="Auditing, Administration"
-                                secondary_tags=""
-                                frontImage="julian-prim-resume-1.jpg"
-                                companyLogo="pwc-logo.png"
-                            }}
-                            {{>resume-container
-                                link="tobias-horstmann.html"
-                                name="Tobias Horstmann"
-                                tags="IT, Automotive, Founder"
-                                secondary_tags="Traveller, Internship, Web Development"
-                                frontImage="tobias-horstmann-resume-1.jpg"
-                                companyLogo="encory-logo.png"
-                            }}
-                            {{>resume-container
-                                link="melanie-fischer.html"
-                                name="Melanie Fisher"
-                                tags="Sales, Customer Service"
-                                secondary_tags=""
-                                frontImage="melanie-fisher-resume-1.jpg"
-                                companyLogo="esc-logo.png"
-                            }}
-                            {{>resume-container
-                                link="steffany-photopoulos.html"
-                                name="Steffany Photopoulos"
-                                tags="Career Change, Medicine"
-                                secondary_tags="Traveller, Volunteer, Musician"
-                                frontImage="steffany-photopoulos-resume-1.jpg"
-                                companyLogo="ie-logo.png"
-                            }}
-                            </div>
-                        </div>
-                        <div class="item item-bg">
-                            <div class="successful-resumes-carousel-align">
-                            {{>resume-container
-                                link="hillary-darkville.html"
-                                name="Hillary Darkville"
-                                tags="Public Health, Consulting"
-                                secondary_tags="Runner"
-                                frontImage="hillary-k-darville-resume-1.jpg"
-                                companyLogo="guru-logo.png"
-                            }}
-                            {{>resume-container
-                                link="eden-ivancich.html"
-                                name="Eden Ivancich"
-                                tags="Teenager, Volunteer, Student"
-                                secondary_tags="Cooking, Football, Awards"
-                                frontImage="eden-ivancich-resume-1.jpg"
-                            }}
-                            </div>
-                        </div>
-                    </div>
-                    <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
-
-                    <ul
-                     id="resume-dots"
-                     class="visible-xs carousel-indicators top-md bottom-md">
-                    </ul>
-
-                    <a
-                     class="left carousel-control"
-                     href="#resume"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Arrow"
-                     data-slide="prev">
-                        <i class="icon-angle-left"></i>
-                    </a>
-
-                    <a
-                     class="right carousel-control"
-                     href="#resume"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click New Features"
-                     data-label="Arrow"
-                     data-slide="next">
-                        <i class="icon-angle-right"></i>
-                    </a>
+                <div class="hidden resumes-hidden-wrapper">
+                    {{>resume-container
+                        link="akshay-rao.html"
+                        name="Akshay S. Rao"
+                        tags="Internship, Engineering"
+                        secondary_tags="Fraternity"
+                        frontImage="akshay-rao-resume-1.jpg"
+                        companyLogo="tesla-logo.png"
+                    }}
+                    {{>resume-container
+                        link="sam-young.html"
+                        name="Sam Young"
+                        tags="Career Change, IT Strategy"
+                        secondary_tags="Favorite Books, Data Analytics, Investment Analysis"
+                        frontImage="sam-young-resume-1.jpg"
+                        companyLogo="spotify-logo.png"
+                    }}
+                    {{>resume-container
+                        link="daniel-pietersen.html"
+                        name="Daniel Pietersen"
+                        tags="Customer Support, Founder"
+                        secondary_tags="GitHub"
+                        frontImage="daniel-pietersen-resume-1.jpg"
+                        companyLogo="intercom-logo.png"
+                        RoM=true
+                    }}
+                    {{>resume-container
+                        link="marcellus-nixon.html"
+                        name="Marcellus Nixon"
+                        tags="Engineering, Patent Holder"
+                        secondary_tags="penis"
+                        frontImage="marcellus-nixon-resume-1.jpg"
+                        companyLogo="verizon-logo.png"
+                    }}
+                    {{>resume-container
+                        link="julian-prim.html"
+                        name="Julian Prim"
+                        tags="Auditing, Administration"
+                        secondary_tags=""
+                        frontImage="julian-prim-resume-1.jpg"
+                        companyLogo="pwc-logo.png"
+                    }}
+                    {{>resume-container
+                        link="tobias-horstmann.html"
+                        name="Tobias Horstmann"
+                        tags="IT, Automotive, Founder"
+                        secondary_tags="Traveller, Internship, Web Development"
+                        frontImage="tobias-horstmann-resume-1.jpg"
+                        companyLogo="encory-logo.png"
+                    }}
+                    {{>resume-container
+                        link="melanie-fischer.html"
+                        name="Melanie Fisher"
+                        tags="Sales, Customer Service"
+                        secondary_tags=""
+                        frontImage="melanie-fisher-resume-1.jpg"
+                        companyLogo="esc-logo.png"
+                    }}
+                    {{>resume-container
+                        link="steffany-photopoulos.html"
+                        name="Steffany Photopoulos"
+                        tags="Career Change, Medicine"
+                        secondary_tags="Traveller, Volunteer, Musician"
+                        frontImage="steffany-photopoulos-resume-1.jpg"
+                        companyLogo="ie-logo.png"
+                    }}
+                    {{>resume-container
+                        link="hillary-darkville.html"
+                        name="Hillary Darkville"
+                        tags="Public Health, Consulting"
+                        secondary_tags="Runner"
+                        frontImage="hillary-k-darville-resume-1.jpg"
+                        companyLogo="guru-logo.png"
+                    }}
+                    {{>resume-container
+                        link="eden-ivancich.html"
+                        name="Eden Ivancich"
+                        tags="Teenager, Volunteer, Student"
+                        secondary_tags="Cooking, Football, Awards"
+                        frontImage="eden-ivancich-resume-1.jpg"
+                    }}
                 </div>
+
+                <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
+                <div id="resume" class="carousel-inner successful-resumes-carousel-items">
+                </div>
+                <!-- AUTO SIZING IN See js/successful-resumes-carousel -->
+
             </div>
         </div>
     </div>
