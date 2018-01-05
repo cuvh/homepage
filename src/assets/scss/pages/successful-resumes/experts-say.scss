@@ -1,12 +1,7 @@
 .experts-say {
 	background: $brand-primary;
 	color: #ffffff;
-
-	.experts-picture {
-		width: 80px;
-		height: 80px;
-		border-radius: 40px;
-	}
+    padding: ($spacer * 6) 0 ($spacer * 10) 0;
 
 	.experts-hired-container {
 		padding-left: 30px;
@@ -20,9 +15,16 @@
 		}
 
 		img {
-			margin-top: 4px;
+			margin-top: $spacer / 2;
+            margin-left: -$spacer * 5;
 		}
 	}
+
+    #expert-resume {
+        .popover-content {
+            color: $gray-dark;
+        }
+    }
 
 	.experts-person {
 		display: flex;
@@ -33,7 +35,6 @@
 		font-weight: 300;
 		font-size: 42px;
 		line-height: 46px;
-		font-family: "Geometria Light";
 	}
 
 	.experts-text {
