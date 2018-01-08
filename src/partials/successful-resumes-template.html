@@ -104,26 +104,31 @@
         </div>
 
         <div class="successful-resume-cta">
-                    <div class="bottom-xs cta-text">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
-                    <form id="subscribe-form">
-                        <div class="Grid">
-                            <input
-                             type="text" 
-                             class="form-control Grid-cell m-right-1" 
-                             id="subscribe-email"
-                             placeholder="Write your email address"/>
-                            <button
-                             type="submit"
-                             id="subscribe-btn"
-                             class="btn btn-primary cta-button Grid-cell--auto"
-                             data-track="event"
-                             data-category="Successful Resumes"
-                             data-action="Newsletter Subscription">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
+            {{#if famousResume}}
+              <div class="bottom-xs cta-text text-center">Subscribe for more inspired resumes</div>
+            {{else}}
+               <div class="bottom-xs cta-text text-center">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
+            {{/if }}
+            <form id="subscribe-form">
+                <div class="Grid">
+                    <input
+                     type="text" 
+                     class="form-control Grid-cell m-right-1" 
+                     id="subscribe-email"
+                     placeholder="Write your email address"
+                     style="height: auto"/>
+                    <button
+                     type="submit"
+                     id="subscribe-btn"
+                     class="btn btn-primary cta-button Grid-cell--auto"
+                     data-track="event"
+                     data-category="Successful Resumes"
+                     data-action="Newsletter Subscription">
+                        Subscribe
+                    </button>
                 </div>
+            </form>
+        </div>
 
         <div class="row text-center">
         	<div class="top-md bottom-sm">

@@ -189,3 +189,16 @@
 		}
 	}
 }
+
+.successful-resumes-cta {
+     #subscribe-email {
+        margin-right: $spacer;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        #subscribe-email {
+            margin-right: 0;
+            margin-bottom: $spacer;
+        }
+    }
+}

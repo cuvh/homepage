@@ -41,59 +41,59 @@
 		font-size: 14px;
 	}
 
-	.feedback-container {
-		width: 100%;
-		max-width: 350px;
-		padding: $spacer*2 $spacer*2;
-		border-radius: 5px;
-		border: 1px solid #ffffff;
-		font-size: 16px;
-		margin-top: 85px;
+	.successful-resumes-share {
+        border-color: #fff;
+    }
 
-		@media screen and (max-width: $screen-sm) {
-			margin: 0 auto;
-			margin-top: 20px;
-		}
+    @media (max-width: $screen-sm-max) {
+        .experts-say-wrapper {
+            display: flex;
+            flex-direction: column;
 
-		.btn {
-			width: 100%;
-		}
-	}
+            .top-col {
+                order: 2;
+            }
+
+            .bottom-col {
+                margin-bottom: $spacer * 3;
+            }
+        }
+    }
 }
 
 .experts-say-flex {
-	display: flex;
-	margin-bottom: $spacer*10;
-	flex-direction: row;
+    display: flex;
+    margin-bottom: $spacer*10;
+    flex-direction: row;
 
-	@media screen and (max-width: $screen-sm) {
-		flex-direction: column;
-		margin-bottom: $spacer*4;
-	}
+    @media screen and (max-width: $screen-sm) {
+        flex-direction: column;
+        margin-bottom: $spacer*4;
+    }
 }
 
 .experts-say-flex-col {
-	display: flex;
-	flex: 1;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-top: $spacer*2;
+    display: flex;
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: $spacer*2;
 
-	.embed-responsive {
-		width: 100%;
-	}
+    .embed-responsive {
+        width: 100%;
+    }
 
-	.experts-say-flex-vcenter {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		margin: 0 auto;
-	}
+    .experts-say-flex-vcenter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
 
-	@media screen and (min-width: $screen-sm) {
-		.flex-col-spacer {
-			display: flex;
-			flex: 1;
-		}
-	}
+    @media screen and (min-width: $screen-sm) {
+        .flex-col-spacer {
+            display: flex;
+            flex: 1;
+        }
+    }
 }
