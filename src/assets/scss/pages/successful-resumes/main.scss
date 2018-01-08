@@ -39,7 +39,6 @@
 
 	.rom-hired-at {
 		color: #808080;
-		font-family: Roboto;
 		font-size: 14px;
 		line-height: 16px;
 
@@ -189,4 +188,17 @@
 			color: #000;
 		}
 	}
+}
+
+.successful-resumes-cta {
+     #subscribe-email {
+        margin-right: $spacer;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        #subscribe-email {
+            margin-right: 0;
+            margin-bottom: $spacer;
+        }
+    }
 }

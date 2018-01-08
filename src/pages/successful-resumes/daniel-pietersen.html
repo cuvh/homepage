@@ -5,7 +5,7 @@ description: "An excellent resume which shows how doing what you love and showin
 metaImage: "/img/successful-resumes/share-images/ofthemonth-01.jpg"
 ---
 
-<div class="successful-resume">
+<div class="successful-resume featured-resume">
     <div class="container">
         <div class="row text-center">
         	<h2>Resume of the month</h2>
@@ -88,6 +88,33 @@ metaImage: "/img/successful-resumes/share-images/ofthemonth-01.jpg"
                             </span>
                         </a>
                     </div>
+                </div>
+
+                <div class="successful-resume-cta m-top-3 m-bottom-4">
+                    {{#if famousResume}}
+                      <div class="bottom-xs cta-text text-center">Subscribe for more inspired resumes</div>
+                    {{else}}
+                       <div class="bottom-xs cta-text text-center">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
+                    {{/if }}
+                    <form id="subscribe-form">
+                        <div class="Grid">
+                            <input
+                             type="text" 
+                             class="form-control Grid-cell m-right-1" 
+                             id="subscribe-email"
+                             placeholder="Write your email address"
+                             style="height: auto"/>
+                            <button
+                             type="submit"
+                             id="subscribe-btn"
+                             class="btn btn-primary cta-button Grid-cell--auto"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Newsletter Subscription">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
                 <h4>Step 1: What are you passionate about?</h4>

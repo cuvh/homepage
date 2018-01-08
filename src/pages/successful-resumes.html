@@ -61,7 +61,140 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
 
 {{>successful-resumes-carousel}}
 
-<hr style="margin: 0" />
+<div class="experts-say">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center m-bottom-6">
+                <h2>What Experts Say</h2>
+            </div>
+        </div>
+        <div class="row experts-say-wrapper">
+            <div class="col-md-6 top-col">
+                <div id="expert-resume">
+                    <img
+                     width="560"
+                     height="792"
+                     src="/img/successful-resumes/experts/resume.jpg"
+                     srcset="/img/successful-resumes/experts/resume.jpg 1x,/img/successful-resumes/experts/resume@2x.jpg 2x"
+                     alt="Condensed resume"
+                     class="img-responsive">
+                     <ul class="dots">
+                        {{>dot
+                         color='#FF0030'
+                         x='25%'
+                         y='20%'
+                         title=""
+                         value="2"
+                         text="It's very helpful to see Christian’s life moto as it provides a good perception of the drive that Christian possesses. However, it would be great to see an indication of his career aspirations and goals as well in order to understand where he’s headed and what he is looking for."
+                         containerId='expert-resume'
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='71%'
+                         y='19%'
+                         title=""
+                         value="4"
+                         text="Outlining your achievements, competencies, and strengths is a must, and Christian has done a great job summarizing these areas. Here’s one additional idea – to stand out and show your human side and personality, give an example of the project where you didn’t necessarily succeed but you learned a lot. Or, besides the areas of strength, outline your areas of future focus (i.e. what capabilities you want to develop next)."
+                         containerId='expert-resume'
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='7%'
+                         y='32%'
+                         title=""
+                         text="It's great to see not only the responsibilities but also the achievements in each phase of Christian’s career."
+                         containerId='expert-resume'
+                         value="5"
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='17%'
+                         y='82%'
+                         title=""
+                         text="I appreciate this section a lot as it shows Christian’s human side and not just his professional background and achievements."
+                         containerId='expert-resume'
+                         value="3"
+                        }}
+
+                        {{>dot
+                         color='#FF0030'
+                         x='13%'
+                         y='94%'
+                         title=""
+                         text="I'm missing Christian’s educational background which could give me more context around his area of expertise, growth trajectory and network of contacts."
+                         containerId='expert-resume'
+                         value="1"
+                        }}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 bottom-col">
+                <div>
+                    <div class="experts-person">
+                        <img 
+                         class="experts-picture" 
+                         src="/img/successful-resumes/experts/irena-photo.png"
+                         width="80"
+                         height="80" />
+                        <div class="experts-hired-container">
+                            <div class="experts-hired-at">Works at</div>
+                            <img 
+                             width="164" 
+                             height="52" 
+                             src="/img/successful-resumes/experts/experian-logo.svg">
+                        </div>
+                    </div>
+                    <h1 class="experts-name">
+                        Irena Boyadzhieva
+                    </h1>
+                    <div class="experts-text m-top-2 m-bottom-4">
+                        Professionally, I've grown and developed in the area of Talent Acquisition and People Management. I've had several fantastic jobs that gave me the opportunity to build and develop high performing teams. Personally, I'm a retired perfectionist who believes in living outside my comfort zone and surrounding myself with driven and inspiring people.
+                    </div>
+                    <div class="successful-resumes-share Grid Grid--alignCenter Grid--spaceBetween {{class}}">
+                        <div class="Grid-cell--auto m-bottom-2">Learned something useful? Share the knowledge.</div>
+                        <div class="Grid Grid-cell--auto">
+                            <a
+                             href="https://www.facebook.com/sharer.php?u=https://enhancv.com/successful-resumes"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Social Share"
+                             data-label="Facebook"
+                             class="btn btn-facebook"
+                             target="_blank">
+                                <i class="icon-facebook-square"></i>
+                            </a>
+
+                            <a
+                             href="https://www.linkedin.com/shareArticle?mini=true&url=https://enhancv.com/successful-resumes"
+                             target="_blank"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Social Share"
+                             data-label="LinkedIn"
+                             class="btn btn-linkedin">
+                                <i class="icon-linkedin-square"></i>
+                            </a>
+
+                            <a
+                             href="https://twitter.com/share?url=https://enhancv.com/successful-resumes"
+                             target="_blank"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Social Share"
+                             data-label="Twitter"
+                             class="btn btn-twitter">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="successful-resumes-header">
     <div class="container">
@@ -112,21 +245,31 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
     </div>
 </div>
 
-<div class="homepage-cta">
+<div class="homepage-cta successful-resumes-cta">
     <div class="container">
         <div class="Grid">
             <div class="Grid Grid-cell Grid--alignCenter text-center">
                 <div class="Grid-cell">
-                    <h1 class="m-top-no">Not happy with your current resume?</h1>
-                    <a
-                     href="https://app.enhancv.com"
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Signup"
-                     data-label="Craft Your Resume"
-                     class="btn btn-default btn-lg m-top-2">
-                        Start Your Free 14 Day Trial
-                    </a>
+                    <h1 class="m-top-no">Subscribe for more inspired resumes</h1>
+                    <form id="subscribe-form">
+                        <div class="Grid Grid--justifyCenter">
+                            <input
+                             type="text" 
+                             class="form-control Grid-cell--sm-4 Grid-cell--xs-12" 
+                             id="subscribe-email"
+                             placeholder="Write your email address"
+                             style="height: auto; border: 0"/>
+                            <button
+                             type="submit"
+                             id="subscribe-btn"
+                             class="btn btn-default cta-button Grid-cell--sm-2 Grid-cell--xs-12"
+                             data-track="event"
+                             data-category="Successful Resumes"
+                             data-action="Newsletter Subscription">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
