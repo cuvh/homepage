@@ -41,5 +41,5 @@ aws s3api put-object --bucket $BUCKET --acl public-read --key "tandem-cv" --webs
 aws s3api put-object --bucket $BUCKET --acl public-read --key "enhancv-button" --website-redirect-location "/enhancv-button.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "careers" --website-redirect-location "/careers.html"
 aws s3api put-object --bucket $BUCKET --acl public-read --key "new" --website-redirect-location "/new.html"
-aws s3api put-object --bucket $BUCKET --acl public-read --key "head-of-marketing" --website-redirect-location "/head-of-marketing.html"
-
+aws s3api put-object --bucket $BUCKET --acl public-read --key "head-of-marketing" --website-redirect-location "/careers.html"
+aws s3api put-object --bucket $BUCKET --acl public-read --key "head-of-marketing.html" --website-redirect-location "/careers.html"
