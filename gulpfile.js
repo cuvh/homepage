@@ -144,8 +144,8 @@ function revisionFiles() {
             $.revAll.revision({
                 // prefix: isProd ? "https://enhancv.com/" : null,
                 dontSearchFile: [".pdf"],
-                dontRenameFile: [/social-image.jpg/g, ".html"],
-                dontUpdateReference: [/social-image.jpg/g, ".html"],
+                dontRenameFile: [".jpg", ".png", ".svg", ".gif", ".html"],
+                dontUpdateReference: [".jpg", ".png", ".svg", ".gif", ".html"],
             })
         )
         .pipe(gulp.dest("cdn"));
