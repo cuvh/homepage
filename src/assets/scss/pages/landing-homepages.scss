@@ -191,3 +191,35 @@
         z-index: 999;
     }
 }
+
+.homepage-quotes {
+    background-color: $brand-primary;
+
+    .author-title {
+        opacity: 0.5;
+    }
+    .carousel-indicators li {
+        background-color: white;
+    }
+
+    .carousel-control {
+        border-color: #fff;
+
+        i {
+            color: #fff;
+        }
+    }
+
+    .quote-content {
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        .quote-content {
+            height: 400px;
+        }
+    }
+}
