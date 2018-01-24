@@ -3,6 +3,15 @@
 	color: #ffffff;
     padding: ($spacer * 6) 0 ($spacer * 10) 0;
 
+    .experts-section-info {
+        width: 650px;
+        margin: auto;
+
+        @media (max-width: $screen-xs-max) {
+            width: 100%;
+        }
+    }
+
 	.experts-hired-container {
 		padding-left: 30px;
 		padding-top: $spacer*2;
