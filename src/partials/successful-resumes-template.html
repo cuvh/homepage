@@ -18,10 +18,9 @@
         	<div class="Grid-cell--md-7 Grid-cell--sm-12 Grid-cell--xs-12 text-center successful-resume-image-container">
                 <img
                  width="400"
-                 alt="{{ name }}'s Enhancv resume front page"
                  class="embed-responsive-item popular-resumes-image back-image hidden-xs"
                  src="/img/successful-resumes/{{ frontImage }}"
-                 alt="Condensed resume" />
+                 alt="{{ alt }}" />
 
                 <div class="front-image-container">
                     <a
@@ -33,10 +32,9 @@
                      data-label="{{ name }}">
                 		<img
                          width="400"
-                         alt="{{ name }}'s Enhancv resume front page"
                          class="embed-responsive-item popular-resumes-image"
                          src="/img/successful-resumes/{{ frontImage }}"
-                         alt="Condensed resume"
+                         alt="{{ alt }}"
                           />
 
                         <span
@@ -104,26 +102,27 @@
         </div>
 
         <div class="successful-resume-cta">
-                    <div class="bottom-xs cta-text">Subscribe to get new resumes from inspired, confident users delivered to your inbox.</div>
-                    <form id="subscribe-form">
-                        <div class="Grid">
-                            <input
-                             type="text" 
-                             class="form-control Grid-cell m-right-1" 
-                             id="subscribe-email"
-                             placeholder="Write your email address"/>
-                            <button
-                             type="submit"
-                             id="subscribe-btn"
-                             class="btn btn-primary cta-button Grid-cell--auto"
-                             data-track="event"
-                             data-category="Successful Resumes"
-                             data-action="Newsletter Subscription">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
+            <div class="bottom-xs cta-text text-center">Want more inspired resumes?</div>
+            <form id="subscribe-form">
+                <div class="Grid">
+                    <input
+                     type="text" 
+                     class="form-control Grid-cell m-right-1" 
+                     id="subscribe-email"
+                     placeholder="Write your email address"
+                     style="height: auto"/>
+                    <button
+                     type="submit"
+                     id="subscribe-btn"
+                     class="btn btn-primary cta-button Grid-cell--auto"
+                     data-track="event"
+                     data-category="Successful Resumes"
+                     data-action="Newsletter Subscription">
+                        Subscribe
+                    </button>
                 </div>
+            </form>
+        </div>
 
         <div class="row text-center">
         	<div class="top-md bottom-sm">
@@ -156,7 +155,7 @@
                  height="1755"
                  class="img-responsive"
                  src="/img/successful-resumes/{{ frontImage }}"
-                 alt="{{ name }} resume page 1">
+                 alt="{{ alt }}">
 
                 {{#if backImage }}
                     <img
@@ -164,7 +163,7 @@
                      height="1755"
                      class="img-responsive top-md"
                      src="/img/successful-resumes/{{ backImage }}"
-                     alt="{{ name }} resume page 2">
+                     alt="{{ alt }}">
                 {{/if }}
             </div>
         </div>

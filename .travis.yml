@@ -14,7 +14,7 @@ deploy:
   script: BUCKET="dev-home.enhancv.com" bin/deploy.sh
   on:
     repo: enhancv/homepage
-    branch: new-*
+    branch: feature-*
 - provider: script
   skip_cleanup: true
   script: BUCKET="enhancv.com" bin/deploy.sh
