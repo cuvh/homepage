@@ -96,11 +96,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li {{#if isPricing }} class="active" {{/if}}>
                         <a href="/pricing.html">Pricing</a>
                     </li>
-                    <li>
-                        <a href="https://blog.enhancv.com">Blog</a>
-                    </li>
                 {{/if}}
 
+                <li>
+                    <a
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Login"
+                     href="https://app.enhancv.com/login">
+                        Sign In
+                    </a>
+                </li>
                 <li>
                     <button
                      onclick="window.location='{{ urls.builder }}';"
@@ -109,17 +115,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      data-action="Click Signup"
                      data-label="Sign Up"
                      class="btn btn-primary navbar-btn m-left-2 m-right-2">
-                        Sign Up
+                        Get Started
                     </button>
-                </li>
-                <li>
-                    <a
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Login"
-                     href="https://app.enhancv.com/login">
-                        Login
-                    </a>
                 </li>
             </ul>
         </div>
