@@ -10,6 +10,7 @@
 	}
 
 	$(window).on("resize", positionPricingScrollbar);
+	positionPricingScrollbar();
 
 	$(document).on("click", ".switch-basic", function() {
 		$(".switch-basic").addClass("focused");
