@@ -1,226 +1,270 @@
 ---
-isPricing: true
-title: Pricing for Enhancv
+layout: default-no-navigation
+isHomepage: true
+socialTitle: "Enhancv: A resume to be proud of"
+title: "Enhancv | Professional Resume & CV Builder"
+socialDescription: "Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
 ---
 
-<div class="container container-page bottom-lg">
-    <h2 class="text-center">
-        Upgrade, now is the time to stand out!
-    </h2>
+{{> header
+    navigation=navigation
+    invertedNavigation=invertedNavigation
+}}
 
-    <div class="row plans top-lg">
-        <div class="col-sm-7 col-sm-push-5">
-            <div class="panel panel-price panel-price-best panel-primary">
-                <div>
-                    <div
-                     id="monthly-price"
-                     class="row fade hidden">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="price-row text-primary">
-                                <small>$</small>
-                                <span>19</span>
-                                <small>.99 /m</small>
-                            </div>
-                        </div>
-                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
-                            Billed every <br>
-                            month
-                        </div>
+<div class="pricing-header">
+    <div class="container text-center">
+        <div class="m-top-8 hidden-xs"></div>
+        <h1 class="hidden-xs hidden-sm md-lg-heading-margin">Are you proud when you show your resume?</h1>
+        <h1 class="hidden-md hidden-lg xs-sm-heading-margin">Are you proud when<br /> you show your resume?</h1>
+
+        <div class="m-top-2">
+            <p class="p-big hidden-xs hidden-sm">Sign up now, decide on your plan later.</p>
+        </div>
+        <div>
+            <div class="m-top-2 hidden-xs"></div>
+            <a
+             href="{{ urls.builder }}"
+             data-track="event"
+             data-category="Homepage"
+             data-action="Click Signup"
+             data-label="Craft Your Resume"
+             class="btn btn-primary btn-lg hidden-xs hidden-sm">
+                Try free for 14 days
+            </a>
+            <a
+             href="{{ urls.builder }}"
+             data-track="event"
+             data-category="Homepage"
+             data-action="Click Signup"
+             data-label="Craft Your Resume"
+             class="btn btn-primary btn-md hidden-md hidden-lg">
+                Try free for 14 days
+            </a>
+        </div>
+    </div>
+    <!--<div class="parallax-window homepage-scalable-header" data-parallax="scroll" data-image-src="/img/new-homepage/header.jpg"></div>-->
+</div>
+
+<div class="pricing-tabs">
+    <div class="container">
+        <div class="pricing-tab-switch">
+            <button class="btn switch-button switch-basic">BASIC</button>
+            <button class="btn switch-button focused switch-pro">PRO</button>
+        </div>
+
+        <div class="text-center">
+            <h2 class="m-top-5">Create a resume you're proud of</h2>
+            <p class="text-muted m-top-2">Stand out with a visual resume that highlights the key things about you and shows you're relevant.</p>
+        </div>
+
+        <div class="overflow-wrapper-container">
+
+            <div class="Grid Grid--justifyCenter basic-tabs m-top-3 m-bottom-2" style="display: none;">
+                <div class="tab basic-plan m-top-3 text-center">
+                    <div class="m-top-2">
+                        <span class="currency-basic">$</span>
+                        <span class="price-big-basic">4</span>
+                        <span class="price-small-basic">.99/m</span>
                     </div>
-                    <div
-                     id="quarterly-price"
-                     class="row fade in">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="price-row text-primary">
-                                <small>$</small>
-                                <span>14</span>
-                                <small>.99 /m</small>
-                            </div>
-                        </div>
-                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep">
-                            <img
-                             class="panel-badge pull-right"
-                             src="/img/best-choice.svg"
-                             width="70"
-                             height="70"
-                             alt="BEST CHOICE"/>
-                            <span class="pull-right m-top-1 m-right-2">
-                                Billed every 3 <br>
-                                months
-                            </span>
-                        </div>
+                    <p class="m-top-1 text-muted">
+                        to create a resume<br /> that draws attention
+                    </p>
+                    <a class="btn btn-primary btn-price-fixed m-top-1">Buy Basic</a>
+                    <p class="text-muted m-top-2">or try free for 7 days</p>
+                </div>
+            </div>
+
+            <div class="Grid Grid--justifyCenter m-top-3 overflow-wrapper pro-tabs">
+                <div class="tab side-tab left-tab text-center">
+                    <div class="plan-name m-top-3">Monthly</div>
+                    <div class="tab-price">
+                        <span class="currency">$</span>
+                        <span class="big-price">19</span>
+                        <span class="small-price">.99/m</span>
                     </div>
-                    <div
-                     id="semiannual-price"
-                     class="row fade hidden">
-                        <div class="col-md-6 col-xs-12">
-                            <div class="price-row text-primary">
-                                <small>$</small>
-                                <span>10</span>
-                                <small>.99 /m</small>
-                            </div>
+                    <div class='text-muted m-top-2 billed-text'>
+                        you will be billed <br />
+                        once a month
+                    </div>
+
+                    <a class="btn btn-primary btn-light-green btn-price-fixed m-top-2">Buy Pro Monthly</a>
+                    <p class="text-muted m-top-0 save-price">UPGRADE ANYTIME</p>
+                </div>
+
+
+                <div class="tab center-tab text-center">
+                    <div class="center-tab-header">
+                        <span class="m-top-1">MOST POPULAR</span>
+                    </div>
+                    <div class="plan-name m-top-4">Quarterly</div>
+                    <div class="tab-price">
+                        <span class="currency">$</span>
+                        <span class="big-price" style="font-size: 50px;">14</span>
+                        <span class="small-price">.99/m</span>
+                    </div>
+                    <div class='text-muted m-top-1 billed-text'>
+                        $59.97 $44.97<br />
+                        billed every 3 months
+                    </div>
+
+
+                    <a class="btn btn-primary btn-price-fixed m-top-2">Buy Pro Quarterly</a>
+                    <p class="text-muted m-top-1 save-price">SAVE <span>$15</span></p>
+                </div>
+
+
+                <div class="tab side-tab right-tab text-center">
+                    <div class="plan-name m-top-3">Semi-annual</div>
+                    <div class="tab-price">
+                        <span class="currency">$</span>
+                        <span class="big-price">10</span>
+                        <span class="small-price">.99/m</span>
+                    </div>
+                    <div class='text-muted m-top-2 billed-text'>
+                        $119.94 $65.94<br />
+                        billed every 6 months
+                    </div>
+
+                    <a class="btn btn-primary btn-light-green btn-price-fixed m-top-2">Buy Pro Semi-Annual</a>
+                    <p class="text-muted m-top-0 save-price">SAVE <span>$54</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="pricing-benefits">
+    <div class="container">
+        <h4 class="m-bottom-5 m-top-10 text-center">What’s included in Pro</h4>
+        <div class="Grid m-bottom-10">
+            <div class="Grid Grid--alignCenter Grid-cell--sm-5 Grid-cell--sm-offset-1 Grid-cell--md-4 Grid-cell--md-offset-2">
+                <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Up to 10 resumes
                         </div>
-                        <div class="col-md-6 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
-                            Billed every 6 <br>
-                            months
+                        <div class="pricing-benefits-description">
+                            Make changes to your resume and tailor to a specific position in a matter of minutes.
                         </div>
                     </div>
                 </div>
 
-                <h3 class=" m-bottom-1">
-                    Pro
-                    <span
-                     id="monthly-title"
-                     class="text-muted-deep fade hidden">
-                        Monthly
-                    </span>
-                    <span
-                     id="quarterly-title"
-                     class="text-muted-deep fade in">
-                        Quarterly
-                    </span>
-                    <span
-                     id="semiannual-title"
-                     class="text-muted-deep fade hidden">
-                        Semiannual
-                    </span>
-                </h3>
-
-                <p class="m-bottom-2">With real-time suggestions how to improve your resume, it helps you create the top resume to land your dream job!</p>
-
-                <div
-                 class="btn-group btn-group-underlined m-bottom-3"
-                 data-toggle="buttons">
-                    <label
-                     data-gtm="pricing-monthly-show"
-                     data-toggle="switch-toggle"
-                     data-target="#monthly-price,#monthly-title,#monthly-btn"
-                     class="btn btn-underlined">
-                        <input
-                         type="radio"
-                         name="pricing"
-                         autocomplete="off">
-                        Monthly
-                    </label>
-
-                    <label
-                     data-gtm="pricing-quarterly-show"
-                     data-toggle="switch-toggle"
-                     data-target="#quarterly-price,#quarterly-title,#quarterly-btn"
-                     class="btn btn-underlined active">
-                        <input
-                         type="radio"
-                         name="pricing"
-                         autocomplete="off"
-                         checked>
-                        Quarterly
-                    </label>
-
-                    <label
-                     data-gtm="pricing-semiannual-show"
-                     data-toggle="switch-toggle"
-                     data-target="#semiannual-price,#semiannual-title,#semiannual-btn"
-                     class="btn btn-underlined">
-                        <input
-                         type="radio"
-                         name="pricing"
-                         autocomplete="off">
-                        Semiannual
-                    </label>
+                <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Pro sections
+                        </div>
+                        <div class="pricing-benefits-description">
+                            Show certificates, awards, references, and more, so that your achievements come across.
+                        </div>
+                    </div>
                 </div>
 
-                <button
-                 type="button"
-                 class="btn btn-link btn-block visible-xs btn-text-link btn-text-left"
-                 data-toggle="collapse"
-                 data-target="#pro-features">
-                    Show Features
-                </button>
+                <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Remove branding
+                        </div>
+                        <div class="pricing-benefits-description">
+                            Get the full credit for your resume by removing the Enhancv logo on the page.
+                        </div>
+                    </div>
+                </div>
 
-                <div>
+            </div>
+            <div class="Grid Grid--alignCenter Grid-cell--sm-5 Grid-cell--md-4">
+
+                 <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Unlimited entries
+                        </div>
+                        <div class="pricing-benefits-description">
+                            Add more of your personal and professional experience to prove your culture fit.
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Memorable design
+                        </div>
+                        <div class="pricing-benefits-description">
+                            Customize colors, fonts, and icons and make sure your resume is never bland.
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="Grid m-bottom-5">
+                    <div class="Grid-cell--md-2 pricing-icon">
+                        <img src="/img/new-homepage/icons/learningcurve.svg" />
+                    </div>
+                    <div class="Grid-cell--md-10">
+                        <div class="pricing-benefits-title">
+                            Compact template
+                        </div>
+                        <div class="pricing-benefits-description">
+                            Use a visually appealing layout that fits more information in one page.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="homepage-cta">
+    <div class="container">
+        <div class="Grid">
+            <div class="Grid Grid-cell Grid--alignCenter text-center">
+                <div class="Grid-cell">
+                    <h1 class="m-top-no">Keep being awesome but let<br /> us help you expose it.</h1>
                     <a
-                     id="monthly-btn"
-                     class="btn m-no btn-primary btn-2 btn-block hidden"
-                     data-gtm="pricing-pro-monthly"
-                     href="{{ urls.builder }}/checkout/7">
-                        Buy Now
+                     href="https://app.enhancv.com"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Craft Your Resume"
+                     class="btn btn-default btn-lg m-top-2">
+                        Get Your Resume
                     </a>
-                    <a
-                     id="quarterly-btn"
-                     data-gtm="pricing-pro-quarterly"
-                     class="btn m-no btn-primary btn-2 btn-block"
-                     href="{{ urls.builder }}/checkout/8">
-                        Buy Now
-                    </a>
-                    <a
-                     id="semiannual-btn"
-                     data-gtm="pricing-pro-semiannual"
-                     class="btn m-no btn-primary btn-2 hidden btn-block"
-                     href="{{ urls.builder }}/checkout/9">
-                        Buy Now
-                    </a>
-                </div>
-
-                <div class="hidden-xs m-top-4">
-                    {{> pricing-pro-features }}
-                </div>
-
-                <div class="visible-xs">
-                    <div id="pro-features" class="fade collapse">
-                        <div class="m-top-4">
-                            {{> pricing-pro-features }}
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-5 col-sm-pull-7">
-            <div class="panel panel-price panel-default">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12">
-                        <div class="price-row text-primary">
-                            <small>$</small>
-                            <span>4</span>
-                            <small>.99 /m</small>
-                        </div>
+    </div>
+</div>
+
+<div class="homepage-blog-latest">
+    <div class="container">
+        <div class="Grid">
+            <div class="Grid Grid-cell Grid--alignCenter">
+                <div class="full-width">
+                    <div>
+                        <p class="text-muted">Latest from Our Blog</p>
                     </div>
-                    <div class="col-md-4 hidden-xs hidden-sm text-right text-muted-deep m-top-1">
-                        Billed every <br>
-                        month
-                    </div>
-                </div>
-                <h3 class=" m-bottom-1">Basic</h3>
-
-                <p class="m-bottom-2">Helps you create a human-centric resume that gets HRs excited to meet you</p>
-
-                <p class="btn-group-underlined-text text-muted-deep form-control-static m-bottom-3">
-                    Basic is a monthly subscription
-                </p>
-
-                <button
-                 type="button"
-                 class="btn btn-link btn-block visible-xs btn-text-link btn-text-left"
-                 data-toggle="collapse"
-                 data-target="#basic-features">
-                    Show Features
-                </button>
-
-                <a
-                 data-gtm="pricing-start-trial"
-                 class="btn btn-block btn-2 btn-muted"
-                 href="{{ urls.builder }}">
-                    Start Free 14 Day Trial
-                </a>
-
-                <div class="m-top-4 hidden-xs">
-                    {{> pricing-basic-features }}
-                </div>
-
-                <div class="visible-xs">
-                    <div id="basic-features" class="fade collapse">
-                        <div class="m-top-4">
-                            {{> pricing-basic-features }}
+                    <div class="articles-wrapper relative">
+                        <div class="articles-scrollable">
+                            Loading..
                         </div>
+                        <div class="articles-shadow"></div>
                     </div>
                 </div>
             </div>
