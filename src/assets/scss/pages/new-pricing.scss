@@ -33,6 +33,7 @@
 		border: 1px solid #e0e0e0;
 		border-radius: 4px;
 		font-size: 16px;
+    	padding-top: 12px;
 		font-weight: bold;
 		color: #949494;
 
@@ -53,6 +54,10 @@
 
 .pricing-tabs {
 	background: #fff;
+
+	.old-price {
+		text-decoration: line-through;
+	}
 
 	.overflow-wrapper {
 		min-width: 884px;
@@ -78,6 +83,8 @@
 		font-family: Roboto;
 		font-size: 27px;
 		font-weight: 500;
+		position: relative;
+    	top: -4px;
 	}
 
 	.big-price {
@@ -94,7 +101,7 @@
 		font-size: 16px;
 		font-weight: 500;
 		position: relative;
-		top: -17px;
+		top: -18px;
 	}
 
 	.plan-name {
@@ -150,6 +157,7 @@
 			line-height: 32px;
 			position: relative;
 			top: -40px;
+    		left: 9px;
 		}
 	}
 
@@ -177,12 +185,31 @@
 	.right-tab {
 		border-radius: 0 5px 5px 0;
 		border-left: 0;
+
+		.tab-price {
+			position: relative;
+    		left: -7px;
+		}
 	}
 
 	.center-tab {
 		height: 314px;
 		border: 1px solid #f76e00;
 		border-radius: 5px;
+
+		.tab-price {
+			position: relative;
+    		left: -11px;
+
+    		.currency {
+    			font-size: 32px
+    		}
+
+    		.small-price {
+    			top: -22px;
+    			left: 6px;
+    		}
+		}
 
 		.center-tab-header {
 			background-color: #fdf1e5;
@@ -193,7 +220,7 @@
 			font-size: 13px;
 			font-weight: bold;
 			letter-spacing: 3px;
-			padding-top: 6px;
+			padding-top: $spacer;
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px;
 		}

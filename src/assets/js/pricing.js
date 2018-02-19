@@ -9,21 +9,35 @@
 		}
 	}
 
-	$(window).on("resize", positionPricingScrollbar);
-	positionPricingScrollbar();
-
-	$(document).on("click", ".switch-basic", function() {
+	function switchBasic() {
 		$(".switch-basic").addClass("focused");
 		$(".switch-pro").removeClass("focused");
 		$(".basic-tabs").fadeIn();
 		$(".pro-tabs").fadeOut();
-	});
+	}
 
-	$(document).on("click", ".switch-pro", function() {
+	function switchPro() {
 		$(".switch-pro").addClass("focused");
 		$(".switch-basic").removeClass("focused");
 		$(".basic-tabs").fadeOut();
 		$(".pro-tabs").fadeIn();
 		positionPricingScrollbar();
-	});
+	}
+
+	$(document).on("click", ".switch-basic", switchBasic);
+	$(document).on("click", ".switch-pro", switchPro);
+	$(window).on("resize", positionPricingScrollbar);
+	positionPricingScrollbar();
+
+	if(window.location.hash) {
+		if (window.location.hash.indexOf("basic")) {
+			switchBasic();
+			return;
+		}
+
+		if (window.location.hash.indexOf("pro")) {
+			switchPro();
+			return;
+		}
+	}
 })();
