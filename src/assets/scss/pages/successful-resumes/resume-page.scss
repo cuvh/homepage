@@ -21,6 +21,16 @@
         -moz-osx-font-smoothing: grayscale;
     }
 
+    .story-description {
+        max-width: 692px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: $spacer * 8;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
 	.successful-resume-tag-container {
 		margin-top: $spacer*3;
 		margin-left: -$spacer/2;
@@ -65,6 +75,12 @@
             .share-cta-text {
                 margin-top: $spacer;
             }
+        }
+
+        .story-description {
+            font-size: 14px;
+            color: $gray-dark;
+            margin-bottom: $spacer * 6;
         }
 	}
 }
