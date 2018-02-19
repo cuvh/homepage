@@ -14,6 +14,13 @@
         }
     }
 
+    .story-cta {
+        font-weight: bold;
+        text-decoration: underline;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
 	.successful-resume-tag-container {
 		margin-top: $spacer*3;
 		margin-left: -$spacer/2;
@@ -42,11 +49,7 @@
 	}
 
 	@media screen and (max-width: $screen-xs-max) {
-		.successful-resume-name,
-		.successful-resume-tag-container,
-		.successful-resume-works-at {
-			text-align: center;
-		}
+		text-align: center;
 
 		.successful-resume-name {
 			margin-top: $spacer * 2;
@@ -55,6 +58,14 @@
 		.successful-resume-cta {
 			margin-top: $spacer * 2;
 		}
+
+        .successful-resumes-share {
+            justify-content: center;
+
+            .share-cta-text {
+                margin-top: $spacer;
+            }
+        }
 	}
 }
 
@@ -79,7 +90,7 @@
 
 	.back-image {
 		position: absolute;
-		z-index: -1;
+		z-index: 0;
 		transform: rotate(5deg);
 	}
 
@@ -159,5 +170,67 @@
 
     &.move-top {
         margin-top: $spacer*9;
+    }
+}
+
+.infographic-wrapper {
+    background-color: #EAF8F3;
+
+    .infographic-title {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .infographic {
+        overflow-x: auto;
+        text-align: center;
+    }
+
+    @media (min-width: $screen-md-min) {
+        padding-top: 150px;
+        margin-top: -70px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        .infographic-title {
+            h1 {
+                font-size: 27px;
+                line-height: 32px;
+                padding-top: $spacer * 5;
+            }
+
+            p {
+                font-size: 14px;
+            }  
+        }
+
+        padding-left: $spacer * 2;
+        padding-right: $spacer * 2;
+        
+    }
+}
+
+.worksheet-wrapper {
+    padding-top: $spacer * 10;
+
+    @media (max-width: $screen-xs-max) {
+        text-align: center;
+        padding-top: $spacer * 7;
+        padding-bottom: $spacer * 9;
+
+        h2 {
+            font-size: 27px;
+            line-height: 32px;
+        }
+
+        img {
+            margin-bottom: 40px;
+        }
+
+        a {
+            margin-top: $spacer * 3;
+            display: inline-block;
+        }
     }
 }

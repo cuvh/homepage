@@ -14,7 +14,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 console.log(`production: ${isProd}`);
 
-gulp.task("assemble", gulp.series(clean, pages, images, fonts, sass, icons, javascript));
+gulp.task("assemble", gulp.series(clean, pages, images, fonts, sass, icons, javascript, resources));
 gulp.task("build", gulp.series("assemble", revisionFiles));
 gulp.task("default", gulp.series("assemble", server, watch));
 gulp.task("fontastic", function() {
@@ -78,6 +78,9 @@ function fonts() {
 }
 function icons() {
     return gulp.src("src/assets/icons/**/*").pipe(gulp.dest("./dist/icons"));
+}
+function resources() {
+    return gulp.src("src/assets/resources/**/*").pipe(gulp.dest("./dist/resources"));
 }
 
 function sass() {
@@ -163,5 +166,6 @@ function watch() {
     gulp.watch("src/assets/fonts/**/*").on("all", gulp.series(fonts, browser.reload));
     gulp.watch("src/assets/img/**/*").on("all", gulp.series(images, browser.reload));
     gulp.watch("src/assets/icons/**/*").on("all", gulp.series(icons, browser.reload));
+    gulp.watch("src/assets/resources/**/*").on("all", gulp.series(resources, browser.reload));
     gulp.watch("src/assets/js/**/*").on("all", gulp.series(javascript, browser.reload));
 }
