@@ -232,6 +232,14 @@
             overflow-x: auto;
         }
     }
+
+    @media (min-width: 1396px) {
+        .infographic {
+            img {
+                width: 90%;
+            }
+        }
+    }
 }
 
 .worksheet-wrapper {
