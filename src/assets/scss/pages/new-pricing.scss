@@ -4,7 +4,7 @@
 	background-size: cover;
 	background-position: center center;
 	padding-top: 128px;
-	height: 450px;
+	height: 525px;
 
 	@media screen and (min-width: $screen-sm-min) {
 		height: 648px;
@@ -33,7 +33,7 @@
 		border: 1px solid #e0e0e0;
 		border-radius: 4px;
 		font-size: 16px;
-    	padding-top: 12px;
+		padding-top: 12px;
 		font-weight: bold;
 		color: #949494;
 
@@ -84,7 +84,7 @@
 		font-size: 27px;
 		font-weight: 500;
 		position: relative;
-    	top: -4px;
+		top: -4px;
 	}
 
 	.big-price {
@@ -157,7 +157,7 @@
 			line-height: 32px;
 			position: relative;
 			top: -40px;
-    		left: 9px;
+			left: 9px;
 		}
 	}
 
@@ -188,7 +188,7 @@
 
 		.tab-price {
 			position: relative;
-    		left: -7px;
+			left: -7px;
 		}
 	}
 
@@ -199,16 +199,16 @@
 
 		.tab-price {
 			position: relative;
-    		left: -11px;
+			left: -11px;
 
-    		.currency {
-    			font-size: 32px
-    		}
+			.currency {
+				font-size: 32px;
+			}
 
-    		.small-price {
-    			top: -22px;
-    			left: 6px;
-    		}
+			.small-price {
+				top: -22px;
+				left: 6px;
+			}
 		}
 
 		.center-tab-header {
@@ -234,7 +234,7 @@
 		width: 60px;
 
 		img {
-			width: 32px;
+			width: 40px;
 		}
 	}
 
