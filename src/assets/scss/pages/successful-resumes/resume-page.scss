@@ -183,8 +183,9 @@
     }
 
     .infographic {
-        overflow-x: auto;
+        overflow-x: hidden;
         text-align: center;
+        cursor: grab;
     }
 
     @media (min-width: $screen-md-min) {
@@ -193,6 +194,9 @@
     }
 
     @media (max-width: $screen-xs-max) {
+        padding-left: $spacer * 2;
+        padding-right: $spacer * 2;
+
         .infographic-title {
             h1 {
                 font-size: 27px;
@@ -204,10 +208,13 @@
                 font-size: 14px;
             }  
         }
-
-        padding-left: $spacer * 2;
-        padding-right: $spacer * 2;
-        
+    }
+    
+    // Catch iPad resolution also
+    @media (max-width: 1024px) {
+        .infographic {
+            overflow-x: auto;
+        }
     }
 }
 
