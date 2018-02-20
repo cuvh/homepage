@@ -4,6 +4,7 @@
 	background-size: cover;
 	background-position: center center;
 	padding-top: 128px;
+	margin-top: -76px;
 	height: 525px;
 
 	@media screen and (min-width: $screen-sm-min) {
@@ -254,5 +255,45 @@
 
 	.billed-text {
 		line-height: 16px;
+	}
+
+	.pricing-disabled {
+		display: none;
+	}
+
+	.pro-tag {
+		display: none;
+
+		font-size: 12px;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+		background-color: #f76e00;
+		border-radius: 2px;
+
+		width: 30px;
+		height: 17px;
+		position: relative;
+		left: 3px;
+		top: -1px;
+	}
+
+	.pricing-locked {
+		.pricing-benefits-title,
+		.pricing-benefits-description {
+			color: $text-muted-deep;
+		}
+
+		.pricing-disabled {
+			display: inline-block;
+		}
+
+		.pricing-active {
+			display: none;
+		}
+
+		.pro-tag {
+			display: inline-block;
+		}
 	}
 }

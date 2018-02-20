@@ -37,7 +37,6 @@
 .navbar.navbar-sticky {
     position: sticky;
     top: 0;
-    margin-top: -144px;
     z-index: $zindex-navbar;
     //padding-top: 20px;
 
@@ -49,11 +48,7 @@
     height: 10px;
     width: 100%;
     top: 60;
-    background: linear-gradient(
-        180deg,
-        rgba(216, 216, 216, 0.2) 0%,
-        rgba(216, 216, 216, 0) 100%
-    );
+    background: linear-gradient(180deg, rgba(216, 216, 216, 0.2) 0%, rgba(216, 216, 216, 0) 100%);
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
@@ -74,7 +69,6 @@
 }
 
 body.with-sticky-navbar {
-    padding-top: 100px;
 }
 
 .navbar-center {

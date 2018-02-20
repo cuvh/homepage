@@ -14,6 +14,7 @@
 		$(".switch-pro").removeClass("focused");
 		$(".basic-tabs").fadeIn();
 		$(".pro-tabs").fadeOut();
+		$(".basic-locked").addClass("pricing-locked");
 	}
 
 	function switchPro() {
@@ -21,6 +22,7 @@
 		$(".switch-basic").removeClass("focused");
 		$(".basic-tabs").fadeOut();
 		$(".pro-tabs").fadeIn();
+		$(".basic-locked").removeClass("pricing-locked");
 		positionPricingScrollbar();
 	}
 
@@ -29,7 +31,7 @@
 	$(window).on("resize", positionPricingScrollbar);
 	positionPricingScrollbar();
 
-	if(window.location.hash) {
+	if (window.location.hash) {
 		if (window.location.hash.indexOf("basic") !== -1) {
 			switchBasic();
 			return;
