@@ -14,7 +14,8 @@
 		$(".switch-pro").removeClass("focused");
 		$(".basic-tabs").fadeIn();
 		$(".pro-tabs").fadeOut();
-		$(".basic-locked").addClass("pricing-locked");
+		$(".basic-benefits").show();
+		$(".pro-benefits").hide();
 	}
 
 	function switchPro() {
@@ -22,7 +23,8 @@
 		$(".switch-basic").removeClass("focused");
 		$(".basic-tabs").fadeOut();
 		$(".pro-tabs").fadeIn();
-		$(".basic-locked").removeClass("pricing-locked");
+		$(".basic-benefits").hide();
+		$(".pro-benefits").show();
 		positionPricingScrollbar();
 	}
 
