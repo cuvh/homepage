@@ -1,3 +1,11 @@
+.navigation-spacer {
+    height: 64px;
+
+    @media screen and (max-width: $screen-xs) {
+        height: 78px;
+    }
+}
+
 .navbar-landing {
     margin-bottom: -90px;
     margin-top: 30px;
@@ -17,10 +25,17 @@
 
 .navbar-spacing {
     margin: 0 33px;
+    padding-top: 18px;
+    transition: padding-top 0.1s;
 
     @media screen and (max-width: $screen-sm) {
         margin: 0 16px;
+        padding-top: 0px;
     }
+}
+
+.navbar.navbar-stick .navbar-spacing {
+    padding-top: 0px;
 }
 
 .navbar-btn {
@@ -35,12 +50,10 @@
 }
 
 .navbar.navbar-sticky {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: $zindex-navbar;
-    //padding-top: 20px;
-
-    transition: padding-top 0.3s;
 }
 
 .navbar.navbar-sticky:after {
@@ -66,9 +79,6 @@
 
 .navbar a {
     outline: none;
-}
-
-body.with-sticky-navbar {
 }
 
 .navbar-center {
@@ -98,7 +108,8 @@ body.with-sticky-navbar {
 }
 
 .navbar.navbar-stick {
-    padding-top: 00px;
+    padding-top: 0px;
+
     .navbar-mobile-visible-sticky {
         opacity: 1;
         pointer-events: auto;
@@ -119,6 +130,10 @@ ul.navbar-mobile-menu {
 body.navbar-mobile-active {
     overflow: hidden;
 
+    .navbar {
+        background: $homepage-background;
+    }
+
     .navbar-mobile-hidden {
         display: none;
     }
@@ -133,9 +148,9 @@ body.navbar-mobile-active {
     }
 }
 
-.navbar.navbar-transparent {
+.navbar-transparent {
     border-top: none;
-    transition: background 0.25s ease-in-out;
+    // transition: background 0.25s ease-in-out;
 
     .navbar-toggle .icon-bar {
         background-color: #fff;

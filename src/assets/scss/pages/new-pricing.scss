@@ -3,20 +3,25 @@
 	background: url(/img/enhancv-pricing.jpg);
 	background-size: cover;
 	background-position: center center;
-	padding-top: 128px;
-	margin-top: -76px;
-	height: 525px;
+	padding-top: 60px;
+	margin-top: -78px;
+	height: 459px;
 
 	@media screen and (min-width: $screen-sm-min) {
-		height: 648px;
+		height: 613px;
+		padding-top: 100px;
+	}
+
+	@media screen and (min-width: $screen-md) {
+		padding-top: 157px;
 	}
 
 	@media screen and (min-width: 1440px) {
-		height: 780px;
+		height: 743px;
 	}
 
 	@media screen and (min-width: 1750px) {
-		height: 815px;
+		height: 774px;
 	}
 }
 
