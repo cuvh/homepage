@@ -11,16 +11,27 @@
 		}
 	}
 
+	var hasAnimatedBenefits = false;
+
 	function switchBasic() {
+		if (hasAnimatedBenefits) {
+			$(".basic-benefits .animate-in").attr("style", "");
+		}
+
 		$(".switch-basic").addClass("focused");
 		$(".switch-pro").removeClass("focused");
 		$(".basic-tabs").fadeIn();
 		$(".pro-tabs").fadeOut();
 		$(".basic-benefits").show();
 		$(".pro-benefits, .scroll-dot-container").hide();
+		hasAnimatedBenefits = true;
 	}
 
 	function switchPro() {
+		if (hasAnimatedBenefits) {
+			$(".pro-benefits .animate-in").attr("style", "");
+		}
+
 		$(".switch-pro").addClass("focused");
 		$(".switch-basic").removeClass("focused");
 		$(".basic-tabs").fadeOut();
@@ -28,6 +39,7 @@
 		$(".basic-benefits").hide();
 		$(".pro-benefits, .scroll-dot-container").show();
 		positionPricingScrollbar();
+		hasAnimatedBenefits = true;
 	}
 
 	$(document).on("click", ".switch-basic", switchBasic);
