@@ -84,7 +84,7 @@
 		right: 0;
 
 		@media screen and (min-width: $screen-md) {
-			display: none;
+			display: none !important;
 		}
 	}
 
