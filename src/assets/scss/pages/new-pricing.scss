@@ -1,6 +1,6 @@
 .pricing-header {
 	position: relative;
-	background: url(/img/enhancv-pricing.jpg);
+	background-image: url(/img/enhancv-pricing-small.jpg);
 	background-size: cover;
 	background-position: center center;
 	padding-top: 60px;
@@ -10,6 +10,10 @@
 	@media screen and (min-width: $screen-sm-min) {
 		height: 613px;
 		padding-top: 100px;
+	}
+
+	@media screen and (min-width: $screen-lg) {
+		background-image: url(/img/enhancv-pricing.jpg);
 	}
 
 	@media screen and (min-width: $screen-md) {
@@ -60,6 +64,7 @@
 
 .pricing-tabs {
 	background: #fff;
+	position: relative;
 
 	.old-price {
 		text-decoration: line-through;
@@ -68,8 +73,42 @@
 	.overflow-wrapper {
 		min-width: 884px;
 
-		@screen media and (max-width: $screen-sm) {
+		@media screen and (max-width: $screen-sm) {
 			min-width: 248px * 3;
+		}
+	}
+
+	.scroll-dot-container {
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		@media screen and (min-width: $screen-md) {
+			display: none;
+		}
+	}
+
+	.scroll-dot {
+		width: 8px;
+		height: 8px;
+		display: inline-block;
+		margin: 0 2px;
+
+		div {
+			cursor: pointer;
+			margin: 0 auto;
+			width: 6px;
+			height: 6px;
+			border-radius: 3px;
+			transition: width 0.2s, height 0.2s;
+			background-color: #d8d8d8;
+		}
+
+		&.active div {
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background-color: #f76e00;
 		}
 	}
 
