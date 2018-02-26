@@ -22,8 +22,8 @@
 		$(".switch-pro").removeClass("focused");
 		$(".basic-tabs").fadeIn();
 		$(".pro-tabs").fadeOut();
-		$(".basic-benefits").show();
-		$(".pro-benefits, .scroll-dot-container").hide();
+		$(".basic-benefits, .basic-heading").show();
+		$(".pro-benefits, .scroll-dot-container, .pro-heading").hide();
 		hasAnimatedBenefits = true;
 	}
 
@@ -36,8 +36,8 @@
 		$(".switch-basic").removeClass("focused");
 		$(".basic-tabs").fadeOut();
 		$(".pro-tabs").fadeIn();
-		$(".basic-benefits").hide();
-		$(".pro-benefits, .scroll-dot-container").show();
+		$(".basic-benefits, .basic-heading").hide();
+		$(".pro-benefits, .scroll-dot-container, .pro-heading").show();
 		positionPricingScrollbar();
 		hasAnimatedBenefits = true;
 	}

@@ -59,6 +59,10 @@
 			position: relative;
 			z-index: 2;
 		}
+
+		&:hover {
+			color: #2dc08d;
+		}
 	}
 }
 
