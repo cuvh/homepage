@@ -97,6 +97,13 @@
         justify-content: center;
         flex-direction: column;
         margin: 0 auto;
+        position: relative;
+
+        .rom-tag {
+            position: absolute;
+            top: -20px;
+            right: 80px;
+        }
     }
 
     @media screen and (min-width: $screen-sm) {

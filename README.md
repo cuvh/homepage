@@ -16,5 +16,4 @@ git push
 ## License
 
 Copyright (c) 2016 Enhancv.
-MIT License
-Developed by Ivan Kerin
+Licensed under the MIT license.

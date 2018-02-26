@@ -21,6 +21,13 @@
     </div>
     <div class="experts-say-flex-col" style="flex: 400">
         <div class="experts-say-flex-vcenter">
+            {{#if isStory}}
+                <div class="rom-tag">
+                    <img
+                     src="/img/discover/story@2x.png"
+                     width="100">
+                </div>
+            {{/if}}
             <a href="/successful-resumes/famous/{{ link }}.html">
                 <img
                  class="embed-responsive-item popular-resumes-image m-top-3"
