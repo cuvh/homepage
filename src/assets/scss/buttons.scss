@@ -133,6 +133,18 @@
     );
 }
 
+.btn.btn-light-green {
+    background-color: #e9f9f3;
+    border: 1px solid #7de1be;
+    color: #2dc08d;
+    font-family: Roboto;
+    font-weight: 500;
+
+    &:hover {
+        border-color: #2dc08d;
+    }
+}
+
 .btn-facebook {
     @include button-variant(white, $facebook-color, $facebook-color);
     text-align: left;
@@ -181,7 +193,11 @@
                 darken(#eb4141, 10%) 47%,
                 transparent 78%
             ),
-            linear-gradient(135deg, darken(#234bd7, 10%) 0, darken(#c33cbe, 10%) 78%);
+            linear-gradient(
+                135deg,
+                darken(#234bd7, 10%) 0,
+                darken(#c33cbe, 10%) 78%
+            );
     }
 }
 

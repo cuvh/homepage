@@ -3,6 +3,8 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<div class="navigation-spacer"></div>
+
 <nav class="navbar navbar-default navbar-sticky navbar-static-top">
     <div class="navbar-spacing">
         <div class="navbar-header">
@@ -23,11 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a
              href="/">
                 <img
-                 class="hidden-xs navbar-logo"
-                 src="/img/logo.svg"
-                 alt="Enhancv Logo">
-                <img
-                 class="visible-xs navbar-logo"
+                 class="navbar-logo"
                  src="/img/logo.svg"
                  alt="Enhancv Logo">
             </a>
@@ -96,11 +94,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <li {{#if isPricing }} class="active" {{/if}}>
                         <a href="/pricing.html">Pricing</a>
                     </li>
-                    <li>
-                        <a href="https://blog.enhancv.com">Blog</a>
-                    </li>
                 {{/if}}
 
+                <li>
+                    <a
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Login"
+                     href="https://app.enhancv.com/login">
+                        Sign In
+                    </a>
+                </li>
                 <li>
                     <button
                      onclick="window.location='{{ urls.builder }}';"
@@ -108,18 +112,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      data-category="Homepage"
                      data-action="Click Signup"
                      data-label="Sign Up"
-                     class="btn btn-primary navbar-btn m-left-2 m-right-2">
-                        Sign Up
+                     class="btn btn-primary navbar-btn m-left-1 m-right-1">
+                        Get Started
                     </button>
-                </li>
-                <li>
-                    <a
-                     data-track="event"
-                     data-category="Homepage"
-                     data-action="Click Login"
-                     href="https://app.enhancv.com/login">
-                        Login
-                    </a>
                 </li>
             </ul>
         </div>
