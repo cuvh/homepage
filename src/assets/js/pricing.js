@@ -101,15 +101,20 @@
 		}
 	});
 
-	if (window.location.hash) {
-		if (window.location.hash.indexOf("basic") !== -1) {
-			switchBasic();
-			return;
-		}
+	function openTab() {
+		if (window.location.hash) {
+			if (window.location.hash.indexOf("basic") !== -1) {
+				switchBasic();
+				return;
+			}
 
-		if (window.location.hash.indexOf("pro") !== -1) {
-			switchPro();
-			return;
+			if (window.location.hash.indexOf("pro") !== -1) {
+				switchPro();
+				return;
+			}
 		}
 	}
+
+	window.addEventListener("hashchange", openTab, false);
+	openTab();
 })();
