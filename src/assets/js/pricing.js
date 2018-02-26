@@ -44,6 +44,9 @@
 
 	$(document).on("click", "[href='#basic']", switchBasic);
 	$(document).on("click", "[href='#pro']", switchPro);
+	$(document).on("click", ".btn-basic-to-pro", function() {
+		$("html, body").animate({ scrollTop: 400 }, "400");
+	});
 	$(window).on("resize", positionPricingScrollbar);
 	positionPricingScrollbar();
 
