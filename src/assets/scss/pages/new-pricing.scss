@@ -279,6 +279,12 @@
 .pricing-benefits {
 	background: #fff;
 
+	@media screen and (min-width: $screen-sm-min) {
+		.benefits-padding {
+			padding-right: $spacer * 4;
+		}
+	}
+
 	.pricing-icon {
 		width: 60px;
 
