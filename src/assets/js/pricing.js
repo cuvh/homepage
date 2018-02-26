@@ -42,8 +42,8 @@
 		hasAnimatedBenefits = true;
 	}
 
-	$(document).on("click", ".switch-basic", switchBasic);
-	$(document).on("click", ".switch-pro", switchPro);
+	$(document).on("click", "[href='#basic']", switchBasic);
+	$(document).on("click", "[href='#pro']", switchPro);
 	$(window).on("resize", positionPricingScrollbar);
 	positionPricingScrollbar();
 
