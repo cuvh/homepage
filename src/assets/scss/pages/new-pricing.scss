@@ -1,0 +1,351 @@
+.pricing-header {
+	position: relative;
+	background-image: url(/img/enhancv-pricing-small.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding-top: 60px;
+	margin-top: -78px;
+	height: 459px;
+
+	@media screen and (min-width: $screen-sm-min) {
+		height: 613px;
+		padding-top: 100px;
+	}
+
+	@media screen and (min-width: $screen-lg) {
+		background-image: url(/img/enhancv-pricing.jpg);
+	}
+
+	@media screen and (min-width: $screen-md) {
+		padding-top: 157px;
+	}
+
+	@media screen and (min-width: 1440px) {
+		height: 743px;
+	}
+
+	@media screen and (min-width: 1750px) {
+		height: 774px;
+	}
+}
+
+.pricing-tab-switch {
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	margin-top: -24px;
+
+	.switch-button {
+		width: 147px;
+		height: 48px;
+		margin: 0 -1px;
+		background: #fff;
+		border: 1px solid #e0e0e0;
+		border-radius: 4px;
+		font-size: 16px;
+		padding-top: 12px;
+		font-weight: bold;
+		color: #949494;
+
+		@media screen and (max-width: $screen-sm) {
+			width: 130px;
+		}
+
+		&.focused {
+			border: 1px solid #2dc08d;
+			border-radius: 3px;
+			background-color: #eaf8f3;
+			color: #2dc08d;
+			position: relative;
+			z-index: 2;
+		}
+
+		&:hover {
+			color: #2dc08d;
+		}
+	}
+}
+
+.pricing-tabs {
+	background: #fff;
+	position: relative;
+
+	.old-price {
+		text-decoration: line-through;
+	}
+
+	.overflow-wrapper {
+		min-width: 884px;
+
+		@media screen and (max-width: $screen-sm) {
+			min-width: 248px * 3;
+		}
+	}
+
+	.scroll-dot-container {
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		@media screen and (min-width: $screen-md) {
+			display: none !important;
+		}
+	}
+
+	.scroll-dot {
+		width: 8px;
+		height: 8px;
+		display: inline-block;
+		margin: 0 2px;
+
+		div {
+			cursor: pointer;
+			margin: 0 auto;
+			width: 6px;
+			height: 6px;
+			border-radius: 3px;
+			transition: width 0.2s, height 0.2s;
+			background-color: #d8d8d8;
+		}
+
+		&.active div {
+			width: 8px;
+			height: 8px;
+			border-radius: 4px;
+			background-color: #f76e00;
+		}
+	}
+
+	.btn-price-fixed {
+		width: 185px;
+	}
+
+	.overflow-wrapper-container {
+		max-width: 100%;
+		overflow-y: hidden;
+		overflow-x: auto;
+		min-height: 346px;
+	}
+
+	.currency {
+		color: #5b5b5b;
+		font-family: Roboto;
+		font-size: 27px;
+		font-weight: 500;
+		position: relative;
+		top: -4px;
+	}
+
+	.big-price {
+		color: #5b5b5b;
+		font-family: Roboto;
+		font-size: 42px;
+		font-weight: 500;
+		letter-spacing: -3px;
+	}
+
+	.small-price {
+		color: #5b5b5b;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 500;
+		position: relative;
+		top: -18px;
+	}
+
+	.plan-name {
+		font-family: "Playfair Display";
+		font-size: 21px;
+		color: #808080;
+	}
+
+	.basic-tabs {
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+
+	.save-price {
+		font-size: 12px;
+		font-weight: 500;
+
+		span {
+			color: #f96f00;
+		}
+	}
+
+	.basic-plan {
+		height: 274px;
+		border: 1px solid #cccccc;
+		border-radius: 5px;
+
+		.currency-basic {
+			color: #5b5b5b;
+			font-family: Roboto;
+			font-size: 62px;
+			font-weight: 500;
+			line-height: 73px;
+			position: relative;
+			top: -5px;
+		}
+
+		.price-big-basic {
+			color: #5b5b5b;
+			font-family: Roboto;
+			font-size: 80px;
+			font-weight: 500;
+			letter-spacing: -4px;
+			line-height: 94px;
+		}
+
+		.price-small-basic {
+			color: #5b5b5b;
+			font-family: Roboto;
+			font-size: 26px;
+			font-weight: 500;
+			line-height: 32px;
+			position: relative;
+			top: -40px;
+			left: 9px;
+		}
+	}
+
+	.tab {
+		display: inline-block;
+		position: relative;
+		width: 294px;
+
+		@media screen and (max-width: $screen-sm) {
+			width: 248px;
+		}
+	}
+
+	.side-tab {
+		border: 1px solid #cccccc;
+		height: 265px;
+		top: 24px;
+	}
+
+	.left-tab {
+		border-radius: 5px 0 0 5px;
+		border-right: 0;
+	}
+
+	.right-tab {
+		border-radius: 0 5px 5px 0;
+		border-left: 0;
+
+		.tab-price {
+			position: relative;
+			left: -7px;
+		}
+	}
+
+	.center-tab {
+		height: 314px;
+		border: 1px solid #f76e00;
+		border-radius: 5px;
+
+		.tab-price {
+			position: relative;
+			left: -11px;
+
+			.currency {
+				font-size: 32px;
+			}
+
+			.small-price {
+				top: -22px;
+				left: 6px;
+			}
+		}
+
+		.center-tab-header {
+			background-color: #fdf1e5;
+			color: #f76e00;
+			height: 32px;
+			text-align: center;
+			font-family: Roboto;
+			font-size: 13px;
+			font-weight: bold;
+			letter-spacing: 3px;
+			padding-top: $spacer;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+	}
+}
+
+.pricing-benefits {
+	background: #fff;
+
+	@media screen and (min-width: $screen-sm-min) {
+		.benefits-padding {
+			padding-right: $spacer * 4;
+		}
+	}
+
+	.pricing-icon {
+		width: 60px;
+
+		img {
+			width: 40px;
+		}
+	}
+
+	.pricing-benefits-title {
+		color: #333333;
+		font-family: "Playfair Display";
+		font-size: 19px;
+	}
+
+	.pricing-benefits-description {
+		color: #333333;
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 22px;
+		margin-top: 12px;
+	}
+
+	.billed-text {
+		line-height: 16px;
+	}
+
+	.pricing-disabled {
+		display: none;
+	}
+
+	.pro-tag {
+		font-size: 12px;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+		background-color: #f76e00;
+		border-radius: 2px;
+
+		width: 30px;
+		height: 17px;
+		position: relative;
+		left: 3px;
+		top: -1px;
+	}
+
+	.pricing-locked {
+		.pricing-benefits-title,
+		.pricing-benefits-description {
+			color: $text-muted-deep;
+		}
+
+		.pricing-disabled {
+			display: inline-block;
+		}
+
+		.pricing-active {
+			display: none;
+		}
+
+		.pro-tag {
+			display: inline-block;
+		}
+	}
+}
