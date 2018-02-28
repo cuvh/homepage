@@ -1,4 +1,16 @@
 (function() {
+	// Pricing V2
+	$(".v2-switch-pro").click(function() {
+		var plan = $(this).data("plan");
+		$(".v2-switch-pro").removeClass("active");
+
+		$(".v2-switch-pro[data-plan='" + plan + "']").addClass("active");
+
+		$(".v2-price").fadeOut(300);
+		$(".v2-price[data-plan='" + plan + "']").fadeIn(300);
+	});
+	//
+
 	var SCROLL_TIME = 300;
 
 	var container = $(".overflow-wrapper-container");
@@ -20,8 +32,8 @@
 
 		$(".switch-basic").addClass("focused");
 		$(".switch-pro").removeClass("focused");
-		$(".basic-tabs").fadeIn();
-		$(".pro-tabs").fadeOut();
+		$(".basic-tabs").show();
+		$(".pro-tabs").hide();
 		$(".basic-benefits, .basic-heading").show();
 		$(".pro-benefits, .scroll-dot-container, .pro-heading").hide();
 		hasAnimatedBenefits = true;
@@ -34,8 +46,8 @@
 
 		$(".switch-pro").addClass("focused");
 		$(".switch-basic").removeClass("focused");
-		$(".basic-tabs").fadeOut();
-		$(".pro-tabs").fadeIn();
+		$(".basic-tabs").hide();
+		$(".pro-tabs").show();
 		$(".basic-benefits, .basic-heading").hide();
 		$(".pro-benefits, .scroll-dot-container, .pro-heading").show();
 		positionPricingScrollbar();
