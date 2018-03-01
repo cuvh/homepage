@@ -1,13 +1,19 @@
 (function() {
 	// Pricing V2
-	$(".v2-switch-pro").click(function() {
+	$(".v2-plan-picker").click(function() {
 		var plan = $(this).data("plan");
-		$(".v2-switch-pro").removeClass("active");
+		$(".v2-plan-picker .radio-box-pricing").removeClass("active");
 
-		$(".v2-switch-pro[data-plan='" + plan + "']").addClass("active");
+		$(".v2-plan-picker[data-plan='" + plan + "'] .radio-box-pricing").addClass("active");
 
 		$(".v2-price").fadeOut(300);
 		$(".v2-price[data-plan='" + plan + "']").fadeIn(300);
+
+		if (plan === "monthly") {
+			$(".plan-green-notification").slideDown(300);
+		} else {
+			$(".plan-green-notification").slideUp(300);
+		}
 	});
 	//
 
