@@ -9,6 +9,13 @@
 		$(".v2-price").fadeOut(300);
 		$(".v2-price[data-plan='" + plan + "']").fadeIn(300);
 
+		window.dataLayer.push({
+			event: "UAEvent",
+			eventCategory: "Pricing V2",
+			eventAction: "Switch plans",
+			eventLabel: plan,
+		});
+
 		if (plan === "monthly") {
 			$(".plan-green-notification").slideDown(300);
 		} else {
