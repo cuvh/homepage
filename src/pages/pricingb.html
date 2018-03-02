@@ -24,7 +24,7 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
             <a
              href="{{ urls.builder }}"
              data-track="event"
-             data-category="Pricing"
+             data-category="Pricing V2"
              data-action="Start Trial"
              data-label="Header button"
              class="btn btn-primary btn-lg">
@@ -38,13 +38,13 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
     <!--<div class="parallax-window homepage-scalable-header" data-parallax="scroll" data-image-src="/img/new-homepage/header.jpg"></div>-->
 </div>
 
-<div class="pricing-tabs">
+<div class="pricing-tabs-2">
     <div class="container">
         <div class="pricing-tab-switch">
             <a
              href="#basic"
              data-track="event"
-             data-category="Pricing"
+             data-category="Pricing V2"
              data-action="Tab Change"
              data-label="Basic"
              class="btn switch-button switch-basic">
@@ -54,7 +54,7 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
             <a
              href="#pro"
              data-track="event"
-             data-category="Pricing"
+             data-category="Pricing V2"
              data-action="Tab Change"
              data-label="Pro"
              class="btn switch-button focused switch-pro">
@@ -62,127 +62,144 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
             </a>
         </div>
 
-        <div class="text-center basic-heading" style="display: none">
-            <h2 class="m-top-5">A first step to a stand-out resume</h2>
-            <p class="text-muted m-top-2">Build the basics of a new, more memorable resume that sets you apart from other candidates.</p>
-        </div>
+        <div class="pricing-wrapper m-top-7 Grid basic-tabs" style="display: none;">
+            <div class="left-wrapper Grid-cell--xs-12 Grid-cell--sm-7">
+                <h1>Basic Plan</h1>
+                <p class="m-top-1 text-muted">
+                    Get the basics of a new, more memorable resume that sets you apart from other candidates.
+                </p>
 
-        <div class="text-center pro-heading">
-            <h2 class="m-top-5">Create a resume you're proud of</h2>
-            <p class="text-muted m-top-2">Stand out with a visual resume that highlights the key things about you and shows you're relevant.</p>
-        </div>
-
-        <div class="overflow-wrapper-container">
-
-            <div class="Grid Grid--justifyCenter basic-tabs m-top-3 m-bottom-2" style="display: none;">
-                <div class="tab basic-plan m-top-3 text-center">
-                    <div class="m-top-3">
-                        <span class="currency-basic">$</span>
-                        <span class="price-big-basic">4</span>
-                        <span class="price-small-basic">.99/m</span>
-                    </div>
-                    <p class="m-top-0 text-muted">
-                        to create a resume<br /> that draws attention
-                    </p>
+                <p class="m-top-4 text-muted">
+                    Not sure if you want to buy?
                     <a
                      data-track="event"
-                     data-category="Pricing"
-                     data-action="Buy Basic"
-                     href="https://app.enhancv.com/checkout/basic"
-                     class="btn btn-primary btn-price-fixed m-top-1">
-                        Buy Basic
-                    </a>
-                    <div class="m-top-2">
-                    <a
-                     data-track="event"
-                     data-category="Pricing"
+                     data-category="Pricing V2"
                      data-action="Start Trial"
                      data-label="Text link in basic plan"
                      href="https://app.enhancv.com/"
-                     class="text-muted feature-link underlined">or try free for 14 days</a>
+                     class="text-muted feature-link underlined">Try free for 14 days</a>
+                </p>
+            </div>
+            <div class="right-wrapper text-center Grid-cell--xs-12 Grid-cell--sm-5">
+                <div class="price-field m-top-1">
+                    <span class="currency">$</span>
+                    <span class="big-price">4</span>
+                    <span class="small-price">.99/m</span>
+                </div>
+                <a
+                 href="https://app.enhancv.com/checkout/basic"
+                 data-track="event"
+                 data-category="Pricing V2"
+                 data-action="Start Trial"
+                 data-label="Basic plan button"
+                 class="m-top-2 btn btn-primary btn-lg">
+                    Try free for 14 days
+                </a>
+            </div>
+        </div>
+
+        <div class="pricing-wrapper m-top-7 Grid pro-tabs m-bottom-2">
+            <div class="left-wrapper Grid-cell--xs-12 Grid-cell--sm-7">
+                <h1>Pro Plan</h1>
+                <p class="m-top-1 text-muted">
+                    Stand out with a visual resume that highlights the key things about you and shows you're relevant.
+                </p>
+
+                <div class="Grid m-top-5 change-plan-buttons">
+                    <div data-plan="monthly" class="v2-plan-picker Grid-cell--xs-4 text-center">
+                        <div class="right-border m-top-1" style="height: 85px;">
+                            <div>
+                                <div class="v2-switch-pro radio-box-pricing"></div>
+                            </div>
+                            <div class="m-top-2 text-muted plan-name">Monthly</div>
+                        </div>
+                    </div>
+                    <div data-plan="quarterly" class="v2-plan-picker Grid-cell--xs-4 text-center">
+                        <div class="right-border m-top-1">
+                            <div>
+                                <div class="v2-switch-pro radio-box-pricing active"></div>
+                            </div>
+                            <div class="m-top-2 text-muted plan-name">Quarterly</div>
+                            <p class="text-muted m-top-1 save-price"><span>SAVE 25%</span></p>
+                        </div>
+                    </div>
+                    <div data-plan="semiannually" class="v2-plan-picker Grid-cell--xs-4 text-center">
+                        <div class="m-top-1">
+                            <div>
+                                <div class="v2-switch-pro radio-box-pricing"></div>
+                            </div>
+                            <div class="m-top-2 text-muted plan-name">Semi-annually</div>
+                            <p class="text-muted m-top-1 save-price"><span>SAVE 45%</span></p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="Grid Grid--justifyCenter m-top-3 overflow-wrapper pro-tabs">
-                <div class="tab side-tab left-tab text-center">
-                    <div class="plan-name m-top-3">Monthly</div>
-                    <div class="tab-price m-top-0">
+                <div class="plan-green-notification m-top-2" style="display: none;">
+                    Finding the right next gig takes time. <br />
+                    Save more with our Quarterly and Semi-annual plans.
+                </div>
+            </div>
+            <div class="right-wrapper text-center Grid-cell--xs-12 Grid-cell--sm-5">
+                <div data-plan="monthly" class="v2-price" style="display: none;">
+                    <div class="price-field m-top-1">
                         <span class="currency">$</span>
                         <span class="big-price">19</span>
                         <span class="small-price">.99/m</span>
                     </div>
-                    <div class='text-muted m-top-1 billed-text'>
-                        you will be billed <br />
+                    <div class="text-muted m-top-1 m-bottom-1">
+                        you will be billed<br />
                         once a month
                     </div>
-
                     <a
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Buy Pro"
-                     data-label="Monthly"
                      href="https://app.enhancv.com/checkout/pro-monthly"
-                     class="btn btn-primary btn-light-green btn-price-fixed m-top-2">Buy Pro Monthly</a>
-                    <p class="text-muted m-top-1 save-price">UPGRADE ANYTIME</p>
+                     data-track="event"
+                     data-category="Pricing V2"
+                     data-action="Buy Pro Monthly"
+                     class="m-top-2 btn btn-primary btn-lg btn-checkout-big">
+                        Buy Pro Monthly
+                    </a>
                 </div>
 
-
-                <div class="tab center-tab text-center">
-                    <div class="center-tab-header">
-                        <span>MOST POPULAR</span>
-                    </div>
-                    <div class="plan-name m-top-4">Quarterly</div>
-                    <div class="tab-price">
+                <div data-plan="quarterly" class="v2-price">
+                    <div class="price-field m-top-1">
                         <span class="currency">$</span>
-                        <span class="big-price" style="font-size: 50px;">14</span>
+                        <span class="big-price">14</span>
                         <span class="small-price">.99/m</span>
                     </div>
-                    <div class='text-muted m-top-1 billed-text'>
+                    <div class="text-muted m-top-1 m-bottom-1">
                         <span class="text-muted-deep line-through">$59.97</span> $44.97<br />
                         billed every 3 months
                     </div>
-
                     <a
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Buy Pro"
-                     data-label="Quarterly"
                      href="https://app.enhancv.com/checkout/pro-quarterly"
-                     class="btn btn-primary btn-price-fixed m-top-2">Buy Pro Quarterly</a>
-                    <p class="text-muted m-top-1 save-price">SAVE <span>25%</span></p>
+                     data-track="event"
+                     data-category="Pricing V2"
+                     data-action="Buy Pro Quarterly"
+                     class="m-top-2 btn btn-primary btn-lg btn-checkout-big">
+                        Buy Pro Quarterly
+                    </a>
                 </div>
 
-
-                <div class="tab side-tab right-tab text-center">
-                    <div class="plan-name m-top-3">Semi-annual</div>
-                    <div class="tab-price m-top-0">
+                <div data-plan="semiannually" class="v2-price" style="display: none;">
+                    <div class="price-field m-top-1">
                         <span class="currency">$</span>
                         <span class="big-price">10</span>
                         <span class="small-price">.99/m</span>
                     </div>
-                    <div class='text-muted m-top-1 billed-text'>
+                    <div class="text-muted m-top-1 m-bottom-1">
                         <span class="text-muted-deep line-through">$119.94</span> $65.94<br />
                         billed every 6 months
                     </div>
-
                     <a
-                     data-track="event"
-                     data-category="Pricing"
-                     data-action="Buy Pro"
-                     data-label="Semi-Annual"
                      href="https://app.enhancv.com/checkout/pro-semiannual"
-                     class="btn btn-primary btn-light-green btn-price-fixed m-top-2">Buy Pro Semi-Annual</a>
-                    <p class="text-muted m-top-1 save-price">SAVE <span>45%</span></p>
+                     data-track="event"
+                     data-category="Pricing V2"
+                     data-action="Buy Pro Semiannually"
+                     class="m-top-2 btn btn-primary btn-lg btn-checkout-big">
+                        Buy Pro Semi-Annual
+                    </a>
                 </div>
             </div>
-
-        </div>
-
-        <div class="text-center scroll-dot-container m-top-1">
-            <div id="dot1" data-id="0" class="scroll-dot"><div></div></div>
-            <div id="dot2" data-id="1" class="scroll-dot"><div></div></div>
-            <div id="dot3" data-id="2" class="scroll-dot"><div></div></div>
         </div>
     </div>
 </div>
@@ -289,7 +306,7 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
                     <a
                      href="#pro"
                      data-track="event"
-                     data-category="Pricing"
+                     data-category="Pricing V2"
                      data-action="Basic To Pro Bottom Button"
                      class="btn btn-primary btn-lg btn-basic-to-pro">
                         Learn more about Pro
@@ -406,7 +423,7 @@ socialDescription: "Create your resume with Enhancv to make sure the key things 
                     <a
                      href="https://app.enhancv.com"
                      data-track="event"
-                     data-category="Pricing"
+                     data-category="Pricing V2"
                      data-action="Start Trial"
                      data-label="Bottom CTA"
                      class="btn btn-default btn-lg m-top-2">

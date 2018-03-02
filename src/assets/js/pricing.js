@@ -1,4 +1,29 @@
 (function() {
+	// Pricing V2
+	$(".v2-plan-picker").click(function() {
+		var plan = $(this).data("plan");
+		$(".v2-plan-picker .radio-box-pricing").removeClass("active");
+
+		$(".v2-plan-picker[data-plan='" + plan + "'] .radio-box-pricing").addClass("active");
+
+		$(".v2-price").fadeOut(300);
+		$(".v2-price[data-plan='" + plan + "']").fadeIn(300);
+
+		window.dataLayer.push({
+			event: "UAEvent",
+			eventCategory: "Pricing V2",
+			eventAction: "Switch plans",
+			eventLabel: plan,
+		});
+
+		if (plan === "monthly") {
+			$(".plan-green-notification").slideDown(300);
+		} else {
+			$(".plan-green-notification").slideUp(300);
+		}
+	});
+	//
+
 	var SCROLL_TIME = 300;
 
 	var container = $(".overflow-wrapper-container");
@@ -20,8 +45,8 @@
 
 		$(".switch-basic").addClass("focused");
 		$(".switch-pro").removeClass("focused");
-		$(".basic-tabs").fadeIn();
-		$(".pro-tabs").fadeOut();
+		$(".basic-tabs").show();
+		$(".pro-tabs").hide();
 		$(".basic-benefits, .basic-heading").show();
 		$(".pro-benefits, .scroll-dot-container, .pro-heading").hide();
 		hasAnimatedBenefits = true;
@@ -34,8 +59,8 @@
 
 		$(".switch-pro").addClass("focused");
 		$(".switch-basic").removeClass("focused");
-		$(".basic-tabs").fadeOut();
-		$(".pro-tabs").fadeIn();
+		$(".basic-tabs").hide();
+		$(".pro-tabs").show();
 		$(".basic-benefits, .basic-heading").hide();
 		$(".pro-benefits, .scroll-dot-container, .pro-heading").show();
 		positionPricingScrollbar();
