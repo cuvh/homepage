@@ -1,4 +1,21 @@
 .casey-neistat {
+    .custom-quote {
+        font-family: "Playfair Display";
+        font-size: 56px;
+        line-height: 22px;
+        position: absolute;
+
+        &.right-quote {
+            margin-top: 16px;
+            margin-left: 2px;
+        }
+
+        &.left-quote {
+            margin-left: -32px;
+            margin-top: 10px;
+        }
+    }
+
     p {
         line-height: 22px;
     }
