@@ -1,0 +1,36 @@
+.casey-neistat {
+    .visual-section {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+    }
+
+    .overflowing-resume {
+        padding-top: 0;
+        max-height: 623px;
+
+        .successful-resume-image-container {
+            bottom: -($spacer * 7);
+
+            img {
+                max-width: initial;
+                width: 465px;
+            }
+        }
+    }
+
+    .overflowing-resume + .visual-section {
+        padding-top: $spacer * 19;
+    }
+
+    .successful-resume-cta {
+        margin-top: $spacer * 9;
+        margin-bottom: $spacer * 9;
+    }
+
+    .success-summary {
+        max-width: 724px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $spacer * 6;
+    }
+}
