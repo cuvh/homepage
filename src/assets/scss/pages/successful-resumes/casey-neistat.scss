@@ -1,4 +1,8 @@
 .casey-neistat {
+    p {
+        line-height: 22px;
+    }
+
     .visual-section {
         padding-top: $spacer * 10;
         padding-bottom: $spacer * 10;
@@ -32,5 +36,80 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: $spacer * 6;
+        font-size: 16px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        text-align: left;
+
+        h1 {
+            font-size: 27px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .copyright-text {
+            margin-bottom: $spacer * 4;
+        }
+
+        .successful-resume-image-container {
+            bottom: 0;
+
+            img {
+                width: 100% !important;
+            }
+        }
+
+        .overflowing-resume {
+            max-height: initial;
+        }
+
+        .visual-section {
+            padding-top: $spacer * 7;
+            padding-bottom: $spacer * 7;
+
+            .illustration {
+                margin-bottom: $spacer * 5;
+
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+        .overflowing-resume + .visual-section {
+            padding-top: $spacer * 7;
+        }
+
+        .visual-section-inverted {
+            .Grid > div:first-child {
+                order: 1;
+            }
+        }
+
+        .step-wrapper {
+            margin-bottom: $spacer * 3;
+            max-width: initial;
+        }
+
+        .success-summary {
+            text-align: left;
+        }
+
+        .successful-resumes-share {
+            margin-top: $spacer * 12;
+            text-align: center;
+
+            & > .Grid {
+                justify-content: center;
+            }
+        }
+
+        .successful-title {
+            margin-top: 0;
+        }
     }
 }
