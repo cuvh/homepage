@@ -8,9 +8,17 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
         margin: ceil($spacer-2 * nth($multipliers, $i));
     }
 
+    .p-#{$i - 1} {
+        padding: ceil($spacer-2 * nth($multipliers, $i));
+    }
+
     @each $direction in $directions {
         .m-#{$direction}-#{$i - 1} {
             margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+        }
+
+        .p-#{$direction}-#{$i - 1} {
+            padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
         }
     }
 }
@@ -19,10 +27,18 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
     .m-#{$direction}-no {
         margin-#{$direction}: 0;
     }
+
+    .p-#{$direction}-no {
+        padding-#{$direction}: 0;
+    }
 }
 
 .m-no {
     margin: 0 !important;
+}
+
+.p-no {
+    padding: 0 !important;
 }
 
 .m-top-1-negative {
