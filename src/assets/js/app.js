@@ -1,3 +1,5 @@
+sbjs.init();
+
 function isTouchDevice() {
     return "ontouchstart" in window || navigator.maxTouchPoints;
 }
@@ -69,7 +71,9 @@ $(function() {
         $(".tandem .abillity-tandem-1").hide();
     });
 
-    $(".who-are-you .select-state, .who-are-you .carousel-indicators li").click(function() {
+    $(
+        ".who-are-you .select-state, .who-are-you .carousel-indicators li"
+    ).click(function() {
         setTimeout(function() {
             $('.state-view.active [data-toggle="popover"]')
                 .first()
@@ -102,13 +106,13 @@ $(function() {
         $(".testimonial-image").tilt({
             glare: true,
             maxGlare: 1,
-            maxTilt: 25,
+            maxTilt: 25
         });
     }
 
     $(".carousel-container").slick({
         dots: true,
-        infinite: true,
+        infinite: true
     });
 
     if ($(".homepage-blog-latest").html()) {
@@ -126,14 +130,18 @@ $(function() {
                 "September",
                 "October",
                 "November",
-                "December",
+                "December"
             ];
 
             data.items.forEach(function(item) {
                 var date = new Date(item.date_published);
 
                 var formattedDate =
-                    date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+                    date.getDate() +
+                    " " +
+                    months[date.getMonth()] +
+                    " " +
+                    date.getFullYear();
 
                 articleWrapper.append(
                     '<div class="inline-block m-right-5">' +
@@ -163,7 +171,7 @@ sr.reveal(".animate-in", {
     scale: 1,
     easing: "ease-out",
     distance: "50px",
-    viewFactor: $(window).width() > 768 ? 0.6 : 0.45,
+    viewFactor: $(window).width() > 768 ? 0.6 : 0.45
 });
 
 sr.reveal(".spotlight-animate", {
@@ -171,7 +179,7 @@ sr.reveal(".spotlight-animate", {
     easing: "ease-out",
     distance: "50px",
     delay: 500,
-    viewFactor: $(window).width() > 768 ? 0.6 : 0.45,
+    viewFactor: $(window).width() > 768 ? 0.6 : 0.45
 });
 
 (function() {
@@ -183,7 +191,7 @@ sr.reveal(".spotlight-animate", {
             delay: isDesktop ? i * 100 : 0,
             easing: "ease-out",
             distance: "50px",
-            viewFactor: isDesktop ? 0.6 : 0.45,
+            viewFactor: isDesktop ? 0.6 : 0.45
         });
     }
 })();

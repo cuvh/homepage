@@ -3962,6 +3962,10 @@ source-map@^0.4.2, source-map@^0.4.4:
   dependencies:
     amdefine ">=0.0.4"
 
+sourcebuster@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sourcebuster/-/sourcebuster-1.1.0.tgz#950ac46da1603e91b76f123ed2b6eb657425abe7"
+
 sparkles@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/sparkles/-/sparkles-1.0.0.tgz#1acbbfb592436d10bbe8f785b7cc6f82815012c3"
