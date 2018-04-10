@@ -48,6 +48,10 @@
     color: $text-color;
     padding: $padding-base-vertical 5px;
 
+    .icon-social-medium:before {
+        font-size: 19px !important;
+    }
+
     &:hover {
         color: lighten($text-color, 20%);
     }
