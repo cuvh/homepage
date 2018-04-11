@@ -5,19 +5,163 @@ description: "The tagline “fighting shady, aggressive marketing” says it all
 metaImage: "/img/successful-resumes/share-images/resume-louis.jpg"
 ---
 
-{{>successful-resumes-template
-    name="Louis Grenier"
-    url="louis-grenier.html"
+<div class="successful-resume">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Successful Resumes</h2>
+            <div class="top-sm bottom-md">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>See more resumes</span>
+                </a>
+            </div>
+        </div>
 
-    description="Louis' resume shows that he's not just an accomplished professional but that his career has a clear mission behind it: to fight shady and aggressive marketing. That mission binds together his projects from Everyone Hates Marketers, his current work at Hotjar, and his achievements to create a cohesive story that really has an impact."
+        <div class="Grid">
+            <div class="Grid-cell--md-7 Grid-cell--sm-12 Grid-cell--xs-12 text-center successful-resume-image-container">
+                <img
+                 width="400"
+                 class="embed-responsive-item popular-resumes-image back-image hidden-xs"
+                 src="/img/successful-resumes/louis-grenier-resume-1.jpg"
+                 alt="Example of successful marketing resume" />
 
-    tags="Marketing, Mission, Founder"
-    secondary_tags="Podcaster, Consultant"
+                <div class="front-image-container">
+                    <a
+                     href="#view-resume"
+                     data-toggle="modal"
+                     data-track="event"
+                     data-category="Successful Resumes"
+                     data-action="Click Full Resume"
+                     data-label="Louis Grenier">
+                        <img
+                         width="400"
+                         class="embed-responsive-item popular-resumes-image"
+                         src="/img/successful-resumes/louis-grenier-resume-1.jpg"
+                         alt="Example of successful marketing resume"
+                          />
 
-    frontImage="louis-grenier-resume-1.jpg"
-    alt="Example of successful marketing resume"
-    companyLogo="hotjar-logo.png"
+                        <span
+                         class="show-button">
+                            <i class="icon-search-plus"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
 
-    twitterText="@LouisSlices shows how to make a resume that screams #manonamission"
-    facebookText="Far beyond just showing the jobs he’s held, Louis’ resume shows a man on a mission to make marketing better."
-}}
+            <div class="Grid Grid--column Grid-cell--md-5 Grid-cell--sm-12 Grid-cell--xs-12">
+                <div class="successful-resume-name">
+                    Louis Grenier
+                </div>
+
+                <div class="successful-resume-works-at top-xs">
+                    Hired at 
+                    <img
+                     alt="hotjar-logo.png company logo"
+                     height="30"
+                     class="m-left-1"
+                     src="/img/successful-resumes/company-logos/hotjar-logo.png"
+                     srcset="/img/successful-resumes/company-logos/hotjar-logo.png 1x, /img/successful-resumes/company-logos/2x-hotjar-logo.png 2x" />
+                </div>
+
+                <div class="successful-resume-description top-xs">
+                    Louis' resume shows that he's not just an accomplished professional but that his career has a clear mission behind it: to fight shady and aggressive marketing. That mission binds together his projects from <a href="https://everyonehatesmarketers.com/">Everyone Hates Marketers</a>, his current work at <a href="https://www.hotjar.com/">Hotjar</a>, and his achievements to create a cohesive story that really has an impact.
+                </div>
+
+                <div class="successful-resume-tag-container">
+                    <div class="resume-tag">Marketing</div>
+                    <div class="resume-tag">Mission</div>
+                    <div class="resume-tag">Founder</div>
+                    <div class="resume-tag">Podcaster</div>
+                    <div class="resume-tag">Consultant</div>
+                </div>
+
+                {{>social-panel 
+                    class="move-top" 
+                    url="louis-grenier.html" 
+                    facebookText="Far beyond just showing the jobs he’s held, Louis’ resume shows a man on a mission to make marketing better." 
+                    twitterText="@LouisSlices shows how to make a resume that screams #manonamission"
+                }}
+
+                <script>
+                    (function () {
+                        var isFamous = false;
+
+                        var res = localStorage.getItem('ab_test_top_resume');
+                        if (!res) {
+                            res = Math.random();
+                            localStorage.setItem('ab_test_top_resume', res);
+                        }
+
+                        if (res > 0.5) {
+                            var ctaText = 'You deserve a resume that shows relevance and self confidence';
+                            document.querySelector('.cta-text').innerHTML = ctaText;
+                            document.querySelector('.cta-button').setAttribute('data-label', ctaText);
+                        }
+                    }());
+                </script>
+            </div>
+        </div>
+
+        <div class="successful-resume-cta">
+            <div class="bottom-xs cta-text text-center">Want more inspired resumes?</div>
+            <form id="subscribe-form">
+                <div class="Grid">
+                    <input
+                     type="text" 
+                     class="form-control Grid-cell m-right-1" 
+                     id="subscribe-email"
+                     placeholder="Write your email address"
+                     style="height: auto"/>
+                    <button
+                     type="submit"
+                     id="subscribe-btn"
+                     class="btn btn-primary cta-button Grid-cell--auto"
+                     data-track="event"
+                     data-category="Successful Resumes"
+                     data-action="Newsletter Subscription">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="row text-center">
+            <div class="top-md bottom-sm">
+                <a class="back-button" href="/successful-resumes.html">
+                    <i class="icon-angle-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+{{>successful-resumes-carousel}}
+
+<div
+ id="view-resume"
+ tabindex="-1"
+ class="modal fade">
+    <div class="modal-dialog modal-lg modal-example">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img
+                 width="1240"
+                 height="1755"
+                 class="img-responsive"
+                 src="/img/successful-resumes/louis-grenier-resume-1.jpg"
+                 alt="Example of successful marketing resume">
+            </div>
+        </div>
+    </div>
+    <button
+     type="button"
+     data-dismiss="modal"
+     class="close close-example">
+        <i class="icon-times"></i>
+    </button>
+</div>
+
+{{>optinmonster}}
+

@@ -14,6 +14,16 @@
         }
     }
 
+    .successful-resume-description {
+        a {
+            color: $brand-primary;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
     .story-cta {
         font-weight: bold;
         text-decoration: underline;
