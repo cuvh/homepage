@@ -7,7 +7,7 @@
 
     &:before {
         position: absolute;
-        content: '';
+        content: "";
         top: 0;
         left: 0;
         right: 0;
@@ -89,7 +89,7 @@
 .dating-resume {
     position: relative;
     padding-top: 30px;
-    background: linear-gradient(180deg, $brand-primary 0%, #FFFFFF 100%);
+    background: linear-gradient(180deg, $brand-primary 0%, #ffffff 100%);
 
     .dating-resume-lines {
         //    background: url(/img/homepage/lines-bg.png);
@@ -113,7 +113,7 @@
 }
 
 .dating-resume-bio {
-    h2.top-lg {
+    h3.top-lg {
         font-family: Roboto;
         font-size: 27px;
         font-weight: 300;
@@ -151,7 +151,7 @@ ul.snake-time-events {
         margin-bottom: -1px;
 
         &:before {
-            content: '';
+            content: "";
             height: 100%;
             top: 0;
             border: 1px solid $border-color;
@@ -159,7 +159,7 @@ ul.snake-time-events {
         }
 
         &:after {
-            content: '\25CF';
+            content: "\25CF";
             font-family: Roboto;
             font-size: 46px;
             position: absolute;

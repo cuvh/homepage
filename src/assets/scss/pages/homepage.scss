@@ -184,22 +184,17 @@
 
 .homepage {
     @media screen and (max-width: $screen-sm) {
-        //$font-size-h2: 32px;
-        //$font-size-h3: 27px;
-        //$font-size-h4: 21px;
-        //$font-size-h5: 19px;
-
-        h1 {
+        h2 {
             font-size: $font-size-h3;
             line-height: 35px !important;
         }
 
-        h2 {
+        h3 {
             font-size: $font-size-h4;
             line-height: 32px !important;
         }
 
-        h5 {
+        h6 {
             font-size: $font-size-h5;
         }
     }
@@ -238,7 +233,7 @@
 .homepage-cta {
     background: $brand-primary;
 
-    h1 {
+    h2 {
         color: $inverse-color;
     }
 
@@ -296,7 +291,7 @@
         }
     }
 
-    h1 {
+    h2 {
         line-height: 56px;
     }
 

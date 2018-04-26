@@ -5,19 +5,19 @@
         &:hover,
         &:focus {
             color: $text-color;
-            background-color: rgba(#FFF, 0.6);
+            background-color: rgba(#fff, 0.6);
         }
 
         &:active {
             color: $text-color;
-            background-color: rgba(#FFF, 0.4);
+            background-color: rgba(#fff, 0.4);
             border-color: transparent;
 
             &:hover,
             &:focus,
             &.focus {
                 color: $text-color;
-                background-color: rgba(#FFF, 0.4);
+                background-color: rgba(#fff, 0.4);
                 border-color: transparent;
             }
         }
@@ -31,15 +31,12 @@
 
         padding-bottom: 40px;
         color: white;
-        background: 
-         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-         url(/img/career/header.jpg);
-        background:
-         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-         -webkit-image-set( url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
-        background:
-         linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-         image-set( url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+            url(/img/career/header.jpg);
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+            -webkit-image-set(url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+            image-set(url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
         background-size: cover;
         background-position: center;
 
@@ -147,7 +144,7 @@
         }
 
         .career-header {
-            h1 {
+            h2 {
                 font-size: 28px;
             }
         }
