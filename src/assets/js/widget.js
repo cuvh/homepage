@@ -19,19 +19,27 @@
         });
     });
 
-    $(document).on('click', '.scroll-down', function(event){
+    $(document).on("click", ".scroll-down", function(event) {
         event.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - 60
-        }, 500);
+        $("html, body").animate(
+            {
+                scrollTop: $($.attr(this, "href")).offset().top - 60,
+            },
+            500
+        );
     });
 
     function onChange() {
         var output = {};
         $(".radio-button-group").each(function() {
-            var key = $(this).find(".radio-button").first().data("name");
-            var value = $(this).find(".checked").data("value");
+            var key = $(this)
+                .find(".radio-button")
+                .first()
+                .data("name");
+            var value = $(this)
+                .find(".checked")
+                .data("value");
             output[key] = value;
         });
 
