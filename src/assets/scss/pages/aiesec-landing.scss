@@ -1,15 +1,18 @@
 .aiesec {
-   .header {
+    .header {
         background-image: url(/img/landing-pages/aiesec/header.jpg);
-        background-image: 
-            -webkit-image-set( url(/img/landing-pages/aiesec/header.jpg) 1x, url(/img/landing-pages/aiesec/header@x2.jpg) 2x);
-        background-image:
-            image-set( url(/img/landing-pages/aiesec/header.jpg) 1x, url(/img/landing-pages/aiesec/header@x2.jpg) 2x);
+        background-image: -webkit-image-set(
+            url(/img/landing-pages/aiesec/header.jpg) 1x,
+            url(/img/landing-pages/aiesec/header@x2.jpg) 2x
+        );
+        background-image: image-set(
+            url(/img/landing-pages/aiesec/header.jpg) 1x,
+            url(/img/landing-pages/aiesec/header@x2.jpg) 2x
+        );
         height: 500px;
         max-height: 100vh;
-        background-position-y: 10%; 
-
-        .solid-overlay {
+        background-position-y: 10%;
+          .solid-overlay {
             height: 300px;
         }
     }
@@ -40,7 +43,7 @@
     }
 
     .use-cases {
-        h3 {
+        h4 {
             margin-bottom: 5px;
         }
     }
@@ -50,19 +53,20 @@
     }
 
     .call-to-action {
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         url(/img/landing-pages/aiesec/footer.jpg);
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         -webkit-image-set( url(/img/landing-pages/aiesec/footer.jpg) 1x, url(/img/landing-pages/aiesec/footer@x2.jpg) 2x);
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         image-set( url(/img/landing-pages/aiesec/footer.jpg) 1x, url(/img/landing-pages/aiesec/footer@x2.jpg) 2x);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            url(/img/landing-pages/aiesec/footer.jpg);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            -webkit-image-set(url(/img/landing-pages/aiesec/footer.jpg) 1x, url(/img/landing-pages/aiesec/footer@x2.jpg)
+                        2x);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            image-set(
+                url(/img/landing-pages/aiesec/footer.jpg) 1x,
+                url(/img/landing-pages/aiesec/footer@x2.jpg) 2x
+            );
         background-size: cover;
         background-position: center;
 
-        .h4 {
+        .h5 {
             max-width: 400px;
             margin-left: auto;
             margin-right: auto;
@@ -70,15 +74,16 @@
     }
 
     .promo {
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         url(/img/landing-pages/aiesec/promo.jpg);
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         -webkit-image-set( url(/img/landing-pages/aiesec/promo.jpg) 1x, url(/img/landing-pages/aiesec/promo@x2.jpg) 2x);
-        background:
-         linear-gradient(rgba($brand-primary,0.8), rgba($brand-primary,0.8)),
-         image-set( url(/img/landing-pages/aiesec/promo.jpg) 1x, url(/img/landing-pages/aiesec/promo@x2.jpg) 2x);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            url(/img/landing-pages/aiesec/promo.jpg);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            -webkit-image-set(url(/img/landing-pages/aiesec/promo.jpg) 1x, url(/img/landing-pages/aiesec/promo@x2.jpg)
+                        2x);
+        background: linear-gradient(rgba($brand-primary, 0.8), rgba($brand-primary, 0.8)),
+            image-set(
+                url(/img/landing-pages/aiesec/promo.jpg) 1x,
+                url(/img/landing-pages/aiesec/promo@x2.jpg) 2x
+            );
         background-size: cover;
         background-position: center;
         color: #fff;
@@ -102,10 +107,10 @@
                 width: 40px;
             }
 
-            h2, h3 {
+            h4,
+            h3 {
                 margin: 0;
             }
         }
     }
 }
-
