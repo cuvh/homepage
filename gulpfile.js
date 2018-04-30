@@ -14,10 +14,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 console.log(`production: ${isProd}`);
 
-gulp.task(
-    "assemble",
-    gulp.series(clean, pages, images, fonts, sass, icons, javascript, resources)
-);
+gulp.task("assemble", gulp.series(clean, pages, images, fonts, sass, icons, javascript, resources));
 gulp.task("build", gulp.series("assemble", revisionFiles));
 gulp.task("default", gulp.series("assemble", server, watch));
 gulp.task("fontastic", function() {
@@ -26,7 +23,7 @@ gulp.task("fontastic", function() {
             key: process.env.FONTASTIC_KEY,
             font_dir: "src/asserts/icons/",
             // style_path: 'fonts/',
-            scss: true
+            scss: true,
         })
     );
 });
@@ -46,7 +43,7 @@ function pages() {
                 layouts: "src/layouts/",
                 partials: "src/partials/",
                 helpers: "src/helpers/",
-                data: "src/data/"
+                data: "src/data/",
             })
         )
         .pipe($.htmlmin({ collapseWhitespace: true, removeComments: true }))
@@ -65,10 +62,10 @@ function images() {
                         $.imagemin.gifsicle({ interlaced: true }),
                         imageminMozjpeg({ progressive: true, quality: 91 }),
                         imageminPngquant({ quality: 97 }),
-                        $.imagemin.svgo({ plugins: [{ removeViewBox: true }] })
+                        $.imagemin.svgo({ plugins: [{ removeViewBox: true }] }),
                     ],
                     {
-                        verbose: true
+                        verbose: true,
                     }
                 )
             )
@@ -83,9 +80,7 @@ function icons() {
     return gulp.src("src/assets/icons/**/*").pipe(gulp.dest("./dist/icons"));
 }
 function resources() {
-    return gulp
-        .src("src/assets/resources/**/*")
-        .pipe(gulp.dest("./dist/resources"));
+    return gulp.src("src/assets/resources/**/*").pipe(gulp.dest("./dist/resources"));
 }
 
 function sass() {
@@ -93,8 +88,8 @@ function sass() {
         includePaths: [
             "node_modules/bootstrap-sass/assets/stylesheets",
             "node_modules/layout-grid/sass",
-            "node_modules/slick-carousel/slick"
-        ]
+            "node_modules/slick-carousel/slick",
+        ],
     };
 
     return gulp
@@ -124,16 +119,10 @@ function javascript() {
             "node_modules/tilt.js/dest/tilt.jquery.min.js",
             "node_modules/slick-carousel/slick/slick.min.js",
             "node_modules/scrollreveal/dist/scrollreveal.min.js",
-            "src/assets/js/**/*"
+            "src/assets/js/**/*",
         ])
         .pipe($.if(!isProd, $.sourcemaps.init()))
         .pipe($.concat("combined.js"))
-        .pipe(
-            $.replace(
-                "process.env.TAPFILIATE_ID",
-                JSON.stringify(process.env.TAPFILIATE_ID)
-            )
-        )
         .pipe($.if(isProd, $.uglify()))
         .pipe($.if(!isProd, $.sourcemaps.write()))
         .pipe(gulp.dest("dist/js"));
@@ -159,7 +148,7 @@ function revisionFiles() {
                 // prefix: isProd ? "https://enhancv.com/" : null,
                 dontSearchFile: [".pdf"],
                 dontRenameFile: [".jpg", ".png", ".svg", ".gif", ".html"],
-                dontUpdateReference: [".jpg", ".png", ".svg", ".gif", ".html"]
+                dontUpdateReference: [".jpg", ".png", ".svg", ".gif", ".html"],
             })
         )
         .pipe(gulp.dest("cdn"));
@@ -167,28 +156,16 @@ function revisionFiles() {
 
 // Watch for file changes
 function watch() {
-    gulp
-        .watch("src/pages/**/*.html")
-        .on("all", gulp.series(pages, browser.reload));
+    gulp.watch("src/pages/**/*.html").on("all", gulp.series(pages, browser.reload));
     gulp
         .watch(["src/layouts/**/*", "src/partials/**/*"])
         .on("all", gulp.series(resetPages, pages, browser.reload));
     gulp
         .watch(["../scss/**/*.scss", "src/assets/scss/**/*.scss"])
         .on("all", gulp.series(resetPages, sass, pages, browser.reload));
-    gulp
-        .watch("src/assets/fonts/**/*")
-        .on("all", gulp.series(fonts, browser.reload));
-    gulp
-        .watch("src/assets/img/**/*")
-        .on("all", gulp.series(images, browser.reload));
-    gulp
-        .watch("src/assets/icons/**/*")
-        .on("all", gulp.series(icons, browser.reload));
-    gulp
-        .watch("src/assets/resources/**/*")
-        .on("all", gulp.series(resources, browser.reload));
-    gulp
-        .watch("src/assets/js/**/*")
-        .on("all", gulp.series(javascript, browser.reload));
+    gulp.watch("src/assets/fonts/**/*").on("all", gulp.series(fonts, browser.reload));
+    gulp.watch("src/assets/img/**/*").on("all", gulp.series(images, browser.reload));
+    gulp.watch("src/assets/icons/**/*").on("all", gulp.series(icons, browser.reload));
+    gulp.watch("src/assets/resources/**/*").on("all", gulp.series(resources, browser.reload));
+    gulp.watch("src/assets/js/**/*").on("all", gulp.series(javascript, browser.reload));
 }

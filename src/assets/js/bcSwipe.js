@@ -17,15 +17,15 @@
       var stillMoving = false;
       var start;
 
-      if ('ontouchstart' in document.documentElement) {
-        this.addEventListener('touchstart', onTouchStart, false);
+      if ("ontouchstart" in document.documentElement) {
+        this.addEventListener("touchstart", onTouchStart, false);
       }
 
       function onTouchStart(e) {
         if (e.touches.length == 1) {
           start = e.touches[0].pageX;
           stillMoving = true;
-          this.addEventListener('touchmove', onTouchMove, false);
+          this.addEventListener("touchmove", onTouchMove, false);
         }
       }
 
@@ -36,17 +36,16 @@
           if (Math.abs(difference) >= config.threshold) {
             cancelTouch();
             if (difference > 0) {
-              $(this).carousel('next');
-            }
-            else {
-              $(this).carousel('prev');
+              $(this).carousel("next");
+            } else {
+              $(this).carousel("prev");
             }
           }
         }
       }
 
       function cancelTouch() {
-        this.removeEventListener('touchmove', onTouchMove);
+        this.removeEventListener("touchmove", onTouchMove);
         start = null;
         stillMoving = false;
       }

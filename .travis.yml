@@ -5,22 +5,17 @@ cache:
   pip: true
   yarn: true
 script:
-- NODE_ENV=production yarn build
+- if [ $TRAVIS_BRANCH == master ]; then NODE_ENV=production yarn build; fi
+- if [ $TRAVIS_BRANCH != master ]; then yarn build; fi
 before_deploy:
 - pip install --user awscli
 deploy:
 - provider: script
   skip_cleanup: true
-  script: BUCKET="dev-home.enhancv.com" bin/deploy.sh
+  script: bin/deploy.sh
   on:
     repo: enhancv/homepage
-    branch: feature-*
-- provider: script
-  skip_cleanup: true
-  script: BUCKET="enhancv.com" bin/deploy.sh
-  on:
-    repo: enhancv/homepage
-    branch: master
+    all_branches: true
 notifications:
   email: false
   slack:

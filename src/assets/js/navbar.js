@@ -1,10 +1,10 @@
-+function ($) {
-    var $navbar = $('.navbar');
++(function($) {
+    var $navbar = $(".navbar");
     var sticked = false;
 
     $navbar.Stickyfill();
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(document).scrollTop() > 10) {
             if (!sticked) {
                 sticked = true;
@@ -18,8 +18,7 @@
         }
     });
 
-    $(document)
-        .on('click', '[data-toggle="navbar"]', function () {
-            $('body').toggleClass('navbar-mobile-active');
-        })
-}(jQuery);
+    $(document).on("click", '[data-toggle="navbar"]', function() {
+        $("body").toggleClass("navbar-mobile-active");
+    });
+})(jQuery);
