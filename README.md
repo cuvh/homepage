@@ -15,5 +15,5 @@ git push
 
 ## License
 
-Copyright (c) 2016 Enhancv.
+Copyright (c) 2014-2018 Enhancv.
 Licensed under the MIT license.
