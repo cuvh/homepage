@@ -39,7 +39,8 @@ $dark-color: #363636;
 
 //** Background color for `<body>`.
 $body-bg: #fff !default;
-$homepage-background: #eaf8f3;
+$homepage-background: #F5F5F7; /* #eaf8f3 */
+$light-green: #eaf8f3;
 //** Global text color on `<body>`.
 $text-color: $gray-dark !default;
 
@@ -60,11 +61,12 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base: "Inter UI" !default;
 
-$font-size-base: 14px !default;
-$font-size-large: 16px !default; // ~16px
-$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-small: 14px !default; // ~12px
+$font-size-base: 16px !default; // ~14px
+$font-size-large: 18px !default; // ~16px
+$font-size-big: 20px !default; // ~18px
 
-$font-size-h1: 68px !default; // ~36px
+$font-size-h1: 60px !default; // ~36px
 $font-size-h2: 38px !default; // ~30px
 $font-size-h3: 32px !default; // ~24px
 $font-size-h4: 26px !default; // ~18px
@@ -163,6 +165,11 @@ $btn-default-border: transparent;
 $btn-primary-color: #fff !default;
 $btn-primary-bg: $brand-primary !default;
 $btn-primary-border: transparent;
+
+$btn-secondary-color: #8C7CDB !default;
+$btn-secondary-hover: #7263BF !default;
+$btn-secondary-bg: $brand-primary !default;
+$btn-secondary-border: transparent;
 
 $btn-success-color: #fff !default;
 $btn-success-bg: $brand-success !default;

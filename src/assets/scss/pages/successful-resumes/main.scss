@@ -92,7 +92,7 @@
     }
 
     .desc-text {
-        max-width: 270px;
+        max-width: 360px;
     }
 
     @media screen and (max-width: $screen-sm) {
@@ -120,9 +120,9 @@
 
     .popular-resumes-name {
         color: #333333;
-        font-size: 27px;
+        font-size:36px;
         font-weight: 300;
-        line-height: 36px;
+        line-height: 48px;
     }
 
     .popular-resumes-position {
@@ -133,8 +133,8 @@
 
     .popular-resumes-description {
         color: #333333;
-        font-size: 14px;
-        line-height: 16px;
+        font-size:$font-size-base;
+/*         line-height: 16px; */
     }
 }
 

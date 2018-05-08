@@ -1,5 +1,5 @@
 .homepage {
-    background: $homepage-background;
+    background: $light-green;
 
     .navbar-default {
         background: transparent;
@@ -64,7 +64,7 @@
 
 .homepage-intro {
     position: relative;
-    background: $homepage-background;
+    background: $light-green;
 
     .md-lg-heading-margin {
         margin-top: 70px;
@@ -126,6 +126,10 @@
             order: 1;
         }
     }
+}
+
+.slick-arrows-on-hover {
+	background-color:$light-green;
 }
 
 .spotlight-stacked-images {
@@ -258,6 +262,10 @@
             bottom: 57px;
         }
     }
+	h2 {
+		font-family:$font-family-serif;
+		font-style:italic; 
+	}
 
     .testimonial-valign {
         align-items: center;
@@ -308,6 +316,7 @@
 }
 
 .homepage-panel {
+	
     @media screen and (min-width: $screen-sm) {
         height: 720px;
 
@@ -323,12 +332,13 @@
 }
 
 .feature-link {
-    color: $brand-primary;
+    color: $btn-secondary-color;
     text-decoration: none;
+    font-weight:600;
 
     &:hover {
-        color: $brand-primary;
-        text-decoration: underline;
+        color: $btn-secondary-hover;
+        text-decoration: none;
     }
 }
 
