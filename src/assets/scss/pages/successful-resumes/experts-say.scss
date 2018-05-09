@@ -1,6 +1,6 @@
 .experts-say {
-	background: $brand-primary;
-	color: #ffffff;
+    background: $brand-primary;
+    color: #ffffff;
     padding: ($spacer * 6) 0 ($spacer * 10) 0;
 
     .experts-section-info {
@@ -12,22 +12,22 @@
         }
     }
 
-	.experts-hired-container {
-		padding-left: 30px;
-		padding-top: $spacer*2;
+    .experts-hired-container {
+        padding-left: 30px;
+        padding-top: $spacer*2;
 
-		.experts-hired-at {
-			opacity: 0.7;
-			flex: 1;
-			font-size: 14px;
-			line-height: 16px;
-		}
+        .experts-hired-at {
+            opacity: 0.7;
+            flex: 1;
+            font-size: 14px;
+            line-height: 16px;
+        }
 
-		img {
-			margin-top: $spacer / 2;
+        img {
+            margin-top: $spacer / 2;
             margin-left: -$spacer * 5;
-		}
-	}
+        }
+    }
 
     #expert-resume {
         .popover-content {
@@ -35,22 +35,17 @@
         }
     }
 
-	.experts-person {
-		display: flex;
-		flex-direction: row;
-	}
+    .experts-person {
+        display: flex;
+        flex-direction: row;
+    }
 
-	.experts-name {
-		font-weight: 300;
-		font-size: 42px;
-		line-height: 46px;
-	}
+    .experts-name {
+        font-weight: 300;
+        line-height: 32px;
+    }
 
-	.experts-text {
-		font-size: 14px;
-	}
-
-	.successful-resumes-share {
+    .successful-resumes-share {
         border-color: #fff;
     }
 

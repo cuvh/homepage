@@ -13,6 +13,9 @@
 .text-promo {
 	color: $promo-color;
 }
+.text-bold {
+	font-weight: 500;
+}
 /*
 .big-title {
 	font-size: 38px;
@@ -34,26 +37,18 @@ body {
 }
 
 h1 {
-	font-size:60px;
-	line-height: 72px;
-	font-weight:500;
-	max-width:960px;
-	margin-left:auto;
-	margin-right:auto;
-	
+	line-height: 80px;
+	font-weight: 500;
+	max-width: 960px;
+
 	@media screen and (max-width: 1440px) {
 		font-size: 52px;
-		line-height:1.2;
-		max-width:800px;
-		margin-left:auto;
-		margin-right:auto;
+		line-height: 1.2;
 	}
-
 }
 
-
 h2 {
-	line-height: 43px;
+	line-height: 46px;
 }
 
 .underlined {

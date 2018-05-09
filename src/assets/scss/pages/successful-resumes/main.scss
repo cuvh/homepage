@@ -17,9 +17,9 @@
 
     .rom-text {
         color: #808080;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 300;
-        line-height: 24px;
+        line-height: 32px;
     }
 
     .rom-date {
@@ -32,9 +32,9 @@
 
     .rom-person-name a {
         color: #2dc08d;
-        font-size: 42px;
+        font-size: 32px;
         font-weight: 300;
-        line-height: 53px;
+        line-height: 46px;
     }
 
     .rom-hired-at {
@@ -120,7 +120,7 @@
 
     .popular-resumes-name {
         color: #333333;
-        font-size:36px;
+        font-size: 36px;
         font-weight: 300;
         line-height: 48px;
     }
@@ -133,8 +133,8 @@
 
     .popular-resumes-description {
         color: #333333;
-        font-size:$font-size-base;
-/*         line-height: 16px; */
+        font-size: $font-size-base;
+        /*         line-height: 16px; */
     }
 }
 
@@ -190,7 +190,7 @@
 }
 
 .successful-resumes-cta {
-     #subscribe-email {
+    #subscribe-email {
         margin-right: $spacer;
     }
 
@@ -209,7 +209,7 @@
 .step-circle {
     width: 34px;
     height: 34px;
-    background-color: #2DC08D;
+    background-color: #2dc08d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,4 +217,3 @@
     border-radius: 100%;
     font-weight: bold;
 }
-

@@ -129,7 +129,7 @@
 }
 
 .slick-arrows-on-hover {
-	background-color:$light-green;
+    background-color: $light-green;
 }
 
 .spotlight-stacked-images {
@@ -188,11 +188,6 @@
 
 .homepage {
     @media screen and (max-width: $screen-sm) {
-        h2 {
-            font-size: $font-size-h3;
-            line-height: 35px !important;
-        }
-
         h3 {
             font-size: $font-size-h4;
             line-height: 32px !important;
@@ -262,10 +257,6 @@
             bottom: 57px;
         }
     }
-	h2 {
-		font-family:$font-family-serif;
-		font-style:italic; 
-	}
 
     .testimonial-valign {
         align-items: center;
@@ -316,7 +307,6 @@
 }
 
 .homepage-panel {
-	
     @media screen and (min-width: $screen-sm) {
         height: 720px;
 
@@ -334,7 +324,7 @@
 .feature-link {
     color: $btn-secondary-color;
     text-decoration: none;
-    font-weight:600;
+    font-weight: 600;
 
     &:hover {
         color: $btn-secondary-hover;
