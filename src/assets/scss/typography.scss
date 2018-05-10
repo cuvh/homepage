@@ -40,6 +40,8 @@ h1 {
 	line-height: 80px;
 	font-weight: 500;
 	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media screen and (max-width: 1440px) {
 		font-size: 52px;
