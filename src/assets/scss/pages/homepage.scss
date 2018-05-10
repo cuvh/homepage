@@ -1,5 +1,5 @@
 .homepage {
-    background: $homepage-background;
+    background: $light-green;
 
     .navbar-default {
         background: transparent;
@@ -64,7 +64,7 @@
 
 .homepage-intro {
     position: relative;
-    background: $homepage-background;
+    background: $light-green;
 
     .md-lg-heading-margin {
         margin-top: 70px;
@@ -128,6 +128,10 @@
     }
 }
 
+.slick-arrows-on-hover {
+    background-color: $light-green;
+}
+
 .spotlight-stacked-images {
     width: 50%;
     max-width: 255px;
@@ -184,11 +188,6 @@
 
 .homepage {
     @media screen and (max-width: $screen-sm) {
-        h2 {
-            font-size: $font-size-h3;
-            line-height: 35px !important;
-        }
-
         h3 {
             font-size: $font-size-h4;
             line-height: 32px !important;
@@ -323,12 +322,13 @@
 }
 
 .feature-link {
-    color: $brand-primary;
+    color: $btn-secondary-color;
     text-decoration: none;
+    font-weight: 600;
 
     &:hover {
-        color: $brand-primary;
-        text-decoration: underline;
+        color: $btn-secondary-hover;
+        text-decoration: none;
     }
 }
 

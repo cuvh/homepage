@@ -42,6 +42,7 @@
     margin-top: 9px !important;
     margin-bottom: 9px !important;
     padding: 9px 16px;
+    font-size:$font-size-small;
 }
 
 .navbar-stick {
@@ -87,6 +88,7 @@
     > li > a {
         padding-left: 16px;
         padding-right: 16px;
+        font-size:$font-size-small;
     }
 }
 
