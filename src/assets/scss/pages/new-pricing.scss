@@ -311,6 +311,7 @@
 
 	.plan-name {
 		font-size: 21px;
+        font-family: "Rubik";
 		color: #808080;
 	}
 
@@ -357,6 +358,10 @@
 		display: inline-block;
 		position: relative;
 		width: 294px;
+
+        .tab-price {
+            font-family: "Rubik";
+        }
 
 		@media screen and (max-width: $screen-sm) {
 			width: 248px;
