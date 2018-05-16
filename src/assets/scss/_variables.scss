@@ -392,7 +392,7 @@ $navbar-default-border: white;
 
 // Navbar links
 $navbar-default-link-color: #333 !default;
-$navbar-default-link-hover-color: #333 !default;
+$navbar-default-link-hover-color: $btn-secondary-color !default;
 $navbar-default-link-hover-bg: transparent !default;
 $navbar-default-link-active-color: #bbb !default;
 $navbar-default-link-active-bg: transparent !default;
