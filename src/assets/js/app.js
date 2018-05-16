@@ -112,7 +112,7 @@ $(function() {
         dots: true,
         infinite: true,
     });
-
+    /*
     if ($(".homepage-blog-latest").html()) {
         $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
             var articleWrapper = $("<div />");
@@ -152,6 +152,25 @@ $(function() {
             });
 
             $(".articles-scrollable").html(articleWrapper.html());
+        });
+    }*/
+
+    if ($(".homepage-blog-latest-short").html()) {
+        $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
+            var articleWrapper = $("<div />");
+            const size = 2;
+
+            data.items.slice(0, size).forEach(function(item) {
+                articleWrapper.append(
+                    '<a target="_blank" class="inline-block m-bottom-1" href="' +
+                        item.url +
+                        '">' +
+                        item.title +
+                        "</a>"
+                );
+            });
+
+            $(".articles-short").html(articleWrapper.html());
         });
     }
 

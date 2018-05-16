@@ -1,47 +1,28 @@
 .footer {
-    background-color: #1d1d1d;
-    color: #808080;
+    background-color: #fff;
+    color: #65696d;
+    border-top: 2px solid rgba(151, 151, 151, 0.06);
+    /*
+    color: $gray-dark;
+    */
+    .footer-title {
+        font-weight: bold;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
 
-    .made-with-love {
-        text-align: center;
+    .list-unstyled li {
+        margin-bottom: $spacer * 1;
 
-        @media screen and (min-width: $screen-sm) {
-            text-align: right;
+        .footer-arrow-link {
+            color: $brand-primary;
+            font-weight: bold;
         }
     }
 
-    .footer-get-started {
-        width: 176px;
-    }
-
-    h3 {
-        min-height: 22px;
-    }
-    .list-unstyled li {
-        margin-bottom: 13px;
-    }
-
     .list-unstyled li a {
-        color: #fff;
-        font-size: 16px;
-    }
-
-    .copyright {
-        font-size: 11px;
-        line-height: 13px;
-    }
-
-    .social-link {
-        color: #ffffff;
-        font-size: 20px;
-    }
-
-    .footer-about-text {
-        max-width: 500px;
-    }
-
-    .right-get-started {
-        align-items: flex-end;
+        font-size: 15px;
+        color: #65696d;
     }
 
     .links-container {
@@ -49,36 +30,38 @@
         margin-bottom: $spacer * 9;
     }
 
+    .social-link {
+        margin-right: 16px;
+    }
+
+    .copyright {
+        margin-top: 4px;
+        font-size: 13px;
+    }
+
+    .made-with-love {
+        text-align: right;
+    }
+
+    .footer-logo {
+        width: 26px;
+        height: 13px;
+        margin-top: 8px;
+        margin-left: 16px;
+    }
+
+    .rights {
+        width: 262px;
+    }
+
     @media (max-width: $screen-xs-max) {
         .links-container {
-            margin-top: $spacer * 6;
+            margin-top: 0;
             margin-bottom: $spacer * 3;
-        }
-
-        h3 {
-            font-size: 16px;
-        }
-
-        .copyright {
-            img {
-                max-width: 143px;
-                width: 100%;
-                margin: 0 auto;
-            }
-        }
-
-        .right-get-started {
-            align-items: center;
-            margin-top: 6 * $spacer;
         }
 
         .list-unstyled {
             margin-top: 10px;
-        }
-
-        .footer-about-text {
-            margin-left: auto;
-            margin-right: auto;
         }
     }
 }
