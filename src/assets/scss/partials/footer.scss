@@ -31,16 +31,13 @@
     }
 
     .social-link {
-        margin-right: 16px;
+        margin-right: 8px;
+        margin-left: 8px;
     }
 
     .copyright {
         margin-top: 4px;
         font-size: 13px;
-    }
-
-    .made-with-love {
-        text-align: right;
     }
 
     .footer-logo {
@@ -50,7 +47,7 @@
         margin-left: 16px;
     }
 
-    .rights {
+    .footer-rights {
         width: 262px;
     }
 
@@ -62,6 +59,37 @@
 
         .list-unstyled {
             margin-top: 10px;
+        }
+
+        .made-with-love {
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .footer-end {
+            display: block;
+        }
+
+        .social-links-container {
+            display: block;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer-logo {
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .links-container {
+            margin-top: $spacer * 3;
+            margin-bottom: $spacer * 3;
+        }
+
+        .footer-title {
+            margin-top: 30px;
+            margin-bottom: 16px;
         }
     }
 }
