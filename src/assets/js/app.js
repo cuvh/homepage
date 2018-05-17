@@ -116,7 +116,7 @@ $(function() {
     if ($(".homepage-blog-latest-short").html()) {
         $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
             var articleWrapper = $("<div />");
-            const size = 2;
+            var size = 2;
 
             data.items.slice(0, size).forEach(function(item) {
                 articleWrapper.append(
