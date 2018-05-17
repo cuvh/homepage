@@ -112,48 +112,6 @@ $(function() {
         dots: true,
         infinite: true,
     });
-    /*
-    if ($(".homepage-blog-latest").html()) {
-        $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
-            var articleWrapper = $("<div />");
-            var months = [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December",
-            ];
-
-            data.items.forEach(function(item) {
-                var date = new Date(item.date_published);
-
-                var formattedDate =
-                    date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
-
-                articleWrapper.append(
-                    '<div class="inline-block m-right-5">' +
-                        '<a target="_blank" href="' +
-                        item.url +
-                        '" class="text-inverse">“' +
-                        item.title +
-                        "”</a>" +
-                        '<p class="text-muted">' +
-                        formattedDate +
-                        "</p>" +
-                        "</div>"
-                );
-            });
-
-            $(".articles-scrollable").html(articleWrapper.html());
-        });
-    }*/
 
     if ($(".homepage-blog-latest-short").html()) {
         $.getJSON("https://blog.enhancv.com/feed/json").success(function(data) {
