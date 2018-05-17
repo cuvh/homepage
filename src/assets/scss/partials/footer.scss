@@ -25,6 +25,10 @@ $dark-gray: #65696d;
         color: $dark-gray;
     }
 
+    .list-unstyled li a:hover {
+        color: $btn-secondary-color;
+    }
+
     .social-link {
         margin-right: $spacer;
         margin-left: $spacer;
