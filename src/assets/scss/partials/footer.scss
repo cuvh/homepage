@@ -23,6 +23,7 @@ $dark-gray: #65696d;
     .list-unstyled li a {
         font-size: 15px;
         color: $dark-gray;
+        transition: color 0.15s;
     }
 
     .list-unstyled li a:hover {
