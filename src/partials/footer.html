@@ -1,8 +1,9 @@
 <div class="footer">
     <div class="container">
-        <div class="Grid links-container m-top-9">
-            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-12 text-center-xs">
-                <div class="footer-title">Get started</div>
+        <div class="Grid footer-container m-top-8 m-bottom-3">
+            <div class="Grid links-container full-width"> 
+            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6">
+                <div class="footer-title m-top-2 m-bottom-4">Get started</div>
                 <ul class="list-unstyled">
                     <li>
                         <a href="https://app.enhancv.com/" class="footer-arrow-link">
@@ -29,8 +30,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-12 text-center-xs">
-                <div class="footer-title">Goodies</div>
+            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6 f-mobile-padding">
+                <div class="footer-title m-top-2 m-bottom-4">Goodies</div>
                 <ul class="list-unstyled">
                     <li>
                         <a
@@ -58,8 +59,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-12 text-center-xs">
-                <div class="footer-title">About us</div>
+            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6">
+                <div class="footer-title m-top-2 m-bottom-4">About us</div>
                 <ul class="list-unstyled">
                     <li>
                         <a
@@ -81,8 +82,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-12 text-center-xs  hidden-xs">
-                <div class="footer-title">From the blog</div>
+            <div class="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6 hidden-xs">
+                <div class="footer-title m-top-2 m-bottom-4">From the blog</div>
                 <ul class="list-unstyled homepage-blog-latest-short">
                     <li class="articles-short">
                         Loading..
@@ -94,27 +95,44 @@
                     </li>
                 </ul>
             </div>
+            <div class="Grid-cell--xs-6 hidden-sm hidden-md hidden-lg">
+                <div class="Grid social-links-container">
+                    <div class="Grid-cell--sm-4">
+                        <a href="{{ urls.facebook }}" class="social-link"><img src="/img/new-homepage/icons/FB@2x.png"/></a>
+                    </div>
+                    <div class="Grid-cell--sm-4">
+                        <a href="{{ urls.instagram }}" class="social-link"><img src="/img/new-homepage/icons/Instagram@2x.png"/></a>
+                    </div>
+                    <div class="Grid-cell--sm-4">
+                        <a href="{{ urls.twitter }}" class="social-link"><img src="/img/new-homepage/icons/Twitter@2x.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="Grid Grid--spaceBetween m-bottom-2 m-top-9 full-width footer-end">
+                <hr class="hidden-sm hidden-md hidden-lg full-width">
                 <div class="Grid-cell Grid-cell--auto text-center-xs  hidden-xs footer-rights">
                     <p class="copyright">&copy; 2018. All rights reserved.</p>
                 </div>
-                <div class="Grid-cell Grid-cell--auto social-links-container">
+                <div class="Grid-cell Grid-cell--auto hidden-xs">
                     <div class="Grid Grid--justifyCenter">
                         <div class="Grid-cell--sm-4">
-                            <a href="{{ urls.facebook }}" class="social-link"><img src="/img/new-homepage/icons/FB.png"/></a>
+                            <a href="{{ urls.facebook }}" class="social-link"><img src="/img/new-homepage/icons/FB@2x.png"/></a>
                         </div>
                         <div class="Grid-cell--sm-4">
-                            <a href="{{ urls.instagram }}" class="social-link"><img src="/img/new-homepage/icons/Instagram.png"/></a>
+                            <a href="{{ urls.instagram }}" class="social-link"><img src="/img/new-homepage/icons/Instagram@2x.png"/>
+                            </a>
                         </div>
                         <div class="Grid-cell--sm-4">
-                            <a href="{{ urls.twitter }}" class="social-link"><img src="/img/new-homepage/icons/Twitter.png"/></a>
+                            <a href="{{ urls.twitter }}" class="social-link"><img src="/img/new-homepage/icons/Twitter@2x.png"/></a>
                         </div>
                     </div>
                 </div>
                 <div class="Grid-cell Grid-cell--auto text-center-xs">
-                    <div class="Grid made-with-love">
+                    <div class="Grid Grid--justifyCenter made-with-love">
+                        <img class="footer-logo hidden-sm hidden-md hidden-lg m-top-1 m-right-1 m-left-no" src="/img/new-homepage/icons/logo-ecv@2x.png"/>
                         <p class="copyright">Made with love by people who care.</p>
-                        <img class="footer-logo" src="/img/new-homepage/icons/logo-01.png"/>
+                        <img class="footer-logo hidden-xs m-top-1 m-left-2" src="/img/new-homepage/icons/logo-ecv@2x.png"/>
                     </div>
                 </div>
             </div>

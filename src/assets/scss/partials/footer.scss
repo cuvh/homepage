@@ -1,38 +1,38 @@
+/*Should be fixed*/
+$dark-gray: #65696d;
+
 .footer {
     background-color: #fff;
-    color: #65696d;
+    color: $dark-gray;
     border-top: 2px solid rgba(151, 151, 151, 0.06);
-    /*
-    color: $gray-dark;
-    */
+    /* or color: $gray-dark; */
+
     .footer-title {
-        font-weight: bold;
-        margin-top: 16px;
-        margin-bottom: 30px;
+        font-weight: 600;
     }
 
     .list-unstyled li {
-        margin-bottom: $spacer * 1;
+        margin-bottom: $spacer;
 
         .footer-arrow-link {
             color: $brand-primary;
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 
     .list-unstyled li a {
         font-size: 15px;
-        color: #65696d;
-    }
-
-    .links-container {
-        margin-top: $spacer * 8;
-        margin-bottom: $spacer * 9;
+        color: $dark-gray;
     }
 
     .social-link {
-        margin-right: 8px;
-        margin-left: 8px;
+        margin-right: $spacer;
+        margin-left: $spacer;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
     }
 
     .copyright {
@@ -43,8 +43,6 @@
     .footer-logo {
         width: 26px;
         height: 13px;
-        margin-top: 8px;
-        margin-left: 16px;
     }
 
     .footer-rights {
@@ -52,44 +50,54 @@
     }
 
     @media (max-width: $screen-xs-max) {
+        .footer-container {
+            margin-top: $spacer * 3;
+        }
+
+        .footer-title {
+            margin-top: $spacer * 4;
+            margin-bottom: $spacer * 2;
+        }
         .links-container {
-            margin-top: 0;
-            margin-bottom: $spacer * 3;
+            margin-left: 5%;
         }
 
         .list-unstyled {
             margin-top: 10px;
         }
 
+        .social-links-container {
+            margin-top: 130px;
+        }
+
+        .social-link {
+            margin-right: 11px;
+            margin-left: 0px;
+            color: red;
+
+            img {
+                height: 34px;
+                width: 34px;
+            }
+        }
+
+        .f-mobile-padding {
+            padding-left: $spacer;
+        }
+
         .made-with-love {
-            display: block;
-            margin: auto;
+            margin-top: $spacer * 3;
             text-align: center;
         }
 
         .footer-end {
             display: block;
-        }
-
-        .social-links-container {
-            display: block;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .footer-logo {
-            margin-top: 0;
-            margin-left: 0;
-        }
-
-        .links-container {
             margin-top: $spacer * 3;
-            margin-bottom: $spacer * 3;
-        }
 
-        .footer-title {
-            margin-top: 30px;
-            margin-bottom: 16px;
+            hr {
+                box-sizing: border-box;
+                border: 1px solid rgba(151, 151, 151, 0.2);
+            }
         }
     }
 }
