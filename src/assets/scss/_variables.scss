@@ -19,6 +19,7 @@ $brand-success: #5cb85c !default;
 $brand-info: #5bc0de !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #d9534f !default;
+$brand-purple: #8C7CDB !default;
 
 $border-color: #b3b3b3;
 $border-color-muted: #e6e6e6;
@@ -30,7 +31,6 @@ $twitter-color: #5e9dd1;
 $linkedin-color: #0d77b7;
 
 $code-color: #009ee8;
-
 $dark-color: #363636;
 
 //== Scaffolding
@@ -868,3 +868,28 @@ $dl-horizontal-offset: $component-offset-horizontal !default;
 $dl-horizontal-breakpoint: $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border: $gray-lighter !default;
+
+
+
+/////////////////
+// Temporarily  Successful Resumes Variables
+/////////////////////////////////////////////
+///////////////// Colors ////////////////////
+////////////////////////////////////////////
+$sr_main-color : #384347;
+$sr_secondary-color : #65696D;
+///////////////// Buttons //////////////////
+// Default Botton
+$sr_button_green : #2DC08D;
+$sr_button_green_hover : #96DFC6;
+$sr_button_green_pressed : #7DC6AD;
+$sr_button_green_unavailable : #B1B3B5;
+// Smalll Button
+$sr_button_green : #8C7CDB;
+$sr_button_green_hover : #C5BDED;
+$sr_button_green_pressed : #ACA4D4;
+$sr_button_green_unavailabe : #B1B3B5;
+////////////////////////////////////////////
+////////////////////////////////////////////
+
+
