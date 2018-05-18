@@ -1,84 +1,108 @@
+/*Should be fixed*/
+$dark-gray: #65696d;
+
 .footer {
-    background-color: #1d1d1d;
-    color: #808080;
+    background-color: #fff;
+    color: $dark-gray;
+    border-top: 2px solid rgba(151, 151, 151, 0.06);
+    /* or color: $gray-dark; */
 
-    .made-with-love {
-        text-align: center;
-
-        @media screen and (min-width: $screen-sm) {
-            text-align: right;
-        }
+    .footer-title {
+        font-weight: 600;
     }
 
-    .footer-get-started {
-        width: 176px;
-    }
-
-    h3 {
-        min-height: 22px;
-    }
     .list-unstyled li {
-        margin-bottom: 13px;
+        margin-bottom: $spacer;
+
+        .footer-arrow-link {
+            color: $brand-primary;
+            font-weight: 600;
+        }
     }
 
     .list-unstyled li a {
-        color: #fff;
-        font-size: 16px;
+        font-size: 15px;
+        color: $dark-gray;
+        transition: color 0.15s;
     }
 
-    .copyright {
-        font-size: 11px;
-        line-height: 13px;
+    .list-unstyled li a:hover {
+        color: $btn-secondary-color;
     }
 
     .social-link {
-        color: #ffffff;
-        font-size: 20px;
+        margin-right: $spacer;
+        margin-left: $spacer;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
     }
 
-    .footer-about-text {
-        max-width: 500px;
+    .copyright {
+        margin-top: 4px;
+        font-size: 13px;
     }
 
-    .right-get-started {
-        align-items: flex-end;
+    .footer-logo {
+        width: 26px;
+        height: 13px;
     }
 
-    .links-container {
-        margin-top: $spacer * 8;
-        margin-bottom: $spacer * 9;
+    .footer-rights {
+        width: 262px;
     }
 
     @media (max-width: $screen-xs-max) {
+        .footer-container {
+            margin-top: $spacer * 3;
+        }
+
+        .footer-title {
+            margin-top: $spacer * 4;
+            margin-bottom: $spacer * 2;
+        }
         .links-container {
-            margin-top: $spacer * 6;
-            margin-bottom: $spacer * 3;
-        }
-
-        h3 {
-            font-size: 16px;
-        }
-
-        .copyright {
-            img {
-                max-width: 143px;
-                width: 100%;
-                margin: 0 auto;
-            }
-        }
-
-        .right-get-started {
-            align-items: center;
-            margin-top: 6 * $spacer;
+            margin-left: 5%;
         }
 
         .list-unstyled {
             margin-top: 10px;
         }
 
-        .footer-about-text {
-            margin-left: auto;
-            margin-right: auto;
+        .social-links-container {
+            margin-top: 130px;
+        }
+
+        .social-link {
+            margin-right: 11px;
+            margin-left: 0px;
+            color: red;
+
+            img {
+                height: 34px;
+                width: 34px;
+            }
+        }
+
+        .f-mobile-padding {
+            padding-left: $spacer;
+        }
+
+        .made-with-love {
+            margin-top: $spacer * 3;
+            text-align: center;
+        }
+
+        .footer-end {
+            display: block;
+            margin-top: $spacer * 3;
+
+            hr {
+                box-sizing: border-box;
+                border: 1px solid rgba(151, 151, 151, 0.2);
+            }
         }
     }
 }
