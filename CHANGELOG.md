@@ -2,7 +2,12 @@
 # Changelog 
 ## Enhancv redesign
 
-# 1.0.0 - 2017-05-18
+#1.0.0 - 2018-05-20
+#Added 
+1. Layout > default.html   - "resumeslist" class for Successful Resumes header ornament
+2. Pages  > offsets-2.scss -  Responsive offsets for better styling on mobile/tablet view
+
+# 1.0.0 - 2018-05-18
 ## Added 
 1. Redesign prefix 
 ``` 

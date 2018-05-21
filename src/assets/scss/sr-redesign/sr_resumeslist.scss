@@ -1,0 +1,60 @@
+.resumes {
+    &--accent {
+        padding-bottom:8px * 9;
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-bottom:8px * 13;
+        }
+        @media screen and (max-width: $screen-sm-max) {
+            justify-content:center;
+            text-align:center;
+        }
+    }
+
+    &--preview {
+        justify-content:right;
+        text-align:right;
+
+        &-holder {
+            display:inline-block;
+            position:relative;
+            @media screen and (max-width: $screen-sm-max) {
+                padding:0 8px;
+                text-align:center;
+                width:100%;
+                img {
+                    width:100%;
+                }
+            }
+        }
+        
+        .btn-resume-preview {
+            position: absolute;
+            @media screen and (max-width: $screen-sm-max) {
+                bottom:-12px;
+                right:-8px;
+            }
+            @media screen and (min-width: $screen-md) {
+                top:-12px;
+                left:-8px;
+            }
+        }
+
+    }
+
+    &--content {
+        position: relative;
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-top:-46px;
+            }
+        }
+    }
+
+}
+
+

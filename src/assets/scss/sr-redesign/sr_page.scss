@@ -1,9 +1,55 @@
-.sr_{
-    &page-head{
-        margin-top:100px;
-        max-width:750px;
-        h1,h2 {
-            max-width:100%;
+//////////////////////////////
+/// Page -> Sucessful resume
+
+body.resumeslist:not(.navbar-mobile-active) {
+    .navbar:not(.navbar-stick){
+        background:transparent;
+        border-color:transparent;
+    }
+}
+
+// Page Items 
+.page--head{
+    margin-top:100px;
+    max-width:750px;
+    h1,h2 {
+        max-width:100%;
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        text-align:center;
+    }
+}
+
+.page--scroll {
+    position: absolute;
+    bottom:48px;
+    color: $sr_page-scroll;
+    font-size: 14px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    &:hover {
+        text-decoration:underline;
+        &:before {
+            transform:translateY(3px);
         }
     }
+    &:hover,
+    &:active,
+    &:focus {
+        color: $sr_page-scroll;
+    }
+    &:before {
+        content:'';
+        width:10px;
+        height:10px;
+        background:url("/img/new-successful-resumes/elements/down-arrow.svg") no-repeat;
+        margin-right:8px;
+        transition:0.2s transform ease-in-out;
+        transform:translateY(0px);
+    }
+    @media screen and (max-width: $screen-sm-max) {
+        display: none;
+    }
+
 }

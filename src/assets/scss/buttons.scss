@@ -248,3 +248,20 @@
 .btn-2 {
     border-radius: 5px;
 }
+
+.btn-resume-preview {
+    width:52px;
+    height:52px;
+    background-size:52px;
+    cursor: pointer;
+    transition:0.2s background ease-in-out;
+
+    border:0;   
+    background-color:transparent;
+    background-position:center center;
+    background-repeat:no-repeat;
+    
+    &:focus {
+        outline:none;
+    }
+}

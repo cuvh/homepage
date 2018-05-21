@@ -1,0 +1,94 @@
+//////////////////////////////
+/// Page -> Sucessful resumes  
+
+
+// Header Background 
+body.resumeslist {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: $sr_resumeslist-background; 
+    
+    // For better loading performance on mobile >
+    @media screen and (min-width:$screen-sm) {
+        background-image:url("/img/new-successful-resumes/elements/header_background.jpg");
+    }
+    @media screen and (max-width:$screen-sm-max) {
+        background-image: url("/img/new-successful-resumes/elements/header_background_mobile.jpg");
+        background-size: 205px;
+    }
+}
+
+
+// Page accent
+.resumes {
+    &--accent{
+        &:after {
+            content:'';
+            width:528px;
+            height:950px;
+
+            background-repeat: no-repeat;
+            background-size:100%;
+
+            position:absolute;
+            top:30%;
+            right:0;
+            z-index:-1;
+          
+            // For better loading performance on mobile >
+            @media screen and (min-width:$screen-sm) {
+                background-image: url("/img/new-successful-resumes/elements/homepage_behind_famous_resume_bg_@2.jpg");
+            }
+
+            @media screen and (max-width:$screen-sm-max) {
+                background-image: url("/img/new-successful-resumes/elements/homepage_behind_famous_resume_bg.jpg");
+            }
+        }
+    }
+}
+
+// Resume preview button 
+
+.btn-resume-preview {
+    background-image: url("/img/new-successful-resumes/icons/zoom.png");
+    &:hover {
+        background-image: url("/img/new-successful-resumes/icons/zoom_hover.png");
+    }
+}
+
+
+// List of Famous Resumes
+.resumes {
+    &--famous-list {
+        &:after {
+            content:'';
+            width:592px;
+            height:463px;
+
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: contain;
+
+            position: absolute;
+            z-index:-1;
+            
+
+            // For better loading performance on mobile >
+            @media screen and (min-width:$screen-sm) {
+                bottom:15%;
+                left:2%;
+                background-image: url("/img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes@2.jpg");
+            }
+
+            @media screen and (max-width:$screen-sm-max) {
+                top: 0;
+                left: -15px;
+                width: calc(100% + 30px);
+                height: 100%;
+                background-position:center;
+                background-size:cover;
+                background-image: url("/img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes.jpg");
+            }
+        }
+    }
+}

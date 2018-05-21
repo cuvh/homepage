@@ -1,0 +1,64 @@
+.resumes {
+    // List of Famous Resumes
+    &--famous-list {
+        position:relative;
+        z-index:1;
+        @media screen and (min-width: $screen-md) {
+            margin-left:-8px;
+            width:calc(100% + 8px);
+        }
+    }
+    &--famous-wrap{
+        width:100%;
+        @media screen and (max-width:$screen-sm-max) {
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+            padding-right: 30px;
+            width: calc(100% + 15px);
+        }
+    }
+    &--box-holder {
+        padding:8px;
+    }
+    &--box {
+        background: #FFF;
+        box-shadow: 0 2px 2px 0 rgba(223, 223, 223, 0.50);
+        border-radius: 5px;
+        padding:8px * 4;
+        display:block;
+        text-align:center;
+    }
+    &--person-avatar {
+       position: relative;
+       display:inline-block;
+    }
+    &--person-company {
+        position: absolute;
+        bottom: 0px;
+        right: -16px;
+    }
+    &--person-name {
+        font-size: 24px;
+        color: $sr_main-color;
+    }
+    &--person-jobtitle {
+        font-size: 14px;
+        color: rgba(71, 72, 75, 0.45);
+        text-align: center;
+    }
+    &--person-description{     
+        color:$sr_secondary-color;
+        font-size: 14px;
+        line-height: 24px;
+        @media screen and (min-width: $screen-md) {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        p:last-of-type{
+            margin-bottom:0px;
+        }
+    }
+
+}
+
+

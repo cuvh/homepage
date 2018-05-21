@@ -12,7 +12,35 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
         padding: ceil($spacer-2 * nth($multipliers, $i));
     }
 
+
     @each $direction in $directions {
+        // Responsive offsets for better styling on mobile/tablet screens
+        @media screen and (min-width:$screen-md) {
+            .m-md-#{$direction}-#{$i - 1} {
+                margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+            }
+
+            .p-md-#{$direction}-#{$i - 1} {
+                padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+            }
+        }
+        @media screen and (max-width:$screen-sm-max) {
+             .m-sm-#{$direction}-#{$i - 1} {
+                 margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+             }
+             .p-sm-#{$direction}-#{$i - 1} {
+                 padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+             }
+        }
+        @media screen and (max-width:$screen-xs-max) {
+            .m-xs-#{$direction}-#{$i - 1} {
+                margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+            }
+            .p-xs-#{$direction}-#{$i - 1} {
+                padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
+            }
+        }
+
         .m-#{$direction}-#{$i - 1} {
             margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
         }
