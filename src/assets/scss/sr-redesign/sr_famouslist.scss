@@ -4,27 +4,29 @@
         position:relative;
         z-index:1;
         @media screen and (min-width: $screen-md) {
-            margin-left:-8px;
-            width:calc(100% + 8px);
+            margin-left:-$sr_global-offset-value;
+            width:calc(100% + $sr_global-offset-value);
         }
     }
     &--famous-wrap{
         width:100%;
-        @media screen and (max-width:$screen-sm-max) {
+        @media screen and (max-width:$screen-xs-max) {
             overflow-x: scroll;
             flex-wrap: nowrap;
             padding-right: 30px;
             width: calc(100% + 15px);
+            scroll-behavior:smooth;
+            -webkit-overflow-scrolling: touch;
         }
     }
     &--box-holder {
-        padding:8px;
+        padding:$sr_global-offset-value;
     }
     &--box {
         background: #FFF;
         box-shadow: 0 2px 2px 0 rgba(223, 223, 223, 0.50);
         border-radius: 5px;
-        padding:8px * 4;
+        padding:$sr_global-offset-value * 4;
         display:block;
         text-align:center;
     }
@@ -35,7 +37,8 @@
     &--person-company {
         position: absolute;
         bottom: 0px;
-        right: -16px;
+        right: -$sr_global-offset-value * 2;
+
     }
     &--person-name {
         font-size: 24px;

@@ -21,3 +21,10 @@
         text-align: center !important;
     }
 }
+
+.text-center-sm-max {
+    @media (max-width: $screen-sm-max) {
+        text-align: center;
+    }
+}
+
