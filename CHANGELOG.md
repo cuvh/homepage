@@ -2,6 +2,9 @@
 # Changelog 
 ## Enhancv redesign
 
+#1.0.0 - 2018-05-30 
+1. Resumes boxes hover effect 
+
 # 1.0.0 - 2018-05-29
 #Added 
 1. Custom badges styles 
@@ -12,7 +15,6 @@
 6. scroll-behavior: smooth on <html> tag  https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
 7. Single Resume Template 
 8. Default.html > isSuccessfulResumesDetail  
-
 
 # 1.0.0 - 2018-05-21
 #Added 
