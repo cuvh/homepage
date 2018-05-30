@@ -1,0 +1,144 @@
+.resumes {
+    &--others {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        // Overwriting default box style
+        .resumes--box { 
+            position: relative;
+
+            @media screen and (max-width:$screen-xs-max) {
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                padding:($sr_global-offset-value * 3) ($sr_global-offset-value * 2);
+            }
+            @media screen and (min-width:$screen-sm) and (max-width:$screen-sm-max) {
+                padding:$sr_global-offset-value * 3;
+            }
+        }
+        .resumes--person-avatar {
+            @media screen and (max-width:$screen-xs-max) {
+                overflow-x: hidden;
+                margin-left:-$sr_global-offset-value * 2;
+
+                
+                img { 
+                    max-width:127px;
+                    position: relative;
+                    left:-$sr_global-offset-value * 2;
+
+                }
+            }
+        }
+
+        .resumes--person-jobtitle {
+            @media screen and (max-width:$screen-xs-max) {
+                text-align:left;
+            } 
+        }
+    }
+    &--others-wrap {
+        position: relative;
+    }
+    &--others-title {
+        font-family:$headings-font-family;
+        font-size:24px;
+        color:$sr_main-color;
+    }
+    &--others-person-info{
+        @media screen and (max-width:$screen-xs-max) {
+            text-align:left;
+        }
+    }
+    &--hired {
+        font-size: 14px;
+        font-weight: 500;
+        color:#ABACAD;
+
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+        .label {
+            @media screen and (min-width:$screen-sm) and (max-width:$screen-sm-max) {
+                width:100%;
+                display:block;
+                margin-bottom:$sr_global-offset-value;
+            }
+        }
+
+        @media screen and (max-width:$screen-xs-max) {
+            img {
+                max-width:100px;
+            }
+        }
+
+    }
+    &--badge {
+        font-family: $headings-font-family;
+        font-size:14px;
+        font-weight:500;
+        line-height:1;
+        text-transform:uppercase;
+        min-width:8px * 17;
+        box-sizing:border-box;
+        
+
+        position: absolute;
+        top:11px;
+        right:-$sr_global-offset-value;
+        z-index:1;
+        padding:7px 8px 6px 8px;
+        border-radius:5px 0 0 5px;
+        
+        @media screen and (max-width:$screen-sm-max) {
+            padding:6px 5px 5px 5px;
+        }
+
+        @media screen and (min-width:$screen-sm) {
+            padding:7px 8px 6px 8px;
+        }
+    
+
+    }
+    // List filter 
+    &--filter {
+        width:100%;
+        text-align:center;
+        justify-content:center;
+       
+        &-button {
+            font-size:15px;
+            color:rgba(101, 105, 109, 0.5);
+            border:0;
+            background:transparent;
+            transition:0.2s color ease-in-out;
+            position: relative;
+            padding:0 2px;
+
+            margin:0 ($sr_global-offset-value * 4);
+            @media screen and (max-width:$screen-sm-max) {
+                margin:($sr_global-offset-value * 1) ($sr_global-offset-value * 2);
+            }
+            
+            &:hover {
+                color:$sr_button_purple;
+            }
+            &.selected {
+                color:$sr_button_purple;
+                &:after {
+                    content:'';
+                    background:rgba(140, 124, 219, 0.2);
+                    width:100%;
+                    position: absolute;
+                    left:0;
+                    height:1px;
+                    bottom:-3px;
+                }
+            }
+        }
+    }
+
+}
+

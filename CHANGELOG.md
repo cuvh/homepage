@@ -2,6 +2,18 @@
 # Changelog 
 ## Enhancv redesign
 
+# 1.0.0 - 2018-05-29
+#Added 
+1. Custom badges styles 
+2. Pages > offsets-2.scss  - more multipliers
+3. New Subscription box styles 
+4. Modal > Background color
+5. Modal > New Social Buttons 
+6. scroll-behavior: smooth on <html> tag  https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+7. Single Resume Template 
+8. Default.html > isSuccessfulResumesDetail  
+
+
 # 1.0.0 - 2018-05-21
 #Added 
 1. text-center-sm-max class

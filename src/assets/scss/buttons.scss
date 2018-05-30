@@ -249,10 +249,8 @@
     border-radius: 5px;
 }
 
-.btn-resume-preview {
-    width:52px;
-    height:52px;
-    background-size:52px;
+.btn-resume-preview,
+.btn-wow {
     cursor: pointer;
     transition:0.2s background ease-in-out;
 
@@ -264,4 +262,17 @@
     &:focus {
         outline:none;
     }
+}
+
+.btn-resume-preview {
+    width:52px;
+    height:52px;
+    background-size:52px;
+}
+
+.btn-wow {
+    width:58px;
+    height:57px;
+    display: inline-flex;
+    background-size:58px;
 }

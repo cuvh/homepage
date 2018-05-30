@@ -1,5 +1,36 @@
 @import "sr_page";
 @import "sr_resumeslist";
 @import "sr_famouslist";
+@import "sr_single";
+
 @import "sr_background_ornaments";
 @import "sr_block_highlighted_resume";
+@import "sr_block_others_resumes";
+
+@import "sr_badges";
+@import "sr_subscription";
+@import "sr_socials";
+
+@import "sr_cta_resume";
+
+
+
+
+
+#view-resume {
+    button.close {
+        padding: 6px 8px;
+        border-radius: 4px;
+        opacity: 1;
+        text-shadow: none;
+        background: transparent;
+
+        i {
+            color: #fff;
+        }
+    }
+}
+
+
+
+

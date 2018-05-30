@@ -1,7 +1,7 @@
 $spacer-2: 8px;
 $directions: "top" "bottom" "left" "right";
 
-$multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
+$multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
 
 @for $i from 1 through length($multipliers) {
     .m-#{$i - 1} {
@@ -19,18 +19,24 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
             .m-md-#{$direction}-#{$i - 1} {
                 margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
             }
-
             .p-md-#{$direction}-#{$i - 1} {
                 padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
             }
+            .p-md-#{$i - 1} {
+                padding: ceil($spacer-2 * nth($multipliers, $i));
+            }
+
         }
         @media screen and (max-width:$screen-sm-max) {
-             .m-sm-#{$direction}-#{$i - 1} {
+            .m-sm-#{$direction}-#{$i - 1} {
                  margin-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
-             }
-             .p-sm-#{$direction}-#{$i - 1} {
+            }
+            .p-sm-#{$direction}-#{$i - 1} {
                  padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
-             }
+            }
+            .p-sm-#{$i - 1} {
+                padding: ceil($spacer-2 * nth($multipliers, $i));
+            }
         }
         @media screen and (max-width:$screen-xs-max) {
             .m-xs-#{$direction}-#{$i - 1} {
@@ -39,6 +45,10 @@ $multipliers: 0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11;
             .p-xs-#{$direction}-#{$i - 1} {
                 padding-#{$direction}: ceil($spacer-2 * nth($multipliers, $i));
             }
+            .p-xs-#{$i - 1} {
+                padding: ceil($spacer-2 * nth($multipliers, $i));
+            }
+
         }
 
         .m-#{$direction}-#{$i - 1} {

@@ -14,11 +14,19 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
         <h5 class="h5 text-gray-light m-xs-top-1 m-md-top-3">Go through our resume gallery.</h5>
     </section>
     
-    <section class="resumes--accent Grid full-width">
+    <section class="resumes--accent accent--reverse Grid full-width">
         <div class="resumes--preview Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6">
             <span class="resumes--preview-holder">
-                <img src="/img/new-successful-resumes/youtuber-casey-neistat.png" alt="YouTuber Casey Neistat">
-                <button class="btn-resume-preview"></button>
+                <a  href="#view-resume" 
+                    data-toggle="modal" 
+                    data-track="event" 
+                    data-category="Successful Resumes"
+                    data-action="Click Full Resume" 
+                    data-label="Casey Neistat">
+
+                    <img src="/img/new-successful-resumes/youtuber-casey-neistat.png" alt="YouTuber Casey Neistat">
+                    <button class="btn-resume-preview"></button>
+                </a>
             </span>
         </div>
         <div class="resumes--content Grid-cell--md-6 Grid-cell--xs-12">
@@ -34,14 +42,14 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
                     href="#"
                     class="btn btn-big btn-primary m-xs-top-2 m-md-top-6">Read Resume</a>
 
-                <a href="#" class="page--scroll">Explore more resumes</a>
+                <a href="#explore-more-resumes" class="page--scroll">Explore more resumes</a>
             </div>
         </div>
     </section>
 
-    <section class="resumes--famous-list">
+    <section id="explore-more-resumes" class="resumes--famous-list">
         <div class="resumes--famous-wrap Grid m-sm-bottom-3 m-md-bottom-10">
-            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12">
+            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1">
                 <a class="resumes--box" href="#">
                     <span class="resumes--person-avatar">
                         <img src="/img/new-successful-resumes/avatars/steve_jobs/avatar.jpg" alt="Steve Jobs Former Apple CEO">
@@ -56,7 +64,7 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
                     </div>
                 </a>
             </div>
-            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12">
+            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1">
                 <a class="resumes--box" href="#">
                     <span class="resumes--person-avatar">
                         <img src="/img/new-successful-resumes/avatars/steve_jobs/avatar.jpg" alt="Steve Jobs Former Apple CEO">
@@ -71,7 +79,7 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
                     </div>
                 </a>
             </div>
-            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12">
+            <div class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1">
                 <a class="resumes--box" href="#">
                     <span class="resumes--person-avatar">
                         <img src="/img/new-successful-resumes/avatars/steve_jobs/avatar.jpg" alt="Steve Jobs Former Apple CEO">
@@ -102,7 +110,7 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
                 <img class="resume--highlighted-person-image" src="/img/new-successful-resumes/highlighted/hannah_mills.png" alt="Hannah Mills’s story">
                 <span class="resume--highlighted-preview">
                     <img src="/img/new-successful-resumes/highlighted/cv.png" alt="Hannah Mills CV">
-                    <button class="btn-resume-preview"></button>
+                    <a href="#view-resume" class="btn-resume-preview" data-toggle="modal" data-track="event" data-category="Successful Resumes" data-action="Click Full Resume" data-label="Casey Neistat"></a>
                 </span>
             </div>
             <div class="resume--highlighted-content Grid Grid--alignCenter Grid-cell--md-7 Grid-cell--xs-12">
@@ -125,6 +133,168 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
             </div>
         </div>
     </section>
+
+    <section class="resumes--others m-sm-top-4 m-md-top-19 m-sm-bottom-3 m-md-bottom-7">
+        <div class="resumes--list">
+            <h4 class="resumes--others-title text-center">See how others did it</h4>
+            <nav class="resumes--filter m-sm-bottom-2 m-md-bottom-3 m-sm-top-4 m-md-top-5">
+                <button data-class="all"            class="resumes--filter-button selected">All resumes</button>
+                <button data-class="career-change"  class="resumes--filter-button">Careers change</button>
+                <button data-class="job-search"     class="resumes--filter-button">Job search</button>
+                <button data-class="right-next-gig" class="resumes--filter-button">Right next gig</button>
+            </nav>
+        </div>
+        <div class="resumes--others-wrap Grid">
+            <div data-class="all" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--orange">THE RIGHT GIG</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">                        
+                        <h4 class="resumes--person-name m-top-2">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-class="career-change" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--purple">Career change</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">
+                        <h4 class="resumes--person-name m-top-2 m-xs-top-4">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-class="career-change" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--purple">Career change</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">
+                        <h4 class="resumes--person-name m-top-2">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-class="right-next-gig" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--orange">The right gig</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">                        
+                        <h4 class="resumes--person-name m-top-2">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-class="career-change" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--purple">Career change</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">
+                        <h4 class="resumes--person-name m-top-2 m-xs-top-4">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div data-class="career-change" class="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
+                <a class="resumes--box" href="#">
+                    <span class="resumes--badge badge--purple">Career change</span>
+                    <span class="resumes--person-avatar">
+                        <img src="/img/new-successful-resumes/avatars/barack_obama/avatar.jpg" alt="Barack Obama President of United States">                    
+                    </span>
+                    <div class="resumes--others-person-info">
+                        <h4 class="resumes--person-name m-top-2">Barack Obama</h4>
+                        <h5 class="resumes--person-jobtitle">President of United States</h5>
+                        <div class="resumes--hired m-xs-top-2 m-md-top-4">
+                            <span class="label">Hired at</span>
+                            <img class="m-xs-left-1 m-md-left-2" src="/img/new-successful-resumes/avatars/barack_obama/company.png" alt="Nasa logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center m-sm-bottom-4 m-md-bottom-9 m-sm-top-4 m-md-top-10">
+            <a href="#" class="feature-link">See more real resumes &nbsp;→</a>
+        </div>
+    </section>
+    <section class="component--subscription Grid p-top-6 p-sm-bottom-7 text-sm-center">
+        <div class="component--subscription-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
+            <img src="/img/new-successful-resumes/subscription/1.png" alt="Subscription Illustration">
+        </div>  
+        <div class="component--subscription-form Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
+            <h3 class="h2 m-sm-bottom-1 m-md-bottom-2">Get more inspiration</h3>
+            <p class="m-sm-bottom-4 m-md-bottom-4">No spam, just information that will help you build a resume that makes you feel relevant and well represented.</p>
+            <form id="subscribe-form">
+                <div class="component--subscription-form Grid">
+                    <input
+                        type="text" 
+                        class="component--subscription-field form-control Grid-cell--md-8 Grid-cell--xs-12 m-sm-bottom-2" 
+                        id="subscribe-email"
+                        placeholder="Write your email address"/>    
+                    <button
+                        type="submit"
+                        id="subscribe-btn"
+                        class="component--subscription-button btn btn-big btn-primary cta-button Grid-cell--md-4"
+                        data-track="event"
+                        data-category="Successful Resumes"
+                        data-action="Newsletter Subscription">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <div id="view-resume" tabindex="-1" class="modal fade">
+        <div class="modal-dialog modal-lg modal-example">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img width="1240" 
+                        height="1755" 
+                        class="img-responsive" 
+                        src="/img/successful-resumes/famous/casey-neistat/casey-neistat-resume.jpg"
+                        alt="YouTuber Resume, Casey Neistat">
+                </div>
+                {{>sr_social-panel-condensed class="inModal hasBackground" url="famous/casey-neistat.html" facebookText="If you’ve ever
+                achieved something and not felt satisfied, @cneistat has some important lessons to teach you" twitterText="@CaseyNeistat
+                shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple" }}
+            </div>
+        </div>
+        <button type="button" data-dismiss="modal" class="close close-example">
+            <i class="icon-times"></i>
+        </button>
+    </div>
+
 
 </main>
 

@@ -19,9 +19,9 @@
             -webkit-overflow-scrolling: touch;
         }
     }
-    &--box-holder {
-        padding:$sr_global-offset-value;
-    }
+    // &--box-holder {
+    //     padding:$sr_global-offset-value;
+    // }
     &--box {
         background: #FFF;
         box-shadow: 0 2px 2px 0 rgba(223, 223, 223, 0.50);
@@ -29,10 +29,14 @@
         padding:$sr_global-offset-value * 4;
         display:block;
         text-align:center;
+        height: 100%;
     }
     &--person-avatar {
        position: relative;
        display:inline-block;
+       img {
+           max-width:135px;
+       }
     }
     &--person-company {
         position: absolute;

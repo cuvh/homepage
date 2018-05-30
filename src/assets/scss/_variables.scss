@@ -885,17 +885,30 @@ $sr_button_green_hover : #96DFC6;
 $sr_button_green_pressed : #7DC6AD;
 $sr_button_green_unavailable : #B1B3B5;
 // Smalll Button
-$sr_button_green : #8C7CDB;
-$sr_button_green_hover : #C5BDED;
-$sr_button_green_pressed : #ACA4D4;
-$sr_button_green_unavailabe : #B1B3B5;
+$sr_button_purple : #8C7CDB;
+$sr_button_purple_hover : #C5BDED;
+$sr_button_purple_pressed : #ACA4D4;
+$sr_button_purple_unavailabe : #B1B3B5;
 ////////////////////////////////////////////
 ////////////////////////////////////////////
 $sr_resumeslist-background :#FCFCFD;
 $sr_page-scroll:rgba(140, 124, 219, 0.75);
-
-
 /// Dimenttions 
 $sr_global-offset-value: 8px;
+/// Badgees styles
+$badge-white:#fff;
+$badge-purple:#8C7CDB;
+$badge-orange:#FE8F6E;
+
+
+//subscription
+$sr_sr_subscription_body_text:#65696D;
+$sr_subscription_border_top:rgba(151, 151, 151, 0.20);
+
+// article
+$sr_article-body-text:#65696D;
+$sr_article-heading:$sr_main-color;
+
+
 
 

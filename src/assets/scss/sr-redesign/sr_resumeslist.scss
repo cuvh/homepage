@@ -3,8 +3,12 @@
         padding-bottom:$sr_global-offset-value * 9;
         @media screen and (min-width: $screen-md) {
             display: flex;
-            flex-direction: row-reverse;
+            //flex-direction: row-reverse;
             padding-bottom:$sr_global-offset-value * 13;
+
+            &.accent--reverse {
+                flex-direction: row-reverse;
+            }
         }
         @media screen and (max-width: $screen-sm-max) {
             justify-content:center;
