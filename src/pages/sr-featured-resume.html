@@ -19,7 +19,7 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
                 <img class="resume--highlighted-person-image" src="/img/new-successful-resumes/highlighted/hannah_mills.png" alt="Hannah Mills’s story">
                 <span class="resume--highlighted-preview">
                     <img src="/img/new-successful-resumes/highlighted/cv.png" alt="Hannah Mills CV">
-                    <a href="#view-resume" class="btn-resume-preview" data-toggle="modal" data-track="event" data-category="Successful Resumes"
+                    <a href="#view-resume-highlighted" class="btn-resume-preview" data-toggle="modal" data-track="event" data-category="Successful Resumes"
                         data-action="Click Full Resume" data-label="Casey Neistat"></a>
                 </span>
             </div>
@@ -288,13 +288,42 @@ metaImage: "/img/successful-resumes/share-images/sr_share.png"
         </div>
     </section>
 
+    <div id="view-resume-highlighted" tabindex="-1" class="modal fade">
+        <div class="modal-dialog modal-lg modal-example">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img width="1240" height="1755" class="img-responsive" src="/img/successful-resumes/famous/marissa-mayer-resume.jpg"
+                        alt="YouTuber Resume, Casey Neistat">
+                </div>
+                {{>sr_social-panel-condensed class="inModal hasBackground" url="famous/casey-neistat.html" facebookText="If you’ve ever achieved
+                something and not felt satisfied, @cneistat has some important lessons to teach you" twitterText="@CaseyNeistat
+                shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple" }}
+            </div>
+        </div>
+        <button type="button" data-dismiss="modal" class="close close-example">
+            <i class="icon-times"></i>
+        </button>
+    </div>
+
+    <div id="view-resume" tabindex="-1" class="modal fade">
+        <div class="modal-dialog modal-lg modal-example">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img width="1240" height="1755" class="img-responsive" src="/img/successful-resumes/famous/casey-neistat/casey-neistat-resume.jpg"
+                        alt="YouTuber Resume, Casey Neistat">
+                </div>
+                {{>sr_social-panel-condensed class="inModal hasBackground" url="famous/casey-neistat.html" facebookText="If you’ve ever achieved
+                something and not felt satisfied, @cneistat has some important lessons to teach you" twitterText="@CaseyNeistat
+                shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple" }}
+            </div>
+        </div>
+        <button type="button" data-dismiss="modal" class="close close-example">
+            <i class="icon-times"></i>
+        </button>
+    </div>
 
 
 
-
-
-
-    
 </main>
 
 
