@@ -2,6 +2,9 @@
 # Changelog 
 ## Enhancv redesign
 
+#1.0.0 - 2018-06-03 
+1. Featured Resume Template 
+
 #1.0.0 - 2018-05-30 
 1. Resumes boxes hover effect 
 
