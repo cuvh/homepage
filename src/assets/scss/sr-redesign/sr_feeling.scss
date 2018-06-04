@@ -1,0 +1,49 @@
+.component--feeling {
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    width:338px;
+    height:81px;
+    display:inline-flex;
+    justify-content:left;
+    align-items:center;
+    padding:0 $sr_global-offset-value * 3;
+    font-size:14px;
+
+    &.feeling-box-dark {
+        color: rgba(178,180,182,0.60);
+    }
+    &.feeling-box-light {
+        color: $sr_secondary-color;
+    }
+
+    &-emotion {
+        width:38px;
+        height:38px;
+        display:inline-flex;
+        //background:$sr_feelings_background;
+        border-radius:100%;
+        margin:0 $sr_global-offset-value * 1;
+        background-image: url("/img/new-successful-resumes/elements/emojis.png");
+        cursor: pointer;
+
+        &.emotion-smiling {
+            background-position:0 -38px;
+            &:hover {
+                background-position:-38px -38px;
+            }
+        }
+        &.emotion-neutral {
+            background-position:0px 0px;
+            &:hover {
+                background-position:-38px 0px;
+            }
+        }
+        &.emotion-happy {
+            background-position:0 -76px;
+             &:hover {
+                background-position:-38px -76px;
+            }
+        }
+    }
+}
