@@ -24,6 +24,7 @@
         }
         @media screen and (min-width:$screen-md) {
             height:786px;    
+            min-height:680px;
         }
         @media screen and (min-width:1450px) {
             height:98vh;    
@@ -54,9 +55,11 @@
 
         a {
             color:$sr_purple-color;
-            font-weight:500;
+            font-weight:600;
             font-size: 18px;
             position: relative;
+            text-transform:uppercase;
+
             @media screen and (min-width:$screen-md) {
                 transition:0.3s opacity ease-in-out;
                 &:hover:after {
@@ -76,8 +79,6 @@
         }
     }
 }
-
-
 .famous-resume {
        // List of Famous Resumes
        &--boxes {
@@ -143,6 +144,10 @@
             @media screen and (max-width:$screen-sm-max) {
                 display:none;
             }
+        }
+
+        &--person-time-illustration {
+            max-width:100%;
         }
 
 }
