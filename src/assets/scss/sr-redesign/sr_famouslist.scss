@@ -5,18 +5,20 @@
         z-index:1;
         @media screen and (min-width: $screen-md) {
             margin-left:-$sr_global-offset-value;
-            width:calc(100% + $sr_global-offset-value);
+            width:calc(100% + 8px);
+
         }
     }
     &--famous-wrap{
         width:100%;
         @media screen and (max-width:$screen-xs-max) {
-            overflow-x: scroll;
             flex-wrap: nowrap;
             padding-right: 30px;
             width: calc(100% + 15px);
             scroll-behavior:smooth;
             -webkit-overflow-scrolling: touch;
+            overflow: hidden;
+            overflow-x: scroll;
         }
     }
     &--box-holder {

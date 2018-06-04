@@ -4,6 +4,10 @@
 
 #1.0.0 - 2018-06-03 
 1. Featured Resume Template 
+2. header.html > navigation light style class 
+3. header.scss > navigation light style class 
+4. Famous Resume Template 
+5. Typography new color classes
 
 #1.0.0 - 2018-05-30 
 1. Resumes boxes hover effect 
