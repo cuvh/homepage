@@ -1,0 +1,958 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/home/viktor/Work/homepage/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/home/viktor/Work/homepage/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9a1fb69575f434a53f30dae82a7c481d",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "76b3416ad7817b7e5d8757a005f47dee",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ed9e73f85c724a77319ce417a2b81d35",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0f2d6418533a9a05af2b21175d62e84e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "010c057ebb278386398fff131aaa47bb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e1c8f9e22d27c5ce6517e19419399db0",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8f0f61e6ae192bf2a0c242855d7cec00",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "0d178c59d5196cb8ee4c8f1a7f604dae",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-postcss-sass": {
+      "resolve": "/home/viktor/Work/homepage/node_modules/gatsby-plugin-postcss-sass",
+      "id": "Plugin gatsby-plugin-postcss-sass",
+      "name": "gatsby-plugin-postcss-sass",
+      "version": "1.0.21",
+      "pluginOptions": {
+        "plugins": [],
+        "precision": "8",
+        "includePaths": [
+          "/home/viktor/Work/homepage/node_modules",
+          "/home/viktor/Work/homepage/node_modules/bootstrap-sass/assets/stylesheets",
+          "/home/viktor/Work/homepage/node_modules/layout-grid/sass",
+          "/home/viktor/Work/homepage/node_modules/slick-carousel/slick"
+        ],
+        "postCssPlugins": [
+          null
+        ]
+      },
+      "nodeAPIs": [
+        "modifyWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage/node_modules/gatsby-plugin-postcss-sass",
+      "packageJson": {
+        "name": "gatsby-plugin-postcss-sass",
+        "description": "Gatsby plugin to handle scss/sass files with integrated support for also processing with Postcss plugins",
+        "version": "1.0.21",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "postcss",
+          "sass",
+          "scss"
+        ],
+        "author": "Scotty Eckenthal <scotty@meetfabric.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "gatsby-1-config-css-modules",
+            "version": "^1.0.11"
+          },
+          {
+            "name": "gatsby-1-config-extract-plugin",
+            "version": "^1.0.3"
+          },
+          {
+            "name": "node-sass",
+            "version": "^4.5.2"
+          },
+          {
+            "name": "sass-loader",
+            "version": "^4.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ee17c62b983625dcf77ba91a48af7970",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/home/viktor/Work/homepage",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "af35f059383df68f6288299f2a82df10",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/home/viktor/Work/homepage",
+      "packageJson": {
+        "name": "homepage",
+        "description": "Enhancv Homepage",
+        "version": "2.1.0",
+        "main": "index.js",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "bootstrap-sass",
+            "version": "^3.3.7"
+          },
+          {
+            "name": "browser-sync",
+            "version": "^2.18.11"
+          },
+          {
+            "name": "classnames",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "del",
+            "version": "^2.2.2"
+          },
+          {
+            "name": "dotenv",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "fs",
+            "version": "^0.0.1-security"
+          },
+          {
+            "name": "gatsby",
+            "version": "^1.9.247"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.40"
+          },
+          {
+            "name": "gatsby-plugin-postcss-sass",
+            "version": "^1.0.21"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^2.0.10"
+          },
+          {
+            "name": "gatsby-plugin-sass",
+            "version": "^1.0.26"
+          },
+          {
+            "name": "gulp",
+            "version": "git+https://github.com/gulpjs/gulp.git#4.0"
+          },
+          {
+            "name": "gulp-autoprefixer",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "gulp-concat",
+            "version": "^2.6.1"
+          },
+          {
+            "name": "gulp-htmlmin",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "gulp-if",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "gulp-imagemin",
+            "version": "^3.3.0"
+          },
+          {
+            "name": "gulp-load-plugins",
+            "version": "^1.4.0"
+          },
+          {
+            "name": "gulp-replace",
+            "version": "^0.5.4"
+          },
+          {
+            "name": "gulp-rev-all",
+            "version": "^0.9.7"
+          },
+          {
+            "name": "gulp-sass",
+            "version": "^2.3.0"
+          },
+          {
+            "name": "gulp-sourcemaps",
+            "version": "^1.9.1"
+          },
+          {
+            "name": "gulp-uglify",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "gulp-uglifycss",
+            "version": "^1.0.6"
+          },
+          {
+            "name": "imagemin-mozjpeg",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^5.0.1"
+          },
+          {
+            "name": "layout-grid",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "panini",
+            "version": "^1.3.1"
+          },
+          {
+            "name": "react",
+            "version": "16.3"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "scrollreveal",
+            "version": "^3.3.6"
+          },
+          {
+            "name": "slick-carousel",
+            "version": "^1.8.1"
+          },
+          {
+            "name": "sourcebuster",
+            "version": "^1.1.0"
+          },
+          {
+            "name": "stickyfill",
+            "version": "git+https://github.com/wilddeer/stickyfill.git#1.1.4"
+          },
+          {
+            "name": "switch-toggle",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "tilt.js",
+            "version": "^1.2.1"
+          },
+          {
+            "name": "validate.js",
+            "version": "^0.11.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "prettier-ecv",
+            "version": "^1.7.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d5bd18d9bcfdffabbac8b1e46765d881",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby Default Starter"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-06-04T11:40:48.346Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6ae458ff411a8e21b526a12672931f46",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/home/viktor/Work/homepage/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8c2634d71cbcaa33872f5da3ae9b7ec5",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "layout": "index",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/home/viktor/Work/homepage/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e433f7a69dc007aa238758b6448f238c",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /About/Images/": {
+      "layout": "index",
+      "jsonName": "about-images.json",
+      "internalComponentName": "ComponentAboutImages",
+      "path": "/About/Images/",
+      "component": "/home/viktor/Work/homepage/src/pages/About/Images.jsx",
+      "componentChunkName": "component---src-pages-about-images-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Images.jsx",
+      "id": "SitePage /About/Images/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "786a0941c92f73dd55799d84ecc1b502",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /About/Member/": {
+      "layout": "index",
+      "jsonName": "about-member.json",
+      "internalComponentName": "ComponentAboutMember",
+      "path": "/About/Member/",
+      "component": "/home/viktor/Work/homepage/src/pages/About/Member.jsx",
+      "componentChunkName": "component---src-pages-about-member-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Member.jsx",
+      "id": "SitePage /About/Member/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "ca6224510f6a42bb0bd3c883834b6ed9",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /About/Members/": {
+      "layout": "index",
+      "jsonName": "about-members.json",
+      "internalComponentName": "ComponentAboutMembers",
+      "path": "/About/Members/",
+      "component": "/home/viktor/Work/homepage/src/pages/About/Members.jsx",
+      "componentChunkName": "component---src-pages-about-members-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Members.jsx",
+      "id": "SitePage /About/Members/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "36253fafd021a79fada44e1262052d53",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /careers/": {
+      "layout": "index",
+      "jsonName": "careers.json",
+      "internalComponentName": "ComponentCareers",
+      "path": "/careers/",
+      "component": "/home/viktor/Work/homepage/src/pages/careers.js",
+      "componentChunkName": "component---src-pages-careers-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/careers.js",
+      "id": "SitePage /careers/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1d079f2494194d78dc02088a86718e40",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Homepage/Benefits/": {
+      "layout": "index",
+      "jsonName": "homepage-benefits.json",
+      "internalComponentName": "ComponentHomepageBenefits",
+      "path": "/Homepage/Benefits/",
+      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Benefits.jsx",
+      "componentChunkName": "component---src-pages-homepage-benefits-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Benefits.jsx",
+      "id": "SitePage /Homepage/Benefits/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c13bb160c424cece988f1167be328b97",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Homepage/Customize/": {
+      "layout": "index",
+      "jsonName": "homepage-customize.json",
+      "internalComponentName": "ComponentHomepageCustomize",
+      "path": "/Homepage/Customize/",
+      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Customize.jsx",
+      "componentChunkName": "component---src-pages-homepage-customize-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Customize.jsx",
+      "id": "SitePage /Homepage/Customize/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5de21bafe9786eb7ff8a28df20a153b2",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Homepage/HomepageCTA/": {
+      "layout": "index",
+      "jsonName": "homepage-homepage-cta.json",
+      "internalComponentName": "ComponentHomepageHomepageCta",
+      "path": "/Homepage/HomepageCTA/",
+      "component": "/home/viktor/Work/homepage/src/pages/Homepage/HomepageCTA.js",
+      "componentChunkName": "component---src-pages-homepage-homepage-cta-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/HomepageCTA.js",
+      "id": "SitePage /Homepage/HomepageCTA/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d3040ee40c2e4ddec138dc309cd541ac",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Homepage/Spotlight/": {
+      "layout": "index",
+      "jsonName": "homepage-spotlight.json",
+      "internalComponentName": "ComponentHomepageSpotlight",
+      "path": "/Homepage/Spotlight/",
+      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Spotlight.jsx",
+      "componentChunkName": "component---src-pages-homepage-spotlight-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Spotlight.jsx",
+      "id": "SitePage /Homepage/Spotlight/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a946b85ffecd8660fc36e4cc50724ad5",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/viktor/Work/homepage/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "59eced859e8a6e30e736c11d5438eb2c",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /pricing/": {
+      "layout": "index",
+      "jsonName": "pricing.json",
+      "internalComponentName": "ComponentPricing",
+      "path": "/pricing/",
+      "component": "/home/viktor/Work/homepage/src/pages/pricing.js",
+      "componentChunkName": "component---src-pages-pricing-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/pricing.js",
+      "id": "SitePage /pricing/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "409f31880841a8c8c321639ca5be4216",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /Pricing/PricingBenefits/": {
+      "layout": "index",
+      "jsonName": "pricing-pricing-benefits.json",
+      "internalComponentName": "ComponentPricingPricingBenefits",
+      "path": "/Pricing/PricingBenefits/",
+      "component": "/home/viktor/Work/homepage/src/pages/Pricing/PricingBenefits.jsx",
+      "componentChunkName": "component---src-pages-pricing-pricing-benefits-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/Pricing/PricingBenefits.jsx",
+      "id": "SitePage /Pricing/PricingBenefits/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b406d79e4e2b2cc0e25d4f374be146e5",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/home/viktor/Work/homepage/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8ea45f419096a9ee54f2a0096d811e7e",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /terms/": {
+      "layout": "index",
+      "jsonName": "terms.json",
+      "internalComponentName": "ComponentTerms",
+      "path": "/terms/",
+      "component": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "componentChunkName": "component---src-pages-terms-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "id": "SitePage /terms/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9f42f68282233afa8d0c302f6dfec4f6",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /privacy/": {
+      "layout": "index",
+      "jsonName": "privacy.json",
+      "internalComponentName": "ComponentPrivacy",
+      "path": "/privacy/",
+      "component": "/home/viktor/Work/homepage/src/pages/privacy.js",
+      "componentChunkName": "component---src-pages-privacy-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/privacy.js",
+      "id": "SitePage /privacy/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4bff24c1e7b3cd5ea32ad8ebc512b96b",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "2f00d10eeff41791e767d26221398382"
+  },
+  "componentDataDependencies": {
+    "nodes": {},
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}

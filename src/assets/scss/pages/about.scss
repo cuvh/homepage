@@ -1,13 +1,28 @@
+$img-cover: "../img/about/hero.jpg";
+$img-cover-2: "../img/about/hero@2x.jpg";
+
 .about-hero {
     padding-top: 340px;
     padding-bottom: 120px;
     color: white;
-    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
-        url(/img/about/hero.jpg);
-    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
-        -webkit-image-set(url(/img/about/hero.jpg) 1x, url(/img/about/hero@2x.jpg) 2x);
-    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
-        image-set(url(/img/about/hero.jpg) 1x, url(/img/about/hero@2x.jpg) 2x);
+    background: linear-gradient(
+            180deg,
+            rgba($brand-primary, 0.3) 0%,
+            $brand-primary 100%
+        ),
+        url($img-cover);
+    background: linear-gradient(
+            180deg,
+            rgba($brand-primary, 0.3) 0%,
+            $brand-primary 100%
+        ),
+        -webkit-image-set(url($img-cover) 1x, url($img-cover-2) 2x);
+    background: linear-gradient(
+            180deg,
+            rgba($brand-primary, 0.3) 0%,
+            $brand-primary 100%
+        ),
+        image-set(url($img-cover) 1x, url($img-cover-2) 2x);
     background-size: cover;
     background-position: center;
     position: relative;

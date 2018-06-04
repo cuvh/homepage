@@ -31,12 +31,28 @@
 
         padding-bottom: 40px;
         color: white;
-        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-            url(/img/career/header.jpg);
-        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-            -webkit-image-set(url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
-        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
-            image-set(url(/img/career/header.jpg) 1x, url(/img/career/header@2x.jpg) 2x);
+        background: linear-gradient(
+                180deg,
+                rgba($brand-primary, 0) 0%,
+                $brand-primary 95%
+            ),
+            url(../img/career/header.jpg);
+        background: linear-gradient(
+                180deg,
+                rgba($brand-primary, 0) 0%,
+                $brand-primary 95%
+            ),
+            -webkit-image-set(url(../img/career/header.jpg) 1x, url(../img/career/header@2x.jpg)
+                        2x);
+        background: linear-gradient(
+                180deg,
+                rgba($brand-primary, 0) 0%,
+                $brand-primary 95%
+            ),
+            image-set(
+                url(../img/career/header.jpg) 1x,
+                url(../img/career/header@2x.jpg) 2x
+            );
         background-size: cover;
         background-position: center;
 

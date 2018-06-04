@@ -1,6 +1,6 @@
 .pricing-header {
 	position: relative;
-	background-image: url(/img/enhancv-pricing-small.jpg);
+	background-image: url(../img/enhancv-pricing-small.jpg);
 	background-size: cover;
 	background-position: center center;
 	padding-top: 60px;
@@ -13,7 +13,7 @@
 	}
 
 	@media screen and (min-width: $screen-lg) {
-		background-image: url(/img/enhancv-pricing.jpg);
+		background-image: url(../img/enhancv-pricing.jpg);
 	}
 
 	@media screen and (min-width: $screen-md) {
@@ -311,7 +311,7 @@
 
 	.plan-name {
 		font-size: 21px;
-        font-family: "Rubik";
+		font-family: "Rubik";
 		color: #808080;
 	}
 
@@ -359,9 +359,9 @@
 		position: relative;
 		width: 294px;
 
-        .tab-price {
-            font-family: "Rubik";
-        }
+		.tab-price {
+			font-family: "Rubik";
+		}
 
 		@media screen and (max-width: $screen-sm) {
 			width: 248px;
@@ -425,7 +425,7 @@
 
 .billed-text {
 	line-height: 16px;
-	font-size:$font-size-small;
+	font-size: $font-size-small;
 }
 
 .pricing-benefits {
