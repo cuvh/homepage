@@ -177,7 +177,7 @@ body.resumedetail {
 
 }
 
-
+// Famous resume
 .famous-resume--container-dark {
     background-repeat: no-repeat;
     background-position: top center;
@@ -185,5 +185,21 @@ body.resumedetail {
     @media screen and (min-width: $screen-sm) {
         background-image: url("/img/new-successful-resumes/famous/dark-bgr-subscribe-section.jpg");
     }
+    @media screen and (max-width:$screen-xs-max) {
+        background-image: url("/img/new-successful-resumes/famous/dark-bgr-subscribe-section-mobile.jpg");
+    }
+}
+
+
+// Component wit feeelings  
+
+.component--feeling {
+    &.feeling-box-dark {
+        background-image: url("/img/new-successful-resumes/elements/feeling-dark.png");
+    }
+    &.feeling-box-light {
+        background-image: url("/img/new-successful-resumes/elements/feeling-light.png");
+    }
+
 }
 

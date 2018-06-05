@@ -11,11 +11,16 @@
 @import "sr_subscription";
 @import "sr_socials";
 @import "sr_bullets";
+@import "sr_feeling";
 
 
 @import "sr_cta_resume";
 @import "sr_famous_resume";
 
+// Famous Resume components 
+@import "components/sr_component_testimonial";
+@import "components/sr_component_list_with_thumbs";
+@import "components/sr_component_books";
 
 
 #view-resume {
