@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -22,10 +23,10 @@ export default function Layout({ children, title, className }) {
                     <div className="col-sm-3">
                         <ul className="list-unstyled text-page-menu">
                             <li>
-                                <a href="/terms">Terms of service</a>
+                                <Link to="/terms">Terms of service</Link>
                             </li>
                             <li>
-                                <a href="/privacy">Privacy policy</a>
+                                <Link to="/privacy">Privacy policy</Link>
                             </li>
                         </ul>
                     </div>

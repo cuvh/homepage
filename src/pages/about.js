@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "gatsby-link";
+
 import Members from "components/About/Members";
 import Images from "components/About/Images";
 import Helmet from "react-helmet";
@@ -118,12 +120,12 @@ export default function About() {
             <div className="about-join">
                 <div className="container p-top-11 p-bottom-11 text-center">
                     <h4>Interested in working with us? Join our team</h4>
-                    <a
-                     href="/careers.html"
+                    <Link
+                     to="/careers"
                      className="btn btn-primary top-sm"
                     >
                         View Careers
-                    </a>
+                    </Link>
                 </div>
             </div>
         </DefaultLayout>

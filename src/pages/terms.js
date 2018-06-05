@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import TextLayout from "layouts/TextLayout";
+import Link from "gatsby-link";
 
 export default function Terms() {
     return (
@@ -111,9 +112,8 @@ export default function Terms() {
                 <h5>Privacy</h5>
                 <p>
                     Your personal information and content is governed by our{" "}
-                    <a href="/privacy.html">Privacy Policy</a>. By using
-                    Enhancv, you agree to our{" "}
-                    <a href="/privacy.html">Privacy Policy</a>.
+                    <Link to="/privacy">Privacy Policy</Link>. By using Enhancv,
+                    you agree to our <Link to="/privacy">Privacy Policy</Link>.
                 </p>
 
                 <h5>Limited Warranties and Liability</h5>

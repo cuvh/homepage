@@ -7,28 +7,24 @@ import memorableIcon from "assets/img/new-homepage/icons/memorable.svg";
 
 const BENEFITS = [
 	{
-		id: "1",
 		title: "Simple editing",
 		description:
 			"Make changes straight on the page and see a preview of the resume without downloading it.",
 		icon: editIcon
 	},
 	{
-		id: "2",
 		title: "No learning curve",
 		description:
 			"Each step of building your resume is so natural, you don’t have to figure things out on your own.",
 		icon: learningcurveIcon
 	},
 	{
-		id: "3",
 		title: "Balance the personal and the professional",
 		description:
 			"Showcase personal strengths and key drivers in addition to your skills to demonstrate culture fit.",
 		icon: balanceIcon
 	},
 	{
-		id: "4",
 		title: "A memorable resume",
 		description:
 			"The distinct visual style will make people remember you and the key things about you, even in a pile of resumes.",
@@ -44,7 +40,7 @@ export default function Benefits() {
 					{BENEFITS.map((benefit, index) => (
 						<div
 						 key={index}
-						 id={`benefits-item-${benefit.id}`}
+						 id={`benefits-item-${index}`}
 						 className="Grid-cell--md-3 Grid-cell--sm-6 Grid-cell--xs-12 m-top-4 text-center benefits-item"
 						>
 							<div>

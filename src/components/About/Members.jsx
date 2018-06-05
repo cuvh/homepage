@@ -1,6 +1,22 @@
 import React from "react";
 import Member from "./Member";
 
+import volenImage from "assets/img/about/member/volen-valkov.jpg";
+import dimitarImage from "assets/img/about/member/dimitar-vouldjeff.jpg";
+import viktorImage from "assets/img/about/member/viktor-kirilov.jpg";
+import alexanderImage from "assets/img/about/member/aleksander-ginovski.jpg";
+import radostinaImage from "assets/img/about/member/radostina-georgieva.jpg";
+import colmImage from "assets/img/about/member/colm-roche.jpg";
+import velinaImage from "assets/img/about/member/velina-getova.jpg";
+import giziImage from "assets/img/about/member/gizdava-geneva.jpg";
+import vessyImage from "assets/img/about/member/vessy-tasheva.jpg";
+import tatianaImage from "assets/img/about/member/tatiana-rehmova.jpg";
+import vassyImage from "assets/img/about/member/vassilena-valchanova.jpg";
+import irinaImage from "assets/img/about/member/irina-lilova.jpg";
+import denitsaImage from "assets/img/about/member/denitsa-petrova.jpg";
+import ericImage from "assets/img/about/member/eric-halsey.jpg";
+import damjanImage from "assets/img/about/member/damjan-obal.jpg";
+
 export default function Members() {
 	return (
 		<div className="container top-lg">
@@ -8,7 +24,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member
 					 id="volen-valkov"
-					 image="volen-valkov"
+					 image={volenImage}
 					 name="Volen Valkov"
 					 facebook="volen.vulkov"
 					 twitter="volenvulkov"
@@ -19,7 +35,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="dimitar-vouldjeff"
-					 image="dimitar-vouldjeff"
+					 image={dimitarImage}
 					 facebook="vouldjeff"
 					 twitter="vouldjeff"
 					 name="Dimitar Vouldjeff"
@@ -30,7 +46,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0">
 					<Member
 					 id="viktor-kirilov"
-					 image="viktor-kirilov"
+					 image={viktorImage}
 					 name="Viktor Kirilov"
 					 facebook="deepsylol"
 					 twitter="deepsylol"
@@ -44,7 +60,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="aleksander-ginovski"
-					 image="aleksander-ginovski"
+					 image={alexanderImage}
 					 name="Aleksander Ginovski"
 					 facebook="a.ginovski"
 					 instagram="a.ginovski"
@@ -58,7 +74,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member
 					 id="radostina-georgieva"
-					 image="radostina-georgieva"
+					 image={radostinaImage}
 					 instagram="radostinagg"
 					 dribbble="RadostinaG"
 					 name="Radostina Georgieva"
@@ -69,7 +85,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="colm-roche"
-					 image="colm-roche"
+					 image={colmImage}
 					 name="Colm Roche"
 					 linkedin="colmr"
 					 position="Customer Success Enhancer"
@@ -79,7 +95,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0">
 					<Member
 					 id="tatiana-rehmova"
-					 image="tatiana-rehmova"
+					 image={tatianaImage}
 					 name="Tatiana Rehmova"
 					 facebook="tatiana.rehmova"
 					 twitter="TRehmova"
@@ -91,7 +107,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="vassilena-valchanova"
-					 image="vassilena-valchanova"
+					 image={vassyImage}
 					 name="Vassilena Valchanova"
 					 position="Growth Enhancer"
 					 facebook="vasvalch"
@@ -105,7 +121,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member
 					 id="vessy-tasheva"
-					 image="vessy-tasheva"
+					 image={vessyImage}
 					 name="Vessy Tasheva"
 					 facebook="vessy.tash"
 					 instagram="vessytash"
@@ -120,7 +136,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="velina-getova"
-					 image="velina-getova"
+					 image={velinaImage}
 					 name="Velina Getova"
 					 position="Talent & Leadership Enhancer"
 					 description="Leadership catalyst inspiring mastery in others. Crazy in love with my WHY: to reinvent the magical formula for people success, business value and personal fulfillment. Food-lover, gym junkie, first trained as a pianist, turned into a psychologist, ended up as an eternal optimist."
@@ -129,7 +145,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0">
 					<Member
 					 id="denitsa-petrova"
-					 image="denitsa-petrova"
+					 image={denitsaImage}
 					 name="Denitsa Petrova"
 					 facebook="denitsapetrova1406"
 					 instagram="denitsa.pe"
@@ -140,7 +156,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="irina-lilova"
-					 image="irina-lilova"
+					 image={irinaImage}
 					 name="Irina Lilova"
 					 position="Relationships Enhancer"
 					 description="An ex control-lover who embraced the power of adaptation, and thinks authentic is the new sexy. People-oriented and curious about bringing useful concepts to life. Believes that making a breakthrough might take a lot, but is only possible if you enjoy the process. TED volunteer, music addict, and passionate traveller."
@@ -151,7 +167,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member
 					 id="damjan-obal"
-					 image="damjan-obal"
+					 image={damjanImage}
 					 name="Damjan Obal"
 					 position="UX Designer"
 					 description="Product crafter more than mildly obsessed with people and especially with understanding what makes them tick & click. Designer by heart, researcher by trade, storyteller at night."
@@ -160,7 +176,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5">
 					<Member
 					 id="eric-halsey"
-					 image="eric-halsey"
+					 image={ericImage}
 					 name="Eric Halsey"
 					 facebook="eric.halsey.10"
 					 instagram="ehalsey1"
@@ -172,7 +188,7 @@ export default function Members() {
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0">
 					<Member
 					 id="gizdava-geneva"
-					 image="gizdava-geneva"
+					 image={giziImage}
 					 name="Gizdava Geneva"
 					 instagram="gizchoo"
 					 position="Junior Front-End Developer"

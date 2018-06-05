@@ -115,32 +115,32 @@ const IndexPage = () => (
 					<p className="text-muted-deep text-small text-center">
 						Our users got noticed and hired by their top choice
 						companies — read more about their journey to the perfect
-						job
-						<a
+						job&nbsp;
+						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
-						 href="/successful-resumes.html"
+						 to="/successful-resumes"
 						 className="feature-link"
 						>
 							here
-						</a>.
+						</Link>.
 					</p>
 				</div>
 				<div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
 					<p className="text-muted-deep text-small text-center">
 						Our users got noticed and hired by their top choice
 						companies — read more about their journey to the perfect
-						job
-						<a
+						job&nbsp;
+						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
-						 href="/successful-resumes.html"
+						 to="/successful-resumes"
 						 className="feature-link"
 						>
 							here
-						</a>.
+						</Link>.
 					</p>
 				</div>
 			</div>

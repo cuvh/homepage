@@ -1,11 +1,17 @@
 import React from "react";
 import Helmet from "react-helmet";
+import classnames from "classnames";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
 import PricingBenefits from "components/Pricing/PricingBenefits";
 import PricingTabs from "components/Pricing/PricingTabs";
 import HomepageCTA from "components/Homepage/HomepageCTA";
+
+import browserWidth from "utils/browserWidth";
+
+import smallHeaderImage from "assets/img/enhancv-pricing-small.jpg";
+import bigHeaderImage from "assets/img/enhancv-pricing.jpg";
 
 // noNavigation: true
 // socialTitle: "Enhancv: A resume to be proud of"
@@ -17,8 +23,17 @@ const BASIC = "basic";
 
 export default class Pricing extends React.PureComponent {
 	state = {
-		type: PRO
+		type: PRO,
+		loaded: false
 	};
+
+	componentDidMount() {
+		// 1200
+
+		const image = new Image();
+		image.onload = () => this.setState({ loaded: true });
+		image.src = bigHeaderImage;
+	}
 
 	render() {
 		const { type } = this.state;
@@ -34,7 +49,11 @@ export default class Pricing extends React.PureComponent {
 					}
 				 ]}
 				/>
-				<div className="pricing-header">
+				<div
+				 className={classnames("pricing-header", {
+					"pricing-header-loaded": this.state.loaded
+				 })}
+				>
 					<div className="container text-center">
 						<h1 className="hidden-xs hidden-sm md-lg-heading-margin">
 							Are you proud when you show your resume?

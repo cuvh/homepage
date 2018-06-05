@@ -496,7 +496,7 @@ export default function SuccessfulResumes() {
                             </div>
                             <SocialPanel
                              classNameName="inModal hasBackground"
-                             url="famous/casey-neistat.html"
+                             url="famous/casey-neistat"
                              facebookText="If you’ve ever
                 achieved something and not felt satisfied, @cneistat has some important lessons to teach you"
                              twitterText="@CaseyNeistat

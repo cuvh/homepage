@@ -19,7 +19,7 @@ export default function Member({
 		<div className="member center-block bottom-md">
 			<div
 			 className="member-thumb"
-			 style={{ backgroundImage: `url(/img/about/member/${image}.jpg)` }}
+			 style={{ backgroundImage: `url(${image})` }}
 			/>
 
 			<a
@@ -47,7 +47,7 @@ export default function Member({
 						<div className="embed-responsive embed-responsive-member">
 							<div
 							 style={{
-								backgroundImage: `url(/img/about/member/${image}.jpg)`
+								backgroundImage: `url(${image})`
 							 }}
 							 className="embed-responsive-item"
 							/>

@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "utils/Image";
 
 import spotlightImg from "assets/img/new-homepage/spotlight@2x.png";
 import spotlightBackImg from "assets/img/new-homepage/spotlight_back@2x.png";
@@ -10,7 +11,8 @@ export default function SportLight() {
 				<div className="animate-in Grid">
 					<div className="Grid Grid--alignCenter Grid-cell--xs-12 Grid-cell--sm-6 Grid-cell--lg-6 Grid-cell--sm-offset-1 Grid-cell--lg-offset-1 spotlight-image">
 						<div className="relative m-top-1 spotlight-stacked-images">
-							<img
+							<LazyImage
+							 delay={300}
 							 style={{
 								width: "100%",
 								position: "absolute",
@@ -21,7 +23,8 @@ export default function SportLight() {
 							 }}
 							 src={spotlightBackImg}
 							/>
-							<img
+							<LazyImage
+							 delay={300}
 							 className="spotlight-animate"
 							 style={{
 								width: "131%",

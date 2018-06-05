@@ -1,19 +1,27 @@
+.pricing-header-loaded {
+	background-image: url(../img/enhancv-pricing-small.jpg);
+
+	@media screen and (min-width: $screen-lg) {
+		background-image: url(../img/enhancv-pricing.jpg);
+	}
+	filter: blur(0px) !important;
+}
+
 .pricing-header {
 	position: relative;
-	background-image: url(../img/enhancv-pricing-small.jpg);
+	background-color: #e8ebe9;
 	background-size: cover;
 	background-position: center center;
 	padding-top: 60px;
 	margin-top: -78px;
 	height: 459px;
 
+	filter: blur(30px);
+	transition: filter 0.2s;
+
 	@media screen and (min-width: $screen-sm-min) {
 		height: 613px;
 		padding-top: 100px;
-	}
-
-	@media screen and (min-width: $screen-lg) {
-		background-image: url(../img/enhancv-pricing.jpg);
 	}
 
 	@media screen and (min-width: $screen-md) {

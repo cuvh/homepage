@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import classnames from "classnames";
 import Helmet from "react-helmet";
 
@@ -121,12 +122,12 @@ export default function Careers() {
                                         world, and we truly embrace that.
                                     </div>
                                     <div className="text-center">
-                                        <a
-                                         href="/about.html"
+                                        <Link
+                                         to="/about"
                                          className="btn btn-muted"
                                         >
                                             See the rest of the team
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

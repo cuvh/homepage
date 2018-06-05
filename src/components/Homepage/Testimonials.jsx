@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import Tilt from "react-tilt";
+import LazyImage from "utils/Image";
 
 import danielLogo from "assets/img/new-homepage/testimonials/daniel@2x.png";
 import akshayLogo from "assets/img/new-homepage/testimonials/akshay@2x.png";
@@ -55,10 +57,20 @@ export default function Testimonials() {
                          key={index}
                         >
                             <div className="Grid Grid--alignCenter Grid-cell--xs-12 Grid-cell--sm-3 text-center Grid-cell--sm-offset-1 Grid-cell--lg-offset-1">
-                                <img
-                                 className="testimonial-image m-bottom-2"
-                                 src={image}
-                                />
+                                <Tilt
+                                 className="Tilt"
+                                 options={{
+                                    glare: true,
+                                    maxGlare: 1,
+                                    maxTilt: 25
+                                 }}
+                                >
+                                    <LazyImage
+                                     delay={500}
+                                     className="testimonial-image m-bottom-2"
+                                     src={image}
+                                    />
+                                </Tilt>
                             </div>
                             <div className="Grid testimonial-valign Grid-cell--xs-12 Grid-cell--sm-6 Grid-cell--sm-offset-1 Grid-cell--lg-offset-1">
                                 <div className="m-left-1 text-center-xs">
