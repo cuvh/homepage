@@ -252,7 +252,7 @@ h2 {
 	}
 }
 .h5,.h6 {
-	&:not(.text-white-smoke):not(.text-md-white-smoke) {
+	&:not(.text-white-smoke):not(.text-md-white-smoke):not(.text-dark-grey) {
 		color: $sr_secondary-color;
 	}
 }

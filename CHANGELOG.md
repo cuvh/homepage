@@ -2,6 +2,10 @@
 # Changelog 
 ## Enhancv redesign
 
+#1.0.0 - 2018-06-05
+1. Offsets-2 -> Another negative value 
+2. Famous Resume All Components 
+
 #1.0.0 - 2018-06-03 
 1. Featured Resume Template 
 2. header.html > navigation light style class 

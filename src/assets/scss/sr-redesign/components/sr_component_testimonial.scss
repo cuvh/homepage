@@ -1,0 +1,29 @@
+.component{
+    &--testimonial {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size:auto 100%;
+        @media screen and (min-width: $screen-xs) {
+            background-image: url("/img/new-successful-resumes/elements/component-testimonial.jpg");
+        }
+        @media screen and (max-width:$screen-xs - 1) {
+            background-image: url("/img/new-successful-resumes/elements/component-testimonial-mobile.jpg");
+        }
+
+        blockquote {
+            border:0;
+            font-size: 18px;
+            line-height: 30px;
+            @media screen and (max-width:$screen-xs-max) {
+                padding:0;
+            }
+            @media screen and (min-width: $screen-md) {
+                font-size: 24px;
+                line-height: 38px;
+            }
+        }
+    }
+    &--testimonial-autor{
+        font-size:14px;
+    }
+}
