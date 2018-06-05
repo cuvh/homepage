@@ -878,40 +878,40 @@ $hr-border: $gray-lighter !default;
 ////////////////////////////////////////////
 $sr_main-color : #384347;
 $sr_secondary-color : #65696D;
+$sr_purple-color : #8C7CDB;
+
+$sr_white: #fff;
+$sr_white-smoke: #B2B4B6;
 ///////////////// Buttons //////////////////
-// Default Botton
+// Default Buttons
 $sr_button_green : #2DC08D;
 $sr_button_green_hover : #96DFC6;
 $sr_button_green_pressed : #7DC6AD;
 $sr_button_green_unavailable : #B1B3B5;
 // Smalll Button
-$sr_button_purple : #8C7CDB;
+$sr_button_purple : $sr_purple-color;
 $sr_button_purple_hover : #C5BDED;
 $sr_button_purple_pressed : #ACA4D4;
 $sr_button_purple_unavailabe : #B1B3B5;
-////////////////////////////////////////////
-////////////////////////////////////////////
+///////////////// Dimensions //////////////////
+$sr_global-offset-value: 8px;
+///////////////// Components //////////////////
 $sr_resumeslist-background :#FCFCFD;
 $sr_page-scroll:rgba(140, 124, 219, 0.75);
-/// Dimenttions 
-$sr_global-offset-value: 8px;
 /// Badgees styles
 $badge-white:#fff;
-$badge-purple:#8C7CDB;
+$badge-purple:$sr_purple-color;
 $badge-orange:#FE8F6E;
-
-
-//subscription
+////Subscription
 $sr_sr_subscription_body_text:#65696D;
 $sr_subscription_border_top:rgba(151, 151, 151, 0.20);
-
-// article
+//Article
 $sr_article-body-text:#65696D;
 $sr_article-heading:$sr_main-color;
-
-
-
-// Easing 
+//Famous Resume 
+$sr_famous_header_bg_dark:$sr_main-color;
+$sr_famous_header_bg_light:#FCFCFD;
+///////////////// Easing //////////////////
 $ease-BounceInOut: cubic-bezier(0, 1.15, 0.46, 1.17);
 $ease-ExpoInOut: cubic-bezier(1.000, 0.000, 0.000, 1.000);
 

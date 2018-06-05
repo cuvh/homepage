@@ -1,9 +1,9 @@
 import React from "react";
-import Members from "./About/Members";
-import Images from "./About/Images";
+import Members from "components/About/Members";
+import Images from "components/About/Images";
 import Helmet from "react-helmet";
 
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultLayout from "layouts/DefaultLayout";
 
 export default function About() {
     return (

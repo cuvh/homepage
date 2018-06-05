@@ -1,0 +1,10 @@
+.bullet {
+    display:inline-flex;
+    width:10px;
+    height:10px;
+    background:#000;
+    border-radius:100%;
+    position: relative;
+    top: -1px;
+    margin-right:$sr_global-offset-value * 2;
+}

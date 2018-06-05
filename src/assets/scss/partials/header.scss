@@ -252,3 +252,19 @@ body.navbar-mobile-active {
         }
     }
 }
+
+
+// Navbar light style class
+
+body:not(.navbar-mobile-active) .navbar.navbar-light {
+    transition:0.2s background ease-in-out, 0.2s border ease-in-out;
+
+    &:not(.navbar-stick) {
+        background-color:transparent;
+        border-color:transparent;
+
+        .navbar-nav>li>a {
+            color: #fff;
+        }
+    }
+}

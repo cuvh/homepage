@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import TextLayout from "../layouts/TextLayout";
+import TextLayout from "layouts/TextLayout";
 
 export default function Terms() {
     return (

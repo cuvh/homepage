@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
+import { withRouter } from "react-router";
+import classnames from "classnames";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 
-export default function Header() {
+function Header({ location: { pathname } }) {
     return (
         <div>
             <div className="navigation-spacer" />
@@ -26,8 +28,8 @@ export default function Header() {
                                 &times;
                             </div>
                         </button>
-                        <a
-                         href="/"
+                        <Link
+                         to="/"
                          className="navbar-logo-wrapper"
                         >
                             <img
@@ -37,20 +39,28 @@ export default function Header() {
                              width="144"
                              height="23"
                             />
-                        </a>
+                        </Link>
 
                         <div className="navbar-center">
                             <ul className="list-unstyled navbar-mobile-menu navbar-mobile-visible bottom-md">
                                 <li className="active">
                                     <a href="/">Homepage</a>
                                 </li>
-                                <li className="active">
-                                    <a href="/successful-resumes.html">
+                                <li
+                                 className={classnames({
+                                    active: pathname === "/successful-resumes"
+                                 })}
+                                >
+                                    <Link to="/successful-resumes">
                                         Successful Resumes
-                                    </a>
+                                    </Link>
                                 </li>
-                                <li className="active">
-                                    <a href="/pricing.html">Pricing</a>
+                                <li
+                                 className={classnames({
+                                    active: pathname === "/pricing"
+                                 })}
+                                >
+                                    <Link to="/pricing">Pricing</Link>
                                 </li>
                                 <li>
                                     <a
@@ -88,13 +98,21 @@ export default function Header() {
 
                     <div className="collapse navbar-collapse">
                         <ul className="nav navbar-nav navbar-right">
-                            <li className="active">
-                                <a href="/successful-resumes.html">
+                            <li
+                             className={classnames({
+                                active: pathname === "/successful-resumes"
+                             })}
+                            >
+                                <Link to="/successful-resumes">
                                     Successful Resumes
-                                </a>
+                                </Link>
                             </li>
-                            <li className="active">
-                                <a href="/pricing.html">Pricing</a>
+                            <li
+                             className={classnames({
+                                active: pathname === "/pricing"
+                             })}
+                            >
+                                <Link to="/pricing">Pricing</Link>
                             </li>
 
                             <li>
@@ -128,3 +146,5 @@ export default function Header() {
         </div>
     );
 }
+
+export default withRouter(Header);

@@ -79,6 +79,7 @@
             width:1px;
             height:22px;
             display:inline-block;
+            opacity:0.3;
             @media screen and (max-width:$screen-sm-max) {
                 display:none;
             }

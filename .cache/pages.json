@@ -21,27 +21,6 @@
         "path": "/about/"
     },
     {
-        "componentChunkName": "component---src-pages-about-images-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "about-images.json",
-        "path": "/About/Images/"
-    },
-    {
-        "componentChunkName": "component---src-pages-about-member-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "about-member.json",
-        "path": "/About/Member/"
-    },
-    {
-        "componentChunkName": "component---src-pages-about-members-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "about-members.json",
-        "path": "/About/Members/"
-    },
-    {
         "componentChunkName": "component---src-pages-careers-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -49,32 +28,11 @@
         "path": "/careers/"
     },
     {
-        "componentChunkName": "component---src-pages-homepage-benefits-jsx",
+        "componentChunkName": "component---src-pages-enhancv-button-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "homepage-benefits.json",
-        "path": "/Homepage/Benefits/"
-    },
-    {
-        "componentChunkName": "component---src-pages-homepage-customize-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "homepage-customize.json",
-        "path": "/Homepage/Customize/"
-    },
-    {
-        "componentChunkName": "component---src-pages-homepage-homepage-cta-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "homepage-homepage-cta.json",
-        "path": "/Homepage/HomepageCTA/"
-    },
-    {
-        "componentChunkName": "component---src-pages-homepage-spotlight-jsx",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "homepage-spotlight.json",
-        "path": "/Homepage/Spotlight/"
+        "jsonName": "enhancv-button.json",
+        "path": "/enhancv-button/"
     },
     {
         "componentChunkName": "component---src-pages-index-js",
@@ -91,18 +49,25 @@
         "path": "/pricing/"
     },
     {
-        "componentChunkName": "component---src-pages-pricing-pricing-benefits-jsx",
+        "componentChunkName": "component---src-pages-pricingb-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "pricing-pricing-benefits.json",
-        "path": "/Pricing/PricingBenefits/"
+        "jsonName": "pricingb.json",
+        "path": "/pricingb/"
     },
     {
-        "componentChunkName": "component---src-pages-404-js",
+        "componentChunkName": "component---src-pages-privacy-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "404-html.json",
-        "path": "/404.html"
+        "jsonName": "privacy.json",
+        "path": "/privacy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-successful-resumes-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "successful-resumes.json",
+        "path": "/successful-resumes/"
     },
     {
         "componentChunkName": "component---src-pages-terms-js",
@@ -112,10 +77,10 @@
         "path": "/terms/"
     },
     {
-        "componentChunkName": "component---src-pages-privacy-js",
+        "componentChunkName": "component---src-pages-404-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "privacy.json",
-        "path": "/privacy/"
+        "jsonName": "404-html.json",
+        "path": "/404.html"
     }
 ]

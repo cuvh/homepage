@@ -1,4 +1,13 @@
 import React from "react";
+import Link from "gatsby-link";
+
+import instagramImg from "../assets/img/new-homepage/icons/Instagram@2x.png";
+import facebookImg from "../assets/img/new-homepage/icons/FB@2x.png";
+import twitterImg from "../assets/img/new-homepage/icons/Twitter@2x.png";
+
+import enhancvLogo from "../assets/img/new-homepage/icons/logo-ecv@2x.png";
+
+import FooterLastPosts from "./FooterLastPosts";
 
 export default function Footer() {
 	return (
@@ -20,18 +29,15 @@ export default function Footer() {
 									</a>
 								</li>
 								<li>
-									<a href="/pricing.html">Pricing</a>
+									<Link to="/pricing">Pricing</Link>
 								</li>
 								<li>
-									<a
-									 href="/enhancv-button.html"
-									 target="_blank"
-									>
+									<Link to="/enhancv-button">
 										For Companies
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="/terms.html">Legal</a>
+									<Link to="/terms">Legal</Link>
 								</li>
 							</ul>
 						</div>
@@ -57,9 +63,9 @@ export default function Footer() {
 									</a>
 								</li>
 								<li>
-									<a href="/successful-resumes.html">
+									<Link to="/successful-resumes">
 										Successful Resumes
-									</a>
+									</Link>
 								</li>
 								<li>
 									<a href="https://blog.enhancv.com/">Blog</a>
@@ -73,14 +79,14 @@ export default function Footer() {
 							<ul className="list-unstyled">
 								<li>
 									<a
-									 href="/about.html"
+									 href="/about"
 									 target="_blank"
 									>
 										Company
 									</a>
 								</li>
 								<li>
-									<a href="/careers.html">Careers</a>
+									<Link to="/careers">Careers</Link>
 								</li>
 								<li>
 									<a href="https://enhancv.statuspage.io/">
@@ -89,22 +95,9 @@ export default function Footer() {
 								</li>
 							</ul>
 						</div>
-						<div className="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6 hidden-xs">
-							<div className="footer-title m-top-2 m-bottom-4">
-								From the blog
-							</div>
-							<ul className="list-unstyled homepage-blog-latest-short">
-								<li className="articles-short">Loading..</li>
-								<li>
-									<a
-									 className="footer-arrow-link"
-									 href="https://blog.enhancv.com/"
-									>
-										Read more &nbsp;&rarr;
-									</a>
-								</li>
-							</ul>
-						</div>
+
+						<FooterLastPosts />
+
 						<div className="Grid-cell--xs-6 hidden-sm hidden-md hidden-lg">
 							<div className="Grid social-links-container">
 								<div className="Grid-cell--sm-4">
@@ -112,7 +105,7 @@ export default function Footer() {
 									 href="{{ urls.facebook }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/FB@2x.png" />
+										<img src={facebookImg} />
 									</a>
 								</div>
 								<div className="Grid-cell--sm-4">
@@ -120,7 +113,7 @@ export default function Footer() {
 									 href="{{ urls.instagram }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/Instagram@2x.png" />
+										<img src={instagramImg} />
 									</a>
 								</div>
 								<div className="Grid-cell--sm-4">
@@ -128,7 +121,7 @@ export default function Footer() {
 									 href="{{ urls.twitter }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/Twitter@2x.png" />
+										<img src={twitterImg} />
 									</a>
 								</div>
 							</div>
@@ -148,7 +141,7 @@ export default function Footer() {
 									 href="{{ urls.facebook }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/FB@2x.png" />
+										<img src={facebookImg} />
 									</a>
 								</div>
 								<div className="Grid-cell--sm-4">
@@ -156,7 +149,7 @@ export default function Footer() {
 									 href="{{ urls.instagram }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/Instagram@2x.png" />
+										<img src={instagramImg} />
 									</a>
 								</div>
 								<div className="Grid-cell--sm-4">
@@ -164,7 +157,7 @@ export default function Footer() {
 									 href="{{ urls.twitter }}"
 									 className="social-link"
 									>
-										<img src="/img/new-homepage/icons/Twitter@2x.png" />
+										<img src={twitterImg} />
 									</a>
 								</div>
 							</div>
@@ -173,14 +166,14 @@ export default function Footer() {
 							<div className="Grid Grid--justifyCenter made-with-love">
 								<img
 								 className="footer-logo hidden-sm hidden-md hidden-lg m-top-1 m-right-1 m-left-no"
-								 src="/img/new-homepage/icons/logo-ecv@2x.png"
+								 src={enhancvLogo}
 								/>
 								<p className="copyright">
 									Made with love by people who care.
 								</p>
 								<img
 								 className="footer-logo hidden-xs m-top-1 m-left-2"
-								 src="/img/new-homepage/icons/logo-ecv@2x.png"
+								 src={enhancvLogo}
 								/>
 							</div>
 						</div>

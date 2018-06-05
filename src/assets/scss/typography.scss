@@ -31,10 +31,23 @@ body {
 	color: $gray-light;
 	margin-top: -2px;
 
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-width: $screen-xs-max) {
 		font-size: 14px;
 	}
 }
+
+.p-medium {
+	font-size:18px;
+    line-height:32px;
+    color: $gray-light;
+	margin-top: -2px;
+	
+    @media screen and (max-width: $screen-xs-max) {
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
+
 
 h1 {
 	line-height: 80px;
@@ -53,29 +66,46 @@ h2 {
 	line-height: 46px;
 }
 
-
 .underlined {
 	text-decoration: underline !important;
 }
-
+.line-through {
+    text-decoration: line-through;
+}
+.text-tag {
+    font-size: 12px;
+    font-family: $headings-font-family;
+    font-weight: 500;
+}
+// Color classes
 .text-gray-light {
 	color: $gray-light;
 }
-
+.text-dark-grey {
+	color:$sr_main-color;
+}
+.text-darker-grey {
+    color: $sr_secondary-color;
+}
 .text-highlight-purple {
-	color: $brand-purple;
+    color: $brand-purple;
 }
-
-.line-through {
-	text-decoration: line-through;
+.text-white {
+	color:$sr_white;
 }
-
-.text-tag {
-	font-size:12px;
-	font-family: $headings-font-family;
-	font-weight:500;
+.text-md-white {
+	@media screen and (min-width:$screen-md) {
+		color:$sr_white;
+	}
 }
-
+.text-white-smoke {
+	color:$sr_white-smoke;
+}
+.text-md-white-smoke {
+	@media screen and (min-width:$screen-md) {
+		color:$sr_white-smoke;
+	}
+}
 
 /////////////////////////////////////////////////
 // Resume content styles /// extend style classes for clear <h>, <p>, <ul> tags
@@ -83,13 +113,15 @@ h2 {
 
 .resume-article {
 	max-width:750px;
-	margin-left:auto;
 	margin-right:auto;
 	color:$sr_article-body-text;
 
+	&:not(.famous-article) {
+		margin-left:auto;
+	}
+
     p {
-		@extend .p-big;
-		
+		@extend .p-medium;
     }
     h1 {
         @extend .h1;
@@ -114,15 +146,31 @@ h2 {
 	ul {
 		list-style-type:none;
 		background:no-repeat;
+		padding:0;
 
-		padding-left: $sr_global-offset-value * 32;
-		margin-left: -$sr_global-offset-value * 20;
-		margin-bottom:$sr_global-offset-value * 6;
+		&:not(.ul-align-right) {
+			padding-left: $sr_global-offset-value * 32;
+			margin-left: -$sr_global-offset-value * 20;
+			margin-bottom:$sr_global-offset-value * 6;
+			margin-top:$sr_global-offset-value * 8;
+
+			@media screen and (min-width: $screen-md) {
+			    padding-left: $sr_global-offset-value * 35;
+			    margin-left: -$sr_global-offset-value * 23;
+			}
+		}
 
 		
-		@media screen and (min-width: $screen-md) {
-			padding-left: $sr_global-offset-value * 35;
-			margin-left: -$sr_global-offset-value * 23;
+		&.ul-align-right {
+			@media screen and (min-width: $screen-sm) {
+				position: relative;
+				background-position:center right;
+				padding-right: 90%;
+				width: 155%;
+			}
+			@media screen and (max-width: $screen-sm-max) {
+				background:transparent !important;
+			}
 		}
 
 		li {
@@ -193,10 +241,21 @@ h2 {
 /////////////////////////////////////////////////
 // New Styles Guide - used in Successful Resumes
 /////////////////////////////////////////////////
+
+.h1,.h2,.h3,.h4 {
+	&:not(.text-white):not(.text-md-white) {
+		color: $sr_main-color;
+	}
+}
+.h5,.h6 {
+	&:not(.text-white-smoke):not(.text-md-white-smoke) {
+		color: $sr_secondary-color;
+	}
+}
+
 .h1 {
 	font-family: $headings-font-family;
 	letter-spacing: 0;
-	color: $sr_main-color;
 	font-weight: 500;
 	font-size: 38px;
 	line-height: 44px;
@@ -207,7 +266,6 @@ h2 {
 } // H2 Secondary Title
 .h2 {
 	font-family: $headings-font-family;
-	color: $sr_main-color;
 	font-weight: 400;
 	font-size: 28px;
 	line-height: 34px;
@@ -218,7 +276,6 @@ h2 {
 } // H3 Big Section Title
 .h3 {
 	font-family: $headings-font-family;
-	color: $sr_main-color;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 30px;
@@ -229,7 +286,6 @@ h2 {
 } // H4 Medium Section Title
 .h4 {
 	font-family: $headings-font-family;
-	color: $sr_main-color;
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 26px;
@@ -240,20 +296,18 @@ h2 {
 } // H5 Subtitle
 .h5 {
 	// FontFamily Default "Inter UI"
-	color: $sr_secondary-color;
 	font-size: 17px;
 	line-height: 24px;
-	@media screen and (min-width: $screen-md) {
+	@media screen and (min-width: $screen-sm) {
 		font-size: 22px;
 		line-height: 32px;
 	}
 } // H6 Small Section Tit:
 .h6 {
 	font-family: $headings-font-family;
-	color: $sr_secondary-color;
 	font-size: 18px;
 	line-height: 24px;
-	@media screen and (min-width: $screen-md) {
+	@media screen and (min-width: $screen-sm) {
 		font-size: 20px;
 		line-height: 24px;
 	}

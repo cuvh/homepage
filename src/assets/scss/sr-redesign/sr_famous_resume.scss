@@ -1,0 +1,153 @@
+.famous-resume {
+    &--container{
+        margin-top:-80px;
+    }   
+    &--container-dark {
+        background-color:#2E3146;
+    }
+    &--head {
+        padding-top:80px;
+        background-repeat:no-repeat;
+        background-position:top right;
+        background-size:cover;
+        @media screen and (min-width:$screen-md) and (max-width:$screen-md-max) {
+            background-position: 70% 0%;
+        }
+
+        @media screen and (max-width:$screen-xs-max) {
+            padding-top:302px;
+            background-size:auto 302px;
+        }
+        @media screen and (min-width:$screen-xs) and (max-width:$screen-sm-max) {
+            padding-top: 541px;
+            background-size: 992px auto;
+        }
+        @media screen and (min-width:$screen-md) {
+            height:786px;    
+            min-height:680px;
+        }
+        @media screen and (min-width:1450px) {
+            height:98vh;    
+        }
+        .container {
+            height:100%;
+            display:flex;
+        }
+    }
+    &--navbar {
+        padding:$sr_global-offset-value * 2.5 0;
+        align-items:center;
+        border-bottom: 1px solid rgba(151,151,151,0.10);
+
+        @media screen and (max-width:$screen-sm-max) {
+            padding:$sr_global-offset-value * 4 0;
+        }
+
+        ul {
+            list-style-type:none;
+        }
+
+        li {
+            @media screen and (max-width:$screen-sm-max) {
+                margin:$sr_global-offset-value * 1 0;
+            }
+        }
+
+        a {
+            color:$sr_purple-color;
+            font-weight:600;
+            font-size: 18px;
+            position: relative;
+            text-transform:uppercase;
+
+            @media screen and (min-width:$screen-md) {
+                transition:0.3s opacity ease-in-out;
+                &:hover:after {
+                    opacity:1;
+                }
+                &:after {
+                    opacity:0;
+                    content: '';
+                    background: rgba(140, 124, 219, 0.2);
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    height: 1px;
+                    bottom: -8px;
+                }
+            }
+        }
+    }
+}
+.famous-resume {
+       // List of Famous Resumes
+       &--boxes {
+           position: relative;
+           z-index: 1;
+           @media screen and (min-width: $screen-md) {
+                margin-left:-$sr_global-offset-value * 13;
+                width: 155%;
+           }
+       }
+
+       &--boxes-wrap {
+           width: 100%;
+           @media screen and (max-width: $screen-xs-max) {
+               flex-wrap: nowrap;
+               padding-right: 30px;
+               width: calc(100% + 15px);
+               scroll-behavior: smooth;
+               -webkit-overflow-scrolling: touch;
+               overflow: hidden;
+               overflow-x: scroll;
+           }
+       }
+
+       &--box {
+           background: #FFF; 
+           box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1), 1px 0 2px rgba(77, 77, 77, 0.16);
+           border-radius: 5px;
+           padding: $sr_global-offset-value * 4;
+           @media screen and (max-width:$screen-sm-max) {
+                padding: $sr_global-offset-value * 3;
+           }
+           display: block;
+           height: 100%;
+           transition: 0.3s transform $ease-BounceInOut, 0.3s opacity $ease-ExpoInOut;
+           position: relative;
+           z-index: 1;
+           transform-origin: center center;
+
+           p {
+                font-size:16px;
+                line-height:26px;
+                &:last-child {
+                    margin:0;
+                }
+                @media screen and (max-width:$screen-sm-max) {
+                    font-size:15px;
+                }
+           }
+       }
+    
+        &--work-exp {
+            font-size:15px;
+            @media screen and (max-width:$screen-sm-max) {
+                display:none;
+            }
+        }
+
+        &--illustration {
+            position: absolute;
+            top:-20%;
+            right:0%;
+            @media screen and (max-width:$screen-sm-max) {
+                display:none;
+            }
+        }
+
+        &--person-time-illustration {
+            max-width:100%;
+        }
+
+}

@@ -2,16 +2,16 @@ import React from "react";
 import classnames from "classnames";
 import Helmet from "react-helmet";
 
-import DefaultLayout from "../layouts/DefaultLayout";
+import DefaultLayout from "layouts/DefaultLayout";
 
 // metaImage: "/img/career/share-image.jpg"
 
-import vouldjeffImage from "../assets/img/about/member/dimitar-vouldjeff@2x.jpg";
-import irinaImage from "../assets/img/about/member/irina-lilova@2x.jpg";
-import volenImage from "../assets/img/about/member/volen-valkov@2x.jpg";
-import colmImage from "../assets/img/about/member/colm-roche@2x.jpg";
-import ginovskiImage from "../assets/img/about/member/aleksander-ginovski@2x.jpg";
-import vassyImage from "../assets/img/about/member/vassilena-valchanova@2x.jpg";
+import vouldjeffImage from "assets/img/about/member/dimitar-vouldjeff@2x.jpg";
+import irinaImage from "assets/img/about/member/irina-lilova@2x.jpg";
+import volenImage from "assets/img/about/member/volen-valkov@2x.jpg";
+import colmImage from "assets/img/about/member/colm-roche@2x.jpg";
+import ginovskiImage from "assets/img/about/member/aleksander-ginovski@2x.jpg";
+import vassyImage from "assets/img/about/member/vassilena-valchanova@2x.jpg";
 
 const Faces = [
     vouldjeffImage,

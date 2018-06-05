@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9a1fb69575f434a53f30dae82a7c481d",
+        "contentDigest": "4c3e324d0dcd2baca9cbb5c935839ded",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -406,11 +406,13 @@
       "resolve": "/home/viktor/Work/homepage",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "af35f059383df68f6288299f2a82df10",
+      "version": "38f4decbc6797d80b2edf507246e864b",
       "pluginOptions": {
         "plugins": []
       },
-      "nodeAPIs": [],
+      "nodeAPIs": [
+        "modifyWebpackConfig"
+      ],
       "browserAPIs": [],
       "ssrAPIs": [],
       "pluginFilepath": "/home/viktor/Work/homepage",
@@ -542,6 +544,10 @@
             "version": "^5.2.0"
           },
           {
+            "name": "react-slick",
+            "version": "^0.23.1"
+          },
+          {
             "name": "scrollreveal",
             "version": "^3.3.6"
           },
@@ -568,6 +574,10 @@
           {
             "name": "validate.js",
             "version": "^0.11.1"
+          },
+          {
+            "name": "whatwg-fetch",
+            "version": "^2.0.4"
           }
         ],
         "devDependencies": [
@@ -583,7 +593,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d5bd18d9bcfdffabbac8b1e46765d881",
+        "contentDigest": "b1b12f8027f75e035ba4e5e6026c6c0a",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -596,12 +606,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-04T11:40:48.346Z",
+      "buildTime": "2018-06-05T09:29:24.002Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "6ae458ff411a8e21b526a12672931f46",
+        "contentDigest": "4c19654a99d70c1dff5481c0c50d6d6e",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -622,7 +632,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8c2634d71cbcaa33872f5da3ae9b7ec5",
+        "contentDigest": "69f101dbd2aa8f19394f9f2047ebeb13",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -643,70 +653,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e433f7a69dc007aa238758b6448f238c",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /About/Images/": {
-      "layout": "index",
-      "jsonName": "about-images.json",
-      "internalComponentName": "ComponentAboutImages",
-      "path": "/About/Images/",
-      "component": "/home/viktor/Work/homepage/src/pages/About/Images.jsx",
-      "componentChunkName": "component---src-pages-about-images-jsx",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Images.jsx",
-      "id": "SitePage /About/Images/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "786a0941c92f73dd55799d84ecc1b502",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /About/Member/": {
-      "layout": "index",
-      "jsonName": "about-member.json",
-      "internalComponentName": "ComponentAboutMember",
-      "path": "/About/Member/",
-      "component": "/home/viktor/Work/homepage/src/pages/About/Member.jsx",
-      "componentChunkName": "component---src-pages-about-member-jsx",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Member.jsx",
-      "id": "SitePage /About/Member/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ca6224510f6a42bb0bd3c883834b6ed9",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /About/Members/": {
-      "layout": "index",
-      "jsonName": "about-members.json",
-      "internalComponentName": "ComponentAboutMembers",
-      "path": "/About/Members/",
-      "component": "/home/viktor/Work/homepage/src/pages/About/Members.jsx",
-      "componentChunkName": "component---src-pages-about-members-jsx",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/About/Members.jsx",
-      "id": "SitePage /About/Members/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "36253fafd021a79fada44e1262052d53",
+        "contentDigest": "fde1a63dd40fdea9ff91236f4a41a0e0",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -727,91 +674,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1d079f2494194d78dc02088a86718e40",
+        "contentDigest": "c484e25f29308a782261505ba6ab1405",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /Homepage/Benefits/": {
+    "SitePage /enhancv-button/": {
       "layout": "index",
-      "jsonName": "homepage-benefits.json",
-      "internalComponentName": "ComponentHomepageBenefits",
-      "path": "/Homepage/Benefits/",
-      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Benefits.jsx",
-      "componentChunkName": "component---src-pages-homepage-benefits-jsx",
+      "jsonName": "enhancv-button.json",
+      "internalComponentName": "ComponentEnhancvButton",
+      "path": "/enhancv-button/",
+      "component": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
+      "componentChunkName": "component---src-pages-enhancv-button-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Benefits.jsx",
-      "id": "SitePage /Homepage/Benefits/",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
+      "id": "SitePage /enhancv-button/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c13bb160c424cece988f1167be328b97",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /Homepage/Customize/": {
-      "layout": "index",
-      "jsonName": "homepage-customize.json",
-      "internalComponentName": "ComponentHomepageCustomize",
-      "path": "/Homepage/Customize/",
-      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Customize.jsx",
-      "componentChunkName": "component---src-pages-homepage-customize-jsx",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Customize.jsx",
-      "id": "SitePage /Homepage/Customize/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "5de21bafe9786eb7ff8a28df20a153b2",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /Homepage/HomepageCTA/": {
-      "layout": "index",
-      "jsonName": "homepage-homepage-cta.json",
-      "internalComponentName": "ComponentHomepageHomepageCta",
-      "path": "/Homepage/HomepageCTA/",
-      "component": "/home/viktor/Work/homepage/src/pages/Homepage/HomepageCTA.js",
-      "componentChunkName": "component---src-pages-homepage-homepage-cta-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/HomepageCTA.js",
-      "id": "SitePage /Homepage/HomepageCTA/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d3040ee40c2e4ddec138dc309cd541ac",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /Homepage/Spotlight/": {
-      "layout": "index",
-      "jsonName": "homepage-spotlight.json",
-      "internalComponentName": "ComponentHomepageSpotlight",
-      "path": "/Homepage/Spotlight/",
-      "component": "/home/viktor/Work/homepage/src/pages/Homepage/Spotlight.jsx",
-      "componentChunkName": "component---src-pages-homepage-spotlight-jsx",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/Homepage/Spotlight.jsx",
-      "id": "SitePage /Homepage/Spotlight/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a946b85ffecd8660fc36e4cc50724ad5",
+        "contentDigest": "02847f47027452496d36625048bb5749",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -832,7 +716,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "59eced859e8a6e30e736c11d5438eb2c",
+        "contentDigest": "fecc1189ef83976cb4c07acf71703f50",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -853,70 +737,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "409f31880841a8c8c321639ca5be4216",
+        "contentDigest": "4842f68f8ab684ccd349952490c3e229",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /Pricing/PricingBenefits/": {
+    "SitePage /pricingb/": {
       "layout": "index",
-      "jsonName": "pricing-pricing-benefits.json",
-      "internalComponentName": "ComponentPricingPricingBenefits",
-      "path": "/Pricing/PricingBenefits/",
-      "component": "/home/viktor/Work/homepage/src/pages/Pricing/PricingBenefits.jsx",
-      "componentChunkName": "component---src-pages-pricing-pricing-benefits-jsx",
+      "jsonName": "pricingb.json",
+      "internalComponentName": "ComponentPricingb",
+      "path": "/pricingb/",
+      "component": "/home/viktor/Work/homepage/src/pages/pricingb.js",
+      "componentChunkName": "component---src-pages-pricingb-js",
       "context": {},
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/Pricing/PricingBenefits.jsx",
-      "id": "SitePage /Pricing/PricingBenefits/",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/pricingb.js",
+      "id": "SitePage /pricingb/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b406d79e4e2b2cc0e25d4f374be146e5",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /404.html": {
-      "layout": "index",
-      "jsonName": "404-html.json",
-      "internalComponentName": "Component404Html",
-      "path": "/404.html",
-      "component": "/home/viktor/Work/homepage/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin prod-404",
-      "pluginCreatorId": "Plugin prod-404",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
-      "id": "SitePage /404.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "8ea45f419096a9ee54f2a0096d811e7e",
-        "description": "Plugin prod-404",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /terms/": {
-      "layout": "index",
-      "jsonName": "terms.json",
-      "internalComponentName": "ComponentTerms",
-      "path": "/terms/",
-      "component": "/home/viktor/Work/homepage/src/pages/terms.js",
-      "componentChunkName": "component---src-pages-terms-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/terms.js",
-      "id": "SitePage /terms/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "9f42f68282233afa8d0c302f6dfec4f6",
+        "contentDigest": "564ca312ded982513f32b8ddad6f5beb",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -937,15 +779,78 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4bff24c1e7b3cd5ea32ad8ebc512b96b",
+        "contentDigest": "a8b2481c5a2ea495d895ff049a2985c9",
         "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/": {
+      "layout": "index",
+      "jsonName": "successful-resumes.json",
+      "internalComponentName": "ComponentSuccessfulResumes",
+      "path": "/successful-resumes/",
+      "component": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
+      "componentChunkName": "component---src-pages-successful-resumes-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
+      "id": "SitePage /successful-resumes/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bb91aec4b5b4d3dc40b1c94d23716a4e",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /terms/": {
+      "layout": "index",
+      "jsonName": "terms.json",
+      "internalComponentName": "ComponentTerms",
+      "path": "/terms/",
+      "component": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "componentChunkName": "component---src-pages-terms-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "id": "SitePage /terms/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0b51a634c857932865778076077031a9",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/home/viktor/Work/homepage/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a8d164a24d442033c5674f0582956bc1",
+        "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "2f00d10eeff41791e767d26221398382"
+    "PLUGINS_HASH": "e51400fe979f140033fea742cbf9e23d"
   },
   "componentDataDependencies": {
     "nodes": {},
