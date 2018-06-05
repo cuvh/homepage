@@ -85,8 +85,7 @@
            position: relative;
            z-index: 1;
            @media screen and (min-width: $screen-md) {
-                margin-left:-$sr_global-offset-value * 13;
-                width: 155%;
+                width: 100%;
            }
        }
 
@@ -128,6 +127,10 @@
                     font-size:15px;
                 }
            }
+
+           img {
+               max-width:100%;
+           }
        }
     
         &--work-exp {
@@ -137,10 +140,18 @@
             }
         }
 
+        &--illustration-holder {
+            position: relative;
+            @media screen and (max-width:$screen-sm-max) {
+                display:none;
+            }
+        }
+
+
         &--illustration {
             position: absolute;
-            top:-20%;
-            right:0%;
+            top:-60%;
+            right:-20%;
             @media screen and (max-width:$screen-sm-max) {
                 display:none;
             }

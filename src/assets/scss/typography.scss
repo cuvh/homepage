@@ -122,6 +122,10 @@ h2 {
 
     p {
 		@extend .p-medium;
+		margin-bottom:$sr_global-offset-value * 5;
+		@media screen and (min-width:$screen-md) {
+			margin-bottom:$sr_global-offset-value * 6;
+		}
     }
     h1 {
         @extend .h1;
@@ -173,9 +177,9 @@ h2 {
 			}
 		}
 
-		li {
-			margin-top:$sr_global-offset-value * 6;
-		}
+		// li {
+		// 	margin-top:$sr_global-offset-value * 6;
+		// }
 	}
 
 	blockquote {

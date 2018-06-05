@@ -7,4 +7,10 @@
     position: relative;
     top: -1px;
     margin-right:$sr_global-offset-value * 2;
+
+    &.mobile-hide {
+        @media screen and (max-width:$screen-sm-max) {
+            display:none;
+        }
+    }
 }
