@@ -1,87 +1,83 @@
 //////////////////////////////
-/// Page -> Sucessful resumes  
+/// Page -> Sucessful resumes
 
-
-// Header Background 
+// Header Background
 body.resumeslist {
     background-repeat: no-repeat;
     background-position: top right;
-    background-color: $sr_resumeslist-background; 
-    
+    background-color: $sr_resumeslist-background;
+
     // For better loading performance on mobile >
-    @media screen and (min-width:$screen-sm) {
-        background-image:url("/img/new-successful-resumes/elements/header_background.jpg");
+    @media screen and (min-width: $screen-sm) {
+        background-image: url("../img/new-successful-resumes/elements/header_background.jpg");
     }
-    @media screen and (max-width:$screen-sm-max) {
-        background-image: url("/img/new-successful-resumes/elements/header_background_mobile.jpg");
+    @media screen and (max-width: $screen-sm-max) {
+        background-image: url("../img/new-successful-resumes/elements/header_background_mobile.jpg");
         background-size: 205px;
     }
 }
 
-
-
 body.resumedetail {
-    background-color: $sr_resumeslist-background; 
+    background-color: $sr_resumeslist-background;
 }
-
 
 // Page accent
 .resumes {
-    &--accent{
+    &--accent {
         &:not(.noBackground) {
             &:after {
-                content:'';
-                width:528px;
-                height:950px;
+                content: "";
+                width: 528px;
+                height: 950px;
 
                 background-repeat: no-repeat;
-                background-size:100%;
+                background-size: 100%;
 
-                position:absolute;
-                top:30%;
-                right:0;
-                z-index:-1;
-            
+                position: absolute;
+                top: 30%;
+                right: 0;
+                z-index: -1;
+
                 // For better loading performance on mobile >
-                @media screen and (min-width:$screen-sm) {
-                    background-image: url("/img/new-successful-resumes/elements/homepage_behind_famous_resume_bg_@2.jpg");
+                @media screen and (min-width: $screen-sm) {
+                    background-image: url("../img/new-successful-resumes/elements/homepage_behind_famous_resume_bg_@2.jpg");
                 }
 
-                @media screen and (max-width:$screen-sm-max) {
-                    width:528px - 100;
-                    height:950px - 300;
+                @media screen and (max-width: $screen-sm-max) {
+                    width: 528px - 100;
+                    height: 950px - 300;
 
-                    top:22%;
+                    top: 22%;
 
                     background-size: auto 100%;
                     background-position: top right;
-                    background-image: url("/img/new-successful-resumes/elements/homepage_behind_famous_resume_bg.jpg");
+                    background-image: url("../img/new-successful-resumes/elements/homepage_behind_famous_resume_bg.jpg");
                 }
             }
         }
     }
 
     &--accent-hired {
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position:center center;
+        background-position: center center;
         // For better loading performance on mobile >
-        @media screen and (min-width:$screen-sm) {
-            background-image: url("/img/new-successful-resumes/elements/singlepage__tags_bubble@2x.png");
+        @media screen and (min-width: $screen-sm) {
+            background-image: url("../img/new-successful-resumes/elements/singlepage__tags_bubble@2x.png");
         }
 
-        @media screen and (max-width:$screen-sm-max) {
-            background-image: url("/img/new-successful-resumes/elements/singlepage__tags_bubble.png");
+        @media screen and (max-width: $screen-sm-max) {
+            background-image: url("../img/new-successful-resumes/elements/singlepage__tags_bubble.png");
         }
     }
 }
 
-// Resume preview button 
+// Resume preview button
 
 .btn-resume-preview {
-    background-image: url("/img/new-successful-resumes/icons/zoom.png");
+    background-image: url("../img/new-successful-resumes/icons/zoom.png");
     &:hover {
-        background-image: url("/img/new-successful-resumes/icons/zoom_hover.png");
+        background-image: url("../img/new-successful-resumes/icons/zoom_hover.png");
     }
 }
 
@@ -90,42 +86,41 @@ body.resumedetail {
     &--famous-list {
         &:not(.noBackground) {
             &:after {
-                content:'';
-                width:592px;
-                height:463px;
+                content: "";
+                width: 592px;
+                height: 463px;
 
                 background-repeat: no-repeat;
                 background-position: top right;
                 background-size: contain;
 
                 position: absolute;
-                z-index:-1;
-                
+                z-index: -1;
 
                 // For better loading performance on mobile >
-                @media screen and (min-width:$screen-sm) {
-                    bottom:15%;
-                    left:2%;
-                    background-image: url("/img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes@2.jpg");
+                @media screen and (min-width: $screen-sm) {
+                    bottom: 15%;
+                    left: 2%;
+                    background-image: url("../img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes@2.jpg");
                 }
 
-                @media screen and (max-width:$screen-sm-max) {
+                @media screen and (max-width: $screen-sm-max) {
                     top: 0;
                     left: -15px;
                     width: calc(100% + 30px);
                     height: 100%;
-                    background-position:center;
-                    background-size:auto 100%;
-                    background-image: url("/img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes.jpg");
+                    background-position: center;
+                    background-size: auto 100%;
+                    background-image: url("../img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes.jpg");
                 }
             }
         }
     }
 
     &--others-wrap {
-         &:not(.noBackground) {
+        &:not(.noBackground) {
             &:after {
-                content: '';
+                content: "";
                 width: 1047px;
                 height: 891px;
                 background-repeat: no-repeat;
@@ -134,33 +129,31 @@ body.resumedetail {
                 position: absolute;
                 z-index: -1; // For better loading performance on mobile >
                 @media screen and (min-width: $screen-sm) {
-                    top:(8px * 14) * -1;
+                    top: (8px * 14) * -1;
                     left: calc(50% - (1047px / 2));
-                    background-image: url("/img/new-successful-resumes/elements/homeepage_see_how_others_did@2x.jpg");
+                    background-image: url("../img/new-successful-resumes/elements/homeepage_see_how_others_did@2x.jpg");
                 }
-                @media screen and (max-width:$screen-sm-max) {
+                @media screen and (max-width: $screen-sm-max) {
                     top: 0;
                     left: -15px;
                     width: calc(100% + 30px);
                     height: 100%;
                     background-position: center;
                     background-size: auto 100%;
-                    background-image: url("/img/new-successful-resumes/elements/homeepage_see_how_others_did.jpg");
+                    background-image: url("../img/new-successful-resumes/elements/homeepage_see_how_others_did.jpg");
                 }
             }
         }
-     }
-
-}
-
-// Socials Wow button 
-.btn-wow {
-    background-image: url("/img/new-successful-resumes/icons/wow.svg");
-    &:hover {
-        background-image: url("/img/new-successful-resumes/icons/wow_hover.svg");
     }
 }
 
+// Socials Wow button
+.btn-wow {
+    background-image: url("../img/new-successful-resumes/icons/wow.svg");
+    &:hover {
+        background-image: url("../img/new-successful-resumes/icons/wow_hover.svg");
+    }
+}
 
 // Bubbules Background
 .hasBubbulesBackground {
@@ -168,38 +161,34 @@ body.resumedetail {
     background-position: bottom center;
     background-size: 100% auto;
     @media screen and (min-width: $screen-sm) {
-        background-image: url("/img/new-successful-resumes/elements/singlepage_subscription@2x.jpg");
+        background-image: url("../img/new-successful-resumes/elements/singlepage_subscription@2x.jpg");
     }
-    @media screen and (max-width:$screen-xs-max) {
-        background-image: url("/img/new-successful-resumes/elements/singlepage_subscription_mobile@2x.jpg");
-        background-size:contain;
+    @media screen and (max-width: $screen-xs-max) {
+        background-image: url("../img/new-successful-resumes/elements/singlepage_subscription_mobile@2x.jpg");
+        background-size: contain;
     }
-
 }
 
 // Famous resume
 .famous-resume--container-dark {
     background-repeat: no-repeat;
     background-position: top center;
-    background-size:cover;
+    background-size: cover;
     @media screen and (min-width: $screen-sm) {
-        background-image: url("/img/new-successful-resumes/famous/dark-bgr-subscribe-section.jpg");
+        background-image: url("../img/new-successful-resumes/famous/dark-bgr-subscribe-section.jpg");
     }
-    @media screen and (max-width:$screen-xs-max) {
-        background-image: url("/img/new-successful-resumes/famous/dark-bgr-subscribe-section-mobile.jpg");
+    @media screen and (max-width: $screen-xs-max) {
+        background-image: url("../img/new-successful-resumes/famous/dark-bgr-subscribe-section-mobile.jpg");
     }
 }
 
-
-// Component wit feeelings  
+// Component wit feeelings
 
 .component--feeling {
     &.feeling-box-dark {
-        background-image: url("/img/new-successful-resumes/elements/feeling-dark.png");
+        background-image: url("../img/new-successful-resumes/elements/feeling-dark.png");
     }
     &.feeling-box-light {
-        background-image: url("/img/new-successful-resumes/elements/feeling-light.png");
+        background-image: url("../img/new-successful-resumes/elements/feeling-light.png");
     }
-
 }
-

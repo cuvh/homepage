@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "303dfecf5c9aa39dba576979001e2eac",
+        "contentDigest": "421916131f145c1cdbb122c46fe640c7",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -406,12 +406,13 @@
       "resolve": "/home/viktor/Work/homepage",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "da4c5343e8803a138b3d41cc233f2eb4",
+      "version": "9f8719d105db77d72b4e5ce1f87428d7",
       "pluginOptions": {
         "plugins": []
       },
       "nodeAPIs": [
-        "modifyWebpackConfig"
+        "modifyWebpackConfig",
+        "createPages"
       ],
       "browserAPIs": [
         "onInitialClientRender"
@@ -531,7 +532,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "785d3ac8165f357d93b11cea8f40964c",
+        "contentDigest": "650f375294fae1e122557a14579fbabf",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -544,13 +545,97 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-05T11:56:34.325Z",
+      "buildTime": "2018-06-06T12:03:55.279Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "d2eb8e187895636f5d28d52f12d2be8a",
+        "contentDigest": "54f2f73355552811a9c0c8f28b3b9cc0",
         "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/louis-grenier": {
+      "layout": "index",
+      "jsonName": "successful-resumes-louis-grenier.json",
+      "internalComponentName": "ComponentSuccessfulResumesLouisGrenier",
+      "path": "/successful-resumes/louis-grenier",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "louis-grenier",
+        "title": "A Marketing Consultant Resume with a Clear Mission",
+        "description": "Louis' marketing resume example shows he's not just an accomplished but that his career has a clear mission behind it. That mission binds together his projects from Everyone Hates Marketers, his current work at Hotjar, and his achievements to create a story with impact.",
+        "position": "Founder, Head of Marketing",
+        "stepsTitle": "Why Louis’ Marketing Resume Works",
+        "stepsDescription": "Three things come together to make this resume an effective example for marketers and consultants.",
+        "steps": [
+          {
+            "title": "Combining Experience and Projects",
+            "description": "Using both sections really shows both what Louis accomplished in his full time jobs as well as in his outside projects. While the full time work makes it clear that Louis knows how to perform in a 9-5, his side projects show his passion for his work. The result is a picture of someone who’s dedicated and results-driven."
+          },
+          {
+            "title": "Telling a coherent story",
+            "description": "While it’s often useful to show a variety of skills and interests in a marketing resume, Louis’ focus helps his resume example stand out. Nearly everything on his resume points to the mission he makes clear right at the top of his resume."
+          },
+          {
+            "title": "Focusing on Impact",
+            "description": "Throughout his resume, Louis does what every marketing consultant resume should do: show the impact. From how many episodes of his podcast he’s released to how much revenue he bootstrapped, Louis shows how marketers show what they can do and stand out."
+          }
+        ]
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/louis-grenier",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b9b8f31c9fab3ff0a86f7677dd67a9d3",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/eric-hu": {
+      "layout": "index",
+      "jsonName": "successful-resumes-eric-hu.json",
+      "internalComponentName": "ComponentSuccessfulResumesEricHu",
+      "path": "/successful-resumes/eric-hu",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "eric-hu",
+        "title": "A Creative Resume That Does Things Differently",
+        "description": "Eric’s creative marketing resume example ditches much of the conventional wisdom. Instead of focusing on numbers to show his impact, this resume is designed to get your attention and start a conversation. The numbers can come later. In this way, Eric’s resume would be perfect for handing out at a networking event or a conference when people don’t necessarily want to dive into the data of your accomplishments, but want a conversation starter like “what work did you do for Apple?” or “What was that Kickstarter campaign you had so much success with?”",
+        "position": "Violinist, Photographer, Content Creator, Creative Strategist",
+        "stepsTitle": "Why Eric’s Creative Marketing Resume Works",
+        "stepsDescription": "This resume does three things well, here’s what makes it a great example for a creative marketing resume.",
+        "steps": [
+          {
+            "title": "It tells a story",
+            "description": "The headline under Eric’s name starts it off, telling you how his career has evolved and what has remained consistent. This frames the entire rest of the resume. When you see the more unconventional elements, Eric has already told you that he’s a performer at heart, so a more creative resume makes sense."
+          },
+          {
+            "title": "It starts a conversation",
+            "description": "This resume is clearly designed as a starting point for a conversation. Instead of going into the details of every single campaign he’s run, it seeks to show you the enormous variety of projects Eric has worked on. That increases the likelihood one of those projects will stand out and serve as a starting point for a conversation."
+          },
+          {
+            "title": "It catches your eye",
+            "description": "From the section titles to the interesting photo, Eric’s resume seeks to have its own style that makes it stand out. The average recruiter certainly isn’t likely to confuse Eric with another applicant."
+          }
+        ]
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/eric-hu",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "df2c49dc877656d2e4c002482517637b",
+        "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
     },
@@ -570,7 +655,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "20ae2be3d1100f4e93cfb4073f11e49c",
+        "contentDigest": "c2cbc0c2dae31b8be2aab44500aaeeeb",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -591,7 +676,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5d2917ed8e97087b23b90e881128eeda",
+        "contentDigest": "6ac75295c4a49d16981286169ea0041b",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -612,7 +697,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a3f0c04aa7a19bb8b89223dcbd7229e4",
+        "contentDigest": "136572fa00b06a7aea2f1fc85c33429d",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -633,7 +718,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f2d83ba43db765e5a69d4c90aee1e38e",
+        "contentDigest": "21d1780d5538d29eaa029cfbaf46b5c3",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /famous-resume/": {
+      "layout": "index",
+      "jsonName": "famous-resume.json",
+      "internalComponentName": "ComponentFamousResume",
+      "path": "/famous-resume/",
+      "component": "/home/viktor/Work/homepage/src/pages/famous-resume.js",
+      "componentChunkName": "component---src-pages-famous-resume-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/famous-resume.js",
+      "id": "SitePage /famous-resume/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "005778c9b867e63b8871c4ade92c6e85",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -654,7 +760,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b5aca1fe4bf8c457b877fbb18415d286",
+        "contentDigest": "f33560446e3e341e28372f6ac339fa4a",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /OLD_successful-resumes/": {
+      "layout": "index",
+      "jsonName": "old-successful-resumes.json",
+      "internalComponentName": "ComponentOldSuccessfulResumes",
+      "path": "/OLD_successful-resumes/",
+      "component": "/home/viktor/Work/homepage/src/pages/OLD_successful-resumes.js",
+      "componentChunkName": "component---src-pages-old-successful-resumes-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/OLD_successful-resumes.js",
+      "id": "SitePage /OLD_successful-resumes/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "787b84a4e0876bf994ed837ba985e61e",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -675,7 +802,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5d9b6f67110552669b240a582db6214d",
+        "contentDigest": "7dffafe0a7150a615986e08401c33527",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -696,7 +823,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e4c8f4d2033b8d19ddb7021d370c5c7b",
+        "contentDigest": "117472641f1955c4e3feab6606a5ff02",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -717,7 +844,28 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c67d8e22944ca3f50f9161de879b5deb",
+        "contentDigest": "7727f0daabcd3836ca6f061e9bfb0c82",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /sr-single-resume/": {
+      "layout": "index",
+      "jsonName": "sr-single-resume.json",
+      "internalComponentName": "ComponentSrSingleResume",
+      "path": "/sr-single-resume/",
+      "component": "/home/viktor/Work/homepage/src/pages/sr-single-resume.js",
+      "componentChunkName": "component---src-pages-sr-single-resume-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/sr-single-resume.js",
+      "id": "SitePage /sr-single-resume/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a8bc7968a61ee8c5d5e6513391663b18",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -738,7 +886,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "857ecf090003d7a27e59d3dc5544d7f5",
+        "contentDigest": "cd4d7e41846d12bd4a5a4b624b97eebc",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -759,7 +907,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "44a5184165c13e83ffd771af7b77476c",
+        "contentDigest": "a5d235fedd4f38a63ade408157342c56",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -780,7 +928,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e0f410843d702051ae2f5c20b9b24d25",
+        "contentDigest": "425af5bb8b66365e725ef6cb1f46d275",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -788,7 +936,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "bb4bc85c79c4dbacc646c54298238879"
+    "PLUGINS_HASH": "3af264c7fdeb0027ac3ba30535f79647"
   },
   "componentDataDependencies": {
     "nodes": {},

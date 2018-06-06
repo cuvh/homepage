@@ -1,5 +1,19 @@
 [
     {
+        "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "successful-resumes-louis-grenier.json",
+        "path": "/successful-resumes/louis-grenier"
+    },
+    {
+        "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "successful-resumes-eric-hu.json",
+        "path": "/successful-resumes/eric-hu"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -35,11 +49,25 @@
         "path": "/enhancv-button/"
     },
     {
+        "componentChunkName": "component---src-pages-famous-resume-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "famous-resume.json",
+        "path": "/famous-resume/"
+    },
+    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "index.json",
         "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-old-successful-resumes-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "old-successful-resumes.json",
+        "path": "/OLD_successful-resumes/"
     },
     {
         "componentChunkName": "component---src-pages-pricing-js",
@@ -61,6 +89,13 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "privacy.json",
         "path": "/privacy/"
+    },
+    {
+        "componentChunkName": "component---src-pages-sr-single-resume-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "sr-single-resume.json",
+        "path": "/sr-single-resume/"
     },
     {
         "componentChunkName": "component---src-pages-successful-resumes-js",
