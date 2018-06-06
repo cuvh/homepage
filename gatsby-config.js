@@ -6,6 +6,25 @@ module.exports = {
 		title: "Gatsby Default Starter"
 	},
 	plugins: [
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `data`,
+				path: path.join(__dirname, `./src/data`)
+			}
+		},
+		// This plugin exposes helper functions for processing
+		// images with the NPM package “sharp”. It's used by
+		// several other plugins.
+		`gatsby-plugin-sharp`,
+		// This plugin identifies file nodes that are images and
+		// transforms these to create new “ImageSharp” nodes.
+		// With them you can resize images and
+		// generate responsive image thumbnails.
+		`gatsby-transformer-sharp`,
+		// This plugin transforms JSON file nodes.
+		`gatsby-transformer-json`,
+
 		"gatsby-plugin-react-helmet",
 		{
 			resolve: `gatsby-plugin-postcss-sass`,

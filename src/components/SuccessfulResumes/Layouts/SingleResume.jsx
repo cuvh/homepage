@@ -1,4 +1,6 @@
 import React from "react";
+import Img from "gatsby-image";
+
 import intercomLogo from "assets/img/new-successful-resumes/highlighted/intercom.png";
 import hannah from "assets/img/new-successful-resumes/hannah.png";
 import imgPlaceholder from "assets/img/new-successful-resumes/placeholders/img-placeholder.png";
@@ -10,6 +12,7 @@ import DefaultLayout from "layouts/DefaultLayout";
 
 export default function SingleResume({
     pathContext: { title, description, steps },
+    data: { userResumesJson: { ...data } },
     ...rest
 }) {
     return (
@@ -22,7 +25,7 @@ export default function SingleResume({
                                 <span className="text-tag text-highlight-purple">
                                     CAREER CHANGE
                                 </span>
-                                <h1 className="h1">{title}</h1>
+                                <h1 className="h1">{data.title}</h1>
 
                                 <div className="m-xs-top-1 m-md-top-3">
                                     <h5 className="h5 text-gray-light m-bottom-3">
@@ -32,7 +35,7 @@ export default function SingleResume({
                                         </span>
                                     </h5>
 
-                                    <p className="p-big">{description}</p>
+                                    <p className="p-big">{data.description}</p>
                                 </div>
                                 <a
                                  target="_blank"
@@ -54,9 +57,10 @@ export default function SingleResume({
                                  data-action="Click Full Resume"
                                  data-label="Casey Neistat"
                                 >
-                                    <img
-                                     src={hannah}
-                                     alt="Hannah"
+                                    <Img
+                                     resolutions={
+                                        data.image.childImageSharp.resolutions
+                                     }
                                     />
 
                                     <button className="btn-resume-preview" />
@@ -102,7 +106,7 @@ export default function SingleResume({
                         </p>
 
                         <ul>
-                            {steps.map((step, i) => (
+                            {data.steps.map((step, i) => (
                                 <li key={i}>
                                     <h4>
                                         Step {i + 1}: {step.title}
@@ -126,3 +130,23 @@ export default function SingleResume({
         </DefaultLayout>
     );
 }
+
+export const pageQuery = graphql`
+    query SingleResume($url: String!) {
+        userResumesJson(url: { eq: $url }) {
+            title
+            url
+            steps {
+                title
+                description
+            }
+            image {
+                childImageSharp {
+                    resolutions(width: 548) {
+                        ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+        }
+    }
+`;
