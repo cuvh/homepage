@@ -9,7 +9,7 @@ import herResume from "assets/img/new-successful-resumes/placeholders/her-resume
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function SingleResume({
-    pathContext: { title, description, steps },
+    pathContext: { title, name, description, steps, stepsTitle, stepsDescription },
     ...rest
 }) {
     return (
@@ -27,8 +27,7 @@ export default function SingleResume({
                                 <div className="m-xs-top-1 m-md-top-3">
                                     <h5 className="h5 text-gray-light m-bottom-3">
                                         <span className="text-gray-light">
-                                            A new resume changed her career and
-                                            her life
+                                            A new resume changed her career and her life
                                         </span>
                                     </h5>
 
@@ -37,8 +36,7 @@ export default function SingleResume({
                                 <a
                                  target="_blank"
                                  href="#"
-                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
-                                >
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                     See the resume
                                 </a>
                             </div>
@@ -52,8 +50,7 @@ export default function SingleResume({
                                  data-track="event"
                                  data-category="Successful Resumes"
                                  data-action="Click Full Resume"
-                                 data-label="Casey Neistat"
-                                >
+                                 data-label="Casey Neistat">
                                     <img
                                      src={hannah}
                                      alt="Hannah"
@@ -65,14 +62,12 @@ export default function SingleResume({
 
                             <div className="resumes--accent-hired p-5">
                                 <div className="Grid">
-                                    <h5>Hannah’s career</h5>
+                                    <h5>{name}’s career</h5>
                                     <span className="label m-bottom-3">
-                                        Director, Banking, Tech, YouTube
-                                        personality, Marketing person
+                                        Director, Banking, Tech, YouTube personality, Marketing
+                                        person
                                     </span>
-                                    <span className="label hired-label">
-                                        Hired at
-                                    </span>
+                                    <span className="label hired-label">Hired at</span>
                                     <img
                                      className="m-xs-top-1 m-md-left-2"
                                      src={intercomLogo}
@@ -83,23 +78,14 @@ export default function SingleResume({
                         </div>
                         <a
                          href="#"
-                         className="page--scroll"
-                        >
+                         className="page--scroll">
                             Read the story
                         </a>
                     </section>
 
                     <article className="resume-article p-md-top-8">
-                        <h3>Hannah’s 4 steps to a successful job hunt</h3>
-                        <p>
-                            Before looking for companies that would suit his
-                            requirements, Daniel thought in more detail about
-                            how his skills could match the new desired role. As
-                            he’s worked remotely most of his career, he needed a
-                            company that would allow for that. Another
-                            requirement was a company that’s known for
-                            exceptional customer support.
-                        </p>
+                        <h3>{stepsTitle}</h3>
+                        <p>{stepsDescription}</p>
 
                         <ul>
                             {steps.map((step, i) => (
