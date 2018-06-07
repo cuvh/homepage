@@ -10,9 +10,16 @@ import herResume from "assets/img/new-successful-resumes/placeholders/her-resume
 
 import DefaultLayout from "layouts/DefaultLayout";
 
+import Helmet from "react-helmet";
+
 export default function SingleResume() {
     return (
         <DefaultLayout>
+            <Helmet
+                bodyAttributes={{
+                    class: 'resumedetail'
+                }}
+            />
             <div className="hasBubbulesBackground">
                 <main className="container">
                     <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">

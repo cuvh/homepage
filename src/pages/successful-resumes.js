@@ -11,9 +11,17 @@ import ResumeList from "components/SuccessfulResumes/List";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
+import Helmet from "react-helmet";
+
+
 export default function FeaturedResume() {
     return (
         <DefaultLayout>
+            <Helmet
+                bodyAttributes={{
+                    class: 'resumeslist'
+                }}
+            />
             <main className="container">
                 <section className="page--head">
                     <h1 className="h1">
