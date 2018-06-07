@@ -1,7 +1,10 @@
 [
 	{
 		"image": "successful-resumes/louis-grenier-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/louis@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-hotjar-logo.png",
 		"url": "louis-grenier",
+		"name": "Louis Grenier",
 		"title": "A Marketing Consultant Resume with a Clear Mission",
 		"description":
 			"Louis' marketing resume example shows he's not just an accomplished but that his career has a clear mission behind it. That mission binds together his projects from Everyone Hates Marketers, his current work at Hotjar, and his achievements to create a story with impact.",
@@ -29,8 +32,10 @@
 	},
 	{
 		"image": "successful-resumes/eric-hu-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/eric@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-sde-logo.png",
 		"url": "eric-hu",
-		"name": "Eric",
+		"name": "Eric Hu",
 		"title": "A Creative Resume That Does Things Differently",
 		"description":
 			"Eric’s creative marketing resume example ditches much of the conventional wisdom. Instead of focusing on numbers to show his impact, this resume is designed to get your attention and start a conversation. The numbers can come later. In this way, Eric’s resume would be perfect for handing out at a networking event or a conference when people don’t necessarily want to dive into the data of your accomplishments, but want a conversation starter like “what work did you do for Apple?” or “What was that Kickstarter campaign you had so much success with?”",
@@ -59,8 +64,10 @@
 	},
 	{
 		"image": "successful-resumes/akshay-rao-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/louis@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-tesla-logo.png",
 		"url": "akshay-rao",
-		"name": "Akshay",
+		"name": "Akshay Rao",
 		"title":
 			"A College Graduate’s Industrial Engineer Resume Shows Dedication",
 		"description":
@@ -90,8 +97,10 @@
 	},
 	{
 		"image": "successful-resumes/marcellus-nixon-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/marcellus@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-verizon-logo.png",
 		"url": "marcellus-nixon",
-		"name": "Marcellus",
+		"name": "Marcellus Nixon",
 		"title":
 			"A Network Engineer Resume Showing the Transition from Military to Civilian",
 		"description":
@@ -120,9 +129,11 @@
 		]
 	},
 	{
-		"image": "successful-resumes/julian-prim-1.jpg",
+		"image": "successful-resumes/julian-prim-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/louis@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
 		"url": "julian-prim",
-		"name": "Julian",
+		"name": "Julian Prim",
 		"title": "An Auditor Resume with Personality and Impact",
 		"description":
 			"Julian’s auditor resume is a great example for anyone who thinks a resume in this field can’t be interesting or engaging. It balances the personal and the professional while not skimping on the metrics that really demonstrate his effectiveness.",
@@ -151,8 +162,10 @@
 	},
 	{
 		"image": "successful-resumes/tobias-horstmann-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/louis@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-encory-logo.png",
 		"url": "tobias-horstmann",
-		"name": "Tobias",
+		"name": "Tobias Horstmann",
 		"title": "A Manager Resume That’s Much, Much More",
 		"description":
 			"When a regional manager has to balance IT, logistics, business administration, and more, their resume needs to show flexibility, boldness, and results. Tobias’ resume example does just that. It tells his story wonderfully, painting a picture of a manager who’s up to the task of taking his firm to new places.",
@@ -180,9 +193,11 @@
 		]
 	},
 	{
-		"image": "successful-resumes/melanie-fischer-resume-1.jpg",
+		"image": "successful-resumes/melanie-fisher-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/melanie@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-esc-logo.png",
 		"url": "melanie-fischer",
-		"name": "Melanie",
+		"name": "Melanie Fischer",
 		"title": "A Resume Example of a Rise From Customer Service to Sales",
 		"description":
 			"Mel's career didn't start at Escape the City, but her resume does. That's because of her rapid progression and the results she's delivered, all within 3 years. Transitioning from Happiness Officer to a Team Leader her resume is that of a classic startup story, wearing lots of hats, working on cross-functional projects, ideating and running with big projects to deliver big results. What’s she’s ended up with is a powerful example of a sales resume.",
@@ -211,8 +226,10 @@
 	},
 	{
 		"image": "successful-resumes/steffany-photopoulos-resume-1.jpg",
+		"companyLogo": "successful-resumes/company-logos/2x-ie-logo.png",
+		"avatar": "successful-resumes/avatars/steffany@2.png",
 		"url": "steffany-photopoulos",
-		"name": "Steffany",
+		"name": "Steffany Photopoulos",
 		"title": "A Marketing Consultant Resume with a Clear Mission",
 		"description":
 			"Louis' marketing resume example shows he's not just an accomplished but that his career has a clear mission behind it. That mission binds together his projects from Everyone Hates Marketers, his current work at Hotjar, and his achievements to create a story with impact.",
@@ -239,9 +256,11 @@
 		]
 	},
 	{
-		"image": "successful-resumes/hillary-darkville-resume-1.jpg",
+		"image": "successful-resumes/hillary-k-darville-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/hillary@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-guru-logo.png",
 		"url": "hillary-darkville",
-		"name": "Hillary",
+		"name": "Hillary Darkville",
 		"title":
 			"A Product Manager Resume Bursting with Positivity and Results",
 		"description":
@@ -271,8 +290,10 @@
 	},
 	{
 		"image": "successful-resumes/eden-ivancich-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/eden@2.png",
+		"companyLogo": "successful-resumes/null.png",
 		"url": "eden-ivancich",
-		"name": "Eden",
+		"name": "Eden Ivancich",
 		"title": "Even a High School Resume Can Be Effective and Impactful",
 		"description":
 			"Nearly everyone faces the challenge of what to put in their first resume. They don’t have much experience, but they can’t just leave most of it blank. Eden’s resume is an inspiring example of just what you can do with a resume before you even finish high school. His high school resume highlights his academics, work ethic, and passions just as well as someone with decades of experience.",
@@ -300,8 +321,10 @@
 	},
 	{
 		"image": "successful-resumes/eric-weissmann-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/eric_weismann@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-cin-logo.png",
 		"url": "eric-weissmann",
-		"name": "Eric",
+		"name": "Eric Weissmann",
 		"title": "A Marketing Executive Resume that Makes a Strong Impression",
 		"description":
 			"Eric's resume actually starts with his dream job at Disney. Not many people get to begin their careers that way, but it taught Eric some important lessons. From there, he’s moved up by throwing himself into each role, from website development to brand building. What it all adds up to is a marketing executive resume example that really stands out. From data driven results to raw enthusiasm, Eric’s attitude towards work and life really shines through.",
@@ -330,8 +353,10 @@
 	},
 	{
 		"image": "successful-resumes/sophie-segal-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/sofie_segal@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-avis-budget.png",
 		"url": "sophie-segal",
-		"name": "Sophie",
+		"name": "Sophie Segal",
 		"title": "A Department Head Resume That Shows a Woman Making an Impact",
 		"description":
 			"When your career stays within a single company or industry, it can be hard to show growth. Sophie’s resume example demonstrates how she’s grown in terms of responsibilities and accomplishments within the rental car industry. Growing from a manager to a department head, she’s consistently demonstrated concrete results and a great attitude. Add in her entrepreneurial experience with side projects and you have a compelling story and a great resume example.",
@@ -360,8 +385,10 @@
 	},
 	{
 		"image": "successful-resumes/maximilian-malterer-resume-1.jpg",
+		"companyLogo": "successful-resumes/company-logos/2x-amazon.png",
+		"avatar": "successful-resumes/avatars/max@2.png",
 		"url": "maximilian-malterer",
-		"name": "Maximilian",
+		"name": "Maximilian Malterer",
 		"title":
 			"An Account Manager Resume Blending Nonprofit Work with Entrepreneurship",
 		"description":
@@ -391,8 +418,10 @@
 	},
 	{
 		"image": "successful-resumes/daniel-pietersen-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/louis@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-intercom-logo.png",
 		"url": "daniel-pietersen",
-		"name": "Daniel",
+		"name": "Daniel Pietersen",
 		"title": "A Customer Support Resume That Got Daniel His Dream Job",
 		"description":
 			"“It gave me a sense of relief and a feeling of confidence when passing it along to a potential employer.”\nThat’s how Daniel felt when he downloaded his Enhancv resume for the first time. He moved from using a Word resume, something many of us see as a standard (and maybe a bit boring), and created a document that shows who he is as both a professional and an individual. Something that is more visually appealing, because in tech, it's always about standing out.",
@@ -429,8 +458,10 @@
 	},
 	{
 		"image": "successful-resumes/sam-young-resume-1.jpg",
+		"avatar": "successful-resumes/avatars/sam@2.png",
+		"companyLogo": "successful-resumes/company-logos/2x-spotify-logo.png",
 		"url": "sam-young",
-		"name": "Sam",
+		"name": "Sam Young",
 		"title": "A career change from investment banking to Spotify",
 		"description":
 			"Just how did Sam make such a huge career change happen? It took a year of hard work but she can still break it down into concrete steps that ultimately got her to a job she loves. Here’s what she did:",

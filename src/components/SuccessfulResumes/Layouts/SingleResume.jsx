@@ -69,7 +69,7 @@ export default function SingleResume({
 
                             <div className="resumes--accent-hired p-5">
                                 <div className="Grid">
-                                    <h5>{name}’s career</h5>
+                                    <h5>{data.name}’s career</h5>
                                     <span className="label m-bottom-3">
                                         Director, Banking, Tech, YouTube
                                         personality, Marketing person
@@ -126,6 +126,7 @@ export default function SingleResume({
 export const pageQuery = graphql`
     query SingleResume($url: String!) {
         userResumesJson(url: { eq: $url }) {
+            name
             title
             url
             stepsTitle

@@ -11,7 +11,7 @@ import ResumeList from "components/SuccessfulResumes/List";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
-export default function FeaturedResume() {
+export default function FeaturedResume({ data }) {
     return (
         <DefaultLayout>
             <main className="container">
@@ -89,7 +89,7 @@ export default function FeaturedResume() {
                     </div>
                 </section>
 
-                <ResumeList />
+                <ResumeList data={data.allUserResumesJson.edges} />
 
                 <section className="text-center m-sm-bottom-4 m-md-bottom-6">
                     <h2 className="h2">
@@ -218,3 +218,38 @@ export default function FeaturedResume() {
         </DefaultLayout>
     );
 }
+
+export const pageQuery = graphql`
+    query AllResumes {
+        allUserResumesJson(limit: 20) {
+            edges {
+                node {
+                    url
+                    name
+                    title
+                    image {
+                        childImageSharp {
+                            resolutions(width: 240, height: 329) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    companyLogo {
+                        childImageSharp {
+                            resolutions(width: 100) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+`;
