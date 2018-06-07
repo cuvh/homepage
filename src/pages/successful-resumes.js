@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 
 import hannah from "assets/img/new-successful-resumes/highlighted/hannah_mills.png";
 import resume from "assets/img/new-successful-resumes/highlighted/cv.png";
@@ -14,6 +15,11 @@ import DefaultLayout from "layouts/DefaultLayout";
 export default function FeaturedResume({ data }) {
     return (
         <DefaultLayout>
+            <Helmet
+             bodyAttributes={{
+                class: "resumeslist"
+             }}
+            />
             <main className="container">
                 <section className="page--head">
                     <h1 className="h1">
