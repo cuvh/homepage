@@ -1,11 +1,19 @@
 import React from "react";
 import Img from "gatsby-image";
 import Link from "gatsby-link";
+import classnames from "classnames";
 
 export default class List extends React.PureComponent {
 	state = {
-		revealed: false
+		revealed: false,
+		filter: null
 	};
+
+	filter(type) {
+		this.setState({
+			filter: type
+		});
+	}
 
 	reveal(e) {
 		e.preventDefault();
@@ -16,8 +24,14 @@ export default class List extends React.PureComponent {
 
 	render() {
 		const { data } = this.props;
+		const { filter } = this.state;
 
-		const items = this.state.revealed ? data : data.slice(0, 3);
+		let items;
+		if (filter) {
+			items = data.filter(item => item.node.label === filter);
+		} else {
+			items = this.state.revealed ? data : data.slice(0, 3);
+		}
 
 		return (
 			<section className="resumes--others m-sm-top-4 m-md-top-19 m-sm-bottom-3 m-md-bottom-7">
@@ -27,28 +41,44 @@ export default class List extends React.PureComponent {
 					</h4>
 					<nav className="resumes--filter m-sm-bottom-2 m-md-bottom-2 m-sm-top-4 m-md-top-4">
 						<button
-						 data-className="all"
-						 className="resumes--filter-button selected"
+						 onClick={() => this.filter(null)}
+						 className={classnames("resumes--filter-button", {
+							selected: filter === null
+						 })}
 						>
 							All resumes
 						</button>
 						<button
-						 data-className="career-change"
-						 className="resumes--filter-button"
+						 onClick={() => this.filter("Career Change")}
+						 className={classnames("resumes--filter-button", {
+							selected: filter === "Career Change"
+						 })}
 						>
-							Careers change
+							Career change
 						</button>
 						<button
-						 data-className="job-search"
-						 className="resumes--filter-button"
+						 onClick={() => this.filter("New Role")}
+						 className={classnames("resumes--filter-button", {
+							selected: filter === "New Role"
+						 })}
 						>
-							Job search
+							New Role
 						</button>
 						<button
-						 data-className="right-next-gig"
-						 className="resumes--filter-button"
+						 onClick={() => this.filter("Industry Switch")}
+						 className={classnames("resumes--filter-button", {
+							selected: filter === "Industry Switch"
+						 })}
 						>
-							Right next gig
+							Industry Switch
+						</button>
+						<button
+						 onClick={() => this.filter("First Job")}
+						 className={classnames("resumes--filter-button", {
+							selected: filter === "First Job"
+						 })}
+						>
+							First Job
 						</button>
 					</nav>
 				</div>
@@ -61,7 +91,7 @@ export default class List extends React.PureComponent {
 						>
 							<div className="resumes--box">
 								<span className="resumes--badge badge--orange">
-									The right gig
+									{node.label}
 								</span>
 								<span className="resumes--person-avatar">
 									<Img

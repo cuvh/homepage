@@ -231,6 +231,7 @@ export const pageQuery = graphql`
             edges {
                 node {
                     url
+                    label
                     name
                     title
                     image {

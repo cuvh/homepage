@@ -1,6 +1,7 @@
 [
 	{
 		"image": "successful-resumes/louis-grenier-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/louis@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-hotjar-logo.png",
 		"url": "louis-grenier",
@@ -32,6 +33,7 @@
 	},
 	{
 		"image": "successful-resumes/eric-hu-resume-1.jpg",
+		"label": "Career Change",
 		"avatar": "successful-resumes/avatars/eric@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-sde-logo.png",
 		"url": "eric-hu",
@@ -64,6 +66,7 @@
 	},
 	{
 		"image": "successful-resumes/akshay-rao-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/louis@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-tesla-logo.png",
 		"url": "akshay-rao",
@@ -97,6 +100,7 @@
 	},
 	{
 		"image": "successful-resumes/marcellus-nixon-resume-1.jpg",
+		"label": "Industry Switch",
 		"avatar": "successful-resumes/avatars/marcellus@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-verizon-logo.png",
 		"url": "marcellus-nixon",
@@ -130,6 +134,7 @@
 	},
 	{
 		"image": "successful-resumes/julian-prim-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/louis@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
 		"url": "julian-prim",
@@ -162,6 +167,7 @@
 	},
 	{
 		"image": "successful-resumes/tobias-horstmann-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/louis@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-encory-logo.png",
 		"url": "tobias-horstmann",
@@ -194,6 +200,7 @@
 	},
 	{
 		"image": "successful-resumes/melanie-fisher-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/melanie@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-esc-logo.png",
 		"url": "melanie-fischer",
@@ -226,6 +233,7 @@
 	},
 	{
 		"image": "successful-resumes/steffany-photopoulos-resume-1.jpg",
+		"label": "Career Change",
 		"companyLogo": "successful-resumes/company-logos/2x-ie-logo.png",
 		"avatar": "successful-resumes/avatars/steffany@2.png",
 		"url": "steffany-photopoulos",
@@ -257,6 +265,7 @@
 	},
 	{
 		"image": "successful-resumes/hillary-k-darville-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/hillary@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-guru-logo.png",
 		"url": "hillary-darkville",
@@ -290,6 +299,7 @@
 	},
 	{
 		"image": "successful-resumes/eden-ivancich-resume-1.jpg",
+		"label": "First Job",
 		"avatar": "successful-resumes/avatars/eden@2.png",
 		"companyLogo": "successful-resumes/null.png",
 		"url": "eden-ivancich",
@@ -321,6 +331,7 @@
 	},
 	{
 		"image": "successful-resumes/eric-weissmann-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/eric_weismann@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-cin-logo.png",
 		"url": "eric-weissmann",
@@ -353,6 +364,7 @@
 	},
 	{
 		"image": "successful-resumes/sophie-segal-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/sofie_segal@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-avis-budget.png",
 		"url": "sophie-segal",
@@ -385,6 +397,7 @@
 	},
 	{
 		"image": "successful-resumes/maximilian-malterer-resume-1.jpg",
+		"label": "New Role",
 		"companyLogo": "successful-resumes/company-logos/2x-amazon.png",
 		"avatar": "successful-resumes/avatars/max@2.png",
 		"url": "maximilian-malterer",
@@ -418,6 +431,7 @@
 	},
 	{
 		"image": "successful-resumes/daniel-pietersen-resume-1.jpg",
+		"label": "New Role",
 		"avatar": "successful-resumes/avatars/louis@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-intercom-logo.png",
 		"url": "daniel-pietersen",
@@ -458,6 +472,7 @@
 	},
 	{
 		"image": "successful-resumes/sam-young-resume-1.jpg",
+		"label": "Career Change",
 		"avatar": "successful-resumes/avatars/sam@2.png",
 		"companyLogo": "successful-resumes/company-logos/2x-spotify-logo.png",
 		"url": "sam-young",
