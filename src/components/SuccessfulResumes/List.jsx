@@ -3,6 +3,8 @@ import Img from "gatsby-image";
 import Link from "gatsby-link";
 import classnames from "classnames";
 
+import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
+
 export default class List extends React.PureComponent {
 	state = {
 		revealed: false,
@@ -90,9 +92,7 @@ export default class List extends React.PureComponent {
 						 className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1"
 						>
 							<div className="resumes--box">
-								<span className="resumes--badge badge--orange">
-									{node.label}
-								</span>
+								<ResumeBadge label={node.label} />
 								<span className="resumes--person-avatar">
 									<Img
 									 className="m-xs-left-1 m-md-left-2"

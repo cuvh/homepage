@@ -4,6 +4,7 @@ const preferDefault = m => m && m.default || m
 exports.components = {
   "component---src-components-successful-resumes-layouts-single-resume-jsx": require("gatsby-module-loader?name=component---src-components-successful-resumes-layouts-single-resume-jsx!/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx"),
   "component---src-components-successful-resumes-layouts-famous-resume-jsx": require("gatsby-module-loader?name=component---src-components-successful-resumes-layouts-famous-resume-jsx!/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx"),
+  "component---cache-dev-404-page-js": require("gatsby-module-loader?name=component---cache-dev-404-page-js!/home/viktor/Work/homepage/.cache/dev-404-page.js"),
   "component---src-pages-404-js": require("gatsby-module-loader?name=component---src-pages-404-js!/home/viktor/Work/homepage/src/pages/404.js"),
   "component---src-pages-about-js": require("gatsby-module-loader?name=component---src-pages-about-js!/home/viktor/Work/homepage/src/pages/about.js"),
   "component---src-pages-careers-js": require("gatsby-module-loader?name=component---src-pages-careers-js!/home/viktor/Work/homepage/src/pages/careers.js"),
@@ -34,6 +35,7 @@ exports.json = {
   "successful-resumes-daniel-pietersen.json": require("gatsby-module-loader?name=path---successful-resumes-daniel-pietersen!/home/viktor/Work/homepage/.cache/json/successful-resumes-daniel-pietersen.json"),
   "successful-resumes-sam-young.json": require("gatsby-module-loader?name=path---successful-resumes-sam-young!/home/viktor/Work/homepage/.cache/json/successful-resumes-sam-young.json"),
   "successful-resumes-famous-casey-neistat.json": require("gatsby-module-loader?name=path---successful-resumes-famous-casey-neistat!/home/viktor/Work/homepage/.cache/json/successful-resumes-famous-casey-neistat.json"),
+  "dev-404-page.json": require("gatsby-module-loader?name=path---dev-404-page!/home/viktor/Work/homepage/.cache/json/dev-404-page.json"),
   "404.json": require("gatsby-module-loader?name=path---404!/home/viktor/Work/homepage/.cache/json/404.json"),
   "about.json": require("gatsby-module-loader?name=path---about!/home/viktor/Work/homepage/.cache/json/about.json"),
   "careers.json": require("gatsby-module-loader?name=path---careers!/home/viktor/Work/homepage/.cache/json/careers.json"),
