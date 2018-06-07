@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/home/viktor/Work/homepage/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/home/viktor/Work/homepage/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "a9daa04c1f1a205662c9a5bbfe9f1a86",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
@@ -887,14 +897,16 @@
       "siteMetadata": {
         "title": "Gatsby Default Starter"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-07T15:26:23.417Z",
+      "buildTime": "2018-06-07T15:27:17.946Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "cf248edf3b05ec0a399f032cdb4daa16",
+        "contentDigest": "412892b89234728eadd374a729b67dc8",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -9654,7 +9666,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2dc2e24f170ed9ce36f43a2036b9e589",
+        "contentDigest": "e6037226609a8d8eb0593136077ffaf7",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9677,7 +9689,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c3c21d7359f0feedd2b3fb47842567fc",
+        "contentDigest": "aeaf0e62eabd53004b1de0fcd585663d",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9700,7 +9712,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9d75784c622b5bc597b2171c5b2e7e52",
+        "contentDigest": "730e5883bf7f001fa585cd0fbc23db71",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9723,7 +9735,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "436060cfa6d3136234e8b32b20a614a2",
+        "contentDigest": "a0a47cce0788bed885168717237793ca",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9746,7 +9758,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "90b37168a0053a4cb086af9526799f12",
+        "contentDigest": "b959529b7684bceafe5aa23c93cc7fba",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9769,7 +9781,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3d3ef5f448e853cef8c0a9e260824baa",
+        "contentDigest": "86e70100598810d8cb575b2f0f01cbfd",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9792,7 +9804,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1dba0c57df5cebcd28b1b61dbb38fdcb",
+        "contentDigest": "3aed64ee320c6308b09e904a861a2427",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9815,7 +9827,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "586b02aa074c2f5fa063350ee8b30f66",
+        "contentDigest": "4bd0f20bab9473890f93a80ebb21bfb2",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9838,7 +9850,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d59625301fda4466a2eb1e09d897f1b0",
+        "contentDigest": "4221a43e559cb16811fa5552f29f9c57",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9861,7 +9873,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c900bd4b41b5bc0af4b84d86305f83bb",
+        "contentDigest": "5c6c2807e273646eb4a831476e395135",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9884,7 +9896,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "03c8ff0ede2ad49d882231a20d83ab97",
+        "contentDigest": "b78c8f02d8f0ce51aa9ec37ea0c3361e",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9907,7 +9919,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "769a7d3a5841a682a8f264d3186a6d2c",
+        "contentDigest": "41f944093167ad65d7502777884c6fd8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9930,7 +9942,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c8d43835dee214e121971bba620e668c",
+        "contentDigest": "5c00e887e4f0ed862e5561793568c606",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9953,7 +9965,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5ecbbd5b4774ad35f56ec14a9038a710",
+        "contentDigest": "3ffd81130f6a7f95a2b91a362ab269e4",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9976,7 +9988,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6f9ed92b7146e1ed3c33fcb6074bcdc4",
+        "contentDigest": "2a16928216100b83a1c6f8addf914abc",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -9999,7 +10011,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9fe30a25bd4aa0799581e9d0309bc722",
+        "contentDigest": "ff1f918d7cd9908a7eaf04c9a2d1886c",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -10020,7 +10032,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "40767226cf8820592dabed13dd103648",
+        "contentDigest": "5ff340bc1464610d330d589fb25a8c1d",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10041,7 +10053,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "16541315c1883d3cbf59316e4d3d1660",
+        "contentDigest": "30066b81ec0c6d1c25eca56107aefb38",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10062,7 +10074,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "102e6df3cf2151ed51af2da01c1f3aac",
+        "contentDigest": "7546c45867054c6ca840ff7d60394228",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10083,7 +10095,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "40029d34f2d93eacdfc1f5d68ecacf78",
+        "contentDigest": "df0971b92cd780f05ad8f364a84aae60",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10104,7 +10116,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2564a81e445dc31ac705992b6fb0cca0",
+        "contentDigest": "415d577b41de9d86fdce6bc26bf77d00",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10125,7 +10137,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0ed0723bcb575d950aae2b1079d4c52c",
+        "contentDigest": "2df59305ef2946334d2eb2d154b6b907",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10146,7 +10158,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "78003817814bfd71b81b81690dbd909d",
+        "contentDigest": "45271d719207ee8dd4ab893e43d00554",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10167,7 +10179,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f6bedbba935b103835fcf1560f2d5c55",
+        "contentDigest": "e5740880549ec18218df6bb90e504656",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10188,7 +10200,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fa8cf4b3d87975fbf2d0b33a7d055ca8",
+        "contentDigest": "db58b3c41f96ed72a23f0b558f00696d",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10209,7 +10221,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e6b4f317219951bee9a2bc79b7b24e6c",
+        "contentDigest": "17bfa87a3b9539611f08c5d7363e1a3d",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -10230,9 +10242,66 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5229c23333cce35dabf4fdf31cd1f5c2",
+        "contentDigest": "4ef745e00f911011e7d4500a02d1bf64",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
+      }
+    },
+    "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file": {
+      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file",
+      "children": [
+        "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "fc7c44939c4176cc6c31cbadee27a4a7",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/data/successful-resumes/Sam_photo@2.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png",
+      "relativePath": "successful-resumes/Sam_photo@2.png",
+      "extension": "png",
+      "size": 1332002,
+      "prettySize": "1.33 MB",
+      "modifiedTime": "2018-06-07T15:45:27.085Z",
+      "accessTime": "2018-06-07T15:46:10.529Z",
+      "changeTime": "2018-06-07T15:46:10.537Z",
+      "birthTime": "2018-06-07T15:46:10.537Z",
+      "root": "/",
+      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes",
+      "base": "Sam_photo@2.png",
+      "ext": ".png",
+      "name": "Sam_photo@2",
+      "relativeDirectory": "successful-resumes",
+      "dev": 49,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 1448402,
+      "blocks": 2632,
+      "atimeMs": 1528386370529.183,
+      "mtimeMs": 1528386327084.598,
+      "ctimeMs": 1528386370537.1833,
+      "birthtimeMs": 1528386370537.1833,
+      "atime": "2018-06-07T15:46:10.529Z",
+      "mtime": "2018-06-07T15:45:27.085Z",
+      "ctime": "2018-06-07T15:46:10.537Z",
+      "birthtime": "2018-06-07T15:46:10.537Z"
+    },
+    "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file >> ImageSharp": {
+      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file",
+      "internal": {
+        "contentDigest": "fc7c44939c4176cc6c31cbadee27a4a7",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     }
   },

@@ -9,6 +9,7 @@ exports.layouts = {
 exports.components = {
   "component---src-components-successful-resumes-layouts-single-resume-jsx": preferDefault(require("/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx")),
   "component---src-components-successful-resumes-layouts-famous-resume-jsx": preferDefault(require("/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx")),
+  "component---cache-dev-404-page-js": preferDefault(require("/home/viktor/Work/homepage/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/home/viktor/Work/homepage/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/home/viktor/Work/homepage/src/pages/about.js")),
   "component---src-pages-careers-js": preferDefault(require("/home/viktor/Work/homepage/src/pages/careers.js")),
@@ -39,6 +40,7 @@ exports.json = {
   "successful-resumes-daniel-pietersen.json": require("/home/viktor/Work/homepage/.cache/json/successful-resumes-daniel-pietersen.json"),
   "successful-resumes-sam-young.json": require("/home/viktor/Work/homepage/.cache/json/successful-resumes-sam-young.json"),
   "successful-resumes-famous-casey-neistat.json": require("/home/viktor/Work/homepage/.cache/json/successful-resumes-famous-casey-neistat.json"),
+  "dev-404-page.json": require("/home/viktor/Work/homepage/.cache/json/dev-404-page.json"),
   "404.json": require("/home/viktor/Work/homepage/.cache/json/404.json"),
   "about.json": require("/home/viktor/Work/homepage/.cache/json/about.json"),
   "careers.json": require("/home/viktor/Work/homepage/.cache/json/careers.json"),

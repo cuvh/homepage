@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "gatsby-link";
 import Helmet from "react-helmet";
 
+import samImage from "data/successful-resumes/Sam_photo@2.png";
 import hannah from "assets/img/new-successful-resumes/highlighted/hannah_mills.png";
 import resume from "assets/img/new-successful-resumes/highlighted/cv.png";
-import intercomLogo from "assets/img/new-successful-resumes/highlighted/intercom.png";
+import spotifyLogo from "data/successful-resumes/company-logos/2x-spotify-logo.png";
 import casey from "assets/img/new-successful-resumes/youtuber-casey-neistat.png";
 
 import Subscribe from "components/SuccessfulResumes/Subscribe";
@@ -23,10 +25,11 @@ export default function FeaturedResume({ data }) {
             <main className="container">
                 <section className="page--head">
                     <h1 className="h1">
-                        People like you made it with our resumes
+                        Real Resume examples that got people like you hired at
+                        top companies
                     </h1>
                     <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-3">
-                        Get inspired by those real life examples.
+                        Get inspired and learn from these real life examples
                     </h5>
                 </section>
 
@@ -35,7 +38,7 @@ export default function FeaturedResume({ data }) {
                         <div className="resume--highlighted-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
                             <img
                              className="resume--highlighted-person-image"
-                             src={hannah}
+                             src={samImage}
                              alt="Hannah Mills’s story"
                             />
                             <span className="resume--highlighted-preview">
@@ -57,39 +60,38 @@ export default function FeaturedResume({ data }) {
                         <div className="resume--highlighted-content Grid Grid--alignCenter Grid-cell--md-7 Grid-cell--xs-12">
                             <div className="text-center-sm-max full-width">
                                 <h3 className="h3">
-                                    From cooking to investment and banking
+                                    From investment banking to Spotify
                                 </h3>
                                 <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-2">
-                                    And further. Hannah Mills’s story.
+                                    See the story of Sam’s career change
                                 </h5>
                                 <div className="resume--highlighted-text m-top-4">
                                     <p>
-                                        Accomplishments from a single job, you
-                                        can still show your values, strengths,
-                                        and what you're most proud of.
-                                        Accomplishments from a single job, you
-                                        can still show.
+                                        It took a lot of planning, hard work,
+                                        and an amazing resume to get Sam her
+                                        dream job at Spotify. We break down how
+                                        she did it step by step.
                                     </p>
                                 </div>
                                 <div className="resume--highlighted-hired m-xs-top-2 m-md-top-4">
                                     <span className="label">Hired at</span>
                                     <img
-                                     className="m-xs-left-1 m-md-left-2"
-                                     src={intercomLogo}
-                                     alt="Intercom Company logo"
+                                     style={{ height: 30 }}
+                                     src={spotifyLogo}
+                                     alt="Spotify Company logo"
                                     />
                                     <span className="line m-left-2 m-right-2" />
                                     <span className="jobtitle m-xs-top-2">
                                         Director, Banking, Tech
                                     </span>
                                 </div>
-                                <a
+                                <Link
+                                 to="/successful-resumes/sam-young"
                                  target="_blank"
-                                 href="#"
                                  className="btn btn-big btn-primary m-top-4"
                                 >
                                     SEE HOW SHE DID IT
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
