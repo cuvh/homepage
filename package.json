@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "babel-plugin-transform-regenerator": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
         "bootstrap-sass": "^3.3.7",
         "classnames": "^2.2.5",
         "del": "^2.2.2",
