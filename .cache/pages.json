@@ -105,6 +105,13 @@
         "path": "/successful-resumes/sam-young"
     },
     {
+        "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "successful-resumes-famous-casey-neistat.json",
+        "path": "/successful-resumes/famous/casey-neistat"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",

@@ -1,0 +1,73 @@
+[
+	{
+		"name": "Casey Neistat",
+		"url": "casey-neistat",
+		"cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
+		"smallDescription":
+			"You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
+		"description":
+			"Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
+		"sections": [
+			{
+				"section": "LifeProject",
+				"description":
+					"Casey’s rise from living in a trailer park to being a world-famous filmmaker came through the success of his big life projects."
+			},
+			{
+				"section": "MostProudOf",
+				"data": [
+					{
+						"title": "Pulling his life together",
+						"description":
+							"After dropping out of high school, running away at 15, and getting his girlfriend pregnant"
+					},
+					{
+						"title": "Finding his own path",
+						"description":
+							"By realizing there’s other ways to achieve his dream of being a filmmaker"
+					},
+					{
+						"title":
+							"Sticking with NYC, Filmmaking, Youtube, and Candice",
+						"description":
+							"Despite 9/11, Hollywood BS, demonetizing, and breakups"
+					},
+					{
+						"title": "Surviving 534 daily vlogs",
+						"description":
+							"By committing to challenge himself every day and stopping when it got easy"
+					}
+				]
+			},
+			{
+				"section": "TypicalDay",
+				"data": [
+					{
+						"backgroundColor": "#443a77",
+						"title": "Morning run"
+					},
+					{
+						"backgroundColor": "#7061bd",
+						"title": "Vlogging"
+					},
+					{
+						"backgroundColor": "#9086dc",
+						"title": "Quality time with family"
+					},
+					{
+						"backgroundColor": "#b4a9ec",
+						"title": "Editing"
+					},
+					{
+						"backgroundColor": "#d4cbff",
+						"title": "Even more vlogging"
+					},
+					{
+						"backgroundColor": "#ded9fa",
+						"title": "Planning the next big thing"
+					}
+				]
+			}
+		]
+	}
+]

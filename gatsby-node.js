@@ -9,17 +9,17 @@ exports.modifyWebpackConfig = ({ config, _stage }) => {
 	return config;
 };
 
-const data = require("./src/data/userResumes");
+// const userData = require("./src/data/userResumes");
+// const famousData = require("./src/data/famousResumes");
 
 exports.createPages = async ({ graphql, boundActionCreators }) => {
 	const { createPage } = boundActionCreators;
 
-	const template = path.resolve(
+	const userResumeTemplate = path.resolve(
 		`./src/components/SuccessfulResumes/Layouts/SingleResume.jsx`
 	);
 
-	// resolve(
-	const query = await graphql(
+	const userResumes = await graphql(
 		`
 			{
 				allUserResumesJson(limit: 1000) {
@@ -33,11 +33,39 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 		`
 	);
 
-	query.data.allUserResumesJson.edges.forEach(({ node: { url } }) => {
+	userResumes.data.allUserResumesJson.edges.forEach(({ node: { url } }) => {
 		createPage({
 			path: "/successful-resumes/" + url,
-			component: template,
+			component: userResumeTemplate,
 			context: { url }
 		});
 	});
+
+	const famousResumeTemplate = path.resolve(
+		`./src/components/SuccessfulResumes/Layouts/FamousResume.jsx`
+	);
+
+	const famousResumes = await graphql(
+		`
+			{
+				allFamousResumesJson(limit: 1000) {
+					edges {
+						node {
+							url
+						}
+					}
+				}
+			}
+		`
+	);
+
+	famousResumes.data.allFamousResumesJson.edges.forEach(
+		({ node: { url } }) => {
+			createPage({
+				path: "/successful-resumes/famous/" + url,
+				component: famousResumeTemplate,
+				context: { url }
+			});
+		}
+	);
 };
