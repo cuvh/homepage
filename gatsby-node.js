@@ -9,8 +9,10 @@ exports.modifyWebpackConfig = ({ config, _stage }) => {
 	return config;
 };
 
-// const userData = require("./src/data/userResumes");
-// const famousData = require("./src/data/famousResumes");
+exports.modifyBabelrc = ({ babelrc }) => ({
+	...babelrc,
+	plugins: babelrc.plugins.concat(["transform-regenerator"])
+});
 
 exports.createPages = async ({ graphql, boundActionCreators }) => {
 	const { createPage } = boundActionCreators;

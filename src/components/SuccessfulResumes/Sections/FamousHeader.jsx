@@ -1,10 +1,5 @@
 import React from "react";
 import Img from "gatsby-image";
-import BgImage from "utils/BgImage";
-
-import headerImg from "assets/img/new-successful-resumes/famous/elon-musk/header.jpg";
-
-// style={{ backgroundImage: `url(${headerImg})` }}
 
 export default function FamousHeader({
 	name,
@@ -14,7 +9,7 @@ export default function FamousHeader({
 }) {
 	return (
 		<section className="famous-resume--head relative">
-			<Img
+			{/*<Img
 			 sizes={cover.childImageSharp.sizes}
 			 style={{
 				position: "absolute",
@@ -23,7 +18,7 @@ export default function FamousHeader({
 				width: "100%",
 				height: "100%"
 			 }}
-			/>
+			/>*/}
 
 			<div className="container">
 				<div className="resumes--content Grid-cell--lg-6 Grid-cell--md-5 Grid-cell--xs-12">

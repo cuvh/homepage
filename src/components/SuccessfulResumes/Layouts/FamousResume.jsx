@@ -16,24 +16,6 @@ import BooksFour from "components/SuccessfulResumes/Sections/BooksFour";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
 import FamousContainer from "components/SuccessfulResumes/Sections/FamousContainer";
 
-function renderSection(props) {
-    if (props.section === "LifeProject") {
-        return <LifeProject {...props} />;
-    }
-
-    if (props.section === "MostProudOf") {
-        return <Awards {...props} />;
-    }
-
-    if (props.section === "TypicalDay") {
-        return <TypicalDay {...props} />;
-    }
-
-    console.log("null");
-
-    return null;
-}
-
 export default function FamousResume({
     data: { famousResumesJson: { ...data } }
 }) {
@@ -49,7 +31,19 @@ export default function FamousResume({
                 />
                 <Menu />
 
-                {data.sections.map(item => renderSection(item))}
+                {data.sections.map(item => {
+                    if (item.section === "LifeProject") {
+                        return <LifeProject {...item} />;
+                    }
+
+                    if (item.section === "MostProudOf") {
+                        return <Awards {...item} />;
+                    }
+
+                    if (item.section === "TypicalDay") {
+                        return <TypicalDay {...item} />;
+                    }
+                })}
             </main>
         </DefaultLayout>
     );

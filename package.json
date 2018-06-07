@@ -11,6 +11,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
+        "babel-plugin-transform-regenerator": "^6.26.0",
         "bootstrap-sass": "^3.3.7",
         "browser-sync": "^2.18.11",
         "classnames": "^2.2.5",
@@ -27,6 +28,7 @@
         "gatsby-source-filesystem": "^1.5.38",
         "gatsby-transformer-json": "^1.0.19",
         "gatsby-transformer-sharp": "^1.6.26",
+        "i": "^0.3.6",
         "layout-grid": "^2.2.0",
         "react": "16.3",
         "react-helmet": "^5.2.0",
