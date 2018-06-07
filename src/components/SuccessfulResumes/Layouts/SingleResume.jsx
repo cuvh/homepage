@@ -69,7 +69,7 @@ export default function SingleResume({
 
                             <div className="resumes--accent-hired p-5">
                                 <div className="Grid">
-                                    <h5>Hannah’s career</h5>
+                                    <h5>{name}’s career</h5>
                                     <span className="label m-bottom-3">
                                         Director, Banking, Tech, YouTube
                                         personality, Marketing person
@@ -94,16 +94,8 @@ export default function SingleResume({
                     </section>
 
                     <article className="resume-article p-md-top-8">
-                        <h3>Hannah’s 4 steps to a successful job hunt</h3>
-                        <p>
-                            Before looking for companies that would suit his
-                            requirements, Daniel thought in more detail about
-                            how his skills could match the new desired role. As
-                            he’s worked remotely most of his career, he needed a
-                            company that would allow for that. Another
-                            requirement was a company that’s known for
-                            exceptional customer support.
-                        </p>
+                        <h3>{data.stepsTitle}</h3>
+                        <p>{data.stepsDescription}</p>
 
                         <ul>
                             {data.steps.map((step, i) => (
@@ -136,6 +128,8 @@ export const pageQuery = graphql`
         userResumesJson(url: { eq: $url }) {
             title
             url
+            stepsTitle
+            stepsDescription
             steps {
                 title
                 description
