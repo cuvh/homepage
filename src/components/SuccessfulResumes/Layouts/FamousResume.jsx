@@ -19,7 +19,6 @@ import FamousContainer from "components/SuccessfulResumes/Sections/FamousContain
 export default function FamousResume({
     data: { famousResumesJson: { ...data } }
 }) {
-    console.log(data);
     return (
         <DefaultLayout>
             <main className="famous-resume--container">
@@ -33,7 +32,12 @@ export default function FamousResume({
 
                 {data.sections.map(item => {
                     if (item.section === "LifeProject") {
-                        return <LifeProject {...item} />;
+                        return (
+                            <div>
+                                <LifeProject {...item} />
+                                <Experience {...item} />
+                            </div>
+                        );
                     }
 
                     if (item.section === "MostProudOf") {
@@ -80,6 +84,9 @@ export const pageQuery = graphql`
                     title
                     description
                     backgroundColor
+                    startDate
+                    endDate
+                    location
                 }
             }
         }

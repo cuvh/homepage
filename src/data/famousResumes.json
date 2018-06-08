@@ -10,7 +10,7 @@
 			"Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Casey’s rise from living in a trailer park to being a world-famous filmmaker came through the success of his big life projects.",
 				"data": [
@@ -46,7 +46,7 @@
 				]
 			},
 			{
-				"section": "Most Proud Of",
+				"section": "MostProudOf",
 				"data": [
 					{
 						"title": "Pulling his life together",
@@ -59,8 +59,10 @@
 							"By realizing there’s other ways to achieve his dream of being a filmmaker"
 					},
 					{
-						"title": "Sticking with NYC, Filmmaking, Youtube, and Candice",
-						"description": "Despite 9/11, Hollywood BS, demonetizing, and breakups"
+						"title":
+							"Sticking with NYC, Filmmaking, Youtube, and Candice",
+						"description":
+							"Despite 9/11, Hollywood BS, demonetizing, and breakups"
 					},
 					{
 						"title": "Surviving 534 daily vlogs",
@@ -70,7 +72,7 @@
 				]
 			},
 			{
-				"section": "His typical day",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#443a77",
@@ -115,8 +117,9 @@
 			"When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions.",
 		"sections": [
 			{
-				"section": "Life Projects",
-				"description": "These are just a few of the world-changing projects Musk works on.",
+				"section": "LifeProject",
+				"description":
+					"These are just a few of the world-changing projects Musk works on.",
 				"data": [
 					{
 						"title": "SpaceX",
@@ -158,7 +161,7 @@
 				]
 			},
 			{
-				"section": "His Time",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#a99975",
@@ -201,7 +204,7 @@
 			"From the first female employee at Google to CEO of Yahoo!, Mayer’s CEO resume tells the story of a career marked by persistence, hard work, and results. Her resume example also shows how women can succeed in both the technology and business worlds.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Marissa spent most of her career at Google and her resume show’s how she grew within that company. Now, she’s taking on the challenge of running Yahoo! In challenging times.",
 				"data": [
@@ -218,17 +221,18 @@
 				]
 			},
 			{
-				"section": "Most Proud Of",
+				"section": "MostProudOf",
 				"description":
 					"Mayer’s list of what she’s most proud of really reinforces and contextualizes her work experience. You see the time she spent at Google and can guess what it took to rise within the company, but her she spells out what she’s taken away from those experiences.",
 				"data": [
 					{
 						"title": "Courage she had",
-						"description": "To take a sinking ship and make it float"
+						"description":
+							"To take a sinking ship and make it float"
 					},
 					{
-						"title": "Persistence & Loyalty"
-						/////////               "description": "She showed through hard times at Yahoo!"
+						"title": "Persistence & Loyalty",
+						"description": "She showed through hard times at Yahoo!"
 					},
 					{
 						"title": "Google’s Growth",
@@ -242,7 +246,7 @@
 				]
 			},
 			{
-				"section": "Her typical day",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#443a77",
@@ -250,7 +254,8 @@
 					},
 					{
 						"backgroundColor": "#7061bd",
-						"title": "Showing Yahoo employees their work has meaning"
+						"title":
+							"Showing Yahoo employees their work has meaning"
 					},
 					{
 						"backgroundColor": "#9086dc",
@@ -268,7 +273,8 @@
 					},
 					{
 						"backgroundColor": "#d4cbff",
-						"title": "Creating spreadsheet for her amazing cupcake recipe"
+						"title":
+							"Creating spreadsheet for her amazing cupcake recipe"
 					}
 				]
 			}
@@ -288,14 +294,14 @@
 			"Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Back then, he would have needed a software developer resume just like anyone else. His resume is an example of how you can showcase your passions, philosophy, and ambitions to create an impactful resume before you’ve landed your first real job.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Zuckerberg’s pre-Facebook projects showed an early interest in leveraging technology to connect people.",
 				"data": [
 					{
 						"title": "Facemash",
 						"startDate": "10/2003",
-						////////////			"endDate": "Ongoing",
+						"endDate": "Ongoing",
 						"location": "Cambridge, MA",
 						"description":
 							"A social website which allows visitors to compare two student pictures side-by-side and let them choose who’s “hot” and who’s “not”"
@@ -303,7 +309,7 @@
 					{
 						"title": "CourseMarch",
 						"startDate": "2003",
-						"endDate": "Ongoing	",
+						"endDate": "Ongoing",
 						"location": "Cambridge, MA",
 						"description":
 							"The first social media tool allowing college students to choose classes based on the choices of other students and form study groups"
@@ -327,7 +333,8 @@
 					},
 					{
 						"title": "10+ Prizes",
-						"description": "In math, astronomy, physics, and classics"
+						"description":
+							"In math, astronomy, physics, and classics"
 					},
 					{
 						"title": "Proficient",
@@ -363,7 +370,7 @@
 			"Even Presidents need resumes. Obama's resume shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"It’s hard to imagine a bigger undertaking than serving 8 years as President, but Obama’s resume manages to make it succinct and impactful. Not to mention his rise in Illinois politics.",
 				"data": [
@@ -385,11 +392,12 @@
 				]
 			},
 			{
-				"section": "Most Proud Of",
+				"section": "MostProudOf",
 				"data": [
 					{
 						"title": "Raising his daughters",
-						"description": "With the help of his amazing wife Michelle!"
+						"description":
+							"With the help of his amazing wife Michelle!"
 					},
 					{
 						"title": "Awarded the Nobel Peace Prize",
@@ -406,7 +414,7 @@
 				]
 			},
 			{
-				"section": "A Day in His Life",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#443a77",
@@ -447,13 +455,13 @@
 	{
 		"name": "Travis Kalanick",
 		"url": "travis-kalanick",
-		///////	"avatar": "famous-resumes/avatars/@2.png",
+		"avatar": "famous-resumes/avatars/casey@2.png",
 		"cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
 		"description":
 			"Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description": "",
 				"data": [
 					{
@@ -474,7 +482,7 @@
 				]
 			},
 			{
-				"section": "Craziest Things He’s Done",
+				"section": "Achievements",
 				"data": [
 					{
 						"title": "Protected our drivers from fines",
@@ -487,26 +495,30 @@
 							"Tested the limits of the App Store’s T&C and covered it, yet Tim Cook caught them and threatened to remove Uber from the App Store"
 					},
 					{
-						"title": "Persuaded drivers to drop our biggest competitor",
+						"title":
+							"Persuaded drivers to drop our biggest competitor",
 						"description":
 							"We figured out when one person drives for both Lyft and Uber and started sending more orders their way"
 					}
 				]
 			},
 			{
-				"section": "A Day in His Life",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#443a77",
-						"title": "Putting out fires, bending rules and solving complex problems"
+						"title":
+							"Putting out fires, bending rules and solving complex problems"
 					},
 					{
 						"backgroundColor": "#7061bd",
-						"title": "Protecting his privacy while keeping tabs on the competition"
+						"title":
+							"Protecting his privacy while keeping tabs on the competition"
 					},
 					{
 						"backgroundColor": "#9086dc",
-						"title": "Irritating city officials and the cab industry"
+						"title":
+							"Irritating city officials and the cab industry"
 					},
 					{
 						"backgroundColor": "#9689d9",
@@ -529,7 +541,7 @@
 			"From the publication of her best-selling book Lean In, Sheryl Sandberg has become a sometimes controversial thinker on how women can succeed in their careers. Whether you see her as an icon or disagree with how she thinks women can advance themselves while balancing other obligations, her COO resume example has a fascinating story to tell.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"By focusing on her career in technology and less on her prior political work, Sandberg’s resume details just how she successfully built two of the top performing online ad teams in history all while making the world better for working women.",
 				"data": [
@@ -551,7 +563,7 @@
 				]
 			},
 			{
-				"section": "Most Proud Of",
+				"section": "MostProudOf",
 				"data": [
 					{
 						"title": "Making Facebook profitable",
@@ -576,7 +588,7 @@
 				]
 			},
 			{
-				"section": "A Day in Her Life",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#3d9399",
@@ -620,7 +632,7 @@
 			"Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Wal-mart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Focusing on her work in the public sector, Clinton’s life projects tie together her greatest passions and shows how she’s applied herself towards those goals wherever she is.",
 				"data": [
@@ -642,11 +654,12 @@
 				]
 			},
 			{
-				"section": "Most Proud Of",
+				"section": "MostProudOf",
 				"data": [
 					{
 						"title": "Being the most admired woman in America",
-						"description": "And third most admired woman in the world"
+						"description":
+							"And third most admired woman in the world"
 					},
 					{
 						"title": "30+ years of experience in public service",
@@ -654,20 +667,23 @@
 					},
 					{
 						"title": "Built a great family",
-						"description": "By working through issues and supporting her daughter"
+						"description":
+							"By working through issues and supporting her daughter"
 					},
 					{
 						"title": "Committed to women and children",
-						"description": "By doing pro-bono work throughout her career"
+						"description":
+							"By doing pro-bono work throughout her career"
 					}
 				]
 			},
 			{
-				"section": "A Day in Her Life",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#da6e58",
-						"title": "Make life easier for the average American and the middle class"
+						"title":
+							"Make life easier for the average American and the middle class"
 					},
 					{
 						"backgroundColor": "#ea7860",
@@ -676,7 +692,8 @@
 					},
 					{
 						"backgroundColor": "#f19582",
-						"title": "Establish America as the world’s clean energy superpower"
+						"title":
+							"Establish America as the world’s clean energy superpower"
 					},
 					{
 						"backgroundColor": "#f3baa9",
@@ -685,7 +702,8 @@
 					},
 					{
 						"backgroundColor": "#f7cec2",
-						"title": "Fight for full federal equality for LGBT Americans"
+						"title":
+							"Fight for full federal equality for LGBT Americans"
 					},
 					{
 						"backgroundColor": "#f2dcd6",
@@ -712,12 +730,13 @@
 			"Named the most powerful woman in the world for 9 of the past 10 years, Angela Merkel's resume isn't short on accomplishments as a female leader. But more than just showing what she's done, her resume shows how she balances her life and how what she's most proud of defines her. So when she mentions what she did the night the Berlin Wall fell, it's more than just a story, it's a statement about how she views the world and her work.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Leaving off an impressive career as a research scientist, Merkel’s life projects show the aptitude and persistence to climb through the political ranks. Along the way, she’s pioneered female leadership in Germany, Europe, and the world.",
 				"data": [
 					{
-						"title": "Chancellor of the Federal Republic of Germany",
+						"title":
+							"Chancellor of the Federal Republic of Germany",
 						"description":
 							"Over more than a decade as Chancellor, Merkel has had to navigate extreme crises like the global financial crisis and the European refugee crisis. Through it all she’s focused on delivering economic results, stable leadership, and humane policies."
 					},
@@ -754,11 +773,12 @@
 				]
 			},
 			{
-				"section": "A Day in Her Life",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "#da6e58",
-						"title": "Work on creating a better future for Germany and Europe"
+						"title":
+							"Work on creating a better future for Germany and Europe"
 					},
 					{
 						"backgroundColor": "#ea7860",
@@ -770,7 +790,8 @@
 					},
 					{
 						"backgroundColor": "#f3baa9",
-						"title": "Listen to a game of the national football team"
+						"title":
+							"Listen to a game of the national football team"
 					},
 					{
 						"backgroundColor": "#f7cec2",
@@ -797,7 +818,7 @@
 			"Whether you think Steve Jobs was a genius, narcissist, or both, that misses something more important: how his life was shaped by struggle. His CEO resume shows not just what he’d accomplished and what he was proud of when he rejoined Apple in 1996, but how his struggles and failures turned him into the person who could save the company.",
 		"sections": [
 			{
-				"section": "Life Projects",
+				"section": "LifeProject",
 				"description":
 					"Jobs’ work up to 1996 shows both his tremendous skills and his deep flaws. In each role, he changes the way things are done and leaves and impact. Of course, he leaves the bigger lessons for the section on his struggles.",
 				"data": [
@@ -828,7 +849,7 @@
 				]
 			},
 			{
-				"section": "Struggles he learned from",
+				"section": "Struggles",
 				"data": [
 					{
 						"title": "Dropping out of college",
@@ -848,7 +869,7 @@
 				]
 			},
 			{
-				"section": "His typical day",
+				"section": "TypicalDay",
 				"data": [
 					{
 						"backgroundColor": "5db188",
@@ -872,7 +893,8 @@
 					},
 					{
 						"backgroundColor": "c8f0dd",
-						"title": "Checking out what Xerox PARC is up to these days"
+						"title":
+							"Checking out what Xerox PARC is up to these days"
 					}
 				]
 			}

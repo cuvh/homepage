@@ -14,7 +14,8 @@ import ResumeList from "components/SuccessfulResumes/List";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
-export default function FeaturedResume({ data }) {
+export default function FeaturedResume({ data, ...rest }) {
+    console.log(data, rest);
     return (
         <DefaultLayout>
             <Helmet
@@ -257,6 +258,14 @@ export const pageQuery = graphql`
                             }
                         }
                     }
+                }
+            }
+        }
+        allFamousResumesJson(limit: 20) {
+            edges {
+                node {
+                    url
+                    name
                 }
             }
         }
