@@ -2,10 +2,10 @@ import React from "react";
 
 import strengthImg from "assets/img/new-successful-resumes/famous/elon-musk/ornaments/strenghts.jpg";
 
-export default function Strengths() {
+export default function Strengths({ section }) {
 	return (
 		<section
-		 id="strenghts"
+		 id={section}
 		 className="m-md-bottom-13"
 		>
 			<div className="container">

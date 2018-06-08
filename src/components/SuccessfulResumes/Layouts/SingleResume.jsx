@@ -77,9 +77,11 @@ export default function SingleResume({
                                     <span className="label hired-label">
                                         Hired at
                                     </span>
-                                    <img
-                                     className="m-xs-top-1 m-md-left-2"
-                                     src={intercomLogo}
+                                    <Img
+                                     resolutions={
+                                        data.companyLogo.childImageSharp
+                                            .resolutions
+                                     }
                                      alt="Intercom Company logo"
                                     />
                                 </div>
@@ -138,6 +140,13 @@ export const pageQuery = graphql`
             image {
                 childImageSharp {
                     resolutions(width: 548) {
+                        ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+            companyLogo {
+                childImageSharp {
+                    resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
                     }
                 }

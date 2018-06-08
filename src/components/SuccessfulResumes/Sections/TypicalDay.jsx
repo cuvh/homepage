@@ -1,18 +1,17 @@
 import React from "react";
+import Img from "gatsby-image";
 
-import mytimeImg from "assets/img/new-successful-resumes/famous/elon-musk/my_time-2elon-musk.png";
-
-export default function TypicalDay({ data }) {
+export default function TypicalDay({ image, section, data }) {
     return (
         <section
-         id="typical-day"
+         id={section}
          className="famous-resume--person-time Grid m-md-bottom-3 m-sm-bottom-3 p-sm-3"
         >
             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 text-center">
-                <img
+                <Img
                  width="700"
                  className="famous-resume--person-time-illustration"
-                 src={mytimeImg}
+                 sizes={image.childImageSharp.sizes}
                  alt="Elon Musk Day Timeline"
                 />
                 <p className="text-white-smoke text-center full-width">

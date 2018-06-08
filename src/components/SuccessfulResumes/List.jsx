@@ -26,7 +26,7 @@ export default class List extends React.PureComponent {
 
 	render() {
 		const { data } = this.props;
-		const { filter } = this.state;
+		const { filter, revealed } = this.state;
 
 		let items;
 		if (filter) {
@@ -85,9 +85,9 @@ export default class List extends React.PureComponent {
 					</nav>
 				</div>
 				<div className="resumes--others-wrap Grid">
-					{items.map(({ node }) => (
+					{items.map(({ node }, index) => (
 						<Link
-						 key={node.url}
+						 key={node.url + index}
 						 to={`/successful-resumes/${node.url}`}
 						 className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1"
 						>
@@ -131,15 +131,17 @@ export default class List extends React.PureComponent {
 						</Link>
 					))}
 				</div>
-				<div className="text-center m-sm-bottom-4 m-md-bottom-9 m-sm-top-4 m-md-top-10">
-					<a
-					 onClick={event => this.reveal(event)}
-					 href="#"
-					 className="feature-link"
-					>
-						See more real resumes &nbsp;→
-					</a>
-				</div>
+				{!filter && !revealed ? (
+					<div className="text-center m-sm-bottom-4 m-md-bottom-9 m-sm-top-4 m-md-top-10">
+						<a
+						 onClick={event => this.reveal(event)}
+						 href="#"
+						 className="feature-link"
+						>
+							See more real resumes &nbsp;→
+						</a>
+					</div>
+				) : null}
 			</section>
 		);
 	}

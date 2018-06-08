@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import Helmet from "react-helmet";
 
 import samImage from "data/successful-resumes/Sam_photo@2.png";
@@ -37,9 +38,11 @@ export default function FeaturedResume({ data, ...rest }) {
                 <section className="resume--highlighted m-sm-top-4 m-md-top-5 m-sm-bottom-4 m-md-bottom-10">
                     <div className="Grid p-xs-top-4 p-md-top-5">
                         <div className="resume--highlighted-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
-                            <img
+                            <Img
                              className="resume--highlighted-person-image"
-                             src={samImage}
+                             resolutions={
+                                data.mainImage.childImageSharp.resolutions
+                             }
                              alt="Hannah Mills’s story"
                             />
                             <span className="resume--highlighted-preview">
@@ -160,7 +163,7 @@ export default function FeaturedResume({ data, ...rest }) {
                     </div>
                 </section>
 
-                <FamousResumesList />
+                <FamousResumesList data={data.allFamousResumesJson.edges} />
 
                 <Subscribe />
 
@@ -266,6 +269,30 @@ export const pageQuery = graphql`
                 node {
                     url
                     name
+                    description
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    resume {
+                        childImageSharp {
+                            resolutions(width: 240, height: 329) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        mainImage: file(
+            relativePath: { eq: "successful-resumes/Sam_photo@2.png" }
+        ) {
+            childImageSharp {
+                resolutions(width: 475, height: 370) {
+                    ...GatsbyImageSharpResolutions
                 }
             }
         }

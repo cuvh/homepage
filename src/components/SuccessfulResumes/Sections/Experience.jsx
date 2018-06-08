@@ -5,14 +5,16 @@ import tesla from "assets/img/new-successful-resumes/famous/elon-musk/tesla-logo
 import neuraLink from "assets/img/new-successful-resumes/famous/elon-musk/neuralink-logo.jpg";
 
 export default function Experience({ data }) {
-    console.log(data);
     return (
         <section className="m-sm-bottom-4 m-md-bottom-13">
             <div className="container">
                 <div className="famous-resume--boxes">
                     <div className="famous-resume--boxes-wrap Grid">
-                        {data.map(item => (
-                            <div className="Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1">
+                        {data.map((item, index) => (
+                            <div
+                             key={index}
+                             className="Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1"
+                            >
                                 <div className="famous-resume--box">
                                     <img
                                      width="304"
@@ -20,7 +22,9 @@ export default function Experience({ data }) {
                                      alt="SpaceX Logo"
                                     />
                                     <div className="famous-resume--work-exp m-md-bottom-2 text-white-smoke">
-                                        Founder, CEO, Lead designer <br />
+                                        {item.position ? (
+                                            <div>{item.position}</div>
+                                        ) : null}
                                         {item.startDate}-{item.endDate}
                                         &nbsp; {item.location}
                                     </div>

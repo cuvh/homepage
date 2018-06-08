@@ -1,11 +1,12 @@
 import React from "react";
+import Img from "gatsby-image";
 
 import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.png";
 
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
-export default function FamousContainer() {
+export default function FamousContainer({ resume, finalDescription }) {
 	return (
 		<div
 		 id="famous-resume"
@@ -23,9 +24,9 @@ export default function FamousContainer() {
 							 data-action="Click Full Resume"
 							 data-label="Casey Neistat"
 							>
-								<img
+								<Img
+								 resolutions={resume.childImageSharp.resolutions}
 								 width="442"
-								 src={elonResume}
 								 alt="Elon Musk"
 								/>
 								<button className="btn-resume-preview" />
@@ -42,11 +43,7 @@ export default function FamousContainer() {
 									One resume to rule them all.
 								</h5>
 								<p className="p-big text-white-smoke">
-									He transferred to the University of
-									Pennsylvania two years later, where he
-									received an economics degree from the
-									Wharton School and a degree in physics from
-									the College of Arts and Sciences.
+									{finalDescription}
 								</p>
 							</div>
 							<a
