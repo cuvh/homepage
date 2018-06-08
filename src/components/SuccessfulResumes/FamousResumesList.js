@@ -2,8 +2,6 @@ import React from "react";
 import Img from "gatsby-image";
 import Link from "gatsby-link";
 
-import steveJobsCompany from "assets/img/new-successful-resumes/avatars/steve_jobs/company.png";
-
 export default class FamousResumesList extends React.PureComponent {
     state = {
         revealed: false
@@ -41,11 +39,6 @@ export default class FamousResumesList extends React.PureComponent {
                                         node.avatar.childImageSharp.resolutions
                                      }
                                      alt="Steve Jobs Former Apple CEO"
-                                    />
-                                    <img
-                                     className="resumes--person-company"
-                                     src={steveJobsCompany}
-                                     alt="Аpple Company Logo"
                                     />
                                 </span>
                                 <h4 className="resumes--person-name m-top-2">
