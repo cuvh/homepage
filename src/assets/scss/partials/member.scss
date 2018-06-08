@@ -72,6 +72,14 @@
     }
 }
 
+.modal {
+    display: block !important;
+    padding-left: 0px;
+    background-color: rgba(128, 128, 128, 0.9);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .member-modal {
     .modal-body {
         padding: 30px 40px;
