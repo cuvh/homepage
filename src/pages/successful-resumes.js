@@ -160,66 +160,6 @@ export default function FeaturedResume({ data, ...rest }) {
                 <FamousResumesList data={data.allFamousResumesJson.edges} />
 
                 <Subscribe />
-
-                <div
-                 id="view-resume-highlighted"
-                 tabIndex="-1"
-                 className="modal fade"
-                >
-                    <div className="modal-dialog modal-lg modal-example">
-                        <div className="modal-content">
-                            <div className="modal-body">
-                                <img
-                                 width="1240"
-                                 height="1755"
-                                 className="img-responsive"
-                                 src="/img/successful-resumes/famous/marissa-mayer-resume.jpg"
-                                 alt="YouTuber Resume, Casey Neistat"
-                                />
-                            </div>
-                            {/*sr_social-panel-condensed className="inModal hasBackground" url="famous/casey-neistat" facebookText="If you’ve ever achieved
-                something and not felt satisfied, @cneistat has some important lessons to teach you" twitterText="@CaseyNeistat
-                shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple" */}
-                        </div>
-                    </div>
-                    <button
-                     type="button"
-                     data-dismiss="modal"
-                     className="close close-example"
-                    >
-                        <i className="icon-times" />
-                    </button>
-                </div>
-
-                <div
-                 id="view-resume"
-                 tabIndex="-1"
-                 className="modal fade"
-                >
-                    <div className="modal-dialog modal-lg modal-example">
-                        <div className="modal-content">
-                            <div className="modal-body">
-                                <img
-                                 width="1240"
-                                 height="1755"
-                                 className="img-responsive"
-                                 src="/img/successful-resumes/famous/casey-neistat/casey-neistat-resume.jpg"
-                                 alt="YouTuber Resume, Casey Neistat"
-                                />
-                            </div>
-                            {/*sr_social-panel-condensed className="inModal hasBackground" url="famous/casey-neistat" facebookText="If you’ve ever achieved
-                something and not felt satisfied, @cneistat has some important lessons to teach you" twitterText="@CaseyNeistat
-                shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple"*/}
-                        </div>
-                    </div>
-                    <button
-                     type="button"
-                     data-dismiss="modal"
-                     className="close close-example"
-                    >
-                        <i className="icon-times" />
-                    </button>
-                </div>
             </main>
         </DefaultLayout>
     );
