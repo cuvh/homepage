@@ -449,7 +449,7 @@
 			},
 			{
 				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2barack-obama.png",
+				"image": "famous-resumes/myday/my_time-2Barack-Obama.png",
 				"data": [
 					{
 						"backgroundColor": "#443a77",
@@ -524,6 +524,8 @@
 			},
 			{
 				"section": "Achievements",
+				"image":
+					"famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
 				"data": [
 					{
 						"title": "Protected our drivers from fines",

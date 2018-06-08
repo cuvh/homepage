@@ -46,9 +46,10 @@ export default function FeaturedResume({ data, ...rest }) {
                              alt="Hannah Mills’s story"
                             />
                             <span className="resume--highlighted-preview">
-                                <img
-                                 src={resume}
-                                 alt="Hannah Mills CV"
+                                <Img
+                                 resolutions={
+                                    data.mainResume.childImageSharp.resolutions
+                                 }
                                 />
                                 <a
                                  href="#view-resume-highlighted"
@@ -86,7 +87,7 @@ export default function FeaturedResume({ data, ...rest }) {
                                     />
                                     <span className="line m-left-2 m-right-2" />
                                     <span className="jobtitle m-xs-top-2">
-                                        Director, Banking, Tech
+                                        IT, Senior, Operations
                                     </span>
                                 </div>
                                 <Link
@@ -115,14 +116,7 @@ export default function FeaturedResume({ data, ...rest }) {
                 <section className="resumes--accent accent--reverse Grid full-width noBackground">
                     <div className="resumes--preview Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6">
                         <span className="resumes--preview-holder">
-                            <a
-                             href="#view-resume"
-                             data-toggle="modal"
-                             data-track="event"
-                             data-category="Successful Resumes"
-                             data-action="Click Full Resume"
-                             data-label="Casey Neistat"
-                            >
+                            <a href="#view-resume">
                                 <img
                                  src={casey}
                                  alt="YouTuber Casey Neistat"
@@ -134,24 +128,27 @@ export default function FeaturedResume({ data, ...rest }) {
                     <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12">
                         <div className="text Grid-cell--md-9">
                             <h3 className="h3 m-xs-top-6">
-                                How to find your own definition of success
+                                From dishwasher to iconic Youtube filmmaker
                             </h3>
                             <div className="m-xs-top-1 m-md-top-3">
                                 <p className="p-big">
-                                    For Casey, being a filmmaker was the goal
-                                    for more than a decade. When he turned 30 he
-                                    was producing hollywood films, attending
-                                    prestigious film festivals, and even winning
-                                    some awards.
+                                    You don’t get more than 9 million Youtube
+                                    subscribers without learning a few lessons
+                                    along the way.<br />
+                                    <br />
+                                    Every time he tries something new, Casey
+                                    shows the importance of knowing why you do
+                                    what you do. He also shows why success can
+                                    be dangerous. His unique example of a
+                                    filmmaker resume tells that story.
                                 </p>
                             </div>
-                            <a
-                             target="_blank"
-                             href="#"
+                            <Link
+                             to="/successful-resumes/famous/casey-neistat"
                              className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
                             >
                                 Read Resume
-                            </a>
+                            </Link>
 
                             <a
                              href="#explore-more-resumes"
@@ -292,6 +289,15 @@ export const pageQuery = graphql`
         ) {
             childImageSharp {
                 resolutions(width: 475, height: 370) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        mainResume: file(
+            relativePath: { eq: "successful-resumes/sam_resume@2.png" }
+        ) {
+            childImageSharp {
+                resolutions(width: 214, height: 281) {
                     ...GatsbyImageSharpResolutions
                 }
             }

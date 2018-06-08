@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "930ecb3056b1faf6f2f3f918b554f0c7",
+        "contentDigest": "f20431802446995dae347842c8fe8eb1",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -901,12 +901,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-08T13:52:04.408Z",
+      "buildTime": "2018-06-08T14:02:54.715Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "8991109f0d7bc3c661b8ca6fc81038e4",
+        "contentDigest": "7b25cc914d4369772fbcc37f50077a1a",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -1455,7 +1455,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b14f76fdbc8703be62a9b17b83130e81",
+        "contentDigest": "1e56f433071b4e952c6c6d7df87d4ed0",
         "mediaType": "application/json",
         "type": "File",
         "description": "File \"src/data/famousResumes.json\"",
@@ -1465,12 +1465,12 @@
       "absolutePath": "/home/viktor/Work/homepage/src/data/famousResumes.json",
       "relativePath": "famousResumes.json",
       "extension": "json",
-      "size": 38114,
-      "prettySize": "38.1 kB",
-      "modifiedTime": "2018-06-08T13:10:32.107Z",
-      "accessTime": "2018-06-08T13:08:35.403Z",
-      "changeTime": "2018-06-08T13:10:32.107Z",
-      "birthTime": "2018-06-08T13:10:32.107Z",
+      "size": 38195,
+      "prettySize": "38.2 kB",
+      "modifiedTime": "2018-06-08T14:24:05.162Z",
+      "accessTime": "2018-06-08T14:21:34.765Z",
+      "changeTime": "2018-06-08T14:24:05.162Z",
+      "birthTime": "2018-06-08T14:24:05.162Z",
       "root": "/",
       "dir": "/home/viktor/Work/homepage/src/data",
       "base": "famousResumes.json",
@@ -1486,14 +1486,14 @@
       "blksize": 4096,
       "ino": 14299061,
       "blocks": 96,
-      "atimeMs": 1528463315402.6035,
-      "mtimeMs": 1528463432107.3135,
-      "ctimeMs": 1528463432107.3135,
-      "birthtimeMs": 1528463432107.3135,
-      "atime": "2018-06-08T13:08:35.403Z",
-      "mtime": "2018-06-08T13:10:32.107Z",
-      "ctime": "2018-06-08T13:10:32.107Z",
-      "birthtime": "2018-06-08T13:10:32.107Z"
+      "atimeMs": 1528467694765.0925,
+      "mtimeMs": 1528467845162.173,
+      "ctimeMs": 1528467845162.173,
+      "birthtimeMs": 1528467845162.173,
+      "atime": "2018-06-08T14:21:34.765Z",
+      "mtime": "2018-06-08T14:24:05.162Z",
+      "ctime": "2018-06-08T14:24:05.162Z",
+      "birthtime": "2018-06-08T14:24:05.162Z"
     },
     "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file",
@@ -11313,6 +11313,869 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "SitePage /successful-resumes/louis-grenier": {
+      "layout": "index",
+      "jsonName": "successful-resumes-louis-grenier.json",
+      "internalComponentName": "ComponentSuccessfulResumesLouisGrenier",
+      "path": "/successful-resumes/louis-grenier",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "louis-grenier"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/louis-grenier",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "34eed84bb43af37510cb3da90accadf6",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/eric-hu": {
+      "layout": "index",
+      "jsonName": "successful-resumes-eric-hu.json",
+      "internalComponentName": "ComponentSuccessfulResumesEricHu",
+      "path": "/successful-resumes/eric-hu",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "eric-hu"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/eric-hu",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "555956abce9cdb293aa3d22f78ecd402",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/akshay-rao": {
+      "layout": "index",
+      "jsonName": "successful-resumes-akshay-rao.json",
+      "internalComponentName": "ComponentSuccessfulResumesAkshayRao",
+      "path": "/successful-resumes/akshay-rao",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "akshay-rao"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/akshay-rao",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1095724fbb2397ebd936d8e970ad8590",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/marcellus-nixon": {
+      "layout": "index",
+      "jsonName": "successful-resumes-marcellus-nixon.json",
+      "internalComponentName": "ComponentSuccessfulResumesMarcellusNixon",
+      "path": "/successful-resumes/marcellus-nixon",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "marcellus-nixon"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/marcellus-nixon",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c390ecdfb599eae732d337fab4975b76",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/julian-prim": {
+      "layout": "index",
+      "jsonName": "successful-resumes-julian-prim.json",
+      "internalComponentName": "ComponentSuccessfulResumesJulianPrim",
+      "path": "/successful-resumes/julian-prim",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "julian-prim"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/julian-prim",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5e188e250e357822ed3c26d39d176363",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/tobias-horstmann": {
+      "layout": "index",
+      "jsonName": "successful-resumes-tobias-horstmann.json",
+      "internalComponentName": "ComponentSuccessfulResumesTobiasHorstmann",
+      "path": "/successful-resumes/tobias-horstmann",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "tobias-horstmann"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/tobias-horstmann",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "829397f74b1ff35c1632beb7157f1207",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/melanie-fischer": {
+      "layout": "index",
+      "jsonName": "successful-resumes-melanie-fischer.json",
+      "internalComponentName": "ComponentSuccessfulResumesMelanieFischer",
+      "path": "/successful-resumes/melanie-fischer",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "melanie-fischer"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/melanie-fischer",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1cd4568e775691f93a71362577351770",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/steffany-photopoulos": {
+      "layout": "index",
+      "jsonName": "successful-resumes-steffany-photopoulos.json",
+      "internalComponentName": "ComponentSuccessfulResumesSteffanyPhotopoulos",
+      "path": "/successful-resumes/steffany-photopoulos",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "steffany-photopoulos"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/steffany-photopoulos",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a7075f4ced7548a0ad0ef3bb0185f2b8",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/hillary-darkville": {
+      "layout": "index",
+      "jsonName": "successful-resumes-hillary-darkville.json",
+      "internalComponentName": "ComponentSuccessfulResumesHillaryDarkville",
+      "path": "/successful-resumes/hillary-darkville",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "hillary-darkville"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/hillary-darkville",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "dd2ab5f1cf21df72796ddfaf6db5f2e2",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/eden-ivancich": {
+      "layout": "index",
+      "jsonName": "successful-resumes-eden-ivancich.json",
+      "internalComponentName": "ComponentSuccessfulResumesEdenIvancich",
+      "path": "/successful-resumes/eden-ivancich",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "eden-ivancich"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/eden-ivancich",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7149f267a40d0eafeaee48681a3d89aa",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/eric-weissmann": {
+      "layout": "index",
+      "jsonName": "successful-resumes-eric-weissmann.json",
+      "internalComponentName": "ComponentSuccessfulResumesEricWeissmann",
+      "path": "/successful-resumes/eric-weissmann",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "eric-weissmann"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/eric-weissmann",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f5de39ae646cfc20490cb8120074a099",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/sophie-segal": {
+      "layout": "index",
+      "jsonName": "successful-resumes-sophie-segal.json",
+      "internalComponentName": "ComponentSuccessfulResumesSophieSegal",
+      "path": "/successful-resumes/sophie-segal",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "sophie-segal"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/sophie-segal",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b65a90bb95f235a9c231380c7be5c0c5",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/maximilian-malterer": {
+      "layout": "index",
+      "jsonName": "successful-resumes-maximilian-malterer.json",
+      "internalComponentName": "ComponentSuccessfulResumesMaximilianMalterer",
+      "path": "/successful-resumes/maximilian-malterer",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "maximilian-malterer"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/maximilian-malterer",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8c518fbc333f24350be7de60069a9328",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/daniel-pietersen": {
+      "layout": "index",
+      "jsonName": "successful-resumes-daniel-pietersen.json",
+      "internalComponentName": "ComponentSuccessfulResumesDanielPietersen",
+      "path": "/successful-resumes/daniel-pietersen",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "daniel-pietersen"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/daniel-pietersen",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d7ee1b2403b4ace4a99420e400d0cc33",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/sam-young": {
+      "layout": "index",
+      "jsonName": "successful-resumes-sam-young.json",
+      "internalComponentName": "ComponentSuccessfulResumesSamYoung",
+      "path": "/successful-resumes/sam-young",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
+      "context": {
+        "url": "sam-young"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
+      "id": "SitePage /successful-resumes/sam-young",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "dbd34d2513b6b2fce50d170239edc6cf",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/casey-neistat": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-casey-neistat.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousCaseyNeistat",
+      "path": "/successful-resumes/famous/casey-neistat",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "casey-neistat"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/casey-neistat",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "73b28f3e2db91dbe96ab98008141a38f",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/elon-musk": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-elon-musk.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousElonMusk",
+      "path": "/successful-resumes/famous/elon-musk",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "elon-musk"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/elon-musk",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "15cb42e7aba11f18b01915c5c5fa201c",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/marissa-mayer": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-marissa-mayer.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousMarissaMayer",
+      "path": "/successful-resumes/famous/marissa-mayer",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "marissa-mayer"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/marissa-mayer",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "407f79923fe6f84693b4b946973cf0ab",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/mark-zuckerberg": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-mark-zuckerberg.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousMarkZuckerberg",
+      "path": "/successful-resumes/famous/mark-zuckerberg",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "mark-zuckerberg"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/mark-zuckerberg",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "500f519bf8f5797f6d64cda7bd4ec73e",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/barack-obama": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-barack-obama.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousBarackObama",
+      "path": "/successful-resumes/famous/barack-obama",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "barack-obama"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/barack-obama",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7786543a32f44e9e8344a05f21dd7f77",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/travis-kalanick": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-travis-kalanick.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousTravisKalanick",
+      "path": "/successful-resumes/famous/travis-kalanick",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "travis-kalanick"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/travis-kalanick",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f802a2269b244bbdbd59d7cbf6be96ff",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/sheryl-sandberg": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-sheryl-sandberg.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousSherylSandberg",
+      "path": "/successful-resumes/famous/sheryl-sandberg",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "sheryl-sandberg"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/sheryl-sandberg",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b2dfa108e5930023eb53ff4eb7c8d517",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/hillary-clinton": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-hillary-clinton.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousHillaryClinton",
+      "path": "/successful-resumes/famous/hillary-clinton",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "hillary-clinton"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/hillary-clinton",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bb49cc47399b10908feb33edcb613959",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/angela-merkel": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-angela-merkel.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousAngelaMerkel",
+      "path": "/successful-resumes/famous/angela-merkel",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "angela-merkel"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/angela-merkel",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "69ad09698a094ca4eb9c0bb2b4641734",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/famous/steve-jobs": {
+      "layout": "index",
+      "jsonName": "successful-resumes-famous-steve-jobs.json",
+      "internalComponentName": "ComponentSuccessfulResumesFamousSteveJobs",
+      "path": "/successful-resumes/famous/steve-jobs",
+      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
+      "context": {
+        "url": "steve-jobs"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
+      "id": "SitePage /successful-resumes/famous/steve-jobs",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "46f2e3fee4e04cce5ec79348f44a8ee6",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/home/viktor/Work/homepage/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6cc87ef507b6c05cf2568f73f97af9e7",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "layout": "index",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/home/viktor/Work/homepage/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "207fb07e1c72255cef9d15dc3fad6cff",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /careers/": {
+      "layout": "index",
+      "jsonName": "careers.json",
+      "internalComponentName": "ComponentCareers",
+      "path": "/careers/",
+      "component": "/home/viktor/Work/homepage/src/pages/careers.js",
+      "componentChunkName": "component---src-pages-careers-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/careers.js",
+      "id": "SitePage /careers/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "2bb60d839aaea31fc04758904aacda34",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /enhancv-button/": {
+      "layout": "index",
+      "jsonName": "enhancv-button.json",
+      "internalComponentName": "ComponentEnhancvButton",
+      "path": "/enhancv-button/",
+      "component": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
+      "componentChunkName": "component---src-pages-enhancv-button-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
+      "id": "SitePage /enhancv-button/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1b80e0f2a27835e78fea0a53bb1fff10",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/home/viktor/Work/homepage/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "acf7714fa853ef4469fe1b5a600288b5",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /pricing/": {
+      "layout": "index",
+      "jsonName": "pricing.json",
+      "internalComponentName": "ComponentPricing",
+      "path": "/pricing/",
+      "component": "/home/viktor/Work/homepage/src/pages/pricing.js",
+      "componentChunkName": "component---src-pages-pricing-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/pricing.js",
+      "id": "SitePage /pricing/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "06ba6de740e6125751a95ac325081957",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /pricingb/": {
+      "layout": "index",
+      "jsonName": "pricingb.json",
+      "internalComponentName": "ComponentPricingb",
+      "path": "/pricingb/",
+      "component": "/home/viktor/Work/homepage/src/pages/pricingb.js",
+      "componentChunkName": "component---src-pages-pricingb-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/pricingb.js",
+      "id": "SitePage /pricingb/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "09a860ae891983599a0a9d1488a137fd",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /privacy/": {
+      "layout": "index",
+      "jsonName": "privacy.json",
+      "internalComponentName": "ComponentPrivacy",
+      "path": "/privacy/",
+      "component": "/home/viktor/Work/homepage/src/pages/privacy.js",
+      "componentChunkName": "component---src-pages-privacy-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/privacy.js",
+      "id": "SitePage /privacy/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6cf86bf2cf26c85940cda729fcd8617a",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /successful-resumes/": {
+      "layout": "index",
+      "jsonName": "successful-resumes.json",
+      "internalComponentName": "ComponentSuccessfulResumes",
+      "path": "/successful-resumes/",
+      "component": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
+      "componentChunkName": "component---src-pages-successful-resumes-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
+      "id": "SitePage /successful-resumes/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "df750d4a058c41cacf31d83508a58196",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /terms/": {
+      "layout": "index",
+      "jsonName": "terms.json",
+      "internalComponentName": "ComponentTerms",
+      "path": "/terms/",
+      "component": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "componentChunkName": "component---src-pages-terms-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/terms.js",
+      "id": "SitePage /terms/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "fe63878af1a2ec07bd875441d80a1f57",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/home/viktor/Work/homepage/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "bcc6488349cd319ee76b374a6af5b4f6",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file": {
+      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file",
+      "children": [
+        "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b1a765c1f2fff01f53c50447dced9ec9",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/data/successful-resumes/sam_resume@2.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png",
+      "relativePath": "successful-resumes/sam_resume@2.png",
+      "extension": "png",
+      "size": 162265,
+      "prettySize": "162 kB",
+      "modifiedTime": "2018-06-08T14:09:42.251Z",
+      "accessTime": "2018-06-08T14:10:02.851Z",
+      "changeTime": "2018-06-08T14:10:02.855Z",
+      "birthTime": "2018-06-08T14:10:02.855Z",
+      "root": "/",
+      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes",
+      "base": "sam_resume@2.png",
+      "ext": ".png",
+      "name": "sam_resume@2",
+      "relativeDirectory": "successful-resumes",
+      "dev": 50,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 1449192,
+      "blocks": 344,
+      "atimeMs": 1528467002851.462,
+      "mtimeMs": 1528466982250.974,
+      "ctimeMs": 1528467002855.463,
+      "birthtimeMs": 1528467002855.463,
+      "atime": "2018-06-08T14:10:02.851Z",
+      "mtime": "2018-06-08T14:09:42.251Z",
+      "ctime": "2018-06-08T14:10:02.855Z",
+      "birthtime": "2018-06-08T14:10:02.855Z"
+    },
+    "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file >> ImageSharp": {
+      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file",
+      "internal": {
+        "contentDigest": "b1a765c1f2fff01f53c50447dced9ec9",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
     "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file [0] >>> JSON": {
       "name": "Casey Neistat",
       "url": "casey-neistat",
@@ -11736,7 +12599,7 @@
         },
         {
           "section": "TypicalDay",
-          "image": "famous-resumes/myday/my_time-2barack-obama.png",
+          "image": "famous-resumes/myday/my_time-2Barack-Obama.png",
           "data": [
             {
               "backgroundColor": "#443a77",
@@ -11776,7 +12639,7 @@
       "children": [],
       "parent": "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file",
       "internal": {
-        "contentDigest": "b0f9e5bacbe16660a64bb6d795bcd1a7",
+        "contentDigest": "7944aaed6220616b4c5d3aec4abcbbeb",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
       }
@@ -11813,6 +12676,7 @@
         },
         {
           "section": "Achievements",
+          "image": "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
           "data": [
             {
               "title": "Protected our drivers from fines",
@@ -11857,7 +12721,7 @@
       "children": [],
       "parent": "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file",
       "internal": {
-        "contentDigest": "b20f952dd8e8606570ec756b581447a8",
+        "contentDigest": "9ff6d9caa07f9ac28080148392d7dffb",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
       }
@@ -12238,812 +13102,6 @@
         "contentDigest": "7a8a935b436bb52f86b22f37f97078a2",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
-      }
-    },
-    "SitePage /successful-resumes/louis-grenier": {
-      "layout": "index",
-      "jsonName": "successful-resumes-louis-grenier.json",
-      "internalComponentName": "ComponentSuccessfulResumesLouisGrenier",
-      "path": "/successful-resumes/louis-grenier",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "louis-grenier"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/louis-grenier",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "93b0d455b32566ba5c2a352effa4acbf",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/eric-hu": {
-      "layout": "index",
-      "jsonName": "successful-resumes-eric-hu.json",
-      "internalComponentName": "ComponentSuccessfulResumesEricHu",
-      "path": "/successful-resumes/eric-hu",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "eric-hu"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/eric-hu",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "54d2a297dd9a56532a5db082098ed6f3",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/akshay-rao": {
-      "layout": "index",
-      "jsonName": "successful-resumes-akshay-rao.json",
-      "internalComponentName": "ComponentSuccessfulResumesAkshayRao",
-      "path": "/successful-resumes/akshay-rao",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "akshay-rao"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/akshay-rao",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "05e1bb73013d7b55791161147ad595d6",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/marcellus-nixon": {
-      "layout": "index",
-      "jsonName": "successful-resumes-marcellus-nixon.json",
-      "internalComponentName": "ComponentSuccessfulResumesMarcellusNixon",
-      "path": "/successful-resumes/marcellus-nixon",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "marcellus-nixon"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/marcellus-nixon",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "6cf52b0300b4769992cb274aed93b240",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/julian-prim": {
-      "layout": "index",
-      "jsonName": "successful-resumes-julian-prim.json",
-      "internalComponentName": "ComponentSuccessfulResumesJulianPrim",
-      "path": "/successful-resumes/julian-prim",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "julian-prim"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/julian-prim",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "6d315586384bb89a984d8595a111d681",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/tobias-horstmann": {
-      "layout": "index",
-      "jsonName": "successful-resumes-tobias-horstmann.json",
-      "internalComponentName": "ComponentSuccessfulResumesTobiasHorstmann",
-      "path": "/successful-resumes/tobias-horstmann",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "tobias-horstmann"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/tobias-horstmann",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a5b06c533fbf5d95675591ebc7addd39",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/melanie-fischer": {
-      "layout": "index",
-      "jsonName": "successful-resumes-melanie-fischer.json",
-      "internalComponentName": "ComponentSuccessfulResumesMelanieFischer",
-      "path": "/successful-resumes/melanie-fischer",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "melanie-fischer"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/melanie-fischer",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0c3c4f68e3645143978f46ff26313555",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/steffany-photopoulos": {
-      "layout": "index",
-      "jsonName": "successful-resumes-steffany-photopoulos.json",
-      "internalComponentName": "ComponentSuccessfulResumesSteffanyPhotopoulos",
-      "path": "/successful-resumes/steffany-photopoulos",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "steffany-photopoulos"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/steffany-photopoulos",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "b67c80d1d3742b2404e046ddd3129305",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/hillary-darkville": {
-      "layout": "index",
-      "jsonName": "successful-resumes-hillary-darkville.json",
-      "internalComponentName": "ComponentSuccessfulResumesHillaryDarkville",
-      "path": "/successful-resumes/hillary-darkville",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "hillary-darkville"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/hillary-darkville",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "649d79590785c4a493998244aeac98fa",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/eden-ivancich": {
-      "layout": "index",
-      "jsonName": "successful-resumes-eden-ivancich.json",
-      "internalComponentName": "ComponentSuccessfulResumesEdenIvancich",
-      "path": "/successful-resumes/eden-ivancich",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "eden-ivancich"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/eden-ivancich",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "de0c3361a3a24623c5682cf8278f5432",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/eric-weissmann": {
-      "layout": "index",
-      "jsonName": "successful-resumes-eric-weissmann.json",
-      "internalComponentName": "ComponentSuccessfulResumesEricWeissmann",
-      "path": "/successful-resumes/eric-weissmann",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "eric-weissmann"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/eric-weissmann",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ebeac651197450a826d538fdfdc212a2",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/sophie-segal": {
-      "layout": "index",
-      "jsonName": "successful-resumes-sophie-segal.json",
-      "internalComponentName": "ComponentSuccessfulResumesSophieSegal",
-      "path": "/successful-resumes/sophie-segal",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "sophie-segal"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/sophie-segal",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "33ae3efffa6e61cd0be6b4601ca24a58",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/maximilian-malterer": {
-      "layout": "index",
-      "jsonName": "successful-resumes-maximilian-malterer.json",
-      "internalComponentName": "ComponentSuccessfulResumesMaximilianMalterer",
-      "path": "/successful-resumes/maximilian-malterer",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "maximilian-malterer"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/maximilian-malterer",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ea66fe229905e56e935bdcc0beb2767b",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/daniel-pietersen": {
-      "layout": "index",
-      "jsonName": "successful-resumes-daniel-pietersen.json",
-      "internalComponentName": "ComponentSuccessfulResumesDanielPietersen",
-      "path": "/successful-resumes/daniel-pietersen",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "daniel-pietersen"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/daniel-pietersen",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "c2c1ef97977a709fef8c271f47e2e65c",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/sam-young": {
-      "layout": "index",
-      "jsonName": "successful-resumes-sam-young.json",
-      "internalComponentName": "ComponentSuccessfulResumesSamYoung",
-      "path": "/successful-resumes/sam-young",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-single-resume-jsx",
-      "context": {
-        "url": "sam-young"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/SingleResume.jsx",
-      "id": "SitePage /successful-resumes/sam-young",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "0eb394f59555f1d5df2f02d08b90c428",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/casey-neistat": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-casey-neistat.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousCaseyNeistat",
-      "path": "/successful-resumes/famous/casey-neistat",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "casey-neistat"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/casey-neistat",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "af6c73cdae9f14711ba53dacd7c7621b",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/elon-musk": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-elon-musk.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousElonMusk",
-      "path": "/successful-resumes/famous/elon-musk",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "elon-musk"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/elon-musk",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "eaae6d27f316d6a301a692b6b8c940f2",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/marissa-mayer": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-marissa-mayer.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousMarissaMayer",
-      "path": "/successful-resumes/famous/marissa-mayer",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "marissa-mayer"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/marissa-mayer",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "cbb789d28134fc15601a2e4843185ef5",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/mark-zuckerberg": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-mark-zuckerberg.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousMarkZuckerberg",
-      "path": "/successful-resumes/famous/mark-zuckerberg",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "mark-zuckerberg"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/mark-zuckerberg",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d103158ba9b483aa686c2dfe57bff75f",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/barack-obama": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-barack-obama.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousBarackObama",
-      "path": "/successful-resumes/famous/barack-obama",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "barack-obama"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/barack-obama",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "83d0731f5cedeab0031a9dc9c07ee8bc",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/travis-kalanick": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-travis-kalanick.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousTravisKalanick",
-      "path": "/successful-resumes/famous/travis-kalanick",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "travis-kalanick"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/travis-kalanick",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a9f281ceed1aebd52b5322d51762d4d5",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/sheryl-sandberg": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-sheryl-sandberg.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousSherylSandberg",
-      "path": "/successful-resumes/famous/sheryl-sandberg",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "sheryl-sandberg"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/sheryl-sandberg",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "31444abac9c33f1fbbb201e337700c7b",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/hillary-clinton": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-hillary-clinton.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousHillaryClinton",
-      "path": "/successful-resumes/famous/hillary-clinton",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "hillary-clinton"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/hillary-clinton",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "5ad244ad1c7ac2676e1b49097b389326",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/angela-merkel": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-angela-merkel.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousAngelaMerkel",
-      "path": "/successful-resumes/famous/angela-merkel",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "angela-merkel"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/angela-merkel",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d2b15281ad748fa30130aa288c6b00d0",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/famous/steve-jobs": {
-      "layout": "index",
-      "jsonName": "successful-resumes-famous-steve-jobs.json",
-      "internalComponentName": "ComponentSuccessfulResumesFamousSteveJobs",
-      "path": "/successful-resumes/famous/steve-jobs",
-      "component": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "componentChunkName": "component---src-components-successful-resumes-layouts-famous-resume-jsx",
-      "context": {
-        "url": "steve-jobs"
-      },
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/home/viktor/Work/homepage/src/components/SuccessfulResumes/Layouts/FamousResume.jsx",
-      "id": "SitePage /successful-resumes/famous/steve-jobs",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "995b08bd37b8c3086c6e584a2d434061",
-        "description": "Your site's \"gatsby-node.js\"",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /404/": {
-      "layout": "index",
-      "jsonName": "404.json",
-      "internalComponentName": "Component404",
-      "path": "/404/",
-      "component": "/home/viktor/Work/homepage/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
-      "id": "SitePage /404/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "39559eedc9f85c7420a35f1a8a738158",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /about/": {
-      "layout": "index",
-      "jsonName": "about.json",
-      "internalComponentName": "ComponentAbout",
-      "path": "/about/",
-      "component": "/home/viktor/Work/homepage/src/pages/about.js",
-      "componentChunkName": "component---src-pages-about-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/about.js",
-      "id": "SitePage /about/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "a4f982aae4082b2d8cf841d8b68371e0",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /careers/": {
-      "layout": "index",
-      "jsonName": "careers.json",
-      "internalComponentName": "ComponentCareers",
-      "path": "/careers/",
-      "component": "/home/viktor/Work/homepage/src/pages/careers.js",
-      "componentChunkName": "component---src-pages-careers-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/careers.js",
-      "id": "SitePage /careers/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "7a4444ec40bc5a330c36b435b9fec95d",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /enhancv-button/": {
-      "layout": "index",
-      "jsonName": "enhancv-button.json",
-      "internalComponentName": "ComponentEnhancvButton",
-      "path": "/enhancv-button/",
-      "component": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
-      "componentChunkName": "component---src-pages-enhancv-button-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/enhancv-button.js",
-      "id": "SitePage /enhancv-button/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "8ed5133fad8fb0c9d100782d68461f22",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /": {
-      "layout": "index",
-      "jsonName": "index.json",
-      "internalComponentName": "ComponentIndex",
-      "path": "/",
-      "component": "/home/viktor/Work/homepage/src/pages/index.js",
-      "componentChunkName": "component---src-pages-index-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/index.js",
-      "id": "SitePage /",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "922cd466838177d231a0eae352ca97b7",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /pricing/": {
-      "layout": "index",
-      "jsonName": "pricing.json",
-      "internalComponentName": "ComponentPricing",
-      "path": "/pricing/",
-      "component": "/home/viktor/Work/homepage/src/pages/pricing.js",
-      "componentChunkName": "component---src-pages-pricing-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/pricing.js",
-      "id": "SitePage /pricing/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "ab3f8f3fca0fa2cc48a0d3006c6dc0da",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /pricingb/": {
-      "layout": "index",
-      "jsonName": "pricingb.json",
-      "internalComponentName": "ComponentPricingb",
-      "path": "/pricingb/",
-      "component": "/home/viktor/Work/homepage/src/pages/pricingb.js",
-      "componentChunkName": "component---src-pages-pricingb-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/pricingb.js",
-      "id": "SitePage /pricingb/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "711ae3ac5336c81f0cc41ae9b43c9df4",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /privacy/": {
-      "layout": "index",
-      "jsonName": "privacy.json",
-      "internalComponentName": "ComponentPrivacy",
-      "path": "/privacy/",
-      "component": "/home/viktor/Work/homepage/src/pages/privacy.js",
-      "componentChunkName": "component---src-pages-privacy-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/privacy.js",
-      "id": "SitePage /privacy/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "743164fdc04da815156421e8a5d48847",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /successful-resumes/": {
-      "layout": "index",
-      "jsonName": "successful-resumes.json",
-      "internalComponentName": "ComponentSuccessfulResumes",
-      "path": "/successful-resumes/",
-      "component": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
-      "componentChunkName": "component---src-pages-successful-resumes-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/successful-resumes.js",
-      "id": "SitePage /successful-resumes/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "3c510db88bb7c7bc7e0683c0a22d1da4",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /terms/": {
-      "layout": "index",
-      "jsonName": "terms.json",
-      "internalComponentName": "ComponentTerms",
-      "path": "/terms/",
-      "component": "/home/viktor/Work/homepage/src/pages/terms.js",
-      "componentChunkName": "component---src-pages-terms-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/terms.js",
-      "id": "SitePage /terms/",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "227cbdc2e9aae2f25cfa3f1b2d2e0195",
-        "description": "Plugin component-page-creator",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /404.html": {
-      "layout": "index",
-      "jsonName": "404-html.json",
-      "internalComponentName": "Component404Html",
-      "path": "/404.html",
-      "component": "/home/viktor/Work/homepage/src/pages/404.js",
-      "componentChunkName": "component---src-pages-404-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin prod-404",
-      "pluginCreatorId": "Plugin prod-404",
-      "componentPath": "/home/viktor/Work/homepage/src/pages/404.js",
-      "id": "SitePage /404.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "35dd7b779f48a259ead84e21ac3f7a18",
-        "description": "Plugin prod-404",
-        "owner": "internal-data-bridge"
       }
     }
   },
@@ -13777,6 +13835,24 @@
       ],
       "/home/viktor/Work/homepage/src/data/successful-resumes/Sam_photo@2.png absPath of file >> ImageSharp": [
         "/successful-resumes/"
+      ],
+      "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file": [
+        "/successful-resumes/"
+      ],
+      "/home/viktor/Work/homepage/src/data/successful-resumes/sam_resume@2.png absPath of file >> ImageSharp": [
+        "/successful-resumes/"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/myday/my_time-2Barack-Obama.png absPath of file": [
+        "/successful-resumes/famous/barack-obama"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/myday/my_time-2Barack-Obama.png absPath of file >> ImageSharp": [
+        "/successful-resumes/famous/barack-obama"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/mostproudof/most-proud-oftravis-kalanick.png absPath of file": [
+        "/successful-resumes/famous/travis-kalanick"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/mostproudof/most-proud-oftravis-kalanick.png absPath of file >> ImageSharp": [
+        "/successful-resumes/famous/travis-kalanick"
       ]
     },
     "connections": {
