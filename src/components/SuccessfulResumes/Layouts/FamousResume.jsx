@@ -15,7 +15,7 @@ import TypicalDay from "components/SuccessfulResumes/Sections/TypicalDay";
 import BooksFour from "components/SuccessfulResumes/Sections/BooksFour";
 import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
-import FamousContainer from "components/SuccessfulResumes/Sections/FamousContainer";
+import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
 
 export default function FamousResume({
     data: { famousResumesJson: { ...data } }
@@ -82,6 +82,7 @@ export default function FamousResume({
                     }
                 })}
                 <FamousContainer
+                 dark={true}
                  name={data.name}
                  finalDescription={data.finalDescription}
                  resume={data.resume}

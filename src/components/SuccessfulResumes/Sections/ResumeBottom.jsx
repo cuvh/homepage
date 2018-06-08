@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import classnames from "classnames";
 
 import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.png";
 
@@ -12,7 +13,7 @@ export default function FamousContainer({ name, resume, finalDescription }) {
 	return (
 		<div
 		 id="famous-resume"
-		 className="famous-resume--container-dark p-md-top-10"
+		 className="p-md-top-10 famous-resume--container-dark"
 		>
 			<div className="container">
 				<section className="resumes--accent accent--reverse Grid full-width noBackground p-md-left-10">
@@ -69,7 +70,7 @@ export default function FamousContainer({ name, resume, finalDescription }) {
 					</div>
 				</section>
 
-				<SubscribeNoImage />
+				<SubscribeNoImage dark={true} />
 
 				<FooterList />
 			</div>

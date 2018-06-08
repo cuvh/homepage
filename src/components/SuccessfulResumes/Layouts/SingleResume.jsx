@@ -5,7 +5,7 @@ import intercomLogo from "assets/img/new-successful-resumes/highlighted/intercom
 import hannah from "assets/img/new-successful-resumes/hannah.png";
 import imgPlaceholder from "assets/img/new-successful-resumes/placeholders/img-placeholder.png";
 import FooterList from "components/SuccessfulResumes/FooterList";
-import Subscribe from "components/SuccessfulResumes/Subscribe";
+import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import herResume from "assets/img/new-successful-resumes/placeholders/her-resume.png";
 
 import DefaultLayout from "layouts/DefaultLayout";
@@ -118,7 +118,8 @@ export default function SingleResume({
                         </figure>
                     </article>
 
-                    <Subscribe />
+                    <SubscribeNoImage />
+                    <FooterList />
                 </main>
             </div>
         </DefaultLayout>

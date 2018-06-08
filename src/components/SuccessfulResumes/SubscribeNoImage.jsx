@@ -1,13 +1,25 @@
 import React from "react";
+import classnames from "classnames";
 
-export default function SubscribeNoImage() {
+export default function SubscribeNoImage({ dark = false }) {
     return (
-        <section className="component--subscription Grid Grid--justifyCenter p-sm-top-6 p-md-top-9 p-sm-bottom-7 text-center m-top-8">
+        <section className="component--subscription Grid Grid--justifyCenter p-sm-top-6 p-md-top-9 p-sm-bottom-7 text-center">
             <div className="component--subscription-form Grid-cell--md-7 Grid-cell--sm-10 Grid-cell--xs-12">
-                <h3 className="h2 m-sm-bottom-1 m-md-bottom-2">
+                <h3
+                 className={classnames("h2 m-sm-bottom-1 m-md-bottom-2", {
+                    "text-white": dark
+                 })}
+                >
                     Get more inspiration & free resources
                 </h3>
-                <p className="m-sm-bottom-4 m-md-bottom-4 p-md-left-9 p-md-right-9">
+                <p
+                 className={classnames(
+                    "m-sm-bottom-4 m-md-bottom-4 p-md-left-9 p-md-right-9",
+                    {
+                        "text-white": dark
+                    }
+                 )}
+                >
                     No spam, just information that will help you build a resume
                     that makes you feel relevant and well represented.
                 </p>
