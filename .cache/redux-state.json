@@ -1351,50 +1351,6 @@
       "ctime": "2018-06-07T10:02:54.351Z",
       "birthtime": "2018-06-07T10:02:54.351Z"
     },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts absPath of file": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "d086ba37102df803fc59a26ea02f821c",
-        "type": "Directory",
-        "description": "Directory \"src/data/successful-resumes/experts\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "data",
-      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/experts",
-      "relativePath": "successful-resumes/experts",
-      "extension": "",
-      "size": 4096,
-      "prettySize": "4.1 kB",
-      "modifiedTime": "2018-03-26T09:32:39.756Z",
-      "accessTime": "2018-06-08T10:01:54.075Z",
-      "changeTime": "2018-06-07T09:12:24.063Z",
-      "birthTime": "2018-06-07T09:12:24.063Z",
-      "root": "/",
-      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes",
-      "base": "experts",
-      "ext": "",
-      "name": "experts",
-      "relativeDirectory": "successful-resumes",
-      "dev": 50,
-      "mode": 16893,
-      "nlink": 2,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 1448069,
-      "blocks": 8,
-      "atimeMs": 1528452114075.412,
-      "mtimeMs": 1522056759755.94,
-      "ctimeMs": 1528362744062.721,
-      "birthtimeMs": 1528362744062.721,
-      "atime": "2018-06-08T10:01:54.075Z",
-      "mtime": "2018-03-26T09:32:39.756Z",
-      "ctime": "2018-06-07T09:12:24.063Z",
-      "birthtime": "2018-06-07T09:12:24.063Z"
-    },
     "/home/viktor/Work/homepage/src/data/successful-resumes/share-images absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/share-images absPath of file",
       "children": [],
@@ -1455,7 +1411,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "1e56f433071b4e952c6c6d7df87d4ed0",
+        "contentDigest": "d3a51d371f9d481ae376a1477bdbd417",
         "mediaType": "application/json",
         "type": "File",
         "description": "File \"src/data/famousResumes.json\"",
@@ -1465,12 +1421,12 @@
       "absolutePath": "/home/viktor/Work/homepage/src/data/famousResumes.json",
       "relativePath": "famousResumes.json",
       "extension": "json",
-      "size": 38195,
-      "prettySize": "38.2 kB",
-      "modifiedTime": "2018-06-08T14:24:05.162Z",
-      "accessTime": "2018-06-08T14:21:34.765Z",
-      "changeTime": "2018-06-08T14:24:05.162Z",
-      "birthTime": "2018-06-08T14:24:05.162Z",
+      "size": 38398,
+      "prettySize": "38.4 kB",
+      "modifiedTime": "2018-06-08T14:30:41.836Z",
+      "accessTime": "2018-06-08T14:24:05.166Z",
+      "changeTime": "2018-06-08T14:30:41.836Z",
+      "birthTime": "2018-06-08T14:30:41.836Z",
       "root": "/",
       "dir": "/home/viktor/Work/homepage/src/data",
       "base": "famousResumes.json",
@@ -1486,14 +1442,14 @@
       "blksize": 4096,
       "ino": 14299061,
       "blocks": 96,
-      "atimeMs": 1528467694765.0925,
-      "mtimeMs": 1528467845162.173,
-      "ctimeMs": 1528467845162.173,
-      "birthtimeMs": 1528467845162.173,
-      "atime": "2018-06-08T14:21:34.765Z",
-      "mtime": "2018-06-08T14:24:05.162Z",
-      "ctime": "2018-06-08T14:24:05.162Z",
-      "birthtime": "2018-06-08T14:24:05.162Z"
+      "atimeMs": 1528467845166.173,
+      "mtimeMs": 1528468241836.2822,
+      "ctimeMs": 1528468241836.2822,
+      "birthtimeMs": 1528468241836.2822,
+      "atime": "2018-06-08T14:24:05.166Z",
+      "mtime": "2018-06-08T14:30:41.836Z",
+      "ctime": "2018-06-08T14:30:41.836Z",
+      "birthtime": "2018-06-08T14:30:41.836Z"
     },
     "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file",
@@ -1810,98 +1766,6 @@
       "mtime": "2018-06-07T10:57:45.926Z",
       "ctime": "2018-06-07T10:59:01.214Z",
       "birthtime": "2018-06-07T10:59:01.214Z"
-    },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/experian-logo.svg absPath of file": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/experian-logo.svg absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "98b8553a5c435e22109d230200c3fef1",
-        "mediaType": "image/svg+xml",
-        "type": "File",
-        "description": "File \"src/data/successful-resumes/experts/experian-logo.svg\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "data",
-      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/experian-logo.svg",
-      "relativePath": "successful-resumes/experts/experian-logo.svg",
-      "extension": "svg",
-      "size": 5540,
-      "prettySize": "5.54 kB",
-      "modifiedTime": "2018-03-26T09:32:39.752Z",
-      "accessTime": "2018-06-07T09:12:24.259Z",
-      "changeTime": "2018-06-07T09:12:24.059Z",
-      "birthTime": "2018-06-07T09:12:24.059Z",
-      "root": "/",
-      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes/experts",
-      "base": "experian-logo.svg",
-      "ext": ".svg",
-      "name": "experian-logo",
-      "relativeDirectory": "successful-resumes/experts",
-      "dev": 49,
-      "mode": 33204,
-      "nlink": 1,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 1448070,
-      "blocks": 32,
-      "atimeMs": 1528362744258.7173,
-      "mtimeMs": 1522056759751.94,
-      "ctimeMs": 1528362744058.7212,
-      "birthtimeMs": 1528362744058.7212,
-      "atime": "2018-06-07T09:12:24.259Z",
-      "mtime": "2018-03-26T09:32:39.752Z",
-      "ctime": "2018-06-07T09:12:24.059Z",
-      "birthtime": "2018-06-07T09:12:24.059Z"
-    },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file",
-      "children": [
-        "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "c02cb3bfc33aa8b79f8316e08ff7957c",
-        "mediaType": "image/png",
-        "type": "File",
-        "description": "File \"src/data/successful-resumes/experts/irena-photo.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "data",
-      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png",
-      "relativePath": "successful-resumes/experts/irena-photo.png",
-      "extension": "png",
-      "size": 23668,
-      "prettySize": "23.7 kB",
-      "modifiedTime": "2018-03-26T09:32:39.756Z",
-      "accessTime": "2018-06-07T09:12:24.259Z",
-      "changeTime": "2018-06-07T09:12:24.059Z",
-      "birthTime": "2018-06-07T09:12:24.059Z",
-      "root": "/",
-      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes/experts",
-      "base": "irena-photo.png",
-      "ext": ".png",
-      "name": "irena-photo",
-      "relativeDirectory": "successful-resumes/experts",
-      "dev": 49,
-      "mode": 33204,
-      "nlink": 1,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 1448071,
-      "blocks": 64,
-      "atimeMs": 1528362744258.7173,
-      "mtimeMs": 1522056759755.94,
-      "ctimeMs": 1528362744058.7212,
-      "birthtimeMs": 1528362744058.7212,
-      "atime": "2018-06-07T09:12:24.259Z",
-      "mtime": "2018-03-26T09:32:39.756Z",
-      "ctime": "2018-06-07T09:12:24.059Z",
-      "birthtime": "2018-06-07T09:12:24.059Z"
     },
     "/home/viktor/Work/homepage/src/data/successful-resumes/company-logos/2x-avis-budget.png absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/company-logos/2x-avis-budget.png absPath of file",
@@ -2961,16 +2825,6 @@
       "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/avatars/eric@2.png absPath of file",
       "internal": {
         "contentDigest": "02730f0096d1d672c8d8837a6ed93707",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file >> ImageSharp": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/irena-photo.png absPath of file",
-      "internal": {
-        "contentDigest": "c02cb3bfc33aa8b79f8316e08ff7957c",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
       }
@@ -5693,53 +5547,6 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file",
-      "children": [
-        "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "5c744a3297060c5d3d25f09890ce9bac",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "description": "File \"src/data/successful-resumes/experts/resume.jpg\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "data",
-      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg",
-      "relativePath": "successful-resumes/experts/resume.jpg",
-      "extension": "jpg",
-      "size": 216692,
-      "prettySize": "217 kB",
-      "modifiedTime": "2018-03-26T09:32:39.756Z",
-      "accessTime": "2018-06-07T09:12:24.259Z",
-      "changeTime": "2018-06-07T09:12:24.059Z",
-      "birthTime": "2018-06-07T09:12:24.059Z",
-      "root": "/",
-      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes/experts",
-      "base": "resume.jpg",
-      "ext": ".jpg",
-      "name": "resume",
-      "relativeDirectory": "successful-resumes/experts",
-      "dev": 49,
-      "mode": 33204,
-      "nlink": 1,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 1448072,
-      "blocks": 440,
-      "atimeMs": 1528362744258.7173,
-      "mtimeMs": 1522056759755.94,
-      "ctimeMs": 1528362744058.7212,
-      "birthtimeMs": 1528362744058.7212,
-      "atime": "2018-06-07T09:12:24.259Z",
-      "mtime": "2018-03-26T09:32:39.756Z",
-      "ctime": "2018-06-07T09:12:24.059Z",
-      "birthtime": "2018-06-07T09:12:24.059Z"
-    },
     "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/popular-01-barack-obama.jpg absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/popular-01-barack-obama.jpg absPath of file",
       "children": [
@@ -6068,16 +5875,6 @@
       "mtime": "2018-06-01T11:27:52.500Z",
       "ctime": "2018-06-07T09:12:23.991Z",
       "birthtime": "2018-06-07T09:12:23.991Z"
-    },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file >> ImageSharp": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume.jpg absPath of file",
-      "internal": {
-        "contentDigest": "5c744a3297060c5d3d25f09890ce9bac",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
     },
     "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/popular-01-barack-obama.jpg absPath of file >> ImageSharp": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/popular-01-barack-obama.jpg absPath of file >> ImageSharp",
@@ -7602,53 +7399,6 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file",
-      "children": [
-        "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file >> ImageSharp"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "1c9d59a160f41b94071271c174f8fee8",
-        "mediaType": "image/jpeg",
-        "type": "File",
-        "description": "File \"src/data/successful-resumes/experts/resume@2x.jpg\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "data",
-      "absolutePath": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg",
-      "relativePath": "successful-resumes/experts/resume@2x.jpg",
-      "extension": "jpg",
-      "size": 611001,
-      "prettySize": "611 kB",
-      "modifiedTime": "2018-03-26T09:32:39.760Z",
-      "accessTime": "2018-06-07T09:12:24.259Z",
-      "changeTime": "2018-06-07T09:12:24.063Z",
-      "birthTime": "2018-06-07T09:12:24.063Z",
-      "root": "/",
-      "dir": "/home/viktor/Work/homepage/src/data/successful-resumes/experts",
-      "base": "resume@2x.jpg",
-      "ext": ".jpg",
-      "name": "resume@2x",
-      "relativeDirectory": "successful-resumes/experts",
-      "dev": 49,
-      "mode": 33204,
-      "nlink": 1,
-      "uid": 1000,
-      "gid": 1000,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 1448073,
-      "blocks": 1216,
-      "atimeMs": 1528362744258.7173,
-      "mtimeMs": 1522056759759.94,
-      "ctimeMs": 1528362744062.721,
-      "birthtimeMs": 1528362744062.721,
-      "atime": "2018-06-07T09:12:24.259Z",
-      "mtime": "2018-03-26T09:32:39.760Z",
-      "ctime": "2018-06-07T09:12:24.063Z",
-      "birthtime": "2018-06-07T09:12:24.063Z"
-    },
     "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/SR-share-popular-hilary.jpg absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/SR-share-popular-hilary.jpg absPath of file",
       "children": [
@@ -7742,16 +7492,6 @@
       "mtime": "2018-03-26T09:32:40.084Z",
       "ctime": "2018-06-07T09:12:24.267Z",
       "birthtime": "2018-06-07T09:12:24.267Z"
-    },
-    "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file >> ImageSharp": {
-      "id": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file >> ImageSharp",
-      "children": [],
-      "parent": "/home/viktor/Work/homepage/src/data/successful-resumes/experts/resume@2x.jpg absPath of file",
-      "internal": {
-        "contentDigest": "1c9d59a160f41b94071271c174f8fee8",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
     },
     "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/SR-share-popular-hilary.jpg absPath of file >> ImageSharp": {
       "id": "/home/viktor/Work/homepage/src/data/successful-resumes/share-images/SR-share-popular-hilary.jpg absPath of file >> ImageSharp",
@@ -11331,7 +11071,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "34eed84bb43af37510cb3da90accadf6",
+        "contentDigest": "340396c2f95338841fc07d0f99091782",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11354,7 +11094,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "555956abce9cdb293aa3d22f78ecd402",
+        "contentDigest": "30c96613e5ea3cee6415ecddf29ba760",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11377,7 +11117,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1095724fbb2397ebd936d8e970ad8590",
+        "contentDigest": "27621ed631b757705dc381dc32a4f89d",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11400,7 +11140,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c390ecdfb599eae732d337fab4975b76",
+        "contentDigest": "0fbf9323e70912fc5bec790d380550e8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11423,7 +11163,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5e188e250e357822ed3c26d39d176363",
+        "contentDigest": "253620ce8dee4dc59da2f1ab880df7aa",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11446,7 +11186,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "829397f74b1ff35c1632beb7157f1207",
+        "contentDigest": "987213d3e185594e2516208df4c34725",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11469,7 +11209,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1cd4568e775691f93a71362577351770",
+        "contentDigest": "deb8cfeb9b707dc2d655fd515618d649",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11492,7 +11232,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a7075f4ced7548a0ad0ef3bb0185f2b8",
+        "contentDigest": "2faa1e08f77a6b9ebb477645cffc04e2",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11515,7 +11255,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dd2ab5f1cf21df72796ddfaf6db5f2e2",
+        "contentDigest": "0c9f603abc20f359509ad9acd383073b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11538,7 +11278,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7149f267a40d0eafeaee48681a3d89aa",
+        "contentDigest": "cc00c0378c44fbf082f172a3e0a8f46e",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11561,7 +11301,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f5de39ae646cfc20490cb8120074a099",
+        "contentDigest": "24484a042865e335b0c2820431811812",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11584,7 +11324,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b65a90bb95f235a9c231380c7be5c0c5",
+        "contentDigest": "3ae0b7260de9cc0780d6c41affb0af90",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11607,7 +11347,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8c518fbc333f24350be7de60069a9328",
+        "contentDigest": "98132a8147784b3913b068698debc80d",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11630,7 +11370,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d7ee1b2403b4ace4a99420e400d0cc33",
+        "contentDigest": "5fdd19d0f77b8903016139f6b91090b6",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11653,7 +11393,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "dbd34d2513b6b2fce50d170239edc6cf",
+        "contentDigest": "5a7c210d28c10fed0c88689f8df01a83",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11676,7 +11416,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "73b28f3e2db91dbe96ab98008141a38f",
+        "contentDigest": "36b24ae8ed5b5ce69dab9eee7a960d06",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11699,7 +11439,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "15cb42e7aba11f18b01915c5c5fa201c",
+        "contentDigest": "830b6366bbd0fee2275de92834a92198",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11722,7 +11462,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "407f79923fe6f84693b4b946973cf0ab",
+        "contentDigest": "eb1ff81c76ec90c92a250f98a0db398b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11745,7 +11485,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "500f519bf8f5797f6d64cda7bd4ec73e",
+        "contentDigest": "71a2ca84485863a595dbd536e9a640f6",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11768,7 +11508,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7786543a32f44e9e8344a05f21dd7f77",
+        "contentDigest": "3cebeb99224ccc04901b238a59005c37",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11791,7 +11531,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f802a2269b244bbdbd59d7cbf6be96ff",
+        "contentDigest": "232eb0fed54ec7c96fa1fd3fbab4bb4e",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11814,7 +11554,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b2dfa108e5930023eb53ff4eb7c8d517",
+        "contentDigest": "b615ba4cf6258135d6dcf55bcee54ffa",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11837,7 +11577,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "bb49cc47399b10908feb33edcb613959",
+        "contentDigest": "c38097e38261e5e7a53d92e1e0707551",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11860,7 +11600,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "69ad09698a094ca4eb9c0bb2b4641734",
+        "contentDigest": "7e7cfd54d89e48919081109752965b81",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11883,7 +11623,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "46f2e3fee4e04cce5ec79348f44a8ee6",
+        "contentDigest": "793a9f8f91163c1859a660d8c1ebf199",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -12298,6 +12038,7 @@
         {
           "image": "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
           "section": "LifeProject",
+          "description": "As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
           "data": [
             {
               "title": "SpaceX",
@@ -12372,7 +12113,7 @@
       "children": [],
       "parent": "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file",
       "internal": {
-        "contentDigest": "896c5a8320cb2c4f23f8d182e92ab30b",
+        "contentDigest": "35902e57da440084d72cd051ea94dc89",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
       }

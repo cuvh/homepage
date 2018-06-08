@@ -131,6 +131,8 @@
 				"image":
 					"famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
 				"section": "LifeProject",
+				"description":
+					"As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
 				"data": [
 					{
 						"title": "SpaceX",
