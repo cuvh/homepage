@@ -1411,7 +1411,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d3a51d371f9d481ae376a1477bdbd417",
+        "contentDigest": "fb882de5ce42d3cc3e5ca29d536fd3bc",
         "mediaType": "application/json",
         "type": "File",
         "description": "File \"src/data/famousResumes.json\"",
@@ -1421,12 +1421,12 @@
       "absolutePath": "/home/viktor/Work/homepage/src/data/famousResumes.json",
       "relativePath": "famousResumes.json",
       "extension": "json",
-      "size": 38398,
-      "prettySize": "38.4 kB",
-      "modifiedTime": "2018-06-08T14:30:41.836Z",
-      "accessTime": "2018-06-08T14:24:05.166Z",
-      "changeTime": "2018-06-08T14:30:41.836Z",
-      "birthTime": "2018-06-08T14:30:41.836Z",
+      "size": 38479,
+      "prettySize": "38.5 kB",
+      "modifiedTime": "2018-06-08T14:43:45.595Z",
+      "accessTime": "2018-06-08T14:30:41.840Z",
+      "changeTime": "2018-06-08T14:43:45.595Z",
+      "birthTime": "2018-06-08T14:43:45.595Z",
       "root": "/",
       "dir": "/home/viktor/Work/homepage/src/data",
       "base": "famousResumes.json",
@@ -1442,14 +1442,14 @@
       "blksize": 4096,
       "ino": 14299061,
       "blocks": 96,
-      "atimeMs": 1528467845166.173,
-      "mtimeMs": 1528468241836.2822,
-      "ctimeMs": 1528468241836.2822,
-      "birthtimeMs": 1528468241836.2822,
-      "atime": "2018-06-08T14:24:05.166Z",
-      "mtime": "2018-06-08T14:30:41.836Z",
-      "ctime": "2018-06-08T14:30:41.836Z",
-      "birthtime": "2018-06-08T14:30:41.836Z"
+      "atimeMs": 1528468241840.2822,
+      "mtimeMs": 1528469025595.0059,
+      "ctimeMs": 1528469025595.0059,
+      "birthtimeMs": 1528469025595.0059,
+      "atime": "2018-06-08T14:30:41.840Z",
+      "mtime": "2018-06-08T14:43:45.595Z",
+      "ctime": "2018-06-08T14:43:45.595Z",
+      "birthtime": "2018-06-08T14:43:45.595Z"
     },
     "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file",
@@ -11071,7 +11071,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "340396c2f95338841fc07d0f99091782",
+        "contentDigest": "f1164bcb641349c0a80ebb23fbdd7c93",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11094,7 +11094,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "30c96613e5ea3cee6415ecddf29ba760",
+        "contentDigest": "776ccafe162b10c0811a51e49f8cbc4f",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11117,7 +11117,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "27621ed631b757705dc381dc32a4f89d",
+        "contentDigest": "81207c678b2fbf7c85ae3eb24cb790b1",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11140,7 +11140,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0fbf9323e70912fc5bec790d380550e8",
+        "contentDigest": "d4d2f730e34bcda9010e82fd489a2b81",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11163,7 +11163,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "253620ce8dee4dc59da2f1ab880df7aa",
+        "contentDigest": "4f34a0f567a3b3f774168b545d923067",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11186,7 +11186,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "987213d3e185594e2516208df4c34725",
+        "contentDigest": "b3e94d0d5f13f611b497370d67601dc2",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11209,7 +11209,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "deb8cfeb9b707dc2d655fd515618d649",
+        "contentDigest": "3d9299229887dfa47fcd56469a7ae7cc",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11232,7 +11232,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2faa1e08f77a6b9ebb477645cffc04e2",
+        "contentDigest": "2373cbd264e62d0a4e470f3d3aaaf9e1",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11255,7 +11255,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0c9f603abc20f359509ad9acd383073b",
+        "contentDigest": "e43856cda07ef661604ce3272ef65b01",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11278,7 +11278,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cc00c0378c44fbf082f172a3e0a8f46e",
+        "contentDigest": "1b872a85cfbe11096b52494e19e2f184",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11301,7 +11301,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "24484a042865e335b0c2820431811812",
+        "contentDigest": "9eaaae7b5413cc3a32c05119f04b3ccf",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11324,7 +11324,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3ae0b7260de9cc0780d6c41affb0af90",
+        "contentDigest": "117fa9c85f2b4b42eade2b4f6301df99",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11347,7 +11347,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "98132a8147784b3913b068698debc80d",
+        "contentDigest": "3bb17c2f69a79dd3d36542ff65c2ead3",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11370,7 +11370,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5fdd19d0f77b8903016139f6b91090b6",
+        "contentDigest": "64b3276aebfcf99adf208383c238c53e",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11393,7 +11393,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5a7c210d28c10fed0c88689f8df01a83",
+        "contentDigest": "945ab16a39a43b4ff96d341ea1e0eb59",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11416,7 +11416,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "36b24ae8ed5b5ce69dab9eee7a960d06",
+        "contentDigest": "276e687a840726e7b7907bfbacf8619a",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11439,7 +11439,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "830b6366bbd0fee2275de92834a92198",
+        "contentDigest": "8c8d2528c5a4a9da97ec052ddb3f534f",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11462,7 +11462,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "eb1ff81c76ec90c92a250f98a0db398b",
+        "contentDigest": "7d1affe08302625ae50aad9cac2471bf",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11485,7 +11485,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "71a2ca84485863a595dbd536e9a640f6",
+        "contentDigest": "5029884264db997191037601a4e3745b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11508,7 +11508,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3cebeb99224ccc04901b238a59005c37",
+        "contentDigest": "eff7894a8b99ea266e991787f245daab",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11531,7 +11531,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "232eb0fed54ec7c96fa1fd3fbab4bb4e",
+        "contentDigest": "fa278bbca5c5fa2306b8bd6e6bd06446",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11554,7 +11554,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b615ba4cf6258135d6dcf55bcee54ffa",
+        "contentDigest": "d1b6300092258df49e3c0944868a4bc8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11577,7 +11577,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c38097e38261e5e7a53d92e1e0707551",
+        "contentDigest": "5f0d3c267758e140b2be189601392bd5",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11600,7 +11600,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7e7cfd54d89e48919081109752965b81",
+        "contentDigest": "7e2201e4a228c7f1f358ee5bfded2fc2",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11623,7 +11623,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "793a9f8f91163c1859a660d8c1ebf199",
+        "contentDigest": "a897ba4b60aa2f2ed0135e08e7350c68",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -12251,6 +12251,7 @@
         },
         {
           "section": "Achievements",
+          "image": "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
           "data": [
             {
               "title": "Founded",
@@ -12286,7 +12287,7 @@
       "children": [],
       "parent": "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file",
       "internal": {
-        "contentDigest": "b13729e815de9c520769b56cbe9d8813",
+        "contentDigest": "5524c6f0c1451e92a607725fa760cb88",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
       }
@@ -13590,10 +13591,12 @@
         "/successful-resumes/famous/barack-obama"
       ],
       "/home/viktor/Work/homepage/src/data/famous-resumes/mostproudof/most-proud-oftravis-kalanick.png absPath of file": [
-        "/successful-resumes/famous/travis-kalanick"
+        "/successful-resumes/famous/travis-kalanick",
+        "/successful-resumes/famous/mark-zuckerberg"
       ],
       "/home/viktor/Work/homepage/src/data/famous-resumes/mostproudof/most-proud-oftravis-kalanick.png absPath of file >> ImageSharp": [
-        "/successful-resumes/famous/travis-kalanick"
+        "/successful-resumes/famous/travis-kalanick",
+        "/successful-resumes/famous/mark-zuckerberg"
       ]
     },
     "connections": {
