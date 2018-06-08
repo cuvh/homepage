@@ -1411,7 +1411,7 @@
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "fb882de5ce42d3cc3e5ca29d536fd3bc",
+        "contentDigest": "3aed2dcd82c4e63dee37c81ae48567fe",
         "mediaType": "application/json",
         "type": "File",
         "description": "File \"src/data/famousResumes.json\"",
@@ -1421,12 +1421,12 @@
       "absolutePath": "/home/viktor/Work/homepage/src/data/famousResumes.json",
       "relativePath": "famousResumes.json",
       "extension": "json",
-      "size": 38479,
+      "size": 38536,
       "prettySize": "38.5 kB",
-      "modifiedTime": "2018-06-08T14:43:45.595Z",
-      "accessTime": "2018-06-08T14:30:41.840Z",
-      "changeTime": "2018-06-08T14:43:45.595Z",
-      "birthTime": "2018-06-08T14:43:45.595Z",
+      "modifiedTime": "2018-06-08T15:18:38.717Z",
+      "accessTime": "2018-06-08T14:43:45.599Z",
+      "changeTime": "2018-06-08T15:18:38.717Z",
+      "birthTime": "2018-06-08T15:18:38.717Z",
       "root": "/",
       "dir": "/home/viktor/Work/homepage/src/data",
       "base": "famousResumes.json",
@@ -1442,14 +1442,14 @@
       "blksize": 4096,
       "ino": 14299061,
       "blocks": 96,
-      "atimeMs": 1528468241840.2822,
-      "mtimeMs": 1528469025595.0059,
-      "ctimeMs": 1528469025595.0059,
-      "birthtimeMs": 1528469025595.0059,
-      "atime": "2018-06-08T14:30:41.840Z",
-      "mtime": "2018-06-08T14:43:45.595Z",
-      "ctime": "2018-06-08T14:43:45.595Z",
-      "birthtime": "2018-06-08T14:43:45.595Z"
+      "atimeMs": 1528469025599.0059,
+      "mtimeMs": 1528471118717.1687,
+      "ctimeMs": 1528471118717.1687,
+      "birthtimeMs": 1528471118717.1687,
+      "atime": "2018-06-08T14:43:45.599Z",
+      "mtime": "2018-06-08T15:18:38.717Z",
+      "ctime": "2018-06-08T15:18:38.717Z",
+      "birthtime": "2018-06-08T15:18:38.717Z"
     },
     "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file": {
       "id": "/home/viktor/Work/homepage/src/data/userResumes.json absPath of file",
@@ -11071,7 +11071,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f1164bcb641349c0a80ebb23fbdd7c93",
+        "contentDigest": "d03be39a76ab9ef6862bb52042673794",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11094,7 +11094,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "776ccafe162b10c0811a51e49f8cbc4f",
+        "contentDigest": "cc550d3c5a1cffbc0aea30685c90a677",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11117,7 +11117,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "81207c678b2fbf7c85ae3eb24cb790b1",
+        "contentDigest": "e9b073910491b529b36164b9ee3b1695",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11140,7 +11140,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d4d2f730e34bcda9010e82fd489a2b81",
+        "contentDigest": "aae653d9ba9108ff0b284b8ce67e42e0",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11163,7 +11163,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4f34a0f567a3b3f774168b545d923067",
+        "contentDigest": "75cee9cb57843a3ee4d782a1223cf965",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11186,7 +11186,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "b3e94d0d5f13f611b497370d67601dc2",
+        "contentDigest": "4b084a7ad375726c97efebb12e6d7e6f",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11209,7 +11209,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3d9299229887dfa47fcd56469a7ae7cc",
+        "contentDigest": "cbc757f553ddabe2320bcbc179d4d75b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11232,7 +11232,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "2373cbd264e62d0a4e470f3d3aaaf9e1",
+        "contentDigest": "42425ef8874366d81287653cd6e98e4f",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11255,7 +11255,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "e43856cda07ef661604ce3272ef65b01",
+        "contentDigest": "ca0bd317ca8ee750566f4e0c982fa897",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11278,7 +11278,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1b872a85cfbe11096b52494e19e2f184",
+        "contentDigest": "402a67bd269e59efa4d61313187a580b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11301,7 +11301,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9eaaae7b5413cc3a32c05119f04b3ccf",
+        "contentDigest": "5194bf077696712179358e8f1b486487",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11324,7 +11324,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "117fa9c85f2b4b42eade2b4f6301df99",
+        "contentDigest": "4a1a0acfefd55acc865a8d9b5e04beb1",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11347,7 +11347,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "3bb17c2f69a79dd3d36542ff65c2ead3",
+        "contentDigest": "6a3510ffd34e8bb565886c26ed821ddc",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11370,7 +11370,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "64b3276aebfcf99adf208383c238c53e",
+        "contentDigest": "0c7dbbd0fac2053f512a1dd8ef4cf9d9",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11393,7 +11393,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "945ab16a39a43b4ff96d341ea1e0eb59",
+        "contentDigest": "1ec6edbc573007c73869af2a3e0c868b",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11416,7 +11416,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "276e687a840726e7b7907bfbacf8619a",
+        "contentDigest": "5a4d2593b3f484b982564b2fee7d9df8",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11439,7 +11439,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8c8d2528c5a4a9da97ec052ddb3f534f",
+        "contentDigest": "43c85633bd30c56390ddcf9c4a84ebad",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11462,7 +11462,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7d1affe08302625ae50aad9cac2471bf",
+        "contentDigest": "53a5685540ddf4d0b8d947eb448b63ec",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11485,7 +11485,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5029884264db997191037601a4e3745b",
+        "contentDigest": "9eb6dba35bce785a324cd63b5d24b465",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11508,7 +11508,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "eff7894a8b99ea266e991787f245daab",
+        "contentDigest": "4b5b5a4fba47fd7eac816481fef61919",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11531,7 +11531,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "fa278bbca5c5fa2306b8bd6e6bd06446",
+        "contentDigest": "9decc42ab32e8c3e1eceee90eebaab67",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11554,7 +11554,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d1b6300092258df49e3c0944868a4bc8",
+        "contentDigest": "503126c7b5e729399eda5b69874bb236",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11577,7 +11577,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5f0d3c267758e140b2be189601392bd5",
+        "contentDigest": "361107e3afc09894489ce3a5cc0a2b06",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11600,7 +11600,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7e2201e4a228c7f1f358ee5bfded2fc2",
+        "contentDigest": "68edb8ad1435bf1514e75d17dd30715f",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11623,7 +11623,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a897ba4b60aa2f2ed0135e08e7350c68",
+        "contentDigest": "19ab9dd0c0cd84e2011a6e2371270473",
         "description": "Your site's \"gatsby-node.js\"",
         "owner": "internal-data-bridge"
       }
@@ -11916,6 +11916,120 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
+    "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file": {
+      "id": "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file",
+      "children": [
+        "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "bacdc23ac1938f9aad4da7ff05bbcdce",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"src/data/famous-resumes/youtuber-casey-neistat.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg",
+      "relativePath": "famous-resumes/youtuber-casey-neistat.jpg",
+      "extension": "jpg",
+      "size": 93718,
+      "prettySize": "93.7 kB",
+      "modifiedTime": "2018-06-01T11:27:58.736Z",
+      "accessTime": "2018-06-08T15:03:28.058Z",
+      "changeTime": "2018-06-08T15:03:28.062Z",
+      "birthTime": "2018-06-08T15:03:28.062Z",
+      "root": "/",
+      "dir": "/home/viktor/Work/homepage/src/data/famous-resumes",
+      "base": "youtuber-casey-neistat.jpg",
+      "ext": ".jpg",
+      "name": "youtuber-casey-neistat",
+      "relativeDirectory": "famous-resumes",
+      "dev": 50,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 1449213,
+      "blocks": 200,
+      "atimeMs": 1528470208057.901,
+      "mtimeMs": 1527852478736.192,
+      "ctimeMs": 1528470208061.9019,
+      "birthtimeMs": 1528470208061.9019,
+      "atime": "2018-06-08T15:03:28.058Z",
+      "mtime": "2018-06-01T11:27:58.736Z",
+      "ctime": "2018-06-08T15:03:28.062Z",
+      "birthtime": "2018-06-08T15:03:28.062Z"
+    },
+    "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file >> ImageSharp": {
+      "id": "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file",
+      "internal": {
+        "contentDigest": "bacdc23ac1938f9aad4da7ff05bbcdce",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file": {
+      "id": "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file",
+      "children": [
+        "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "956c9a21bf7107459166b4897fcb852b",
+        "mediaType": "image/png",
+        "type": "File",
+        "description": "File \"src/data/famous-resumes/strengths_Elon_Musk@2.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png",
+      "relativePath": "famous-resumes/strengths_Elon_Musk@2.png",
+      "extension": "png",
+      "size": 793297,
+      "prettySize": "793 kB",
+      "modifiedTime": "2018-06-08T15:17:15.584Z",
+      "accessTime": "2018-06-08T15:18:17.265Z",
+      "changeTime": "2018-06-08T15:18:21.961Z",
+      "birthTime": "2018-06-08T15:18:21.961Z",
+      "root": "/",
+      "dir": "/home/viktor/Work/homepage/src/data/famous-resumes",
+      "base": "strengths_Elon_Musk@2.png",
+      "ext": ".png",
+      "name": "strengths_Elon_Musk@2",
+      "relativeDirectory": "famous-resumes",
+      "dev": 50,
+      "mode": 33204,
+      "nlink": 1,
+      "uid": 1000,
+      "gid": 1000,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 1449224,
+      "blocks": 1576,
+      "atimeMs": 1528471097264.9915,
+      "mtimeMs": 1528471035584.469,
+      "ctimeMs": 1528471101961.0305,
+      "birthtimeMs": 1528471101961.0305,
+      "atime": "2018-06-08T15:18:17.265Z",
+      "mtime": "2018-06-08T15:17:15.584Z",
+      "ctime": "2018-06-08T15:18:21.961Z",
+      "birthtime": "2018-06-08T15:18:21.961Z"
+    },
+    "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file >> ImageSharp": {
+      "id": "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file",
+      "internal": {
+        "contentDigest": "956c9a21bf7107459166b4897fcb852b",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
     "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file [0] >>> JSON": {
       "name": "Casey Neistat",
       "url": "casey-neistat",
@@ -12059,6 +12173,7 @@
         },
         {
           "section": "Strengths",
+          "image": "famous-resumes/strengths_Elon_Musk@2.png",
           "description": "What kind of strengths have made Elon Musk into a real-life Tony Stark?",
           "data": [
             {
@@ -12113,7 +12228,7 @@
       "children": [],
       "parent": "/home/viktor/Work/homepage/src/data/famousResumes.json absPath of file",
       "internal": {
-        "contentDigest": "35902e57da440084d72cd051ea94dc89",
+        "contentDigest": "c5999af9b13fdcd85a48a01aa23d66c1",
         "type": "FamousResumesJson",
         "owner": "gatsby-transformer-json"
       }
@@ -13597,6 +13712,18 @@
       "/home/viktor/Work/homepage/src/data/famous-resumes/mostproudof/most-proud-oftravis-kalanick.png absPath of file >> ImageSharp": [
         "/successful-resumes/famous/travis-kalanick",
         "/successful-resumes/famous/mark-zuckerberg"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file": [
+        "/successful-resumes/"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/youtuber-casey-neistat.jpg absPath of file >> ImageSharp": [
+        "/successful-resumes/"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file": [
+        "/successful-resumes/famous/elon-musk"
+      ],
+      "/home/viktor/Work/homepage/src/data/famous-resumes/strengths_Elon_Musk@2.png absPath of file >> ImageSharp": [
+        "/successful-resumes/famous/elon-musk"
       ]
     },
     "connections": {

@@ -71,8 +71,18 @@ export default function FamousResume({
                             />
                         );
                     }
+
+                    if (item.section === "Strengths") {
+                        return (
+                            <Strengths
+                             key={item.section}
+                             {...item}
+                            />
+                        );
+                    }
                 })}
                 <FamousContainer
+                 name={data.name}
                  finalDescription={data.finalDescription}
                  resume={data.resume}
                 />

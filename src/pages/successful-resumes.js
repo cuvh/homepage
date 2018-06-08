@@ -3,11 +3,7 @@ import Link from "gatsby-link";
 import Img from "gatsby-image";
 import Helmet from "react-helmet";
 
-import samImage from "data/successful-resumes/Sam_photo@2.png";
-import hannah from "assets/img/new-successful-resumes/highlighted/hannah_mills.png";
-import resume from "assets/img/new-successful-resumes/highlighted/cv.png";
 import spotifyLogo from "data/successful-resumes/company-logos/2x-spotify-logo.png";
-import casey from "assets/img/new-successful-resumes/youtuber-casey-neistat.png";
 
 import Subscribe from "components/SuccessfulResumes/Subscribe";
 import FamousResumesList from "components/SuccessfulResumes/FamousResumesList";
@@ -16,7 +12,6 @@ import ResumeList from "components/SuccessfulResumes/List";
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function FeaturedResume({ data, ...rest }) {
-    console.log(data, rest);
     return (
         <DefaultLayout>
             <Helmet
@@ -117,9 +112,11 @@ export default function FeaturedResume({ data, ...rest }) {
                     <div className="resumes--preview Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6">
                         <span className="resumes--preview-holder">
                             <a href="#view-resume">
-                                <img
-                                 src={casey}
-                                 alt="YouTuber Casey Neistat"
+                                <Img
+                                 resolutions={
+                                    data.famousResume.childImageSharp
+                                        .resolutions
+                                 }
                                 />
                                 <button className="btn-resume-preview" />
                             </a>
@@ -298,6 +295,15 @@ export const pageQuery = graphql`
         ) {
             childImageSharp {
                 resolutions(width: 214, height: 281) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        famousResume: file(
+            relativePath: { eq: "famous-resumes/youtuber-casey-neistat.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 535, height: 741) {
                     ...GatsbyImageSharpResolutions
                 }
             }

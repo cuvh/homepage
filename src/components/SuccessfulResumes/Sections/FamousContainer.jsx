@@ -6,7 +6,9 @@ import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.pn
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
-export default function FamousContainer({ resume, finalDescription }) {
+export default function FamousContainer({ name, resume, finalDescription }) {
+	const firstName = name.split(" ")[0];
+
 	return (
 		<div
 		 id="famous-resume"
@@ -36,7 +38,7 @@ export default function FamousContainer({ resume, finalDescription }) {
 					<div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12">
 						<div className="m-md-top-15">
 							<h2 className="h2 m-xs-top-6 text-white">
-								Elon’s resume
+								{firstName}’s resume
 							</h2>
 							<div className="m-xs-top-1 m-md-top-3">
 								<h5 className="h5 text-white-smoke m-bottom-3">
@@ -51,7 +53,7 @@ export default function FamousContainer({ resume, finalDescription }) {
 							 href="#"
 							 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
 							>
-								See His Resume
+								See the Resume
 							</a>
 							<div className="full-width">
 								<div className="component--feeling feeling-box-dark m-md-top-13 m-sm-top-4 m-sm-right-2">
