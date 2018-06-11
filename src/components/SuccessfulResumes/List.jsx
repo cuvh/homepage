@@ -32,7 +32,7 @@ export default class List extends React.PureComponent {
         if (filter) {
             items = data.filter(item => item.node.label === filter);
         } else {
-            items = this.state.revealed ? data : data.slice(0, 3);
+            items = this.state.revealed ? data : data.slice(0, 6);
         }
 
         return (
