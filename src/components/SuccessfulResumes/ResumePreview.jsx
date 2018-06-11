@@ -9,7 +9,8 @@ export default function ResumePreview({
     url,
     facebookText,
     twitterText,
-    togglePreview
+    togglePreview,
+    socials
 }) {
     return (
         <div
@@ -27,12 +28,14 @@ export default function ResumePreview({
                          imgStyle={{ height: "auto", borderRadius: "5px" }}
                         />
                     </div>
-                    <SocialPanel
-                     className="inModal hasBackground"
-                     facebookText={facebookText}
-                     twitterText={twitterText}
-                     url={url}
-                    />
+                    {socials ? (
+                        <SocialPanel
+                         className="inModal hasBackground"
+                         facebookText={facebookText}
+                         twitterText={twitterText}
+                         url={url}
+                        />
+                    ) : null}
                 </div>
             </div>
             <button
