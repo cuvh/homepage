@@ -7,29 +7,61 @@
         letter-spacing: 0;
         text-align: center;
         line-height: 28px;
-        
+
         &.inModal {
-            background: #FFFFFF;
-            border: 1px solid #E6E1FF;
+            background: #ffffff;
+            border: 1px solid #e6e1ff;
             box-shadow: 0 2px 2px 0 rgba(66, 66, 66, 0.8);
             border-radius: 3px 3px 80px 80px;
             padding: 8px 0 4px;
             box-sizing: border-box;
 
             position: fixed;
-            top: 32px;
-            right: -112px;
+            top: 62px;
+            right: 112px;
+
+            @media (max-width: $screen-sm-max) {
+                width: auto;
+                border-radius: 0;
+                box-shadow: none;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: $spacer * 2;
+                padding-right: $spacer * 2;
+
+                .btn-wow-wrapper {
+                    display: flex;
+                    align-items: center;
+
+                    .line {
+                        display: none;
+                    }
+                }
+
+                .social-buttons-wrapper {
+                    display: flex;
+                }
+
+                .component--social-button {
+                    margin: 0 16px 0 0;
+                }
+            }
         }
 
         .line {
-            background:rgba(75, 85, 88, 0.2);
+            background: rgba(75, 85, 88, 0.2);
             height: 1px;
             display: inline-flex;
             width: 60%;
         }
     }
 
-    &--social-button{
+    &--social-button {
         width: 30px;
         height: 30px;
         font-size: 19px;
@@ -40,18 +72,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         &.btn-linkedin {
-            margin-bottom:0px;
+            margin-bottom: 0px;
         }
 
-        &:last-child {  
-            margin-bottom:0px;
+        &:last-child {
+            margin-bottom: 0px;
         }
     }
-}   
-
+}
 
 /* Rectangle 4: */
-
-
