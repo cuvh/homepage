@@ -5,6 +5,8 @@ $dark-gray: #65696d;
     background-color: #fff;
     color: $dark-gray;
     border-top: 2px solid rgba(151, 151, 151, 0.06);
+    position: relative;
+    z-index:15;
     /* or color: $gray-dark; */
 
     .footer-title {

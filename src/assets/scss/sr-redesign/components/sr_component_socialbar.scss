@@ -1,0 +1,119 @@
+.component {
+    &--social-bar {
+        position: fixed;
+        width: 87px;
+        font-family: $headings-font-family;
+        font-size: 12px;
+        color: rgba(76, 86, 89, 0.5);
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 28px;
+        @media screen and (max-width:$socail-layout-switch - 1) {
+            bottom:0;
+            height:50px;
+            background:#EAF8F3;
+            width:100%;
+            z-index:40;
+            padding:0 24px;
+            display:flex;
+        }
+        @media screen and (min-width:$socail-layout-switch) {
+            top:35%;
+            left:33px;
+        }
+        .line {
+            background: rgba(75, 85, 88, 0.2);
+            height: 1px;
+            display: inline-flex;
+            width: 60%;
+        }
+        @media screen and (max-width:$screen-sm-max) {
+            display: none;
+        }
+    }
+    &--social-bar-wrap {
+        @media screen and (max-width:$socail-layout-switch - 1) {
+            display: flex;
+            align-items: center;
+
+            a {
+               margin:0 16px 0 0;
+            }
+        }
+    }
+    &--social-bar-vertical-view {
+        @media screen and (max-width:1365px) {
+             display: none;
+        }
+    }
+    &--social-bar-horizontal-view {
+        @media screen and (max-width:$socail-layout-switch - 1) {
+            text-align: center;
+            margin: 0 34% 0 auto;
+            display: flex;
+            align-items: center;
+        }
+        @media screen and (min-width:$socail-layout-switch) {
+            display: none;
+        }
+
+        .btn-wow-default {
+            margin-left:16px;
+        }
+    }
+    &--social-button {
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+        line-height: 14px;
+        margin: auto auto 8px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.btn-linkedin {
+            margin-bottom: 0px;
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &--fast-resume-preview {
+        position: fixed;
+        width:160px;
+        right:48px;
+        bottom:24px;
+        z-index:11;
+        @media screen and (max-width:$socail-layout-switch - 1) {
+            bottom:-50px;
+            z-index:100;
+            right:24px;
+        }
+        @media screen and (max-width:$screen-sm-max) {
+            display: none;
+        }
+        
+        .btn-resume-preview {
+            position: absolute;
+            bottom:-16px;
+            z-index:1;
+            @media screen and (min-width:$socail-layout-switch) {
+                left:-16px;
+            }
+            @media screen and (max-width:$socail-layout-switch - 1) {
+                right:-16px;
+                bottom: 56px;
+            }
+        }
+
+        img {
+            width:100%;
+            display: block;
+        }
+
+        @media screen and (min-width:$socail-layout-switch) {
+            z-index:100;
+        }
+    }
+}
+

@@ -4,8 +4,12 @@
     }   
     &--container-dark {
         background-color:#2E3146;
+        position: relative;
+        z-index:10;
     }
     &--head {
+        position: relative;
+        z-index:10;
         padding-top:80px;
         background-repeat:no-repeat;
         background-position:top right;
