@@ -21,11 +21,8 @@ export default function FeaturedResume({ data }) {
     const subImage = data[IMAGE_KEYS[subImageId]];
 
     return (
-        <DefaultLayout>
+        <DefaultLayout className="resumeslist">
             <Meta
-             bodyAttributes={{
-                class: "resumeslist"
-             }}
              title="Real Resume Examples that Got People Hires | Enhancv"
              description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
             />
@@ -69,7 +66,8 @@ export default function FeaturedResume({ data }) {
                                  }
                                 >
                                     <ResumePreview
-                                     resumePageOne={data.mainResume}
+                                     resumePageOne={data.mainResumeOne}
+                                     resumePageTwo={data.mainResumeTwo}
                                      socials={false}
                                     />
                                 </Modal>

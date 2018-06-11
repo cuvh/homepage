@@ -9,12 +9,11 @@ export default function ResumePreview({
     url,
     facebookText,
     twitterText,
-    togglePreview,
     socials = true
 }) {
     return (
         <React.Fragment>
-            <div className="modal-body">
+            <div className="modal-body resume-preview">
                 <Img
                  resolutions={resumePageOne.childImageSharp.large}
                  alt={altText}
@@ -28,8 +27,7 @@ export default function ResumePreview({
                      alt={altText}
                      style={{
                         width: "100%",
-                        position: "initial",
-                        marginTop: "32px"
+                        position: "initial"
                      }}
                      imgStyle={{ height: "auto", borderRadius: "5px" }}
                     />

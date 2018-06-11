@@ -1,6 +1,5 @@
 //////////////////////////////
 /// Page -> Sucessful resume
-
 body:not(.navbar-mobile-active) {
     .navbar:not(.navbar-stick) {
         background: transparent;
