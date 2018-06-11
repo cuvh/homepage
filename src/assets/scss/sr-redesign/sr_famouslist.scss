@@ -1,21 +1,20 @@
 .resumes {
     // List of Famous Resumes
     &--famous-list {
-        position:relative;
-        z-index:1;
+        position: relative;
+        z-index: 1;
         @media screen and (min-width: $screen-md) {
-            margin-left:-$sr_global-offset-value;
-            width:calc(100% + 8px);
-
+            margin-left: -$sr_global-offset-value;
+            width: calc(100% + 8px);
         }
     }
-    &--famous-wrap{
-        width:100%;
-        @media screen and (max-width:$screen-xs-max) {
+    &--famous-wrap {
+        width: 100%;
+        @media screen and (max-width: $screen-xs-max) {
             flex-wrap: nowrap;
             padding-right: 30px;
             width: calc(100% + 15px);
-            scroll-behavior:smooth;
+            scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
             overflow: hidden;
             overflow-x: scroll;
@@ -24,50 +23,51 @@
     &--box-holder {
         //        padding:$sr_global-offset-value;
         position: relative;
-        z-index:1;
+        z-index: 1;
 
-        // Boxes hover effect 
+        // Boxes hover effect
         @media screen and (min-width: $screen-md) {
             &:hover {
-                z-index:2;
+                z-index: 2;
                 .resumes--box {
-                    transition:0.3s transform $ease-BounceInOut;
-                    transform:rotate(-5deg);
+                    transition: 0.3s transform $ease-BounceInOut;
+                    transform: rotate(-5deg);
                 }
                 .resumes--hovered {
-                    transition:0.3s transform $ease-BounceInOut;
-                    transform:rotate(10deg) translateX(40px) translateY(-20px);
-                    opacity:1;
+                    transition: 0.3s transform $ease-BounceInOut;
+                    transform: rotate(10deg) translateX(40px) translateY(-20px);
+                    opacity: 1;
                 }
             }
         }
     }
     &--box {
-        background: #FFF;
+        background: #fff;
         //box-shadow: 0 2px 2px 0 rgba(223, 223, 223, 0.50);
-        box-shadow:-1px 3px 3px rgba(77, 77, 77, 0.1), 1px 0 2px rgba(77, 77, 77, 0.16);
+        box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1),
+            1px 0 2px rgba(77, 77, 77, 0.16);
         border-radius: 5px;
-        padding:$sr_global-offset-value * 4;
-        display:block;
-        text-align:center;
+        padding: $sr_global-offset-value * 4;
+        display: block;
+        text-align: center;
         height: 100%;
-        transition:0.3s transform $ease-BounceInOut, 0.3s opacity $ease-ExpoInOut;
+        transition: 0.3s transform $ease-BounceInOut,
+            0.3s opacity $ease-ExpoInOut;
         position: relative;
-        z-index:1;
-        transform-origin:center center;
+        z-index: 1;
+        transform-origin: center center;
     }
     &--person-avatar {
-       position: relative;
-       display:inline-block;
-       img {
-           max-width:135px;
-       }
+        position: relative;
+        display: inline-block;
+        img {
+            max-width: 135px;
+        }
     }
     &--person-company {
         position: absolute;
         bottom: 0px;
         right: -$sr_global-offset-value * 2;
-
     }
     &--person-name {
         font-size: 24px;
@@ -78,36 +78,36 @@
         color: rgba(71, 72, 75, 0.45);
         text-align: center;
     }
-    &--person-description{     
-        color:$sr_secondary-color;
+    &--person-description {
+        color: $sr_secondary-color;
         font-size: 14px;
         line-height: 24px;
         @media screen and (min-width: $screen-md) {
             font-size: 16px;
             line-height: 26px;
         }
-        p:last-of-type{
-            margin-bottom:0px;
+        p:last-of-type {
+            margin-bottom: 0px;
         }
     }
     &--hovered {
         position: absolute;
-        top:16px;
-        right:16px;
+        top: 16px;
+        right: 16px;
         width: 100%;
         height: 100%;
-        transition:0.3s transform $ease-ExpoInOut, 0.3s opacity $ease-ExpoInOut;
+        transition: 0.3s transform $ease-ExpoInOut, 0.3s opacity $ease-ExpoInOut;
         transform: rotate(0deg) translateX(0px) translateY(0px);
-        opacity:0;
-        transform-origin:center center;
+        opacity: 0;
+        transform-origin: center center;
         text-align: right;
 
-        
+        .gatsby-image-wrapper {
+            box-shadow: 0px 0px 14px -5px rgba(0, 0, 0, 0.75);
+        }
+
         img {
-            height:auto;
+            height: auto;
         }
     }
-
 }
-
-

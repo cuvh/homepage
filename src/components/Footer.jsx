@@ -32,11 +32,6 @@ export default function Footer() {
 									<Link to="/pricing">Pricing</Link>
 								</li>
 								<li>
-									<Link to="/enhancv-button">
-										For Companies
-									</Link>
-								</li>
-								<li>
 									<Link to="/terms">Legal</Link>
 								</li>
 							</ul>

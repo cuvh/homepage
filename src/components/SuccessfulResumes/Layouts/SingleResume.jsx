@@ -77,13 +77,15 @@ export default function SingleResume({
                                     <span className="label hired-label">
                                         Hired at
                                     </span>
-                                    <Img
-                                     resolutions={
-                                        data.companyLogo.childImageSharp
-                                            .resolutions
-                                     }
-                                     alt="Intercom Company logo"
-                                    />
+                                    <div style={{ width: "100%" }}>
+                                        <Img
+                                         resolutions={
+                                            data.companyLogo.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Intercom Company logo"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>

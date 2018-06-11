@@ -203,13 +203,6 @@
         "path": "/careers/"
     },
     {
-        "componentChunkName": "component---src-pages-enhancv-button-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "enhancv-button.json",
-        "path": "/enhancv-button/"
-    },
-    {
         "componentChunkName": "component---src-pages-index-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
