@@ -11,6 +11,7 @@ import ResumeList from "components/SuccessfulResumes/List";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
 import Modal from "components/Modal";
 
+import Meta from "components/Meta";
 import DefaultLayout from "layouts/DefaultLayout";
 
 const IMAGE_KEYS = ["subImageOne", "subImageTwo", "subImageThree"];
@@ -34,16 +35,19 @@ export default class FeaturedResume extends React.PureComponent {
     }
 
     render() {
+        console.log(data);
         const { data } = this.props;
         const subImageId = Math.floor(Math.random() * 3);
         const subImage = data[IMAGE_KEYS[subImageId]];
 
         return (
             <DefaultLayout>
-                <Helmet
+                <Meta
                  bodyAttributes={{
                     class: "resumeslist"
                  }}
+                 title="Real Resume Examples that Got People Hires | Enhancv"
+                 description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
                 />
                 <main className="container">
                     <section className="page--head">
