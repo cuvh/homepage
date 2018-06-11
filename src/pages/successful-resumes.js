@@ -191,10 +191,12 @@ export const pageQuery = graphql`
                     label
                     name
                     title
-                    image {
-                        childImageSharp {
-                            resolutions(width: 240, height: 329) {
-                                ...GatsbyImageSharpResolutions
+                    resumes {
+                        image {
+                            childImageSharp {
+                                resolutions(width: 240, height: 329) {
+                                    ...GatsbyImageSharpResolutions
+                                }
                             }
                         }
                     }
@@ -256,8 +258,17 @@ export const pageQuery = graphql`
                 }
             }
         }
-        mainResume: file(
+        mainResumeOne: file(
             relativePath: { eq: "successful-resumes/sam-young-resume-1.jpg" }
+        ) {
+            childImageSharp {
+                large: resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        mainResumeTwo: file(
+            relativePath: { eq: "successful-resumes/sam-young-resume-2.jpg" }
         ) {
             childImageSharp {
                 large: resolutions(width: 1240) {
