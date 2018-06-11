@@ -1,7 +1,7 @@
 //////////////////////////////
 /// Page -> Sucessful resume
 
-body.resumeslist:not(.navbar-mobile-active) {
+body:not(.navbar-mobile-active) {
     .navbar:not(.navbar-stick) {
         background: transparent;
         border-color: transparent;
