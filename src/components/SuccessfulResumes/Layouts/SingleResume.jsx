@@ -6,6 +6,7 @@ import hannah from "assets/img/new-successful-resumes/hannah.png";
 import imgPlaceholder from "assets/img/new-successful-resumes/placeholders/img-placeholder.png";
 import FooterList from "components/SuccessfulResumes/FooterList";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
+import Modal from "components/Modal";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import herResume from "assets/img/new-successful-resumes/placeholders/her-resume.png";
 
@@ -33,6 +34,7 @@ export default class SingleResume extends React.PureComponent {
     render() {
         const { title, description, steps } = this.props.pathContext;
         const data = this.props.data.userResumesJson;
+        const allResumes = this.props.data.allUserResumesJson;
 
         return (
             <DefaultLayout>
@@ -142,8 +144,8 @@ export default class SingleResume extends React.PureComponent {
                         </article>
 
                         <SubscribeNoImage />
-                        <FooterList />
-                        {this.state.preview ? (
+                        <FooterList list={allResumes.edges} />
+                        <Modal isModalShowed={this.state.preview}>
                             <ResumePreview
                              resumePageOne={data.image}
                              facebookText={data.facebookText}
@@ -152,7 +154,7 @@ export default class SingleResume extends React.PureComponent {
                              altText={data.altText}
                              togglePreview={() => this.togglePreview()}
                             />
-                        ) : null}
+                        </Modal>
                     </main>
                 </div>
             </DefaultLayout>
@@ -186,6 +188,37 @@ export const pageQuery = graphql`
                 childImageSharp {
                     resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+        }
+        allUserResumesJson(limit: 20) {
+            edges {
+                node {
+                    url
+                    name
+                    label
+                    title
+                    image {
+                        childImageSharp {
+                            resolutions(width: 240, height: 329) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    companyLogo {
+                        childImageSharp {
+                            resolutions(width: 100) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
                     }
                 }
             }

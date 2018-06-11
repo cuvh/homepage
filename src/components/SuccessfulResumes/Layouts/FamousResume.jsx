@@ -18,8 +18,9 @@ import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy
 import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
 
 export default function FamousResume({
-    data: { famousResumesJson: { ...data } }
+    data: { famousResumesJson: { ...data }, list }
 }) {
+    console.log(list);
     return (
         <DefaultLayout>
             <main className="famous-resume--container">
@@ -82,6 +83,7 @@ export default function FamousResume({
                     }
                 })}
                 <FamousContainer
+                 list={list.edges}
                  dark={true}
                  name={data.name}
                  finalDescription={data.finalDescription}
@@ -132,6 +134,29 @@ export const pageQuery = graphql`
                     endDate
                     location
                     position
+                }
+            }
+        }
+        list: allFamousResumesJson(limit: 200) {
+            edges {
+                node {
+                    url
+                    name
+                    description
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    image: resume {
+                        childImageSharp {
+                            resolutions(width: 240, height: 329) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
                 }
             }
         }

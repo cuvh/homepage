@@ -17,8 +17,8 @@
             box-sizing: border-box;
 
             position: fixed;
-            top: 62px;
-            right: 112px;
+            top: 32px;
+            right: -112px;
 
             @media (max-width: $screen-sm-max) {
                 width: auto;
