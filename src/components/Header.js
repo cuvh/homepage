@@ -2,7 +2,6 @@ import React from "react";
 import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
-import Modal from "components/Modal";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 import srImg from "../assets/img/msg-SR-Emoji@3x.svg";
@@ -20,6 +19,7 @@ class Header extends React.PureComponent {
         super(props);
         this.onScroll = this.scroll.bind(this);
         this.state.isMsgShowed = localStorage.getItem("isMsgShowed");
+        console.log(this.state.isMsgShowed);
     }
 
     componentDidMount() {
@@ -58,7 +58,7 @@ class Header extends React.PureComponent {
                  className={classnames("navbar navbar-default navbar-sticky navbar-static-top", {
                     "navbar-stick": this.state.stick,
                  })}>
-                    <Modal isModalShowed={!this.state.isMsgShowed}>
+                    {!this.state.isMsgShowed ? (
                         <div className="Grid Grid--alignCenter msg-SR Grid--justifyCenter">
                             <Link
                              className="col-sm-10 col-xs-12 p-sm-bottom-1 p-sm-top-1"
@@ -76,7 +76,7 @@ class Header extends React.PureComponent {
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                    </Modal>
+                    ) : null}
                     <div className="navbar-spacing">
                         <div className="navbar-header">
                             <button
