@@ -13,6 +13,13 @@ module.exports = {
 				path: path.join(__dirname, `./src/data`)
 			}
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `imgs`,
+				path: path.join(__dirname, `./src/assets/img`)
+			}
+		},
 		// This plugin exposes helper functions for processing
 		// images with the NPM package “sharp”. It's used by
 		// several other plugins.

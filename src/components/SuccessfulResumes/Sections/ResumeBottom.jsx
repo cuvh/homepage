@@ -7,7 +7,12 @@ import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.pn
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
-export default function FamousContainer({ name, resume, finalDescription }) {
+export default function FamousContainer({
+	name,
+	resume,
+	finalDescription,
+	list
+}) {
 	const firstName = name.split(" ")[0];
 
 	return (
@@ -72,7 +77,10 @@ export default function FamousContainer({ name, resume, finalDescription }) {
 
 				<SubscribeNoImage dark={true} />
 
-				<FooterList />
+				<FooterList
+				 list={list}
+				 famousPrefix="famous/"
+				/>
 			</div>
 		</div>
 	);

@@ -19,6 +19,7 @@
 				"data": [
 					{
 						"title": "Beme",
+						"image": "famous-resumes/companies/Beme_Inc._Logo.svg",
 						"position": "Co-Founder",
 						"startDate": "2014",
 						"endDate": "2018",
@@ -496,7 +497,7 @@
 		"name": "Travis Kalanick",
 		"url": "travis-kalanick",
 		"resume": "famous-resumes/travis-kalanick-resume.jpg",
-		"avatar": "famous-resumes/avatars/casey@2.png",
+		"avatar": "famous-resumes/avatars/travis@2.png",
 		"cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
 		"description":
 			"Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
@@ -688,7 +689,7 @@
 		"avatar": "famous-resumes/avatars/hillary@2.png",
 		"cover": "famous-resumes/cover/Hillary_clinton_photo.jpg",
 		"description":
-			"Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Wal-mart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
+			"Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Walmart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
 		"sections": [
 			{
 				"image":
