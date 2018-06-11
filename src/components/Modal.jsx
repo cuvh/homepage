@@ -1,18 +1,37 @@
 import React from "react";
 
-export default function Modal({ children, isModalShowed }) {
-    return (
-        <div>
-            {isModalShowed ? (
-                <div>
+export default class OpenModal extends React.PureComponent {
+    state = {
+        opened: false
+    };
+
+    render() {
+        const { opened } = this.state;
+        const { trigger, children } = this.props;
+
+        return (
+            <React.Fragment>
+                <div onClick={() => this.setState({ opened: true })}>
+                    {trigger}
+                </div>
+                {opened ? (
                     <div
                      tabIndex="-1"
-                     className={isModalShowed ? "modal in" : "modal fade"}
+                     className={opened ? "modal in" : "modal fade"}
                     >
-                        {children}
+                        <div className="modal-dialog modal-lg modal-example">
+                            <div className="modal-content">{children}</div>
+                        </div>
+                        <button
+                         type="button"
+                         onClick={() => this.setState({ opened: false })}
+                         className="close close-example"
+                        >
+                            <i className="icon-times" />
+                        </button>
                     </div>
-                </div>
-            ) : null}
-        </div>
-    );
+                ) : null}
+            </React.Fragment>
+        );
+    }
 }
