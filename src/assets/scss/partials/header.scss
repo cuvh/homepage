@@ -1,3 +1,51 @@
+.msg-SR {
+    min-height: 56px;
+    border: 1px solid rgba(71, 72, 75, 0.04);
+    background-color: #8c7cdb;
+    box-shadow: 0 2px 2px 0 rgba(184, 184, 184, 0.5);
+
+    a {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        margin: auto;
+    }
+
+    .close {
+        font-weight: normal;
+        color: #fff;
+        text-shadow: none;
+        font-size: 26px;
+    }
+
+    img {
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+        img {
+            width: 20px;
+            margin-right: 8px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.navigation-spacer-sr {
+    height: 120px;
+
+    @media screen and (max-width: $screen-sm) {
+        height: 160px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+        height: 180px;
+    }
+}
+
 .navigation-spacer {
     height: 64px;
 
@@ -253,17 +301,16 @@ body.navbar-mobile-active {
     }
 }
 
-
 // Navbar light style class
 
 body:not(.navbar-mobile-active) .navbar.navbar-light {
-    transition:0.2s background ease-in-out, 0.2s border ease-in-out;
+    transition: 0.2s background ease-in-out, 0.2s border ease-in-out;
 
     &:not(.navbar-stick) {
-        background-color:transparent;
-        border-color:transparent;
+        background-color: transparent;
+        border-color: transparent;
 
-        .navbar-nav>li>a {
+        .navbar-nav > li > a {
             color: #fff;
         }
     }
