@@ -13,24 +13,6 @@ import herResume from "assets/img/new-successful-resumes/placeholders/her-resume
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default class SingleResume extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            preview: false
-        };
-    }
-
-    togglePreview() {
-        this.setState({ preview: !this.state.preview });
-    }
-
-    onKeyUp(e) {
-        if (e.keyCode === 27 && this.state.preview) {
-            this.togglePreview();
-        }
-    }
-
     render() {
         const { title, description, steps } = this.props.pathContext;
         const data = this.props.data.userResumesJson;
@@ -40,10 +22,7 @@ export default class SingleResume extends React.PureComponent {
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
             <DefaultLayout>
-                <div
-                 className="hasBubbulesBackground"
-                 onKeyUp={e => this.onKeyUp(e)}
-                >
+                <div className="hasBubbulesBackground">
                     <main className="container">
                         <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
                             <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12 m-sm-bottom-3">
@@ -65,33 +44,56 @@ export default class SingleResume extends React.PureComponent {
                                             {data.description}
                                         </p>
                                     </div>
-                                    <a
-                                     onClick={() => this.togglePreview()}
-                                     target="_blank"
-                                     className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+
+                                    <Modal
+                                     trigger={
+                                        <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
+                                            See the resume
+                                        </a>
+                                     }
                                     >
-                                        See the resume
-                                    </a>
+                                        <ResumePreview
+                                         resumePageOne={resumePageOne}
+                                         resumePageTwo={resumePageTwo}
+                                         facebookText={data.facebookText}
+                                         twitterText={data.twitterText}
+                                         url={data.url}
+                                         altText={data.altText}
+                                        />
+                                    </Modal>
                                 </div>
                             </div>
 
                             <div className="resumes--preview isSingle Grid-cell--md-6 Grid-cell--xs-12">
                                 <span className="resumes--preview-holder">
-                                    <a
-                                     onClick={() => this.togglePreview()}
-                                     data-track="event"
-                                     data-category="Successful Resumes"
-                                     data-action="Click Full Resume"
-                                     data-label="Casey Neistat"
-                                    >
-                                        <Img
-                                         resolutions={
-                                            resumePageOne.childImageSharp.small
-                                         }
-                                        />
+                                    <Modal
+                                     trigger={
+                                        <a
+                                         data-track="event"
+                                         data-category="Successful Resumes"
+                                         data-action="Click Full Resume"
+                                         data-label="Casey Neistat"
+                                        >
+                                            <Img
+                                             resolutions={
+                                                resumePageOne.childImageSharp
+                                                    .small
+                                             }
+                                            />
 
-                                        <button className="btn-resume-preview" />
-                                    </a>
+                                            <button className="btn-resume-preview" />
+                                        </a>
+                                     }
+                                    >
+                                        <ResumePreview
+                                         resumePageOne={resumePageOne}
+                                         resumePageTwo={resumePageTwo}
+                                         facebookText={data.facebookText}
+                                         twitterText={data.twitterText}
+                                         url={data.url}
+                                         altText={data.altText}
+                                        />
+                                    </Modal>
                                 </span>
 
                                 <div className="resumes--accent-hired p-5">
@@ -152,17 +154,6 @@ export default class SingleResume extends React.PureComponent {
 
                         <SubscribeNoImage />
                         <FooterList list={allResumes.edges} />
-                        <Modal isModalShowed={this.state.preview}>
-                            <ResumePreview
-                             resumePageOne={resumePageOne}
-                             resumePageTwo={resumePageTwo}
-                             facebookText={data.facebookText}
-                             twitterText={data.twitterText}
-                             url={data.url}
-                             altText={data.altText}
-                             togglePreview={() => this.togglePreview()}
-                            />
-                        </Modal>
                     </main>
                 </div>
             </DefaultLayout>

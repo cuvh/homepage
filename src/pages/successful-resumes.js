@@ -69,7 +69,8 @@ export default function FeaturedResume({ data }) {
                                  }
                                 >
                                     <ResumePreview
-                                     resumePageOne={data.mainResume}
+                                     resumePageOne={data.mainResumeOne}
+                                     resumePageTwo={data.mainResumeTwo}
                                      socials={false}
                                     />
                                 </Modal>
