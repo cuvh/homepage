@@ -27,6 +27,19 @@ export default function ResumePreview({
                          style={{ width: "100%", position: "initial" }}
                          imgStyle={{ height: "auto", borderRadius: "5px" }}
                         />
+
+                        {resumePageTwo ? (
+                            <Img
+                             resolutions={resumePageTwo.childImageSharp.large}
+                             alt={altText}
+                             style={{
+                                width: "100%",
+                                position: "initial",
+                                marginTop: "32px"
+                             }}
+                             imgStyle={{ height: "auto", borderRadius: "5px" }}
+                            />
+                        ) : null}
                     </div>
                     {socials ? (
                         <SocialPanel
