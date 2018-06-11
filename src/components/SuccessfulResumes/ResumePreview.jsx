@@ -10,7 +10,7 @@ export default function ResumePreview({
     facebookText,
     twitterText,
     togglePreview,
-    socials
+    socials = true
 }) {
     return (
         <React.Fragment>

@@ -163,6 +163,42 @@
         ]
     },
     {
+        "resumes": [
+            { "image": "successful-resumes/julian-prim-resume-1.jpg" },
+            { "image": "successful-resumes/julian-prim-resume-2.jpg" }
+        ],
+        "label": "New Role",
+        "avatar": "successful-resumes/avatars/new_role_deafult_avatar@2.png",
+        "companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
+        "url": "julian-prim",
+        "name": "Julian Prim",
+        "title": "An Auditor Resume with Personality and Impact",
+        "description":
+            "Julian’s auditor resume is a great example for anyone who thinks a resume in this field can’t be interesting or engaging. It balances the personal and the professional while not skimping on the metrics that really demonstrate his effectiveness.",
+        "position":
+            "Operations Specialist in Asset & Wealth Management, Accounting and Controlling Intern, Insolvency Administration Intern",
+        "stepsTitle": "Why Julian’s Auditor Resume Works",
+        "stepsDescription":
+            "Just what are the components that make this such an effective resume example? It comes down to three basic points.",
+        "steps": [
+            {
+                "title": "It balances the personal and professional",
+                "description":
+                    "While it may be easy to dismiss the impact of mentioning things like personal fitness or building treehouses on an auditor’s resume, but Julian shows why that’s not the case. These personal examples demonstrate important aspects about his personality and that he’s more than just a robot with no life outside of the office, which is important for companies concerned about worker well being."
+            },
+            {
+                "title": "It shows a devotion to self-improvement",
+                "description":
+                    "Tying into the point above, the personal elements of Julian’s resume are a great example of how you can show positive personality traits in a resume. In his case, this is a devotion to self improvement. From his fitness goals to learning Polish and spending time with his family, Julian clearly knows how to prioritize things and make them happen."
+            },
+            {
+                "title": "It shows specific impacts",
+                "description":
+                    "All of the personality in the world isn’t going to mean much for an auditor if they can’t show the impact of their work. So Julian balances those elements with plenty of specific data points to demonstrate how he’s consistently done things like decreasing onboarding time and earned high marks from internal appraisals."
+            }
+        ]
+    },
+    {
         "resumes": [{ "image": "successful-resumes/eric-hu-resume-1.jpg" }],
         "label": "Career Change",
         "avatar": "successful-resumes/avatars/eric@2.png",
@@ -263,42 +299,6 @@
                 "title": "It shows career evolution",
                 "description":
                     "From the moment he transitioned from military to civilian work, his resume shows how Marcellus has sought out new opportunities. Along the way, he shows the impact he had on each role and how he applied the learnings from previous roles in new ways."
-            }
-        ]
-    },
-    {
-        "resumes": [
-            { "image": "successful-resumes/julian-prim-resume-1.jpg" },
-            { "image": "successful-resumes/julian-prim-resume-2.jpg" }
-        ],
-        "label": "New Role",
-        "avatar": "successful-resumes/avatars/new_role_deafult_avatar@2.png",
-        "companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
-        "url": "julian-prim",
-        "name": "Julian Prim",
-        "title": "An Auditor Resume with Personality and Impact",
-        "description":
-            "Julian’s auditor resume is a great example for anyone who thinks a resume in this field can’t be interesting or engaging. It balances the personal and the professional while not skimping on the metrics that really demonstrate his effectiveness.",
-        "position":
-            "Operations Specialist in Asset & Wealth Management, Accounting and Controlling Intern, Insolvency Administration Intern",
-        "stepsTitle": "Why Julian’s Auditor Resume Works",
-        "stepsDescription":
-            "Just what are the components that make this such an effective resume example? It comes down to three basic points.",
-        "steps": [
-            {
-                "title": "It balances the personal and professional",
-                "description":
-                    "While it may be easy to dismiss the impact of mentioning things like personal fitness or building treehouses on an auditor’s resume, but Julian shows why that’s not the case. These personal examples demonstrate important aspects about his personality and that he’s more than just a robot with no life outside of the office, which is important for companies concerned about worker well being."
-            },
-            {
-                "title": "It shows a devotion to self-improvement",
-                "description":
-                    "Tying into the point above, the personal elements of Julian’s resume are a great example of how you can show positive personality traits in a resume. In his case, this is a devotion to self improvement. From his fitness goals to learning Polish and spending time with his family, Julian clearly knows how to prioritize things and make them happen."
-            },
-            {
-                "title": "It shows specific impacts",
-                "description":
-                    "All of the personality in the world isn’t going to mean much for an auditor if they can’t show the impact of their work. So Julian balances those elements with plenty of specific data points to demonstrate how he’s consistently done things like decreasing onboarding time and earned high marks from internal appraisals."
             }
         ]
     },
