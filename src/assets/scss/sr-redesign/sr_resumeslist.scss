@@ -1,50 +1,51 @@
 .resumes {
     &--accent {
-        padding-bottom:$sr_global-offset-value * 9;
+        padding-bottom: $sr_global-offset-value * 9;
         @media screen and (min-width: $screen-md) {
             display: flex;
             //flex-direction: row-reverse;
-            padding-bottom:$sr_global-offset-value * 13;
+            padding-bottom: $sr_global-offset-value * 13;
 
             &.accent--reverse {
                 flex-direction: row-reverse;
             }
         }
         @media screen and (max-width: $screen-sm-max) {
-            justify-content:center;
-            text-align:center;
+            justify-content: center;
+            text-align: center;
         }
     }
 
     &--preview {
-        justify-content:right;
-        text-align:right;
+        justify-content: right;
+        text-align: right;
 
         &-holder {
-            display:inline-block;
-            position:relative;
+            display: inline-block;
+            position: relative;
+            box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.75);
+
             @media screen and (max-width: $screen-sm-max) {
-                padding:0 $sr_global-offset-value;
-                text-align:center;
-                width:100%;
+                padding: 0 $sr_global-offset-value;
+                text-align: center;
+                width: 100%;
                 img {
-                    width:100%;
+                    width: 100%;
                 }
             }
         }
-        
+
         .btn-resume-preview {
             position: absolute;
             @media screen and (max-width: $screen-sm-max) {
-                bottom:-12px;
-                right:-$sr_global-offset-value;
+                bottom: -12px;
+                right: -$sr_global-offset-value;
             }
             @media screen and (min-width: $screen-md) {
-                top:-12px;
-                left:-$sr_global-offset-value;
+                top: -12px;
+                left: -$sr_global-offset-value;
             }
         }
-
     }
 
     &--content {
@@ -54,11 +55,8 @@
             align-items: center;
 
             .text {
-                margin-top:-46px;
+                margin-top: -46px;
             }
         }
     }
-
 }
-
-

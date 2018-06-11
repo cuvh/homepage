@@ -45,11 +45,11 @@ export default function FooterList({ list, famousPrefix = "" }) {
 									{node.title}
 								</h5>
 								{node.companyLogo ? (
-									<div className="resumes--hired m-xs-top-2 m-md-top-4">
+									<div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
 										<span className="label">Hired at</span>
 										<Img
 										 style={{ display: "inline-block" }}
-										 className="m-xs-left-1 m-md-left-2"
+										 className="m-top-1"
 										 resolutions={
 											node.companyLogo.childImageSharp
 												.resolutions

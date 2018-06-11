@@ -14,7 +14,6 @@ export default function FamousContainer({
 	list
 }) {
 	const firstName = name.split(" ")[0];
-	console.log(list);
 
 	return (
 		<div

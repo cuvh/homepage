@@ -179,7 +179,7 @@ export const pageQuery = graphql`
                     }
                     companyLogo {
                         childImageSharp {
-                            resolutions(width: 100) {
+                            resolutions(width: 200) {
                                 ...GatsbyImageSharpResolutions
                             }
                         }
