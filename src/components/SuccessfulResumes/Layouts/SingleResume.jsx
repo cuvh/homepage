@@ -90,14 +90,17 @@ export default function SingleResume({
                             </div>
                         </div>
                         <a
-                         href="#"
+                         href="#article"
                          className="page--scroll"
                         >
                             Read the story
                         </a>
                     </section>
 
-                    <article className="resume-article p-md-top-8">
+                    <article
+                     id="article"
+                     className="resume-article p-md-top-8"
+                    >
                         <h3>{data.stepsTitle}</h3>
                         <p>{data.stepsDescription}</p>
 
