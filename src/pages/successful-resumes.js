@@ -11,7 +11,13 @@ import ResumeList from "components/SuccessfulResumes/List";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
+const IMAGE_KEYS = ["subImageOne", "subImageTwo", "subImageThree"];
+
 export default function FeaturedResume({ data, ...rest }) {
+    const subImageId = Math.floor(Math.random() * 3);
+    const subImage = data[IMAGE_KEYS[subImageId]];
+    console.log(data, rest);
+
     return (
         <DefaultLayout>
             <Helmet
@@ -22,8 +28,7 @@ export default function FeaturedResume({ data, ...rest }) {
             <main className="container">
                 <section className="page--head">
                     <h1 className="h1">
-                        Real Resume examples that got people like you hired at
-                        top companies
+                        Resume examples that get people like you hired
                     </h1>
                     <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-3">
                         Get inspired and learn from these real life examples
@@ -60,11 +65,9 @@ export default function FeaturedResume({ data, ...rest }) {
                         <div className="resume--highlighted-content Grid Grid--alignCenter Grid-cell--md-7 Grid-cell--xs-12">
                             <div className="text-center-sm-max full-width">
                                 <h3 className="h3">
-                                    From investment banking to Spotify
+                                    From investment banking to Spotify - Sam’s
+                                    career change
                                 </h3>
-                                <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-2">
-                                    See the story of Sam’s career change
-                                </h5>
                                 <div className="resume--highlighted-text m-top-4">
                                     <p>
                                         It took a lot of planning, hard work,
@@ -87,7 +90,6 @@ export default function FeaturedResume({ data, ...rest }) {
                                 </div>
                                 <Link
                                  to="/successful-resumes/sam-young"
-                                 target="_blank"
                                  className="btn btn-big btn-primary m-top-4"
                                 >
                                     SEE HOW SHE DID IT
@@ -100,11 +102,9 @@ export default function FeaturedResume({ data, ...rest }) {
                 <ResumeList data={data.allUserResumesJson.edges} />
 
                 <section className="text-center m-sm-bottom-4 m-md-bottom-6">
-                    <h2 className="h2">
-                        Looking for your next gig? Get inspired
-                    </h2>
+                    <h2 className="h2">They changed the world</h2>
                     <h5 className="h5 text-gray-light m-sm-top-1 m-md-top-2">
-                        Go through our resume gallery.
+                        Learn from famous resume examples
                     </h5>
                 </section>
 
@@ -129,10 +129,6 @@ export default function FeaturedResume({ data, ...rest }) {
                             </h3>
                             <div className="m-xs-top-1 m-md-top-3">
                                 <p className="p-big">
-                                    You don’t get more than 9 million Youtube
-                                    subscribers without learning a few lessons
-                                    along the way.<br />
-                                    <br />
                                     Every time he tries something new, Casey
                                     shows the importance of knowing why you do
                                     what you do. He also shows why success can
@@ -159,7 +155,7 @@ export default function FeaturedResume({ data, ...rest }) {
 
                 <FamousResumesList data={data.allFamousResumesJson.edges} />
 
-                <Subscribe />
+                <Subscribe image={subImage} />
             </main>
         </DefaultLayout>
     );
@@ -244,6 +240,33 @@ export const pageQuery = graphql`
         ) {
             childImageSharp {
                 resolutions(width: 535, height: 741) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        subImageOne: file(
+            relativePath: { eq: "man_subscribe_illustration@2.png" }
+        ) {
+            childImageSharp {
+                resolutions(width: 475, height: 404) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        subImageTwo: file(
+            relativePath: { eq: "mulat_girl_subscribe_illustration.png" }
+        ) {
+            childImageSharp {
+                resolutions(width: 475, height: 404) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        subImageThree: file(
+            relativePath: { eq: "white_girl_subscribe_illustration@2.png" }
+        ) {
+            childImageSharp {
+                resolutions(width: 475, height: 404) {
                     ...GatsbyImageSharpResolutions
                 }
             }
