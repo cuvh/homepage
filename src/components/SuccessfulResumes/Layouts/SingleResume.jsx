@@ -92,42 +92,42 @@ export default class SingleResume extends React.PureComponent {
                                     </a>
                                 </span>
 
-                            <div className="resumes--accent-hired p-5">
-                                <div className="Grid">
-                                    <h5>{data.name}’s career</h5>
-                                    <span className="label m-bottom-3">
-                                        Director, Banking, Tech, YouTube
-                                        personality, Marketing person
-                                    </span>
-                                    <span className="label hired-label">
-                                        Hired at
-                                    </span>
-                                    <div style={{ width: "100%" }}>
-                                        <Img
-                                         resolutions={
-                                            data.companyLogo.childImageSharp
-                                                .resolutions
-                                         }
-                                         alt="Intercom Company logo"
-                                        />
+                                <div className="resumes--accent-hired p-5">
+                                    <div className="Grid">
+                                        <h5>{data.name}’s career</h5>
+                                        <span className="label m-bottom-3">
+                                            Director, Banking, Tech, YouTube
+                                            personality, Marketing person
+                                        </span>
+                                        <span className="label hired-label">
+                                            Hired at
+                                        </span>
+                                        <div style={{ width: "100%" }}>
+                                            <Img
+                                             resolutions={
+                                                data.companyLogo.childImageSharp
+                                                    .resolutions
+                                             }
+                                             alt="Intercom Company logo"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <a
-                         href="#article"
-                         className="page--scroll"
-                        >
-                            Read the story
-                        </a>
-                    </section>
+                            <a
+                             href="#article"
+                             className="page--scroll"
+                            >
+                                Read the story
+                            </a>
+                        </section>
 
-                    <article
-                     id="article"
-                     className="resume-article p-md-top-8"
-                    >
-                        <h3>{data.stepsTitle}</h3>
-                        <p>{data.stepsDescription}</p>
+                        <article
+                         id="article"
+                         className="resume-article p-md-top-8"
+                        >
+                            <h3>{data.stepsTitle}</h3>
+                            <p>{data.stepsDescription}</p>
 
                             <ul>
                                 {data.steps.map((step, i) => (
