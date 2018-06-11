@@ -17,12 +17,14 @@ import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
 import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
 
+import Meta from "components/Meta";
+
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
-    console.log(list);
     return (
         <DefaultLayout>
+            <Meta title={data.name} />
             <main className="famous-resume--container">
                 <FamousHeader
                  name={data.name}

@@ -9,6 +9,7 @@ import Subscribe from "components/SuccessfulResumes/Subscribe";
 import FamousResumesList from "components/SuccessfulResumes/FamousResumesList";
 import ResumeList from "components/SuccessfulResumes/List";
 
+import Meta from "components/Meta";
 import DefaultLayout from "layouts/DefaultLayout";
 
 const IMAGE_KEYS = ["subImageOne", "subImageTwo", "subImageThree"];
@@ -16,14 +17,15 @@ const IMAGE_KEYS = ["subImageOne", "subImageTwo", "subImageThree"];
 export default function FeaturedResume({ data, ...rest }) {
     const subImageId = Math.floor(Math.random() * 3);
     const subImage = data[IMAGE_KEYS[subImageId]];
-    console.log(data, rest);
 
     return (
         <DefaultLayout>
-            <Helmet
+            <Meta
              bodyAttributes={{
                 class: "resumeslist"
              }}
+             title="Real Resume Examples that Got People Hires | Enhancv"
+             description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
             />
             <main className="container">
                 <section className="page--head">
