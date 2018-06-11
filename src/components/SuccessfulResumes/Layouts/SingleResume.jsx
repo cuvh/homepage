@@ -36,6 +36,8 @@ export default class SingleResume extends React.PureComponent {
         const data = this.props.data.userResumesJson;
         const allResumes = this.props.data.allUserResumesJson;
 
+        const resumePageOne = data.resumes[0].image;
+        const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
             <DefaultLayout>
                 <div
@@ -84,7 +86,7 @@ export default class SingleResume extends React.PureComponent {
                                     >
                                         <Img
                                          resolutions={
-                                            data.image.childImageSharp.small
+                                            resumePageOne.childImageSharp.small
                                          }
                                         />
 
@@ -152,7 +154,8 @@ export default class SingleResume extends React.PureComponent {
                         <FooterList list={allResumes.edges} />
                         <Modal isModalShowed={this.state.preview}>
                             <ResumePreview
-                             resumePageOne={data.image}
+                             resumePageOne={resumePageOne}
+                             resumePageTwo={resumePageTwo}
                              facebookText={data.facebookText}
                              twitterText={data.twitterText}
                              url={data.url}
@@ -179,13 +182,15 @@ export const pageQuery = graphql`
                 title
                 description
             }
-            image {
-                childImageSharp {
-                    large: resolutions(width: 1240) {
-                        ...GatsbyImageSharpResolutions
-                    }
-                    small: resolutions(width: 548) {
-                        ...GatsbyImageSharpResolutions
+            resumes {
+                image {
+                    childImageSharp {
+                        large: resolutions(width: 1240) {
+                            ...GatsbyImageSharpResolutions
+                        }
+                        small: resolutions(width: 548) {
+                            ...GatsbyImageSharpResolutions
+                        }
                     }
                 }
             }
@@ -204,10 +209,12 @@ export const pageQuery = graphql`
                     name
                     label
                     title
-                    image {
-                        childImageSharp {
-                            resolutions(width: 240, height: 329) {
-                                ...GatsbyImageSharpResolutions
+                    resumes {
+                        image {
+                            childImageSharp {
+                                resolutions(width: 240, height: 329) {
+                                    ...GatsbyImageSharpResolutions
+                                }
                             }
                         }
                     }

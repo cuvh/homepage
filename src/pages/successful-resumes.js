@@ -20,14 +20,16 @@ export default class FeaturedResume extends React.PureComponent {
         super(props);
         this.state = {
             preview: false,
-            openedResume: null
+            resumeOne: null,
+            resumeTwo: null
         };
     }
 
-    togglePreview(openedResume) {
+    togglePreview(resumeOne, resumeTwo) {
         this.setState({
             preview: !this.state.preview,
-            openedResume: openedResume
+            resumeOne: resumeOne,
+            resumeTwo: resumeTwo
         });
     }
 
@@ -72,7 +74,10 @@ export default class FeaturedResume extends React.PureComponent {
                                     />
                                     <a
                                      onClick={() =>
-                                        this.togglePreview(data.mainResume)}
+                                        this.togglePreview(
+                                            data.mainResumeOne,
+                                            data.mainResumeTwo
+                                        )}
                                      className="btn-resume-preview"
                                      data-track="event"
                                      data-category="Successful Resumes"
@@ -181,7 +186,8 @@ export default class FeaturedResume extends React.PureComponent {
                     <Subscribe image={subImage} />
                     <Modal isModalShowed={this.state.preview}>
                         <ResumePreview
-                         resumePageOne={this.state.openedResume}
+                         resumePageOne={this.state.resumeOne}
+                         resumePageTwo={this.state.resumeTwo}
                          socials={false}
                          togglePreview={() => this.togglePreview()}
                         />
@@ -201,10 +207,12 @@ export const pageQuery = graphql`
                     label
                     name
                     title
-                    image {
-                        childImageSharp {
-                            resolutions(width: 240, height: 329) {
-                                ...GatsbyImageSharpResolutions
+                    resumes {
+                        image {
+                            childImageSharp {
+                                resolutions(width: 240, height: 329) {
+                                    ...GatsbyImageSharpResolutions
+                                }
                             }
                         }
                     }
@@ -266,8 +274,17 @@ export const pageQuery = graphql`
                 }
             }
         }
-        mainResume: file(
+        mainResumeOne: file(
             relativePath: { eq: "successful-resumes/sam-young-resume-1.jpg" }
+        ) {
+            childImageSharp {
+                large: resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        mainResumeTwo: file(
+            relativePath: { eq: "successful-resumes/sam-young-resume-2.jpg" }
         ) {
             childImageSharp {
                 large: resolutions(width: 1240) {
