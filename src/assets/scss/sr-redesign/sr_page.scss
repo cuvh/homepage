@@ -1,6 +1,5 @@
 //////////////////////////////
 /// Page -> Sucessful resume
-
 body.resumeslist:not(.navbar-mobile-active) {
     .navbar:not(.navbar-stick) {
         background: transparent;
@@ -11,7 +10,7 @@ body.resumeslist:not(.navbar-mobile-active) {
 // Page Items
 .page--head {
     margin-top: $sr_global-offset-value * 14;
-    max-width: 750px;
+    max-width: 800px;
     h1,
     h2 {
         max-width: 100%;
@@ -45,8 +44,7 @@ body.resumeslist:not(.navbar-mobile-active) {
         content: "";
         width: 10px;
         height: 10px;
-        background: url("../img/new-successful-resumes/elements/down-arrow.svg")
-            no-repeat;
+        background: url("../img/new-successful-resumes/elements/down-arrow.svg") no-repeat;
         margin-right: $sr_global-offset-value;
         transition: 0.2s transform ease-in-out;
         transform: translateY(0px);
