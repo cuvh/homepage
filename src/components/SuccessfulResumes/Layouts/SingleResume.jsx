@@ -12,7 +12,7 @@ import DefaultLayout from "layouts/DefaultLayout";
 
 export default function SingleResume({
     pathContext: { title, description, steps },
-    data: { userResumesJson: { ...data } },
+    data: { userResumesJson: { ...data }, ...allResumes },
     ...rest
 }) {
     return (
@@ -119,7 +119,7 @@ export default function SingleResume({
                     </article>
 
                     <SubscribeNoImage />
-                    <FooterList />
+                    <FooterList list={allResumes.allUserResumesJson.edges} />
                 </main>
             </div>
         </DefaultLayout>
@@ -149,6 +149,37 @@ export const pageQuery = graphql`
                 childImageSharp {
                     resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+        }
+        allUserResumesJson(limit: 20) {
+            edges {
+                node {
+                    url
+                    name
+                    label
+                    title
+                    image {
+                        childImageSharp {
+                            resolutions(width: 240, height: 329) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    companyLogo {
+                        childImageSharp {
+                            resolutions(width: 100) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
                     }
                 }
             }

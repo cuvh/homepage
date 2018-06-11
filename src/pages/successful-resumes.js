@@ -163,7 +163,7 @@ export default function FeaturedResume({ data, ...rest }) {
 
 export const pageQuery = graphql`
     query AllResumes {
-        allUserResumesJson(limit: 20) {
+        allUserResumesJson(limit: 200) {
             edges {
                 node {
                     url
@@ -194,7 +194,7 @@ export const pageQuery = graphql`
                 }
             }
         }
-        allFamousResumesJson(limit: 20) {
+        allFamousResumesJson(limit: 200) {
             edges {
                 node {
                     url
