@@ -25,10 +25,10 @@ export default function FamousHeader({
                     <div className="text text-dark-grey text-center-xs text-center-sm">
                         <h1 className="h1 text-md-white">{name}</h1>
                         <div className="m-xs-top-1 m-md-top-3 text-darker-grey">
-                            <h5 className="h5 text-md-white-smoke m-bottom-3">
+                            <h5 className="h5 text-white-smoke m-bottom-3">
                                 {smallDescription}
                             </h5>
-                            <p className="p-big text-md-white-smoke">
+                            <p className="p-big text-white-smoke">
                                 {description}
                             </p>
                         </div>
