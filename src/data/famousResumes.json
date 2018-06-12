@@ -1069,17 +1069,22 @@
                     {
                         "title": "Dropping out of college",
                         "description":
-                            "Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways"
+                            "Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways",
+                        "image": "famous-resumes/struggles/jobs_droppingout.png"
                     },
                     {
                         "title": "Launching failed products",
                         "description":
-                            "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs"
+                            "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs",
+                        "image":
+                            "famous-resumes/struggles/jobs_failed_product.png"
                     },
                     {
                         "title": "Failing to identify a customer",
                         "description":
-                            "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh"
+                            "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh",
+                        "image":
+                            "famous-resumes/struggles/jobs_identify_customer.png"
                     }
                 ]
             },

@@ -28,7 +28,7 @@
                 img {
                     max-width: 127px;
                     position: relative;
-                    left: -$sr_global-offset-value * 2;
+                    left: -$sr_global-offset-value * 2 !important;
                 }
             }
         }

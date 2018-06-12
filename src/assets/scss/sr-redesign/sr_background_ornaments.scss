@@ -17,7 +17,7 @@
     }
 }
 
-body.resumedetail {
+.resumedetail {
     background-color: $sr_resumeslist-background;
 }
 
@@ -99,7 +99,8 @@ body.resumedetail {
 
                 // For better loading performance on mobile >
                 @media screen and (min-width: $screen-sm) {
-                    bottom: 15%;
+                    //bottom: 15%;
+                    top: -7%;
                     left: 2%;
                     background-image: url("../img/new-successful-resumes/elements/homepage_element_behind_see_more_resumes@2.jpg");
                 }

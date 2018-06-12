@@ -27,7 +27,7 @@ export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
     return (
-        <DefaultLayout>
+        <DefaultLayout className="navbar-light">
             <Meta
              title={data.pageTitle}
              description={data.pageDescription}
@@ -40,11 +40,7 @@ export default function FamousResume({
             />
             <Modal
              trigger={
-                <a
-                 href="#view-resume"
-                 data-toggle="modal"
-                 className="component--fast-resume-preview"
-                >
+                <a class="component--fast-resume-preview">
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
