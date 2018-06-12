@@ -153,6 +153,16 @@ body.resumedetail {
     &:hover {
         background-image: url("../img/new-successful-resumes/icons/wow_hover.svg");
     }
+    &.btn-wow-reverse {
+        background-image: url("../img/new-successful-resumes/icons/wow_hover.svg");
+        &:hover {
+            background-image: url("../img/new-successful-resumes/icons/wow.svg");
+        }
+    }
+}
+
+.btn-wow-default {
+    background-image: url("../img/new-successful-resumes/elements/social-wow-button.svg");
 }
 
 // Bubbules Background

@@ -10,6 +10,8 @@
         background-repeat:no-repeat;
         background-position:top right;
         background-size:cover;
+        position: relative;
+        z-index:10;
         @media screen and (min-width:$screen-md) and (max-width:$screen-md-max) {
             background-position: 70% 0%;
         }
