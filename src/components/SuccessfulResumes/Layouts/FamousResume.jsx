@@ -17,8 +17,9 @@ import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
 import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
 import SocialBar from "components/SuccessfulResumes/SocialBar";
-import FamousResumePreview from "components/SuccessfulResumes/FamousResumePreview";
 
+import ResumePreview from "components/SuccessfulResumes/ResumePreview";
+import Modal from "components/Modal";
 
 import Meta from "components/Meta";
 
@@ -27,9 +28,36 @@ export default function FamousResume({
 }) {
     return (
         <DefaultLayout>
-            <Meta title={data.name} />
-            <SocialBar />
-            <FamousResumePreview />
+            <Meta
+             title={data.pageTitle}
+             description={data.pageDescription}
+            />
+
+            <SocialBar
+             facebookText={data.facebookText}
+             twitterText={data.twitterText}
+             url={data.url}
+            />
+            <Modal
+             trigger={
+                <a
+                 href="#view-resume"
+                 data-toggle="modal"
+                 className="component--fast-resume-preview"
+                >
+                    <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
+                    <button className="btn-resume-preview" />
+                </a>
+             }
+            >
+                <ResumePreview
+                 resumePageOne={data.resumes[0].image}
+                 facebookText={data.facebookText}
+                 twitterText={data.twitterText}
+                 url={data.url}
+                 altText={data.altText}
+                />
+            </Modal>
             <main className="famous-resume--container">
                 <FamousHeader
                  name={data.name}
@@ -111,6 +139,7 @@ export const pageQuery = graphql`
             url
             smallDescription
             pageDescription
+            pageTitle
             facebookText
             twitterText
             finalDescription
@@ -151,6 +180,13 @@ export const pageQuery = graphql`
                     endDate
                     location
                     position
+                    image {
+                        childImageSharp {
+                            resolutions(width: 300) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
                 }
             }
         }
