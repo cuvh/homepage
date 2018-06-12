@@ -4,7 +4,6 @@
         "url": "casey-neistat",
         "avatar": "famous-resumes/avatars/casey@2.png",
         "cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
-        "position": "Youtube Filmmaker",
         "resumes": [{ "image": "famous-resumes/youtuber-casey-neistat.jpg" }],
         "smallDescription":
             "You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
@@ -128,7 +127,6 @@
         "name": "Elon Musk",
         "url": "elon-musk",
         "resumes": [{ "image": "famous-resumes/elon-musk-resume-1.jpg" }],
-        "position": "CEO of SpaceX, Tesla, and Neuralink",
         "avatar": "famous-resumes/avatars/elon@2.png",
         "cover": "famous-resumes/cover/Elon_Musk_photo.jpg",
         "smallDescription":
@@ -148,7 +146,8 @@
             {
                 "section": "LifeProject",
                 "image": "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
-                "description": "These are just a few of the world-changing projects Musk works on.",
+                "description":
+                    "These are just a few of the world-changing projects Musk works on.",
                 "data": [
                     {
                         "title": "SpaceX",
@@ -162,11 +161,17 @@
                     },
                     {
                         "title": "Tesla",
+<<<<<<< HEAD
+                        "position": "Founder & CEO",
+                        "image": "famous-resumes/companies/Tesla_Motors_Logo.svg",
+=======
                         "position": "Co-founder, CEO, Product architect",
                         "location": "California, USA",
                         "startDate": "2012",
                         "endDate": "2019",
-                        "image": "famous-resumes/companies/Tesla_Motors_Logo.png",
+                        "image":
+                            "famous-resumes/companies/Tesla_Motors_Logo.png",
+>>>>>>> 328035bbbc80455c90bd1729243e63e695ae0f08
                         "description":
                             "Tesla, Inc. is an American company that specializes in electric vehicles, energy storage and solar panel manufacturing based in Palo Alto, California."
                     },
@@ -245,7 +250,6 @@
         "name": "Marissa Mayer",
         "url": "marissa-mayer",
         "resumes": [{ "image": "famous-resumes/marissa-mayer-resume.jpg" }],
-        "position": "Former CEO of Yahoo!",
         "avatar": "famous-resumes/avatars/marissa@2.png",
         "cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
         "description": "Marissa’s resume shows her rise to become a major tech company CEO.",
@@ -269,7 +273,12 @@
                     {
                         "title": "Google",
                         "position": "VP of Location Services",
-                        "image": "famous-resumes/companies/Google_2015_logo.png",
+<<<<<<< HEAD
+                        "image": "famous-resumes/companies/Google_2015_logo.svg",
+=======
+                        "image":
+                            "famous-resumes/companies/Google_2015_logo.png",
+>>>>>>> 328035bbbc80455c90bd1729243e63e695ae0f08
                         "description":
                             "In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
                     },
@@ -355,7 +364,6 @@
         ],
         "avatar": "famous-resumes/avatars/mark@2.png",
         "cover": "famous-resumes/cover/mark_zuckerberg_photo.jpg",
-        "position": "CEO of Facebook",
         "smallDescription": "",
         "pageTitle": "Mark Zuckerberg Software Developer Resume Example | Enhancv",
         "pageDescription":
@@ -448,7 +456,6 @@
         "resumes": [{ "image": "famous-resumes/barack-obama-resume.jpg" }],
         "avatar": "famous-resumes/avatars/obama@2.png",
         "cover": "famous-resumes/cover/Barack_Obama_photo.jpg",
-        "position": "Former President of the United States",
         "pageTitle": "Barack Obama's Resume Example | Enhancv",
         "pageDescription":
             "Obama's resume shows just how diverse his experience is as well as showcasing his major accomplishments in a single page.",
@@ -557,7 +564,6 @@
         ],
         "avatar": "famous-resumes/avatars/travis@2.png",
         "cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
-        "position": "Former CEO of Uber",
         "pageTitle": "Travis Kalanick's Entrepreneur Resume Example | Enhancv",
         "pageDescription":
             "Travis Kalanick's resume example shows what an entrepreneur's resume should be: bold, impact driven, and full of passionate energy",
@@ -657,7 +663,6 @@
         ],
         "avatar": "famous-resumes/avatars/sheryl@2.png",
         "cover": "famous-resumes/cover/Sheryl_Sandberg_photo.jpg",
-        "position": "COO of Facebook",
         "pageTitle": "Sheryl Sandberg's COO Resume Example | Enhancv",
         "pageDescription":
             "Sheryl Sandberg's resume example shows how you can balance the personal and the professional to stand out as a COO",
@@ -772,7 +777,6 @@
         ],
         "avatar": "famous-resumes/avatars/hillary@2.png",
         "cover": "famous-resumes/cover/Hillary_clinton_photo.jpg",
-        "position": "Former First Lady, Senator, and Secretary of State",
         "pageTitle": "Hillary Clinton's Politician Resume Example | Enhancv",
         "pageDescription":
             "Even non-politicians can learn from Hillary Clinton's resume example. It shows how a lifetime of work in various fields can fit into a single page that shows impact and stands out.",
@@ -883,7 +887,6 @@
         ],
         "avatar": "famous-resumes/avatars/merkel@2.png",
         "cover": "famous-resumes/cover/angela_merkel_photo.jpg",
-        "position": "Chancellor of Germany",
         "pageTitle": "Angela Merkel's Female Leader Resume Example | Enhancv",
         "pageDescription":
             "How does the \"most powerful woman in the world\" create a powerful resume as a female leader? It comes with a balance between personal and professional to stand out and show impact.",
@@ -983,7 +986,6 @@
         "resumes": [{ "image": "famous-resumes/steve-jobs-resume.jpg" }],
         "avatar": "famous-resumes/avatars/jobs.png",
         "cover": "famous-resumes/cover/Steve_jobs_cover_photo.jpg",
-        "position": "Former CEO of Apple",
         "pageTitle": "Steve Jobs' Apple CEO Resume Example | Enhancv",
         "pageDescription":
             "Steve Jobs' CEO resume example is an inspiration, showing how including your struggles and failures can create a resume that really stands out and leaves an impression",
@@ -1028,7 +1030,12 @@
                         "startDate": "1976",
                         "endDate": "1985",
                         "location": "Los Altos and Cupertino, CA",
-                        "image": "famous-resumes/companies/Apple_logo_black.png",
+<<<<<<< HEAD
+                        "image": "famous-resumes/companies/Apple_logo_black.svg",
+=======
+                        "image":
+                            "famous-resumes/companies/Apple_logo_black.png",
+>>>>>>> 328035bbbc80455c90bd1729243e63e695ae0f08
                         "description":
                             "Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
                     }
@@ -1040,20 +1047,17 @@
                     {
                         "title": "Dropping out of college",
                         "description":
-                            "Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways",
-                        "image": "famous-resumes/struggles/jobs_droppingout.png"
+                            "Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways"
                     },
                     {
                         "title": "Launching failed products",
                         "description":
-                            "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs",
-                        "image": "famous-resumes/struggles/jobs_failed_product.png"
+                            "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs"
                     },
                     {
                         "title": "Failing to identify a customer",
                         "description":
-                            "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh",
-                        "image": "famous-resumes/struggles/jobs_identify_customer.png"
+                            "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh"
                     }
                 ]
             },
