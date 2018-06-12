@@ -106,7 +106,7 @@ export default class List extends React.PureComponent {
                                         {node.name}
                                     </h4>
                                     <h5 className="resumes--person-jobtitle">
-                                        {node.title}
+                                        {node.tags.join(", ")}
                                     </h5>
                                     <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
                                         <span className="label">Hired at</span>

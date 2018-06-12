@@ -31,6 +31,7 @@ export default function FamousResume({
             <Meta
              title={data.pageTitle}
              description={data.pageDescription}
+             metaImage={data.socialImg}
             />
 
             <SocialBar
@@ -139,6 +140,7 @@ export const pageQuery = graphql`
             pageTitle
             facebookText
             twitterText
+            socialImg
             finalDescription
             cover {
                 childImageSharp {

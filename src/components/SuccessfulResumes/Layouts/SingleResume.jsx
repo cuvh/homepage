@@ -10,6 +10,8 @@ import Modal from "components/Modal";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import herResume from "assets/img/new-successful-resumes/placeholders/her-resume.png";
 
+import Meta from "components/Meta";
+
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default class SingleResume extends React.PureComponent {
@@ -22,24 +24,22 @@ export default class SingleResume extends React.PureComponent {
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
             <DefaultLayout className="resumedetail">
+                <Meta
+                 title={data.pageTitle}
+                 description={data.pageDescription}
+                 metaImage={data.socialImg}
+                />
                 <div className="hasBubbulesBackground">
                     <main className="container">
                         <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
                             <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12 m-sm-bottom-3">
                                 <div className="text">
                                     <span className="text-tag text-highlight-purple">
-                                        CAREER CHANGE
+                                        {data.label}
                                     </span>
                                     <h1 className="h1">{data.title}</h1>
 
                                     <div className="m-xs-top-1 m-md-top-3">
-                                        <h5 className="h5 text-gray-light m-bottom-3">
-                                            <span className="text-gray-light">
-                                                A new resume changed her career
-                                                and her life
-                                            </span>
-                                        </h5>
-
                                         <p className="p-big">
                                             {data.description}
                                         </p>
@@ -100,13 +100,19 @@ export default class SingleResume extends React.PureComponent {
                                     <div className="Grid">
                                         <h5>{data.name}’s career</h5>
                                         <span className="label m-bottom-3">
-                                            Director, Banking, Tech, YouTube
-                                            personality, Marketing person
+                                            {data.position}
                                         </span>
-                                        <span className="label hired-label">
-                                            Hired at
-                                        </span>
-                                        <div style={{ width: "100%" }}>
+                                        <div
+                                         style={{
+                                            width: "100%",
+                                            display: "inline-flex",
+                                            flexWrap: "wrap",
+                                            alignItems: "center"
+                                         }}
+                                        >
+                                            <span className="label hired-label m-md-right-2">
+                                                Hired at
+                                            </span>
                                             <Img
                                              resolutions={
                                                 data.companyLogo.childImageSharp
@@ -166,6 +172,12 @@ export const pageQuery = graphql`
         userResumesJson(url: { eq: $url }) {
             name
             title
+            position
+            pageTitle
+            pageDescription
+            socialImg
+            description
+            label
             url
             stepsTitle
             stepsDescription
@@ -200,6 +212,7 @@ export const pageQuery = graphql`
                     name
                     label
                     title
+                    tags
                     resumes {
                         image {
                             childImageSharp {
