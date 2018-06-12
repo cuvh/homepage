@@ -45,10 +45,6 @@ exports.onInitialClientRender = () => {
 			viewFactor: isDesktop ? 0.6 : 0.45
 		});
 	}
-
-	document.addEventListener("click", function(evnt) {
-		console.log(evnt.target);
-	});
 };
 
 exports.onRouteUpdate = ({ location }) => {
