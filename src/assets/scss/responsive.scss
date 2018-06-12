@@ -1,6 +1,6 @@
 .text-center-xs {
     @media (max-width: $screen-xs-max) {
-      text-align: center !important;
+        text-align: center !important;
     }
 }
 
@@ -27,4 +27,3 @@
         text-align: center;
     }
 }
-
