@@ -35,7 +35,7 @@ export default class SubscribeNoImage extends React.PureComponent {
         const { dark = false } = this.props;
 
         return (
-            <section className="component--subscription Grid Grid--justifyCenter p-sm-top-6 p-md-top-9 p-sm-bottom-7 text-center">
+            <section className="component--subscription Grid Grid--justifyCenter p-sm-top-6 p-md-top-9 p-sm-bottom-7 m-sm-top-5 m-md-top-10 text-center">
                 <div className="component--subscription-form Grid-cell--md-7 Grid-cell--sm-10 Grid-cell--xs-12">
                     <h3
                      className={classnames("h2 m-sm-bottom-1 m-md-bottom-2", {
@@ -75,7 +75,7 @@ export default class SubscribeNoImage extends React.PureComponent {
                                 <button
                                  disabled={this.state.sending}
                                  type="submit"
-                                 className="component--subscription-button btn btn-big btn-primary cta-button Grid-cell--md-4"
+                                 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4"
                                 >
                                     {this.state.sending
                                         ? "Subscribing.."

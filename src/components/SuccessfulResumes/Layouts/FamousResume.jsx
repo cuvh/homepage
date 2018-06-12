@@ -27,8 +27,12 @@ export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
     return (
-        <DefaultLayout>
-            <Meta title={data.name} />
+        <DefaultLayout className="navbar-light">
+            <Meta
+             title={data.pageTitle}
+             description={data.pageDescription}
+            />
+
             <SocialBar
              facebookText={data.facebookText}
              twitterText={data.twitterText}
@@ -38,7 +42,7 @@ export default function FamousResume({
              trigger={
                 <a class="component--fast-resume-preview">
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
-                    <button class="btn-resume-preview" />
+                    <button className="btn-resume-preview" />
                 </a>
              }
             >
@@ -131,6 +135,7 @@ export const pageQuery = graphql`
             url
             smallDescription
             pageDescription
+            pageTitle
             facebookText
             twitterText
             finalDescription
