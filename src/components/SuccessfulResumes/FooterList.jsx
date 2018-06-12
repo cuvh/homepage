@@ -41,9 +41,11 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 <h4 className="resumes--person-name m-top-2">
                                     {node.name}
                                 </h4>
-                                <h5 className="resumes--person-jobtitle">
-                                    {node.title}
-                                </h5>
+                                {node.tags ? (
+                                    <h5 className="resumes--person-jobtitle">
+                                        {node.tags.join(", ")}
+                                    </h5>
+                                ) : null}
                                 {node.companyLogo ? (
                                     <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
                                         <span className="label">Hired at</span>

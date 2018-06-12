@@ -188,6 +188,7 @@ export const pageQuery = graphql`
                     url
                     label
                     name
+                    tags
                     title
                     resumes {
                         image {
