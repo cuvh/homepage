@@ -1,0 +1,38 @@
+@import "sr_page";
+@import "sr_resumeslist";
+@import "sr_famouslist";
+@import "sr_single";
+@import "sr_resume_preview";
+
+@import "sr_background_ornaments";
+@import "sr_block_highlighted_resume";
+@import "sr_block_others_resumes";
+
+@import "sr_badges";
+@import "sr_subscription";
+@import "sr_socials";
+@import "sr_bullets";
+@import "sr_feeling";
+
+@import "sr_cta_resume";
+@import "sr_famous_resume";
+
+// Famous Resume components
+@import "components/sr_component_testimonial";
+@import "components/sr_component_list_with_thumbs";
+@import "components/sr_component_books";
+@import "components/sr_component_socialbar";
+
+#view-resume {
+    button.close {
+        padding: 6px 8px;
+        border-radius: 4px;
+        opacity: 1;
+        text-shadow: none;
+        background: transparent;
+
+        i {
+            color: #fff;
+        }
+    }
+}

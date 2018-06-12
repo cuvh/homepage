@@ -53,6 +53,11 @@
     }
 }
 
+.btn {
+    font-weight:600;
+    border-radius:6px;
+}
+
 .btn.btn-default {
     @include button-explicit(
         $btn-default-color,
@@ -67,6 +72,13 @@
         lighten($brand-primary, 50%),
         $brand-primary
     );
+}
+
+.btn.btn-big {
+    font-size:$font-size-large;
+    font-weight: 600;
+    min-width:245px;
+    text-transform:uppercase;
 }
 
 .btn.btn-muted {
@@ -247,4 +259,44 @@
 
 .btn-2 {
     border-radius: 5px;
+}
+
+.btn-resume-preview,
+.btn-wow {
+    cursor: pointer;
+    transition:0.2s background ease-in-out;
+
+    border:0;   
+    background-color:transparent;
+    background-position:center center;
+    background-repeat:no-repeat;
+    
+    &:focus {
+        outline:none;
+    }
+}
+
+.btn-wow-default {
+    background-color: #8C7CDB;
+    border-radius: 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 35px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-resume-preview {
+    width:52px;
+    height:52px;
+    background-size:52px;
+}
+
+.btn-wow {
+    width:58px;
+    height:57px;
+    display: inline-flex;
+    background-size:58px;
 }

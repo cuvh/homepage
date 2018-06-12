@@ -1,0 +1,63 @@
+.resumes {
+    &--accent {
+        padding-bottom: $sr_global-offset-value * 9;
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            //flex-direction: row-reverse;
+            padding-bottom: $sr_global-offset-value * 13;
+
+            &.accent--reverse {
+                flex-direction: row-reverse;
+            }
+        }
+        @media screen and (max-width: $screen-sm-max) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &--preview {
+        justify-content: right;
+        text-align: right;
+
+        &-holder {
+            display: inline-block;
+            position: relative;
+            box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1),
+                1px 0 2px rgba(77, 77, 77, 0.16);
+
+            @media screen and (max-width: $screen-sm-max) {
+                padding: 0 $sr_global-offset-value;
+                text-align: center;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .btn-resume-preview {
+            position: absolute;
+            @media screen and (max-width: $screen-sm-max) {
+                bottom: -12px;
+                right: -$sr_global-offset-value;
+            }
+            @media screen and (min-width: $screen-md) {
+                top: -12px;
+                left: -$sr_global-offset-value;
+            }
+        }
+    }
+
+    &--content {
+        position: relative;
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            align-items: center;
+
+            .text {
+                margin-top: -46px;
+            }
+        }
+    }
+}

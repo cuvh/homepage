@@ -17,6 +17,7 @@
 
 .member-content {
     position: absolute;
+    cursor: pointer;
     border-radius: 50%;
     top: 0;
     bottom: 0;
@@ -68,6 +69,24 @@
     .member-content {
         .member-text {
             font-size: 2.3vw;
+        }
+    }
+}
+
+.modal {
+    display: block !important;
+    padding-left: 0px;
+    background-color: rgba(56, 67, 71, 0.9);
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    button.close {
+        background:transparent;
+        padding: 6px 8px;
+        border-radius: 4px;
+        opacity: 1;
+        i {
+            color: #fff;
         }
     }
 }

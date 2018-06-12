@@ -38,6 +38,7 @@
 @import "pages/careers";
 @import "pages/job";
 @import "pages/privacy";
+@import "sr-redesign/main";
 
 // partials
 @import "partials/footer";
@@ -47,6 +48,10 @@
 @import "partials/companies";
 
 @import "../icons/styles.css";
+
+html {
+	scroll-behavior: smooth;
+}
 
 body {
 	overflow-x: hidden;

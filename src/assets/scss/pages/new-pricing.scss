@@ -1,19 +1,27 @@
+.pricing-header-loaded {
+	background-image: url(../img/enhancv-pricing-small.jpg);
+
+	@media screen and (min-width: $screen-lg) {
+		background-image: url(../img/enhancv-pricing.jpg);
+	}
+	filter: blur(0px) !important;
+}
+
 .pricing-header {
 	position: relative;
-	background-image: url(/img/enhancv-pricing-small.jpg);
+	background-color: #e8ebe9;
 	background-size: cover;
 	background-position: center center;
 	padding-top: 60px;
 	margin-top: -78px;
 	height: 459px;
 
+	filter: blur(30px);
+	transition: filter 0.2s;
+
 	@media screen and (min-width: $screen-sm-min) {
 		height: 613px;
 		padding-top: 100px;
-	}
-
-	@media screen and (min-width: $screen-lg) {
-		background-image: url(/img/enhancv-pricing.jpg);
 	}
 
 	@media screen and (min-width: $screen-md) {
@@ -159,7 +167,7 @@
 			display: inline-block;
 			background-color: #2dc08d;
 			position: relative;
-			top: 4px;
+			top: 1px;
 		}
 	}
 
@@ -311,7 +319,7 @@
 
 	.plan-name {
 		font-size: 21px;
-        font-family: "Rubik";
+		font-family: "Rubik";
 		color: #808080;
 	}
 
@@ -359,9 +367,9 @@
 		position: relative;
 		width: 294px;
 
-        .tab-price {
-            font-family: "Rubik";
-        }
+		.tab-price {
+			font-family: "Rubik";
+		}
 
 		@media screen and (max-width: $screen-sm) {
 			width: 248px;
@@ -425,7 +433,7 @@
 
 .billed-text {
 	line-height: 16px;
-	font-size:$font-size-small;
+	font-size: $font-size-small;
 }
 
 .pricing-benefits {

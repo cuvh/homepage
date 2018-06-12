@@ -1,0 +1,89 @@
+.resume {
+    &--highlighted {
+        color: $sr_main-color;
+    }
+    &--highlighted-content {
+        @media screen and (min-width: $screen-md) {
+            padding-left: $sr_global-offset-value * 16;
+        }
+        @media screen and (min-width: $screen-lg) {
+            padding-left: $sr_global-offset-value * 25;
+        }
+    }
+    &--highlighted-image {
+        text-align: right;
+        position: relative;
+        @media screen and (max-width: $screen-md) {
+            max-width: 350px;
+            margin: 0 15%;
+        }
+        @media screen and (max-width: $screen-xs) {
+            margin-left: -40%;
+        }
+    }
+    &--highlighted-person-image {
+        width: 100%;
+        max-width: 511px;
+    }
+    &--highlighted-preview {
+        position: absolute;
+        top: 30%;
+        left: 92%;
+        @media screen and (min-width: $screen-md) {
+            top: 50%;
+            left: 70%;
+        }
+        img {
+            @media screen and (max-width: $screen-lg) {
+                max-width: 160px;
+            }
+        }
+        .btn-resume-preview {
+            position: absolute;
+            // bottom: $sr_global-offset-value;
+            // right: -16px;
+            bottom: $sr_global-offset-value;
+            right: $sr_global-offset-value;
+            @media screen and (max-width: $screen-sm-max) {
+                display: none;
+            }
+        }
+    }
+    &--highlighted-text {
+        color: $sr_secondary-color;
+        font-size: 18px;
+        line-height: 32px;
+        @media screen and (max-width: $screen-sm-max) {
+            display: none;
+        }
+    }
+    &--highlighted-hired {
+        color: #939393;
+    }
+    &--highlighted-hired {
+        font-size: 14px;
+        font-weight: 500;
+        @media screen and (max-width: $screen-sm-max) {
+            .jobtitle {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            align-items: center;
+        }
+
+        .line {
+            background-color: #979797;
+            width: 1px;
+            height: 22px;
+            display: inline-block;
+            opacity: 0.3;
+            @media screen and (max-width: $screen-sm-max) {
+                display: none;
+            }
+        }
+    }
+}

@@ -43,7 +43,7 @@
 }
 
 .homepage-scalable-header {
-    background: url(/img/new-homepage/header.jpg);
+    background: url(../img/new-homepage/header.jpg);
     background-size: cover;
     background-position: center 0px;
     padding-bottom: 45%;
@@ -75,7 +75,7 @@
     }
 
     .homepage-lines {
-        //    background: url(/img/homepage/lines-bg.png);
+        //    background: url(../img/homepage/lines-bg.png);
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
@@ -226,7 +226,11 @@
 
 .homepage-new-features {
     margin-top: 190px;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        rgba(216, 216, 216, 0.4) 100%
+    );
 }
 
 .homepage-cta {

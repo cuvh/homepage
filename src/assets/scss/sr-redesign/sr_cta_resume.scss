@@ -1,0 +1,21 @@
+.component {
+    &--cta-resume {
+        @media screen and (min-width: $screen-md) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        &-image {
+            text-align:center;
+            @media screen and (min-width: $screen-md) {
+                text-align:right;
+            }
+            @media screen and (max-width:$screen-sm-max) {
+                img {
+                    max-width:100%;
+                }
+            }
+        }
+    }
+}
+    

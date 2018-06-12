@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="10px" viewBox="0 0 8 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Arrows/Down@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.59805997,6.56565789 L5.36530169,9.84631579 C5.26431032,9.94881579 5.13215516,10 5,10 C4.86784484,10 4.73568968,9.94881579 4.63469831,9.84631579 L1.40194003,6.56565789 C1.19969867,6.36039474 1.19931074,6.02723684 1.40103486,5.82131579 C1.60275897,5.61552632 1.93017273,5.61513158 2.1325434,5.82039474 L4.48275867,8.20539474 L4.48275867,0.526315789 C4.48275867,0.235657895 4.71435348,0 5,0 C5.28564652,0 5.51724133,0.235657895 5.51724133,0.526315789 L5.51724133,8.20539474 L7.86758591,5.82039474 C8.06969796,5.61513158 8.39724103,5.61539474 8.59896514,5.82131579 C8.80068926,6.02723684 8.80030133,6.36039474 8.59805997,6.56565789" id="path-1"></path>
+    </defs>
+    <g id="Latest-states-of-the-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Resumes-Rubik" transform="translate(-136.000000, -1088.000000)">
+            <g id="Icons/Arrows/Down" transform="translate(135.000000, 1088.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="arrow-thin-down-copy" fill-opacity="0.58" fill="#8C7CDB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Colors/50%-Purple" mask="url(#mask-2)" fill-rule="evenodd">
+                    <g transform="translate(5.000000, 5.000000) rotate(180.000000) translate(-5.000000, -5.000000) " id="Rectangle-6-Copy-2">
+                        <rect fill="#8C7CDB" x="0" y="0" width="10" height="10"></rect>
+                        <rect fill="#FFFFFF" opacity="0.5" x="0" y="0" width="10" height="10"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

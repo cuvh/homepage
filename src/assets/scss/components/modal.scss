@@ -1,3 +1,13 @@
 .modal-content {
     box-shadow: none;
 }
+
+.modal-backdrop, .modal-dark {
+    background-color: $sr_main-color;
+}
+
+@media (max-width: $screen-sm-max) {
+    .modal-dialog {
+        margin: 0;
+    }
+}

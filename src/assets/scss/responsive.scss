@@ -1,6 +1,6 @@
 .text-center-xs {
     @media (max-width: $screen-xs-max) {
-      text-align: center !important;
+        text-align: center !important;
     }
 }
 
@@ -19,5 +19,31 @@
 .text-center-lg {
     @media (min-width: $screen-lg-min) {
         text-align: center !important;
+    }
+}
+
+.text-center-sm-max {
+    @media (max-width: $screen-sm-max) {
+        text-align: center;
+    }
+}
+
+.responsive-gatsby {
+    .gatsby-image-outer-wrapper,
+    .gatsby-image-wrapper,
+    .gatsby-image-outer-wrapper img:nth-child(2) {
+        max-width: 100% !important;
+        height: auto !important;
+        overflow: inherit !important;
+    }
+
+    .gatsby-image-outer-wrapper,
+    .gatsby-image-outer-wrapper img:nth-child(2) {
+        position: inherit !important;
+    }
+
+    img {
+        width: 100%;
+        position: relative;
     }
 }
