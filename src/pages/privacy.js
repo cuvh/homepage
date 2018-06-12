@@ -1,11 +1,11 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 import TextLayout from "layouts/TextLayout";
 
 export default function Terms() {
     return (
         <TextLayout title={"Privacy Policy"}>
-            <Helmet title={"Privacy Policy"} />
+            <Meta title={"Privacy Policy"} />
 
             <div className="text-page bottom-lg">
                 <div className="bottom-md">

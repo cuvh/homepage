@@ -1,24 +1,18 @@
 import React from "react";
 import Link from "gatsby-link";
+import Meta from "components/Meta";
 
 import Members from "components/About/Members";
 import Images from "components/About/Images";
-import Helmet from "react-helmet";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function About() {
     return (
         <DefaultLayout>
-            <Helmet
-             title={"About Enhancv"}
-             meta={[
-                {
-                    name: "description",
-                    content:
-                        "Our mission is to help talented people unleash their full potential by giving them the opportunity to create resumes that show who they really are."
-                }
-             ]}
+            <Meta
+             title="About Enhancv"
+             description="Our mission is to help talented people unleash their full potential by giving them the opportunity to create resumes that show who they really are."
             />
             <div className="container">
                 <h1 className="text-center bottom-lg top-lg">

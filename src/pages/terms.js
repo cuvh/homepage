@@ -1,12 +1,12 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 import TextLayout from "layouts/TextLayout";
 import Link from "gatsby-link";
 
 export default function Terms() {
     return (
         <TextLayout title={"Terms of service"}>
-            <Helmet title={"Terms of service"} />
+            <Meta title="Terms of service" />
 
             <div className="text-page bottom-lg">
                 <div className="bottom-md">

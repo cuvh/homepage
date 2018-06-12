@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import classnames from "classnames";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
@@ -28,14 +28,9 @@ export default function Careers() {
     return (
         <DefaultLayout>
             <div className="career-page p-bottom-7">
-                <Helmet
-                 title={"Careers at Enhancv"}
-                 meta={[
-                    {
-                        name: "description",
-                        content: "Join our team of superheroes"
-                    }
-                 ]}
+                <Meta
+                 title="Careers at Enhancv"
+                 description="Join our team of superheroes"
                 />
                 <div className="career-header">
                     <div className="container">
