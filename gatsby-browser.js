@@ -11,6 +11,9 @@ import sbjs from "sourcebuster/src/js/sourcebuster";
 import scrollReveal from "scrollreveal/src/scrollreveal";
 import browserWidth from "./src/utils/browserWidth";
 
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-52969150-1");
+
 exports.onInitialClientRender = () => {
 	sbjs.init();
 
@@ -42,4 +45,12 @@ exports.onInitialClientRender = () => {
 			viewFactor: isDesktop ? 0.6 : 0.45
 		});
 	}
+
+	document.addEventListener("click", function(evnt) {
+		console.log(evnt.target);
+	});
+};
+
+exports.onRouteUpdate = ({ location }) => {
+	ReactGA.pageview(location.pathname);
 };

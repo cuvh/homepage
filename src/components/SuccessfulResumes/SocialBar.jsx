@@ -48,12 +48,10 @@ export default function SocialBar({ facebookText, twitterText, url }) {
             <div className="component--social-bar-vertical-view">
                 <span className="line" />
                 <span className="label">Appreciate</span>
-                <a className="btn-wow btn-wow-reverse" />
             </div>
             <div className="component--social-bar-horizontal-view">
                 Do you like this article? Appreciate it, so we can make more
                 like it
-                <a className="btn-wow-default" />
             </div>
         </div>
     );
