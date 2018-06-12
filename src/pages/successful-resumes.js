@@ -128,12 +128,15 @@ export default function FeaturedResume({ data }) {
                                         `Featured Casey Neistat`
                                     )}
                                 >
-                                    <Img
-                                     resolutions={
-                                        data.famousResume.childImageSharp.small
-                                     }
-                                     alt="Casey's resume preview"
-                                    />
+                                    <div className="responsive-gatsby">
+                                        <Img
+                                         resolutions={
+                                            data.famousResume.childImageSharp
+                                                .small
+                                         }
+                                         alt="Casey's resume preview"
+                                        />
+                                    </div>
                                     <button className="btn-resume-preview" />
                                 </a>
                              }
