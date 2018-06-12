@@ -4,13 +4,11 @@
         "url": "casey-neistat",
         "avatar": "famous-resumes/avatars/casey@2.png",
         "cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
-        "resumes": [
-            { "image": "famous-resumes/casey-neistat/casey-neistat-resume.jpg" }
-        ],
+        "resumes": [{ "image": "famous-resumes/youtuber-casey-neistat.jpg" }],
         "smallDescription":
             "You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
         "description":
-            "Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
+            "From living in a trailer park and washing dishes to becoming a defining Youtube filmmaker, Casey’s story has a lot to teach.",
         "pageTitle": "Casey Neistat’s Filmmaker Resume Example | Enhancv",
         "pageDescription":
             "Casey Neistat has a great example of a creative filmmaker resume. It shows successes, failures, and includes some insights into why success often isn't enough.",
@@ -133,15 +131,13 @@
     {
         "name": "Elon Musk",
         "url": "elon-musk",
-        "resumes": [
-            { "image": "famous-resumes/casey-neistat/elon-musk-resume-1.jpg" }
-        ],
+        "resumes": [{ "image": "famous-resumes/elon-musk-resume-1.jpg" }],
         "avatar": "famous-resumes/avatars/elon@2.png",
         "cover": "famous-resumes/cover/Elon_Musk_photo.jpg",
         "smallDescription":
             "Elon Musk may not be a typical CEO, but he still has a fantastic example of what a CEO resume can be. His resume shows how a CEO can bring together their ventures, personality, values, and passions.",
         "description":
-            "When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions.",
+            "A one page CEO resume actually can represent someone as varied as Elon Musk.",
         "pageTitle": "Elon Musk’s CEO Resume Example in One Page | Enhancv",
         "pageDescription":
             "Even if you don't need a CEO resume, Elon Musk's example shows how anyone can make a one page resume that really stands out and leaves a lasting impression",
@@ -245,13 +241,11 @@
     {
         "name": "Marissa Mayer",
         "url": "marissa-mayer",
-        "resumes": [
-            { "image": "famous-resumes/casey-neistat/marissa-mayer-resume.jpg" }
-        ],
+        "resumes": [{ "image": "famous-resumes/marissa-mayer-resume.jpg" }],
         "avatar": "famous-resumes/avatars/marissa@2.png",
         "cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
         "description":
-            "From the first female employee at Google to CEO of Yahoo!, Mayer’s CEO resume tells the story of a career marked by persistence, hard work, and results. Her resume example also shows how women can succeed in both the technology and business worlds.",
+            "Marissa’s resume shows her rise to become a major tech company CEO.",
         "pageTitle": "Marissa Mayer’s Yahoo CEO Resume Example | Enhancv",
         "pageDescription":
             "Marissa Mayer's CEO resume example has actionable tips and ideas allowing anyone can have an impactful and memorable resume",
@@ -358,8 +352,7 @@
         "url": "mark-zuckerberg",
         "resumes": [
             {
-                "image":
-                    "famous-resumes/casey-neistat/mark-zuckerberg-resume.jpg"
+                "image": "famous-resumes/mark-zuckerberg-resume.jpg"
             }
         ],
         "avatar": "famous-resumes/avatars/mark@2.png",
@@ -376,7 +369,7 @@
             "Even before Facebook, Mark Zuckerberg had a resume that really stood out. Check out how @Enhancv shows it.",
         "socialImg": "famous-resumes/share-images/Mark_Zuckerberg_social.png",
         "description":
-            "Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Back then, he would have needed a software developer resume just like anyone else. His resume is an example of how you can showcase your passions, philosophy, and ambitions to create an impactful resume before you’ve landed your first real job.",
+            "Showing him at the moment he founded Facebook, Zuckerberg’s resume shows a college student who knows how to show projects and impact.",
         "sections": [
             {
                 "image":
@@ -456,9 +449,7 @@
     {
         "name": "Barack Obama",
         "url": "barack-obama",
-        "resumes": [
-            { "image": "famous-resumes/casey-neistat/barack-obama-resume.jpg" }
-        ],
+        "resumes": [{ "image": "famous-resumes/barack-obama-resume.jpg" }],
         "avatar": "famous-resumes/avatars/obama@2.png",
         "cover": "famous-resumes/cover/Barack_Obama_photo.jpg",
         "pageTitle": "Barack Obama's Resume Example | Enhancv",
@@ -471,7 +462,7 @@
             "Barack Obama’s resume shows how a POTUS can show pride in their accomplishments.  | via @Enhancv",
         "socialImg": "famous-resumes/share-images/Barack_Obama_social.png",
         "description":
-            "Even Presidents need resumes. Obama's resume shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of.",
+            "It takes a special kind of one page resume to show Barack Obama’s political career.",
         "sections": [
             {
                 "image":
@@ -566,8 +557,7 @@
         "url": "travis-kalanick",
         "resumes": [
             {
-                "image":
-                    "famous-resumes/casey-neistat/travis-kalanick-resume.jpg"
+                "image": "famous-resumes/travis-kalanick-resume.jpg"
             }
         ],
         "avatar": "famous-resumes/avatars/travis@2.png",
@@ -582,7 +572,7 @@
             "This @traviskal resume shows how following your passions can lead to big things. @Enhancv makes it possible.",
         "socialImg": "famous-resumes/share-images/travis_social.png",
         "description":
-            "Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
+            "Kalanick has a resume that’s not shy about when he’s bended the rules to push forward.",
         "sections": [
             {
                 "image":
@@ -670,8 +660,7 @@
         "url": "sheryl-sandberg",
         "resumes": [
             {
-                "image":
-                    "famous-resumes/casey-neistat/sheryl-sandberg-resume-1.jpg"
+                "image": "famous-resumes/sheryl-sandberg-resume-1.jpg"
             }
         ],
         "avatar": "famous-resumes/avatars/sheryl@2.png",
@@ -686,7 +675,7 @@
             "This resume @Enhancv created for @sherylsandberg shows just how you can show your strengths and identity as a woman, mother, and a professional on a resume that would make anyone proud",
         "socialImg": "famous-resumes/share-images/Sheryl_scial.png",
         "description":
-            "From the publication of her best-selling book Lean In, Sheryl Sandberg has become a sometimes controversial thinker on how women can succeed in their careers. Whether you see her as an icon or disagree with how she thinks women can advance themselves while balancing other obligations, her COO resume example has a fascinating story to tell.",
+            "Sandberg’s resume shows how she can be a COO, mother, and author.",
         "sections": [
             {
                 "image":
@@ -787,8 +776,7 @@
         "url": "hillary-clinton",
         "resumes": [
             {
-                "image":
-                    "famous-resumes/casey-neistat/hillary-clinton-resume-1.jpg"
+                "image": "famous-resumes/hillary-clinton-resume-1.jpg"
             }
         ],
         "avatar": "famous-resumes/avatars/hillary@2.png",
@@ -803,7 +791,7 @@
             "This @Enhancv created resume shows how a single page can sum up a life as varied as @hillaryclinton’s. We think she’d be proud of this one.",
         "socialImg": "famous-resumes/share-images/Hillary_clinton_social.png",
         "description":
-            "Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Walmart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
+            "Even when you’re as famous as Clinton, the right resume can still surprise.",
         "sections": [
             {
                 "image":
@@ -905,8 +893,7 @@
         "url": "angela-merkel",
         "resumes": [
             {
-                "image":
-                    "famous-resumes/casey-neistat/angela-merkel-resume-1.jpg"
+                "image": "famous-resumes/angela-merkel-resume-1.jpg"
             }
         ],
         "avatar": "famous-resumes/avatars/merkel@2.png",
@@ -921,7 +908,7 @@
             "Think the resume of the most powerful woman in the world (according to @Forbes) can’t be one page? @Enhancv thinks otherwise.",
         "socialImg": "famous-resumes/share-images/merkel_social.png",
         "description":
-            "Named the most powerful woman in the world for 9 of the past 10 years, Angela Merkel's resume isn't short on accomplishments as a female leader. But more than just showing what she's done, her resume shows how she balances her life and how what she's most proud of defines her. So when she mentions what she did the night the Berlin Wall fell, it's more than just a story, it's a statement about how she views the world and her work.",
+            "The most powerful woman in the world deserves a resume that really leaves an impression.",
         "sections": [
             {
                 "image":
@@ -1011,9 +998,7 @@
     {
         "name": "Steve Jobs",
         "url": "steve-jobs",
-        "resumes": [
-            { "image": "famous-resumes/casey-neistat/steve-jobs-resume.jpg" }
-        ],
+        "resumes": [{ "image": "famous-resumes/steve-jobs-resume.jpg" }],
         "avatar": "famous-resumes/avatars/jobs.png",
         "cover": "famous-resumes/cover/Steve_jobs_cover_photo.jpg",
         "pageTitle": "Steve Jobs' Apple CEO Resume Example | Enhancv",
@@ -1026,7 +1011,7 @@
             "How did Steve Jobs learn from his mistakes to become the man who saved Apple? Turns out that story has a lot to teach us about grit, passion, and thriving in spite of personal flaws. | via @Enhancv",
         "socialImg": "famous-resumes/share-images/Jobs_social.png",
         "description":
-            "Whether you think Steve Jobs was a genius, narcissist, or both, that misses something more important: how his life was shaped by struggle. His CEO resume shows not just what he’d accomplished and what he was proud of when he rejoined Apple in 1996, but how his struggles and failures turned him into the person who could save the company.",
+            "Jobs’ resume in 1996 shows a career was full of incredible successes and brutal failures.",
         "sections": [
             {
                 "image":

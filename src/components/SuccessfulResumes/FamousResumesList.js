@@ -56,7 +56,8 @@ export default class FamousResumesList extends React.PureComponent {
                             <div className="resumes--hovered">
                                 <Img
                                  resolutions={
-                                    node.resume.childImageSharp.resolutions
+                                    node.resumes[0].image.childImageSharp
+                                        .resolutions
                                  }
                                  alt="Steve Jobs Former Apple CEO"
                                 />

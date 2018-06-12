@@ -29,7 +29,7 @@ export default function FamousResume({
                 <FamousHeader
                  name={data.name}
                  cover={data.cover}
-                 description={data.description}
+                 description={data.pageDescription}
                  smallDescription={data.smallDescription}
                 />
 
@@ -102,7 +102,7 @@ export const pageQuery = graphql`
             name
             url
             smallDescription
-            description
+            pageDescription
             finalDescription
             cover {
                 childImageSharp {
