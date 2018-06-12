@@ -3,13 +3,10 @@ import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
 import Helmet from "react-helmet";
+import StoreService from "utils/StoreService";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 import srImg from "../assets/img/msg-SR-Emoji@3x.svg";
-
-// $(document).on("click", '[data-toggle="navbar"]', function() {
-//     $("body").toggleClass("navbar-mobile-active");
-// });
 
 class Header extends React.PureComponent {
     state = {
@@ -20,7 +17,7 @@ class Header extends React.PureComponent {
         super(props);
         this.onScroll = this.scroll.bind(this);
         this.state = {
-            isMsgShowed: localStorage.getItem("isMsgShowed"),
+            isMsgShowed: StoreService.getItem("isMsgShowed"),
             mobileNavOpened: ""
         };
     }
@@ -37,7 +34,7 @@ class Header extends React.PureComponent {
         this.setState({
             isMsgShowed: true
         });
-        localStorage.setItem("isMsgShowed", true);
+        StoreService.setItem("isMsgShowed", true);
     }
 
     scroll(e) {
@@ -70,11 +67,9 @@ class Header extends React.PureComponent {
                 />
                 <div
                  className={
-                    !this.state.isMsgShowed ? (
-                        "navigation-spacer-sr"
-                    ) : (
-                        "navigation-spacer"
-                    )
+                    !this.state.isMsgShowed
+                        ? "navigation-spacer-sr"
+                        : "navigation-spacer"
                  }
                 />
 
@@ -128,6 +123,7 @@ class Header extends React.PureComponent {
                                 </div>
                             </button>
                             <Link
+                             onClick={() => console.log("test")}
                              to="/"
                              className="navbar-logo-wrapper"
                             >
