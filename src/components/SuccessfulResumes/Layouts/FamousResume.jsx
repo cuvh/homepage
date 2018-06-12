@@ -73,7 +73,6 @@ export default function FamousResume({
                  })}
                 >
                     <FamousHeader
-                     preview={preview}
                      name={data.name}
                      cover={data.cover}
                      description={data.pageDescription}

@@ -120,6 +120,7 @@ export default function FeaturedResume({ data }) {
                             <Modal
                              trigger={
                                 <a
+                                 style={{ cursor: "pointer" }}
                                  onClick={() =>
                                     Track(
                                         "Successful Resumes",
