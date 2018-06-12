@@ -103,10 +103,14 @@ export default class SingleResume extends React.PureComponent {
                                             Director, Banking, Tech, YouTube
                                             personality, Marketing person
                                         </span>
-                                        <span className="label hired-label">
-                                            Hired at
-                                        </span>
-                                        <div style={{ width: "100%" }}>
+                                        <div style={{ width: "100%", 
+                                                      display: "inline-flex",
+                                                      flexWrap: "wrap",
+                                                      alignItems: "center"
+                                                    }}>
+                                            <span className="label hired-label m-md-right-2">
+                                                Hired at
+                                            </span>
                                             <Img
                                              resolutions={
                                                 data.companyLogo.childImageSharp
