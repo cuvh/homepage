@@ -1,985 +1,985 @@
 [
-	{
-		"name": "Casey Neistat",
-		"url": "casey-neistat",
-		"avatar": "famous-resumes/avatars/casey@2.png",
-		"cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
-		"resume": "famous-resumes/casey-neistat/casey-neistat-resume.jpg",
-		"smallDescription":
-			"You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
-		"description":
-			"Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationscasey-neistat@2.png",
-				"section": "LifeProject",
-				"description":
-					"Casey’s rise from living in a trailer park to being a world-famous filmmaker came through the success of his big life projects.",
-				"data": [
-					{
-						"title": "Beme",
-						"image": "famous-resumes/companies/Beme_Inc._Logo.svg",
-						"position": "Co-Founder",
-						"startDate": "2014",
-						"endDate": "2018",
-						"location": "New York",
-						"description":
-							"An app for sharing video: no edits, filters, likes, or comments. It was for capturing moments in those moments and not on a screen. The company was bought by CNN for $25 million and is now a Youtube news channel."
-					},
-					{
-						"title": "The CaseyNeistat Youtube Channel",
-						"position": "Creator",
-						"startDate": "2/2010",
-						"endDate": "Ongoing",
-						"description":
-							"A vlog that’s so much more. It’s what let Neistat step away from the red carpet and become the filmmaker he always wanted to be. The channel has over 9 million subscribers, 2 billion views, and brand partnerships with Nike, Samsung, Google, J-Crew, Mercedes Benz, and Finn Jewelry."
-					},
-					{
-						"title": "The Hollywood Thing",
-						"position": "Producer",
-						"startDate": "2008",
-						"endDate": "2010",
-						"description":
-							"Neistat produced some movies, went to Sundance and Cannes, and won some awards before getting disillusioned with Hollywood. He decided his path to becoming a filmmaker was through Youtube. Neistat was involved in films like The Pleasure of Being Robbed, Daddy Longlegs, and Bolt from the Blue"
-					},
-					{
-						"title": "The Neistat Brothers",
-						"position": "Co-Founder",
-						"startDate": "2006",
-						"endDate": "2010",
-						"description":
-							"Neistat spent a year creating eight 25 minute movies with his brother Van. They sold the series to HBO for almost $2 million."
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofcasey-neistat.png",
-				"data": [
-					{
-						"title": "Pulling his life together",
-						"description":
-							"After dropping out of high school, running away at 15, and getting his girlfriend pregnant"
-					},
-					{
-						"title": "Finding his own path",
-						"description":
-							"By realizing there’s other ways to achieve his dream of being a filmmaker"
-					},
-					{
-						"title":
-							"Sticking with NYC, Filmmaking, Youtube, and Candice",
-						"description":
-							"Despite 9/11, Hollywood BS, demonetizing, and breakups"
-					},
-					{
-						"title": "Surviving 534 daily vlogs",
-						"description":
-							"By committing to challenge himself every day and stopping when it got easy"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2casey-neistat.png",
-				"data": [
-					{
-						"backgroundColor": "#443a77",
-						"title": "Morning run"
-					},
-					{
-						"backgroundColor": "#7061bd",
-						"title": "Vlogging"
-					},
-					{
-						"backgroundColor": "#9086dc",
-						"title": "Quality time with family"
-					},
-					{
-						"backgroundColor": "#b4a9ec",
-						"title": "Editing"
-					},
-					{
-						"backgroundColor": "#d4cbff",
-						"title": "Even more vlogging"
-					},
-					{
-						"backgroundColor": "#ded9fa",
-						"title": "Planning the next big thing"
-					}
-				]
-			}
-		],
-		"photoBy": "Ståle Grut / NRKbeta",
-		"finalTitle": "Feeling Stuck?",
-		"finalDescription":
-			"Inspired by Casey Neistat’s story, we created a guide to finding your definition of success. It walks you through choosing goals and how to understand why that’s your goal."
-	},
-	{
-		"name": "Elon Musk",
-		"url": "elon-musk",
-		"resume": "famous-resumes/elon-musk-resume-1.jpg",
-		"avatar": "famous-resumes/avatars/elon@2.png",
-		"cover": "famous-resumes/cover/Elon_Musk_photo.jpg",
-		"smallDescription":
-			"Elon Musk may not be a typical CEO, but he still has a fantastic example of what a CEO resume can be. His resume shows how a CEO can bring together their ventures, personality, values, and passions.",
-		"description":
-			"When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
-				"section": "LifeProject",
-				"description":
-					"As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
-				"data": [
-					{
-						"title": "SpaceX",
-						"position": "Founder & CEO",
-						"description":
-							"Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
-					},
-					{
-						"title": "Tesla",
-						"position": "Founder & CEO",
-						"description":
-							"Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
-					},
-					{
-						"title": "Neuralink",
-						"position": "Founder & CEO",
-						"description":
-							"Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
-					}
-				]
-			},
-			{
-				"section": "Strengths",
-				"image": "famous-resumes/strengths_Elon_Musk@2.png",
-				"description":
-					"What kind of strengths have made Elon Musk into a real-life Tony Stark?",
-				"data": [
-					{
-						"title": "Enthusiastic Learner",
-						"description":
-							"Got the full 6-month Commodore manual in 3 days, made a game, sold it for $500 at age 12."
-					},
-					{
-						"title": "Excellent at Budget Management",
-						"description":
-							"Lived on $1/day during college, eating mostly hot dogs to learn that money doesn’t really matter."
-					},
-					{
-						"title": "Lord of the Rings",
-						"description":
-							"Gave 3 engagement rings to his wife Tallulah, one of which he designed personally."
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2elon-musk.png",
-				"data": [
-					{
-						"backgroundColor": "#a99975",
-						"title": "Merging human and artificial intelligence"
-					},
-					{
-						"backgroundColor": "#ceb680",
-						"title": "Making life multiplanetary"
-					},
-					{
-						"backgroundColor": "#dfc790",
-						"title": "Creating electric cars consumers dream of"
-					},
-					{
-						"backgroundColor": "#f1d9a2",
-						"title": "Spending time with his 5 sons"
-					},
-					{
-						"backgroundColor": "#f8e7c2",
-						"title": "Reading countless books"
-					},
-					{
-						"backgroundColor": "#fbf0d7",
-						"title": "Going out with beautiful women"
-					}
-				]
-			}
-		],
-		"photoBy": "Henry Ford for \"OnInnovation\" project",
-		"finalTitle": "Elon Musk’s CEO Resume Example",
-		"finalDescription":
-			"What does it take to be Elon Musk? Is it a high IQ, a huge net worth, or just raw determination. His resume shows  how even someone working on 6 major projects can balance their work, passions, and personality."
-	},
-	{
-		"name": "Marissa Mayer",
-		"url": "marissa-mayer",
-		"resume": "famous-resumes/marissa-mayer-resume.jpg",
-		"avatar": "famous-resumes/avatars/marissa@2.png",
-		"cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
-		"description":
-			"From the first female employee at Google to CEO of Yahoo!, Mayer’s CEO resume tells the story of a career marked by persistence, hard work, and results. Her resume example also shows how women can succeed in both the technology and business worlds.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationsMarissa-Mayer-life-projects@2.png",
-				"section": "LifeProject",
-				"description":
-					"Marissa spent most of her career at Google and her resume show’s how she grew within that company. Now, she’s taking on the challenge of running Yahoo! In challenging times.",
-				"data": [
-					{
-						"title": "Google",
-						"position": "VP of Location Services",
-						"description":
-							"In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
-					},
-					{
-						"title": "Yahoo!",
-						"position": "CEO",
-						"description":
-							"Mayer is working to adapt Yahoo! to the reality of a changing internet landscape through acquisitions and mergers."
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofmarissa-mayer.png",
-				"description":
-					"Mayer’s list of what she’s most proud of really reinforces and contextualizes her work experience. You see the time she spent at Google and can guess what it took to rise within the company, but her she spells out what she’s taken away from those experiences.",
-				"data": [
-					{
-						"title": "Courage she had",
-						"description":
-							"To take a sinking ship and make it float"
-					},
-					{
-						"title": "Persistence & Loyalty",
-						"description": "She showed through hard times at Yahoo!"
-					},
-					{
-						"title": "Google’s Growth",
-						"description": "From 100k daily searches to 1 billion+"
-					},
-					{
-						"title": "Inspiring women in tech",
-						"description":
-							"By being the youngest CEO on Fortune’s list of the 50 most powerful women"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2marissa-mayer.png",
-				"data": [
-					{
-						"backgroundColor": "#443a77",
-						"title": "Spending time with her children"
-					},
-					{
-						"backgroundColor": "#7061bd",
-						"title":
-							"Showing Yahoo employees their work has meaning"
-					},
-					{
-						"backgroundColor": "#9086dc",
-						"title": "Publically resolving Yahoo Investor issues"
-					},
-					{
-						"backgroundColor": "#9689d9",
-						"title":
-							"Building a biz-dev strategy for Yahoo!’s future after the Verizon acquisition"
-					},
-					{
-						"backgroundColor": "#b4a9ec",
-						"title":
-							"Serving on the boards of the New York and San Francisco ballet companies"
-					},
-					{
-						"backgroundColor": "#d4cbff",
-						"title":
-							"Creating spreadsheet for her amazing cupcake recipe"
-					}
-				]
-			}
-		],
-		"photoBy": "Max Morse for Techrunch",
-		"finalTitle": "Marissa Mayer’s CEO Resume Example",
-		"finalDescription":
-			"Taken together, what does the resume of a woman who’s shaped one of the world’s leading companies look like?"
-	},
-	{
-		"name": "Mark Zuckerberg",
-		"url": "mark-zuckerberg",
-		"resume": "famous-resumes/mark-zuckerberg-resume.jpg",
-		"avatar": "famous-resumes/avatars/mark@2.png",
-		"cover": "famous-resumes/cover/mark_zuckerberg_photo.jpg",
-		"smallDescription": "",
-		"description":
-			"Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Back then, he would have needed a software developer resume just like anyone else. His resume is an example of how you can showcase your passions, philosophy, and ambitions to create an impactful resume before you’ve landed your first real job.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationsmark-zuckerberg@2.png",
-				"section": "LifeProject",
-				"description":
-					"Zuckerberg’s pre-Facebook projects showed an early interest in leveraging technology to connect people.",
-				"data": [
-					{
-						"title": "Facemash",
-						"position": "Founder and Creator",
-						"startDate": "10/2003",
-						"endDate": "Ongoing",
-						"location": "Cambridge, MA",
-						"description":
-							"A social website which allows visitors to compare two student pictures side-by-side and let them choose who’s “hot” and who’s “not”"
-					},
-					{
-						"title": "CourseMarch",
-						"position": "Founder and Creator",
-						"startDate": "2003",
-						"endDate": "Ongoing",
-						"location": "Cambridge, MA",
-						"description":
-							"The first social media tool allowing college students to choose classes based on the choices of other students and form study groups"
-					},
-					{
-						"title": "Synapse Media Player",
-						"position": "Founder and Creator",
-						"startDate": "2000",
-						"endDate": "2001",
-						"location": "Cambridge, MA",
-						"description":
-							"Synapses is an app that uses artificial intelligence to learn a user’s listening habits and recommend music based on their taste"
-					}
-				]
-			},
-			{
-				"section": "Achievements",
-				"image":
-					"famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
-				"data": [
-					{
-						"title": "Founded",
-						"description": "Two of the most used apps at Harvard"
-					},
-					{
-						"title": "10+ Prizes",
-						"description":
-							"In math, astronomy, physics, and classics"
-					},
-					{
-						"title": "Proficient",
-						"description": "In six languages"
-					},
-					{
-						"title": "Developed first",
-						"description": "Software application at age 12"
-					},
-					{
-						"title": "Captained",
-						"description": "His prep school fencing team"
-					}
-				]
-			},
-			{
-				"section": "Languages",
-				"description":
-					"Even in university, Zuckerberg was an outrageous polyglot. His resume shows just what a prolific learner he was in high school."
-			}
-		],
-		"photoBy": "C Flanigan/WireImage",
-		"finalTitle": "Mark Zuckerberg’s Software Developer Resume Example",
-		"finalDescription":
-			"Even without any official work experience, Zuckerberg’s resume shows how you can turn projects and achievements into a compelling resume. This is a great example of what you can do with a student resume."
-	},
-	{
-		"name": "Barack Obama",
-		"url": "barack-obama",
-		"resume": "famous-resumes/barack-obama-resume.jpg",
-		"avatar": "famous-resumes/avatars/obama@2.png",
-		"cover": "famous-resumes/cover/Barack_Obama_photo.jpg",
-		"description":
-			"Even Presidents need resumes. Obama's resume shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationsbarack-obama-life-projects@2.png",
-				"section": "LifeProject",
-				"description":
-					"It’s hard to imagine a bigger undertaking than serving 8 years as President, but Obama’s resume manages to make it succinct and impactful. Not to mention his rise in Illinois politics.",
-				"data": [
-					{
-						"title": "President of the United States",
-						"description":
-							"Starting off passing a stimulus to end the recession and enacting once in a lifetime healthcare reform before moving on to winding down the Iraq war, legalizing marriage for all, and fighting climate change."
-					},
-					{
-						"title": "Illinois Senator",
-						"description":
-							"Beginning with strong opposition to the Iraq war, Obama’s senate career focused on government transparency and national security. While he co-sponsored a number of successful bills, he also failed to pass bills protecting voters from intimidation and de-escalating the Iraq war."
-					},
-					{
-						"title": "State Senator",
-						"description":
-							"Obama fought predatory lending and racial profiling while increasing tax credits and subsidies for childcare."
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofbarack-obama.png",
-				"data": [
-					{
-						"title": "Raising his daughters",
-						"description":
-							"With the help of his amazing wife Michelle!"
-					},
-					{
-						"title": "Awarded the Nobel Peace Prize",
-						"description":
-							"In honor of “extraordinary efforts to strengthen international diplomacy”"
-					},
-					{
-						"title":
-							"Elected as the first African-American President of the United States"
-					},
-					{
-						"title": "Led the raid that took out Osama Bin Laden"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2Barack-Obama.png",
-				"data": [
-					{
-						"backgroundColor": "#443a77",
-						"title": "Writing executive orders"
-					},
-					{
-						"backgroundColor": "#7061bd",
-						"title": "Advocating for LGBTQ rights"
-					},
-					{
-						"backgroundColor": "#9086dc",
-						"title": "Reading letters from ordinary Americans"
-					},
-					{
-						"backgroundColor": "#9689d9",
-						"title": "Combating terrorism"
-					},
-					{
-						"backgroundColor": "#b4a9ec",
-						"title": "Family time with Michelle and the girls"
-					},
-					{
-						"backgroundColor": "#d4cbff",
-						"title": "Laughing at Obama and Biden memes"
-					},
-					{
-						"backgroundColor": "#ded9fa",
-						"title": "Smoking (Sorry Michelle!)"
-					}
-				]
-			}
-		],
-		"photoBy": "Pete Souza, The Obama-Biden Transition Project",
-		"finalTitle": "Barack Obama’s Resume Example",
-		"finalDescription":
-			"What does the resume of a president look like? It’s certainly not easy fitting everything a president might do in their lifetime into a single page, but Obama’s resume shows how you can make the right choices for the greatest impact."
-	},
-	{
-		"name": "Travis Kalanick",
-		"url": "travis-kalanick",
-		"resume": "famous-resumes/travis-kalanick-resume.jpg",
-		"avatar": "famous-resumes/avatars/travis@2.png",
-		"cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
-		"description":
-			"Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationsTravis-Kalanick@2.png",
-				"section": "LifeProject",
-				"description": "",
-				"data": [
-					{
-						"title": "Uber",
-						"position": "Co-Founder and CEO",
-						"description":
-							"Built the largest privately held tech company in the world with a valuation of over $65 billion, all while revolutionizing transportation and outcompeting our challengers. Uber is used over 40 million times a month and has become a fundamental tech product of our time."
-					},
-					{
-						"title": "Red Swoosh",
-						"position": "Co-Founder",
-						"description":
-							"Building on his previous peer to peer experience, Red Swoosh raised millions to create a closed P2P network for transferring large media files. He hustled the project, worked without a salary for years, and ultimately sold it for nearly $20 million."
-					},
-					{
-						"title": "Scour Inc.",
-						"position": "Co-Founder",
-						"description":
-							"He helped build an enormous multimedia search engine and peer to peer file sharing service revolutionary enough to get investment from a former president of Disney and fearless enough to fight off $250 billion in copyright lawsuits."
-					}
-				]
-			},
-			{
-				"section": "Achievements",
-				"image":
-					"famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
-				"data": [
-					{
-						"title": "Protected our drivers from fines",
-						"description":
-							"Detected when law enforcement were using our app and told them no cars were available nearby"
-					},
-					{
-						"title": "Pulled a fast one on Apple",
-						"description":
-							"Tested the limits of the App Store’s T&C and covered it, yet Tim Cook caught them and threatened to remove Uber from the App Store"
-					},
-					{
-						"title":
-							"Persuaded drivers to drop our biggest competitor",
-						"description":
-							"We figured out when one person drives for both Lyft and Uber and started sending more orders their way"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2travis-kalanick.png",
-				"data": [
-					{
-						"backgroundColor": "#443a77",
-						"title":
-							"Putting out fires, bending rules and solving complex problems"
-					},
-					{
-						"backgroundColor": "#7061bd",
-						"title":
-							"Protecting his privacy while keeping tabs on the competition"
-					},
-					{
-						"backgroundColor": "#9086dc",
-						"title":
-							"Irritating city officials and the cab industry"
-					},
-					{
-						"backgroundColor": "#9689d9",
-						"title":
-							"Persuading celebrities into advisory roles at Uber, including Jay Z, Beyonce, Edward Norton, and Leonardo DiCaprio"
-					}
-				]
-			}
-		],
-		"finalTitle": "Travis Kalanick’s Resume",
-		"finalDescription":
-			"When you’re a unique blend of high achiever, risk taker, and bomb thrower, you need a resume that shows you in all your complexity. Kalanick’s resume does just that, balancing his passions and achievements with his more unconventional methods for dealing with problems."
-	},
-	{
-		"name": "Sheryl Sandberg",
-		"url": "sheryl-sandberg",
-		"resume": "famous-resumes/sheryl-sandberg-resume-1.jpg",
-		"avatar": "famous-resumes/avatars/sheryl@2.png",
-		"cover": "famous-resumes/cover/Sheryl_Sandberg_photo.jpg",
-		"description":
-			"From the publication of her best-selling book Lean In, Sheryl Sandberg has become a sometimes controversial thinker on how women can succeed in their careers. Whether you see her as an icon or disagree with how she thinks women can advance themselves while balancing other obligations, her COO resume example has a fascinating story to tell.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationssheryl-sandberg@2.png",
-				"section": "LifeProject",
-				"description":
-					"By focusing on her career in technology and less on her prior political work, Sandberg’s resume details just how she successfully built two of the top performing online ad teams in history all while making the world better for working women.",
-				"data": [
-					{
-						"title": "Facebook",
-						"position": "COO",
-						"description":
-							"She took her experience building Google’s ad team to Facebook, growing that revenue stream even faster to make the company profitable in just two years. Now, the team she built drives 85% of Facebook’s revenue. She’s also worked on building strategic partnerships with companies like Yahoo!."
-					},
-					{
-						"title": "The Lean In Foundation",
-						"position": "Founder",
-						"description":
-							"Beyond simply writing the book, she turned Lean In into a community of over 33k women in 150 countries devoted to empowering each other. By creating powerful partnerships with role models like Beyonce, Lean In has made a real difference for women in the workplace."
-					},
-					{
-						"title": "Google",
-						"position": "VP of Global Online Sales and Operations",
-						"description":
-							"She scaled their online sales team by 1,000% in 5 years (from 4 to 4,000) all while maintaining the quality of the organization such that we provided 2/3 of Google’s revenue."
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofsheryl-sandberg.png",
-				"data": [
-					{
-						"title": "Making Facebook profitable",
-						"description":
-							"Only 2 years after joining through a rigorous focus on advertising"
-					},
-					{
-						"title": "Having a set at the table",
-						"description":
-							"Of the board of directors at 5 influential companies including Walt Disney, Facebook, and Survey Monkey"
-					},
-					{
-						"title": "Building exceptional teams",
-						"description":
-							"By connecting with people on an emotional level, spotting their talents & helping them believe in their capabilities"
-					},
-					{
-						"title": "Inspiring women",
-						"description":
-							"And becoming a leading voice for gender equality after giving a TED Talk (4M views) and writing her first book - Lean In"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2Sheryl-Sandberg.png",
-				"data": [
-					{
-						"backgroundColor": "#3d9399",
-						"title": "Fight fake news"
-					},
-					{
-						"backgroundColor": "#5eb5bb",
-						"title":
-							"Research how people use social media to improve Facebook’s ads targeting"
-					},
-					{
-						"backgroundColor": "#5fc0c7",
-						"title": "Practice gratitude"
-					},
-					{
-						"backgroundColor": "#81dde5",
-						"title": "Sit down to family dinner"
-					},
-					{
-						"backgroundColor": "#9fe6e7",
-						"title": "Prepare her daily “To Do” list"
-					},
-					{
-						"backgroundColor": "#9fe6e7",
-						"title": "Drop kids off to school"
-					}
-				]
-			}
-		],
-		"photoBy": "Drew Altizer",
-		"finalTitle": "Sheryl Sandberg’s COO Resume Example",
-		"finalDescription":
-			"Balancing your work, a passion project, and who you are as a mother all in one resume is no easy task. Sandberg’s resume example shows how anyone can do just that. By sticking to the most important metrics and accomplishments, there’s space for Sandberg to show other sides of herself beyond her role as COO of Facebook."
-	},
-	{
-		"name": "Hillary Clinton",
-		"url": "hillary-clinton",
-		"resume": "famous-resumes/hillary-clinton-resume-1.jpg",
-		"avatar": "famous-resumes/avatars/hillary@2.png",
-		"cover": "famous-resumes/cover/Hillary_clinton_photo.jpg",
-		"description":
-			"Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Walmart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationshillary-clinton-new@2.png",
-				"section": "LifeProject",
-				"description":
-					"Focusing on her work in the public sector, Clinton’s life projects tie together her greatest passions and shows how she’s applied herself towards those goals wherever she is.",
-				"data": [
-					{
-						"title": "Secretary of State",
-						"description":
-							"Clinton’s time as Secretary of State blended a hard-nosed focus on national security issues like denuclearization alongside a major soft-power push with a focus on women and LGBTQ rights."
-					},
-					{
-						"title": "US Senator from New York",
-						"description":
-							"Taking the reigns after 9/11, Clinton worked to get funding to rebuild New York and to ensure the wars which followed made the country safer. Later, she worked to build progressive political infrastructure and forge bipartisan ties."
-					},
-					{
-						"title": "First Lady of the United States",
-						"description":
-							"Clinton revolutionized the role of first lady by taking an active role in forming vital policy. While her efforts on healthcare ended in failure, her work has defined the role ever since, with subsequent first ladies each taking on issues to advocate for."
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofhillary-clinton.png",
-				"data": [
-					{
-						"title": "Being the most admired woman in America",
-						"description":
-							"And third most admired woman in the world"
-					},
-					{
-						"title": "30+ years of experience in public service",
-						"description": "Working to serve the country she loves"
-					},
-					{
-						"title": "Built a great family",
-						"description":
-							"By working through issues and supporting her daughter"
-					},
-					{
-						"title": "Committed to women and children",
-						"description":
-							"By doing pro-bono work throughout her career"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2hillary-clinton.png",
-				"data": [
-					{
-						"backgroundColor": "#da6e58",
-						"title":
-							"Make life easier for the average American and the middle class"
-					},
-					{
-						"backgroundColor": "#ea7860",
-						"title":
-							"Improve access to meaningful, gainful employment for people with disabilities"
-					},
-					{
-						"backgroundColor": "#f19582",
-						"title":
-							"Establish America as the world’s clean energy superpower"
-					},
-					{
-						"backgroundColor": "#f3baa9",
-						"title":
-							"Make debt-free college and universal healthcare a reality for all Americans"
-					},
-					{
-						"backgroundColor": "#f7cec2",
-						"title":
-							"Fight for full federal equality for LGBT Americans"
-					},
-					{
-						"backgroundColor": "#f2dcd6",
-						"title": "Restore basic fairness to our tax code"
-					},
-					{
-						"backgroundColor": "#f2e8e6",
-						"title": "End the epidemic of gun violence"
-					}
-				]
-			}
-		],
-		"photoBy": "Marc Nozell",
-		"finalTitle": "Hillary Clinton’s Politician Resume Example",
-		"finalDescription":
-			"The title under her name says it all, Clinton’s long career has made her many things. Her resume example takes it all together and shows just what impact she’s had over three decades of public service."
-	},
-	{
-		"name": "Angela Merkel",
-		"url": "angela-merkel",
-		"resume": "famous-resumes/angela-merkel-resume-1.jpg",
-		"avatar": "famous-resumes/avatars/merkel@2.png",
-		"cover": "famous-resumes/cover/angela_merkel_photo.jpg",
-		"description":
-			"Named the most powerful woman in the world for 9 of the past 10 years, Angela Merkel's resume isn't short on accomplishments as a female leader. But more than just showing what she's done, her resume shows how she balances her life and how what she's most proud of defines her. So when she mentions what she did the night the Berlin Wall fell, it's more than just a story, it's a statement about how she views the world and her work.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrations_angela-merkel@2.png",
-				"section": "LifeProject",
-				"description":
-					"Leaving off an impressive career as a research scientist, Merkel’s life projects show the aptitude and persistence to climb through the political ranks. Along the way, she’s pioneered female leadership in Germany, Europe, and the world.",
-				"data": [
-					{
-						"title":
-							"Chancellor of the Federal Republic of Germany",
-						"description":
-							"Over more than a decade as Chancellor, Merkel has had to navigate extreme crises like the global financial crisis and the European refugee crisis. Through it all she’s focused on delivering economic results, stable leadership, and humane policies."
-					},
-					{
-						"title": "Chairman of the CDU",
-						"description":
-							"Climbed the ladder from an East German research scientist, through deputy spokesperson, Minister of Women & Youth, Minister of the Environment and Nuclear Safety, Secretary-General to the first female leader of the CDU"
-					}
-				]
-			},
-			{
-				"section": "MostProudOf",
-				"image":
-					"famous-resumes/mostproudof/most-proud-ofangela-merkel.png",
-				"data": [
-					{
-						"title": "Being Disciplined",
-						"description":
-							"When the Berlin wall fell, She went to the sauna, drank one beer, then went immediately home so she wouldn’t be tired for work the next day"
-					},
-					{
-						"title": "Speaking “common sense”",
-						"description":
-							"She goes with the opinion of the majority & ensure balance of interests, even if it’s against her own views. That’s how Germany legalized gay marriage."
-					},
-					{
-						"title": "Being brave and bold",
-						"description":
-							"She became the first politician to confront Chancellor Helmut Kohl and call upon him to resign following revelations of corruption"
-					},
-					{
-						"title": "Doing the right thing",
-						"description":
-							"Germany opened doors to 1M+ refugees and asylum seekers to protect freedom despite creating new enemies"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2Angela-Merkel.png",
-				"data": [
-					{
-						"backgroundColor": "#da6e58",
-						"title":
-							"Work on creating a better future for Germany and Europe"
-					},
-					{
-						"backgroundColor": "#ea7860",
-						"title": "Have a glass of wine with friends"
-					},
-					{
-						"backgroundColor": "#f19582",
-						"title": "Make breakfast for Joachim"
-					},
-					{
-						"backgroundColor": "#f3baa9",
-						"title":
-							"Listen to a game of the national football team"
-					},
-					{
-						"backgroundColor": "#f7cec2",
-						"title": "Go hiking"
-					},
-					{
-						"backgroundColor": "#f2dcd6",
-						"title": "Bake a plum cake"
-					}
-				]
-			}
-		],
-		"photoBy": "David Iliff",
-		"finalTitle": "Angela Merkel’s Female Leader Resume Example",
-		"finalDescription":
-			"Merkel’s resume balances her ongoing passion for chemistry, her religious faith, and her love of football with the kind of hard hitting policy accomplishments we expect. The effect is a powerful resume example of a female leader who has the confidence to show the personal alongside the professional."
-	},
-	{
-		"name": "Steve Jobs",
-		"url": "steve-jobs",
-		"resume": "famous-resumes/steve-jobs-resume.jpg",
-		"avatar": "famous-resumes/avatars/jobs.png",
-		"cover": "famous-resumes/cover/Steve_jobs_cover_photo.jpg",
-		"description":
-			"Whether you think Steve Jobs was a genius, narcissist, or both, that misses something more important: how his life was shaped by struggle. His CEO resume shows not just what he’d accomplished and what he was proud of when he rejoined Apple in 1996, but how his struggles and failures turned him into the person who could save the company.",
-		"sections": [
-			{
-				"image":
-					"famous-resumes/lifeproject/life_project_illustrationssteve-jobs@2.png",
-				"section": "LifeProject",
-				"description":
-					"Jobs’ work up to 1996 shows both his tremendous skills and his deep flaws. In each role, he changes the way things are done and leaves and impact. Of course, he leaves the bigger lessons for the section on his struggles.",
-				"data": [
-					{
-						"title": "Pixar",
-						"position": "Primary Investor and Chairman",
-						"startDate": "1986",
-						"endDate": "Ongoing",
-						"location": "Emeryville, CA",
-						"description":
-							"Jobs turned a small division of Lucasfilm into a powerhouse studio, leading the company while it created the groundbreaking film Toy Story."
-					},
-					{
-						"title": "NeXT",
-						"position": "Founder and CEO",
-						"startDate": "1985",
-						"endDate": "Ongoing",
-						"location": "Redwood City, CA",
-						"description":
-							"As CEO of NeXT, Jobs led the creation of the revolutionary UNix-based NeXTSTEP OS. In doing so, they created computers that were five years ahead of their time."
-					},
-					{
-						"title": "Apple",
-						"position": "Co-Founder and CEO",
-						"startDate": "1976",
-						"endDate": "1985",
-						"location": "Los Altos and Cupertino, CA",
-						"description":
-							"Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
-					}
-				]
-			},
-			{
-				"section": "Struggles",
-				"data": [
-					{
-						"title": "Dropping out of college",
-						"description":
-							"Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways"
-					},
-					{
-						"title": "Launching failed products",
-						"description":
-							"The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs"
-					},
-					{
-						"title": "Failing to identify a customer",
-						"description":
-							"The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh"
-					}
-				]
-			},
-			{
-				"section": "TypicalDay",
-				"image": "famous-resumes/myday/my_time-2steve-jobs.png",
-				"data": [
-					{
-						"backgroundColor": "5db188",
-						"title": "Obsessing over design"
-					},
-					{
-						"backgroundColor": "66c094",
-						"title": "Taking long walks"
-					},
-					{
-						"backgroundColor": "7ed2a9",
-						"title": "Thinking about the next “one more thing”"
-					},
-					{
-						"backgroundColor": "a7e1c5",
-						"title": "Meditations"
-					},
-					{
-						"backgroundColor": "c4f1db",
-						"title": "Fasting and trying out diets"
-					},
-					{
-						"backgroundColor": "c8f0dd",
-						"title":
-							"Checking out what Xerox PARC is up to these days"
-					}
-				]
-			}
-		],
-		"photoBy": "Matt Yohe",
-		"finalTitle": "Find which struggles you’re most proud of overcoming",
-		"finalDescription":
-			"Struggles shape our skills and who we are. Explore this question to learn more about yourself and what you should be proud of. We've created a free worksheet that lets you do just that."
-	}
+    {
+        "name": "Casey Neistat",
+        "url": "casey-neistat",
+        "avatar": "famous-resumes/avatars/casey@2.png",
+        "cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
+        "resumes": [{ "image": "famous-resumes/youtuber-casey-neistat.jpg" }],
+        "smallDescription":
+            "You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
+        "description":
+            "Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationscasey-neistat@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Casey’s rise from living in a trailer park to being a world-famous filmmaker came through the success of his big life projects.",
+                "data": [
+                    {
+                        "title": "Beme",
+                        "image": "famous-resumes/companies/Beme_Inc._Logo.svg",
+                        "position": "Co-Founder",
+                        "startDate": "2014",
+                        "endDate": "2018",
+                        "location": "New York",
+                        "description":
+                            "An app for sharing video: no edits, filters, likes, or comments. It was for capturing moments in those moments and not on a screen. The company was bought by CNN for $25 million and is now a Youtube news channel."
+                    },
+                    {
+                        "title": "The CaseyNeistat Youtube Channel",
+                        "position": "Creator",
+                        "startDate": "2/2010",
+                        "endDate": "Ongoing",
+                        "description":
+                            "A vlog that’s so much more. It’s what let Neistat step away from the red carpet and become the filmmaker he always wanted to be. The channel has over 9 million subscribers, 2 billion views, and brand partnerships with Nike, Samsung, Google, J-Crew, Mercedes Benz, and Finn Jewelry."
+                    },
+                    {
+                        "title": "The Hollywood Thing",
+                        "position": "Producer",
+                        "startDate": "2008",
+                        "endDate": "2010",
+                        "description":
+                            "Neistat produced some movies, went to Sundance and Cannes, and won some awards before getting disillusioned with Hollywood. He decided his path to becoming a filmmaker was through Youtube. Neistat was involved in films like The Pleasure of Being Robbed, Daddy Longlegs, and Bolt from the Blue"
+                    },
+                    {
+                        "title": "The Neistat Brothers",
+                        "position": "Co-Founder",
+                        "startDate": "2006",
+                        "endDate": "2010",
+                        "description":
+                            "Neistat spent a year creating eight 25 minute movies with his brother Van. They sold the series to HBO for almost $2 million."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofcasey-neistat.png",
+                "data": [
+                    {
+                        "title": "Pulling his life together",
+                        "description":
+                            "After dropping out of high school, running away at 15, and getting his girlfriend pregnant"
+                    },
+                    {
+                        "title": "Finding his own path",
+                        "description":
+                            "By realizing there’s other ways to achieve his dream of being a filmmaker"
+                    },
+                    {
+                        "title":
+                            "Sticking with NYC, Filmmaking, Youtube, and Candice",
+                        "description":
+                            "Despite 9/11, Hollywood BS, demonetizing, and breakups"
+                    },
+                    {
+                        "title": "Surviving 534 daily vlogs",
+                        "description":
+                            "By committing to challenge himself every day and stopping when it got easy"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2casey-neistat.png",
+                "data": [
+                    {
+                        "backgroundColor": "#443a77",
+                        "title": "Morning run"
+                    },
+                    {
+                        "backgroundColor": "#7061bd",
+                        "title": "Vlogging"
+                    },
+                    {
+                        "backgroundColor": "#9086dc",
+                        "title": "Quality time with family"
+                    },
+                    {
+                        "backgroundColor": "#b4a9ec",
+                        "title": "Editing"
+                    },
+                    {
+                        "backgroundColor": "#d4cbff",
+                        "title": "Even more vlogging"
+                    },
+                    {
+                        "backgroundColor": "#ded9fa",
+                        "title": "Planning the next big thing"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Ståle Grut / NRKbeta",
+        "finalTitle": "Feeling Stuck?",
+        "finalDescription":
+            "Inspired by Casey Neistat’s story, we created a guide to finding your definition of success. It walks you through choosing goals and how to understand why that’s your goal."
+    },
+    {
+        "name": "Elon Musk",
+        "url": "elon-musk",
+        "resumes": [{ "image": "famous-resumes/elon-musk-resume-1.jpg" }],
+        "avatar": "famous-resumes/avatars/elon@2.png",
+        "cover": "famous-resumes/cover/Elon_Musk_photo.jpg",
+        "smallDescription":
+            "Elon Musk may not be a typical CEO, but he still has a fantastic example of what a CEO resume can be. His resume shows how a CEO can bring together their ventures, personality, values, and passions.",
+        "description":
+            "When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
+                "section": "LifeProject",
+                "description":
+                    "As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
+                "data": [
+                    {
+                        "title": "SpaceX",
+                        "position": "Founder & CEO",
+                        "description":
+                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                    },
+                    {
+                        "title": "Tesla",
+                        "position": "Founder & CEO",
+                        "description":
+                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                    },
+                    {
+                        "title": "Neuralink",
+                        "position": "Founder & CEO",
+                        "description":
+                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                    }
+                ]
+            },
+            {
+                "section": "Strengths",
+                "image": "famous-resumes/strengths_Elon_Musk@2.png",
+                "description":
+                    "What kind of strengths have made Elon Musk into a real-life Tony Stark?",
+                "data": [
+                    {
+                        "title": "Enthusiastic Learner",
+                        "description":
+                            "Got the full 6-month Commodore manual in 3 days, made a game, sold it for $500 at age 12."
+                    },
+                    {
+                        "title": "Excellent at Budget Management",
+                        "description":
+                            "Lived on $1/day during college, eating mostly hot dogs to learn that money doesn’t really matter."
+                    },
+                    {
+                        "title": "Lord of the Rings",
+                        "description":
+                            "Gave 3 engagement rings to his wife Tallulah, one of which he designed personally."
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2elon-musk.png",
+                "data": [
+                    {
+                        "backgroundColor": "#a99975",
+                        "title": "Merging human and artificial intelligence"
+                    },
+                    {
+                        "backgroundColor": "#ceb680",
+                        "title": "Making life multiplanetary"
+                    },
+                    {
+                        "backgroundColor": "#dfc790",
+                        "title": "Creating electric cars consumers dream of"
+                    },
+                    {
+                        "backgroundColor": "#f1d9a2",
+                        "title": "Spending time with his 5 sons"
+                    },
+                    {
+                        "backgroundColor": "#f8e7c2",
+                        "title": "Reading countless books"
+                    },
+                    {
+                        "backgroundColor": "#fbf0d7",
+                        "title": "Going out with beautiful women"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Henry Ford for \"OnInnovation\" project",
+        "finalTitle": "Elon Musk’s CEO Resume Example",
+        "finalDescription":
+            "What does it take to be Elon Musk? Is it a high IQ, a huge net worth, or just raw determination. His resume shows  how even someone working on 6 major projects can balance their work, passions, and personality."
+    },
+    {
+        "name": "Marissa Mayer",
+        "url": "marissa-mayer",
+        "resumes": [{ "image": "famous-resumes/marissa-mayer-resume.jpg" }],
+        "avatar": "famous-resumes/avatars/marissa@2.png",
+        "cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
+        "description":
+            "From the first female employee at Google to CEO of Yahoo!, Mayer’s CEO resume tells the story of a career marked by persistence, hard work, and results. Her resume example also shows how women can succeed in both the technology and business worlds.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsMarissa-Mayer-life-projects@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Marissa spent most of her career at Google and her resume show’s how she grew within that company. Now, she’s taking on the challenge of running Yahoo! In challenging times.",
+                "data": [
+                    {
+                        "title": "Google",
+                        "position": "VP of Location Services",
+                        "description":
+                            "In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
+                    },
+                    {
+                        "title": "Yahoo!",
+                        "position": "CEO",
+                        "description":
+                            "Mayer is working to adapt Yahoo! to the reality of a changing internet landscape through acquisitions and mergers."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofmarissa-mayer.png",
+                "description":
+                    "Mayer’s list of what she’s most proud of really reinforces and contextualizes her work experience. You see the time she spent at Google and can guess what it took to rise within the company, but her she spells out what she’s taken away from those experiences.",
+                "data": [
+                    {
+                        "title": "Courage she had",
+                        "description":
+                            "To take a sinking ship and make it float"
+                    },
+                    {
+                        "title": "Persistence & Loyalty",
+                        "description": "She showed through hard times at Yahoo!"
+                    },
+                    {
+                        "title": "Google’s Growth",
+                        "description": "From 100k daily searches to 1 billion+"
+                    },
+                    {
+                        "title": "Inspiring women in tech",
+                        "description":
+                            "By being the youngest CEO on Fortune’s list of the 50 most powerful women"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2marissa-mayer.png",
+                "data": [
+                    {
+                        "backgroundColor": "#443a77",
+                        "title": "Spending time with her children"
+                    },
+                    {
+                        "backgroundColor": "#7061bd",
+                        "title":
+                            "Showing Yahoo employees their work has meaning"
+                    },
+                    {
+                        "backgroundColor": "#9086dc",
+                        "title": "Publically resolving Yahoo Investor issues"
+                    },
+                    {
+                        "backgroundColor": "#9689d9",
+                        "title":
+                            "Building a biz-dev strategy for Yahoo!’s future after the Verizon acquisition"
+                    },
+                    {
+                        "backgroundColor": "#b4a9ec",
+                        "title":
+                            "Serving on the boards of the New York and San Francisco ballet companies"
+                    },
+                    {
+                        "backgroundColor": "#d4cbff",
+                        "title":
+                            "Creating spreadsheet for her amazing cupcake recipe"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Max Morse for Techrunch",
+        "finalTitle": "Marissa Mayer’s CEO Resume Example",
+        "finalDescription":
+            "Taken together, what does the resume of a woman who’s shaped one of the world’s leading companies look like?"
+    },
+    {
+        "name": "Mark Zuckerberg",
+        "url": "mark-zuckerberg",
+        "resumes": [{ "image": "famous-resumes/mark-zuckerberg-resume.jpg" }],
+        "avatar": "famous-resumes/avatars/mark@2.png",
+        "cover": "famous-resumes/cover/mark_zuckerberg_photo.jpg",
+        "smallDescription": "",
+        "description":
+            "Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Back then, he would have needed a software developer resume just like anyone else. His resume is an example of how you can showcase your passions, philosophy, and ambitions to create an impactful resume before you’ve landed your first real job.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsmark-zuckerberg@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Zuckerberg’s pre-Facebook projects showed an early interest in leveraging technology to connect people.",
+                "data": [
+                    {
+                        "title": "Facemash",
+                        "position": "Founder and Creator",
+                        "startDate": "10/2003",
+                        "endDate": "Ongoing",
+                        "location": "Cambridge, MA",
+                        "description":
+                            "A social website which allows visitors to compare two student pictures side-by-side and let them choose who’s “hot” and who’s “not”"
+                    },
+                    {
+                        "title": "CourseMarch",
+                        "position": "Founder and Creator",
+                        "startDate": "2003",
+                        "endDate": "Ongoing",
+                        "location": "Cambridge, MA",
+                        "description":
+                            "The first social media tool allowing college students to choose classes based on the choices of other students and form study groups"
+                    },
+                    {
+                        "title": "Synapse Media Player",
+                        "position": "Founder and Creator",
+                        "startDate": "2000",
+                        "endDate": "2001",
+                        "location": "Cambridge, MA",
+                        "description":
+                            "Synapses is an app that uses artificial intelligence to learn a user’s listening habits and recommend music based on their taste"
+                    }
+                ]
+            },
+            {
+                "section": "Achievements",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
+                "data": [
+                    {
+                        "title": "Founded",
+                        "description": "Two of the most used apps at Harvard"
+                    },
+                    {
+                        "title": "10+ Prizes",
+                        "description":
+                            "In math, astronomy, physics, and classics"
+                    },
+                    {
+                        "title": "Proficient",
+                        "description": "In six languages"
+                    },
+                    {
+                        "title": "Developed first",
+                        "description": "Software application at age 12"
+                    },
+                    {
+                        "title": "Captained",
+                        "description": "His prep school fencing team"
+                    }
+                ]
+            },
+            {
+                "section": "Languages",
+                "description":
+                    "Even in university, Zuckerberg was an outrageous polyglot. His resume shows just what a prolific learner he was in high school."
+            }
+        ],
+        "photoBy": "C Flanigan/WireImage",
+        "finalTitle": "Mark Zuckerberg’s Software Developer Resume Example",
+        "finalDescription":
+            "Even without any official work experience, Zuckerberg’s resume shows how you can turn projects and achievements into a compelling resume. This is a great example of what you can do with a student resume."
+    },
+    {
+        "name": "Barack Obama",
+        "url": "barack-obama",
+        "resumes": [{ "image": "famous-resumes/barack-obama-resume.jpg" }],
+        "avatar": "famous-resumes/avatars/obama@2.png",
+        "cover": "famous-resumes/cover/Barack_Obama_photo.jpg",
+        "description":
+            "Even Presidents need resumes. Obama's resume shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsbarack-obama-life-projects@2.png",
+                "section": "LifeProject",
+                "description":
+                    "It’s hard to imagine a bigger undertaking than serving 8 years as President, but Obama’s resume manages to make it succinct and impactful. Not to mention his rise in Illinois politics.",
+                "data": [
+                    {
+                        "title": "President of the United States",
+                        "description":
+                            "Starting off passing a stimulus to end the recession and enacting once in a lifetime healthcare reform before moving on to winding down the Iraq war, legalizing marriage for all, and fighting climate change."
+                    },
+                    {
+                        "title": "Illinois Senator",
+                        "description":
+                            "Beginning with strong opposition to the Iraq war, Obama’s senate career focused on government transparency and national security. While he co-sponsored a number of successful bills, he also failed to pass bills protecting voters from intimidation and de-escalating the Iraq war."
+                    },
+                    {
+                        "title": "State Senator",
+                        "description":
+                            "Obama fought predatory lending and racial profiling while increasing tax credits and subsidies for childcare."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofbarack-obama.png",
+                "data": [
+                    {
+                        "title": "Raising his daughters",
+                        "description":
+                            "With the help of his amazing wife Michelle!"
+                    },
+                    {
+                        "title": "Awarded the Nobel Peace Prize",
+                        "description":
+                            "In honor of “extraordinary efforts to strengthen international diplomacy”"
+                    },
+                    {
+                        "title":
+                            "Elected as the first African-American President of the United States"
+                    },
+                    {
+                        "title": "Led the raid that took out Osama Bin Laden"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2Barack-Obama.png",
+                "data": [
+                    {
+                        "backgroundColor": "#443a77",
+                        "title": "Writing executive orders"
+                    },
+                    {
+                        "backgroundColor": "#7061bd",
+                        "title": "Advocating for LGBTQ rights"
+                    },
+                    {
+                        "backgroundColor": "#9086dc",
+                        "title": "Reading letters from ordinary Americans"
+                    },
+                    {
+                        "backgroundColor": "#9689d9",
+                        "title": "Combating terrorism"
+                    },
+                    {
+                        "backgroundColor": "#b4a9ec",
+                        "title": "Family time with Michelle and the girls"
+                    },
+                    {
+                        "backgroundColor": "#d4cbff",
+                        "title": "Laughing at Obama and Biden memes"
+                    },
+                    {
+                        "backgroundColor": "#ded9fa",
+                        "title": "Smoking (Sorry Michelle!)"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Pete Souza, The Obama-Biden Transition Project",
+        "finalTitle": "Barack Obama’s Resume Example",
+        "finalDescription":
+            "What does the resume of a president look like? It’s certainly not easy fitting everything a president might do in their lifetime into a single page, but Obama’s resume shows how you can make the right choices for the greatest impact."
+    },
+    {
+        "name": "Travis Kalanick",
+        "url": "travis-kalanick",
+        "resumes": [{ "image": "famous-resumes/travis-kalanick-resume.jpg" }],
+        "avatar": "famous-resumes/avatars/travis@2.png",
+        "cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
+        "description":
+            "Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsTravis-Kalanick@2.png",
+                "section": "LifeProject",
+                "description": "",
+                "data": [
+                    {
+                        "title": "Uber",
+                        "position": "Co-Founder and CEO",
+                        "description":
+                            "Built the largest privately held tech company in the world with a valuation of over $65 billion, all while revolutionizing transportation and outcompeting our challengers. Uber is used over 40 million times a month and has become a fundamental tech product of our time."
+                    },
+                    {
+                        "title": "Red Swoosh",
+                        "position": "Co-Founder",
+                        "description":
+                            "Building on his previous peer to peer experience, Red Swoosh raised millions to create a closed P2P network for transferring large media files. He hustled the project, worked without a salary for years, and ultimately sold it for nearly $20 million."
+                    },
+                    {
+                        "title": "Scour Inc.",
+                        "position": "Co-Founder",
+                        "description":
+                            "He helped build an enormous multimedia search engine and peer to peer file sharing service revolutionary enough to get investment from a former president of Disney and fearless enough to fight off $250 billion in copyright lawsuits."
+                    }
+                ]
+            },
+            {
+                "section": "Achievements",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
+                "data": [
+                    {
+                        "title": "Protected our drivers from fines",
+                        "description":
+                            "Detected when law enforcement were using our app and told them no cars were available nearby"
+                    },
+                    {
+                        "title": "Pulled a fast one on Apple",
+                        "description":
+                            "Tested the limits of the App Store’s T&C and covered it, yet Tim Cook caught them and threatened to remove Uber from the App Store"
+                    },
+                    {
+                        "title":
+                            "Persuaded drivers to drop our biggest competitor",
+                        "description":
+                            "We figured out when one person drives for both Lyft and Uber and started sending more orders their way"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2travis-kalanick.png",
+                "data": [
+                    {
+                        "backgroundColor": "#443a77",
+                        "title":
+                            "Putting out fires, bending rules and solving complex problems"
+                    },
+                    {
+                        "backgroundColor": "#7061bd",
+                        "title":
+                            "Protecting his privacy while keeping tabs on the competition"
+                    },
+                    {
+                        "backgroundColor": "#9086dc",
+                        "title":
+                            "Irritating city officials and the cab industry"
+                    },
+                    {
+                        "backgroundColor": "#9689d9",
+                        "title":
+                            "Persuading celebrities into advisory roles at Uber, including Jay Z, Beyonce, Edward Norton, and Leonardo DiCaprio"
+                    }
+                ]
+            }
+        ],
+        "finalTitle": "Travis Kalanick’s Resume",
+        "finalDescription":
+            "When you’re a unique blend of high achiever, risk taker, and bomb thrower, you need a resume that shows you in all your complexity. Kalanick’s resume does just that, balancing his passions and achievements with his more unconventional methods for dealing with problems."
+    },
+    {
+        "name": "Sheryl Sandberg",
+        "url": "sheryl-sandberg",
+        "resumes": [{ "image": "famous-resumes/sheryl-sandberg-resume-1.jpg" }],
+        "avatar": "famous-resumes/avatars/sheryl@2.png",
+        "cover": "famous-resumes/cover/Sheryl_Sandberg_photo.jpg",
+        "description":
+            "From the publication of her best-selling book Lean In, Sheryl Sandberg has become a sometimes controversial thinker on how women can succeed in their careers. Whether you see her as an icon or disagree with how she thinks women can advance themselves while balancing other obligations, her COO resume example has a fascinating story to tell.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationssheryl-sandberg@2.png",
+                "section": "LifeProject",
+                "description":
+                    "By focusing on her career in technology and less on her prior political work, Sandberg’s resume details just how she successfully built two of the top performing online ad teams in history all while making the world better for working women.",
+                "data": [
+                    {
+                        "title": "Facebook",
+                        "position": "COO",
+                        "description":
+                            "She took her experience building Google’s ad team to Facebook, growing that revenue stream even faster to make the company profitable in just two years. Now, the team she built drives 85% of Facebook’s revenue. She’s also worked on building strategic partnerships with companies like Yahoo!."
+                    },
+                    {
+                        "title": "The Lean In Foundation",
+                        "position": "Founder",
+                        "description":
+                            "Beyond simply writing the book, she turned Lean In into a community of over 33k women in 150 countries devoted to empowering each other. By creating powerful partnerships with role models like Beyonce, Lean In has made a real difference for women in the workplace."
+                    },
+                    {
+                        "title": "Google",
+                        "position": "VP of Global Online Sales and Operations",
+                        "description":
+                            "She scaled their online sales team by 1,000% in 5 years (from 4 to 4,000) all while maintaining the quality of the organization such that we provided 2/3 of Google’s revenue."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofsheryl-sandberg.png",
+                "data": [
+                    {
+                        "title": "Making Facebook profitable",
+                        "description":
+                            "Only 2 years after joining through a rigorous focus on advertising"
+                    },
+                    {
+                        "title": "Having a set at the table",
+                        "description":
+                            "Of the board of directors at 5 influential companies including Walt Disney, Facebook, and Survey Monkey"
+                    },
+                    {
+                        "title": "Building exceptional teams",
+                        "description":
+                            "By connecting with people on an emotional level, spotting their talents & helping them believe in their capabilities"
+                    },
+                    {
+                        "title": "Inspiring women",
+                        "description":
+                            "And becoming a leading voice for gender equality after giving a TED Talk (4M views) and writing her first book - Lean In"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2Sheryl-Sandberg.png",
+                "data": [
+                    {
+                        "backgroundColor": "#3d9399",
+                        "title": "Fight fake news"
+                    },
+                    {
+                        "backgroundColor": "#5eb5bb",
+                        "title":
+                            "Research how people use social media to improve Facebook’s ads targeting"
+                    },
+                    {
+                        "backgroundColor": "#5fc0c7",
+                        "title": "Practice gratitude"
+                    },
+                    {
+                        "backgroundColor": "#81dde5",
+                        "title": "Sit down to family dinner"
+                    },
+                    {
+                        "backgroundColor": "#9fe6e7",
+                        "title": "Prepare her daily “To Do” list"
+                    },
+                    {
+                        "backgroundColor": "#9fe6e7",
+                        "title": "Drop kids off to school"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Drew Altizer",
+        "finalTitle": "Sheryl Sandberg’s COO Resume Example",
+        "finalDescription":
+            "Balancing your work, a passion project, and who you are as a mother all in one resume is no easy task. Sandberg’s resume example shows how anyone can do just that. By sticking to the most important metrics and accomplishments, there’s space for Sandberg to show other sides of herself beyond her role as COO of Facebook."
+    },
+    {
+        "name": "Hillary Clinton",
+        "url": "hillary-clinton",
+        "resumes": [{ "image": "famous-resumes/hillary-clinton-resume-1.jpg" }],
+        "avatar": "famous-resumes/avatars/hillary@2.png",
+        "cover": "famous-resumes/cover/Hillary_clinton_photo.jpg",
+        "description":
+            "Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Walmart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationshillary-clinton-new@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Focusing on her work in the public sector, Clinton’s life projects tie together her greatest passions and shows how she’s applied herself towards those goals wherever she is.",
+                "data": [
+                    {
+                        "title": "Secretary of State",
+                        "description":
+                            "Clinton’s time as Secretary of State blended a hard-nosed focus on national security issues like denuclearization alongside a major soft-power push with a focus on women and LGBTQ rights."
+                    },
+                    {
+                        "title": "US Senator from New York",
+                        "description":
+                            "Taking the reigns after 9/11, Clinton worked to get funding to rebuild New York and to ensure the wars which followed made the country safer. Later, she worked to build progressive political infrastructure and forge bipartisan ties."
+                    },
+                    {
+                        "title": "First Lady of the United States",
+                        "description":
+                            "Clinton revolutionized the role of first lady by taking an active role in forming vital policy. While her efforts on healthcare ended in failure, her work has defined the role ever since, with subsequent first ladies each taking on issues to advocate for."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofhillary-clinton.png",
+                "data": [
+                    {
+                        "title": "Being the most admired woman in America",
+                        "description":
+                            "And third most admired woman in the world"
+                    },
+                    {
+                        "title": "30+ years of experience in public service",
+                        "description": "Working to serve the country she loves"
+                    },
+                    {
+                        "title": "Built a great family",
+                        "description":
+                            "By working through issues and supporting her daughter"
+                    },
+                    {
+                        "title": "Committed to women and children",
+                        "description":
+                            "By doing pro-bono work throughout her career"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2hillary-clinton.png",
+                "data": [
+                    {
+                        "backgroundColor": "#da6e58",
+                        "title":
+                            "Make life easier for the average American and the middle class"
+                    },
+                    {
+                        "backgroundColor": "#ea7860",
+                        "title":
+                            "Improve access to meaningful, gainful employment for people with disabilities"
+                    },
+                    {
+                        "backgroundColor": "#f19582",
+                        "title":
+                            "Establish America as the world’s clean energy superpower"
+                    },
+                    {
+                        "backgroundColor": "#f3baa9",
+                        "title":
+                            "Make debt-free college and universal healthcare a reality for all Americans"
+                    },
+                    {
+                        "backgroundColor": "#f7cec2",
+                        "title":
+                            "Fight for full federal equality for LGBT Americans"
+                    },
+                    {
+                        "backgroundColor": "#f2dcd6",
+                        "title": "Restore basic fairness to our tax code"
+                    },
+                    {
+                        "backgroundColor": "#f2e8e6",
+                        "title": "End the epidemic of gun violence"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Marc Nozell",
+        "finalTitle": "Hillary Clinton’s Politician Resume Example",
+        "finalDescription":
+            "The title under her name says it all, Clinton’s long career has made her many things. Her resume example takes it all together and shows just what impact she’s had over three decades of public service."
+    },
+    {
+        "name": "Angela Merkel",
+        "url": "angela-merkel",
+        "resumes": [{ "image": "famous-resumes/angela-merkel-resume-1.jpg" }],
+        "avatar": "famous-resumes/avatars/merkel@2.png",
+        "cover": "famous-resumes/cover/angela_merkel_photo.jpg",
+        "description":
+            "Named the most powerful woman in the world for 9 of the past 10 years, Angela Merkel's resume isn't short on accomplishments as a female leader. But more than just showing what she's done, her resume shows how she balances her life and how what she's most proud of defines her. So when she mentions what she did the night the Berlin Wall fell, it's more than just a story, it's a statement about how she views the world and her work.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrations_angela-merkel@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Leaving off an impressive career as a research scientist, Merkel’s life projects show the aptitude and persistence to climb through the political ranks. Along the way, she’s pioneered female leadership in Germany, Europe, and the world.",
+                "data": [
+                    {
+                        "title":
+                            "Chancellor of the Federal Republic of Germany",
+                        "description":
+                            "Over more than a decade as Chancellor, Merkel has had to navigate extreme crises like the global financial crisis and the European refugee crisis. Through it all she’s focused on delivering economic results, stable leadership, and humane policies."
+                    },
+                    {
+                        "title": "Chairman of the CDU",
+                        "description":
+                            "Climbed the ladder from an East German research scientist, through deputy spokesperson, Minister of Women & Youth, Minister of the Environment and Nuclear Safety, Secretary-General to the first female leader of the CDU"
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofangela-merkel.png",
+                "data": [
+                    {
+                        "title": "Being Disciplined",
+                        "description":
+                            "When the Berlin wall fell, She went to the sauna, drank one beer, then went immediately home so she wouldn’t be tired for work the next day"
+                    },
+                    {
+                        "title": "Speaking “common sense”",
+                        "description":
+                            "She goes with the opinion of the majority & ensure balance of interests, even if it’s against her own views. That’s how Germany legalized gay marriage."
+                    },
+                    {
+                        "title": "Being brave and bold",
+                        "description":
+                            "She became the first politician to confront Chancellor Helmut Kohl and call upon him to resign following revelations of corruption"
+                    },
+                    {
+                        "title": "Doing the right thing",
+                        "description":
+                            "Germany opened doors to 1M+ refugees and asylum seekers to protect freedom despite creating new enemies"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2Angela-Merkel.png",
+                "data": [
+                    {
+                        "backgroundColor": "#da6e58",
+                        "title":
+                            "Work on creating a better future for Germany and Europe"
+                    },
+                    {
+                        "backgroundColor": "#ea7860",
+                        "title": "Have a glass of wine with friends"
+                    },
+                    {
+                        "backgroundColor": "#f19582",
+                        "title": "Make breakfast for Joachim"
+                    },
+                    {
+                        "backgroundColor": "#f3baa9",
+                        "title":
+                            "Listen to a game of the national football team"
+                    },
+                    {
+                        "backgroundColor": "#f7cec2",
+                        "title": "Go hiking"
+                    },
+                    {
+                        "backgroundColor": "#f2dcd6",
+                        "title": "Bake a plum cake"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "David Iliff",
+        "finalTitle": "Angela Merkel’s Female Leader Resume Example",
+        "finalDescription":
+            "Merkel’s resume balances her ongoing passion for chemistry, her religious faith, and her love of football with the kind of hard hitting policy accomplishments we expect. The effect is a powerful resume example of a female leader who has the confidence to show the personal alongside the professional."
+    },
+    {
+        "name": "Steve Jobs",
+        "url": "steve-jobs",
+        "resumes": [{ "image": "famous-resumes/steve-jobs-resume.jpg" }],
+        "avatar": "famous-resumes/avatars/jobs.png",
+        "cover": "famous-resumes/cover/Steve_jobs_cover_photo.jpg",
+        "description":
+            "Whether you think Steve Jobs was a genius, narcissist, or both, that misses something more important: how his life was shaped by struggle. His CEO resume shows not just what he’d accomplished and what he was proud of when he rejoined Apple in 1996, but how his struggles and failures turned him into the person who could save the company.",
+        "sections": [
+            {
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationssteve-jobs@2.png",
+                "section": "LifeProject",
+                "description":
+                    "Jobs’ work up to 1996 shows both his tremendous skills and his deep flaws. In each role, he changes the way things are done and leaves and impact. Of course, he leaves the bigger lessons for the section on his struggles.",
+                "data": [
+                    {
+                        "title": "Pixar",
+                        "position": "Primary Investor and Chairman",
+                        "startDate": "1986",
+                        "endDate": "Ongoing",
+                        "location": "Emeryville, CA",
+                        "description":
+                            "Jobs turned a small division of Lucasfilm into a powerhouse studio, leading the company while it created the groundbreaking film Toy Story."
+                    },
+                    {
+                        "title": "NeXT",
+                        "position": "Founder and CEO",
+                        "startDate": "1985",
+                        "endDate": "Ongoing",
+                        "location": "Redwood City, CA",
+                        "description":
+                            "As CEO of NeXT, Jobs led the creation of the revolutionary UNix-based NeXTSTEP OS. In doing so, they created computers that were five years ahead of their time."
+                    },
+                    {
+                        "title": "Apple",
+                        "position": "Co-Founder and CEO",
+                        "startDate": "1976",
+                        "endDate": "1985",
+                        "location": "Los Altos and Cupertino, CA",
+                        "description":
+                            "Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
+                    }
+                ]
+            },
+            {
+                "section": "Struggles",
+                "data": [
+                    {
+                        "title": "Dropping out of college",
+                        "description":
+                            "Jobs dropped out of a college his parents couldn’t afford but discovered he could learn in other ways"
+                    },
+                    {
+                        "title": "Launching failed products",
+                        "description":
+                            "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs"
+                    },
+                    {
+                        "title": "Failing to identify a customer",
+                        "description":
+                            "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2steve-jobs.png",
+                "data": [
+                    {
+                        "backgroundColor": "5db188",
+                        "title": "Obsessing over design"
+                    },
+                    {
+                        "backgroundColor": "66c094",
+                        "title": "Taking long walks"
+                    },
+                    {
+                        "backgroundColor": "7ed2a9",
+                        "title": "Thinking about the next “one more thing”"
+                    },
+                    {
+                        "backgroundColor": "a7e1c5",
+                        "title": "Meditations"
+                    },
+                    {
+                        "backgroundColor": "c4f1db",
+                        "title": "Fasting and trying out diets"
+                    },
+                    {
+                        "backgroundColor": "c8f0dd",
+                        "title":
+                            "Checking out what Xerox PARC is up to these days"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Matt Yohe",
+        "finalTitle": "Find which struggles you’re most proud of overcoming",
+        "finalDescription":
+            "Struggles shape our skills and who we are. Explore this question to learn more about yourself and what you should be proud of. We've created a free worksheet that lets you do just that."
+    }
 ]

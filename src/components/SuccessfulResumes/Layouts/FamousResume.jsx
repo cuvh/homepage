@@ -89,7 +89,7 @@ export default function FamousResume({
                  dark={true}
                  name={data.name}
                  finalDescription={data.finalDescription}
-                 resume={data.resume}
+                 resume={data.resumes[0].image}
                 />
             </main>
         </DefaultLayout>
@@ -111,10 +111,15 @@ export const pageQuery = graphql`
                     }
                 }
             }
-            resume {
-                childImageSharp {
-                    resolutions(width: 442) {
-                        ...GatsbyImageSharpResolutions
+            resumes {
+                image {
+                    childImageSharp {
+                        small: resolutions(width: 442) {
+                            ...GatsbyImageSharpResolutions
+                        }
+                        large: resolutions(width: 1240) {
+                            ...GatsbyImageSharpResolutions
+                        }
                     }
                 }
             }
@@ -152,10 +157,12 @@ export const pageQuery = graphql`
                             }
                         }
                     }
-                    image: resume {
-                        childImageSharp {
-                            resolutions(width: 240, height: 329) {
-                                ...GatsbyImageSharpResolutions
+                    resumes {
+                        image {
+                            childImageSharp {
+                                resolutions(width: 240, height: 329) {
+                                    ...GatsbyImageSharpResolutions
+                                }
                             }
                         }
                     }

@@ -228,10 +228,12 @@ export const pageQuery = graphql`
                             }
                         }
                     }
-                    resume {
-                        childImageSharp {
-                            resolutions(width: 240, height: 329) {
-                                ...GatsbyImageSharpResolutions
+                    resumes {
+                        image {
+                            childImageSharp {
+                                resolutions(width: 240, height: 329) {
+                                    ...GatsbyImageSharpResolutions
+                                }
                             }
                         }
                     }
