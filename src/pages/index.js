@@ -1,7 +1,7 @@
 import "../assets/scss/app.scss";
 import React from "react";
 import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
@@ -20,16 +20,11 @@ import Testimonials from "components/Homepage/Testimonials";
 
 const IndexPage = () => (
 	<DefaultLayout className="homepage">
-		<Helmet
-		 title={"Enhancv | Professional Resume & CV Builder"}
-		 meta={[
-			{
-				name: "description",
-				content:
-					"Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
-			}
-		 ]}
+		<Meta
+		 title="Enhancv | Professional Resume & CV Builder"
+		 description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
 		/>
+
 		<div className="homepage-intro m-top-3">
 			<div className="container text-center">
 				<h1 className="hidden-xs hidden-sm md-lg-heading-margin">

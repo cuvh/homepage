@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 import classnames from "classnames";
 
 import DefaultLayout from "layouts/DefaultLayout";
@@ -40,15 +40,11 @@ export default class Pricing extends React.PureComponent {
 
 		return (
 			<DefaultLayout className="homepage">
-				<Helmet
-				 title={"Enhancv | Professional Resume & CV Builder"}
-				 meta={[
-					{
-						name: "description",
-						content: "Enhancv: A resume to be proud of"
-					}
-				 ]}
+				<Meta
+				 title="Enhancv Pricing | Professional Resume & CV Builder"
+				 description="Enhancv: A resume to be proud of"
 				/>
+
 				<div
 				 className={classnames("pricing-header", {
 					"pricing-header-loaded": this.state.loaded
@@ -70,11 +66,7 @@ export default class Pricing extends React.PureComponent {
 						<div>
 							<div className="m-top-3 " />
 							<a
-							 href="{{ urls.builder }}"
-							 data-track="event"
-							 data-category="Pricing"
-							 data-action="Start Trial"
-							 data-label="Header button"
+							 href="https://app.enhancv.com"
 							 className="btn btn-primary btn-lg"
 							>
 								Try free for 14 days
