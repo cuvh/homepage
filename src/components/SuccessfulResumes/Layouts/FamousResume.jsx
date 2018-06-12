@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
@@ -42,7 +43,7 @@ export default function FamousResume({
 
             <Modal
              trigger={
-                <a class="component--fast-resume-preview">
+                <a className="component--fast-resume-preview">
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
@@ -57,12 +58,18 @@ export default function FamousResume({
                 />
             </Modal>
             <main className="famous-resume--container">
-                <FamousHeader
-                 name={data.name}
-                 cover={data.cover}
-                 description={data.pageDescription}
-                 smallDescription={data.smallDescription}
-                />
+                <div
+                 className={classnames({
+                    "famous-resume-inverted": data.lightCover
+                 })}
+                >
+                    <FamousHeader
+                     name={data.name}
+                     cover={data.cover}
+                     description={data.pageDescription}
+                     smallDescription={data.smallDescription}
+                    />
+                </div>
 
                 <Menu sections={data.sections.map(item => item.section)} />
 
@@ -133,6 +140,7 @@ export default function FamousResume({
 export const pageQuery = graphql`
     query FamousResume($url: String!) {
         famousResumesJson(url: { eq: $url }) {
+            lightCover
             name
             url
             smallDescription
