@@ -44,7 +44,7 @@ const IndexPage = () => (
 				</div>
 				<div>
 					<a
-					 href="{{ urls.builder }}"
+					 href="https://app.enhancv.com"
 					 data-track="event"
 					 data-category="Homepage"
 					 data-action="Click Signup"
@@ -54,7 +54,7 @@ const IndexPage = () => (
 						Create Your Resume
 					</a>
 					<a
-					 href="{{ urls.builder }}"
+					 href="https://app.enhancv.com"
 					 data-track="event"
 					 data-category="Homepage"
 					 data-action="Click Signup"

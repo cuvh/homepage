@@ -104,7 +104,12 @@ class Header extends React.PureComponent {
                         </div>
                     ) : null}
                     <div className="navbar-spacing">
-                        <div className="navbar-header">
+                        <div
+                         className={
+                            !this.state.isMsgShowed
+                                ? "navbar-header navbar-header-sr"
+                                : "navbar-header"
+                         }>
                             <button
                              type="button"
                              onClick={() => this.toggleNav()}

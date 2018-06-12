@@ -63,28 +63,27 @@ export default function Footer() {
 									</Link>
 								</li>
 								<li>
-									<a href="https://blog.enhancv.com/">Blog</a>
+									<a
+									 href="https://blog.enhancv.com/"
+									 target="_blank">
+										Blog
+									</a>
 								</li>
 							</ul>
 						</div>
 						<div className="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6">
-							<div className="footer-title m-top-2 m-bottom-4">
-								About us
-							</div>
+							<div className="footer-title m-top-2 m-bottom-4">About us</div>
 							<ul className="list-unstyled">
 								<li>
-									<a
-									 href="/about"
-									 target="_blank"
-									>
-										Company
-									</a>
+									<Link to="/about">Company</Link>
 								</li>
 								<li>
 									<Link to="/careers">Careers</Link>
 								</li>
 								<li>
-									<a href="https://enhancv.statuspage.io/">
+									<a
+									 href="https://enhancv.statuspage.io/"
+									 target="_blank">
 										Status Page
 									</a>
 								</li>
@@ -150,8 +149,7 @@ export default function Footer() {
 								<div className="Grid-cell--sm-4">
 									<a
 									 href="https://twitter.com/enhancv"
-									 className="social-link"
-									>
+									 className="social-link">
 										<img src={twitterImg} />
 									</a>
 								</div>
