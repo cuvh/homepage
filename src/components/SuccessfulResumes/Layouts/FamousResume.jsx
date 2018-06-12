@@ -90,6 +90,9 @@ export default function FamousResume({
                  name={data.name}
                  finalDescription={data.finalDescription}
                  resume={data.resumes[0].image}
+                 facebookText={data.facebookText}
+                 twitterText={data.twitterText}
+                 url={data.url}
                 />
             </main>
         </DefaultLayout>
@@ -103,6 +106,8 @@ export const pageQuery = graphql`
             url
             smallDescription
             pageDescription
+            facebookText
+            twitterText
             finalDescription
             cover {
                 childImageSharp {
