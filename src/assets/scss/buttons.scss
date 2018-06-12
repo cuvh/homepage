@@ -264,6 +264,18 @@
     }
 }
 
+.btn-wow-default {
+    background-color: #8C7CDB;
+    border-radius: 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 35px;
+    &:focus {
+        outline: none;
+    }
+}
+
 .btn-resume-preview {
     width:52px;
     height:52px;

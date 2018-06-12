@@ -8,9 +8,17 @@
         "companyLogo": "successful-resumes/company-logos/2x-amazon.png",
         "avatar": "successful-resumes/avatars/max@2.png",
         "url": "maximilian-malterer",
+        "pageTitle": "Real Account Manager Resume Example | Enhancv",
+        "pageDescription":
+            "From impactful nonprofit work to being an account manager at Amazon, this powerful resume example has something to teach everyone",
+        "tags": ["Business", "mid-level", "Account Manager"],
+        "twitterText":
+            "From rising through the #nonprofit ranks at #AIESEC to founding a food business at #Oktoberfest, Max’s @Enhancv #resume shows #pride in his work. It’s also gotten him job offers at Amazon and Deutsche Bahn.",
+        "facebookText":
+            "From rising through the nonprofit ranks at AIESEC to founding a food business at Oktoberfest, Max’s @Enhancv resume shows pride in his work. It’s also gotten him job offers at Amazon and Deutsche Bahn.",
+        "socialImg": "famous-resumes/share-images/MAximilian_social.png",
         "name": "Maximilian Malterer",
-        "title":
-            "An Account Manager Resume Blending Nonprofit Work with Entrepreneurship",
+        "title": "An Account Manager Resume Blending Nonprofit Work with Entrepreneurship",
         "description":
             "What ties managing 1.5 million euro budgets at a non-profit and managing a food stand at Oktoberfest? Max's resume answers that question with a compelling story of how you can apply a devotion to customer relationships to a variety of roles. Ultimately it got him job offers at both Amazon and Deutsche Bahn (the German state railway company).",
         "position":
@@ -45,6 +53,14 @@
         "avatar": "successful-resumes/avatars/daniel@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-intercom-logo.png",
         "url": "daniel-pietersen",
+        "pageTitle": "Real Customer Support Resume Example | Enhancv",
+        "pageDescription": "See how Daniel's customer support resume got him his dream job",
+        "tags": ["IT", "mid-level", "marketing"],
+        "twitterText":
+            "Daniel got his dream job at @intercom by showing his passion, pride, and top skills on his @Enhancv #resume.",
+        "facebookText":
+            "Daniel’s resume shows how standing out can get you hired at a great company like @intercom.",
+        "socialImg": "famous-resumes/share-images/Daniel_social.png",
         "name": "Daniel Pietersen",
         "title": "A Customer Support Resume That Got Daniel His Dream Job",
         "description":
@@ -89,6 +105,15 @@
         "avatar": "successful-resumes/avatars/sam@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-spotify-logo.png",
         "url": "sam-young",
+        "pageTitle": "Real Career Change Resume Example | Enhancv",
+        "pageDescription":
+            "See the 5 steps Sam took to successfully change careers from investment banking to tech",
+        "tags": ["IT", "senior", "Operations"],
+        "twitterText":
+            "See what a #resume that takes you from working in a #investmentbanking to @Spotify looks like. | via @Enhancv",
+        "facebookText":
+            "If you’ve been working in a bank for years, how do you stand out and get a job at a place like Spotify? Sam’s resume shows how.",
+        "socialImg": "famous-resumes/share-images/Sam_social.png",
         "name": "Sam Young",
         "title": "A career change from investment banking to Spotify",
         "description":
@@ -100,14 +125,12 @@
                     "It’s one thing to realize that you’d like to try a new career, but actually understanding what you don’t like about your current job is critical for deciding where to go next. In Sam’s case, she realized she didn’t like being in a place where she couldn’t express her queer identity and couldn’t dress more casually, or as Sam put it: “I also wanted to wear shorts and t-shirts to work like I'm wearing right now. Tech is really the only place you can do that.”\nOnce she knew that she needed a change and what kinds of things she wanted in a new career, it was time for the next step."
             },
             {
-                "title":
-                    "Overcame her mental barrier telling her she wasn’t good enough",
+                "title": "Overcame her mental barrier telling her she wasn’t good enough",
                 "description":
                     "Imposter syndrome is rife in the workplace, especially for women, so it’s no surprise that getting to “I can totally do this” was a difficult but important step for Sam. There were two stages to getting there. The first was realizing that her peers weren’t actually smarter or more capable, they were simply at a different stage in their lives. This is obviously easier said than done, but self reflection got Sam there and it boosted her confidence.\nStill, it wasn’t enough and Sam eventually turned to a tech career consultant. This person essentially just confirmed that Sam was doing everything right. In retrospect, it wasn’t necessary to hire them, but the validation was still useful in getting Sam into the right mindset."
             },
             {
-                "title":
-                    "Researched and networked to figure out what she’d like to do next",
+                "title": "Researched and networked to figure out what she’d like to do next",
                 "description":
                     "Sam’s networking strategy relied on the Meetup app and communities like Lesbians Who Tech. This started while she was still at her old job, but eventually she decided to quit and devote 100% of her time to the search. For each event she found interesting, she would look up the hosting company and really research it. That way, it was far easier for her to talk to them at the event.\nSam got a few interviews as a result. Her research made those interviews go well, but she still didn’t get a job. Something was missing from her strategy."
             },
@@ -129,13 +152,20 @@
         ]
     },
     {
-        "resumes": [
-            { "image": "successful-resumes/louis-grenier-resume-1.jpg" }
-        ],
+        "resumes": [{ "image": "successful-resumes/louis-grenier-resume-1.jpg" }],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/louis@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-hotjar-logo.png",
         "url": "louis-grenier",
+        "pageTitle": "Real Marketing Consultant Resume Example | Enhancv",
+        "pageDescription":
+            "Louis shows how his mission of \"fighting shady and aggressive marketing\" comes through to make a stellar example of a marketing consultant resume",
+        "tags": ["IT", "mid-level", "marketer"],
+        "twitterText":
+            "@LouisSlices shows how to make a resume that screams #manonamission with @Enhancv",
+        "facebookText":
+            "Far beyond just showing the jobs he’s held, Louis’ @Enhancv resume shows a man on a mission to make marketing better",
+        "socialImg": "famous-resumes/share-images/Louis_social.png",
         "name": "Louis Grenier",
         "title": "A Marketing Consultant Resume with a Clear Mission",
         "description":
@@ -171,6 +201,14 @@
         "avatar": "successful-resumes/avatars/new_role_deafult_avatar@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
         "url": "julian-prim",
+        "pageTitle": "Real Auditor Resume Example | Enhancv",
+        "pageDescription":
+            "See a real life example of an auditor resume which combined impact and personality to be truly memorable",
+        "tags": ["Auditing", "mid-level", "auditor"],
+        "twitterText": "A great example of a resume for an #auditanalyst created with @Enhnacv",
+        "facebookText":
+            "Stuck creating a resume? Here’s a great example of an audit analyst hired at @PwC to show you how to stand out",
+        "socialImg": "famous-resumes/share-images/Julian_social.png",
         "name": "Julian Prim",
         "title": "An Auditor Resume with Personality and Impact",
         "description":
@@ -204,12 +242,20 @@
         "avatar": "successful-resumes/avatars/eric@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-sde-logo.png",
         "url": "eric-hu",
+        "pageTitle": "Real Creative Marketing Resume Example | Enhancv",
+        "pageDescription":
+            "Some marketing resumes focus on numbers, Eric's more creative resume example instead tries to get your attention and start a conversation",
+        "tags": ["Marketing", "Freelancer", "Content Creator and Strategist"],
+        "twitterText":
+            "This Enhancv resume from @ericlhu_ shows how to show someone who’s made a #careerchange and has lots of irons in the fire can still present a cohesive and compelling story",
+        "facebookText":
+            "Eric L. Hu’s @Enhancv resume shows just how you can create a resume that shows a career change alongside lots of interests and projects in a way that still seems cohesive",
+        "socialImg": "famous-resumes/share-images/eric_hu_social.png",
         "name": "Eric Hu",
         "title": "A Creative Resume That Does Things Differently",
         "description":
             "Eric’s creative marketing resume example ditches much of the conventional wisdom. Instead of focusing on numbers to show his impact, this resume is designed to get your attention and start a conversation. The numbers can come later. In this way, Eric’s resume would be perfect for handing out at a networking event or a conference when people don’t necessarily want to dive into the data of your accomplishments, but want a conversation starter like “what work did you do for Apple?” or “What was that Kickstarter campaign you had so much success with?”",
-        "position":
-            "Violinist, Photographer, Content Creator, Creative Strategist",
+        "position": "Violinist, Photographer, Content Creator, Creative Strategist",
         "stepsTitle": "Why Eric’s Creative Marketing Resume Works",
         "stepsDescription":
             "This resume does three things well, here’s what makes it a great example for a creative marketing resume.",
@@ -237,9 +283,17 @@
         "avatar": "successful-resumes/avatars/ashkay@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-tesla-logo.png",
         "url": "akshay-rao",
+        "pageTitle": "Real College Graduate Resume Example | Enhancv",
+        "pageDescription":
+            "He may have just graduated from college, but Akshay has an impactful industrial engineer resume example nonetheless.",
+        "tags": ["Manufacturing", "Intern", "Engineer"],
+        "twitterText":
+            "What kind of #resume stands out enough to get you an #internship at @Tesla ? @Enhancv has the answer.",
+        "facebookText":
+            "Ashkay’s @Enhancv resume helped him stand out enough to get an internship at @Tesla!",
+        "socialImg": "famous-resumes/share-images/akshay_social.png",
         "name": "Akshay Rao",
-        "title":
-            "A College Graduate’s Industrial Engineer Resume Shows Dedication",
+        "title": "A College Graduate’s Industrial Engineer Resume Shows Dedication",
         "description":
             "Akshay is nothing if not ambitious. Despite the fact that he’s only a recent college graduate, his resume still shows passion, dedication, and impact. He’s not just a person who studied industrial engineering, he demonstrates applied real-world examples of his education. The results speak for themselves, as his original Enhancv resume landed Akshay an internship at Tesla’s Fremont California production plant.",
         "position":
@@ -274,9 +328,17 @@
         "avatar": "successful-resumes/avatars/marcellus@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-verizon-logo.png",
         "url": "marcellus-nixon",
+        "pageTitle": "Real Network Engineer Resume Example | Enhancv",
+        "pageDescription":
+            "Marcellus has a great example of a military to civilian transition resume, showing how he built his career as a network engineer after finishing his service",
+        "tags": ["IT", "senior", "Engineer"],
+        "twitterText":
+            "Marcellus' @Enhancv #resume stood out enough to get him a senior #IT #engineer job at @verizondigital ",
+        "facebookText":
+            "With an @Enhancv resume that really stands out, Marcellus got a job as a senior IT engineer at Verizon Digital Media Services",
+        "socialImg": "famous-resumes/share-images/Marcellus_social.png",
         "name": "Marcellus Nixon",
-        "title":
-            "A Network Engineer Resume Showing the Transition from Military to Civilian",
+        "title": "A Network Engineer Resume Showing the Transition from Military to Civilian",
         "description":
             "Marcellus’ resume tells two distinct stories. One is how he made the switch from his military to civilian career. The other is how he’s advanced within the network engineering field. That career has taken Marcellus from the Superconducting Super Collider to work in India and at major US firms like ESPN and Verizon Digital Media Services. Along the way, his resume is a great example of someone who takes well-calculated risks and gets results.",
         "position":
@@ -311,12 +373,20 @@
         "avatar": "successful-resumes/avatars/new_role_deafult_avatar@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-encory-logo.png",
         "url": "tobias-horstmann",
+        "pageTitle": "Real Manager Resume Example | Enhancv",
+        "pageDescription":
+            "This is a real example of a manager resume which shows boldness, flexibility, and concrete results",
+        "tags": ["Automotive", "mid-level", "Manager"],
+        "twitterText":
+            "Does your #resume stand out? Here's one from @Enhancv that got Tobias hired at a great company",
+        "facebookText":
+            "Founders need resumes too. Here’s how Tobias showed his personality and skills in a resume that got him a new job.",
+        "socialImg": "famous-resumes/share-images/Tobias_social.png",
         "name": "Tobias Horstmann",
         "title": "A Manager Resume That’s Much, Much More",
         "description":
             "When a regional manager has to balance IT, logistics, business administration, and more, their resume needs to show flexibility, boldness, and results. Tobias’ resume example does just that. It tells his story wonderfully, painting a picture of a manager who’s up to the task of taking his firm to new places.",
-        "position":
-            "Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
+        "position": "Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
         "stepsTitle": "Why Tobias’ Manager Resume Works",
         "stepsDescription":
             "There’s a lot going on in this two page resume example, but three core principles hold it all together.",
@@ -347,6 +417,15 @@
         "avatar": "successful-resumes/avatars/melanie@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-esc-logo.png",
         "url": "melanie-fischer",
+        "pageTitle": "Real Sales Resume Example | Enhancv",
+        "pageDescription":
+            "With her sales and customer service experience, Melanie's resume is a powerful example of a personal resume which shows professional impact",
+        "tags": ["HR", "mid-level", "HR Management"],
+        "twitterText":
+            "How does a #resume show you advancing within one company? Mel’s @Enhancv resume shows how she did it at @escthecity",
+        "facebookText":
+            "See how Melanie Fischer rose through the ranks at Escape the City. Her @Enhancv resume tells quite a story",
+        "socialImg": "famous-resumes/share-images/melanie_social.png",
         "name": "Melanie Fischer",
         "title": "A Resume Example of a Rise From Customer Service to Sales",
         "description":
@@ -383,6 +462,15 @@
         "companyLogo": "successful-resumes/company-logos/2x-ie-logo.png",
         "avatar": "successful-resumes/avatars/steffany@2.png",
         "url": "steffany-photopoulos",
+        "pageTitle": "Real Career Change Resume Example | Enhancv",
+        "pageDescription":
+            "Steffany's story of going from Medicine to Business shows just what makes an effective career change resume, objectives, story, and impact",
+        "tags": ["Business", "entry", "Student"],
+        "twitterText":
+            "From #medicine to #business school. Steffany’s #careerchange began with a new @Enhancv #resume that stands out",
+        "facebookText":
+            "From medicine to a business school. Steffany’s career change began with a new @Enhancv resume that stands out",
+        "socialImg": "famous-resumes/share-images/Steffany_social.png",
         "name": "Steffany Photopoulos",
         "title": "A Marketing Consultant Resume with a Clear Mission",
         "description":
@@ -417,10 +505,18 @@
         "label": "New Role",
         "avatar": "successful-resumes/avatars/hillary@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-guru-logo.png",
-        "url": "hillary-darkville",
-        "name": "Hillary Darkville",
-        "title":
-            "A Product Manager Resume Bursting with Positivity and Results",
+        "url": "hillary-curran",
+        "pageTitle": "Real Product Manager Resume Example | Enhancv",
+        "pageDescription":
+            "An effective product manager resume example starts with positive energy and a clear mission before finishing with practical impact, this resume has it all",
+        "tags": ["non-profit", "mid-level", "manager"],
+        "twitterText":
+            "Here’s a great example of a #ProductManager #resume that really stands out. #ResumeTips | via @Enhancv",
+        "facebookText":
+            "The first step to a successful job hunting is a resume that stands out and makes you proud. Here’s an example of an @Enhancv resumes that does just that",
+        "socialImg": "famous-resumes/share-images/Hillary_social.png",
+        "name": "Hillary Curran",
+        "title": "A Product Manager Resume Bursting with Positivity and Results",
         "description":
             "From winning awards for her positivity to actively implementing new productivity-boosting processes across businesses, Hillary's product manager resume is full of concrete results. She doesn't have to simply say that she's proactive and efficient, that fact is clear in nearly every role she's had.",
         "position":
@@ -447,13 +543,20 @@
         ]
     },
     {
-        "resumes": [
-            { "image": "successful-resumes/eden-ivancich-resume-1.jpg" }
-        ],
+        "resumes": [{ "image": "successful-resumes/eden-ivancich-resume-1.jpg" }],
         "label": "First Job",
         "avatar": "successful-resumes/avatars/eden@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-guru-logo.png",
         "url": "eden-ivancich",
+        "pageTitle": "Real High School Teen Resume Example | Enhancv",
+        "pageDescription":
+            "How can a high school resume be just as effective as any other? By being honest, passionate, and unique.",
+        "tags": ["Volunteering", "Entry", "High School Student"],
+        "twitterText":
+            "Creating your first #resume? Worried about not having enough experience? Eden shows how a resume can be amazing even before you graduate from high school. | via @Enhancv",
+        "facebookText":
+            "A high school student created a resume with @Enhancv that really stands above the rest",
+        "socialImg": "famous-resumes/share-images/eden_social.png",
         "name": "Eden Ivancich",
         "title": "Even a High School Resume Can Be Effective and Impactful",
         "description":
@@ -489,6 +592,15 @@
         "avatar": "successful-resumes/avatars/eric_weismann@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-cin-logo.png",
         "url": "eric-weissmann",
+        "pageTitle": "Real Marketing Executive Resume Example | Enhancv",
+        "pageDescription":
+            "This marketing executive resume starts with concrete accomplishmnets, but it's passion and personality which make it remarkable",
+        "tags": ["Business", "senior", "VP of communications"],
+        "twitterText":
+            "@eweissmann has a resume he built with @Enhancv you won’t soon forget. It’s got #passion #personality and #accomplishments to spare.",
+        "facebookText":
+            "Eric Weissmann’s @Enhancv resume shows how you can balance accomplishments, passion, and personality from a 20+ year career in two beautiful pages. The result is a real standout.",
+        "socialImg": "famous-resumes/share-images/eric_social.png",
         "name": "Eric Weissmann",
         "title": "A Marketing Executive Resume that Makes a Strong Impression",
         "description":
@@ -517,19 +629,25 @@
         ]
     },
     {
-        "resumes": [
-            { "image": "successful-resumes/sophie-segal-resume-1.jpg" }
-        ],
+        "resumes": [{ "image": "successful-resumes/sophie-segal-resume-1.jpg" }],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/sofie_segal@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-avis-budget.png",
         "url": "sophie-segal",
+        "pageTitle": "Real Department Head Resume Example | Enhancv",
+        "pageDescription":
+            "Her rise from manager to department head makes this resume example powerful and memorable",
+        "tags": ["Automotive", "senior", "Head of Loyalty"],
+        "twitterText":
+            "Sophie Segal's @Enhancv #resume shows how you can grow within an industry while #innovating and #experimenting with your #career.",
+        "facebookText":
+            "Sophie Segal shows how changing jobs and directions doesn’t have to mean changing industries. She’s built an innovative and varied career all within the rent-a-car world. Check out her @Enhancv resume to see her story.",
+        "socialImg": "famous-resumes/share-images/sophie_social.png",
         "name": "Sophie Segal",
         "title": "A Department Head Resume That Shows a Woman Making an Impact",
         "description":
             "When your career stays within a single company or industry, it can be hard to show growth. Sophie’s resume example demonstrates how she’s grown in terms of responsibilities and accomplishments within the rental car industry. Growing from a manager to a department head, she’s consistently demonstrated concrete results and a great attitude. Add in her entrepreneurial experience with side projects and you have a compelling story and a great resume example.",
-        "position":
-            "International Commercial Manager, Project Lead, Head of Loyalty, Entrepreneur",
+        "position": "International Commercial Manager, Project Lead, Head of Loyalty, Entrepreneur",
         "stepsTitle": "Why Sophie’s Department Head Resume Works",
         "stepsDescription":
             "What makes this resume example stand out from the rest? It starts with a foundation of tangible results from Sophie’s work. Then, side projects and personality really make it pop.",

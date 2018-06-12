@@ -16,6 +16,9 @@ import BooksFour from "components/SuccessfulResumes/Sections/BooksFour";
 import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
 import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
+import SocialBar from "components/SuccessfulResumes/SocialBar";
+import FamousResumePreview from "components/SuccessfulResumes/FamousResumePreview";
+
 
 import Meta from "components/Meta";
 
@@ -25,6 +28,8 @@ export default function FamousResume({
     return (
         <DefaultLayout>
             <Meta title={data.name} />
+            <SocialBar />
+            <FamousResumePreview />
             <main className="famous-resume--container">
                 <FamousHeader
                  name={data.name}
