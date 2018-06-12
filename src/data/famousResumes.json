@@ -4,11 +4,22 @@
         "url": "casey-neistat",
         "avatar": "famous-resumes/avatars/casey@2.png",
         "cover": "famous-resumes/cover/Casey_Neistat_photo.jpg",
-        "resumes": [{ "image": "famous-resumes/youtuber-casey-neistat.jpg" }],
+        "resumes": [
+            { "image": "famous-resumes/casey-neistat/casey-neistat-resume.jpg" }
+        ],
         "smallDescription":
             "You don’t get more than 9 million Youtube subscribers without learning a few lessons along the way.",
         "description":
             "Every time he tries something new, Casey shows the importance of knowing why you do what you do. He also shows why success can be dangerous. His unique example of a filmmaker resume tells that story.",
+        "pageTitle": "Casey Neistat’s Filmmaker Resume Example | Enhancv",
+        "pageDescription":
+            "Casey Neistat has a great example of a creative filmmaker resume. It shows successes, failures, and includes some insights into why success often isn't enough.",
+        "tags": ["Industry Change", "Marketing", "Arts & Entertainment"],
+        "twitterText":
+            "@CaseyNeistat shows us why the connection between #achievinggoals and feeling #satisfaction isn’t so simple | via @Enhancv",
+        "facebookText":
+            "If you’ve ever achieved something and not felt satisfied, @cneistat has some important lessons to teach you | via @Enhancv",
+        "socialImg": "famous-resumes/share-images/Casey_social.png",
         "sections": [
             {
                 "image":
@@ -29,6 +40,8 @@
                     },
                     {
                         "title": "The CaseyNeistat Youtube Channel",
+                        "image":
+                            "famous-resumes/companies/youtube_channel_casey@2.png",
                         "position": "Creator",
                         "startDate": "2/2010",
                         "endDate": "Ongoing",
@@ -120,36 +133,51 @@
     {
         "name": "Elon Musk",
         "url": "elon-musk",
-        "resumes": [{ "image": "famous-resumes/elon-musk-resume-1.jpg" }],
+        "resumes": [
+            { "image": "famous-resumes/casey-neistat/elon-musk-resume-1.jpg" }
+        ],
         "avatar": "famous-resumes/avatars/elon@2.png",
         "cover": "famous-resumes/cover/Elon_Musk_photo.jpg",
         "smallDescription":
             "Elon Musk may not be a typical CEO, but he still has a fantastic example of what a CEO resume can be. His resume shows how a CEO can bring together their ventures, personality, values, and passions.",
         "description":
             "When you've founded companies in fields as diverse as car manufacturing, space exploration, and online payments, it's hard to show it all on one cohesive resume. But Musk's shows how it's possible. What ties all of his ventures together is his personality, values, and passions.",
+        "pageTitle": "Elon Musk’s CEO Resume Example in One Page | Enhancv",
+        "pageDescription":
+            "Even if you don't need a CEO resume, Elon Musk's example shows how anyone can make a one page resume that really stands out and leaves a lasting impression",
+        "tags": ["Industry Change", " Business/Sales", " Production"],
+        "twitterText":
+            "Even a ‘hat salesman’ like @elonmusk can have an epic #resume that would make anyone proud | via @Enhancv",
+        "facebookText":
+            "Ever wondered what Elon Musk’s resume would look like? @Enhancv shows how the man of the future would create the resume of the future.",
+        "socialImg": "famous-resumes/share-images/musk_social.png",
         "sections": [
             {
+                "section": "LifeProject",
                 "image":
                     "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
-                "section": "LifeProject",
                 "description":
                     "As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
                 "data": [
                     {
                         "title": "SpaceX",
                         "position": "Founder & CEO",
+                        "image": "famous-resumes/companies/SpaceX-Logo.svg",
                         "description":
                             "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
                     },
                     {
                         "title": "Tesla",
                         "position": "Founder & CEO",
+                        "image":
+                            "famous-resumes/companies/Tesla_Motors_Logo.svg",
                         "description":
                             "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
                     },
                     {
                         "title": "Neuralink",
                         "position": "Founder & CEO",
+                        "image": "famous-resumes/companies/neuralink@2.png",
                         "description":
                             "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
                     }
@@ -217,11 +245,22 @@
     {
         "name": "Marissa Mayer",
         "url": "marissa-mayer",
-        "resumes": [{ "image": "famous-resumes/marissa-mayer-resume.jpg" }],
+        "resumes": [
+            { "image": "famous-resumes/casey-neistat/marissa-mayer-resume.jpg" }
+        ],
         "avatar": "famous-resumes/avatars/marissa@2.png",
         "cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
         "description":
             "From the first female employee at Google to CEO of Yahoo!, Mayer’s CEO resume tells the story of a career marked by persistence, hard work, and results. Her resume example also shows how women can succeed in both the technology and business worlds.",
+        "pageTitle": "Marissa Mayer’s Yahoo CEO Resume Example | Enhancv",
+        "pageDescription":
+            "Marissa Mayer's CEO resume example has actionable tips and ideas allowing anyone can have an impactful and memorable resume",
+        "tags": ["New Role", "Business/Sales", "IT"],
+        "twitterText":
+            "The #resume @Enhancv created for @marissamayer has been changing how people see resumes. Check it out to see why",
+        "facebookText":
+            "See the Marissa Mayer resume that’s been changing how people stand out with a resume. | via @Enhancv",
+        "socialImg": "famous-resumes/share-images/marissa_social.png",
         "sections": [
             {
                 "image":
@@ -233,12 +272,15 @@
                     {
                         "title": "Google",
                         "position": "VP of Location Services",
+                        "image":
+                            "famous-resumes/companies/Google_2015_logo.svg",
                         "description":
                             "In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
                     },
                     {
                         "title": "Yahoo!",
                         "position": "CEO",
+                        "image": "famous-resumes/companies/Yahoo_Logo.svg",
                         "description":
                             "Mayer is working to adapt Yahoo! to the reality of a changing internet landscape through acquisitions and mergers."
                     }
@@ -314,10 +356,25 @@
     {
         "name": "Mark Zuckerberg",
         "url": "mark-zuckerberg",
-        "resumes": [{ "image": "famous-resumes/mark-zuckerberg-resume.jpg" }],
+        "resumes": [
+            {
+                "image":
+                    "famous-resumes/casey-neistat/mark-zuckerberg-resume.jpg"
+            }
+        ],
         "avatar": "famous-resumes/avatars/mark@2.png",
         "cover": "famous-resumes/cover/mark_zuckerberg_photo.jpg",
         "smallDescription": "",
+        "pageTitle":
+            "Mark Zuckerberg Software Developer Resume Example | Enhancv",
+        "pageDescription":
+            "Mark Zuckerbeg's pre-Facebook software developer resume is a great example for anyone looking for tips on standing out as a young developer without work experience.",
+        "tags": ["Student", "Engineer", "IT"],
+        "twitterText":
+            "Turns out @MarkZuckerberg had a pretty impressive #resume even before #Facebook. Created with @Enhancv",
+        "facebookText":
+            "Even before Facebook, Mark Zuckerberg had a resume that really stood out. Check out how @Enhancv shows it.",
+        "socialImg": "famous-resumes/share-images/Mark_Zuckerberg_social.png",
         "description":
             "Mark Zuckerberg hardly needs a resume today, so this one imagines what his looked like before founding Facebook. Back then, he would have needed a software developer resume just like anyone else. His resume is an example of how you can showcase your passions, philosophy, and ambitions to create an impactful resume before you’ve landed your first real job.",
         "sections": [
@@ -399,9 +456,20 @@
     {
         "name": "Barack Obama",
         "url": "barack-obama",
-        "resumes": [{ "image": "famous-resumes/barack-obama-resume.jpg" }],
+        "resumes": [
+            { "image": "famous-resumes/casey-neistat/barack-obama-resume.jpg" }
+        ],
         "avatar": "famous-resumes/avatars/obama@2.png",
         "cover": "famous-resumes/cover/Barack_Obama_photo.jpg",
+        "pageTitle": "Barack Obama's Resume Example | Enhancv",
+        "pageDescription":
+            "Obama's resume shows just how diverse his experience is as well as showcasing his major accomplishments in a single page.",
+        "tags": [""],
+        "twitterText":
+            "This #resume of @BarackObama shows how a #POTUS can show pride in what they’ve accomplished. | via @Enhancv",
+        "facebookText":
+            "Barack Obama’s resume shows how a POTUS can show pride in their accomplishments.  | via @Enhancv",
+        "socialImg": "famous-resumes/share-images/Barack_Obama_social.png",
         "description":
             "Even Presidents need resumes. Obama's resume shows how even when you're focusing mostly on your accomplishments from a single job, you can still show your values, strengths, and what you're most proud of.",
         "sections": [
@@ -496,9 +564,23 @@
     {
         "name": "Travis Kalanick",
         "url": "travis-kalanick",
-        "resumes": [{ "image": "famous-resumes/travis-kalanick-resume.jpg" }],
+        "resumes": [
+            {
+                "image":
+                    "famous-resumes/casey-neistat/travis-kalanick-resume.jpg"
+            }
+        ],
         "avatar": "famous-resumes/avatars/travis@2.png",
         "cover": "famous-resumes/cover/Travis_Kalanick_photo.jpg",
+        "pageTitle": "Travis Kalanick's Entrepreneur Resume Example | Enhancv",
+        "pageDescription":
+            "Travis Kalanick's resume example shows what an entrepreneur's resume should be: bold, impact driven, and full of passionate energy",
+        "tags": ["New Role", "Business/Sales", "IT"],
+        "twitterText":
+            "The new way of writing a #resume in 2018! Here’s some inspiration from @travisk and @Enhancv.",
+        "facebookText":
+            "This @traviskal resume shows how following your passions can lead to big things. @Enhancv makes it possible.",
+        "socialImg": "famous-resumes/share-images/travis_social.png",
         "description":
             "Kalanick's resume shows the power of being open about your strengths and your weaknesses. It doesn't shy away from being frank about times he bent the rules and occasionally fell on his face. But through these stories, his resume shows just who he is as a CEO.",
         "sections": [
@@ -511,6 +593,7 @@
                     {
                         "title": "Uber",
                         "position": "Co-Founder and CEO",
+                        "image": "famous-resumes/companies/Uber_logo.svg",
                         "description":
                             "Built the largest privately held tech company in the world with a valuation of over $65 billion, all while revolutionizing transportation and outcompeting our challengers. Uber is used over 40 million times a month and has become a fundamental tech product of our time."
                     },
@@ -585,9 +668,23 @@
     {
         "name": "Sheryl Sandberg",
         "url": "sheryl-sandberg",
-        "resumes": [{ "image": "famous-resumes/sheryl-sandberg-resume-1.jpg" }],
+        "resumes": [
+            {
+                "image":
+                    "famous-resumes/casey-neistat/sheryl-sandberg-resume-1.jpg"
+            }
+        ],
         "avatar": "famous-resumes/avatars/sheryl@2.png",
         "cover": "famous-resumes/cover/Sheryl_Sandberg_photo.jpg",
+        "pageTitle": "Sheryl Sandberg's COO Resume Example | Enhancv",
+        "pageDescription":
+            "Sheryl Sandberg's resume example shows how you can balance the personal and the professional to stand out as a COO",
+        "tags": ["New Role", "Business/Sales", "IT"],
+        "twitterText":
+            "@sherylsandberg’s @Enhancv #resume is as inspirational as she is, balancing #motherhood and that #leanin attitude all in one page",
+        "facebookText":
+            "This resume @Enhancv created for @sherylsandberg shows just how you can show your strengths and identity as a woman, mother, and a professional on a resume that would make anyone proud",
+        "socialImg": "famous-resumes/share-images/Sheryl_scial.png",
         "description":
             "From the publication of her best-selling book Lean In, Sheryl Sandberg has become a sometimes controversial thinker on how women can succeed in their careers. Whether you see her as an icon or disagree with how she thinks women can advance themselves while balancing other obligations, her COO resume example has a fascinating story to tell.",
         "sections": [
@@ -601,18 +698,21 @@
                     {
                         "title": "Facebook",
                         "position": "COO",
+                        "image": "famous-resumes/companies/Facebook-logo.svg",
                         "description":
                             "She took her experience building Google’s ad team to Facebook, growing that revenue stream even faster to make the company profitable in just two years. Now, the team she built drives 85% of Facebook’s revenue. She’s also worked on building strategic partnerships with companies like Yahoo!."
                     },
                     {
                         "title": "The Lean In Foundation",
                         "position": "Founder",
+                        "image": "famous-resumes/companies/li_logo.svg",
                         "description":
                             "Beyond simply writing the book, she turned Lean In into a community of over 33k women in 150 countries devoted to empowering each other. By creating powerful partnerships with role models like Beyonce, Lean In has made a real difference for women in the workplace."
                     },
                     {
                         "title": "Google",
                         "position": "VP of Global Online Sales and Operations",
+                        "image": "famous-resumes/companies/li_logo.svg",
                         "description":
                             "She scaled their online sales team by 1,000% in 5 years (from 4 to 4,000) all while maintaining the quality of the organization such that we provided 2/3 of Google’s revenue."
                     }
@@ -685,9 +785,23 @@
     {
         "name": "Hillary Clinton",
         "url": "hillary-clinton",
-        "resumes": [{ "image": "famous-resumes/hillary-clinton-resume-1.jpg" }],
+        "resumes": [
+            {
+                "image":
+                    "famous-resumes/casey-neistat/hillary-clinton-resume-1.jpg"
+            }
+        ],
         "avatar": "famous-resumes/avatars/hillary@2.png",
         "cover": "famous-resumes/cover/Hillary_clinton_photo.jpg",
+        "pageTitle": "Hillary Clinton's Politician Resume Example | Enhancv",
+        "pageDescription":
+            "Even non-politicians can learn from Hillary Clinton's resume example. It shows how a lifetime of work in various fields can fit into a single page that shows impact and stands out.",
+        "tags": ["New Role"],
+        "twitterText":
+            "@HillaryClinton’s @Enhancv #resume shows what an impact a single page can have",
+        "facebookText":
+            "This @Enhancv created resume shows how a single page can sum up a life as varied as @hillaryclinton’s. We think she’d be proud of this one.",
+        "socialImg": "famous-resumes/share-images/Hillary_clinton_social.png",
         "description":
             "Hillary Clinton has been a lot of things, from working in a fish cannery to serving on the board of Walmart, but her career can still be well summarized and presented on a single page. From explaining her political beliefs to detailing her accomplishments as Senator, First Lady, and Secretary of State, a standout one page politician resume is all she needs to show herself as a person and a professional.",
         "sections": [
@@ -789,9 +903,23 @@
     {
         "name": "Angela Merkel",
         "url": "angela-merkel",
-        "resumes": [{ "image": "famous-resumes/angela-merkel-resume-1.jpg" }],
+        "resumes": [
+            {
+                "image":
+                    "famous-resumes/casey-neistat/angela-merkel-resume-1.jpg"
+            }
+        ],
         "avatar": "famous-resumes/avatars/merkel@2.png",
         "cover": "famous-resumes/cover/angela_merkel_photo.jpg",
+        "pageTitle": "Angela Merkel's Female Leader Resume Example | Enhancv",
+        "pageDescription":
+            "How does the \"most powerful woman in the world\" create a powerful resume as a female leader? It comes with a balance between personal and professional to stand out and show impact.",
+        "tags": ["New Role"],
+        "twitterText":
+            "Angela Merkel has been named the most #powerfulwoman in the world 9 of the last 10 years. Her @Enhancv #resumes shows why.",
+        "facebookText":
+            "Think the resume of the most powerful woman in the world (according to @Forbes) can’t be one page? @Enhancv thinks otherwise.",
+        "socialImg": "famous-resumes/share-images/merkel_social.png",
         "description":
             "Named the most powerful woman in the world for 9 of the past 10 years, Angela Merkel's resume isn't short on accomplishments as a female leader. But more than just showing what she's done, her resume shows how she balances her life and how what she's most proud of defines her. So when she mentions what she did the night the Berlin Wall fell, it's more than just a story, it's a statement about how she views the world and her work.",
         "sections": [
@@ -883,9 +1011,20 @@
     {
         "name": "Steve Jobs",
         "url": "steve-jobs",
-        "resumes": [{ "image": "famous-resumes/steve-jobs-resume.jpg" }],
+        "resumes": [
+            { "image": "famous-resumes/casey-neistat/steve-jobs-resume.jpg" }
+        ],
         "avatar": "famous-resumes/avatars/jobs.png",
         "cover": "famous-resumes/cover/Steve_jobs_cover_photo.jpg",
+        "pageTitle": "Steve Jobs' Apple CEO Resume Example | Enhancv",
+        "pageDescription":
+            "Steve Jobs' CEO resume example is an inspiration, showing how including your struggles and failures can create a resume that really stands out and leaves an impression",
+        "tags": ["New Role", "Business/Sales", "IT"],
+        "twitterText":
+            "How did #stevejobs learn from his #mistakes to become the man who saved #Apple? Turns out that story has a lot to teach us about #grit, #passion, and thriving in spite of personal flaws. | via @Enhancv",
+        "facebookText":
+            "How did Steve Jobs learn from his mistakes to become the man who saved Apple? Turns out that story has a lot to teach us about grit, passion, and thriving in spite of personal flaws. | via @Enhancv",
+        "socialImg": "famous-resumes/share-images/Jobs_social.png",
         "description":
             "Whether you think Steve Jobs was a genius, narcissist, or both, that misses something more important: how his life was shaped by struggle. His CEO resume shows not just what he’d accomplished and what he was proud of when he rejoined Apple in 1996, but how his struggles and failures turned him into the person who could save the company.",
         "sections": [
@@ -902,6 +1041,7 @@
                         "startDate": "1986",
                         "endDate": "Ongoing",
                         "location": "Emeryville, CA",
+                        "image": "famous-resumes/companies/pixar.svg",
                         "description":
                             "Jobs turned a small division of Lucasfilm into a powerhouse studio, leading the company while it created the groundbreaking film Toy Story."
                     },
@@ -911,6 +1051,7 @@
                         "startDate": "1985",
                         "endDate": "Ongoing",
                         "location": "Redwood City, CA",
+                        "image": "famous-resumes/companies/next_logo@2.png",
                         "description":
                             "As CEO of NeXT, Jobs led the creation of the revolutionary UNix-based NeXTSTEP OS. In doing so, they created computers that were five years ahead of their time."
                     },
@@ -920,6 +1061,8 @@
                         "startDate": "1976",
                         "endDate": "1985",
                         "location": "Los Altos and Cupertino, CA",
+                        "image":
+                            "famous-resumes/companies/Apple_logo_black.svg",
                         "description":
                             "Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
                     }
