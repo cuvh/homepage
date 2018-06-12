@@ -32,6 +32,7 @@
         "layout-grid": "^2.2.0",
         "react": "16.3",
         "react-dom": "16.3",
+        "react-ga": "^2.5.3",
         "react-helmet": "^5.2.0",
         "react-slick": "^0.23.1",
         "react-tilt": "^0.1.4",

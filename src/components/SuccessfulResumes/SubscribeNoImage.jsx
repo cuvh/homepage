@@ -1,6 +1,7 @@
 import React from "react";
 import Subscribe from "utils/Subscribe";
 import classnames from "classnames";
+import Track from "utils/Track";
 
 export default class SubscribeNoImage extends React.PureComponent {
     state = {
@@ -23,6 +24,11 @@ export default class SubscribeNoImage extends React.PureComponent {
                 subscribed: true,
                 sending: false
             });
+            Track(
+                "Successful Resumes",
+                "Subscribe to Newsletter",
+                "Resume Page - Bottom"
+            );
         } catch (e) {
             this.setState({
                 failed: true,

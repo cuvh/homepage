@@ -1,4 +1,6 @@
 import React from "react";
+import classnames from "classnames";
+import Track from "utils/Track";
 
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
@@ -23,12 +25,15 @@ import Modal from "components/Modal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
+export default function FamousResume({
+    data: { famousResumesJson: { ...data }, list }
+}) {
     return (
         <DefaultLayout className="navbar-light">
             <Meta
              title={data.pageTitle}
              description={data.pageDescription}
+             metaImage={data.socialImg}
             />
 
             <SocialBar
@@ -39,26 +44,42 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
 
             <Modal
              trigger={
-                <a className="component--fast-resume-preview">
+                <a
+                 onClick={() =>
+                    Track(
+                        "Successful Resumes",
+                        "Expand Resume",
+                        `${data.name} - Sticky click`
+                    )}
+                 className="component--fast-resume-preview"
+                >
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
-             }>
+             }
+            >
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  facebookText={data.facebookText}
                  twitterText={data.twitterText}
                  url={data.url}
-                 altText={data.altText}
+                 altText={`${data.name}'s resume`}
                 />
             </Modal>
             <main className="famous-resume--container">
-                <FamousHeader
-                 name={data.name}
-                 cover={data.cover}
-                 description={data.pageDescription}
-                 smallDescription={data.smallDescription}
-                />
+                <div
+                 className={classnames({
+                    "famous-resume-inverted": data.lightCover
+                 })}
+                >
+                    <FamousHeader
+                     preview={preview}
+                     name={data.name}
+                     cover={data.cover}
+                     description={data.pageDescription}
+                     smallDescription={data.smallDescription}
+                    />
+                </div>
 
                 <Menu sections={data.sections.map(item => item.section)} />
 
@@ -66,16 +87,23 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                     if (item.section === "LifeProject") {
                         return (
                             <div key={item.section}>
-                                <LifeProject {...item} />
+                                <LifeProject
+                                 altText={`${data.name}'s life project`}
+                                 {...item}
+                                />
                                 <Experience {...item} />
                             </div>
                         );
                     }
 
-                    if (item.section === "MostProudOf" || item.section === "Achievements") {
+                    if (
+                        item.section === "MostProudOf" ||
+                        item.section === "Achievements"
+                    ) {
                         return (
                             <Awards
                              key={item.section}
+                             altText={`${data.name} feeling proud`}
                              {...item}
                             />
                         );
@@ -117,6 +145,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                  facebookText={data.facebookText}
                  twitterText={data.twitterText}
                  url={data.url}
+                 altText={`${data.name}'s resume`}
                 />
             </main>
         </DefaultLayout>
@@ -126,6 +155,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
 export const pageQuery = graphql`
     query FamousResume($url: String!) {
         famousResumesJson(url: { eq: $url }) {
+            lightCover
             name
             url
             smallDescription
@@ -133,6 +163,7 @@ export const pageQuery = graphql`
             pageTitle
             facebookText
             twitterText
+            socialImg
             finalDescription
             cover {
                 childImageSharp {

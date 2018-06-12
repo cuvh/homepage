@@ -21,7 +21,8 @@
         "socialImg": "famous-resumes/share-images/Casey_social.png",
         "sections": [
             {
-                "image": "famous-resumes/lifeproject/life_project_illustrationscasey-neistat@2.png",
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationscasey-neistat@2.png",
                 "section": "LifeProject",
                 "description":
                     "Casey’s rise from living in a trailer park to being a world-famous filmmaker came through the success of his big life projects.",
@@ -38,7 +39,8 @@
                     },
                     {
                         "title": "The CaseyNeistat Youtube Channel",
-                        "image": "famous-resumes/companies/youtube_channel_casey@2.png",
+                        "image":
+                            "famous-resumes/companies/youtube_channel_casey@2.png",
                         "position": "Creator",
                         "startDate": "2/2010",
                         "endDate": "Ongoing",
@@ -65,7 +67,8 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofcasey-neistat.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofcasey-neistat.png",
                 "data": [
                     {
                         "title": "Pulling his life together",
@@ -78,8 +81,10 @@
                             "By realizing there’s other ways to achieve his dream of being a filmmaker"
                     },
                     {
-                        "title": "Sticking with NYC, Filmmaking, Youtube, and Candice",
-                        "description": "Despite 9/11, Hollywood BS, demonetizing, and breakups"
+                        "title":
+                            "Sticking with NYC, Filmmaking, Youtube, and Candice",
+                        "description":
+                            "Despite 9/11, Hollywood BS, demonetizing, and breakups"
                     },
                     {
                         "title": "Surviving 534 daily vlogs",
@@ -147,8 +152,10 @@
         "sections": [
             {
                 "section": "LifeProject",
-                "image": "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
-                "description": "These are just a few of the world-changing projects Musk works on.",
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
+                "description":
+                    "These are just a few of the world-changing projects Musk works on.",
                 "data": [
                     {
                         "title": "SpaceX",
@@ -166,7 +173,8 @@
                         "location": "California, USA",
                         "startDate": "2012",
                         "endDate": "2019",
-                        "image": "famous-resumes/companies/Tesla_Motors_Logo.png",
+                        "image":
+                            "famous-resumes/companies/Tesla_Motors_Logo.png",
                         "description":
                             "Tesla, Inc. is an American company that specializes in electric vehicles, energy storage and solar panel manufacturing based in Palo Alto, California."
                     },
@@ -248,7 +256,8 @@
         "position": "Former CEO of Yahoo!",
         "avatar": "famous-resumes/avatars/marissa@2.png",
         "cover": "famous-resumes/cover/Marissa_Mayer_photo.jpg",
-        "description": "Marissa’s resume shows her rise to become a major tech company CEO.",
+        "description":
+            "Marissa’s resume shows her rise to become a major tech company CEO.",
         "pageTitle": "Marissa Mayer’s Yahoo CEO Resume Example | Enhancv",
         "pageDescription":
             "Marissa Mayer's CEO resume example has actionable tips and ideas allowing anyone can have an impactful and memorable resume",
@@ -269,7 +278,8 @@
                     {
                         "title": "Google",
                         "position": "VP of Location Services",
-                        "image": "famous-resumes/companies/Google_2015_logo.png",
+                        "image":
+                            "famous-resumes/companies/Google_2015_logo.png",
                         "description":
                             "In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
                     },
@@ -284,13 +294,15 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofmarissa-mayer.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofmarissa-mayer.png",
                 "description":
                     "Mayer’s list of what she’s most proud of really reinforces and contextualizes her work experience. You see the time she spent at Google and can guess what it took to rise within the company, but her she spells out what she’s taken away from those experiences.",
                 "data": [
                     {
                         "title": "Courage she had",
-                        "description": "To take a sinking ship and make it float"
+                        "description":
+                            "To take a sinking ship and make it float"
                     },
                     {
                         "title": "Persistence & Loyalty",
@@ -317,7 +329,8 @@
                     },
                     {
                         "backgroundColor": "#7061bd",
-                        "title": "Showing Yahoo employees their work has meaning"
+                        "title":
+                            "Showing Yahoo employees their work has meaning"
                     },
                     {
                         "backgroundColor": "#9086dc",
@@ -335,7 +348,8 @@
                     },
                     {
                         "backgroundColor": "#d4cbff",
-                        "title": "Creating spreadsheet for her amazing cupcake recipe"
+                        "title":
+                            "Creating spreadsheet for her amazing cupcake recipe"
                     }
                 ]
             }
@@ -346,6 +360,7 @@
             "Taken together, what does the resume of a woman who’s shaped one of the world’s leading companies look like?"
     },
     {
+        "lightCover": true,
         "name": "Mark Zuckerberg",
         "url": "mark-zuckerberg",
         "resumes": [
@@ -357,7 +372,8 @@
         "cover": "famous-resumes/cover/mark_zuckerberg_photo.jpg",
         "position": "CEO of Facebook",
         "smallDescription": "",
-        "pageTitle": "Mark Zuckerberg Software Developer Resume Example | Enhancv",
+        "pageTitle":
+            "Mark Zuckerberg Software Developer Resume Example | Enhancv",
         "pageDescription":
             "Mark Zuckerbeg's pre-Facebook software developer resume is a great example for anyone looking for tips on standing out as a young developer without work experience.",
         "tags": ["Student", "Engineer", "IT"],
@@ -407,7 +423,8 @@
             },
             {
                 "section": "Achievements",
-                "image": "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
                 "data": [
                     {
                         "title": "Founded",
@@ -415,7 +432,8 @@
                     },
                     {
                         "title": "10+ Prizes",
-                        "description": "In math, astronomy, physics, and classics"
+                        "description":
+                            "In math, astronomy, physics, and classics"
                     },
                     {
                         "title": "Proficient",
@@ -443,6 +461,7 @@
             "Even without any official work experience, Zuckerberg’s resume shows how you can turn projects and achievements into a compelling resume. This is a great example of what you can do with a student resume."
     },
     {
+        "lightCover": true,
         "name": "Barack Obama",
         "url": "barack-obama",
         "resumes": [{ "image": "famous-resumes/barack-obama-resume.jpg" }],
@@ -487,11 +506,13 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofbarack-obama.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofbarack-obama.png",
                 "data": [
                     {
                         "title": "Raising his daughters",
-                        "description": "With the help of his amazing wife Michelle!"
+                        "description":
+                            "With the help of his amazing wife Michelle!"
                     },
                     {
                         "title": "Awarded the Nobel Peace Prize",
@@ -548,6 +569,7 @@
             "What does the resume of a president look like? It’s certainly not easy fitting everything a president might do in their lifetime into a single page, but Obama’s resume shows how you can make the right choices for the greatest impact."
     },
     {
+        "lightCover": true,
         "name": "Travis Kalanick",
         "url": "travis-kalanick",
         "resumes": [
@@ -600,7 +622,8 @@
             },
             {
                 "section": "Achievements",
-                "image": "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-oftravis-kalanick.png",
                 "data": [
                     {
                         "title": "Protected our drivers from fines",
@@ -613,7 +636,8 @@
                             "Tested the limits of the App Store’s T&C and covered it, yet Tim Cook caught them and threatened to remove Uber from the App Store"
                     },
                     {
-                        "title": "Persuaded drivers to drop our biggest competitor",
+                        "title":
+                            "Persuaded drivers to drop our biggest competitor",
                         "description":
                             "We figured out when one person drives for both Lyft and Uber and started sending more orders their way"
                     }
@@ -625,15 +649,18 @@
                 "data": [
                     {
                         "backgroundColor": "#443a77",
-                        "title": "Putting out fires, bending rules and solving complex problems"
+                        "title":
+                            "Putting out fires, bending rules and solving complex problems"
                     },
                     {
                         "backgroundColor": "#7061bd",
-                        "title": "Protecting his privacy while keeping tabs on the competition"
+                        "title":
+                            "Protecting his privacy while keeping tabs on the competition"
                     },
                     {
                         "backgroundColor": "#9086dc",
-                        "title": "Irritating city officials and the cab industry"
+                        "title":
+                            "Irritating city officials and the cab industry"
                     },
                     {
                         "backgroundColor": "#9689d9",
@@ -667,7 +694,8 @@
         "facebookText":
             "This resume @Enhancv created for @sherylsandberg shows just how you can show your strengths and identity as a woman, mother, and a professional on a resume that would make anyone proud",
         "socialImg": "famous-resumes/share-images/Sheryl_scial.png",
-        "description": "Sandberg’s resume shows how she can be a COO, mother, and author.",
+        "description":
+            "Sandberg’s resume shows how she can be a COO, mother, and author.",
         "sections": [
             {
                 "image":
@@ -701,7 +729,8 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofsheryl-sandberg.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofsheryl-sandberg.png",
                 "data": [
                     {
                         "title": "Making Facebook profitable",
@@ -811,11 +840,13 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofhillary-clinton.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofhillary-clinton.png",
                 "data": [
                     {
                         "title": "Being the most admired woman in America",
-                        "description": "And third most admired woman in the world"
+                        "description":
+                            "And third most admired woman in the world"
                     },
                     {
                         "title": "30+ years of experience in public service",
@@ -823,11 +854,13 @@
                     },
                     {
                         "title": "Built a great family",
-                        "description": "By working through issues and supporting her daughter"
+                        "description":
+                            "By working through issues and supporting her daughter"
                     },
                     {
                         "title": "Committed to women and children",
-                        "description": "By doing pro-bono work throughout her career"
+                        "description":
+                            "By doing pro-bono work throughout her career"
                     }
                 ]
             },
@@ -837,7 +870,8 @@
                 "data": [
                     {
                         "backgroundColor": "#da6e58",
-                        "title": "Make life easier for the average American and the middle class"
+                        "title":
+                            "Make life easier for the average American and the middle class"
                     },
                     {
                         "backgroundColor": "#ea7860",
@@ -846,7 +880,8 @@
                     },
                     {
                         "backgroundColor": "#f19582",
-                        "title": "Establish America as the world’s clean energy superpower"
+                        "title":
+                            "Establish America as the world’s clean energy superpower"
                     },
                     {
                         "backgroundColor": "#f3baa9",
@@ -855,7 +890,8 @@
                     },
                     {
                         "backgroundColor": "#f7cec2",
-                        "title": "Fight for full federal equality for LGBT Americans"
+                        "title":
+                            "Fight for full federal equality for LGBT Americans"
                     },
                     {
                         "backgroundColor": "#f2dcd6",
@@ -874,6 +910,7 @@
             "The title under her name says it all, Clinton’s long career has made her many things. Her resume example takes it all together and shows just what impact she’s had over three decades of public service."
     },
     {
+        "lightCover": true,
         "name": "Angela Merkel",
         "url": "angela-merkel",
         "resumes": [
@@ -904,7 +941,8 @@
                     "Leaving off an impressive career as a research scientist, Merkel’s life projects show the aptitude and persistence to climb through the political ranks. Along the way, she’s pioneered female leadership in Germany, Europe, and the world.",
                 "data": [
                     {
-                        "title": "Chancellor of the Federal Republic of Germany",
+                        "title":
+                            "Chancellor of the Federal Republic of Germany",
                         "description":
                             "Over more than a decade as Chancellor, Merkel has had to navigate extreme crises like the global financial crisis and the European refugee crisis. Through it all she’s focused on delivering economic results, stable leadership, and humane policies."
                     },
@@ -917,7 +955,8 @@
             },
             {
                 "section": "MostProudOf",
-                "image": "famous-resumes/mostproudof/most-proud-ofangela-merkel.png",
+                "image":
+                    "famous-resumes/mostproudof/most-proud-ofangela-merkel.png",
                 "data": [
                     {
                         "title": "Being Disciplined",
@@ -947,7 +986,8 @@
                 "data": [
                     {
                         "backgroundColor": "#da6e58",
-                        "title": "Work on creating a better future for Germany and Europe"
+                        "title":
+                            "Work on creating a better future for Germany and Europe"
                     },
                     {
                         "backgroundColor": "#ea7860",
@@ -959,7 +999,8 @@
                     },
                     {
                         "backgroundColor": "#f3baa9",
-                        "title": "Listen to a game of the national football team"
+                        "title":
+                            "Listen to a game of the national football team"
                     },
                     {
                         "backgroundColor": "#f7cec2",
@@ -997,7 +1038,8 @@
             "Jobs’ resume in 1996 shows a career was full of incredible successes and brutal failures.",
         "sections": [
             {
-                "image": "famous-resumes/lifeproject/life_project_illustrationssteve-jobs@2.png",
+                "image":
+                    "famous-resumes/lifeproject/life_project_illustrationssteve-jobs@2.png",
                 "section": "LifeProject",
                 "description":
                     "Jobs’ work up to 1996 shows both his tremendous skills and his deep flaws. In each role, he changes the way things are done and leaves and impact. Of course, he leaves the bigger lessons for the section on his struggles.",
@@ -1028,7 +1070,8 @@
                         "startDate": "1976",
                         "endDate": "1985",
                         "location": "Los Altos and Cupertino, CA",
-                        "image": "famous-resumes/companies/Apple_logo_black.png",
+                        "image":
+                            "famous-resumes/companies/Apple_logo_black.png",
                         "description":
                             "Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
                     }
@@ -1047,13 +1090,15 @@
                         "title": "Launching failed products",
                         "description":
                             "The Lisa and Macintosh taught him the danger of releasing technically advanced products that are essentially still prototypes and don’t adequately solve user needs",
-                        "image": "famous-resumes/struggles/jobs_failed_product.png"
+                        "image":
+                            "famous-resumes/struggles/jobs_failed_product.png"
                     },
                     {
                         "title": "Failing to identify a customer",
                         "description":
                             "The NeXt team never figured out who the customer was for the NeXT computer because Jobs didn’t adequately learn the lessons of Lisa and Macintosh",
-                        "image": "famous-resumes/struggles/jobs_identify_customer.png"
+                        "image":
+                            "famous-resumes/struggles/jobs_identify_customer.png"
                     }
                 ]
             },
@@ -1083,7 +1128,8 @@
                     },
                     {
                         "backgroundColor": "c8f0dd",
-                        "title": "Checking out what Xerox PARC is up to these days"
+                        "title":
+                            "Checking out what Xerox PARC is up to these days"
                     }
                 ]
             }

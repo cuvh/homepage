@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Track from "utils/Track";
 
 export default function FamousHeader({
     name,
@@ -18,6 +19,7 @@ export default function FamousHeader({
                 width: "100%",
                 height: "100%"
              }}
+             alt={`${name}'s photo`}
             />
 
             <div className="container">
@@ -33,6 +35,12 @@ export default function FamousHeader({
                             </p>
                         </div>
                         <a
+                         onClick={() =>
+                            Track(
+                                "Successful Resumes",
+                                "Expand Resume",
+                                `${name} - Header Click`
+                            )}
                          href="#famous-resume"
                          className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
                         >

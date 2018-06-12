@@ -3,25 +3,22 @@ import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
 import Helmet from "react-helmet";
+import StoreService from "utils/StoreService";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 import srImg from "../assets/img/msg-SR-Emoji@3x.svg";
 
-// $(document).on("click", '[data-toggle="navbar"]', function() {
-//     $("body").toggleClass("navbar-mobile-active");
-// });
-
 class Header extends React.PureComponent {
     state = {
-        stick: false,
+        stick: false
     };
 
     constructor(props) {
         super(props);
         this.onScroll = this.scroll.bind(this);
         this.state = {
-            isMsgShowed: localStorage.getItem("isMsgShowed"),
-            mobileNavOpened: "",
+            isMsgShowed: StoreService.getItem("isMsgShowed"),
+            mobileNavOpened: ""
         };
     }
 
@@ -35,16 +32,18 @@ class Header extends React.PureComponent {
 
     onClickHiddenModal() {
         this.setState({
-            isMsgShowed: true,
+            isMsgShowed: true
         });
-        localStorage.setItem("isMsgShowed", true);
+        StoreService.setItem("isMsgShowed", true);
     }
 
     scroll(e) {
-        const top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0) || 0;
+        const top =
+            (window.pageYOffset || document.scrollTop) -
+                (document.clientTop || 0) || 0;
 
         this.setState({
-            stick: top > 10,
+            stick: top > 10
         });
     }
 
@@ -63,32 +62,43 @@ class Header extends React.PureComponent {
             <div>
                 <Helmet
                  bodyAttributes={{
-                    class: this.state.mobileNavOpened,
+                    class: this.state.mobileNavOpened
                  }}
                 />
                 <div
-                 className={!this.state.isMsgShowed ? "navigation-spacer-sr" : "navigation-spacer"}
+                 className={
+                    !this.state.isMsgShowed
+                        ? "navigation-spacer-sr"
+                        : "navigation-spacer"
+                 }
                 />
 
                 <nav
-                 className={classnames("navbar navbar-default navbar-sticky navbar-static-top", {
-                    "navbar-stick": this.state.stick,
-                 })}>
+                 className={classnames(
+                    "navbar navbar-default navbar-sticky navbar-static-top",
+                    {
+                        "navbar-stick": this.state.stick
+                    }
+                 )}
+                >
                     {!this.state.isMsgShowed ? (
                         <div className="Grid Grid--alignCenter msg-SR Grid--justifyCenter">
                             <Link
                              className="col-sm-10 col-xs-12 p-sm-bottom-1 p-sm-top-1"
                              to="/successful-resumes"
-                             onClick={() => this.onClickHiddenModal()}>
+                             onClick={() => this.onClickHiddenModal()}
+                            >
                                 <img src={srImg} />
-                                Hey, we just launched Successful Resumes — real-life resumes that
-                                got people like you hired at top companies.
+                                Hey, we just launched Successful Resumes —
+                                real-life resumes that got people like you hired
+                                at top companies.
                                 <span> Check it out &nbsp;&rarr;</span>
                             </Link>
                             <button
                              type="button"
                              className="close m-sm-bottom-1 m-right-2"
-                             onClick={() => this.onClickHiddenModal()}>
+                             onClick={() => this.onClickHiddenModal()}
+                            >
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -103,18 +113,25 @@ class Header extends React.PureComponent {
                             <button
                              type="button"
                              onClick={() => this.toggleNav()}
-                             className="navbar-toggle collapsed">
-                                <span className="sr-only">Toggle navigation</span>
+                             className="navbar-toggle collapsed"
+                            >
+                                <span className="sr-only">
+                                    Toggle navigation
+                                </span>
                                 <div className="navbar-mobile-hidden">
                                     <span className="icon-bar first" />
                                     <span className="icon-bar" />
                                     <span className="icon-bar last" />
                                 </div>
-                                <div className="close navbar-mobile-visible">&times;</div>
+                                <div className="close navbar-mobile-visible">
+                                    &times;
+                                </div>
                             </button>
                             <Link
+                             onClick={() => console.log("test")}
                              to="/"
-                             className="navbar-logo-wrapper">
+                             className="navbar-logo-wrapper"
+                            >
                                 <img
                                  className="navbar-logo"
                                  src={logoImg}
@@ -131,42 +148,50 @@ class Header extends React.PureComponent {
                                     </li>
                                     <li
                                      className={classnames({
-                                        active: pathname === "/successful-resumes",
-                                     })}>
-                                        <Link to="/successful-resumes">Successful Resumes</Link>
+                                        active:
+                                            pathname === "/successful-resumes"
+                                     })}
+                                    >
+                                        <Link to="/successful-resumes">
+                                            Successful Resumes
+                                        </Link>
                                     </li>
                                     <li
                                      className={classnames({
-                                        active: pathname === "/pricing",
-                                     })}>
+                                        active: pathname === "/pricing"
+                                     })}
+                                    >
                                         <Link to="/pricing">Pricing</Link>
                                     </li>
                                     <li>
                                         <a
-                                         href="https://blog.enhancv.com/"
-                                         target="_blank">
+                                         href="{{ urls.blog }}"
+                                         target="_blank"
+                                        >
                                             Blog
                                         </a>
                                     </li>
                                 </ul>
                                 <div className="bottom-xs navbar-mobile-visible">
                                     <a
-                                     href="https://app.enhancv.com/login"
+                                     href="{{ urls.builder }}/login"
                                      data-track="event"
                                      data-category="Homepage"
                                      data-action="Click Signup"
                                      data-label="Sign In"
-                                     className="visible-xs btn btn-default btn-sign-in">
+                                     className="visible-xs btn btn-default btn-sign-in"
+                                    >
                                         Sign In
                                     </a>
                                 </div>
                                 <a
-                                 href="https://app.enhancv.com/signup"
+                                 href="{{ urls.builder }}"
                                  data-track="event"
                                  data-category="Homepage"
                                  data-action="Click Signup"
                                  data-label="Sign Up"
-                                 className="visible-xs btn btn-primary navbar-mobile-visible-sticky">
+                                 className="visible-xs btn btn-primary navbar-mobile-visible-sticky"
+                                >
                                     Sign Up
                                 </a>
                             </div>
@@ -176,14 +201,18 @@ class Header extends React.PureComponent {
                             <ul className="nav navbar-nav navbar-right">
                                 <li
                                  className={classnames({
-                                    active: pathname === "/successful-resumes",
-                                 })}>
-                                    <Link to="/successful-resumes">Successful Resumes</Link>
+                                    active: pathname === "/successful-resumes"
+                                 })}
+                                >
+                                    <Link to="/successful-resumes">
+                                        Successful Resumes
+                                    </Link>
                                 </li>
                                 <li
                                  className={classnames({
-                                    active: pathname === "/pricing",
-                                 })}>
+                                    active: pathname === "/pricing"
+                                 })}
+                                >
                                     <Link to="/pricing">Pricing</Link>
                                 </li>
 
@@ -192,18 +221,22 @@ class Header extends React.PureComponent {
                                      data-track="event"
                                      data-category="Homepage"
                                      data-action="Click Login"
-                                     href="https://app.enhancv.com/login">
+                                     href="https://app.enhancv.com/login"
+                                    >
                                         Sign In
                                     </a>
                                 </li>
                                 <li>
                                     <button
-                                     onClick={() => (window.location = "https://app.enhancv.com")}
+                                     onClick={() =>
+                                        (window.location =
+                                            "https://app.enhancv.com/signup")}
                                      data-track="event"
                                      data-category="Homepage"
                                      data-action="Click Signup"
                                      data-label="Sign Up"
-                                     className="btn btn-primary navbar-btn m-left-1 m-right-1">
+                                     className="btn btn-primary navbar-btn m-left-1 m-right-1"
+                                    >
                                         Get Started
                                     </button>
                                 </li>
