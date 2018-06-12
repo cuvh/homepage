@@ -2,7 +2,6 @@ import React from "react";
 import Img from "gatsby-image";
 
 export default function Experience({ data }) {
-    console.log(data);
     return (
         <section className="m-sm-bottom-4 m-md-bottom-13">
             <div className="container">
