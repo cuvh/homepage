@@ -42,11 +42,15 @@ export default function FamousContainer({
                                         `${name} - Page Bottom Image`
                                     )}
                                 >
-                                    <Img
-                                     resolutions={resume.childImageSharp.small}
-                                     width="442"
-                                     alt={altText}
-                                    />
+                                    <div className="responsive-gatsby">
+                                        <Img
+                                         resolutions={
+                                            resume.childImageSharp.small
+                                         }
+                                         width="442"
+                                         alt={altText}
+                                        />
+                                    </div>
                                     <button className="btn-resume-preview" />
                                 </a>
                              }
