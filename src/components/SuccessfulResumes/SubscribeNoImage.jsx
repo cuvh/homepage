@@ -64,7 +64,7 @@ export default class SubscribeNoImage extends React.PureComponent {
                     </p>
                     {!this.state.subscribed ? (
                         <form
-                         id="subscribe-form"
+                         onSubmit={event => this.subscribe(event)}
                          className="Grid Grid--justifyCenter"
                         >
                             <div className="component--subscription-form Grid Grid-cell--md-8">
@@ -83,9 +83,7 @@ export default class SubscribeNoImage extends React.PureComponent {
                                  type="submit"
                                  className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4"
                                 >
-                                    {this.state.sending
-                                        ? "Subscribing.."
-                                        : "Subscribe"}
+                                    Subscribe
                                 </button>
                                 {this.state.failed ? (
                                     <div

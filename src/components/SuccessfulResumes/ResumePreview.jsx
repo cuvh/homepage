@@ -13,11 +13,14 @@ export default function ResumePreview({
 }) {
     return (
         <React.Fragment>
-            <div className="modal-body resume-preview">
+            <div className="modal-body resume-preview responsive-gatsby">
                 <Img
                  resolutions={resumePageOne.childImageSharp.large}
                  alt={altText}
-                 style={{ width: "100%", position: "initial" }}
+                 style={{
+                    width: "100%",
+                    position: "initial"
+                 }}
                  imgStyle={{ height: "auto", borderRadius: "5px" }}
                 />
 

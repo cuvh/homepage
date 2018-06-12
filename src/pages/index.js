@@ -1,7 +1,7 @@
 import "../assets/scss/app.scss";
 import React from "react";
 import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import Meta from "components/Meta";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
@@ -20,16 +20,11 @@ import Testimonials from "components/Homepage/Testimonials";
 
 const IndexPage = () => (
 	<DefaultLayout className="homepage">
-		<Helmet
-		 title={"Enhancv | Professional Resume & CV Builder"}
-		 meta={[
-			{
-				name: "description",
-				content:
-					"Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview.",
-			},
-		 ]}
+		<Meta
+		 title="Enhancv | Professional Resume & CV Builder"
+		 description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
 		/>
+
 		<div className="homepage-intro m-top-3">
 			<div className="container text-center">
 				<h1 className="hidden-xs hidden-sm md-lg-heading-margin">
@@ -54,7 +49,8 @@ const IndexPage = () => (
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2">
+					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2"
+					>
 						Create Your Resume
 					</a>
 					<a
@@ -63,7 +59,8 @@ const IndexPage = () => (
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2">
+					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2"
+					>
 						Create Your Resume
 					</a>
 				</div>
@@ -111,28 +108,32 @@ const IndexPage = () => (
 
 				<div className="m-top-5 m-bottom-6 hidden-xs hidden-sm">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice companies — read more
-						about their journey to the perfect job&nbsp;
+						Our users got noticed and hired by their top choice
+						companies — read more about their journey to the perfect
+						job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link">
+						 className="feature-link"
+						>
 							here
 						</Link>.
 					</p>
 				</div>
 				<div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice companies — read more
-						about their journey to the perfect job&nbsp;
+						Our users got noticed and hired by their top choice
+						companies — read more about their journey to the perfect
+						job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link">
+						 className="feature-link"
+						>
 							here
 						</Link>.
 					</p>

@@ -78,13 +78,15 @@ export default class SingleResume extends React.PureComponent {
                                             )}
                                          style={{ cursor: "pointer" }}
                                         >
-                                            <Img
-                                             resolutions={
-                                                resumePageOne.childImageSharp
-                                                    .small
-                                             }
-                                             alt={`${data.name}'s resume`}
-                                            />
+                                            <div className="responsive-gatsby">
+                                                <Img
+                                                 resolutions={
+                                                    resumePageOne
+                                                        .childImageSharp.small
+                                                 }
+                                                 alt={`${data.name}'s resume`}
+                                                />
+                                            </div>
 
                                             <button className="btn-resume-preview" />
                                         </a>
