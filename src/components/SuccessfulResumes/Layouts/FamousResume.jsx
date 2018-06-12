@@ -38,6 +38,7 @@ export default function FamousResume({
              twitterText={data.twitterText}
              url={data.url}
             />
+
             <Modal
              trigger={
                 <a

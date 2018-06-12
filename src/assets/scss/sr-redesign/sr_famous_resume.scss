@@ -10,19 +10,26 @@
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
-position: relative;
-z-index:10;
+        position: relative;
+        z-index: 10;
         @media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
             background-position: 70% 0%;
         }
 
         @media screen and (max-width: $screen-xs-max) {
+            .gatsby-image-wrapper {
+                height: 302px !important;
+            }
             padding-top: 302px;
             background-size: auto 302px;
         }
         @media screen and (min-width: $screen-xs) and (max-width: $screen-sm-max) {
             padding-top: 541px;
             background-size: 992px auto;
+
+            .gatsby-image-wrapper {
+                height: 541px !important;
+            }
         }
         @media screen and (min-width: $screen-md) {
             height: 786px;
