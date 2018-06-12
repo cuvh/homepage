@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import Track from "utils/Track";
 
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
@@ -27,6 +28,16 @@ import Meta from "components/Meta";
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
+    const preview = (
+        <ResumePreview
+         resumePageOne={data.resumes[0].image}
+         facebookText={data.facebookText}
+         twitterText={data.twitterText}
+         url={data.url}
+         altText={data.altText}
+        />
+    );
+
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -43,19 +54,21 @@ export default function FamousResume({
 
             <Modal
              trigger={
-                <a className="component--fast-resume-preview">
+                <a
+                 onClick={() =>
+                    Track(
+                        "Successful Resumes",
+                        "Expand Resume",
+                        `${data.name} - Sticky click`
+                    )}
+                 className="component--fast-resume-preview"
+                >
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
              }
             >
-                <ResumePreview
-                 resumePageOne={data.resumes[0].image}
-                 facebookText={data.facebookText}
-                 twitterText={data.twitterText}
-                 url={data.url}
-                 altText={data.altText}
-                />
+                {preview}
             </Modal>
             <main className="famous-resume--container">
                 <div
@@ -64,6 +77,7 @@ export default function FamousResume({
                  })}
                 >
                     <FamousHeader
+                     preview={preview}
                      name={data.name}
                      cover={data.cover}
                      description={data.pageDescription}

@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Track from "utils/Track";
 
 import intercomLogo from "assets/img/new-successful-resumes/highlighted/intercom.png";
 import hannah from "assets/img/new-successful-resumes/hannah.png";
@@ -69,10 +70,13 @@ export default class SingleResume extends React.PureComponent {
                                     <Modal
                                      trigger={
                                         <a
-                                         data-track="event"
-                                         data-category="Successful Resumes"
-                                         data-action="Click Full Resume"
-                                         data-label="Casey Neistat"
+                                         onClick={() =>
+                                            Track(
+                                                "Successful Resumes",
+                                                "Expand Resume",
+                                                `${data.name} - Top Button Click`
+                                            )}
+                                         style={{ cursor: "pointer" }}
                                         >
                                             <Img
                                              resolutions={

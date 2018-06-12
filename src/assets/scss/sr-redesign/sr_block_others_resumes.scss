@@ -124,6 +124,7 @@
         justify-content: center;
 
         &-button {
+            outline: 0 !important;
             font-size: 15px;
             color: rgba(101, 105, 109, 0.5);
             border: 0;

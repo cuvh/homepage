@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Img from "gatsby-image";
 import Helmet from "react-helmet";
+import Track from "utils/Track";
 
 import spotifyLogo from "data/successful-resumes/company-logos/2x-spotify-logo.png";
 
@@ -44,7 +45,7 @@ export default function FeaturedResume({ data }) {
                              resolutions={
                                 data.mainImage.childImageSharp.resolutions
                              }
-                             alt="Hannah Mills’s story"
+                             alt="Sam Youngs’s story"
                             />
                             <span className="resume--highlighted-preview">
                                 <Img
@@ -55,15 +56,7 @@ export default function FeaturedResume({ data }) {
                                 />
 
                                 <Modal
-                                 trigger={
-                                    <a
-                                     className="btn-resume-preview"
-                                     data-track="event"
-                                     data-category="Successful Resumes"
-                                     data-action="Click Full Resume"
-                                     data-label="Casey Neistat"
-                                    />
-                                 }
+                                 trigger={<a className="btn-resume-preview" />}
                                 >
                                     <ResumePreview
                                      resumePageOne={data.mainResumeOne}
@@ -124,7 +117,14 @@ export default function FeaturedResume({ data }) {
                         <span className="resumes--preview-holder">
                             <Modal
                              trigger={
-                                <a>
+                                <a
+                                 onClick={() =>
+                                    Track(
+                                        "Successful Resumes",
+                                        "Expand Resume",
+                                        `Featured Casey Neistat`
+                                    )}
+                                >
                                     <Img
                                      resolutions={
                                         data.famousResume.childImageSharp.small
