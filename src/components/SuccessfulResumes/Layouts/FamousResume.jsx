@@ -146,6 +146,13 @@ export const pageQuery = graphql`
                     endDate
                     location
                     position
+                    image {
+                        childImageSharp {
+                            resolutions(width: 300) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
                 }
             }
         }

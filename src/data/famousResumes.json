@@ -28,7 +28,7 @@
                 "data": [
                     {
                         "title": "Beme",
-                        "image": "famous-resumes/companies/Beme_Inc._Logo.svg",
+                        "image": "famous-resumes/companies/Beme_Inc._Logo.png",
                         "position": "Co-Founder",
                         "startDate": "2014",
                         "endDate": "2018",
@@ -153,29 +153,38 @@
                 "image":
                     "famous-resumes/lifeproject/life_project_illustrationsElon-Musk@2.png",
                 "description":
-                    "As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support.",
+                    "These are just a few of the world-changing projects Musk works on.",
                 "data": [
                     {
                         "title": "SpaceX",
-                        "position": "Founder & CEO",
-                        "image": "famous-resumes/companies/SpaceX-Logo.svg",
+                        "position": "Founder, CEO, Lead designer",
+                        "image": "famous-resumes/companies/SpaceX-Logo.png",
+                        "location": "California, USA",
+                        "startDate": "2012",
+                        "endDate": "2019",
                         "description":
-                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                            "Space Exploration Technologies Corp., doing business as SpaceX, is a private American aerospace manufacturer and space transportation services company headquartered in Hawthorne, CA."
                     },
                     {
                         "title": "Tesla",
-                        "position": "Founder & CEO",
+                        "position": "Co-founder, CEO, Product architect",
+                        "location": "California, USA",
+                        "startDate": "2012",
+                        "endDate": "2019",
                         "image":
-                            "famous-resumes/companies/Tesla_Motors_Logo.svg",
+                            "famous-resumes/companies/Tesla_Motors_Logo.png",
                         "description":
-                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                            "Tesla, Inc. is an American company that specializes in electric vehicles, energy storage and solar panel manufacturing based in Palo Alto, California."
                     },
                     {
                         "title": "Neuralink",
-                        "position": "Founder & CEO",
+                        "position": "Co-founder, CEO",
+                        "location": "California, USA",
+                        "startDate": "2012",
+                        "endDate": "2019",
                         "image": "famous-resumes/companies/neuralink@2.png",
                         "description":
-                            "Before looking for companies that would suit his requirements, Daniel thought in more detail about how his skills could match the new desired role. As he’s worked remotely most of his career, he needed a company that would allow for that. Another requirement was a company that’s known for exceptional customer support."
+                            "Neuralink is an American neurotechnology company founded by Elon Musk and eight others, reported to be developing implantable interfaces."
                     }
                 ]
             },
@@ -267,14 +276,14 @@
                         "title": "Google",
                         "position": "VP of Location Services",
                         "image":
-                            "famous-resumes/companies/Google_2015_logo.svg",
+                            "famous-resumes/companies/Google_2015_logo.png",
                         "description":
                             "In 13 years, Mayer moved from a humble product engineer all the way to Vice President of Location & Location Services. Along the way, she helped shape Google as a world-beating company with outstanding UI and powerful location tools."
                     },
                     {
                         "title": "Yahoo!",
                         "position": "CEO",
-                        "image": "famous-resumes/companies/Yahoo_Logo.svg",
+                        "image": "famous-resumes/companies/Yahoo_Logo.png",
                         "description":
                             "Mayer is working to adapt Yahoo! to the reality of a changing internet landscape through acquisitions and mergers."
                     }
@@ -583,7 +592,7 @@
                     {
                         "title": "Uber",
                         "position": "Co-Founder and CEO",
-                        "image": "famous-resumes/companies/Uber_logo.svg",
+                        "image": "famous-resumes/companies/Uber_logo.png",
                         "description":
                             "Built the largest privately held tech company in the world with a valuation of over $65 billion, all while revolutionizing transportation and outcompeting our challengers. Uber is used over 40 million times a month and has become a fundamental tech product of our time."
                     },
@@ -687,21 +696,21 @@
                     {
                         "title": "Facebook",
                         "position": "COO",
-                        "image": "famous-resumes/companies/Facebook-logo.svg",
+                        "image": "famous-resumes/companies/Facebook-logo.png",
                         "description":
                             "She took her experience building Google’s ad team to Facebook, growing that revenue stream even faster to make the company profitable in just two years. Now, the team she built drives 85% of Facebook’s revenue. She’s also worked on building strategic partnerships with companies like Yahoo!."
                     },
                     {
                         "title": "The Lean In Foundation",
                         "position": "Founder",
-                        "image": "famous-resumes/companies/li_logo.svg",
+                        "image": "famous-resumes/companies/li_logo.png",
                         "description":
                             "Beyond simply writing the book, she turned Lean In into a community of over 33k women in 150 countries devoted to empowering each other. By creating powerful partnerships with role models like Beyonce, Lean In has made a real difference for women in the workplace."
                     },
                     {
                         "title": "Google",
                         "position": "VP of Global Online Sales and Operations",
-                        "image": "famous-resumes/companies/li_logo.svg",
+                        "image": "famous-resumes/companies/li_logo.png",
                         "description":
                             "She scaled their online sales team by 1,000% in 5 years (from 4 to 4,000) all while maintaining the quality of the organization such that we provided 2/3 of Google’s revenue."
                     }
@@ -1026,7 +1035,7 @@
                         "startDate": "1986",
                         "endDate": "Ongoing",
                         "location": "Emeryville, CA",
-                        "image": "famous-resumes/companies/pixar.svg",
+                        "image": "famous-resumes/companies/pixar.png",
                         "description":
                             "Jobs turned a small division of Lucasfilm into a powerhouse studio, leading the company while it created the groundbreaking film Toy Story."
                     },
@@ -1047,7 +1056,7 @@
                         "endDate": "1985",
                         "location": "Los Altos and Cupertino, CA",
                         "image":
-                            "famous-resumes/companies/Apple_logo_black.svg",
+                            "famous-resumes/companies/Apple_logo_black.png",
                         "description":
                             "Jobs co-founded Apple and built it into the second biggest manufacturer of small computers. The company then pushed technologies like a Graphical User Interface, mouse, and fanless designs. All of this culminated in one of the most successful IPOs of all time, gaining 32% in value and creating 40 millionaires on the first day."
                     }
