@@ -230,6 +230,7 @@ export const pageQuery = graphql`
                     url
                     name
                     description
+                    position
                     avatar {
                         childImageSharp {
                             resolutions(width: 126) {

@@ -45,7 +45,7 @@ export default class FamousResumesList extends React.PureComponent {
                                     {node.name}
                                 </h4>
                                 <h5 className="resumes--person-jobtitle">
-                                    Former Apple CEO
+                                    {node.position}
                                 </h5>
                                 <div className="resumes--person-description">
                                     <p className="m-top-2">
