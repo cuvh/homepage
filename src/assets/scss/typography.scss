@@ -37,17 +37,16 @@ body {
 }
 
 .p-medium {
-	font-size:18px;
-    line-height:32px;
-    color: $gray-light;
+	font-size: 18px;
+	line-height: 32px;
+	color: $gray-light;
 	margin-top: -2px;
-	
-    @media screen and (max-width: $screen-xs-max) {
-        font-size: 15px;
-        line-height: 27px;
-    }
-}
 
+	@media screen and (max-width: $screen-xs-max) {
+		font-size: 15px;
+		line-height: 27px;
+	}
+}
 
 h1 {
 	line-height: 80px;
@@ -70,40 +69,40 @@ h2 {
 	text-decoration: underline !important;
 }
 .line-through {
-    text-decoration: line-through;
+	text-decoration: line-through;
 }
 .text-tag {
-    font-size: 12px;
-    font-family: $headings-font-family;
-    font-weight: 500;
+	font-size: 12px;
+	font-family: $headings-font-family;
+	font-weight: 500;
 }
 // Color classes
 .text-gray-light {
 	color: $gray-light;
 }
 .text-dark-grey {
-	color:$sr_main-color;
+	color: $sr_main-color;
 }
 .text-darker-grey {
-    color: $sr_secondary-color;
+	color: $sr_secondary-color;
 }
 .text-highlight-purple {
-    color: $brand-purple;
+	color: $brand-purple;
 }
 .text-white {
-	color:$sr_white;
+	color: $sr_white;
 }
 .text-md-white {
-	@media screen and (min-width:$screen-md) {
-		color:$sr_white;
+	@media screen and (min-width: $screen-md) {
+		color: $sr_white;
 	}
 }
 .text-white-smoke {
-	color:$sr_white-smoke;
+	color: $sr_white-smoke;
 }
 .text-md-white-smoke {
-	@media screen and (min-width:$screen-md) {
-		color:$sr_white-smoke;
+	@media screen and (min-width: $screen-md) {
+		color: $sr_white-smoke;
 	}
 }
 
@@ -112,68 +111,71 @@ h2 {
 /////////////////////////////////////////////////
 
 .resume-article {
-	max-width:750px;
-	margin-right:auto;
-	color:$sr_article-body-text;
+	max-width: 750px;
+	margin-right: auto;
+	color: $sr_article-body-text;
 
 	&:not(.famous-article) {
-		margin-left:auto;
+		margin-left: auto;
 	}
 
-    p {
+	p {
 		@extend .p-medium;
-		margin-bottom:$sr_global-offset-value * 5;
-		@media screen and (min-width:$screen-md) {
-			margin-bottom:$sr_global-offset-value * 6;
+		margin-bottom: $sr_global-offset-value * 5;
+		@media screen and (min-width: $screen-md) {
+			margin-bottom: $sr_global-offset-value * 6;
 		}
-    }
-    h1 {
-        @extend .h1;
-    }
-    h2 {
-        @extend .h2;
+	}
+	h1 {
+		@extend .h1;
+	}
+	h2 {
+		@extend .h2;
 	}
 	h3 {
-        @extend .h3;
+		@extend .h3;
 	}
 	h4 {
 		@extend .h4;
 	}
 	h5 {
-        @extend .h5;
+		@extend .h5;
 	}
-	h1,h2,h3,h4,h5 {
-		margin-bottom:$sr_global-offset-value * 2;
-		color:$sr_article-heading;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-bottom: $sr_global-offset-value * 2;
+		color: $sr_article-heading;
 	}
 
 	ul {
-		list-style-type:none;
-		background:no-repeat;
-		padding:0;
+		list-style-type: none;
+		background: no-repeat;
+		padding: 0;
 
 		&:not(.ul-align-right) {
 			padding-left: $sr_global-offset-value * 32;
 			margin-left: -$sr_global-offset-value * 20;
-			margin-bottom:$sr_global-offset-value * 6;
-			margin-top:$sr_global-offset-value * 8;
+			margin-bottom: $sr_global-offset-value * 6;
+			margin-top: $sr_global-offset-value * 8;
 
 			@media screen and (min-width: $screen-md) {
-			    padding-left: $sr_global-offset-value * 35;
-			    margin-left: -$sr_global-offset-value * 23;
+				padding-left: $sr_global-offset-value * 35;
+				margin-left: -$sr_global-offset-value * 23;
 			}
 		}
 
-		
 		&.ul-align-right {
 			@media screen and (min-width: $screen-sm) {
 				position: relative;
-				background-position:center right;
+				background-position: center right;
 				padding-right: 90%;
 				width: 155%;
 			}
 			@media screen and (max-width: $screen-sm-max) {
-				background:transparent !important;
+				background: transparent !important;
 			}
 		}
 
@@ -184,74 +186,74 @@ h2 {
 
 	blockquote {
 		position: relative;
-		border:0;
-		background:0;
+		border: 0;
+		background: 0;
 		font-family: $headings-font-family;
 
-		margin:$sr_global-offset-value * 4 0;
-		
+		margin: $sr_global-offset-value * 4 0;
+
 		color: $sr_main-color;
 		letter-spacing: 0;
 		text-align: center;
 		font-size: 22px;
 		line-height: 34px;
 
-		@media screen and (max-width:$screen-sm-max) {
-			text-align:center;
+		@media screen and (max-width: $screen-sm-max) {
+			text-align: center;
 		}
 
 		@media screen and (min-width: $screen-md) {
 			font-size: 24px;
 			line-height: 38px;
-			margin:$sr_global-offset-value * 10 0;
+			margin: $sr_global-offset-value * 10 0;
 		}
 
 		&:before {
-			content:'';
+			content: "";
 			width: 94px;
 			height: 83px;
 
-			@media screen and (max-width:$screen-sm-max) {
+			@media screen and (max-width: $screen-sm-max) {
 				display: block;
 				margin: 0 auto 16px;
 			}
 
 			@media screen and (min-width: $screen-md) {
 				position: absolute;
-				right:0;
-				top:0;
-				right: -60px;
+				right: 0;
+				top: 0;
+				right: -90px;
 				top: -26px;
 			}
 
-			background:url('/img/new-successful-resumes/elements/quote-icon@2x.png');
-			background-size:100%;
+			background: url("../img/new-successful-resumes/elements/quote-icon@2x.png");
+			background-size: 100%;
 		}
 	}
 
-
 	figure {
-		text-align:center;
+		text-align: center;
 	}
 
 	img {
-		max-width:100%;
+		max-width: 100%;
 	}
-	
 }
-
-
 
 /////////////////////////////////////////////////
 // New Styles Guide - used in Successful Resumes
 /////////////////////////////////////////////////
 
-.h1,.h2,.h3,.h4 {
+.h1,
+.h2,
+.h3,
+.h4 {
 	&:not(.text-white):not(.text-md-white) {
 		color: $sr_main-color;
 	}
 }
-.h5,.h6 {
+.h5,
+.h6 {
 	&:not(.text-white-smoke):not(.text-md-white-smoke):not(.text-dark-grey) {
 		color: $sr_secondary-color;
 	}
@@ -295,7 +297,7 @@ h2 {
 	line-height: 26px;
 	@media screen and (min-width: $screen-md) {
 		font-size: 26px;
-		line-height: 32px;		
+		line-height: 32px;
 	}
 } // H5 Subtitle
 .h5 {
@@ -316,6 +318,4 @@ h2 {
 		line-height: 24px;
 	}
 }
-///  
-
-
+///
