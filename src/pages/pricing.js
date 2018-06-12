@@ -298,7 +298,10 @@ export default class Pricing extends React.PureComponent {
 					</div>
 				</div>
 
-				<PricingBenefits type={type} />
+				<PricingBenefits
+				 changeToPro={() => this.setState({ type: PRO })}
+				 type={type}
+				/>
 
 				<HomepageCTA />
 			</DefaultLayout>

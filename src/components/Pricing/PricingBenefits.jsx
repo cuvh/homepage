@@ -9,7 +9,7 @@ import iconBrandingPro from "../../assets/img/pricing/icon_branding_pro.svg";
 import iconCompactDisabled from "../../assets/img/pricing/icon_compact_disabled.svg";
 import iconCompactPro from "../../assets/img/pricing/icon_compact_pro.svg";
 
-export default function PricingBenefits({ type }) {
+export default function PricingBenefits({ type, changeToPro }) {
 	return (
 		<div className="pricing-benefits">
 			<div className="container">
@@ -130,10 +130,8 @@ export default function PricingBenefits({ type }) {
 							</h5>
 							<div className="m-top-3">
 								<a
-								 href="#pro"
-								 data-track="event"
-								 data-category="Pricing"
-								 data-action="Basic To Pro Bottom Button"
+								 href="#"
+								 onClick={() => changeToPro()}
 								 className="btn btn-primary btn-lg btn-basic-to-pro"
 								>
 									Learn more about Pro
