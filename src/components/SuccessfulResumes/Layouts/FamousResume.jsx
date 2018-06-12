@@ -28,16 +28,6 @@ import Meta from "components/Meta";
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
-    const preview = (
-        <ResumePreview
-         resumePageOne={data.resumes[0].image}
-         facebookText={data.facebookText}
-         twitterText={data.twitterText}
-         url={data.url}
-         altText={data.altText}
-        />
-    );
-
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -68,7 +58,13 @@ export default function FamousResume({
                 </a>
              }
             >
-                {preview}
+                <ResumePreview
+                 resumePageOne={data.resumes[0].image}
+                 facebookText={data.facebookText}
+                 twitterText={data.twitterText}
+                 url={data.url}
+                 altText={`${data.name}'s resume`}
+                />
             </Modal>
             <main className="famous-resume--container">
                 <div
@@ -91,7 +87,10 @@ export default function FamousResume({
                     if (item.section === "LifeProject") {
                         return (
                             <div key={item.section}>
-                                <LifeProject {...item} />
+                                <LifeProject
+                                 altText={`${data.name}'s life project`}
+                                 {...item}
+                                />
                                 <Experience {...item} />
                             </div>
                         );
@@ -104,6 +103,7 @@ export default function FamousResume({
                         return (
                             <Awards
                              key={item.section}
+                             altText={`${data.name} feeling proud`}
                              {...item}
                             />
                         );
@@ -145,6 +145,7 @@ export default function FamousResume({
                  facebookText={data.facebookText}
                  twitterText={data.twitterText}
                  url={data.url}
+                 altText={`${data.name}'s resume`}
                 />
             </main>
         </DefaultLayout>

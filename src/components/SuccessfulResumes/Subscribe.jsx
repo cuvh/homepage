@@ -45,7 +45,7 @@ export default class SubscribePanel extends React.PureComponent {
 				<div className="component--subscription-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
 					<Img
 					 resolutions={image.childImageSharp.resolutions}
-					 alt="Subscription Illustration"
+					 alt="Man becoming inspired"
 					/>
 				</div>
 				<div className="component--subscription-form Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">

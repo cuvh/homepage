@@ -45,7 +45,7 @@ export default function FeaturedResume({ data }) {
                              resolutions={
                                 data.mainImage.childImageSharp.resolutions
                              }
-                             alt="Sam Youngs’s story"
+                             alt="Sam's photo"
                             />
                             <span className="resume--highlighted-preview">
                                 <Img
@@ -53,6 +53,7 @@ export default function FeaturedResume({ data }) {
                                     data.mainResumePreview.childImageSharp
                                         .resolutions
                                  }
+                                 alt="Sam's resume preview"
                                 />
 
                                 <Modal
@@ -62,6 +63,7 @@ export default function FeaturedResume({ data }) {
                                      resumePageOne={data.mainResumeOne}
                                      resumePageTwo={data.mainResumeTwo}
                                      socials={false}
+                                     altText="Sam's resume"
                                     />
                                 </Modal>
                             </span>
@@ -129,6 +131,7 @@ export default function FeaturedResume({ data }) {
                                      resolutions={
                                         data.famousResume.childImageSharp.small
                                      }
+                                     alt="Casey's resume preview"
                                     />
                                     <button className="btn-resume-preview" />
                                 </a>
@@ -137,6 +140,7 @@ export default function FeaturedResume({ data }) {
                                 <ResumePreview
                                  resumePageOne={data.famousResume}
                                  socials={false}
+                                 altText="Casey's resume"
                                 />
                             </Modal>
                         </span>

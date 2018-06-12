@@ -35,6 +35,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                  resolutions={
                                     node.avatar.childImageSharp.resolutions
                                  }
+                                 altText={`${node.name}'s photo`}
                                 />
                             </span>
                             <div className="resumes--others-person-info">
@@ -56,6 +57,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                             node.companyLogo.childImageSharp
                                                 .resolutions
                                          }
+                                         alt="Company logo"
                                         />
                                     </div>
                                 ) : null}
@@ -68,6 +70,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 node.resumes[0].image.childImageSharp
                                     .resolutions
                              }
+                             altText={`${node.name}'s resume`}
                             />
                         </div>
                     </Link>

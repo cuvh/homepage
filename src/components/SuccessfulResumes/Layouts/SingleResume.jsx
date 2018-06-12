@@ -59,7 +59,7 @@ export default class SingleResume extends React.PureComponent {
                                          facebookText={data.facebookText}
                                          twitterText={data.twitterText}
                                          url={data.url}
-                                         altText={data.altText}
+                                         altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
                                 </div>
@@ -83,6 +83,7 @@ export default class SingleResume extends React.PureComponent {
                                                 resumePageOne.childImageSharp
                                                     .small
                                              }
+                                             alt={`${data.name}'s resume`}
                                             />
 
                                             <button className="btn-resume-preview" />
@@ -95,7 +96,7 @@ export default class SingleResume extends React.PureComponent {
                                          facebookText={data.facebookText}
                                          twitterText={data.twitterText}
                                          url={data.url}
-                                         altText={data.altText}
+                                         altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
                                 </span>
@@ -122,7 +123,7 @@ export default class SingleResume extends React.PureComponent {
                                                 data.companyLogo.childImageSharp
                                                     .resolutions
                                              }
-                                             alt="Intercom Company logo"
+                                             alt="Company logo"
                                             />
                                         </div>
                                     </div>
@@ -157,7 +158,7 @@ export default class SingleResume extends React.PureComponent {
                             <figure>
                                 <img
                                  src={imgPlaceholder}
-                                 alt="Image Placeholder"
+                                 alt="Inspiration box"
                                 />
                             </figure>
                         </article>
