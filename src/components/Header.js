@@ -109,7 +109,8 @@ class Header extends React.PureComponent {
                             !this.state.isMsgShowed
                                 ? "navbar-header navbar-header-sr"
                                 : "navbar-header"
-                         }>
+                         }
+                        >
                             <button
                              type="button"
                              onClick={() => this.toggleNav()}
@@ -128,7 +129,6 @@ class Header extends React.PureComponent {
                                 </div>
                             </button>
                             <Link
-                             onClick={() => console.log("test")}
                              to="/"
                              className="navbar-logo-wrapper"
                             >
