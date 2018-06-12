@@ -16,31 +16,14 @@
     &--container-dark {
         background-color: #2e3146;
     }
-    &--head {
-        padding-top: 80px;
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: cover;
+    &--head-image {
         position: relative;
-        z-index: 10;
-        @media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
-            background-position: 70% 0%;
-        }
-
-        @media screen and (max-width: $screen-xs-max) {
-            .gatsby-image-wrapper {
-                height: 302px !important;
-            }
-            padding-top: 302px;
-            background-size: auto 302px;
+        height:302px;
+        img {
+            object-position: top right !important;
         }
         @media screen and (min-width: $screen-xs) and (max-width: $screen-sm-max) {
-            padding-top: 541px;
-            background-size: 992px auto;
-
-            .gatsby-image-wrapper {
-                height: 541px !important;
-            }
+            height:541px;
         }
         @media screen and (min-width: $screen-md) {
             height: 786px;
@@ -51,6 +34,42 @@
         }
         @media screen and (min-width: 1900px) {
             height: 95vh;
+        }
+    }
+    &--head-content {
+        width:100%;
+        @media screen and (min-width: $screen-md) {
+            position: absolute;            
+            height:100%;
+            z-index:1;
+            top:0;
+        }
+    }
+    &--head {
+        //padding-top: 80px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: cover;
+        position: relative;
+        z-index: 10;
+        @media screen and (min-width: $screen-md) and (max-width: $screen-md-max) {
+            background-position: 70% 0%;
+        }
+
+        // @media screen and (max-width: $screen-xs-max) {
+        //     .gatsby-image-wrapper {
+        //         height: 302px !important;
+        //     }
+        //     padding-top: 302px;
+        //     background-size: auto 302px;
+        // }
+        @media screen and (min-width: $screen-xs) and (max-width: $screen-sm-max) {
+            // padding-top: 541px;
+            // background-size: 992px auto;
+
+            // .gatsby-image-wrapper {
+            //     height: 541px !important;
+            // }
         }
         .container {
             height: 100%;
