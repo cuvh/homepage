@@ -41,9 +41,11 @@
         }
         .btn-resume-preview {
             position: absolute;
-            bottom: $sr_global-offset-value;
-            right: -16px;
-             @media screen and (max-width:$screen-sm-max) {
+            // bottom: $sr_global-offset-value;
+            // right: -16px;
+            bottom:$sr_global-offset-value;
+            right:$sr_global-offset-value;
+            @media screen and (max-width:$screen-sm-max) {
                 display:none;
             }
         }

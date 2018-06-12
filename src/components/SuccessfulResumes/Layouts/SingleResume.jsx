@@ -21,7 +21,7 @@ export default class SingleResume extends React.PureComponent {
         const resumePageOne = data.resumes[0].image;
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
-            <DefaultLayout>
+            <DefaultLayout className="resumedetail">
                 <div className="hasBubbulesBackground">
                     <main className="container">
                         <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
