@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "gatsby-image";
 
 import strugleImg from "assets/img/new-successful-resumes/placeholders/struggles.jpg";
 
@@ -17,11 +18,11 @@ export default function Strugles({ section, data }) {
                         {data.map(item => (
                             <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
                                 <div className="component--thumbs-holder thumb-order-sm-2">
-                                    <img
-                                     width="78"
-                                     height="78"
-                                     src={strugleImg}
-                                     alt="Placeholder"
+                                    <Img
+                                     style={{ width: "78px", height: "78px" }}
+                                     sizes={
+                                        item.image.childImageSharp.resolutions
+                                     }
                                     />
                                 </div>
                                 <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-2">

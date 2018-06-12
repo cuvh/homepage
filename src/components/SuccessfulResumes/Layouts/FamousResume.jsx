@@ -36,11 +36,7 @@ export default function FamousResume({
             />
             <Modal
              trigger={
-                <a
-                 href="#view-resume"
-                 data-toggle="modal"
-                 class="component--fast-resume-preview"
-                >
+                <a class="component--fast-resume-preview">
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button class="btn-resume-preview" />
                 </a>
