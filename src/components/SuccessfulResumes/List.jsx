@@ -3,6 +3,7 @@ import Img from "gatsby-image";
 import Link from "gatsby-link";
 import classnames from "classnames";
 
+import Track from "utils/Track";
 import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
 
 export default class List extends React.PureComponent {
@@ -12,12 +13,14 @@ export default class List extends React.PureComponent {
     };
 
     filter(type) {
+        Track("Successful Resumes", "Click Resume Categories", type);
         this.setState({
             filter: type
         });
     }
 
     reveal(e) {
+        Track("Successful Resumes", "Reveal Users List");
         e.preventDefault();
         this.setState({
             revealed: true

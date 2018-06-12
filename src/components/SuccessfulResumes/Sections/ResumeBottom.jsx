@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import classnames from "classnames";
+import Track from "utils/Track";
 
 import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.png";
 
@@ -34,10 +35,12 @@ export default function FamousContainer({
                             <Modal
                              trigger={
                                 <a
-                                 data-track="event"
-                                 data-category="Successful Resumes"
-                                 data-action="Click Full Resume"
-                                 data-label="Casey Neistat"
+                                 onClick={() =>
+                                    Track(
+                                        "Successful Resumes",
+                                        "Expand Resume",
+                                        `${name} - Page Bottom Image`
+                                    )}
                                 >
                                     <Img
                                      resolutions={resume.childImageSharp.small}
@@ -73,7 +76,15 @@ export default function FamousContainer({
                             </div>
                             <Modal
                              trigger={
-                                <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
+                                <a
+                                 onClick={() =>
+                                    Track(
+                                        "Successful Resumes",
+                                        "Expand Resume",
+                                        `${name} - Page Bottom Button`
+                                    )}
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                >
                                     See the Resume
                                 </a>
                              }
@@ -91,9 +102,33 @@ export default function FamousContainer({
                                     <span className="m-right-1 m-left-1">
                                         Feeling inspired?
                                     </span>
-                                    <span className="component--feeling-emotion emotion-smiling" />
-                                    <span className="component--feeling-emotion emotion-neutral" />
-                                    <span className="component--feeling-emotion emotion-happy" />
+                                    <span
+                                     onClick={() =>
+                                        Track(
+                                            "Successful Resumes",
+                                            "Reaction",
+                                            `${name} Smiling`
+                                        )}
+                                     className="component--feeling-emotion emotion-smiling"
+                                    />
+                                    <span
+                                     onClick={() =>
+                                        Track(
+                                            "Successful Resumes",
+                                            "Reaction",
+                                            `${name} Neutral`
+                                        )}
+                                     className="component--feeling-emotion emotion-neutral"
+                                    />
+                                    <span
+                                     onClick={() =>
+                                        Track(
+                                            "Successful Resumes",
+                                            "Reaction",
+                                            `${name} Happy`
+                                        )}
+                                     className="component--feeling-emotion emotion-happy"
+                                    />
                                 </div>
                             </div>
                         </div>

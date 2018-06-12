@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Track from "utils/Track";
 
 import intercomLogo from "assets/img/new-successful-resumes/highlighted/intercom.png";
 import hannah from "assets/img/new-successful-resumes/hannah.png";
@@ -58,7 +59,7 @@ export default class SingleResume extends React.PureComponent {
                                          facebookText={data.facebookText}
                                          twitterText={data.twitterText}
                                          url={data.url}
-                                         altText={data.altText}
+                                         altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
                                 </div>
@@ -69,16 +70,20 @@ export default class SingleResume extends React.PureComponent {
                                     <Modal
                                      trigger={
                                         <a
-                                         data-track="event"
-                                         data-category="Successful Resumes"
-                                         data-action="Click Full Resume"
-                                         data-label="Casey Neistat"
+                                         onClick={() =>
+                                            Track(
+                                                "Successful Resumes",
+                                                "Expand Resume",
+                                                `${data.name} - Top Button Click`
+                                            )}
+                                         style={{ cursor: "pointer" }}
                                         >
                                             <Img
                                              resolutions={
                                                 resumePageOne.childImageSharp
                                                     .small
                                              }
+                                             alt={`${data.name}'s resume`}
                                             />
 
                                             <button className="btn-resume-preview" />
@@ -91,7 +96,7 @@ export default class SingleResume extends React.PureComponent {
                                          facebookText={data.facebookText}
                                          twitterText={data.twitterText}
                                          url={data.url}
-                                         altText={data.altText}
+                                         altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
                                 </span>
@@ -118,7 +123,7 @@ export default class SingleResume extends React.PureComponent {
                                                 data.companyLogo.childImageSharp
                                                     .resolutions
                                              }
-                                             alt="Intercom Company logo"
+                                             alt="Company logo"
                                             />
                                         </div>
                                     </div>
@@ -153,7 +158,7 @@ export default class SingleResume extends React.PureComponent {
                             <figure>
                                 <img
                                  src={imgPlaceholder}
-                                 alt="Image Placeholder"
+                                 alt="Inspiration box"
                                 />
                             </figure>
                         </article>

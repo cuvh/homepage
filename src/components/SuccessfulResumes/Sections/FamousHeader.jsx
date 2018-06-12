@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Track from "utils/Track";
 
 export default function FamousHeader({
     name,
@@ -11,14 +12,15 @@ export default function FamousHeader({
         <section className="famous-resume--head relative">
             <div className="famous-resume--head-image">
                 <Img
-                sizes={cover.childImageSharp.sizes}
-                style={{
-                    position: "absolute",
-                    left: 0,
-                    top: 0,
-                    width: "100%",
-                    height: "100%"
-                }}
+                    sizes={cover.childImageSharp.sizes}
+                    style={{
+                        position: "absolute",
+                        left: 0,
+                        top: 0,
+                        width: "100%",
+                        height: "100%"
+                    }}
+                    alt={`${name}'s photo`}
                 />
             </div>
             

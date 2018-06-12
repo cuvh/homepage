@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Img from "gatsby-image";
 import Helmet from "react-helmet";
+import Track from "utils/Track";
 
 import spotifyLogo from "data/successful-resumes/company-logos/2x-spotify-logo.png";
 
@@ -44,7 +45,7 @@ export default function FeaturedResume({ data }) {
                              resolutions={
                                 data.mainImage.childImageSharp.resolutions
                              }
-                             alt="Hannah Mills’s story"
+                             alt="Sam's photo"
                             />
                             <span className="resume--highlighted-preview">
                                 <Img
@@ -52,23 +53,17 @@ export default function FeaturedResume({ data }) {
                                     data.mainResumePreview.childImageSharp
                                         .resolutions
                                  }
+                                 alt="Sam's resume preview"
                                 />
 
                                 <Modal
-                                 trigger={
-                                    <a
-                                     className="btn-resume-preview"
-                                     data-track="event"
-                                     data-category="Successful Resumes"
-                                     data-action="Click Full Resume"
-                                     data-label="Casey Neistat"
-                                    />
-                                 }
+                                 trigger={<a className="btn-resume-preview" />}
                                 >
                                     <ResumePreview
                                      resumePageOne={data.mainResumeOne}
                                      resumePageTwo={data.mainResumeTwo}
                                      socials={false}
+                                     altText="Sam's resume"
                                     />
                                 </Modal>
                             </span>
@@ -124,11 +119,19 @@ export default function FeaturedResume({ data }) {
                         <span className="resumes--preview-holder">
                             <Modal
                              trigger={
-                                <a>
+                                <a
+                                 onClick={() =>
+                                    Track(
+                                        "Successful Resumes",
+                                        "Expand Resume",
+                                        `Featured Casey Neistat`
+                                    )}
+                                >
                                     <Img
                                      resolutions={
                                         data.famousResume.childImageSharp.small
                                      }
+                                     alt="Casey's resume preview"
                                     />
                                     <button className="btn-resume-preview" />
                                 </a>
@@ -137,6 +140,7 @@ export default function FeaturedResume({ data }) {
                                 <ResumePreview
                                  resumePageOne={data.famousResume}
                                  socials={false}
+                                 altText="Casey's resume"
                                 />
                             </Modal>
                         </span>

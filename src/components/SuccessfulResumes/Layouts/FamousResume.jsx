@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from "classnames";
+import Track from "utils/Track";
 
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
@@ -43,7 +44,15 @@ export default function FamousResume({
 
             <Modal
              trigger={
-                <a className="component--fast-resume-preview">
+                <a
+                 onClick={() =>
+                    Track(
+                        "Successful Resumes",
+                        "Expand Resume",
+                        `${data.name} - Sticky click`
+                    )}
+                 className="component--fast-resume-preview"
+                >
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
@@ -54,7 +63,7 @@ export default function FamousResume({
                  facebookText={data.facebookText}
                  twitterText={data.twitterText}
                  url={data.url}
-                 altText={data.altText}
+                 altText={`${data.name}'s resume`}
                 />
             </Modal>
             <main className="famous-resume--container">
@@ -64,6 +73,7 @@ export default function FamousResume({
                  })}
                 >
                     <FamousHeader
+                     preview={preview}
                      name={data.name}
                      cover={data.cover}
                      description={data.pageDescription}
@@ -77,7 +87,10 @@ export default function FamousResume({
                     if (item.section === "LifeProject") {
                         return (
                             <div key={item.section}>
-                                <LifeProject {...item} />
+                                <LifeProject
+                                 altText={`${data.name}'s life project`}
+                                 {...item}
+                                />
                                 <Experience {...item} />
                             </div>
                         );
@@ -90,6 +103,7 @@ export default function FamousResume({
                         return (
                             <Awards
                              key={item.section}
+                             altText={`${data.name} feeling proud`}
                              {...item}
                             />
                         );
@@ -131,6 +145,7 @@ export default function FamousResume({
                  facebookText={data.facebookText}
                  twitterText={data.twitterText}
                  url={data.url}
+                 altText={`${data.name}'s resume`}
                 />
             </main>
         </DefaultLayout>

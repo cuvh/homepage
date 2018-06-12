@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import Subscribe from "utils/Subscribe";
+import Track from "utils/Track";
 
 export default class SubscribePanel extends React.PureComponent {
 	state = {
@@ -23,6 +24,11 @@ export default class SubscribePanel extends React.PureComponent {
 				subscribed: true,
 				sending: false
 			});
+			Track(
+				"Successful Resumes",
+				"Subscribe to Newsletter",
+				"Main Page - Bottom"
+			);
 		} catch (e) {
 			this.setState({
 				failed: true,
@@ -39,7 +45,7 @@ export default class SubscribePanel extends React.PureComponent {
 				<div className="component--subscription-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
 					<Img
 					 resolutions={image.childImageSharp.resolutions}
-					 alt="Subscription Illustration"
+					 alt="Man becoming inspired"
 					/>
 				</div>
 				<div className="component--subscription-form Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
