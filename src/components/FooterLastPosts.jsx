@@ -4,7 +4,7 @@ const ITEMS_COUNT = 2;
 
 export default class FooterLastPosts extends React.PureComponent {
 	state = {
-		posts: []
+		posts: [],
 	};
 
 	async componentDidMount() {
@@ -12,7 +12,7 @@ export default class FooterLastPosts extends React.PureComponent {
 		const data = await response.json();
 
 		this.setState({
-			posts: data.items.slice(0, ITEMS_COUNT)
+			posts: data.items.slice(0, ITEMS_COUNT),
 		});
 	}
 
@@ -21,9 +21,7 @@ export default class FooterLastPosts extends React.PureComponent {
 
 		return (
 			<div className="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6 hidden-xs">
-				<div className="footer-title m-top-2 m-bottom-4">
-					From the blog
-				</div>
+				<div className="footer-title m-top-2 m-bottom-4">From the blog</div>
 				<ul className="list-unstyled homepage-blog-latest-short">
 					{posts.length === 0 ? (
 						<li className="articles-short">Loading..</li>
@@ -35,8 +33,7 @@ export default class FooterLastPosts extends React.PureComponent {
 									 key={item.url}
 									 target="_blank"
 									 className="inline-block m-bottom-1"
-									 href={item.url}
-									>
+									 href={item.url}>
 										{item.title}
 									</a>
 								))}
@@ -48,7 +45,7 @@ export default class FooterLastPosts extends React.PureComponent {
 						<a
 						 className="footer-arrow-link"
 						 href="https://blog.enhancv.com/"
-						>
+						 target="_blank">
 							Read more &nbsp;&rarr;
 						</a>
 					</li>

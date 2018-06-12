@@ -23,9 +23,7 @@ import Modal from "components/Modal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({
-    data: { famousResumesJson: { ...data }, list }
-}) {
+export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -41,12 +39,11 @@ export default function FamousResume({
 
             <Modal
              trigger={
-                <a class="component--fast-resume-preview">
+                <a className="component--fast-resume-preview">
                     <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
                     <button className="btn-resume-preview" />
                 </a>
-             }
-            >
+             }>
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  facebookText={data.facebookText}
@@ -75,10 +72,7 @@ export default function FamousResume({
                         );
                     }
 
-                    if (
-                        item.section === "MostProudOf" ||
-                        item.section === "Achievements"
-                    ) {
+                    if (item.section === "MostProudOf" || item.section === "Achievements") {
                         return (
                             <Awards
                              key={item.section}

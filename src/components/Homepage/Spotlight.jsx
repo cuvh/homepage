@@ -19,7 +19,7 @@ export default function SportLight() {
 								top: "13px",
 								left: "3px",
 								background: "white",
-								zIndex: 1
+								zIndex: 1,
 							 }}
 							 src={spotlightBackImg}
 							/>
@@ -31,7 +31,7 @@ export default function SportLight() {
 								position: "relative",
 								top: "23px",
 								left: "64%",
-								zIndex: 2
+								zIndex: 2,
 							 }}
 							 src={spotlightImg}
 							/>
@@ -39,13 +39,10 @@ export default function SportLight() {
 					</div>
 					<div className="Grid Grid--alignCenter Grid-cell--xs-12 Grid-cell--sm-5 spotlight-text">
 						<div className="m-left-1 text-center-xs">
-							<h2 className="m-top-no">
-								Put your achievements in the spotlight
-							</h2>
+							<h2 className="m-top-no">Put your achievements in the spotlight</h2>
 							<p className="text-muted m-top-2 m-bottom-7">
-								With most resumes, the key things don't come
-								across. <br />Bring your most important
-								accomplishments forward and show what you’re
+								With most resumes, the key things don't come across. <br />Bring
+								your most important accomplishments forward and show what you’re
 								capable of achieving.
 							</p>
 							<a
@@ -53,9 +50,8 @@ export default function SportLight() {
 							 data-category="Homepage"
 							 data-action="Click New Features"
 							 data-label="Show them what you have to offer"
-							 href="{{ urls.builder }}"
-							 className="feature-link"
-							>
+							 href="https://app.enhancv.com"
+							 className="feature-link">
 								Show them what you have to offer &nbsp;&rarr;
 							</a>
 						</div>

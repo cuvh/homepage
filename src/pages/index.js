@@ -26,8 +26,8 @@ const IndexPage = () => (
 			{
 				name: "description",
 				content:
-					"Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
-			}
+					"Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview.",
+			},
 		 ]}
 		/>
 		<div className="homepage-intro m-top-3">
@@ -49,23 +49,21 @@ const IndexPage = () => (
 				</div>
 				<div>
 					<a
-					 href="{{ urls.builder }}"
+					 href="https://app.enhancv.com"
 					 data-track="event"
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2"
-					>
+					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2">
 						Create Your Resume
 					</a>
 					<a
-					 href="{{ urls.builder }}"
+					 href="https://app.enhancv.com"
 					 data-track="event"
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2"
-					>
+					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2">
 						Create Your Resume
 					</a>
 				</div>
@@ -113,32 +111,28 @@ const IndexPage = () => (
 
 				<div className="m-top-5 m-bottom-6 hidden-xs hidden-sm">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice
-						companies — read more about their journey to the perfect
-						job&nbsp;
+						Our users got noticed and hired by their top choice companies — read more
+						about their journey to the perfect job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link"
-						>
+						 className="feature-link">
 							here
 						</Link>.
 					</p>
 				</div>
 				<div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice
-						companies — read more about their journey to the perfect
-						job&nbsp;
+						Our users got noticed and hired by their top choice companies — read more
+						about their journey to the perfect job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link"
-						>
+						 className="feature-link">
 							here
 						</Link>.
 					</p>
