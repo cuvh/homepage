@@ -43,7 +43,7 @@ export default function Footer() {
 							<ul className="list-unstyled">
 								<li>
 									<a
-									 href="{{ urls.faq }}"
+									 href="https://help.enhancv.com/"
 									 target="_blank"
 									>
 										FAQ
@@ -97,7 +97,7 @@ export default function Footer() {
 							<div className="Grid social-links-container">
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.facebook }}"
+									 href="https://facebook.com/enhancv"
 									 className="social-link"
 									>
 										<img src={facebookImg} />
@@ -105,7 +105,7 @@ export default function Footer() {
 								</div>
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.instagram }}"
+									 href="https://www.instagram.com/enhancv"
 									 className="social-link"
 									>
 										<img src={instagramImg} />
@@ -113,7 +113,7 @@ export default function Footer() {
 								</div>
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.twitter }}"
+									 href="https://twitter.com/enhancv"
 									 className="social-link"
 									>
 										<img src={twitterImg} />
@@ -133,7 +133,7 @@ export default function Footer() {
 							<div className="Grid Grid--justifyCenter">
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.facebook }}"
+									 href="https://facebook.com/enhancv"
 									 className="social-link"
 									>
 										<img src={facebookImg} />
@@ -141,7 +141,7 @@ export default function Footer() {
 								</div>
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.instagram }}"
+									 href="https://www.instagram.com/enhancv"
 									 className="social-link"
 									>
 										<img src={instagramImg} />
@@ -149,7 +149,7 @@ export default function Footer() {
 								</div>
 								<div className="Grid-cell--sm-4">
 									<a
-									 href="{{ urls.twitter }}"
+									 href="https://twitter.com/enhancv"
 									 className="social-link"
 									>
 										<img src={twitterImg} />
