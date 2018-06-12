@@ -3,10 +3,13 @@ import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
 import Helmet from "react-helmet";
-import StoreService from "utils/StoreService";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 import srImg from "../assets/img/msg-SR-Emoji@3x.svg";
+
+// $(document).on("click", '[data-toggle="navbar"]', function() {
+//     $("body").toggleClass("navbar-mobile-active");
+// });
 
 class Header extends React.PureComponent {
     state = {
@@ -17,7 +20,7 @@ class Header extends React.PureComponent {
         super(props);
         this.onScroll = this.scroll.bind(this);
         this.state = {
-            isMsgShowed: StoreService.getItem("isMsgShowed"),
+            isMsgShowed: localStorage.getItem("isMsgShowed"),
             mobileNavOpened: "",
         };
     }
@@ -34,7 +37,7 @@ class Header extends React.PureComponent {
         this.setState({
             isMsgShowed: true,
         });
-        StoreService.setItem("isMsgShowed", true);
+        localStorage.setItem("isMsgShowed", true);
     }
 
     scroll(e) {
@@ -63,40 +66,14 @@ class Header extends React.PureComponent {
                     class: this.state.mobileNavOpened,
                  }}
                 />
-                <div
-                 className={!this.state.isMsgShowed ? "navigation-spacer-sr" : "navigation-spacer"}
-                />
+                <div className="navigation-spacer" />
 
                 <nav
                  className={classnames("navbar navbar-default navbar-sticky navbar-static-top", {
                     "navbar-stick": this.state.stick,
                  })}>
-                    {!this.state.isMsgShowed ? (
-                        <div className="Grid Grid--alignCenter msg-SR Grid--justifyCenter">
-                            <Link
-                             className="col-sm-10 col-xs-12 p-sm-bottom-1 p-sm-top-1"
-                             to="/successful-resumes"
-                             onClick={() => this.onClickHiddenModal()}>
-                                <img src={srImg} />
-                                Hey, we just launched Successful Resumes — real-life resumes that
-                                got people like you hired at top companies.
-                                <span> Check it out &nbsp;&rarr;</span>
-                            </Link>
-                            <button
-                             type="button"
-                             className="close m-sm-bottom-1 m-right-2"
-                             onClick={() => this.onClickHiddenModal()}>
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                    ) : null}
                     <div className="navbar-spacing">
-                        <div
-                         className={
-                            !this.state.isMsgShowed
-                                ? "navbar-header navbar-header-sr"
-                                : "navbar-header"
-                         }>
+                        <div className="navbar-header">
                             <button
                              type="button"
                              onClick={() => this.toggleNav()}
