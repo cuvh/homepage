@@ -67,7 +67,7 @@ export default class SubscribePanel extends React.PureComponent {
 								<button
 								 disabled={this.state.sending}
 								 type="submit"
-								 className="component--subscription-button btn btn-big btn-primary cta-button Grid-cell--md-4"
+								 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4"
 								>
 									{this.state.sending
 										? "Subscribing.."

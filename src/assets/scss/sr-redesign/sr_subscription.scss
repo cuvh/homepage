@@ -15,12 +15,26 @@
             display:none;
             visibility: hidden;
         }
+        .gatsby-image-outer-wrapper,
+        .gatsby-image-wrapper,
+        .gatsby-image-outer-wrapper img:nth-child(2) {
+            max-width: 100% !important;
+            height: auto !important;
+            overflow: inherit !important;
+        }
+
+        .gatsby-image-outer-wrapper,
+        .gatsby-image-outer-wrapper img:nth-child(2) {
+            position: inherit !important;
+            }
+
         img {
             width:100%;
-            margin-bottom: -39px;
+            margin-bottom: -39px !important;
             position: relative;
-            left:-$sr_global-offset-value * 9;
+            left:-$sr_global-offset-value * 9 !important;
         }
+    
     }
 
     &--subscription-field {

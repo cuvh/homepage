@@ -53,6 +53,11 @@
     }
 }
 
+.btn {
+    font-weight:600;
+    border-radius:6px;
+}
+
 .btn.btn-default {
     @include button-explicit(
         $btn-default-color,
@@ -67,6 +72,13 @@
         lighten($brand-primary, 50%),
         $brand-primary
     );
+}
+
+.btn.btn-big {
+    font-size:$font-size-large;
+    font-weight: 600;
+    min-width:245px;
+    text-transform:uppercase;
 }
 
 .btn.btn-muted {

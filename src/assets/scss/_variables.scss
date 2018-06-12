@@ -394,7 +394,7 @@ $navbar-default-border: white;
 $navbar-default-link-color: #333 !default;
 $navbar-default-link-hover-color: $btn-secondary-color !default;
 $navbar-default-link-hover-bg: transparent !default;
-$navbar-default-link-active-color: #bbb !default;
+$navbar-default-link-active-color: #8C7CDB !default;
 $navbar-default-link-active-bg: transparent !default;
 $navbar-default-link-disabled-color: #ccc !default;
 $navbar-default-link-disabled-bg: transparent !default;
@@ -615,7 +615,7 @@ $modal-content-border-color: transparent;
 $modal-content-fallback-border-color: #fff;
 
 //** Modal backdrop background color
-$modal-backdrop-bg: #7d7d7d;
+$modal-backdrop-bg: sr_main-color;
 //** Modal backdrop opacity
 $modal-backdrop-opacity: 0.9;
 //** Modal header border color

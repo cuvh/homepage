@@ -26,7 +26,7 @@ export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
     return (
-        <DefaultLayout>
+        <DefaultLayout className="navbar-light">
             <Meta title={data.name} />
             <SocialBar />
             <FamousResumePreview />

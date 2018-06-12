@@ -76,9 +76,19 @@
 .modal {
     display: block !important;
     padding-left: 0px;
-    background-color: rgba(128, 128, 128, 0.9);
+    background-color: rgba(56, 67, 71, 0.9);
     overflow-x: hidden;
     overflow-y: auto;
+
+    button.close {
+        background:transparent;
+        padding: 6px 8px;
+        border-radius: 4px;
+        opacity: 1;
+        i {
+            color: #fff;
+        }
+    }
 }
 
 .member-modal {
