@@ -22,7 +22,7 @@ export default function resources({ data }) {
             />
             <main>  
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
-                        <div className="Grid">
+                        <div className="Grid resources--head-wrap">
                             <div className="Grid-cell--md-5 Grid-cell--xs-12">
                                 <div class="resources--head-image">
                                     <Img
@@ -31,6 +31,7 @@ export default function resources({ data }) {
                                         }
                                         alt="Who is this good for? | Image"
                                     />
+                                    <button class="btn-resume-preview"></button>
                                 </div>
                             </div>
                             <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
@@ -65,7 +66,7 @@ export default function resources({ data }) {
                                     <p class="p-medium">Apply these learnings to create a resume that’s more honest and impactful.</p>
                                 </article>
                             </div>
-                            <div className="famous-resume--illustration-holder Grid-cell--md-5 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10">
+                            <div className="famous-resume--illustration-holder Grid-cell--md-5 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10 responsive-gatsby">
                                 <Img
                                 resolutions={
                                     data.ladderImage.childImageSharp.resolutions
@@ -78,7 +79,7 @@ export default function resources({ data }) {
                 </section>
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                        <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center">
+                        <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center responsive-gatsby">
                                 <Img
                                 resolutions={
                                     data.peopleImage.childImageSharp.resolutions
@@ -98,7 +99,7 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
                         <div className = "component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10">
+                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby">
                                     <Img
                                     resolutions={
                                         data.discoverImage.childImageSharp.resolutions

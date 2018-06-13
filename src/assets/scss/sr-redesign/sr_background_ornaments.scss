@@ -203,3 +203,34 @@
         background-image: url("../img/new-successful-resumes/elements/feeling-light.png");
     }
 }
+
+.resources {
+    &--head {
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            width: 765px;
+            height: 525px;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 100%;
+            position: absolute;
+            z-index: -1; // For better loading performance on mobile >
+            @media screen and (min-width: $screen-sm) {
+                top: -24px;
+                left: -90px;
+                background-image: url("../img/resources/header_background.png");
+            }
+            @media screen and (max-width: $screen-sm-max) {
+                top: 0;
+                left: -15px;
+                width: calc(100% + 30px);
+                height: 100%;
+                background-position: center;
+                background-size: auto 100%;
+                background-image: url("../img/resources/header_background_mobile.png");
+            }
+        }
+    }
+}
