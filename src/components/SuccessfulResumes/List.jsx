@@ -111,19 +111,23 @@ export default class List extends React.PureComponent {
                                     <h5 className="resumes--person-jobtitle">
                                         {node.tags.join(", ")}
                                     </h5>
-                                    <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
-                                        <span className="label">Hired at</span>
-                                        <Img
-                                         style={{
-                                            display: "inline-block"
-                                         }}
-                                         className="m-top-1"
-                                         resolutions={
-                                            node.companyLogo.childImageSharp
-                                                .resolutions
-                                         }
-                                        />
-                                    </div>
+                                    {node.companyLogo ? (
+                                        <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
+                                            <span className="label">
+                                                Hired at
+                                            </span>
+                                            <Img
+                                             style={{
+                                                display: "inline-block"
+                                             }}
+                                             className="m-top-1"
+                                             resolutions={
+                                                node.companyLogo.childImageSharp
+                                                    .resolutions
+                                             }
+                                            />
+                                        </div>
+                                    ) : null}
                                 </div>
                             </div>
                             <div className="resumes--hovered">

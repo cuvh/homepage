@@ -116,25 +116,29 @@ export default class SingleResume extends React.PureComponent {
                                         <span className="label m-bottom-3">
                                             {data.position}
                                         </span>
-                                        <div
-                                         style={{
-                                            width: "100%",
-                                            display: "inline-flex",
-                                            flexWrap: "wrap",
-                                            alignItems: "center"
-                                         }}
-                                        >
-                                            <span className="label hired-label m-md-right-2">
-                                                Hired at
-                                            </span>
-                                            <Img
-                                             resolutions={
-                                                data.companyLogo.childImageSharp
-                                                    .resolutions
-                                             }
-                                             alt="Company logo"
-                                            />
-                                        </div>
+
+                                        {data.companyLogo ? (
+                                            <div
+                                             style={{
+                                                width: "100%",
+                                                display: "inline-flex",
+                                                flexWrap: "wrap",
+                                                alignItems: "center"
+                                             }}
+                                            >
+                                                <span className="label hired-label m-md-right-2">
+                                                    Hired at
+                                                </span>
+                                                <Img
+                                                 resolutions={
+                                                    data.companyLogo
+                                                        .childImageSharp
+                                                        .resolutions
+                                                 }
+                                                 alt="Company logo"
+                                                />
+                                            </div>
+                                        ) : null}
                                     </div>
                                 </div>
                             </div>
