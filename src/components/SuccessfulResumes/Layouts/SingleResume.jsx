@@ -26,8 +26,6 @@ export default class SingleResume extends React.PureComponent {
         const data = this.props.data.userResumesJson;
         const allResumes = this.props.data.allUserResumesJson;
 
-        console.log(data.steps);
-
         const resumePageOne = data.resumes[0].image;
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
@@ -303,14 +301,16 @@ export default class SingleResume extends React.PureComponent {
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
-
-                                    <FeelingInspired
-                                     dark={false}
-                                     name={data.name}
-                                    />
                                 </div>
                             </section>
                         ) : null}
+
+                        <div className="resume-article">
+                            <FeelingInspired
+                             dark={false}
+                             name={data.name}
+                            />
+                        </div>
 
                         <SubscribeNoImage />
                         <FooterList list={allResumes.edges} />
@@ -335,6 +335,8 @@ export const pageQuery = graphql`
             url
             stepsTitle
             stepsDescription
+            facebookText
+            twitterText
             steps {
                 title
                 description
