@@ -27,18 +27,18 @@ export default class OpenModal extends React.PureComponent {
 
     onBackdropClick(event) {
         if (event.target === this.refs.modal) {
-            this.setState({
-                opened: false
-            });
+            this.onClose();
         }
     }
 
     onOpen() {
         this.setState({ opened: true });
+        document.body.classList.add("no-scroll");
     }
 
     onClose() {
         this.setState({ opened: false });
+        document.body.classList.remove("no-scroll");
     }
 
     render() {
