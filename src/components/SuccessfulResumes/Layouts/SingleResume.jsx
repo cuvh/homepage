@@ -295,14 +295,16 @@ export default class SingleResume extends React.PureComponent {
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
-
-                                    <FeelingInspired
-                                     dark={false}
-                                     name={data.name}
-                                    />
                                 </div>
                             </section>
                         ) : null}
+
+                        <div className="resume-article">
+                            <FeelingInspired
+                             dark={false}
+                             name={data.name}
+                            />
+                        </div>
 
                         <SubscribeNoImage />
                         <FooterList list={allResumes.edges} />
@@ -326,6 +328,8 @@ export const pageQuery = graphql`
             url
             stepsTitle
             stepsDescription
+            facebookText
+            twitterText
             steps {
                 title
                 description
