@@ -269,6 +269,13 @@ h2 {
 		font-size: 68px;
 		line-height: 80px;
 	}
+
+	&.h1-medium {
+		@media screen and (min-width: $screen-md) {
+			font-size:58px;
+			line-height:58px;
+		}
+	}
 } // H2 Secondary Title
 .h2 {
 	font-family: $headings-font-family;
