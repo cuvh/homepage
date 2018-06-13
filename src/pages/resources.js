@@ -53,7 +53,8 @@ export default function resources({ data }) {
                                 </div>
                                 <a
                                  target="_blank"
-                                 href="#"
+                                 href={data.shapeStory.publicURL}
+                                 download
                                  className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
                                 >
                                     DOWNLOAD FOR FREE
@@ -127,7 +128,8 @@ export default function resources({ data }) {
                             </p>
                             <a
                              target="_blank"
-                             href="#"
+                             href={data.shapeStory.publicURL}
+                             download
                              className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
                             >
                                 DOWNLOAD FOR FREE
@@ -161,7 +163,8 @@ export default function resources({ data }) {
                                 </p>
                                 <a
                                  target="_blank"
-                                 href="#"
+                                 href={data.defineSuccess.publicURL}
+                                 download
                                  className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
                                 >
                                     TRY IT FOR YOURSELF
@@ -301,6 +304,16 @@ export const pageQuery = graphql`
                     ...GatsbyImageSharpResolutions
                 }
             }
+        }
+        defineSuccess: file(
+            relativePath: { eq: "worksheets/define_success.pdf" }
+        ) {
+            publicURL
+        }
+        shapeStory: file(
+            relativePath: { eq: "worksheets/shape_of_story.pdf" }
+        ) {
+            publicURL
         }
         linkedin: file(relativePath: { eq: "resources/icons/linkdin@2x.png" }) {
             childImageSharp {
