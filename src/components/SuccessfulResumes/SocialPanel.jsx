@@ -1,65 +1,60 @@
 import React from "react";
+import classnames from "classnames";
+import Track from "utils/Track";
+import StoreService from "utils/StoreService";
+import ShareButtons from "./ShareButtons";
 
-export default function SocialPanel({
-    className,
-    url,
-    facebookText,
-    twitterText
-}) {
-    return (
-        <div className={`component--social-buttons ${className}`}>
-            <span className="label hidden-xs hidden-sm">Share</span>
-            <div className="social-buttons-wrapper">
-                <a
-                 href={`https://www.facebook.com/sharer.php?u=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&message=${encodeURI(facebookText)}`}
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="Facebook"
-                 className="component--social-button btn-facebook"
-                 target="_blank"
-                >
-                    <i className="icon-facebook pull-right" />
-                </a>
+export default class SocialPanel extends React.PureComponent {
+    constructor(props) {
+        super(props);
 
-                <a
-                 href={`https://twitter.com/share?url=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&text=${encodeURI(twitterText)}`}
-                 target="_blank"
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="Twitter"
-                 className="component--social-button btn-twitter"
-                >
-                    <i className="icon-twitter pull-right" />
-                </a>
+        this.state = {
+            active: StoreService.getItem(`wow-${this.props.url}`)
+        };
+    }
 
-                <a
-                 href={`https://www.linkedin.com/shareArticle?mini=true&url=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&text=${encodeURI(facebookText)}`}
-                 target="_blank"
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="LinkedIn"
-                 className="component--social-button btn-linkedin"
-                >
-                    <i className="icon-linkedin-alt pull-right" />
-                </a>
+    onClick(event) {
+        event.preventDefault();
+
+        const newState = !this.state.active;
+        this.setState({
+            active: newState
+        });
+
+        StoreService.setItem(`wow-${this.props.url}`, newState);
+
+        Track(
+            "Successful Resumes",
+            "WOW Button - Modal",
+            `${this.props.url} - ${newState}`
+        );
+    }
+
+    render() {
+        const { className, url, facebookText, twitterText } = this.props;
+        const { active } = this.state;
+
+        return (
+            <div className={`component--social-buttons ${className}`}>
+                <span className="label hidden-xs hidden-sm">Share</span>
+                <div className="social-buttons-wrapper">
+                    <ShareButtons
+                     {...this.props}
+                     from="modal"
+                    />
+                </div>
+                <div className="btn-wow-wrapper">
+                    <span className="line" />
+                    <span className="label m-sm-right-2">Appreciate</span>
+                    <a
+                     href="#"
+                     onClick={event => this.onClick(event)}
+                     className={classnames("btn-wow", {
+                        active
+                     })}
+                    />
+                </div>
             </div>
-            <div className="btn-wow-wrapper">
-                <span className="line" />
-                <span className="label m-sm-right-2">Appreciate</span>
-                <a
-                 href="#"
-                 className="btn-wow"
-                />
-            </div>
-        </div>
-    );
+        );
+    }
 }

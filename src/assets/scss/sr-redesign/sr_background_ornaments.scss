@@ -151,12 +151,15 @@
 // Socials Wow button
 .btn-wow {
     background-image: url("../img/new-successful-resumes/icons/wow.svg");
-    &:hover {
+    &:hover,
+    &.active {
         background-image: url("../img/new-successful-resumes/icons/wow_hover.svg");
     }
+
     &.btn-wow-reverse {
         background-image: url("../img/new-successful-resumes/icons/wow_hover.svg");
-        &:hover {
+        &:hover,
+        &.active {
             background-image: url("../img/new-successful-resumes/icons/wow.svg");
         }
     }
