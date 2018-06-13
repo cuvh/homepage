@@ -10,7 +10,7 @@ import DefaultLayout from "layouts/DefaultLayout";
 
 export default function resources({ data }) {
     return (
-        <DefaultLayout className="resumedetail">
+        <DefaultLayout className="resumedetail hasBubbulesBackground">
             <Helmet
              title="Learning Through Struggles"
              meta={[
@@ -25,7 +25,7 @@ export default function resources({ data }) {
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
                         <div className="Grid resources--head-wrap">
                             <div className="Grid-cell--md-5 Grid-cell--xs-12">
-                                <div class="resources--head-image">
+                                < div class = "resources--head-image resources--modal-button">
                                     <Img
                                         resolutions={
                                             data.resourcesHeaderImage.childImageSharp.resolutions
@@ -141,13 +141,14 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
                         <div className = "component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby">
+                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby resources--modal-button isModalButtonDiscover">
                                     <Img
                                     resolutions={
                                         data.discoverImage.childImageSharp.resolutions
                                     }
                                     alt="Discover Your Definition of Success | Image"
                                     />
+                                    <button class="btn-resume-preview"></button>
                             </div>
                             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-10 p-md-left-10">
                                 <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
@@ -255,9 +256,10 @@ export default function resources({ data }) {
                     </div>
                 </section>
             </main>
-
-            <SubscribeNoImage />
-            <FooterList list={data.allUserResumesJson.edges} />
+            <div className="container">                        
+                <SubscribeNoImage />
+                <FooterList list={data.allUserResumesJson.edges} />
+            </div>
         </DefaultLayout>
     );
 }
@@ -373,7 +375,7 @@ export const pageQuery = graphql`
             }
         }
         resourcesHeaderImage: file(
-            relativePath: { eq: "resources/shape_of_Story_worksheet_main.png" }
+            relativePath: { eq: "resources/worksheet_preview_up@2x.png" }
         ) {
             childImageSharp {
                 resolutions(width: 572, height: 454) {
