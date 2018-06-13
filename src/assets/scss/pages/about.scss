@@ -5,23 +5,11 @@ $img-cover-2: "../img/about/hero@2x.jpg";
     padding-top: 340px;
     padding-bottom: 120px;
     color: white;
-    background: linear-gradient(
-            180deg,
-            rgba($brand-primary, 0.3) 0%,
-            $brand-primary 100%
-        ),
+    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
         url($img-cover);
-    background: linear-gradient(
-            180deg,
-            rgba($brand-primary, 0.3) 0%,
-            $brand-primary 100%
-        ),
+    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
         -webkit-image-set(url($img-cover) 1x, url($img-cover-2) 2x);
-    background: linear-gradient(
-            180deg,
-            rgba($brand-primary, 0.3) 0%,
-            $brand-primary 100%
-        ),
+    background: linear-gradient(180deg, rgba($brand-primary, 0.3) 0%, $brand-primary 100%),
         image-set(url($img-cover) 1x, url($img-cover-2) 2x);
     background-size: cover;
     background-position: center;
@@ -41,9 +29,12 @@ $img-cover-2: "../img/about/hero@2x.jpg";
 }
 .about-value {
     .about-value-number {
-        padding: 10px 14px;
         border: 1px solid lighten($border-color, 10%);
+        padding: 6px 8px;
+        width: 40px;
         border-radius: 50%;
+        display: block;
+        margin: auto;
     }
 }
 
