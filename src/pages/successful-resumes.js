@@ -38,7 +38,7 @@ export default function FeaturedResume({ data }) {
                     </h5>
                 </section>
 
-                <section className="resume--highlighted m-sm-top-4 m-md-top-5 m-sm-bottom-4 m-md-bottom-10">
+                <section className="animate-in resume--highlighted m-sm-top-4 m-md-top-5 m-sm-bottom-4 m-md-bottom-10">
                     <div className="Grid p-xs-top-4 p-md-top-5">
                         <div className="resume--highlighted-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
                             <Img
