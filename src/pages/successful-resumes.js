@@ -26,6 +26,7 @@ export default function FeaturedResume({ data }) {
             <Meta
              title="Real Resume Examples that Got People Hires | Enhancv"
              description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
+             metaImage={data.shareImage.publicURL}
             />
             <main className="container">
                 <section className="page--head">
@@ -324,6 +325,11 @@ export const pageQuery = graphql`
                     ...GatsbyImageSharpResolutions
                 }
             }
+        }
+        shareImage: file(
+            relativePath: { eq: "successful-resumes/sr-share.png" }
+        ) {
+            publicURL
         }
     }
 `;
