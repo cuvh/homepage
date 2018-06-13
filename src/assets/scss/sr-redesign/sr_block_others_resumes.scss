@@ -3,6 +3,7 @@
         position: relative;
         width: 100%;
         display: inline-block;
+        z-index:1;
         // Overwriting default box style
         .resumes--box {
             position: relative;

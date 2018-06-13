@@ -17,10 +17,16 @@
     &--head-image {
         position: relative;
         @media screen and (min-width: $screen-sm) {
-            left: -80px;
+            left: -100px;
+            .gatsby-image-outer-wrapper  {
+                transform: scale(0.90);
+            }
         }
-
-
+        .btn-resume-preview {
+            width:64px;
+            height:64px;
+            background-size:cover;
+        }
 
         @media screen and (max-width: $screen-sm-max) {
             .gatsby-image-outer-wrapper,
@@ -62,8 +68,11 @@
         }
         .btn-resume-preview {
             position: absolute;
-            bottom: 4%;
-            right: -18%;
+            bottom: 0%;
+            right: -19%;
+            @media screen and (max-width: $screen-sm-max) {
+                display: none;
+            }
        
             @media screen and (min-width: $screen-sm) {
                 width:64px;
