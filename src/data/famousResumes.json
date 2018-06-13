@@ -1075,27 +1075,27 @@
                 "description": "His typical day",
                 "data": [
                     {
-                        "backgroundColor": "5db188",
+                        "backgroundColor": "#5db188",
                         "title": "Obsessing over design"
                     },
                     {
-                        "backgroundColor": "66c094",
+                        "backgroundColor": "#66c094",
                         "title": "Taking long walks"
                     },
                     {
-                        "backgroundColor": "7ed2a9",
+                        "backgroundColor": "#7ed2a9",
                         "title": "Thinking about the next “one more thing”"
                     },
                     {
-                        "backgroundColor": "a7e1c5",
+                        "backgroundColor": "#a7e1c5",
                         "title": "Meditations"
                     },
                     {
-                        "backgroundColor": "c4f1db",
+                        "backgroundColor": "#c4f1db",
                         "title": "Fasting and trying out diets"
                     },
                     {
-                        "backgroundColor": "c8f0dd",
+                        "backgroundColor": "#c8f0dd",
                         "title": "Checking out what Xerox PARC is up to these days"
                     }
                 ]
