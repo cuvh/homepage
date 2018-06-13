@@ -335,6 +335,8 @@ export const pageQuery = graphql`
             url
             stepsTitle
             stepsDescription
+            facebookText
+            twitterText
             steps {
                 title
                 description
