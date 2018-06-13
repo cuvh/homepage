@@ -29,19 +29,22 @@
 
         &.emotion-smiling {
             background-position: 0 -38px;
-            &:hover {
+            &:hover,
+            &.active {
                 background-position: -38px -38px;
             }
         }
         &.emotion-neutral {
             background-position: 0px 0px;
-            &:hover {
+            &:hover,
+            &.active {
                 background-position: -38px 0px;
             }
         }
         &.emotion-happy {
             background-position: 0 -76px;
-            &:hover {
+            &:hover,
+            &.active {
                 background-position: -38px -76px;
             }
         }

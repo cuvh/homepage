@@ -1,16 +1,14 @@
 import React from "react";
 import Img from "gatsby-image";
 import Track from "utils/Track";
+import Modal from "components/Modal";
 
-import imgPlaceholder from "assets/img/new-successful-resumes/placeholders/img-placeholder.png";
+import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 import FooterList from "components/SuccessfulResumes/FooterList";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
-import Modal from "components/Modal";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
-import herResume from "assets/img/new-successful-resumes/placeholders/her-resume.png";
 
 import Meta from "components/Meta";
-
 import DefaultLayout from "layouts/DefaultLayout";
 
 import samOne from "assets/img/new-successful-resumes/problems@2.png";
@@ -298,38 +296,10 @@ export default class SingleResume extends React.PureComponent {
                                         />
                                     </Modal>
 
-                                    <div className="Grid--gutter-md component--feeling feeling-box-light m-md-top-10 m-sm-top-4 m-sm-right-1 m-sm-left-1">
-                                        <span className="m-right-1 m-left-1">
-                                            Feeling inspired?
-                                        </span>{" "}
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Smiling`
-                                            )}
-                                         className="component--feeling-emotion emotion-smiling"
-                                        />
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Neutral`
-                                            )}
-                                         className="component--feeling-emotion emotion-neutral"
-                                        />
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Happy`
-                                            )}
-                                         className="component--feeling-emotion emotion-happy"
-                                        />
-                                    </div>
+                                    <FeelingInspired
+                                     dark={false}
+                                     name={data.name}
+                                    />
                                 </div>
                             </section>
                         ) : null}
