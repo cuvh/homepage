@@ -123,6 +123,13 @@ class Header extends React.PureComponent {
                                     >
                                         <Link to="/pricing">Pricing</Link>
                                     </li>
+                                    <li
+                                     className={classnames({
+                                        active: pathname === "/resources"
+                                     })}
+                                    >
+                                        <Link to="/resources">Resources</Link>
+                                    </li>
                                     <li>
                                         <a
                                          href="https://blog.enhancv.com/"
@@ -170,6 +177,13 @@ class Header extends React.PureComponent {
                                     <Link to="/successful-resumes">
                                         Successful Resumes
                                     </Link>
+                                </li>
+                                <li
+                                 className={classnames({
+                                    active: pathname === "/resources"
+                                 })}
+                                >
+                                    <Link to="/resources">Resources</Link>
                                 </li>
                                 <li
                                  className={classnames({
