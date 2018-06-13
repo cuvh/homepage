@@ -18,7 +18,8 @@
             "From rising through the nonprofit ranks at AIESEC to founding a food business at Oktoberfest, Max’s @Enhancv resume shows pride in his work. It’s also gotten him job offers at Amazon and Deutsche Bahn.",
         "socialImg": "famous-resumes/share-images/MAximilian_social.png",
         "name": "Maximilian Malterer",
-        "title": "An Account Manager Resume Blending Nonprofit Work with Entrepreneurship",
+        "title":
+            "An Account Manager Resume Blending Nonprofit Work with Entrepreneurship",
         "description":
             "What ties managing 1.5 million euro budgets at a non-profit and managing a food stand at Oktoberfest? Max's resume answers that question with a compelling story of how you can apply a devotion to customer relationships to a variety of roles. Ultimately it got him job offers at both Amazon and Deutsche Bahn (the German state railway company).",
         "position":
@@ -54,7 +55,8 @@
         "companyLogo": "successful-resumes/company-logos/2x-intercom-logo.png",
         "url": "daniel-pietersen",
         "pageTitle": "Real Customer Support Resume Example | Enhancv",
-        "pageDescription": "See how Daniel's customer support resume got him his dream job",
+        "pageDescription":
+            "See how Daniel's customer support resume got him his dream job",
         "tags": ["IT", "mid-level", "marketing"],
         "twitterText":
             "Daniel got his dream job at @intercom by showing his passion, pride, and top skills on his @Enhancv #resume.",
@@ -117,39 +119,49 @@
         "title": "Making the leap from investment banking to Spotify",
         "description":
             "What kind of career change resume can propel someone from banking into tech? Sam’s resume answers that question, showing how you can leverage your existing experience and skills in unique ways to find a great new job.",
-        "stepsTitle": "5 steps Sam took to change her career",
+        "stepsTitle": "Sam’s career change came in 5 steps",
         "stepsDescription":
             "How did Sam make such a huge career change happen? It took a year of hard work to ultimately got her to a job she loves. Here’s what she did:",
         "steps": [
             {
-                "title": "Identified the problems with her current job",
+                "title":
+                    "Identified what she didn’t love about her current job",
                 "description":
-                    "It’s one thing to realize that you’d like to try a new career, but actually understanding what you don’t like about your current job is critical for deciding where to go next. In Sam’s case, she realized she didn’t like being in a place where she couldn’t express her queer identity and couldn’t dress more casually, or as Sam put it: “I also wanted to wear shorts and t-shirts to work like I'm wearing right now. Tech is really the only place you can do that.”\nOnce she knew that she needed a change and what kinds of things she wanted in a new career, it was time for the next step."
+                    "Understanding what doesn’t work about your current job is critical for deciding where you want to go next. In Sam’s case, she realized she was frustrated with the conservative investment banking atmosphere. She wanted more freedom to innovate without legacy business models and structures that can inhibit creative problem-solving. She also wanted more space to express herself authentically, particularly as a queer, gender-nonconforming woman. Working from this starting point, Sam decided to focus her job search on tech firms. Once Sam knew that she needed a change and what she was looking for in a new career, it was time for the next step."
             },
             {
-                "title": "Overcame her mental barrier telling her she wasn’t good enough",
+                "title":
+                    "Overcame the mental barrier telling her that such a big jump would be too hard",
                 "description":
-                    "Imposter syndrome is rife in the workplace, especially for women, so it’s no surprise that getting to “I can totally do this” was a difficult but important step for Sam. There were two stages to getting there. The first was realizing that her peers weren’t actually smarter or more capable, they were simply at a different stage in their lives. This is obviously easier said than done, but self reflection got Sam there and it boosted her confidence.\nStill, it wasn’t enough and Sam eventually turned to a tech career consultant. This person essentially just confirmed that Sam was doing everything right. In retrospect, it wasn’t necessary to hire them, but the validation was still useful in getting Sam into the right mindset."
+                    "At first, Sam didn’t have a model for how to make the career shift from banking to tech. This made the task seem more intimidating than it needed to be. Add in a dose of the imposter syndrome that many <a target=\"_blank\" href=\"https://www.independent.co.uk/news/business/analysis-and-features/the-impostor-phenomenon-and-the-toll-it-takes-on-working-women-a8069826.html\">women</a> experience, and it’s no surprise that getting to “I can totally do this” was a difficult but important step for Sam. There were two stages to getting there. The first was meeting more people in tech and researching the career paths of people with interesting jobs. The second was doing self-reflection and looking at her own work history with a more open-minded, curious lens. These steps helped Sam recognize that she had the right skills and talents, but had simply taken a different route to getting where she wanted to be. The barrier to entry could be overcome if she learned how to speak the language of the tech industry, met the right people, and developed a way to translate her experience for tech recruiters."
             },
             {
-                "title": "Researched and networked to figure out what she’d like to do next",
+                "title":
+                    "Researched and networked. Researched and networked. Researched and networked some more.",
                 "description":
-                    "Sam’s networking strategy relied on the Meetup app and communities like Lesbians Who Tech. This started while she was still at her old job, but eventually she decided to quit and devote 100% of her time to the search. For each event she found interesting, she would look up the hosting company and really research it. That way, it was far easier for her to talk to them at the event.\nSam got a few interviews as a result. Her research made those interviews go well, but she still didn’t get a job. Something was missing from her strategy."
+                    "Sam spent a ton of time researching the tech industry during her job search. She also networked hard. She used LinkedIn to identify companies where she had personal connections, and leveraged those connections as much as possible. She made new connections through Meetups (she used the tool <a target=\"_blank\" href=\"https://www.meetup.com/\">Meetup</a> to easily check the best events near her), communities like <a target \"blank\" href=\"https://lesbianswhotech.org/newyork2018/\">Lesbians Who Tech</a>, and events at tech firms. Before attending any event, she would do a research deep dive on the hosting company and other represented organizations.<br/><br/>Eventually, she eventually decided to quit her job at the investment bank and devote 100% of her time to the search. (Well, first she enjoyed a well-deserved vacation.) "
             },
             {
-                "title": "Created a great resume",
+                "title":
+                    "Created a compelling, eye-catching career change resume",
                 "description":
-                    "Having worked as a hiring manager looking at hundreds of resumes a day, Sam knew what made an impression and what didn’t. A career change resume in particular needed to make a compelling case for why she was making the change. Hers had a lot of personality with sections about her favorite books and hobbies. This totally changed the tone of interviews, where questions about her interests leading to more natural conversations.\nHer resume had the same effect at tech conferences where she had the same genuine and natural conversations with potential employers. This made them remember her out of the hundreds of people they spoke to over the course of a day (even years later, some still remember her!) Even recruiters who didn’t normally take resumes were willing to take hers."
+                    "Having looked at hundreds of resumes a day when hiring for roles at the bank, Sam knew what made an impression and what didn’t. She also knew that her resume had to do extra work because her banking experience could come across as boring or irrelevant to tech recruiters. The resume needed to help Sam transcend her background and showcase her creativity, sense of humor, and outgoing nature.<br/><br/>She did a lot of research (an ongoing theme of Sam’s job search) to find a resume format that would pull recruiters in and make them excited to meet her. She fell in love with the Enhancv resume, and used it to create a compelling, eye-catching, and personality-revealing resume. She included sections about her favorite books and hobbies, mentioned her cat, and laid out her personal philosophy."
             },
             {
-                "title": "Got it to the right people",
                 "description":
-                    "Ultimately, a resume doesn’t mean very much unless it’s in the right hands. For Sam, this meant getting her resume to Spotify through a friend at a trivia night. Sam applied for the position this friend was leaving. Her resume also made it to Spotify through a recruiter. The result was that two different people involved in hiring at Spotify noticed her resume and one bringing it to the other and saying “You should check this out for the job.“\nJust like that, Sam got a job where she could really be herself. It took a year of planning and hard work along with a bit of luck, but it made all the difference. Today, Sam leads 600 people and reports directly to the CEO of Spotify."
+                    "After using the new resume format, she found that interviews got way easier. The interests she highlighted on her resume naturally led to real conversations instead of the typical interview questions. Her resume had the same effect at tech conferences; she was able to have similarly genuine, easy conversations with potential employers. This made them remember her out of the hundreds of people they spoke to over the course of a day. (Even years later, some still remember her!) Even recruiters who didn’t normally take resumes were willing to take Sam’s."
+            },
+            {
+                "title": "Got the resume to the right people",
+                "description":
+                    "Ultimately, a resume isn’t effective unless it’s in the right hands. For Sam, this meant getting her resume to Spotify through a friend of a friend at a trivia night. Her resume also made it to Spotify through a recruiter because Sam had applied for the position online. The result was that two different people involved in hiring for the role at Spotify put her resume on the desk of the hiring manager. When Sam came in for an interview, she and the hiring manager hit it off right away because of their mutual love of science fiction books - which he knew about from her resume.<br/><br/>Just like that, Sam got a job where she could really be herself. It took a year of planning and hard work along with a bit of luck, but it made all the difference. Today, Sam could not be happier. She has her dream job."
             }
         ]
     },
     {
-        "resumes": [{ "image": "successful-resumes/louis-grenier-resume-1.jpg" }],
+        "resumes": [
+            { "image": "successful-resumes/louis-grenier-resume-1.jpg" }
+        ],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/louis@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-hotjar-logo.png",
@@ -202,7 +214,8 @@
         "pageDescription":
             "See a real life example of an auditor resume which combined impact and personality to be truly memorable",
         "tags": ["Auditing", "mid-level", "auditor"],
-        "twitterText": "A great example of a resume for an #auditanalyst created with @Enhnacv",
+        "twitterText":
+            "A great example of a resume for an #auditanalyst created with @Enhnacv",
         "facebookText":
             "Stuck creating a resume? Here’s a great example of an audit analyst hired at @PwC to show you how to stand out",
         "socialImg": "famous-resumes/share-images/Julian_social.png",
@@ -252,7 +265,8 @@
         "title": "A Creative Resume That Does Things Differently",
         "description":
             "Eric’s creative marketing resume example ditches much of the conventional wisdom. Instead of focusing on numbers to show his impact, this resume is designed to get your attention and start a conversation. The numbers can come later. In this way, Eric’s resume would be perfect for handing out at a networking event or a conference when people don’t necessarily want to dive into the data of your accomplishments, but want a conversation starter like “what work did you do for Apple?” or “What was that Kickstarter campaign you had so much success with?”",
-        "position": "Violinist, Photographer, Content Creator, Creative Strategist",
+        "position":
+            "Violinist, Photographer, Content Creator, Creative Strategist",
         "stepsTitle": "Why Eric’s Creative Marketing Resume Works",
         "stepsDescription":
             "This resume does three things well, here’s what makes it a great example for a creative marketing resume.",
@@ -290,7 +304,8 @@
             "Ashkay’s @Enhancv resume helped him stand out enough to get an internship at @Tesla!",
         "socialImg": "famous-resumes/share-images/akshay_social.png",
         "name": "Akshay Rao",
-        "title": "A College Graduate’s Industrial Engineer Resume Shows Dedication",
+        "title":
+            "A College Graduate’s Industrial Engineer Resume Shows Dedication",
         "description":
             "Akshay is nothing if not ambitious. Despite the fact that he’s only a recent college graduate, his resume still shows passion, dedication, and impact. He’s not just a person who studied industrial engineering, he demonstrates applied real-world examples of his education. The results speak for themselves, as his original Enhancv resume landed Akshay an internship at Tesla’s Fremont California production plant.",
         "position":
@@ -335,7 +350,8 @@
             "With an @Enhancv resume that really stands out, Marcellus got a job as a senior IT engineer at Verizon Digital Media Services",
         "socialImg": "famous-resumes/share-images/Marcellus_social.png",
         "name": "Marcellus Nixon",
-        "title": "A Network Engineer Resume Showing the Transition from Military to Civilian",
+        "title":
+            "A Network Engineer Resume Showing the Transition from Military to Civilian",
         "description":
             "Marcellus’ resume tells two distinct stories. One is how he made the switch from his military to civilian career. The other is how he’s advanced within the network engineering field. That career has taken Marcellus from the Superconducting Super Collider to work in India and at major US firms like ESPN and Verizon Digital Media Services. Along the way, his resume is a great example of someone who takes well-calculated risks and gets results.",
         "position":
@@ -383,7 +399,8 @@
         "title": "A Manager Resume That’s Much, Much More",
         "description":
             "When a regional manager has to balance IT, logistics, business administration, and more, their resume needs to show flexibility, boldness, and results. Tobias’ resume example does just that. It tells his story wonderfully, painting a picture of a manager who’s up to the task of taking his firm to new places.",
-        "position": "Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
+        "position":
+            "Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
         "stepsTitle": "Why Tobias’ Manager Resume Works",
         "stepsDescription":
             "There’s a lot going on in this two page resume example, but three core principles hold it all together.",
@@ -472,23 +489,27 @@
         "title": "A Resume to Kickstart a Career Change",
         "description":
             "Steffany shows how a resume that's designed to move you into a new career can have impact. She lays out her background in medicine while also making a compelling case for how and why she's taking her career to business and entrepreneurship. Add in volunteering and plenty of personality and it's no wonder Steffany is on her way towards a great new career in business.",
-        "position": "Phlebotomist, Research Technician, Photographer, Career Change, Business",
+        "position":
+            "Phlebotomist, Research Technician, Photographer, Career Change, Business",
         "stepsTitle": "Why Steffany’s Career Change Resume Works",
         "stepsDescription":
             "So what’s the formula that makes a resume effective when you’re changing careers? Steffany’s example shows some key elements.",
         "steps": [
             {
-                "title": "It explains the career change in an effective objective statement",
+                "title":
+                    "It explains the career change in an effective objective statement",
                 "description":
                     "This is important because that statement creates a context for the rest of the resume content. Steffany clearly explains what her goal is, and how her past experience has brought her to this new career path. It’s clear, concise, and tells an effective story."
             },
             {
-                "title": "It goes beyond “volunteer” experience into “global impact”",
+                "title":
+                    "It goes beyond “volunteer” experience into “global impact”",
                 "description":
                     "Plenty of resumes have a small section explaining volunteer experience. But Steffany frames her work differently, focusing not on what she did but on what impact it had on the world. This both expands the kind of activities that fit into the section and shows that her priorities are the people she’s helping and not herself."
             },
             {
-                "title": "It paints a full picture of Steffany as a person with her achievements",
+                "title":
+                    "It paints a full picture of Steffany as a person with her achievements",
                 "description":
                     "Through the whole resume, you get a feel for not just what Steffany has accomplished but what her values are. The achievements section in particular puts the spotlight on what she considers important in life. This creates insights into her career change and where she, as an employee, might find job satisfaction."
             }
@@ -513,7 +534,8 @@
             "The first step to a successful job hunting is a resume that stands out and makes you proud. Here’s an example of an @Enhancv resumes that does just that",
         "socialImg": "famous-resumes/share-images/Hillary_social.png",
         "name": "Hillary Curran",
-        "title": "A Product Manager Resume Bursting with Positivity and Results",
+        "title":
+            "A Product Manager Resume Bursting with Positivity and Results",
         "description":
             "From winning awards for her positivity to actively implementing new productivity-boosting processes across businesses, Hillary's product manager resume is full of concrete results. She doesn't have to simply say that she's proactive and efficient, that fact is clear in nearly every role she's had.",
         "position":
@@ -540,7 +562,9 @@
         ]
     },
     {
-        "resumes": [{ "image": "successful-resumes/eden-ivancich-resume-1.jpg" }],
+        "resumes": [
+            { "image": "successful-resumes/eden-ivancich-resume-1.jpg" }
+        ],
         "label": "First Job",
         "avatar": "successful-resumes/avatars/eden@2.png",
         "url": "eden-ivancich",
@@ -625,7 +649,9 @@
         ]
     },
     {
-        "resumes": [{ "image": "successful-resumes/sophie-segal-resume-1.jpg" }],
+        "resumes": [
+            { "image": "successful-resumes/sophie-segal-resume-1.jpg" }
+        ],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/sofie_segal@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-avis-budget.png",
@@ -643,7 +669,8 @@
         "title": "A Department Head Resume That Shows a Woman Making an Impact",
         "description":
             "When your career stays within a single company or industry, it can be hard to show growth. Sophie’s resume example demonstrates how she’s grown in terms of responsibilities and accomplishments within the rental car industry. Growing from a manager to a department head, she’s consistently demonstrated concrete results and a great attitude. Add in her entrepreneurial experience with side projects and you have a compelling story and a great resume example.",
-        "position": "International Commercial Manager, Project Lead, Head of Loyalty, Entrepreneur",
+        "position":
+            "International Commercial Manager, Project Lead, Head of Loyalty, Entrepreneur",
         "stepsTitle": "Why Sophie’s Department Head Resume Works",
         "stepsDescription":
             "What makes this resume example stand out from the rest? It starts with a foundation of tangible results from Sophie’s work. Then, side projects and personality really make it pop.",
