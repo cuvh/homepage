@@ -68,7 +68,9 @@ class Header extends React.PureComponent {
                     }
                  )}
                 >
-                    <SuccessfulResumesStrip />
+                    <div>
+                        <SuccessfulResumesStrip />
+                    </div>
                     <div className="navbar-spacing">
                         <div className="navbar-header">
                             <button

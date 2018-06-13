@@ -8,7 +8,11 @@ export default function TypicalDay({ image, section, description, data }) {
          className="famous-resume--person-time m-md-bottom-3 m-sm-bottom-3 p-sm-3">
             <div className="container">
                 <div className="Grid">
-                    <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 text-center">
+                    <div
+                     className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 text-center"
+                     style={{
+                        margin: "auto 0",
+                     }}>
                         <Img
                          style={{
                             width: 420,
@@ -24,22 +28,24 @@ export default function TypicalDay({ image, section, description, data }) {
                             <h2 className="h2 m-md-bottom-6 m-sm-bottom-3">{description}</h2>
                             {data.map(item => (
                                 <div key={item.title}>
-                                    <h6>
+                                    <div
+                                     style={{
+                                        display: "flex",
+                                     }}
+                                     className="m-bottom-1">
                                         <span
-                                         className="bullet mobile-hide"
+                                         className="bullet m-top-2"
                                          style={{
                                             backgroundColor: item.backgroundColor,
                                          }}
                                         />{" "}
-                                        {item.title}
-                                    </h6>
-
-                                    {item.description ? (
-                                        <p>
-                                            Gave three engagement rings to his wife Tallulah, one of
-                                            them designed by him.
-                                        </p>
-                                    ) : null}
+                                        <h6
+                                         style={{
+                                            lineHeight: 1.4,
+                                         }}>
+                                            {item.title}
+                                        </h6>
+                                    </div>
                                 </div>
                             ))}
                         </div>

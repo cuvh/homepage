@@ -33,7 +33,7 @@ export default class SingleResume extends React.PureComponent {
                 <Meta
                  title={data.pageTitle}
                  description={data.pageDescription}
-                 metaImage={data.socialImg}
+                 metaImage={data.socialImg.childImageSharp.resolutions.src}
                 />
                 <div className="hasBubbulesBackground">
                     <main className="container">
@@ -159,11 +159,10 @@ export default class SingleResume extends React.PureComponent {
                                     marginBottom: 0
                                  }}
                                 >
-                                    I would go to these job fairs and you would
-                                    hand over your resume, and people would be
-                                    like, “We don’t take resumes.” And I’d be
-                                    like [handing resume over] they’re like,
-                                    “But we’ll take this one.”
+                                    I would go to job fairs and hand over my
+                                    resume, and they would say, “We don’t take
+                                    resumes.” But once I showed them mine,
+                                    they’d change to, “But we’ll take this one.”
                                 </blockquote>
                             </article>
                         ) : null}
@@ -188,9 +187,7 @@ export default class SingleResume extends React.PureComponent {
                                 {data.steps.map((step, i) => (
                                     <li key={i}>
                                         {step.title ? (
-                                            <h4>
-                                                Step {i + 1}: {step.title}
-                                            </h4>
+                                            <h4>{step.title}</h4>
                                         ) : null}
 
                                         {data.url === "sam-young" && i === 2 ? (
@@ -228,9 +225,9 @@ export default class SingleResume extends React.PureComponent {
                                             <blockquote>
                                                 I literally am a hiring manager.
                                                 I know what it’s like to look at
-                                                1000 resumes. One that visually
-                                                is not appealing, I won’t even
-                                                look at.
+                                                1,000s of resumes. I won’t even
+                                                look at one that’s not visually
+                                                appealing.
                                             </blockquote>
                                         ) : null}
 
@@ -329,7 +326,6 @@ export const pageQuery = graphql`
             position
             pageTitle
             pageDescription
-            socialImg
             description
             label
             url
@@ -357,6 +353,13 @@ export const pageQuery = graphql`
                 childImageSharp {
                     resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+            socialImg {
+                childImageSharp {
+                    resolutions(width: 1200, height: 628) {
+                        ...GatsbyImageSharpResolutions_noBase64
                     }
                 }
             }
