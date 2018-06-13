@@ -1,58 +1,71 @@
 import React from "react";
+import classnames from "classnames";
+import Track from "utils/Track";
+import StoreService from "utils/StoreService";
+import ShareButtons from "./ShareButtons";
 
-export default function SocialBar({ facebookText, twitterText, url }) {
-    return (
-        <div className="component--social-bar">
-            <div className="component--social-bar-wrap">
-                <a
-                 href={`https://www.facebook.com/sharer.php?u=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&message=${encodeURI(facebookText)}`}
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="Facebook"
-                 className="component--social-button btn-facebook"
-                 target="_blank"
-                >
-                    <i className="icon-facebook pull-right" />
-                </a>
-                <a
-                 href={`https://twitter.com/share?url=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&text=${encodeURI(twitterText)}`}
-                 target="_blank"
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="Twitter"
-                 className="component--social-button btn-twitter"
-                >
-                    <i className="icon-twitter pull-right" />
-                </a>
-                <a
-                 href={`https://www.linkedin.com/shareArticle?mini=true&url=https://enhancv.com/successful-resumes/${encodeURI(
-                    url
-                 )}&text=${encodeURI(facebookText)}`}
-                 target="_blank"
-                 data-track="event"
-                 data-category="Successful Resumes"
-                 data-action="Social Share"
-                 data-label="LinkedIn"
-                 className="component--social-button btn-linkedin"
-                >
-                    <i className="icon-linkedin-alt pull-right" />
-                </a>
-            </div>
+export default class SocialBar extends React.PureComponent {
+    constructor(props) {
+        super(props);
 
-            <div className="component--social-bar-vertical-view">
-                <span className="line" />
-                <span className="label">Appreciate</span>
+        this.state = {
+            active: StoreService.getItem(`wow-${this.props.url}`)
+        };
+    }
+
+    onClick(event) {
+        event.preventDefault();
+
+        const newState = !this.state.active;
+        this.setState({
+            active: newState
+        });
+
+        StoreService.setItem(`wow-${this.props.url}`, newState);
+
+        Track(
+            "Successful Resumes",
+            "WOW Button",
+            `${this.props.url} - ${newState}`
+        );
+    }
+
+    render() {
+        const { facebookText, twitterText, url } = this.props;
+        const { active } = this.state;
+
+        return (
+            <div className="component--social-bar">
+                <div className="component--social-bar-wrap">
+                    <ShareButtons
+                     {...this.props}
+                     from="bar"
+                    />
+                </div>
+
+                <div className="component--social-bar-vertical-view">
+                    <span className="line" />
+                    <span className="label">Appreciate</span>
+                    <a
+                     href="#"
+                     onClick={event => this.onClick(event)}
+                     className={classnames("btn-wow btn-wow-reverse", {
+                        active
+                     })}
+                    />
+                </div>
+                <div className="component--social-bar-horizontal-view">
+                    Do you like this article? Appreciate it, so we can make more
+                    like it
+                    <a
+                     href="#"
+                     onClick={event => this.onClick(event)}
+                     className={classnames("btn-wow-default", {
+                        active
+                     })}
+                    />
+                </div>
             </div>
-            <div className="component--social-bar-horizontal-view">
-                Do you like this article? Appreciate it, so we can make more
-                like it
-            </div>
-        </div>
-    );
+        );
+    }
 }

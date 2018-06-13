@@ -1,16 +1,15 @@
 import React from "react";
 import Img from "gatsby-image";
 import Track from "utils/Track";
+import Modal from "components/Modal";
 
-import imgPlaceholder from "assets/img/new-successful-resumes/placeholders/img-placeholder.png";
+import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 import FooterList from "components/SuccessfulResumes/FooterList";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
-import Modal from "components/Modal";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
-import herResume from "assets/img/new-successful-resumes/placeholders/her-resume.png";
+import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import Meta from "components/Meta";
-
 import DefaultLayout from "layouts/DefaultLayout";
 
 import samOne from "assets/img/new-successful-resumes/problems@2.png";
@@ -35,8 +34,15 @@ export default class SingleResume extends React.PureComponent {
                 <Meta
                  title={data.pageTitle}
                  description={data.pageDescription}
-                 metaImage={data.socialImg}
+                 metaImage={data.socialImg.childImageSharp.resolutions.src}
                 />
+
+                <SocialBar
+                 facebookText={data.facebookText}
+                 twitterText={data.twitterText}
+                 url={data.url}
+                />
+
                 <div className="hasBubbulesBackground">
                     <main className="container">
                         <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
@@ -116,25 +122,29 @@ export default class SingleResume extends React.PureComponent {
                                         <span className="label m-bottom-3">
                                             {data.position}
                                         </span>
-                                        <div
-                                         style={{
-                                            width: "100%",
-                                            display: "inline-flex",
-                                            flexWrap: "wrap",
-                                            alignItems: "center"
-                                         }}
-                                        >
-                                            <span className="label hired-label m-md-right-2">
-                                                Hired at
-                                            </span>
-                                            <Img
-                                             resolutions={
-                                                data.companyLogo.childImageSharp
-                                                    .resolutions
-                                             }
-                                             alt="Company logo"
-                                            />
-                                        </div>
+
+                                        {data.companyLogo ? (
+                                            <div
+                                             style={{
+                                                width: "100%",
+                                                display: "inline-flex",
+                                                flexWrap: "wrap",
+                                                alignItems: "center"
+                                             }}
+                                            >
+                                                <span className="label hired-label m-md-right-2">
+                                                    Hired at
+                                                </span>
+                                                <Img
+                                                 resolutions={
+                                                    data.companyLogo
+                                                        .childImageSharp
+                                                        .resolutions
+                                                 }
+                                                 alt="Company logo"
+                                                />
+                                            </div>
+                                        ) : null}
                                     </div>
                                 </div>
                             </div>
@@ -157,11 +167,10 @@ export default class SingleResume extends React.PureComponent {
                                     marginBottom: 0
                                  }}
                                 >
-                                    I would go to these job fairs and you would
-                                    hand over your resume, and people would be
-                                    like, “We don’t take resumes.” And I’d be
-                                    like [handing resume over] they’re like,
-                                    “But we’ll take this one.”
+                                    I would go to job fairs and hand over my
+                                    resume, and they would say, “We don’t take
+                                    resumes.” But once I showed them mine,
+                                    they’d change to, “But we’ll take this one.”
                                 </blockquote>
                             </article>
                         ) : null}
@@ -185,9 +194,9 @@ export default class SingleResume extends React.PureComponent {
                             <ul>
                                 {data.steps.map((step, i) => (
                                     <li key={i}>
-                                        <h4>
-                                            Step {i + 1}: {step.title}
-                                        </h4>
+                                        {step.title ? (
+                                            <h4>{step.title}</h4>
+                                        ) : null}
 
                                         {data.url === "sam-young" && i === 2 ? (
                                             <img
@@ -206,7 +215,11 @@ export default class SingleResume extends React.PureComponent {
                                             />
                                         ) : null}
 
-                                        <p>{step.description}</p>
+                                        <p
+                                         dangerouslySetInnerHTML={{
+                                            __html: step.description
+                                         }}
+                                        />
 
                                         {data.url === "daniel-pietersen" &&
                                         i === 2 ? (
@@ -220,9 +233,9 @@ export default class SingleResume extends React.PureComponent {
                                             <blockquote>
                                                 I literally am a hiring manager.
                                                 I know what it’s like to look at
-                                                1000 resumes. One that visually
-                                                is not appealing, I won’t even
-                                                look at.
+                                                1,000s of resumes. I won’t even
+                                                look at one that’s not visually
+                                                appealing.
                                             </blockquote>
                                         ) : null}
 
@@ -253,29 +266,29 @@ export default class SingleResume extends React.PureComponent {
                                     <img
                                      style={{ width: 404, height: 496 }}
                                      src={
-                                        data.url === "sam-young"
-                                            ? samElement
-                                            : danielElement
+                                        data.url === "sam-young" ? (
+                                            samElement
+                                        ) : (
+                                            danielElement
+                                        )
                                      }
                                      alt="Image Placeholder"
                                     />
                                 </div>
                                 <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-13">
                                     <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
-                                        {data.url === "daniel-pietersen"
-                                            ? "New job, new life"
-                                            : "A Hard-Earned Career Change"}
+                                        {data.url === "daniel-pietersen" ? (
+                                            "New job, new life"
+                                        ) : (
+                                            "A Hard-Earned Career Change"
+                                        )}
                                     </h3>
                                     <p className="p-medium">
-                                        {data.url === "daniel-pietersen"
-                                            ? "It’s now a year and a half later and the position I’m in at Intercom has taught me so much, opened so many doors and allowed me to grow a lot faster than I could’ve ever imagined. To give an example, one of my life-long goals was to be able to go to San Francisco and visit the various tech giants Facebook, Google, Apple, etc. It’s such a touristy thing to do but it’s just something I knew I had to tick off my bucket list. Right now it still feels surreal but I was able to tick that off my list a couple of months ago, thanks to Intercom who flew me to visit their San Francisco branch."
-                                            : `It took a lot of hard work and
-                                        strategizing, but Sam’s story shows that
-                                        a successful career change is possible
-                                        with the rights tools. Now that you’ve
-                                        read Sam’s story, you can see the resume
-                                        that made recruiters take notice and
-                                        remember her even years later.`}
+                                        {data.url === "daniel-pietersen" ? (
+                                            "It’s now a year and a half later and the position I’m in at Intercom has taught me so much, opened so many doors and allowed me to grow a lot faster than I could’ve ever imagined. To give an example, one of my life-long goals was to be able to go to San Francisco and visit the various tech giants Facebook, Google, Apple, etc. It’s such a touristy thing to do but it’s just something I knew I had to tick off my bucket list. Right now it still feels surreal but I was able to tick that off my list a couple of months ago, thanks to Intercom who flew me to visit their San Francisco branch."
+                                        ) : (
+                                            `It took a lot of hard work and strategizing, but Sam’s story shows that a successful career change is possible with the rights tools. Now that you’ve read Sam’s story, you can see the resume that made recruiters take notice and remember her even years later.`
+                                        )}
                                     </p>
                                     <Modal
                                      trigger={
@@ -293,42 +306,16 @@ export default class SingleResume extends React.PureComponent {
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
-
-                                    <div className="Grid--gutter-md component--feeling feeling-box-light m-md-top-10 m-sm-top-4 m-sm-right-1 m-sm-left-1">
-                                        <span className="m-right-1 m-left-1">
-                                            Feeling inspired?
-                                        </span>{" "}
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Smiling`
-                                            )}
-                                         className="component--feeling-emotion emotion-smiling"
-                                        />
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Neutral`
-                                            )}
-                                         className="component--feeling-emotion emotion-neutral"
-                                        />
-                                        <span
-                                         onClick={() =>
-                                            Track(
-                                                "Successful Resumes",
-                                                "Reaction",
-                                                `SAM Happy`
-                                            )}
-                                         className="component--feeling-emotion emotion-happy"
-                                        />
-                                    </div>
                                 </div>
                             </section>
                         ) : null}
+
+                        <div className="resume-article">
+                            <FeelingInspired
+                             dark={false}
+                             name={data.name}
+                            />
+                        </div>
 
                         <SubscribeNoImage />
                         <FooterList list={allResumes.edges} />
@@ -347,12 +334,13 @@ export const pageQuery = graphql`
             position
             pageTitle
             pageDescription
-            socialImg
             description
             label
             url
             stepsTitle
             stepsDescription
+            facebookText
+            twitterText
             steps {
                 title
                 description
@@ -373,6 +361,13 @@ export const pageQuery = graphql`
                 childImageSharp {
                     resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+            socialImg {
+                childImageSharp {
+                    resolutions(width: 1200, height: 628) {
+                        ...GatsbyImageSharpResolutions_noBase64
                     }
                 }
             }

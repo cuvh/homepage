@@ -155,7 +155,7 @@ h2 {
 		background: no-repeat;
 		padding: 0;
 
-		&:not(.ul-align-right) {
+		&:not(.ul-align-right):not(.ul-full-width) {
 			padding-left: $sr_global-offset-value * 32;
 			margin-left: -$sr_global-offset-value * 20;
 			margin-bottom: $sr_global-offset-value * 6;

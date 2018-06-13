@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "gatsby-image";
 import classnames from "classnames";
 import Track from "utils/Track";
 
@@ -28,18 +29,19 @@ import Meta from "components/Meta";
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
+    console.log(data);
     return (
         <DefaultLayout className="navbar-light">
             <Meta
              title={data.pageTitle}
              description={data.pageDescription}
-             metaImage={data.socialImg}
+             metaImage={data.socialImg.childImageSharp.resolutions.src}
             />
 
             <SocialBar
              facebookText={data.facebookText}
              twitterText={data.twitterText}
-             url={data.url}
+             url={"famous/" + data.url}
             />
 
             <Modal
@@ -53,7 +55,9 @@ export default function FamousResume({
                     )}
                  className="component--fast-resume-preview"
                 >
-                    <img src="/static/new-successful-resumes/placeholders/hover-cv.png" />
+                    <Img
+                     resolutions={data.resumes[0].image.childImageSharp.thumb}
+                    />
                     <button className="btn-resume-preview" />
                 </a>
              }
@@ -66,6 +70,7 @@ export default function FamousResume({
                  altText={`${data.name}'s resume`}
                 />
             </Modal>
+
             <main className="famous-resume--container">
                 <div
                  className={classnames({
@@ -162,8 +167,14 @@ export const pageQuery = graphql`
             pageTitle
             facebookText
             twitterText
-            socialImg
             finalDescription
+            socialImg {
+                childImageSharp {
+                    resolutions(width: 1200, height: 628) {
+                        ...GatsbyImageSharpResolutions_noBase64
+                    }
+                }
+            }
             cover {
                 childImageSharp {
                     sizes(maxWidth: 2500) {
@@ -174,6 +185,9 @@ export const pageQuery = graphql`
             resumes {
                 image {
                     childImageSharp {
+                        thumb: resolutions(width: 160, height: 220) {
+                            ...GatsbyImageSharpResolutions
+                        }
                         small: resolutions(width: 442) {
                             ...GatsbyImageSharpResolutions
                         }

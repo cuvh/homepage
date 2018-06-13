@@ -2,8 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import classnames from "classnames";
 import Track from "utils/Track";
-
-import elonResume from "assets/img/new-successful-resumes/famous/elon-musk/cv.png";
+import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import FooterList from "components/SuccessfulResumes/FooterList";
@@ -102,38 +101,10 @@ export default function FamousContainer({
                                 />
                             </Modal>
                             <div className="full-width">
-                                <div className="component--feeling feeling-box-dark m-md-top-13 m-sm-top-4 m-sm-right-2">
-                                    <span className="m-right-1 m-left-1">
-                                        Feeling inspired?
-                                    </span>
-                                    <span
-                                     onClick={() =>
-                                        Track(
-                                            "Successful Resumes",
-                                            "Reaction",
-                                            `${name} Smiling`
-                                        )}
-                                     className="component--feeling-emotion emotion-smiling"
-                                    />
-                                    <span
-                                     onClick={() =>
-                                        Track(
-                                            "Successful Resumes",
-                                            "Reaction",
-                                            `${name} Neutral`
-                                        )}
-                                     className="component--feeling-emotion emotion-neutral"
-                                    />
-                                    <span
-                                     onClick={() =>
-                                        Track(
-                                            "Successful Resumes",
-                                            "Reaction",
-                                            `${name} Happy`
-                                        )}
-                                     className="component--feeling-emotion emotion-happy"
-                                    />
-                                </div>
+                                <FeelingInspired
+                                 dark={true}
+                                 name={name}
+                                />
                             </div>
                         </div>
                     </div>
