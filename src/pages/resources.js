@@ -23,46 +23,47 @@ export default function resources({ data }) {
             />
             <main>
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
-                        <div className="Grid resources--head-wrap">
-                            <div className="Grid-cell--md-5 Grid-cell--xs-12">
-                                <div class="resources--head-image">
-                                    <Img
-                                        resolutions={
-                                            data.resourcesHeaderImage.childImageSharp.resolutions
-                                        }
-                                        alt="Who is this good for? | Image"
-                                    />
-                                    <button class="btn-resume-preview"></button>
-                                </div>
-                            </div>
-            
-                            <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
-                                <div className="text">
-                                    <span className="text-tag text-highlight-purple">
-                                        FREE WORKSHEET
-                                    </span>
-                                    <h1 className="h1">
-                                        Learning Through Struggles
-                                    </h1>
-                                    <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
-                                        <p className="p-big">
-                                            Struggles shape our skills and who we
-                                            are. Explore this question to learn more
-                                            about yourself and what you should be
-                                            proud of.
-                                        </p>
-                                    </div>
-                                    <a
-                                    target="_blank"
-                                    href={data.shapeStory.publicURL}
-                                    download
-                                    className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
-                                    >
-                                        DOWNLOAD FOR FREE
-                                    </a>
-                                </div>
+                    <div className="Grid resources--head-wrap">
+                        <div className="Grid-cell--md-5 Grid-cell--xs-12">
+                            <div className="resources--head-image">
+                                <Img
+                                 resolutions={
+                                    data.resourcesHeaderImage.childImageSharp
+                                        .resolutions
+                                 }
+                                 alt="Who is this good for? | Image"
+                                />
+                                <button className="btn-resume-preview" />
                             </div>
                         </div>
+
+                        <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
+                            <div className="text">
+                                <span className="text-tag text-highlight-purple">
+                                    FREE WORKSHEET
+                                </span>
+                                <h1 className="h1">
+                                    Learning Through Struggles
+                                </h1>
+                                <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
+                                    <p className="p-big">
+                                        Struggles shape our skills and who we
+                                        are. Explore this question to learn more
+                                        about yourself and what you should be
+                                        proud of.
+                                    </p>
+                                </div>
+                                <a
+                                 target="_blank"
+                                 href={data.shapeStory.publicURL}
+                                 download
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                >
+                                    DOWNLOAD FOR FREE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="m-md-bottom-13 p-sm-3">
@@ -111,12 +112,12 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
                         <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center responsive-gatsby">
-                                <Img
-                                resolutions={
-                                    data.peopleImage.childImageSharp.resolutions
-                                }
-                                alt="Who is this good for? | Image"
-                                />
+                            <Img
+                             resolutions={
+                                data.peopleImage.childImageSharp.resolutions
+                             }
+                             alt="Who is this good for? | Image"
+                            />
                         </div>
                         <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-15 p-md-left-10">
                             <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
@@ -140,14 +141,15 @@ export default function resources({ data }) {
                 </section>
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
-                        <div className = "component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby">
-                                    <Img
-                                    resolutions={
-                                        data.discoverImage.childImageSharp.resolutions
-                                    }
-                                    alt="Discover Your Definition of Success | Image"
-                                    />
+                        <div className="component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
+                            <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby">
+                                <Img
+                                 resolutions={
+                                    data.discoverImage.childImageSharp
+                                        .resolutions
+                                 }
+                                 alt="Discover Your Definition of Success | Image"
+                                />
                             </div>
                             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-10 p-md-left-10">
                                 <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
