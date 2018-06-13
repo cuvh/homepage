@@ -35,31 +35,32 @@ export default function resources({ data }) {
                                     <button class="btn-resume-preview"></button>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
-                            <div className="text">
-                                <span className="text-tag text-highlight-purple">
-                                    FREE WORKSHEET
-                                </span>
-                                <h1 className="h1">
-                                    Learning Through Struggles
-                                </h1>
-                                <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
-                                    <p className="p-big">
-                                        Struggles shape our skills and who we
-                                        are. Explore this question to learn more
-                                        about yourself and what you should be
-                                        proud of.
-                                    </p>
+            
+                            <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
+                                <div className="text">
+                                    <span className="text-tag text-highlight-purple">
+                                        FREE WORKSHEET
+                                    </span>
+                                    <h1 className="h1">
+                                        Learning Through Struggles
+                                    </h1>
+                                    <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
+                                        <p className="p-big">
+                                            Struggles shape our skills and who we
+                                            are. Explore this question to learn more
+                                            about yourself and what you should be
+                                            proud of.
+                                        </p>
+                                    </div>
+                                    <a
+                                    target="_blank"
+                                    href={data.shapeStory.publicURL}
+                                    download
+                                    className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                    >
+                                        DOWNLOAD FOR FREE
+                                    </a>
                                 </div>
-                                <a
-                                 target="_blank"
-                                 href={data.shapeStory.publicURL}
-                                 download
-                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
-                                  >
-                                    DOWNLOAD FOR FREE
-                                </a>
                             </div>
                         </div>
                 </section>
