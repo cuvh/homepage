@@ -20,11 +20,7 @@
             left: -80px;
         }
 
-        .btn-resume-preview {
-            position: absolute;
-            bottom: 4%;
-            right: -18%;
-        }
+
 
         @media screen and (max-width: $screen-sm-max) {
             .gatsby-image-outer-wrapper,
@@ -48,7 +44,7 @@
     }
     &--head-wrap {
         @media screen and (max-width: $screen-sm-max) {
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
         }
     }
     
@@ -56,6 +52,27 @@
         @media screen and (min-width: $screen-sm) {
             position: relative;
             left:100px;
+        }
+    }
+    &--modal-button {
+        position: relative;
+        &.isModalButtonDiscover .btn-resume-preview {
+            bottom: 4%;
+            right: 12%;
+        }
+        .btn-resume-preview {
+            position: absolute;
+            bottom: 4%;
+            right: -18%;
+       
+            @media screen and (min-width: $screen-sm) {
+                width:64px;
+                height: 64px;
+            }
+            @media screen and (max-width: $screen-sm-max) {
+                bottom: -16px;
+                right: -8px;
+            }
         }
     }
 }
