@@ -5,17 +5,33 @@ export default class OpenModal extends React.PureComponent {
         opened: false
     };
 
+    onBackdropClick(event) {
+        if (event.target === this.refs.modal) {
+            this.setState({
+                opened: false
+            });
+        }
+    }
+
+    onOpen() {
+        this.setState({ opened: true });
+    }
+
+    onClose() {
+        this.setState({ opened: false });
+    }
+
     render() {
         const { opened } = this.state;
         const { trigger, children } = this.props;
 
         return (
             <React.Fragment>
-                <div onClick={() => this.setState({ opened: true })}>
-                    {trigger}
-                </div>
+                <div onClick={() => this.onOpen()}>{trigger}</div>
                 {opened ? (
                     <div
+                     onClick={event => this.onBackdropClick(event)}
+                     ref="modal"
                      tabIndex="-1"
                      className={opened ? "modal in" : "modal fade"}
                     >
@@ -24,7 +40,7 @@ export default class OpenModal extends React.PureComponent {
                         </div>
                         <button
                          type="button"
-                         onClick={() => this.setState({ opened: false })}
+                         onClick={() => this.onClose()}
                          className="close close-example"
                         >
                             <i className="icon-times" />
