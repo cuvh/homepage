@@ -12,7 +12,6 @@ import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function resources({ data }) {
-    console.log(data);
     return (
         <DefaultLayout className="resumedetail hasBubbulesBackground">
             <Helmet
