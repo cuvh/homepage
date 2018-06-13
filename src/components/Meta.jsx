@@ -4,6 +4,8 @@ import Helmet from "react-helmet";
 import favicon from "assets/img/favicon.png";
 import defaultMetaImage from "assets/img/new-social-image.jpg";
 
+const SOCIAL_IMAGE_PREFIX = "https://enhancv.com";
+
 export default function Meta({
     noFollow = false,
     metaImage = defaultMetaImage,
@@ -11,6 +13,8 @@ export default function Meta({
     title = "Enhancv | Professional Resume & CV Builder",
     ...rest
 }) {
+    metaImage = SOCIAL_IMAGE_PREFIX + metaImage;
+
     return (
         <Helmet
          {...rest}
