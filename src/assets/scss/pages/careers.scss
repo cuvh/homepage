@@ -25,36 +25,20 @@
 
     .career-header {
         padding-top: 320px;
-        margin-top:24px;
+        margin-top: 24px;
         @media (max-width: 630px) {
             padding-top: 120px;
-            margin-top:-18px;
+            margin-top: -18px;
         }
 
         padding-bottom: 40px;
         color: white;
-        background: linear-gradient(
-                180deg,
-                rgba($brand-primary, 0) 0%,
-                $brand-primary 95%
-            ),
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
             url(../img/career/header.jpg);
-        background: linear-gradient(
-                180deg,
-                rgba($brand-primary, 0) 0%,
-                $brand-primary 95%
-            ),
-            -webkit-image-set(url(../img/career/header.jpg) 1x, url(../img/career/header@2x.jpg)
-                        2x);
-        background: linear-gradient(
-                180deg,
-                rgba($brand-primary, 0) 0%,
-                $brand-primary 95%
-            ),
-            image-set(
-                url(../img/career/header.jpg) 1x,
-                url(../img/career/header@2x.jpg) 2x
-            );
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+            -webkit-image-set(url(../img/career/header.jpg) 1x, url(../img/career/header@2x.jpg) 2x);
+        background: linear-gradient(180deg, rgba($brand-primary, 0) 0%, $brand-primary 95%),
+            image-set(url(../img/career/header.jpg) 1x, url(../img/career/header@2x.jpg) 2x);
         background-size: cover;
         background-position: center;
 
@@ -98,6 +82,13 @@
                 .secondary-text {
                     color: #808080;
                 }
+            }
+        }
+
+        .career-benefits {
+            img {
+                width: 36px;
+                height: 36px;
             }
         }
     }
