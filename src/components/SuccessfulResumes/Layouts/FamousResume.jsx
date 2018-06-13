@@ -162,7 +162,6 @@ export const pageQuery = graphql`
             pageTitle
             facebookText
             twitterText
-            socialImg
             finalDescription
             cover {
                 childImageSharp {

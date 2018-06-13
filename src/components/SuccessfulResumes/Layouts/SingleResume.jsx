@@ -26,8 +26,6 @@ export default class SingleResume extends React.PureComponent {
         const data = this.props.data.userResumesJson;
         const allResumes = this.props.data.allUserResumesJson;
 
-        console.log(data.steps);
-
         const resumePageOne = data.resumes[0].image;
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
         return (
@@ -35,7 +33,7 @@ export default class SingleResume extends React.PureComponent {
                 <Meta
                  title={data.pageTitle}
                  description={data.pageDescription}
-                 metaImage={data.socialImg}
+                 metaImage={data.socialImg.childImageSharp.resolutions.src}
                 />
                 <div className="hasBubbulesBackground">
                     <main className="container">
@@ -263,29 +261,23 @@ export default class SingleResume extends React.PureComponent {
                                     <img
                                      style={{ width: 404, height: 496 }}
                                      src={
-                                        data.url === "sam-young" ? (
-                                            samElement
-                                        ) : (
-                                            danielElement
-                                        )
+                                        data.url === "sam-young"
+                                            ? samElement
+                                            : danielElement
                                      }
                                      alt="Image Placeholder"
                                     />
                                 </div>
                                 <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-13">
                                     <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
-                                        {data.url === "daniel-pietersen" ? (
-                                            "New job, new life"
-                                        ) : (
-                                            "A Hard-Earned Career Change"
-                                        )}
+                                        {data.url === "daniel-pietersen"
+                                            ? "New job, new life"
+                                            : "A Hard-Earned Career Change"}
                                     </h3>
                                     <p className="p-medium">
-                                        {data.url === "daniel-pietersen" ? (
-                                            "It’s now a year and a half later and the position I’m in at Intercom has taught me so much, opened so many doors and allowed me to grow a lot faster than I could’ve ever imagined. To give an example, one of my life-long goals was to be able to go to San Francisco and visit the various tech giants Facebook, Google, Apple, etc. It’s such a touristy thing to do but it’s just something I knew I had to tick off my bucket list. Right now it still feels surreal but I was able to tick that off my list a couple of months ago, thanks to Intercom who flew me to visit their San Francisco branch."
-                                        ) : (
-                                            `It took a lot of hard work and strategizing, but Sam’s story shows that a successful career change is possible with the rights tools. Now that you’ve read Sam’s story, you can see the resume that made recruiters take notice and remember her even years later.`
-                                        )}
+                                        {data.url === "daniel-pietersen"
+                                            ? "It’s now a year and a half later and the position I’m in at Intercom has taught me so much, opened so many doors and allowed me to grow a lot faster than I could’ve ever imagined. To give an example, one of my life-long goals was to be able to go to San Francisco and visit the various tech giants Facebook, Google, Apple, etc. It’s such a touristy thing to do but it’s just something I knew I had to tick off my bucket list. Right now it still feels surreal but I was able to tick that off my list a couple of months ago, thanks to Intercom who flew me to visit their San Francisco branch."
+                                            : `It took a lot of hard work and strategizing, but Sam’s story shows that a successful career change is possible with the rights tools. Now that you’ve read Sam’s story, you can see the resume that made recruiters take notice and remember her even years later.`}
                                     </p>
                                     <Modal
                                      trigger={
@@ -329,7 +321,6 @@ export const pageQuery = graphql`
             position
             pageTitle
             pageDescription
-            socialImg
             description
             label
             url
@@ -355,6 +346,13 @@ export const pageQuery = graphql`
                 childImageSharp {
                     resolutions(width: 100) {
                         ...GatsbyImageSharpResolutions
+                    }
+                }
+            }
+            socialImg {
+                childImageSharp {
+                    resolutions(width: 1200, height: 628) {
+                        ...GatsbyImageSharpResolutions_noBase64
                     }
                 }
             }
