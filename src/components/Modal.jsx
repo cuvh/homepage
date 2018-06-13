@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const root = document.getElementById("___gatsby");
+const root = document ? document.getElementById("___gatsby") : null;
 
 export default class OpenModal extends React.PureComponent {
     state = {
@@ -71,7 +71,11 @@ export default class OpenModal extends React.PureComponent {
         return (
             <React.Fragment>
                 <div onClick={() => this.onOpen()}>{trigger}</div>
-                {opened ? ReactDOM.createPortal(modal, root) : null}
+                {opened ? root ? (
+                    ReactDOM.createPortal(modal, root)
+                ) : (
+                    modal
+                ) : null}
             </React.Fragment>
         );
     }
