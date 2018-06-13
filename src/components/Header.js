@@ -3,10 +3,10 @@ import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
 import Helmet from "react-helmet";
-import StoreService from "utils/StoreService";
+
+import SuccessfulResumesStrip from "components/SuccessfulResumes/SuccessfulResumesStrip";
 
 import logoImg from "../assets/img/logo-with-text.svg";
-import srImg from "../assets/img/msg-SR-Emoji@3x.svg";
 
 // $(document).on("click", '[data-toggle="navbar"]', function() {
 //     $("body").toggleClass("navbar-mobile-active");
@@ -20,10 +20,6 @@ class Header extends React.PureComponent {
     constructor(props) {
         super(props);
         this.onScroll = this.scroll.bind(this);
-        this.state = {
-            isMsgShowed: StoreService.getItem("isMsgShowed"),
-            mobileNavOpened: ""
-        };
     }
 
     componentDidMount() {
@@ -32,13 +28,6 @@ class Header extends React.PureComponent {
 
     componentWillUnmount() {
         document.removeEventListener("scroll", this.onScroll);
-    }
-
-    onClickHiddenModal() {
-        this.setState({
-            isMsgShowed: true
-        });
-        StoreService.setItem("isMsgShowed", true);
     }
 
     scroll(e) {
@@ -79,6 +68,7 @@ class Header extends React.PureComponent {
                     }
                  )}
                 >
+                    <SuccessfulResumesStrip />
                     <div className="navbar-spacing">
                         <div className="navbar-header">
                             <button
