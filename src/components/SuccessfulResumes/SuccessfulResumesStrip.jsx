@@ -6,9 +6,14 @@ import srImg from "assets/img/msg-SR-Emoji@3x.svg";
 
 export default class SuccessfulResumesStrip extends React.PureComponent {
     state = {
-        hidden: StoreService.getItem("isMsgShowed"),
-        mobileNavOpened: ""
+        hidden: true
     };
+
+    componentDidMount() {
+        this.setState({
+            hidden: Boolean(StoreService.getItem("isMsgShowed"))
+        });
+    }
 
     onHide() {
         this.setState({
