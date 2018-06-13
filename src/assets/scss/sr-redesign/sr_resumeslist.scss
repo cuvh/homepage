@@ -23,8 +23,8 @@
         &-holder {
             display: inline-block;
             position: relative;
-            box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1),
-                1px 0 2px rgba(77, 77, 77, 0.16);
+            // box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1),
+            //     1px 0 2px rgba(77, 77, 77, 0.16);
 
             @media screen and (max-width: $screen-sm-max) {
                 padding: 0 $sr_global-offset-value;
