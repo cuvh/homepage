@@ -5,6 +5,26 @@ export default class OpenModal extends React.PureComponent {
         opened: false
     };
 
+    constructor(props) {
+        super(props);
+        this.keyDown = this.onKeyDown.bind(this);
+    }
+
+    componentDidMount() {
+        document.addEventListener("keydown", this.keyDown);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener("keydown", this.keyDown);
+    }
+
+    onKeyDown(evt) {
+        evt = evt || window.event;
+        if (evt.keyCode == 27 && this.state.opened) {
+            this.onClose();
+        }
+    }
+
     onBackdropClick(event) {
         if (event.target === this.refs.modal) {
             this.setState({
