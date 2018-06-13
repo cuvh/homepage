@@ -16,7 +16,10 @@ export default function Strugles({ section, data }) {
                             Struggles I learned from
                         </h3>
                         {data.map(item => (
-                            <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
+                            <div
+                             key={item.title}
+                             className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap"
+                            >
                                 <div className="component--thumbs-holder thumb-order-sm-2">
                                     <Img
                                      style={{ width: "78px", height: "78px" }}
