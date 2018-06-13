@@ -81,6 +81,7 @@
     margin: 0 33px;
     padding-top: 18px;
     transition: padding-top 0.1s;
+    position: relative;
 
     @media screen and (max-width: $screen-sm) {
         margin: 0 16px;
@@ -130,7 +131,11 @@
     height: 10px;
     width: 100%;
     top: 60;
-    background: linear-gradient(180deg, rgba(216, 216, 216, 0.2) 0%, rgba(216, 216, 216, 0) 100%);
+    background: linear-gradient(
+        180deg,
+        rgba(216, 216, 216, 0.2) 0%,
+        rgba(216, 216, 216, 0) 100%
+    );
     transition: opacity 0.2s ease-out;
     opacity: 0;
 }
