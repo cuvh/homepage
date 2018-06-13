@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import classnames from "classnames";
 import Meta from "components/Meta";
+import CareerBenefits from "components/Careers/CareerBenefits";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
@@ -14,14 +15,7 @@ import colmImage from "assets/img/about/member/colm-roche@2x.jpg";
 import ginovskiImage from "assets/img/about/member/aleksander-ginovski@2x.jpg";
 import vassyImage from "assets/img/about/member/vassilena-valchanova@2x.jpg";
 
-const Faces = [
-    vouldjeffImage,
-    irinaImage,
-    volenImage,
-    colmImage,
-    ginovskiImage,
-    vassyImage
-];
+const Faces = [vouldjeffImage, irinaImage, volenImage, colmImage, ginovskiImage, vassyImage];
 const SHOW_ON_MOBILE = 3;
 
 export default function Careers() {
@@ -37,17 +31,15 @@ export default function Careers() {
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 col-sm-12 text-center">
                                 <h3>
-                                    We are on a mission to help talented people
-                                    believe in themselves and unleash their full
-                                    potential.
+                                    We are on a mission to help talented people believe in
+                                    themselves and unleash their full potential.
                                 </h3>
                             </div>
                         </div>
                         <div>
                             <a
                              href="#list"
-                             className="scroll-down"
-                            >
+                             className="scroll-down">
                                 <i className="icon-angle-down" />
                             </a>
                         </div>
@@ -55,8 +47,7 @@ export default function Careers() {
                 </div>
                 <div
                  className="jobs-list"
-                 id="list"
-                >
+                 id="list">
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-12 text-center">
@@ -66,8 +57,7 @@ export default function Careers() {
                                 <ul className="list-group">
                                     <li className="list-group-item row">
                                         <div className="full-width secondary-text text-center">
-                                            There are currently no positions
-                                            available.
+                                            There are currently no positions available.
                                         </div>
                                     </li>
                                 </ul>
@@ -78,49 +68,40 @@ export default function Careers() {
                                         Submit a general application
                                     </div>
                                     <div className="secondary-text">
-                                        If you see yourself as a part of our
-                                        team but there's currently no job
-                                        opening that matches your profile, reach
+                                        If you see yourself as a part of our team but there's
+                                        currently no job opening that matches your profile, reach
                                         out to us anyway: our email is{" "}
                                         <a href="mailto:work@enhancv.com">
                                             <strong>work@enhancv.com</strong>
-                                        </a>. Our two offices are centrally
-                                        located in Sofia and Dublin, and we're
-                                        always keen to meet interesting people!
+                                        </a>. Our two offices are centrally located in Sofia and
+                                        Dublin, and we're always keen to meet interesting people!
                                     </div>
                                 </div>
                                 <div className="info-group">
-                                    <div className="text-center main-text">
-                                        Our team
-                                    </div>
+                                    <div className="text-center main-text">Our team</div>
                                     <div className="text-center">
                                         {Faces.map((image, i) => (
                                             <div
-                                             className={classnames(
-                                                "member-thumb ",
-                                                {
-                                                    "hide-xs-min":
-                                                        i > SHOW_ON_MOBILE - 1
-                                                }
-                                             )}
+                                             className={classnames("member-thumb ", {
+                                                "hide-xs-min": i > SHOW_ON_MOBILE - 1,
+                                             })}
                                              style={{
-                                                backgroundImage: `url(${image})`
+                                                backgroundImage: `url(${image})`,
                                              }}
+                                             key={i}
                                             />
                                         ))}
                                     </div>
                                     <div className="secondary-text">
-                                        Achievers, daydreamers, believers in the
-                                        mankind – but also, ving tsun masters,
-                                        yoga pros, book lovers, party animals.
-                                        We know it takes all kinds to make a
-                                        world, and we truly embrace that.
+                                        Achievers, daydreamers, believers in the mankind – but also,
+                                        ving tsun masters, yoga pros, book lovers, party animals. We
+                                        know it takes all kinds to make a world, and we truly
+                                        embrace that.
                                     </div>
                                     <div className="text-center">
                                         <Link
                                          to="/about"
-                                         className="btn btn-muted"
-                                        >
+                                         className="btn btn-muted">
                                             See the rest of the team
                                         </Link>
                                     </div>
@@ -134,7 +115,7 @@ export default function Careers() {
                                         </div>
                                     </div>
                                 </div>
-                                BENEFITS
+                                <CareerBenefits />
                             </div>
                         </div>
                     </div>

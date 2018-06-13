@@ -1,11 +1,25 @@
 const path = require("path");
 
-exports.modifyWebpackConfig = ({ config, _stage }) => {
+exports.modifyWebpackConfig = ({ config, stage }) => {
 	config.merge({
 		resolve: {
 			root: path.resolve(__dirname, "src/")
 		}
 	});
+
+	const timestamp = Date.now();
+	switch (stage) {
+		case "build-javascript":
+			config.merge({
+				output: {
+					filename: `[name]-${timestamp}-[chunkhash].js`,
+					chunkFilename: `[name]-${timestamp}-[chunkhash].js`
+				}
+			});
+
+			break;
+	}
+
 	return config;
 };
 

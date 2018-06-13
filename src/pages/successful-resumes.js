@@ -26,6 +26,7 @@ export default function FeaturedResume({ data }) {
             <Meta
              title="Real Resume Examples that Got People Hires | Enhancv"
              description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
+             metaImage={data.shareImage.publicURL}
             />
             <main className="container">
                 <section className="page--head">
@@ -37,7 +38,7 @@ export default function FeaturedResume({ data }) {
                     </h5>
                 </section>
 
-                <section className="resume--highlighted m-sm-top-4 m-md-top-5 m-sm-bottom-4 m-md-bottom-10">
+                <section className="animate-in resume--highlighted m-sm-top-4 m-md-top-5 m-sm-bottom-4 m-md-bottom-10">
                     <div className="Grid p-xs-top-4 p-md-top-5">
                         <div className="resume--highlighted-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
                             <Img
@@ -324,6 +325,11 @@ export const pageQuery = graphql`
                     ...GatsbyImageSharpResolutions
                 }
             }
+        }
+        shareImage: file(
+            relativePath: { eq: "successful-resumes/sr-share.png" }
+        ) {
+            publicURL
         }
     }
 `;

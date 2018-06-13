@@ -4,12 +4,14 @@ import Track from "utils/Track";
 import StoreService from "utils/StoreService";
 
 export default class FeelingInspired extends React.PureComponent {
-    constructor(props) {
-        super(props);
+    state = {
+        emotion: null
+    };
 
-        this.state = {
+    componentDidMount() {
+        this.setState({
             emotion: StoreService.getItem(`Feeling-${this.props.name}`)
-        };
+        });
     }
 
     onClick(emotion) {

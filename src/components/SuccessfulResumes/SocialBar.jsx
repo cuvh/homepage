@@ -5,12 +5,14 @@ import StoreService from "utils/StoreService";
 import ShareButtons from "./ShareButtons";
 
 export default class SocialBar extends React.PureComponent {
-    constructor(props) {
-        super(props);
+    state = {
+        active: false
+    };
 
-        this.state = {
+    componentDidMount() {
+        this.setState({
             active: StoreService.getItem(`wow-${this.props.url}`)
-        };
+        });
     }
 
     onClick(event) {

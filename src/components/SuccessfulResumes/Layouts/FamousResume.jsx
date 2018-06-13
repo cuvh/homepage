@@ -26,10 +26,7 @@ import Modal from "components/Modal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({
-    data: { famousResumesJson: { ...data }, list }
-}) {
-    console.log(data);
+export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -48,20 +45,12 @@ export default function FamousResume({
              trigger={
                 <a
                  onClick={() =>
-                    Track(
-                        "Successful Resumes",
-                        "Expand Resume",
-                        `${data.name} - Sticky click`
-                    )}
-                 className="component--fast-resume-preview"
-                >
-                    <Img
-                     resolutions={data.resumes[0].image.childImageSharp.thumb}
-                    />
+                    Track("Successful Resumes", "Expand Resume", `${data.name} - Sticky click`)}
+                 className="component--fast-resume-preview">
+                    <Img resolutions={data.resumes[0].image.childImageSharp.thumb} />
                     <button className="btn-resume-preview" />
                 </a>
-             }
-            >
+             }>
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  facebookText={data.facebookText}
@@ -74,9 +63,8 @@ export default function FamousResume({
             <main className="famous-resume--container">
                 <div
                  className={classnames({
-                    "famous-resume-inverted": data.lightCover
-                 })}
-                >
+                    "famous-resume-inverted": data.lightCover,
+                 })}>
                     <FamousHeader
                      name={data.name}
                      cover={data.cover}
@@ -100,10 +88,7 @@ export default function FamousResume({
                         );
                     }
 
-                    if (
-                        item.section === "MostProudOf" ||
-                        item.section === "Achievements"
-                    ) {
+                    if (item.section === "MostProudOf" || item.section === "Achievements") {
                         return (
                             <Awards
                              key={item.section}
