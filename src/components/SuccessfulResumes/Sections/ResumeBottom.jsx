@@ -59,7 +59,7 @@ export default function FamousContainer({
                                  resumePageOne={resume}
                                  facebookText={facebookText}
                                  twitterText={twitterText}
-                                 url={url}
+                                 url={"famous/" + url}
                                  altText={altText}
                                 />
                             </Modal>
@@ -97,7 +97,7 @@ export default function FamousContainer({
                                  resumePageOne={resume}
                                  facebookText={facebookText}
                                  twitterText={twitterText}
-                                 url={url}
+                                 url={"famous/" + url}
                                  altText={altText}
                                 />
                             </Modal>
