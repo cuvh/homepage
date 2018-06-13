@@ -33,7 +33,7 @@ export default function FamousResume({
             <Meta
              title={data.pageTitle}
              description={data.pageDescription}
-             metaImage={data.socialImg}
+             metaImage={data.socialImg.childImageSharp.resolutions.src}
             />
 
             <SocialBar
@@ -163,6 +163,13 @@ export const pageQuery = graphql`
             facebookText
             twitterText
             finalDescription
+            socialImg {
+                childImageSharp {
+                    resolutions(width: 1200, height: 628) {
+                        ...GatsbyImageSharpResolutions_noBase64
+                    }
+                }
+            }
             cover {
                 childImageSharp {
                     sizes(maxWidth: 2500) {
