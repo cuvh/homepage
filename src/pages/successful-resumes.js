@@ -21,8 +21,6 @@ export default function FeaturedResume({ data }) {
     const subImageId = Math.floor(Math.random() * 3);
     const subImage = data[IMAGE_KEYS[subImageId]];
 
-    console.log(data);
-
     return (
         <DefaultLayout className="resumeslist">
             <Meta

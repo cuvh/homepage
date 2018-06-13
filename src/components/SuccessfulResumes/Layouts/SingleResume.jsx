@@ -7,6 +7,7 @@ import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 import FooterList from "components/SuccessfulResumes/FooterList";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
+import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import Meta from "components/Meta";
 import DefaultLayout from "layouts/DefaultLayout";
@@ -35,6 +36,13 @@ export default class SingleResume extends React.PureComponent {
                  description={data.pageDescription}
                  metaImage={data.socialImg.childImageSharp.resolutions.src}
                 />
+
+                <SocialBar
+                 facebookText={data.facebookText}
+                 twitterText={data.twitterText}
+                 url={data.url}
+                />
+
                 <div className="hasBubbulesBackground">
                     <main className="container">
                         <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
