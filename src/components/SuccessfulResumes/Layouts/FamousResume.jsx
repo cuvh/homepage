@@ -39,7 +39,7 @@ export default function FamousResume({
             <SocialBar
              facebookText={data.facebookText}
              twitterText={data.twitterText}
-             url={data.url}
+             url={"famous/" + data.url}
             />
 
             <Modal
