@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Img from "gatsby-image";
 import Helmet from "react-helmet";
 import Track from "utils/Track";
+import FooterList from "components/SuccessfulResumes/FooterList";
 
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import DefaultLayout from "layouts/DefaultLayout";
@@ -11,7 +12,7 @@ export default function resources({ data }) {
     return (
         <DefaultLayout className="resumedetail">
             <Helmet
-             title = {"Learning Through Struggles"}
+             title="Learning Through Struggles"
              meta={[
                 {
                     name: "description",
@@ -20,32 +21,47 @@ export default function resources({ data }) {
                 }
              ]}
             />
-            <main>  
+            <main>
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
-                        <div className="Grid">
-                            <div className="Grid-cell--md-5 Grid-cell--xs-12">
-                                <div class="resources--head-image">
-                                    <Img
-                                        resolutions={
-                                            data.resourcesHeaderImage.childImageSharp.resolutions
-                                        }
-                                        alt="Who is this good for? | Image"
-                                    />
-                                </div>
+                    <div className="Grid">
+                        <div className="Grid-cell--md-5 Grid-cell--xs-12">
+                            <div className="resources--head-image">
+                                <Img
+                                 resolutions={
+                                    data.resourcesHeaderImage.childImageSharp
+                                        .resolutions
+                                 }
+                                 alt="Who is this good for? | Image"
+                                />
                             </div>
-                            <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
-                                <div className="text">
-                                    <span className="text-tag text-highlight-purple">FREE WORKSHEET</span>
-                                    <h1 class = "h1" > Learning Through Struggles</h1>
-                                    <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
-                                        <p className="p-big">
-                                            Struggles shape our skills and who we are. Explore this question to learn more about yourself and what you should be proud of.
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="#" className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">DOWNLOAD FOR FREE</a>
+                        </div>
+                        <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
+                            <div className="text">
+                                <span className="text-tag text-highlight-purple">
+                                    FREE WORKSHEET
+                                </span>
+                                <h1 className="h1">
+                                    Learning Through Struggles
+                                </h1>
+                                <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
+                                    <p className="p-big">
+                                        Struggles shape our skills and who we
+                                        are. Explore this question to learn more
+                                        about yourself and what you should be
+                                        proud of.
+                                    </p>
                                 </div>
+                                <a
+                                 target="_blank"
+                                 href={data.shapeStory.publicURL}
+                                 download
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                >
+                                    DOWNLOAD FOR FREE
+                                </a>
                             </div>
-                        </div>                       
+                        </div>
+                    </div>
                 </section>
 
                 <section className="m-md-bottom-13 p-sm-3">
@@ -55,22 +71,37 @@ export default function resources({ data }) {
                                 <article className="resume-article">
                                     <h2>How is this helpful?</h2>
                                     <br />
-                                    <h4>Understand how struggles have shaped your skills</h4>
-                                    <p class="p-medium">Learn about how and why struggles are often at the core of our successes.</p>
+                                    <h4>
+                                        Understand how struggles have shaped
+                                        your skills
+                                    </h4>
+                                    <p className="p-medium">
+                                        Learn about how and why struggles are
+                                        often at the core of our successes.
+                                    </p>
 
                                     <h4>Discover your strengths</h4>
-                                    <p class="p-medium">Take those insights and use them to discover new strengths.</p>
+                                    <p className="p-medium">
+                                        Take those insights and use them to
+                                        discover new strengths.
+                                    </p>
 
-                                    <h4>Understand how to use those strengths in your resume</h4>
-                                    <p class="p-medium">Apply these learnings to create a resume that’s more honest and impactful.</p>
+                                    <h4>
+                                        Understand how to use those strengths in
+                                        your resume
+                                    </h4>
+                                    <p className="p-medium">
+                                        Apply these learnings to create a resume
+                                        that’s more honest and impactful.
+                                    </p>
                                 </article>
                             </div>
                             <div className="famous-resume--illustration-holder Grid-cell--md-5 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10">
                                 <Img
-                                resolutions={
+                                 resolutions={
                                     data.ladderImage.childImageSharp.resolutions
-                                }
-                                alt="Who is this good for? | Image"
+                                 }
+                                 alt="Who is this good for? | Image"
                                 />
                             </div>
                         </div>
@@ -79,39 +110,65 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
                         <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center">
-                                <Img
-                                resolutions={
-                                    data.peopleImage.childImageSharp.resolutions
-                                }
-                                alt="Who is this good for? | Image"
-                                />
+                            <Img
+                             resolutions={
+                                data.peopleImage.childImageSharp.resolutions
+                             }
+                             alt="Who is this good for? | Image"
+                            />
                         </div>
                         <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-15 p-md-left-10">
-                            <h3 class = "h3 m-sm-bottom-1 m-md-bottom-2">Who is this good for?</h3>
+                            <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
+                                Who is this good for?
+                            </h3>
                             <p className="p-medium">
-                                Anyone who’ d like to explore their own life struggles to better understand what strengths and skills they can apply to their next job.
+                                Anyone who’ d like to explore their own life
+                                struggles to better understand what strengths
+                                and skills they can apply to their next job.
                             </p>
-                            <a target="_blank" href="#" className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">DOWNLOAD FOR FREE</a>
+                            <a
+                             target="_blank"
+                             href={data.shapeStory.publicURL}
+                             download
+                             className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                            >
+                                DOWNLOAD FOR FREE
+                            </a>
                         </div>
                     </div>
                 </section>
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
-                        <div className = "component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10">
-                                    <Img
-                                    resolutions={
-                                        data.discoverImage.childImageSharp.resolutions
-                                    }
-                                    alt="Discover Your Definition of Success | Image"
-                                    />
+                        <div className="component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
+                            <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10">
+                                <Img
+                                 resolutions={
+                                    data.discoverImage.childImageSharp
+                                        .resolutions
+                                 }
+                                 alt="Discover Your Definition of Success | Image"
+                                />
                             </div>
                             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-10 p-md-left-10">
-                                <h3 class = "h3 m-sm-bottom-1 m-md-bottom-2">Discover Your Definition of Success</h3>
+                                <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
+                                    Discover Your Definition of Success
+                                </h3>
                                 <p className="p-medium">
-                                    When it comes to success, the reason “why” you define something as success is fundamental. Understanding your reason why can help you make better decisions, find more satisfaction, and ultimately be truly successful.
+                                    When it comes to success, the reason “why”
+                                    you define something as success is
+                                    fundamental. Understanding your reason why
+                                    can help you make better decisions, find
+                                    more satisfaction, and ultimately be truly
+                                    successful.
                                 </p>
-                                <a target="_blank" href="#" className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">TRY IT FOR YOURSELF</a>
+                                <a
+                                 target="_blank"
+                                 href={data.defineSuccess.publicURL}
+                                 download
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                >
+                                    TRY IT FOR YOURSELF
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -120,78 +177,101 @@ export default function resources({ data }) {
                     <div className="container">
                         <div className="Grid text-dark-grey Grid-cell--md-offset-2">
                             <div className="Grid-cell--md-9 Grid-cell--xs-12">
-                                <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">Struggles I learned from</h3>
+                                <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">
+                                    Struggles I learned from
+                                </h3>
                                 <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
                                     <div className="component--thumbs-holder thumb-order-sm-2">
-                                           <Img
-                                           resolutions = {
-                                               data.vessyAvatar.childImageSharp.resolutions
-                                           }
-                                           alt = "Discover Your Definition of Success | Image" 
-                                           />
+                                        <Img
+                                         resolutions={
+                                            data.vessyAvatar.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Discover Your Definition of Success | Image"
+                                        />
                                     </div>
                                     <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no"><span className="text-bold">Vessy Tasheva</span></h6>
-                                        <p>I help people remember what they enjoy and encourage them to combine it with what they are good at.</p>
+                                        <h6 className="h6 text-dark-grey m-top-no">
+                                            <span className="text-bold">
+                                                Vessy Tasheva
+                                            </span>
+                                        </h6>
+                                        <p>
+                                            I help people remember what they
+                                            enjoy and encourage them to combine
+                                            it with what they are good at.
+                                        </p>
                                     </div>
                                 </div>
-                                < div className = "Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap resources--thumbs-list-odd">
+                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap resources--thumbs-list-odd">
                                     <div className="component--thumbs-holder thumb-order-sm-2">
-                                           <Img
-                                           resolutions = {
-                                               data.ericAvatar.childImageSharp.resolutions
-                                           }
-                                           alt = "Discover Your Definition of Success | Image" 
-                                           />
+                                        <Img
+                                         resolutions={
+                                            data.ericAvatar.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Discover Your Definition of Success | Image"
+                                        />
                                     </div>
                                     <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no"><span className="text-bold">Eric Halsey</span></h6>
-                                        <p>A writer with a passionate belief in the power of peer to peer learning and storytelling to change lives.</p>
+                                        <h6 className="h6 text-dark-grey m-top-no">
+                                            <span className="text-bold">
+                                                Eric Halsey
+                                            </span>
+                                        </h6>
+                                        <p>
+                                            A writer with a passionate belief in
+                                            the power of peer to peer learning
+                                            and storytelling to change lives.
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
                                     <div className="component--thumbs-holder thumb-order-sm-2">
-                                           <Img
-                                           resolutions = {
-                                               data.valiAvatar.childImageSharp.resolutions
-                                           }
-                                           alt = "Discover Your Definition of Success | Image" 
-                                           />
+                                        <Img
+                                         resolutions={
+                                            data.valiAvatar.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Discover Your Definition of Success | Image"
+                                        />
                                     </div>
                                     <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no"><span className="text-bold">Velina Gatova</span></h6>
-                                        <p>LSE graduate, business psychologist, career & life coach. 7+ years of cross-industry experience in People & Culture.</p>
+                                        <h6 className="h6 text-dark-grey m-top-no">
+                                            <span className="text-bold">
+                                                Velina Getova
+                                            </span>
+                                        </h6>
+                                        <p>
+                                            LSE graduate, business psychologist,
+                                            career & life coach. 7+ years of
+                                            cross-industry experience in People
+                                            & Culture.
+                                        </p>
                                     </div>
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </section>
             </main>
 
-
             <SubscribeNoImage />
-            {/* <FooterList list={allResumes.edges} /> */}
+            <FooterList list={data.allUserResumesJson.edges} />
         </DefaultLayout>
     );
 }
 
-
-export const pageQuery = graphql `
+export const pageQuery = graphql`
     query AllResources {
-        allFamousResumesJson(limit: 200) {
+        allUserResumesJson(limit: 20) {
             edges {
                 node {
                     url
                     name
-                    description
-                    avatar {
-                        childImageSharp {
-                            resolutions(width: 126) {
-                                ...GatsbyImageSharpResolutions
-                            }
-                        }
-                    }
+                    label
+                    title
+                    tags
                     resumes {
                         image {
                             childImageSharp {
@@ -201,25 +281,41 @@ export const pageQuery = graphql `
                             }
                         }
                     }
+                    companyLogo {
+                        childImageSharp {
+                            resolutions(width: 100) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
+                    avatar {
+                        childImageSharp {
+                            resolutions(width: 126) {
+                                ...GatsbyImageSharpResolutions
+                            }
+                        }
+                    }
                 }
             }
         }
-        twitter: file(
-            relativePath: {
-                eq: "resources/icons/twitter@2x.png"
-            }
-        ) {
+        twitter: file(relativePath: { eq: "resources/icons/twitter@2x.png" }) {
             childImageSharp {
                 resolutions(width: 118, height: 118) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        linkedin: file(
-            relativePath: {
-                eq: "resources/icons/linkdin@2x.png"
-            }
+        defineSuccess: file(
+            relativePath: { eq: "worksheets/define_success.pdf" }
         ) {
+            publicURL
+        }
+        shapeStory: file(
+            relativePath: { eq: "worksheets/shape_of_story.pdf" }
+        ) {
+            publicURL
+        }
+        linkedin: file(relativePath: { eq: "resources/icons/linkdin@2x.png" }) {
             childImageSharp {
                 resolutions(width: 118, height: 118) {
                     ...GatsbyImageSharpResolutions
@@ -227,9 +323,7 @@ export const pageQuery = graphql `
             }
         }
         vessyAvatar: file(
-            relativePath: {
-                eq: "resources/authors/vesi@2x.png"
-            }
+            relativePath: { eq: "resources/authors/vesi@2x.png" }
         ) {
             childImageSharp {
                 resolutions(width: 118, height: 118) {
@@ -238,9 +332,7 @@ export const pageQuery = graphql `
             }
         }
         ericAvatar: file(
-            relativePath: {
-                eq: "resources/authors/erik@2x.png"
-            }
+            relativePath: { eq: "resources/authors/erik@2x.png" }
         ) {
             childImageSharp {
                 resolutions(width: 118, height: 118) {
@@ -249,9 +341,7 @@ export const pageQuery = graphql `
             }
         }
         valiAvatar: file(
-            relativePath: {
-                eq: "resources/authors/veli@2x.png"
-            }
+            relativePath: { eq: "resources/authors/veli@2x.png" }
         ) {
             childImageSharp {
                 resolutions(width: 118, height: 118) {
@@ -268,18 +358,14 @@ export const pageQuery = graphql `
                 }
             }
         }
-        peopleImage: file(
-            relativePath: { eq: "resources/people@2.png" }
-        ) {
+        peopleImage: file(relativePath: { eq: "resources/people@2.png" }) {
             childImageSharp {
                 resolutions(width: 311, height: 293) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        ladderImage: file(
-            relativePath: { eq: "resources/ladder@2.png" }
-        ) {
+        ladderImage: file(relativePath: { eq: "resources/ladder@2.png" }) {
             childImageSharp {
                 resolutions(width: 480, height: 519) {
                     ...GatsbyImageSharpResolutions
