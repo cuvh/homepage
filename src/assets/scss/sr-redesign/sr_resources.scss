@@ -1,0 +1,33 @@
+.resources {
+    &--head{
+        margin-top: $sr_global-offset-value * 14;
+        h1,
+        h2 {
+            max-width: 100%;
+        }
+        @media screen and (max-width: $screen-sm-max) {
+            margin-top: $sr_global-offset-value * 6;
+        }
+    }
+    &--discover-box {
+        @media screen and (min-width: $screen-sm) {
+            background-color:#f6f7f9;
+        }
+    }
+    &--head-image {
+        position: relative;
+        @media screen and (min-width: $screen-sm) {
+            left: -80px;
+        }
+    }
+    &--thumbs-list {
+
+    }
+    
+    &--thumbs-list-odd {
+        @media screen and (min-width: $screen-sm) {
+            position: relative;
+            left:100px;
+        }
+    }
+}
