@@ -1,4 +1,11 @@
 import React from "react";
+import ReactDOM from "react-dom";
+
+function Portal({ children }) {
+    return typeof document !== "undefined"
+        ? ReactDOM.createPortal(children, document.getElementById("___gatsby"))
+        : children;
+}
 
 export default class OpenModal extends React.PureComponent {
     state = {
@@ -49,23 +56,25 @@ export default class OpenModal extends React.PureComponent {
             <React.Fragment>
                 <div onClick={() => this.onOpen()}>{trigger}</div>
                 {opened ? (
-                    <div
-                     onClick={event => this.onBackdropClick(event)}
-                     ref="modal"
-                     tabIndex="-1"
-                     className={opened ? "modal in" : "modal fade"}
-                    >
-                        <div className="modal-dialog modal-lg modal-example">
-                            <div className="modal-content">{children}</div>
-                        </div>
-                        <button
-                         type="button"
-                         onClick={() => this.onClose()}
-                         className="close close-example"
+                    <Portal>
+                        <div
+                         onClick={event => this.onBackdropClick(event)}
+                         ref="modal"
+                         tabIndex="-1"
+                         className={opened ? "modal in" : "modal fade"}
                         >
-                            <i className="icon-times" />
-                        </button>
-                    </div>
+                            <div className="modal-dialog modal-lg modal-example">
+                                <div className="modal-content">{children}</div>
+                            </div>
+                            <button
+                             type="button"
+                             onClick={() => this.onClose()}
+                             className="close close-example"
+                            >
+                                <i className="icon-times" />
+                            </button>
+                        </div>
+                    </Portal>
                 ) : null}
             </React.Fragment>
         );

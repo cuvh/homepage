@@ -5,12 +5,15 @@ import Helmet from "react-helmet";
 import Track from "utils/Track";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
+import Modal from "components/Modal";
+import ResourcePreview from "components/Resources/ResourcePreview";
+
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function resources({ data }) {
     return (
-        <DefaultLayout className="resumedetail">
+        <DefaultLayout className="resumedetail hasBubbulesBackground">
             <Helmet
              title="Learning Through Struggles"
              meta={[
@@ -25,15 +28,27 @@ export default function resources({ data }) {
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
                     <div className="Grid resources--head-wrap">
                         <div className="Grid-cell--md-5 Grid-cell--xs-12">
-                            <div className="resources--head-image">
-                                <Img
-                                 resolutions={
-                                    data.resourcesHeaderImage.childImageSharp
-                                        .resolutions
+                            <div className="resources--head-image resources--modal-button">
+                                <Modal
+                                 trigger={
+                                    <React.Fragment>
+                                        <Img
+                                         resolutions={
+                                            data.resourcesHeaderImage
+                                                .childImageSharp.resolutions
+                                         }
+                                         alt="Who is this good for? | Image"
+                                        />
+                                        <button className="btn-resume-preview" />
+                                    </React.Fragment>
                                  }
-                                 alt="Who is this good for? | Image"
-                                />
-                                <button className="btn-resume-preview" />
+                                >
+                                    <ResourcePreview
+                                     filled={data.shapeStoryPreviewOne}
+                                     empty={data.shapeStoryPreviewTwo}
+                                     altText={"Who is this good for? | Image"}
+                                    />
+                                </Modal>
                             </div>
                         </div>
 
@@ -142,14 +157,29 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
                         <div className="component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby">
-                                <Img
-                                 resolutions={
-                                    data.discoverImage.childImageSharp
-                                        .resolutions
+                            <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby resources--modal-button isModalButtonDiscover">
+                                <Modal
+                                 trigger={
+                                    <React.Fragment>
+                                        <Img
+                                         resolutions={
+                                            data.discoverImage.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Discover Your Definition of Success | Image"
+                                        />
+                                        <button className="btn-resume-preview" />
+                                    </React.Fragment>
                                  }
-                                 alt="Discover Your Definition of Success | Image"
-                                />
+                                >
+                                    <ResourcePreview
+                                     filled={data.defineSuccessPreviewOne}
+                                     empty={data.defineSuccessPreviewTwo}
+                                     altText={
+                                        "Discover Your Definition of Success | Image"
+                                     }
+                                    />
+                                </Modal>
                             </div>
                             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-10 p-md-left-10">
                                 <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
@@ -257,9 +287,10 @@ export default function resources({ data }) {
                     </div>
                 </section>
             </main>
-
-            <SubscribeNoImage />
-            <FooterList list={data.allUserResumesJson.edges} />
+            <div className="container">
+                <SubscribeNoImage />
+                <FooterList list={data.allUserResumesJson.edges} />
+            </div>
         </DefaultLayout>
     );
 }
@@ -312,10 +343,46 @@ export const pageQuery = graphql`
         ) {
             publicURL
         }
+        defineSuccessPreviewOne: file(
+            relativePath: { eq: "worksheets/define_success_1.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        defineSuccessPreviewTwo: file(
+            relativePath: { eq: "worksheets/define_success_2.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
         shapeStory: file(
             relativePath: { eq: "worksheets/shape_of_story.pdf" }
         ) {
             publicURL
+        }
+        shapeStoryPreviewOne: file(
+            relativePath: { eq: "worksheets/shape_story_1.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        shapeStoryPreviewTwo: file(
+            relativePath: { eq: "worksheets/shape_story_2.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
         }
         linkedin: file(relativePath: { eq: "resources/icons/linkdin@2x.png" }) {
             childImageSharp {
@@ -375,7 +442,7 @@ export const pageQuery = graphql`
             }
         }
         resourcesHeaderImage: file(
-            relativePath: { eq: "resources/shape_of_Story_worksheet_main.png" }
+            relativePath: { eq: "resources/worksheet_preview_up@2x.png" }
         ) {
             childImageSharp {
                 resolutions(width: 572, height: 454) {
