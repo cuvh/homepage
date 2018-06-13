@@ -1,4 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom";
+
+const root = document.getElementById("___gatsby");
 
 export default class OpenModal extends React.PureComponent {
     state = {
@@ -45,28 +48,30 @@ export default class OpenModal extends React.PureComponent {
         const { opened } = this.state;
         const { trigger, children } = this.props;
 
+        const modal = (
+            <div
+             onClick={event => this.onBackdropClick(event)}
+             ref="modal"
+             tabIndex="-1"
+             className={opened ? "modal in" : "modal fade"}
+            >
+                <div className="modal-dialog modal-lg modal-example">
+                    <div className="modal-content">{children}</div>
+                </div>
+                <button
+                 type="button"
+                 onClick={() => this.onClose()}
+                 className="close close-example"
+                >
+                    <i className="icon-times" />
+                </button>
+            </div>
+        );
+
         return (
             <React.Fragment>
                 <div onClick={() => this.onOpen()}>{trigger}</div>
-                {opened ? (
-                    <div
-                     onClick={event => this.onBackdropClick(event)}
-                     ref="modal"
-                     tabIndex="-1"
-                     className={opened ? "modal in" : "modal fade"}
-                    >
-                        <div className="modal-dialog modal-lg modal-example">
-                            <div className="modal-content">{children}</div>
-                        </div>
-                        <button
-                         type="button"
-                         onClick={() => this.onClose()}
-                         className="close close-example"
-                        >
-                            <i className="icon-times" />
-                        </button>
-                    </div>
-                ) : null}
+                {opened ? ReactDOM.createPortal(modal, root) : null}
             </React.Fragment>
         );
     }

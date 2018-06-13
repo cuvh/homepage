@@ -8,10 +8,6 @@ import SuccessfulResumesStrip from "components/SuccessfulResumes/SuccessfulResum
 
 import logoImg from "../assets/img/logo-with-text.svg";
 
-// $(document).on("click", '[data-toggle="navbar"]', function() {
-//     $("body").toggleClass("navbar-mobile-active");
-// });
-
 class Header extends React.PureComponent {
     state = {
         stick: false

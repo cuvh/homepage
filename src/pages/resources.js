@@ -5,10 +5,14 @@ import Helmet from "react-helmet";
 import Track from "utils/Track";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
+import Modal from "components/Modal";
+import ResourcePreview from "components/Resources/ResourcePreview";
+
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import DefaultLayout from "layouts/DefaultLayout";
 
 export default function resources({ data }) {
+    console.log(data);
     return (
         <DefaultLayout className="resumedetail hasBubbulesBackground">
             <Helmet
@@ -23,46 +27,59 @@ export default function resources({ data }) {
             />
             <main>
                 <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
-                        <div className="Grid resources--head-wrap">
-                            <div className="Grid-cell--md-5 Grid-cell--xs-12">
-                                < div class = "resources--head-image resources--modal-button">
-                                    <Img
-                                        resolutions={
-                                            data.resourcesHeaderImage.childImageSharp.resolutions
-                                        }
-                                        alt="Who is this good for? | Image"
+                    <div className="Grid resources--head-wrap">
+                        <div className="Grid-cell--md-5 Grid-cell--xs-12">
+                            <div className="resources--head-image resources--modal-button">
+                                <Modal
+                                 trigger={
+                                    <React.Fragment>
+                                        <Img
+                                         resolutions={
+                                            data.resourcesHeaderImage
+                                                .childImageSharp.resolutions
+                                         }
+                                         alt="Who is this good for? | Image"
+                                        />
+                                        <button className="btn-resume-preview" />
+                                    </React.Fragment>
+                                 }
+                                >
+                                    <ResourcePreview
+                                     filled={data.shapeStoryPreviewOne}
+                                     empty={data.shapeStoryPreviewTwo}
+                                     altText={"Who is this good for? | Image"}
                                     />
-                                    <button class="btn-resume-preview"></button>
-                                </div>
-                            </div>
-            
-                            <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
-                                <div className="text">
-                                    <span className="text-tag text-highlight-purple">
-                                        FREE WORKSHEET
-                                    </span>
-                                    <h1 className="h1">
-                                        Learning Through Struggles
-                                    </h1>
-                                    <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
-                                        <p className="p-big">
-                                            Struggles shape our skills and who we
-                                            are. Explore this question to learn more
-                                            about yourself and what you should be
-                                            proud of.
-                                        </p>
-                                    </div>
-                                    <a
-                                    target="_blank"
-                                    href={data.shapeStory.publicURL}
-                                    download
-                                    className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
-                                    >
-                                        DOWNLOAD FOR FREE
-                                    </a>
-                                </div>
+                                </Modal>
                             </div>
                         </div>
+
+                        <div className="Grid-cell--md-7 Grid-cell--xs-12 m-sm-bottom-3 p-md-left-10">
+                            <div className="text">
+                                <span className="text-tag text-highlight-purple">
+                                    FREE WORKSHEET
+                                </span>
+                                <h1 className="h1">
+                                    Learning Through Struggles
+                                </h1>
+                                <div className="m-xs-top-1 m-md-top-3 Grid-cell--md-10">
+                                    <p className="p-big">
+                                        Struggles shape our skills and who we
+                                        are. Explore this question to learn more
+                                        about yourself and what you should be
+                                        proud of.
+                                    </p>
+                                </div>
+                                <a
+                                 target="_blank"
+                                 href={data.shapeStory.publicURL}
+                                 download
+                                 className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
+                                >
+                                    DOWNLOAD FOR FREE
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section className="m-md-bottom-13 p-sm-3">
@@ -111,12 +128,12 @@ export default function resources({ data }) {
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
                         <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center responsive-gatsby">
-                                <Img
-                                resolutions={
-                                    data.peopleImage.childImageSharp.resolutions
-                                }
-                                alt="Who is this good for? | Image"
-                                />
+                            <Img
+                             resolutions={
+                                data.peopleImage.childImageSharp.resolutions
+                             }
+                             alt="Who is this good for? | Image"
+                            />
                         </div>
                         <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-15 p-md-left-10">
                             <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
@@ -140,15 +157,30 @@ export default function resources({ data }) {
                 </section>
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
-                        <div className = "component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
-                            <div className = "component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby resources--modal-button isModalButtonDiscover">
-                                    <Img
-                                    resolutions={
-                                        data.discoverImage.childImageSharp.resolutions
-                                    }
-                                    alt="Discover Your Definition of Success | Image"
+                        <div className="component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
+                            <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby resources--modal-button isModalButtonDiscover">
+                                <Modal
+                                 trigger={
+                                    <React.Fragment>
+                                        <Img
+                                         resolutions={
+                                            data.discoverImage.childImageSharp
+                                                .resolutions
+                                         }
+                                         alt="Discover Your Definition of Success | Image"
+                                        />
+                                        <button className="btn-resume-preview" />
+                                    </React.Fragment>
+                                 }
+                                >
+                                    <ResourcePreview
+                                     filled={data.defineSuccessPreviewOne}
+                                     empty={data.defineSuccessPreviewTwo}
+                                     altText={
+                                        "Discover Your Definition of Success | Image"
+                                     }
                                     />
-                                    <button class="btn-resume-preview"></button>
+                                </Modal>
                             </div>
                             <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-10 p-md-left-10">
                                 <h3 className="h3 m-sm-bottom-1 m-md-bottom-2">
@@ -256,7 +288,7 @@ export default function resources({ data }) {
                     </div>
                 </section>
             </main>
-            <div className="container">                        
+            <div className="container">
                 <SubscribeNoImage />
                 <FooterList list={data.allUserResumesJson.edges} />
             </div>
@@ -312,10 +344,46 @@ export const pageQuery = graphql`
         ) {
             publicURL
         }
+        defineSuccessPreviewOne: file(
+            relativePath: { eq: "worksheets/define_success_1.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        defineSuccessPreviewTwo: file(
+            relativePath: { eq: "worksheets/define_success_2.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
         shapeStory: file(
             relativePath: { eq: "worksheets/shape_of_story.pdf" }
         ) {
             publicURL
+        }
+        shapeStoryPreviewOne: file(
+            relativePath: { eq: "worksheets/shape_story_1.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        shapeStoryPreviewTwo: file(
+            relativePath: { eq: "worksheets/shape_story_2.jpg" }
+        ) {
+            childImageSharp {
+                resolutions(width: 1240) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
         }
         linkedin: file(relativePath: { eq: "resources/icons/linkdin@2x.png" }) {
             childImageSharp {
