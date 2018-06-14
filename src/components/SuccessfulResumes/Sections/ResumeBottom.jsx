@@ -8,7 +8,7 @@ import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import FooterList from "components/SuccessfulResumes/FooterList";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
-import Modal from "components/Modal";
+import SocialModal from "components/SocialModal";
 
 export default function FamousContainer({
     name,
@@ -16,9 +16,7 @@ export default function FamousContainer({
     finalDescription,
     list,
     altText,
-    url,
-    facebookText,
-    twitterText
+    socialData
 }) {
     const firstName = name.split(" ")[0];
 
@@ -31,7 +29,7 @@ export default function FamousContainer({
                 <section className="resumes--accent accent--reverse Grid full-width noBackground p-md-left-10">
                     <div className="resumes--preview Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6">
                         <span className="resumes--preview-holder">
-                            <Modal
+                            <SocialModal
                              trigger={
                                 <a
                                  onClick={() =>
@@ -53,15 +51,13 @@ export default function FamousContainer({
                                     <button className="btn-resume-preview" />
                                 </a>
                              }
+                             socialData={socialData}
                             >
                                 <ResumePreview
                                  resumePageOne={resume}
-                                 facebookText={facebookText}
-                                 twitterText={twitterText}
-                                 url={"famous/" + url}
                                  altText={altText}
                                 />
-                            </Modal>
+                            </SocialModal>
                         </span>
                     </div>
                     <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12">
@@ -77,7 +73,7 @@ export default function FamousContainer({
                                     {finalDescription}
                                 </p>
                             </div>
-                            <Modal
+                            <SocialModal
                              trigger={
                                 <a
                                  onClick={() =>
@@ -91,15 +87,13 @@ export default function FamousContainer({
                                     See the Resume
                                 </a>
                              }
+                             socialData={socialData}
                             >
                                 <ResumePreview
                                  resumePageOne={resume}
-                                 facebookText={facebookText}
-                                 twitterText={twitterText}
-                                 url={"famous/" + url}
                                  altText={altText}
                                 />
-                            </Modal>
+                            </SocialModal>
                             <div className="full-width">
                                 <FeelingInspired
                                  dark={true}

@@ -1,32 +1,32 @@
 .resumes {
     &--accent {
-        &.isSingle{
+        &.isSingle {
             // position: relative;
             .page--scroll {
-                bottom:-16px;
+                bottom: -16px;
             }
         }
     }
     &--preview {
         &.isSingle {
             position: relative;
-            @media screen and (min-width:$screen-md) {
-                right:-104px;
-                top:152px;
+            @media screen and (min-width: $screen-md) {
+                right: -104px;
+                top: 152px;
             }
         }
     }
 
     &--accent-hired {
         position: absolute;
-        @media screen and (min-width:$screen-md) {
+        @media screen and (min-width: $screen-md) {
             bottom: -5%;
             left: -60%;
             padding: 32px 32px 32px 88px;
             max-width: 470px;
         }
 
-        @media screen and (max-width:$screen-sm-max) {
+        @media screen and (max-width: $screen-sm-max) {
             bottom: -64px;
             z-index: 1;
             right: -15px;
@@ -34,20 +34,17 @@
             padding: 56px 32px 88px 64px;
         }
 
-        box-sizing:border-box;
+        box-sizing: border-box;
         min-height: 288px;
         align-items: center;
         display: flex;
 
-        font-size:14px;
-        color:#65696D;
+        font-size: 14px;
+        color: #65696d;
         text-align: left;
 
         .hired-label {
-            margin-top:4px;
+            margin-top: -6px;
         }
-
     }
 }
-
-

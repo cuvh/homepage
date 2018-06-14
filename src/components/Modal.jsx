@@ -50,7 +50,7 @@ export default class OpenModal extends React.PureComponent {
 
     render() {
         const { opened } = this.state;
-        const { trigger, children } = this.props;
+        const { trigger, children, additionalContent } = this.props;
 
         return (
             <React.Fragment>
@@ -73,6 +73,8 @@ export default class OpenModal extends React.PureComponent {
                             >
                                 <i className="icon-times" />
                             </button>
+
+                            {additionalContent}
                         </div>
                     </Portal>
                 ) : null}

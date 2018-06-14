@@ -8,7 +8,7 @@
         letter-spacing: 0;
         text-align: center;
         line-height: 28px;
-        z-index: 9;
+        z-index: -1;
         @media screen and (max-width: $socail-layout-switch - 1) {
             bottom: 0;
             height: 50px;

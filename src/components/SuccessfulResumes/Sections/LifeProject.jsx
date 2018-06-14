@@ -23,7 +23,7 @@ export default function LifeProject({
                             <p>{description}</p>
                         </article>
                     </div>
-                    <div className="famous-resume--illustration-holder Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10">
+                    <div className="famous-resume--illustration-holder Grid-cell--md-6 Grid-cell--xs-12 p-md-left-10">
                         <Img
                          style={{ width: 266, height: 238 }}
                          className="famous-resume--illustration"

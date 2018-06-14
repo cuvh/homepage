@@ -22,13 +22,19 @@ import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom"
 import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
-import Modal from "components/Modal";
+import SocialModal from "components/SocialModal";
 
 import Meta from "components/Meta";
 
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
+    const socialData = {
+        facebookText: data.facebookText,
+        twitterText: data.twitterText,
+        url: data.url
+    };
+
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -43,7 +49,7 @@ export default function FamousResume({
              url={"famous/" + data.url}
             />
 
-            <Modal
+            <SocialModal
              trigger={
                 <a
                  onClick={() =>
@@ -60,15 +66,13 @@ export default function FamousResume({
                     <button className="btn-resume-preview" />
                 </a>
              }
+             socialData={socialData}
             >
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
-                 facebookText={data.facebookText}
-                 twitterText={data.twitterText}
-                 url={data.url}
                  altText={`${data.name}'s resume`}
                 />
-            </Modal>
+            </SocialModal>
 
             <main className="famous-resume--container">
                 <div
@@ -145,9 +149,7 @@ export default function FamousResume({
                  name={data.name}
                  finalDescription={data.finalDescription}
                  resume={data.resumes[0].image}
-                 facebookText={data.facebookText}
-                 twitterText={data.twitterText}
-                 url={data.url}
+                 socialData={socialData}
                  altText={`${data.name}'s resume`}
                 />
             </main>
@@ -190,7 +192,7 @@ export const pageQuery = graphql`
                         small: resolutions(width: 884) {
                             ...GatsbyImageSharpResolutions
                         }
-                        large: resolutions(width: 1240) {
+                        large: resolutions(width: 2479) {
                             ...GatsbyImageSharpResolutions
                         }
                     }

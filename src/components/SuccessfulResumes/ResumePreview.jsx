@@ -1,15 +1,10 @@
 import React from "react";
-import SocialPanel from "./SocialPanel";
 import Img from "gatsby-image";
 
 export default function ResumePreview({
     resumePageOne,
     resumePageTwo,
-    altText,
-    url,
-    facebookText,
-    twitterText,
-    socials = true
+    altText
 }) {
     return (
         <React.Fragment>
@@ -36,14 +31,6 @@ export default function ResumePreview({
                     />
                 ) : null}
             </div>
-            {socials ? (
-                <SocialPanel
-                 className="inModal hasBackground"
-                 facebookText={facebookText}
-                 twitterText={twitterText}
-                 url={url}
-                />
-            ) : null}
         </React.Fragment>
     );
 }

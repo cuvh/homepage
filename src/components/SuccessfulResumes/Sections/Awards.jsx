@@ -30,7 +30,7 @@ export default function Awards({
                             ))}
                         </article>
                     </div>
-                    <div className="Grid-cell--md-4 Grid-cell--xs-12 text-center m-sm-bottom-4">
+                    <div className="Grid-cell--md-4 Grid-cell--xs-12 text-center m-sm-bottom-4 m-bottom-7 Grid--selfCenter">
                         <Img
                          style={{ maxWidth: 266, margin: "0 auto" }}
                          sizes={image.childImageSharp.sizes}

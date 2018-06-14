@@ -10,9 +10,9 @@ $flexgrid-columns: 12;
 $flexgrid-gutters: (xs: 4px, sm: 8px, md: 16px, lg: 24px);
 
 @mixin flexgrid-break($size) {
-  @media (min-width: map-get($flexgrid-breakpoints, $size)) {
-    @content;
-  }
+    @media (min-width: map-get($flexgrid-breakpoints, $size)) {
+        @content;
+    }
 }
 
 /**
@@ -42,44 +42,48 @@ $flexgrid-gutters: (xs: 4px, sm: 8px, md: 16px, lg: 24px);
  */
 
 .Grid {
-  box-sizing: border-box; /* 0 */
-  display: flex; /* 1 */
-  flex-flow: row wrap; /* 2 */
-  list-style: none; /* 3 */
-  margin: 0; /* 3 */
-  padding: 0; /* 3 */
+    box-sizing: border-box; /* 0 */
+    display: flex; /* 1 */
+    flex-flow: row wrap; /* 2 */
+    list-style: none; /* 3 */
+    margin: 0; /* 3 */
+    padding: 0; /* 3 */
 }
 
 .Grid--column {
-  flex-direction: column; /* 4 */
+    flex-direction: column; /* 4 */
 }
 
 .Grid--alignStart {
-  align-items: flex-start; /* 5 */
+    align-items: flex-start; /* 5 */
 }
 
 .Grid--alignEnd {
-  align-items: flex-end; /*  6 */
+    align-items: flex-end; /*  6 */
 }
 
 .Grid--alignCenter {
-  align-items: center; /* 7 */
+    align-items: center; /* 7 */
 }
 
 .Grid--justifyCenter {
-  justify-content: center; /* 8 */
+    justify-content: center; /* 8 */
 }
 
 .Grid--justifyEnd {
-  justify-content: flex-end; /* 9 */
+    justify-content: flex-end; /* 9 */
 }
 
 .Grid--spaceBetween {
-  justify-content: space-between; /* 10 */
+    justify-content: space-between; /* 10 */
 }
 
 .Grid--spaceAround {
-  justify-content: space-around; /* 11 */
+    justify-content: space-around; /* 11 */
+}
+
+.Grid--selfCenter {
+    align-self: center;
 }
 
 /**
@@ -98,11 +102,11 @@ $flexgrid-gutters: (xs: 4px, sm: 8px, md: 16px, lg: 24px);
  */
 
 .Grid-cell {
-  flex: 1;
+    flex: 1;
 }
 
 .Grid-cell--auto {
-  flex: 0 1 auto;
+    flex: 0 1 auto;
 }
 
 /**
@@ -175,42 +179,42 @@ $flexgrid-gutters: (xs: 4px, sm: 8px, md: 16px, lg: 24px);
 
 $flexgrid-cell-counter: 1;
 @each $key, $val in $flexgrid-breakpoints {
-  .Grid-cell--#{$key} {
-    flex: 0 0 100%;
-    max-width: 100%;
+    .Grid-cell--#{$key} {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        @include flexgrid-break($key) {
+            flex: 1;
+        }
+    }
+
+    @for $i from 1 through $flexgrid-columns {
+        @if ($flexgrid-cell-counter == 1) {
+            .Grid-cell--#{$key}-#{$i} {
+                flex: 0 0 ($i/$flexgrid-columns)*100%;
+                max-width: ($i/$flexgrid-columns)*100%;
+            }
+        }
+    }
 
     @include flexgrid-break($key) {
-      flex: 1;
+        @for $i from 1 through $flexgrid-columns {
+            .Grid-cell--#{$key}-#{$i} {
+                flex: 0 0 ($i/$flexgrid-columns)*100%;
+                max-width: ($i/$flexgrid-columns)*100%;
+            }
+        }
     }
-  }
 
-  @for $i from 1 through $flexgrid-columns {
-    @if ($flexgrid-cell-counter == 1) {
-      .Grid-cell--#{$key}-#{$i} {
-        flex: 0 0 ($i/$flexgrid-columns)*100%;
-        max-width: ($i/$flexgrid-columns)*100%;
-      }
+    @include flexgrid-break($key) {
+        @for $i from 0 through $flexgrid-columns {
+            .Grid-cell--#{$key}-offset-#{$i} {
+                margin-left: ($i/$flexgrid-columns)*100%;
+            }
+        }
     }
-  }
 
-  @include flexgrid-break($key) {
-    @for $i from 1 through $flexgrid-columns {
-      .Grid-cell--#{$key}-#{$i} {
-        flex: 0 0 ($i/$flexgrid-columns)*100%;
-        max-width: ($i/$flexgrid-columns)*100%;
-      }
-    }
-  }
-
-  @include flexgrid-break($key) {
-    @for $i from 0 through $flexgrid-columns {
-      .Grid-cell--#{$key}-offset-#{$i} {
-        margin-left: ($i/$flexgrid-columns)*100%;
-      }
-    }
-  }
-
-  $flexgrid-cell-counter: $flexgrid-cell-counter + 1;
+    $flexgrid-cell-counter: $flexgrid-cell-counter + 1;
 }
 
 /**
@@ -230,13 +234,13 @@ $flexgrid-cell-counter: 1;
  */
 
 @each $key, $val in $flexgrid-gutters {
-  .Grid--gutter-#{$key} {
-    margin-top: -$val;
-    margin-left: -$val;
+    .Grid--gutter-#{$key} {
+        margin-top: -$val;
+        margin-left: -$val;
 
-    > [class^="Grid-cell"] {
-      padding-top: $val;
-      padding-left: $val;
+        > [class^="Grid-cell"] {
+            padding-top: $val;
+            padding-left: $val;
+        }
     }
-  }
 }

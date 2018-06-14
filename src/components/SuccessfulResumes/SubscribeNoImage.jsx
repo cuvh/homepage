@@ -81,7 +81,7 @@ export default class SubscribeNoImage extends React.PureComponent {
                                 <button
                                  disabled={this.state.sending}
                                  type="submit"
-                                 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4"
+                                 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4 text-uppercase"
                                 >
                                     Subscribe
                                 </button>

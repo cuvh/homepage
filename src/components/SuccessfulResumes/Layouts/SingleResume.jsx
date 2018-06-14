@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import Track from "utils/Track";
-import Modal from "components/Modal";
+import SocialModal from "components/SocialModal";
 
 import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 import FooterList from "components/SuccessfulResumes/FooterList";
@@ -29,6 +29,12 @@ export default class SingleResume extends React.PureComponent {
 
         const resumePageOne = data.resumes[0].image;
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
+        const socialData = {
+            facebookText: data.facebookText,
+            twitterText: data.twitterText,
+            url: "famous/" + data.url
+        };
+
         return (
             <DefaultLayout className="resumedetail">
                 <Meta
@@ -48,7 +54,7 @@ export default class SingleResume extends React.PureComponent {
                         <section className="resumes--accent isSingle Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
                             <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12 m-sm-bottom-3">
                                 <div className="text">
-                                    <span className="text-tag text-highlight-purple">
+                                    <span className="text-tag text-highlight-purple text-uppercase">
                                         {data.label}
                                     </span>
                                     <h1 className="h1">{data.title}</h1>
@@ -59,28 +65,26 @@ export default class SingleResume extends React.PureComponent {
                                         </p>
                                     </div>
 
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                             See the resume
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </div>
                             </div>
 
                             <div className="resumes--preview isSingle Grid-cell--md-6 Grid-cell--xs-12">
                                 <span className="resumes--preview-holder">
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a
                                          onClick={() =>
@@ -99,22 +103,27 @@ export default class SingleResume extends React.PureComponent {
                                                  }
                                                  alt={`${data.name}'s resume`}
                                                  style={{ width: "548px" }}
+                                                 imgStyle={{
+                                                    borderRadius: "5px",
+                                                    boxShadow:
+                                                        "0 2px 2px 0 rgba(223,223,223,0.5)",
+                                                    border:
+                                                        "1px solid rgba(71,72,75,0.04)"
+                                                 }}
                                                 />
                                             </div>
 
                                             <button className="btn-resume-preview" />
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </span>
 
                                 <div className="resumes--accent-hired p-5">
@@ -192,7 +201,7 @@ export default class SingleResume extends React.PureComponent {
                                 </div>
                             ) : null}
 
-                            <ul>
+                            <ul className="ul-full-width">
                                 {data.steps.map((step, i) => (
                                     <li key={i}>
                                         {step.title ? (
@@ -291,22 +300,20 @@ export default class SingleResume extends React.PureComponent {
                                             `It took a lot of hard work and strategizing, but Sam’s story shows that a successful career change is possible with the rights tools. Now that you’ve read Sam’s story, you can see the resume that made recruiters take notice and remember her even years later.`
                                         )}
                                     </p>
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                             Read the resume
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </div>
                             </section>
                         ) : null}
@@ -349,7 +356,7 @@ export const pageQuery = graphql`
             resumes {
                 image {
                     childImageSharp {
-                        large: resolutions(width: 2480) {
+                        large: resolutions(width: 2479) {
                             ...GatsbyImageSharpResolutions
                         }
                         small: resolutions(width: 1096) {

@@ -63,7 +63,6 @@ export default function FeaturedResume({ data }) {
                                     <ResumePreview
                                      resumePageOne={data.mainResumeOne}
                                      resumePageTwo={data.mainResumeTwo}
-                                     socials={false}
                                      altText="Sam's resume"
                                     />
                                 </Modal>
@@ -144,7 +143,6 @@ export default function FeaturedResume({ data }) {
                             >
                                 <ResumePreview
                                  resumePageOne={data.famousResume}
-                                 socials={false}
                                  altText="Casey's resume"
                                 />
                             </Modal>

@@ -44,20 +44,20 @@ export default class FeelingInspired extends React.PureComponent {
             >
                 <span className="m-right-1 m-left-1">Feeling inspired?</span>
                 <span
-                 onClick={() => this.onClick("smilling")}
-                 className={classnames(
-                    "component--feeling-emotion emotion-smiling",
-                    {
-                        active: emotion === "smilling"
-                    }
-                 )}
-                />
-                <span
                  onClick={() => this.onClick("neutral")}
                  className={classnames(
                     "component--feeling-emotion emotion-neutral",
                     {
                         active: emotion === "neutral"
+                    }
+                 )}
+                />
+                <span
+                 onClick={() => this.onClick("smilling")}
+                 className={classnames(
+                    "component--feeling-emotion emotion-smiling",
+                    {
+                        active: emotion === "smilling"
                     }
                  )}
                 />

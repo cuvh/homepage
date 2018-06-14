@@ -24,7 +24,7 @@ export default function Strengths({ section, description, image, data }) {
                             ))}
                         </article>
                     </div>
-                    <div className="famous-resume--illustration-holder Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10">
+                    <div className="famous-resume--illustration-holder Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10 m-bottom-7 Grid--selfCenter">
                         <Img
                          width="595"
                          sizes={image.childImageSharp.sizes}

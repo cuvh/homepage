@@ -39,11 +39,11 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 />
                             </span>
                             <div className="resumes--others-person-info">
-                                <h4 className="resumes--person-name m-top-2">
+                                <h4 className="resumes--person-name m-top-1 m-bottom-0">
                                     {node.name}
                                 </h4>
                                 {node.tags ? (
-                                    <h5 className="resumes--person-jobtitle">
+                                    <h5 className="resumes--person-jobtitle m-no">
                                         {node.tags.join(", ")}
                                     </h5>
                                 ) : null}
@@ -56,11 +56,11 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 ) : null}
 
                                 {node.companyLogo ? (
-                                    <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-4">
+                                    <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-3">
                                         <span className="label">Hired at</span>
                                         <Img
                                          style={{ display: "inline-block" }}
-                                         className="m-top-1"
+                                         className="m-top-0"
                                          resolutions={
                                             node.companyLogo.childImageSharp
                                                 .resolutions
