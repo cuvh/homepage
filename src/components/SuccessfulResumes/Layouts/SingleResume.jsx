@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import Track from "utils/Track";
-import Modal from "components/Modal";
+import SocialModal from "components/SocialModal";
 
 import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
 import FooterList from "components/SuccessfulResumes/FooterList";
@@ -65,7 +65,7 @@ export default class SingleResume extends React.PureComponent {
                                         </p>
                                     </div>
 
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                             See the resume
@@ -78,13 +78,13 @@ export default class SingleResume extends React.PureComponent {
                                          resumePageTwo={resumePageTwo}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </div>
                             </div>
 
                             <div className="resumes--preview isSingle Grid-cell--md-6 Grid-cell--xs-12">
                                 <span className="resumes--preview-holder">
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a
                                          onClick={() =>
@@ -116,7 +116,7 @@ export default class SingleResume extends React.PureComponent {
                                          resumePageTwo={resumePageTwo}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </span>
 
                                 <div className="resumes--accent-hired p-5">
@@ -293,7 +293,7 @@ export default class SingleResume extends React.PureComponent {
                                             `It took a lot of hard work and strategizing, but Sam’s story shows that a successful career change is possible with the rights tools. Now that you’ve read Sam’s story, you can see the resume that made recruiters take notice and remember her even years later.`
                                         )}
                                     </p>
-                                    <Modal
+                                    <SocialModal
                                      trigger={
                                         <a className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                             Read the resume
@@ -306,7 +306,7 @@ export default class SingleResume extends React.PureComponent {
                                          resumePageTwo={resumePageTwo}
                                          altText={`${data.name}'s resume`}
                                         />
-                                    </Modal>
+                                    </SocialModal>
                                 </div>
                             </section>
                         ) : null}

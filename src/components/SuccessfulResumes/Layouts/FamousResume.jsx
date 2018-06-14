@@ -22,7 +22,7 @@ import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom"
 import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
-import Modal from "components/Modal";
+import SocialModal from "components/SocialModal";
 
 import Meta from "components/Meta";
 
@@ -49,7 +49,7 @@ export default function FamousResume({
              url={"famous/" + data.url}
             />
 
-            <Modal
+            <SocialModal
              trigger={
                 <a
                  onClick={() =>
@@ -72,7 +72,7 @@ export default function FamousResume({
                  resumePageOne={data.resumes[0].image}
                  altText={`${data.name}'s resume`}
                 />
-            </Modal>
+            </SocialModal>
 
             <main className="famous-resume--container">
                 <div

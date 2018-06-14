@@ -59,7 +59,6 @@ export default function FeaturedResume({ data }) {
 
                                 <Modal
                                  trigger={<a className="btn-resume-preview" />}
-                                 socials={false}
                                 >
                                     <ResumePreview
                                      resumePageOne={data.mainResumeOne}
@@ -141,7 +140,6 @@ export default function FeaturedResume({ data }) {
                                     <button className="btn-resume-preview" />
                                 </a>
                              }
-                             socials={false}
                             >
                                 <ResumePreview
                                  resumePageOne={data.famousResume}
