@@ -46,7 +46,7 @@ export default function FamousContainer({
                                          resolutions={
                                             resume.childImageSharp.small
                                          }
-                                         width="442"
+                                         style={{ width: "442px" }}
                                          alt={altText}
                                         />
                                     </div>

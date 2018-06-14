@@ -26,7 +26,9 @@ import Modal from "components/Modal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
+export default function FamousResume({
+    data: { famousResumesJson: { ...data }, list }
+}) {
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -45,12 +47,20 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
              trigger={
                 <a
                  onClick={() =>
-                    Track("Successful Resumes", "Expand Resume", `${data.name} - Sticky click`)}
-                 className="component--fast-resume-preview">
-                    <Img resolutions={data.resumes[0].image.childImageSharp.thumb} />
+                    Track(
+                        "Successful Resumes",
+                        "Expand Resume",
+                        `${data.name} - Sticky click`
+                    )}
+                 className="component--fast-resume-preview"
+                >
+                    <Img
+                     resolutions={data.resumes[0].image.childImageSharp.thumb}
+                    />
                     <button className="btn-resume-preview" />
                 </a>
-             }>
+             }
+            >
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  facebookText={data.facebookText}
@@ -63,8 +73,9 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
             <main className="famous-resume--container">
                 <div
                  className={classnames({
-                    "famous-resume-inverted": data.lightCover,
-                 })}>
+                    "famous-resume-inverted": data.lightCover
+                 })}
+                >
                     <FamousHeader
                      name={data.name}
                      cover={data.cover}
@@ -88,7 +99,10 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                         );
                     }
 
-                    if (item.section === "MostProudOf" || item.section === "Achievements") {
+                    if (
+                        item.section === "MostProudOf" ||
+                        item.section === "Achievements"
+                    ) {
                         return (
                             <Awards
                              key={item.section}
@@ -173,7 +187,7 @@ export const pageQuery = graphql`
                         thumb: resolutions(width: 160, height: 220) {
                             ...GatsbyImageSharpResolutions
                         }
-                        small: resolutions(width: 442) {
+                        small: resolutions(width: 884) {
                             ...GatsbyImageSharpResolutions
                         }
                         large: resolutions(width: 1240) {

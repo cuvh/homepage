@@ -98,6 +98,7 @@ export default class SingleResume extends React.PureComponent {
                                                         .childImageSharp.small
                                                  }
                                                  alt={`${data.name}'s resume`}
+                                                 style={{ width: "548px" }}
                                                 />
                                             </div>
 
@@ -348,10 +349,10 @@ export const pageQuery = graphql`
             resumes {
                 image {
                     childImageSharp {
-                        large: resolutions(width: 1240) {
+                        large: resolutions(width: 2480) {
                             ...GatsbyImageSharpResolutions
                         }
-                        small: resolutions(width: 548) {
+                        small: resolutions(width: 1096) {
                             ...GatsbyImageSharpResolutions
                         }
                     }
