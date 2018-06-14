@@ -103,6 +103,13 @@ export default class SingleResume extends React.PureComponent {
                                                  }
                                                  alt={`${data.name}'s resume`}
                                                  style={{ width: "548px" }}
+                                                 imgStyle={{
+                                                    borderRadius: "5px",
+                                                    boxShadow:
+                                                        "0 2px 2px 0 rgba(223,223,223,0.5)",
+                                                    border:
+                                                        "1px solid rgba(71,72,75,0.04)"
+                                                 }}
                                                 />
                                             </div>
 
