@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import SocialPanel from "components/SuccessfulResumes/SocialPanel";
 
 function Portal({ children }) {
     return typeof document !== "undefined"
@@ -50,7 +51,8 @@ export default class OpenModal extends React.PureComponent {
 
     render() {
         const { opened } = this.state;
-        const { trigger, children } = this.props;
+        const { trigger, children, socialData } = this.props;
+        const socials = this.props.socials || true;
 
         return (
             <React.Fragment>
@@ -73,6 +75,15 @@ export default class OpenModal extends React.PureComponent {
                             >
                                 <i className="icon-times" />
                             </button>
+
+                            {socials ? (
+                                <SocialPanel
+                                 className="inModal hasBackground"
+                                 facebookText={socialData.facebookText}
+                                 twitterText={socialData.twitterText}
+                                 url={socialData.url}
+                                />
+                            ) : null}
                         </div>
                     </Portal>
                 ) : null}

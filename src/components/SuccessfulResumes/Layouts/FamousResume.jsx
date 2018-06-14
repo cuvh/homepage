@@ -29,6 +29,12 @@ import Meta from "components/Meta";
 export default function FamousResume({
     data: { famousResumesJson: { ...data }, list }
 }) {
+    const socialData = {
+        facebookText: data.facebookText,
+        twitterText: data.twitterText,
+        url: data.url
+    };
+
     return (
         <DefaultLayout className="navbar-light">
             <Meta
@@ -60,12 +66,10 @@ export default function FamousResume({
                     <button className="btn-resume-preview" />
                 </a>
              }
+             socialData={socialData}
             >
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
-                 facebookText={data.facebookText}
-                 twitterText={data.twitterText}
-                 url={data.url}
                  altText={`${data.name}'s resume`}
                 />
             </Modal>
@@ -145,9 +149,7 @@ export default function FamousResume({
                  name={data.name}
                  finalDescription={data.finalDescription}
                  resume={data.resumes[0].image}
-                 facebookText={data.facebookText}
-                 twitterText={data.twitterText}
-                 url={data.url}
+                 socialData={socialData}
                  altText={`${data.name}'s resume`}
                 />
             </main>

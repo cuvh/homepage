@@ -16,9 +16,7 @@ export default function FamousContainer({
     finalDescription,
     list,
     altText,
-    url,
-    facebookText,
-    twitterText
+    socialData
 }) {
     const firstName = name.split(" ")[0];
 
@@ -53,12 +51,10 @@ export default function FamousContainer({
                                     <button className="btn-resume-preview" />
                                 </a>
                              }
+                             socialData={socialData}
                             >
                                 <ResumePreview
                                  resumePageOne={resume}
-                                 facebookText={facebookText}
-                                 twitterText={twitterText}
-                                 url={"famous/" + url}
                                  altText={altText}
                                 />
                             </Modal>
@@ -91,12 +87,10 @@ export default function FamousContainer({
                                     See the Resume
                                 </a>
                              }
+                             socialData={socialData}
                             >
                                 <ResumePreview
                                  resumePageOne={resume}
-                                 facebookText={facebookText}
-                                 twitterText={twitterText}
-                                 url={"famous/" + url}
                                  altText={altText}
                                 />
                             </Modal>

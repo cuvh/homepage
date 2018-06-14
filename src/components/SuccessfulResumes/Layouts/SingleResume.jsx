@@ -29,6 +29,12 @@ export default class SingleResume extends React.PureComponent {
 
         const resumePageOne = data.resumes[0].image;
         const resumePageTwo = data.resumes[1] ? data.resumes[1].image : null;
+        const socialData = {
+            facebookText: data.facebookText,
+            twitterText: data.twitterText,
+            url: "famous/" + data.url
+        };
+
         return (
             <DefaultLayout className="resumedetail">
                 <Meta
@@ -65,13 +71,11 @@ export default class SingleResume extends React.PureComponent {
                                             See the resume
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
@@ -105,13 +109,11 @@ export default class SingleResume extends React.PureComponent {
                                             <button className="btn-resume-preview" />
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
@@ -297,13 +299,11 @@ export default class SingleResume extends React.PureComponent {
                                             Read the resume
                                         </a>
                                      }
+                                     socialData={socialData}
                                     >
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         facebookText={data.facebookText}
-                                         twitterText={data.twitterText}
-                                         url={data.url}
                                          altText={`${data.name}'s resume`}
                                         />
                                     </Modal>
