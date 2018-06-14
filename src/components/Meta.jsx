@@ -37,7 +37,7 @@ export default function Meta({
              content={description}
             />
             <meta
-             name="twitter:image"
+             name="twitter:image:src"
              content={metaImage}
             />
             <meta
