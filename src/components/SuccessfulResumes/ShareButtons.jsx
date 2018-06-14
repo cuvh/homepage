@@ -27,7 +27,7 @@ export default class SocialButtons extends React.PureComponent {
                 </a>
 
                 <a
-                 href={`https://twitter.com/share?url=https://enhancv.com/successful-resumes/${encodeURI(
+                 href={`https://twitter.com/intent/tweet?url=https://enhancv.com/successful-resumes/${encodeURI(
                     url
                  )}&text=${encodeURIComponent(twitterText)}`}
                  onClick={() => this.onShare("twitter")}
