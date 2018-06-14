@@ -248,4 +248,17 @@
             }
         }
     }
+    &--thumbs-list {
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size:auto 100%;
+        @media screen and (min-width: $screen-sm) {
+            background-image: url("../img/resources/authours@2.png");
+        }
+        @media screen and (max-width: $screen-sm-max) {
+            background-image: url("../img/resources/authours_mobile@2.png");
+        }
+
+        
+    }
 }

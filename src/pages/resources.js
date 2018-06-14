@@ -11,6 +11,8 @@ import ResourcePreview from "components/Resources/ResourcePreview";
 import SubscribeNoImage from "components/SuccessfulResumes/SubscribeNoImage";
 import DefaultLayout from "layouts/DefaultLayout";
 
+import linkedinImg from "../assets/img/resources/icons/linkdin@2x.png";
+
 export default function resources({ data }) {
     return (
         <DefaultLayout className="resumedetail hasBubbulesBackground">
@@ -25,7 +27,7 @@ export default function resources({ data }) {
              ]}
             />
             <main>
-                <section className="resources--head container m-md-bottom-15 m-sm-bottom-10">
+                <section className="resources--head container m-md-bottom-15 m-sm-bottom-5">
                     <div className="Grid resources--head-wrap">
                         <div className="Grid-cell--md-5 Grid-cell--xs-12">
                             <div className="resources--head-image resources--modal-button">
@@ -81,7 +83,7 @@ export default function resources({ data }) {
                     </div>
                 </section>
 
-                <section className="m-md-bottom-13 p-sm-3">
+                <section className="m-md-bottom-13 p-sm-1">
                     <div className="container">
                         <div className="Grid full-width">
                             <div className="Grid-cell--md-7 Grid-cell--xs-12 p-md-left-10 p-md-top-6">
@@ -124,8 +126,8 @@ export default function resources({ data }) {
                         </div>
                     </div>
                 </section>
-                <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
-                    <div className="Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
+                <section className="m-md-top-8 m-md-top-8 p-left-1 p-right-1 p-sm-3">
+                    <div className="Grid p-md-top-10 p-md-top-10 p-md-bottom-10">
                         <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center responsive-gatsby">
                             <Img
                              resolutions={
@@ -156,7 +158,7 @@ export default function resources({ data }) {
                 </section>
                 <section className="m-sm-top-5 m-md-top-8 m-sm-top-5 m-md-top-8 p-left-1 p-right-1 p-sm-3">
                     <div className="resources--discover-box">
-                        <div className="component--cta-resume Grid p-md-top-10 p-sm-top-10 p-xs-top-6 p-xs-top-6 p-md-bottom-10 p-sm-bottom-10 p-xs-bottom-6 p-xs-bottom-6">
+                        <div className="component--cta-resume Grid p-md-top-10 p-md-top-6 p-md-bottom-10">
                             <div className="component--cta-resume-image Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-right-10 responsive-gatsby resources--modal-button isModalButtonDiscover">
                                 <Modal
                                  trigger={
@@ -205,15 +207,15 @@ export default function resources({ data }) {
                         </div>
                     </div>
                 </section>
-                <section className="component--thumbs-list resources--thumbs-list m-sm-top-5 m-md-top-10 m-md-bottom-5 p-sm-3">
+                <section className="component--thumbs-list resources--thumbs-list m-sm-top-8 m-md-top-10">
                     <div className="container">
                         <div className="Grid text-dark-grey Grid-cell--md-offset-2">
                             <div className="Grid-cell--md-9 Grid-cell--xs-12">
                                 <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">
                                     Struggles I learned from
                                 </h3>
-                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
-                                    <div className="component--thumbs-holder thumb-order-sm-2">
+                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap Grid--alignCenter">
+                                    <div className="Grid-cell--xs-5 Grid-cell--sm-3 Grid-cell--md-2 component--thumbs-holder"> 
                                         <Img
                                          resolutions={
                                             data.vessyAvatar.childImageSharp
@@ -222,11 +224,18 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Image"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
+                                    < div className = "Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3" >
                                         <h6 className="h6 text-dark-grey m-top-no">
                                             <span className="text-bold">
                                                 Vessy Tasheva
                                             </span>
+                                            <a
+                                            target="_blank"
+                                            href="https://ie.linkedin.com/in/vesselinatasheva"
+                                            className="social-link-linkedin m-left-2"
+                                            >
+                                                <img width="18" src={linkedinImg} />
+                                            </a>
                                         </h6>
                                         <p>
                                             I help people remember what they
@@ -235,8 +244,8 @@ export default function resources({ data }) {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap resources--thumbs-list-odd">
-                                    <div className="component--thumbs-holder thumb-order-sm-2">
+                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap resources--thumbs-list-odd Grid--alignCenter">
+                                    <div className="Grid-cell--xs-5 Grid-cell--sm-3 Grid-cell--md-2 component--thumbs-holder"> 
                                         <Img
                                          resolutions={
                                             data.ericAvatar.childImageSharp
@@ -245,11 +254,18 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Image"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
+                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">
                                         <h6 className="h6 text-dark-grey m-top-no">
                                             <span className="text-bold">
                                                 Eric Halsey
                                             </span>
+                                             <a
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/eric-halsey-176a77b/"
+                                            className="social-link-linkedin m-left-2"
+                                            >
+                                                <img width="18" src={linkedinImg} />
+                                            </a>
                                         </h6>
                                         <p>
                                             A writer with a passionate belief in
@@ -258,8 +274,8 @@ export default function resources({ data }) {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
-                                    <div className="component--thumbs-holder thumb-order-sm-2">
+                                <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 flex-wrap-nowrap Grid--alignCenter">
+                                    <div className="Grid-cell--xs-5 Grid-cell--sm-3 Grid-cell--md-2 component--thumbs-holder"> 
                                         <Img
                                          resolutions={
                                             data.valiAvatar.childImageSharp
@@ -268,11 +284,18 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Image"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-3">
+                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">
                                         <h6 className="h6 text-dark-grey m-top-no">
                                             <span className="text-bold">
                                                 Velina Getova
                                             </span>
+                                            <a
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/velinagetova/"
+                                            className="social-link-linkedin m-left-2"
+                                            >
+                                                <img width="18" src={linkedinImg} />
+                                            </a>
                                         </h6>
                                         <p>
                                             LSE graduate, business psychologist,

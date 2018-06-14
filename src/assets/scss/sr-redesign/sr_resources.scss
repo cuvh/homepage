@@ -10,7 +10,7 @@
         }
     }
     &--discover-box {
-        @media screen and (min-width: $screen-sm) {
+        @media screen and (min-width: $screen-md) {
             background-color:#f6f7f9;
         }
     }
@@ -51,6 +51,12 @@
     &--head-wrap {
         @media screen and (max-width: $screen-sm-max) {
             flex-direction: column-reverse;
+        }
+    }
+
+    &--thumbs-list {
+        .component--thumbs-holder {
+            right:0;
         }
     }
     
