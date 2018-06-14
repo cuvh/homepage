@@ -1,5 +1,12 @@
 .resumes {
     &--accent {
+        &.isSingle {
+            position: relative;
+            z-index:1;
+            .resumes--content {
+                z-index:1;
+            }
+        }
         padding-bottom: $sr_global-offset-value * 9;
         @media screen and (min-width: $screen-md) {
             display: flex;
@@ -19,6 +26,10 @@
     &--preview {
         justify-content: right;
         text-align: right;
+        &.isSingle {
+            position: relative;
+            z-index:1;
+        }
 
         &-holder {
             display: inline-block;

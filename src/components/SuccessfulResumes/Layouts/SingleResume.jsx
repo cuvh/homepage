@@ -45,7 +45,7 @@ export default class SingleResume extends React.PureComponent {
 
                 <div className="hasBubbulesBackground">
                     <main className="container">
-                        <section className="resumes--accent isSingle noBackground Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
+                        <section className="resumes--accent isSingle Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
                             <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12 m-sm-bottom-3">
                                 <div className="text">
                                     <span className="text-tag text-highlight-purple">

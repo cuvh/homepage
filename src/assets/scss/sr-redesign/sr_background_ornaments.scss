@@ -36,9 +36,10 @@
                 position: absolute;
                 top: 30%;
                 right: 0;
-                z-index: -1;
+                &:not(.isSingle) {
+                    z-index: -1;
+                }
 
-                // For better loading performance on mobile >
                 @media screen and (min-width: $screen-sm) {
                     background-image: url("../img/new-successful-resumes/elements/homepage_behind_famous_resume_bg_@2.jpg");
                 }
@@ -54,6 +55,18 @@
                     background-image: url("../img/new-successful-resumes/elements/homepage_behind_famous_resume_bg.jpg");
                 }
             }
+            &.isSingle:after {
+                width: 603px;
+                height: 495px;
+                @media screen and (min-width: $screen-sm) {
+                    background-image: url("../img/new-successful-resumes/elements/homepage_behind_single_resume_bg_@2.jpg");
+                    top: 5%;
+                    right: -17%;
+                }
+                @media screen and (max-width: $screen-sm-max) {
+                   background:transparent;
+                }
+            }
         }
     }
 
@@ -61,7 +74,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center center;
-        // For better loading performance on mobile >
+        
         @media screen and (min-width: $screen-sm) {
             background-image: url("../img/new-successful-resumes/elements/singlepage__tags_bubble@2x.png");
         }
@@ -97,7 +110,6 @@
                 position: absolute;
                 z-index: -1;
 
-                // For better loading performance on mobile >
                 @media screen and (min-width: $screen-sm) {
                     //bottom: 15%;
                     top: -7%;
@@ -128,7 +140,7 @@
                 background-position: top right;
                 background-size: 100%;
                 position: absolute;
-                z-index: -1; // For better loading performance on mobile >
+                z-index: -1; 
                 @media screen and (min-width: $screen-sm) {
                     top: (8px * 14) * -1;
                     left: calc(50% - (1047px / 2));
@@ -219,7 +231,7 @@
             background-position: top right;
             background-size: 100%;
             position: absolute;
-            z-index: -1; // For better loading performance on mobile >
+            z-index: -1; 
             @media screen and (min-width: $screen-sm) {
                 top: -24px;
                 left: -90px;
