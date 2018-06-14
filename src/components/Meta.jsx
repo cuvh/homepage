@@ -37,8 +37,16 @@ export default function Meta({
              content={description}
             />
             <meta
-             name="twitter:image:src"
+             name="twitter:title"
+             content={title}
+            />
+            <meta
+             name="twitter:image"
              content={metaImage}
+            />
+            <meta
+             name="og:title"
+             content={title}
             />
             <meta
              property="og:image"
