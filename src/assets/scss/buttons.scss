@@ -277,7 +277,7 @@
 }
 
 .btn-wow-default {
-    background-color: #8C7CDB;
+    background-color: $sr_wow_button_default_color;
     border-radius: 6px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -285,6 +285,9 @@
     height: 35px;
     &:focus {
         outline: none;
+    }
+    &.active {
+        background-color: $sr_wow_button_active_color;
     }
 }
 

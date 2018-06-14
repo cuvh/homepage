@@ -8,10 +8,6 @@ import SuccessfulResumesStrip from "components/SuccessfulResumes/SuccessfulResum
 
 import logoImg from "../assets/img/logo-with-text.svg";
 
-// $(document).on("click", '[data-toggle="navbar"]', function() {
-//     $("body").toggleClass("navbar-mobile-active");
-// });
-
 class Header extends React.PureComponent {
     state = {
         stick: false
@@ -111,7 +107,9 @@ class Header extends React.PureComponent {
                                     <li
                                      className={classnames({
                                         active:
-                                            pathname === "/successful-resumes"
+                                            pathname.indexOf(
+                                                "/successful-resumes"
+                                            ) !== -1
                                      })}
                                     >
                                         <Link to="/successful-resumes">
@@ -124,6 +122,13 @@ class Header extends React.PureComponent {
                                      })}
                                     >
                                         <Link to="/pricing">Pricing</Link>
+                                    </li>
+                                    <li
+                                     className={classnames({
+                                        active: pathname === "/resources"
+                                     })}
+                                    >
+                                        <Link to="/resources">Resources</Link>
                                     </li>
                                     <li>
                                         <a
@@ -163,12 +168,22 @@ class Header extends React.PureComponent {
                             <ul className="nav navbar-nav navbar-right">
                                 <li
                                  className={classnames({
-                                    active: pathname === "/successful-resumes"
+                                    active:
+                                        pathname.indexOf(
+                                            "/successful-resumes"
+                                        ) !== -1
                                  })}
                                 >
                                     <Link to="/successful-resumes">
                                         Successful Resumes
                                     </Link>
+                                </li>
+                                <li
+                                 className={classnames({
+                                    active: pathname === "/resources"
+                                 })}
+                                >
+                                    <Link to="/resources">Resources</Link>
                                 </li>
                                 <li
                                  className={classnames({
