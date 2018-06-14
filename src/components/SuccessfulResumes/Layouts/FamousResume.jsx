@@ -190,7 +190,7 @@ export const pageQuery = graphql`
                         small: resolutions(width: 884) {
                             ...GatsbyImageSharpResolutions
                         }
-                        large: resolutions(width: 1240) {
+                        large: resolutions(width: 2479) {
                             ...GatsbyImageSharpResolutions
                         }
                     }

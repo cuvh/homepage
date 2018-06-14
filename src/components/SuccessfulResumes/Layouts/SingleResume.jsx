@@ -48,7 +48,7 @@ export default class SingleResume extends React.PureComponent {
                         <section className="resumes--accent isSingle Grid full-width m-sm-top-3 m-xs-top-5 m-sm-top-5 m-md-top-6 m-sm-bottom-4 m-md-bottom-20">
                             <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12 m-sm-bottom-3">
                                 <div className="text">
-                                    <span className="text-tag text-highlight-purple">
+                                    <span className="text-tag text-highlight-purple text-uppercase">
                                         {data.label}
                                     </span>
                                     <h1 className="h1">{data.title}</h1>
@@ -192,7 +192,7 @@ export default class SingleResume extends React.PureComponent {
                                 </div>
                             ) : null}
 
-                            <ul>
+                            <ul className="ul-full-width">
                                 {data.steps.map((step, i) => (
                                     <li key={i}>
                                         {step.title ? (
@@ -349,7 +349,7 @@ export const pageQuery = graphql`
             resumes {
                 image {
                     childImageSharp {
-                        large: resolutions(width: 2480) {
+                        large: resolutions(width: 2479) {
                             ...GatsbyImageSharpResolutions
                         }
                         small: resolutions(width: 1096) {
