@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 
 export default function ResourcePreview({ filled, empty, altText }) {
     return (
@@ -9,7 +9,7 @@ export default function ResourcePreview({ filled, empty, altText }) {
              alt={altText}
              style={{
                 width: "100%",
-                position: "initial"
+                position: "initial",
              }}
              imgStyle={{ height: "auto", borderRadius: "5px" }}
             />
@@ -19,7 +19,7 @@ export default function ResourcePreview({ filled, empty, altText }) {
              alt={altText}
              style={{
                 width: "100%",
-                position: "initial"
+                position: "initial",
              }}
              imgStyle={{ height: "auto", borderRadius: "5px" }}
             />

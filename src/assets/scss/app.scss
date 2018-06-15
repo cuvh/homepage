@@ -62,7 +62,9 @@ body.no-scroll {
 }
 
 .gatsby-image-wrapper {
-    img:first-child {
-        visibility: visible;
+    &.remove-base-64 {
+        img:first-child {
+            display: none;
+        }
     }
 }

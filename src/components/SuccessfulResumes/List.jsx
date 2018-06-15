@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import Link from "gatsby-link";
 import classnames from "classnames";
 
@@ -9,13 +9,13 @@ import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
 export default class List extends React.PureComponent {
     state = {
         revealed: false,
-        filter: null
+        filter: null,
     };
 
     filter(type) {
         Track("Successful Resumes", "Click Resume Categories", type);
         this.setState({
-            filter: type
+            filter: type,
         });
     }
 
@@ -23,7 +23,7 @@ export default class List extends React.PureComponent {
         Track("Successful Resumes", "Reveal Users List");
         e.preventDefault();
         this.setState({
-            revealed: true
+            revealed: true,
         });
     }
 
@@ -41,48 +41,41 @@ export default class List extends React.PureComponent {
         return (
             <section className="resumes--others m-sm-top-4 m-md-top-19 m-sm-bottom-3 m-md-bottom-7">
                 <div className="resumes--list">
-                    <h4 className="resumes--others-title text-center">
-                        See how others did it
-                    </h4>
+                    <h4 className="resumes--others-title text-center">See how others did it</h4>
                     <nav className="resumes--filter m-sm-bottom-2 m-md-bottom-2 m-sm-top-4 m-md-top-4">
                         <button
                          onClick={() => this.filter(null)}
                          className={classnames("resumes--filter-button", {
-                            selected: filter === null
-                         })}
-                        >
+                            selected: filter === null,
+                         })}>
                             All resumes
                         </button>
                         <button
                          onClick={() => this.filter("Career Change")}
                          className={classnames("resumes--filter-button", {
-                            selected: filter === "Career Change"
-                         })}
-                        >
+                            selected: filter === "Career Change",
+                         })}>
                             Career Change
                         </button>
                         <button
                          onClick={() => this.filter("New Role")}
                          className={classnames("resumes--filter-button", {
-                            selected: filter === "New Role"
-                         })}
-                        >
+                            selected: filter === "New Role",
+                         })}>
                             New Role
                         </button>
                         <button
                          onClick={() => this.filter("Industry Switch")}
                          className={classnames("resumes--filter-button", {
-                            selected: filter === "Industry Switch"
-                         })}
-                        >
+                            selected: filter === "Industry Switch",
+                         })}>
                             Industry Switch
                         </button>
                         <button
                          onClick={() => this.filter("First Job")}
                          className={classnames("resumes--filter-button", {
-                            selected: filter === "First Job"
-                         })}
-                        >
+                            selected: filter === "First Job",
+                         })}>
                             First Job
                         </button>
                     </nav>
@@ -92,16 +85,13 @@ export default class List extends React.PureComponent {
                         <Link
                          key={node.url + index}
                          to={`/successful-resumes/${node.url}`}
-                         className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1"
-                        >
+                         className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
                             <div className="resumes--box">
                                 <ResumeBadge label={node.label} />
                                 <span className="resumes--person-avatar">
                                     <Img
                                      className="m-xs-left-1 m-md-left-2"
-                                     resolutions={
-                                        node.avatar.childImageSharp.resolutions
-                                     }
+                                     resolutions={node.avatar.childImageSharp.resolutions}
                                     />
                                 </span>
                                 <div className="resumes--others-person-info">
@@ -113,17 +103,14 @@ export default class List extends React.PureComponent {
                                     </h5>
                                     {node.companyLogo ? (
                                         <div className="resumes--hired resumes--hired-list-item m-xs-top-2 m-md-top-3">
-                                            <span className="label">
-                                                Hired at
-                                            </span>
+                                            <span className="label">Hired at</span>
                                             <Img
                                              style={{
-                                                display: "inline-block"
+                                                display: "inline-block",
                                              }}
                                              className="m-top-0"
                                              resolutions={
-                                                node.companyLogo.childImageSharp
-                                                    .resolutions
+                                                node.companyLogo.childImageSharp.resolutions
                                              }
                                             />
                                         </div>
@@ -133,10 +120,7 @@ export default class List extends React.PureComponent {
                             <div className="resumes--hovered">
                                 <Img
                                  className="m-xs-left-1 m-md-left-2"
-                                 resolutions={
-                                    node.resumes[0].image.childImageSharp
-                                        .resolutions
-                                 }
+                                 resolutions={node.resumes[0].image.childImageSharp.resolutions}
                                 />
                             </div>
                         </Link>
@@ -147,8 +131,7 @@ export default class List extends React.PureComponent {
                         <a
                          onClick={event => this.reveal(event)}
                          href="#"
-                         className="feature-link"
-                        >
+                         className="feature-link">
                             See more real resumes &nbsp;→
                         </a>
                     </div>
