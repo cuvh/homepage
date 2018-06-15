@@ -62,6 +62,30 @@
     animation: fadein 0.6s ease-out 0.2s forwards;
 }
 
+.homepage-gatsby-header {
+    // padding-bottom: 45%;
+    margin-top: 17px;
+    position: relative;
+    min-height: 600px;
+
+    @media screen and (max-width: $screen-sm) {
+        min-height: 300px !important;
+    }
+
+    will-change: opacity, top;
+
+    opacity: 0;
+    top: 50px;
+    animation: fadein 0.6s ease-out 0.2s forwards;
+
+    .gatsby-image-wrapper {
+        min-height: 600px;
+        @media screen and (max-width: $screen-sm) {
+            min-height: 300px !important;
+        }
+    }
+}
+
 .homepage-intro {
     position: relative;
     background: $light-gray;
@@ -226,11 +250,7 @@
 
 .homepage-new-features {
     margin-top: 190px;
-    background: linear-gradient(
-        180deg,
-        #ffffff 0%,
-        rgba(216, 216, 216, 0.4) 100%
-    );
+    background: linear-gradient(180deg, #ffffff 0%, rgba(216, 216, 216, 0.4) 100%);
 }
 
 .homepage-cta {
@@ -301,6 +321,7 @@
     .Grid {
         display: flex !important;
         height: auto !important;
+        outline: 0;
     }
 
     .slick-list {

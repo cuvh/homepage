@@ -1,18 +1,15 @@
 import React from "react";
-import LazyImage from "utils/Image";
+import Img from "gatsby-image";
 
-import spotlightImg from "assets/img/new-homepage/spotlight@2x.png";
-import spotlightBackImg from "assets/img/new-homepage/spotlight_back@2x.png";
-
-export default function SportLight() {
+export default function SportLight({ back, front }) {
 	return (
 		<div className="homepage-spotlight">
 			<div className="container homepage-panel">
 				<div className="animate-in Grid">
 					<div className="Grid Grid--alignCenter Grid-cell--xs-12 Grid-cell--sm-6 Grid-cell--lg-6 Grid-cell--sm-offset-1 Grid-cell--lg-offset-1 spotlight-image">
 						<div className="relative m-top-1 spotlight-stacked-images">
-							<LazyImage
-							 delay={300}
+							<div
+							 className="responsive-gatsby"
 							 style={{
 								width: "100%",
 								position: "absolute",
@@ -20,21 +17,20 @@ export default function SportLight() {
 								left: "3px",
 								background: "white",
 								zIndex: 1,
-							 }}
-							 src={spotlightBackImg}
-							/>
-							<LazyImage
-							 delay={300}
-							 className="spotlight-animate"
+							 }}>
+								<Img resolutions={back.childImageSharp.resolutions} />
+							</div>
+							<div
+							 className="responsive-gatsby"
 							 style={{
 								width: "131%",
 								position: "relative",
 								top: "23px",
 								left: "64%",
 								zIndex: 2,
-							 }}
-							 src={spotlightImg}
-							/>
+							 }}>
+								<Img resolutions={front.childImageSharp.resolutions} />
+							</div>
 						</div>
 					</div>
 					<div className="Grid Grid--alignCenter Grid-cell--xs-12 Grid-cell--sm-5 spotlight-text">

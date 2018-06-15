@@ -23,9 +23,7 @@ export default class FooterLastPosts extends React.PureComponent {
 			<div className="Grid-cell--sm-3 Grid-cell--md-3 Grid-cell--xs-6 hidden-xs">
 				<div className="footer-title m-top-2 m-bottom-4">From the blog</div>
 				<ul className="list-unstyled homepage-blog-latest-short">
-					{posts.length === 0 ? (
-						<li className="articles-short">Loading..</li>
-					) : (
+					{posts.length !== 0 ? (
 						<li className="articles-short">
 							<div>
 								{posts.map(item => (
@@ -33,13 +31,13 @@ export default class FooterLastPosts extends React.PureComponent {
 									 key={item.url}
 									 target="_blank"
 									 className="inline-block m-bottom-1"
-									 href={item.url}>
-										{item.title}
-									</a>
+									 href={item.url}
+									 dangerouslySetInnerHTML={{ __html: item.title }}
+									/>
 								))}
 							</div>
 						</li>
-					)}
+					) : null}
 
 					<li>
 						<a

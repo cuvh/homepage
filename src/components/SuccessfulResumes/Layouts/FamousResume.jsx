@@ -11,14 +11,12 @@ import FamousHeader from "components/SuccessfulResumes/Sections/FamousHeader";
 import Menu from "components/SuccessfulResumes/Sections/Menu";
 import LifeProject from "components/SuccessfulResumes/Sections/LifeProject";
 import Experience from "components/SuccessfulResumes/Sections/Experience";
-import BooksTwo from "components/SuccessfulResumes/Sections/BooksTwo";
 import Awards from "components/SuccessfulResumes/Sections/Awards";
 import Strengths from "components/SuccessfulResumes/Sections/Strengths";
 import TypicalDay from "components/SuccessfulResumes/Sections/TypicalDay";
-import BooksFour from "components/SuccessfulResumes/Sections/BooksFour";
 import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
-import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
+import FamousBottom from "components/SuccessfulResumes/Sections/FamousBottom";
 import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
@@ -26,13 +24,11 @@ import SocialModal from "components/SocialModal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({
-    data: { famousResumesJson: { ...data }, list }
-}) {
+export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
     const socialData = {
         facebookText: data.facebookText,
         twitterText: data.twitterText,
-        url: data.url
+        url: data.url,
     };
 
     return (
@@ -53,21 +49,13 @@ export default function FamousResume({
              trigger={
                 <a
                  onClick={() =>
-                    Track(
-                        "Successful Resumes",
-                        "Expand Resume",
-                        `${data.name} - Sticky click`
-                    )}
-                 className="component--fast-resume-preview"
-                >
-                    <Img
-                     resolutions={data.resumes[0].image.childImageSharp.thumb}
-                    />
+                    Track("Successful Resumes", "Expand Resume", `${data.name} - Sticky click`)}
+                 className="component--fast-resume-preview">
+                    <Img resolutions={data.resumes[0].image.childImageSharp.thumb} />
                     <button className="btn-resume-preview" />
                 </a>
              }
-             socialData={socialData}
-            >
+             socialData={socialData}>
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  altText={`${data.name}'s resume`}
@@ -77,9 +65,8 @@ export default function FamousResume({
             <main className="famous-resume--container">
                 <div
                  className={classnames({
-                    "famous-resume-inverted": data.lightCover
-                 })}
-                >
+                    "famous-resume-inverted": data.lightCover,
+                 })}>
                     <FamousHeader
                      name={data.name}
                      cover={data.cover}
@@ -103,10 +90,7 @@ export default function FamousResume({
                         );
                     }
 
-                    if (
-                        item.section === "MostProudOf" ||
-                        item.section === "Achievements"
-                    ) {
+                    if (item.section === "MostProudOf" || item.section === "Achievements") {
                         return (
                             <Awards
                              key={item.section}
@@ -143,7 +127,7 @@ export default function FamousResume({
                         );
                     }
                 })}
-                <FamousContainer
+                <FamousBottom
                  list={list.edges}
                  dark={true}
                  name={data.name}
