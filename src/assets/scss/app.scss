@@ -50,13 +50,19 @@
 @import "../icons/styles.css";
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body.no-scroll {
-	overflow: hidden;
+    overflow: hidden;
+}
+
+.gatsby-image-wrapper {
+    img:first-child {
+        visibility: visible;
+    }
 }
