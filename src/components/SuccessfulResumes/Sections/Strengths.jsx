@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 
 import strengthImg from "assets/img/new-successful-resumes/famous/elon-musk/ornaments/strenghts.jpg";
 
@@ -7,8 +7,7 @@ export default function Strengths({ section, description, image, data }) {
     return (
         <section
          id={section}
-         className="m-md-bottom-13"
-        >
+         className="m-md-bottom-13">
             <div className="container">
                 <div className="Grid full-width">
                     <div className="Grid-cell--md-6 Grid-cell--xs-12 p-md-left-10">

@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import Link from "gatsby-link";
 import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
 import { shuffle, flow, slice, map } from "lodash/fp";
@@ -23,18 +23,13 @@ export default function FooterList({ list, famousPrefix = "" }) {
                     <Link
                      key={node.url + index}
                      to={`/successful-resumes/${famousPrefix + node.url}`}
-                     className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1"
-                    >
+                     className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-md-3 p-sm-1">
                         <div className="resumes--box">
-                            {node.label ? (
-                                <ResumeBadge label={node.label} />
-                            ) : null}
+                            {node.label ? <ResumeBadge label={node.label} /> : null}
                             <span className="resumes--person-avatar">
                                 <Img
                                  className="m-xs-left-1 m-md-left-2"
-                                 resolutions={
-                                    node.avatar.childImageSharp.resolutions
-                                 }
+                                 resolutions={node.avatar.childImageSharp.resolutions}
                                  altText={`${node.name}'s photo`}
                                 />
                             </span>
@@ -49,9 +44,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 ) : null}
                                 {node.description ? (
                                     <div className="resumes--person-description">
-                                        <p className="m-top-2">
-                                            {node.description}
-                                        </p>
+                                        <p className="m-top-2">{node.description}</p>
                                     </div>
                                 ) : null}
 
@@ -61,10 +54,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                         <Img
                                          style={{ display: "inline-block" }}
                                          className="m-top-0"
-                                         resolutions={
-                                            node.companyLogo.childImageSharp
-                                                .resolutions
-                                         }
+                                         resolutions={node.companyLogo.childImageSharp.resolutions}
                                          alt="Company logo"
                                         />
                                     </div>
@@ -74,10 +64,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                         <div className="resumes--hovered">
                             <Img
                              className="m-xs-left-1 m-md-left-2"
-                             resolutions={
-                                node.resumes[0].image.childImageSharp
-                                    .resolutions
-                             }
+                             resolutions={node.resumes[0].image.childImageSharp.resolutions}
                              altText={`${node.name}'s resume`}
                             />
                         </div>

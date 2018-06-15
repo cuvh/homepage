@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 
 import img from "assets/img/new-successful-resumes/famous/elon-musk/ornaments/illustration.jpg";
 
@@ -13,8 +13,7 @@ export default function LifeProject({
     return (
         <section
          id={section}
-         className="m-md-top-15 m-sm-bottom-3 m-md-bottom-7"
-        >
+         className="m-md-top-15 m-sm-bottom-3 m-md-bottom-7">
             <div className="container">
                 <div className="Grid full-width">
                     <div className="Grid-cell--md-6 Grid-cell--xs-12 p-md-left-10">

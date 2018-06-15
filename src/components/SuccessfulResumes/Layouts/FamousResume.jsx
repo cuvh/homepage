@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import classnames from "classnames";
 import Track from "utils/Track";
 
@@ -26,13 +26,11 @@ import SocialModal from "components/SocialModal";
 
 import Meta from "components/Meta";
 
-export default function FamousResume({
-    data: { famousResumesJson: { ...data }, list }
-}) {
+export default function FamousResume({ data: { famousResumesJson: { ...data }, list } }) {
     const socialData = {
         facebookText: data.facebookText,
         twitterText: data.twitterText,
-        url: data.url
+        url: data.url,
     };
 
     return (
@@ -53,21 +51,13 @@ export default function FamousResume({
              trigger={
                 <a
                  onClick={() =>
-                    Track(
-                        "Successful Resumes",
-                        "Expand Resume",
-                        `${data.name} - Sticky click`
-                    )}
-                 className="component--fast-resume-preview"
-                >
-                    <Img
-                     resolutions={data.resumes[0].image.childImageSharp.thumb}
-                    />
+                    Track("Successful Resumes", "Expand Resume", `${data.name} - Sticky click`)}
+                 className="component--fast-resume-preview">
+                    <Img resolutions={data.resumes[0].image.childImageSharp.thumb} />
                     <button className="btn-resume-preview" />
                 </a>
              }
-             socialData={socialData}
-            >
+             socialData={socialData}>
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
                  altText={`${data.name}'s resume`}
@@ -77,9 +67,8 @@ export default function FamousResume({
             <main className="famous-resume--container">
                 <div
                  className={classnames({
-                    "famous-resume-inverted": data.lightCover
-                 })}
-                >
+                    "famous-resume-inverted": data.lightCover,
+                 })}>
                     <FamousHeader
                      name={data.name}
                      cover={data.cover}
@@ -103,10 +92,7 @@ export default function FamousResume({
                         );
                     }
 
-                    if (
-                        item.section === "MostProudOf" ||
-                        item.section === "Achievements"
-                    ) {
+                    if (item.section === "MostProudOf" || item.section === "Achievements") {
                         return (
                             <Awards
                              key={item.section}

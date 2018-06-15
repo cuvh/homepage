@@ -1,11 +1,7 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 
-export default function ResumePreview({
-    resumePageOne,
-    resumePageTwo,
-    altText
-}) {
+export default function ResumePreview({ resumePageOne, resumePageTwo, altText }) {
     return (
         <React.Fragment>
             <div className="modal-body resume-preview responsive-gatsby">
@@ -14,7 +10,7 @@ export default function ResumePreview({
                  alt={altText}
                  style={{
                     width: "100%",
-                    position: "initial"
+                    position: "initial",
                  }}
                  imgStyle={{ height: "auto", borderRadius: "5px" }}
                 />
@@ -25,7 +21,7 @@ export default function ResumePreview({
                      alt={altText}
                      style={{
                         width: "100%",
-                        position: "initial"
+                        position: "initial",
                      }}
                      imgStyle={{ height: "auto", borderRadius: "5px" }}
                     />

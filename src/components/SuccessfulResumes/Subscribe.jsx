@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import Subscribe from "utils/Subscribe";
 import Track from "utils/Track";
 
@@ -7,7 +7,7 @@ export default class SubscribePanel extends React.PureComponent {
     state = {
         sending: false,
         subscribed: false,
-        email: ""
+        email: "",
     };
 
     async subscribe(event) {
@@ -15,24 +15,20 @@ export default class SubscribePanel extends React.PureComponent {
 
         this.setState({
             sending: true,
-            failed: false
+            failed: false,
         });
 
         try {
             await Subscribe(this.state.email);
             this.setState({
                 subscribed: true,
-                sending: false
+                sending: false,
             });
-            Track(
-                "Successful Resumes",
-                "Subscribe to Newsletter",
-                "Main Page - Bottom"
-            );
+            Track("Successful Resumes", "Subscribe to Newsletter", "Main Page - Bottom");
         } catch (e) {
             this.setState({
                 failed: true,
-                sending: false
+                sending: false,
             });
         }
     }
@@ -49,13 +45,10 @@ export default class SubscribePanel extends React.PureComponent {
                     />
                 </div>
                 <div className="component--subscription-form Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
-                    <h3 className="h2 m-sm-bottom-1 m-md-bottom-2">
-                        Get more inspiration
-                    </h3>
+                    <h3 className="h2 m-sm-bottom-1 m-md-bottom-2">Get more inspiration</h3>
                     <p className="m-sm-bottom-4 m-md-bottom-4">
-                        No spam, just information that will help you build a
-                        resume that makes you feel relevant and well
-                        represented.
+                        No spam, just information that will help you build a resume that makes you
+                        feel relevant and well represented.
                     </p>
                     {!this.state.subscribed ? (
                         <form onSubmit={event => this.subscribe(event)}>
@@ -66,29 +59,22 @@ export default class SubscribePanel extends React.PureComponent {
                                  value={this.state.email}
                                  onChange={event =>
                                     this.setState({
-                                        email: event.target.value
+                                        email: event.target.value,
                                     })}
                                  placeholder="Write your email address"
                                 />
                                 <button
                                  disabled={this.state.sending}
                                  type="submit"
-                                 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4 text-uppercase"
-                                >
-                                    {this.state.sending ? (
-                                        "Subscribing.."
-                                    ) : (
-                                        "Subscribe"
-                                    )}
+                                 className="component--subscription-button btn btn-primary cta-button Grid-cell--md-4 text-uppercase">
+                                    {this.state.sending ? "Subscribing.." : "Subscribe"}
                                 </button>
                             </div>
                             {this.state.failed ? (
                                 <div
                                  className="m-top-1"
-                                 style={{ color: "red" }}
-                                >
-                                    Error while subscribing! Make sure your
-                                    email is correct
+                                 style={{ color: "red" }}>
+                                    Error while subscribing! Make sure your email is correct
                                 </div>
                             ) : null}
                         </form>

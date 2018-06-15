@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import Helmet from "react-helmet";
 import Track from "utils/Track";
 
@@ -30,9 +30,7 @@ export default function FeaturedResume({ data }) {
             />
             <main className="container">
                 <section className="page--head">
-                    <h1 className="h1">
-                        Resume examples that get people like you hired
-                    </h1>
+                    <h1 className="h1">Resume examples that get people like you hired</h1>
                     <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-3">
                         Get inspired and learn from these real life examples
                     </h5>
@@ -43,23 +41,16 @@ export default function FeaturedResume({ data }) {
                         <div className="resume--highlighted-image Grid-cell--md-5 Grid-cell--sm-10 Grid-cell--xs-12">
                             <Img
                              className="resume--highlighted-person-image"
-                             resolutions={
-                                data.mainImage.childImageSharp.resolutions
-                             }
+                             resolutions={data.mainImage.childImageSharp.resolutions}
                              alt="Sam's photo"
                             />
                             <span className="resume--highlighted-preview">
                                 <Img
-                                 resolutions={
-                                    data.mainResumePreview.childImageSharp
-                                        .resolutions
-                                 }
+                                 resolutions={data.mainResumePreview.childImageSharp.resolutions}
                                  alt="Sam's resume preview"
                                 />
 
-                                <Modal
-                                 trigger={<a className="btn-resume-preview" />}
-                                >
+                                <Modal trigger={<a className="btn-resume-preview" />}>
                                     <ResumePreview
                                      resumePageOne={data.mainResumeOne}
                                      resumePageTwo={data.mainResumeTwo}
@@ -71,15 +62,13 @@ export default function FeaturedResume({ data }) {
                         <div className="resume--highlighted-content Grid Grid--alignCenter Grid-cell--md-7 Grid-cell--xs-12">
                             <div className="text-center-sm-max full-width">
                                 <h3 className="h3">
-                                    From investment banking to Spotify - Sam’s
-                                    career change
+                                    From investment banking to Spotify - Sam’s career change
                                 </h3>
                                 <div className="resume--highlighted-text m-top-4">
                                     <p>
-                                        It took a lot of planning, hard work,
-                                        and an amazing resume to get Sam her
-                                        dream job at Spotify. We break down how
-                                        she did it step by step.
+                                        It took a lot of planning, hard work, and an amazing resume
+                                        to get Sam her dream job at Spotify. We break down how she
+                                        did it step by step.
                                     </p>
                                 </div>
                                 <div className="resume--highlighted-hired m-xs-top-2 m-md-top-4">
@@ -96,8 +85,7 @@ export default function FeaturedResume({ data }) {
                                 </div>
                                 <Link
                                  to="/successful-resumes/sam-young"
-                                 className="btn btn-big btn-primary m-top-4"
-                                >
+                                 className="btn btn-big btn-primary m-top-4">
                                     SEE HOW SHE DID IT
                                 </Link>
                             </div>
@@ -126,21 +114,16 @@ export default function FeaturedResume({ data }) {
                                         "Successful Resumes",
                                         "Expand Resume",
                                         `Featured Casey Neistat`
-                                    )}
-                                >
+                                    )}>
                                     <div className="responsive-gatsby">
                                         <Img
-                                         resolutions={
-                                            data.famousResume.childImageSharp
-                                                .small
-                                         }
+                                         resolutions={data.famousResume.childImageSharp.small}
                                          alt="Casey's resume preview"
                                         />
                                     </div>
                                     <button className="btn-resume-preview" />
                                 </a>
-                             }
-                            >
+                             }>
                                 <ResumePreview
                                  resumePageOne={data.famousResume}
                                  altText="Casey's resume"
@@ -155,24 +138,21 @@ export default function FeaturedResume({ data }) {
                             </h3>
                             <div className="m-xs-top-1 m-md-top-3">
                                 <p className="p-big">
-                                    Every time he tries something new, Casey
-                                    shows the importance of knowing why you do
-                                    what you do. He also shows why success can
-                                    be dangerous. His unique example of a
-                                    filmmaker resume tells that story.
+                                    Every time he tries something new, Casey shows the importance of
+                                    knowing why you do what you do. He also shows why success can be
+                                    dangerous. His unique example of a filmmaker resume tells that
+                                    story.
                                 </p>
                             </div>
                             <Link
                              to="/successful-resumes/famous/casey-neistat"
-                             className="btn btn-big btn-primary m-xs-top-2 m-md-top-6"
-                            >
+                             className="btn btn-big btn-primary m-xs-top-2 m-md-top-6">
                                 Read Resume
                             </Link>
 
                             <a
                              href="#explore-more-resumes"
-                             className="page--scroll"
-                            >
+                             className="page--scroll">
                                 Explore more resumes
                             </a>
                         </div>
@@ -249,45 +229,35 @@ export const pageQuery = graphql`
                 }
             }
         }
-        mainImage: file(
-            relativePath: { eq: "successful-resumes/Sam_photo@2.png" }
-        ) {
+        mainImage: file(relativePath: { eq: "successful-resumes/Sam_photo@2.png" }) {
             childImageSharp {
                 resolutions(width: 475, height: 370) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        mainResumePreview: file(
-            relativePath: { eq: "successful-resumes/sam_resume@2.png" }
-        ) {
+        mainResumePreview: file(relativePath: { eq: "successful-resumes/sam_resume@2.png" }) {
             childImageSharp {
                 resolutions(width: 214, height: 281) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        mainResumeOne: file(
-            relativePath: { eq: "successful-resumes/sam-young-resume-1.jpg" }
-        ) {
+        mainResumeOne: file(relativePath: { eq: "successful-resumes/sam-young-resume-1.jpg" }) {
             childImageSharp {
                 large: resolutions(width: 1240) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        mainResumeTwo: file(
-            relativePath: { eq: "successful-resumes/sam-young-resume-2.jpg" }
-        ) {
+        mainResumeTwo: file(relativePath: { eq: "successful-resumes/sam-young-resume-2.jpg" }) {
             childImageSharp {
                 large: resolutions(width: 1240) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        famousResume: file(
-            relativePath: { eq: "famous-resumes/youtuber-casey-neistat.jpg" }
-        ) {
+        famousResume: file(relativePath: { eq: "famous-resumes/youtuber-casey-neistat.jpg" }) {
             childImageSharp {
                 small: resolutions(width: 535, height: 741) {
                     ...GatsbyImageSharpResolutions
@@ -297,36 +267,28 @@ export const pageQuery = graphql`
                 }
             }
         }
-        subImageOne: file(
-            relativePath: { eq: "man_subscribe_illustration@2.png" }
-        ) {
+        subImageOne: file(relativePath: { eq: "man_subscribe_illustration@2.png" }) {
             childImageSharp {
                 resolutions(width: 475, height: 404) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        subImageTwo: file(
-            relativePath: { eq: "mulat_girl_subscribe_illustration.png" }
-        ) {
+        subImageTwo: file(relativePath: { eq: "mulat_girl_subscribe_illustration.png" }) {
             childImageSharp {
                 resolutions(width: 475, height: 404) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        subImageThree: file(
-            relativePath: { eq: "white_girl_subscribe_illustration@2.png" }
-        ) {
+        subImageThree: file(relativePath: { eq: "white_girl_subscribe_illustration@2.png" }) {
             childImageSharp {
                 resolutions(width: 475, height: 404) {
                     ...GatsbyImageSharpResolutions
                 }
             }
         }
-        shareImage: file(
-            relativePath: { eq: "successful-resumes/sr-share.png" }
-        ) {
+        shareImage: file(relativePath: { eq: "successful-resumes/sr-share.png" }) {
             publicURL
         }
     }
