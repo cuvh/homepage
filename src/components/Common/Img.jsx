@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 export default function Image({ ...props }) {
     let base64Class = "";
-    if (typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.platform)) {
+    if (typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
         base64Class = "remove-base-64";
     }
 
