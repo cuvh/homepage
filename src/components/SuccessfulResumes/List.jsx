@@ -90,6 +90,7 @@ export default class List extends React.PureComponent {
                                 <ResumeBadge label={node.label} />
                                 <span className="resumes--person-avatar">
                                     <Img
+                                     style={{ overflow: "initial" }}
                                      className="m-xs-left-1 m-md-left-2"
                                      resolutions={node.avatar.childImageSharp.resolutions}
                                     />

@@ -3,7 +3,7 @@
         position: relative;
         width: 100%;
         display: inline-block;
-        z-index:1;
+        z-index: 1;
         // Overwriting default box style
         .resumes--box {
             position: relative;
@@ -12,10 +12,7 @@
                 display: flex;
                 flex-wrap: nowrap;
                 align-items: center;
-                padding: ($sr_global-offset-value * 3)
-                    (
-                        $sr_global-offset-value * 2
-                    );
+                padding: ($sr_global-offset-value * 3) ($sr_global-offset-value * 2);
             }
             @media screen and (min-width: $screen-sm) and (max-width: $screen-sm-max) {
                 padding: $sr_global-offset-value * 3;
@@ -23,13 +20,15 @@
         }
         .resumes--person-avatar {
             @media screen and (max-width: $screen-xs-max) {
-                overflow-x: hidden;
-                margin-left: -$sr_global-offset-value * 2;
-
-                img {
-                    max-width: 127px;
-                    position: relative;
+                .gatsby-image-outer-wrapper {
                     left: -$sr_global-offset-value * 2 !important;
+                }
+
+                img,
+                div {
+                    max-width: 110px;
+                    max-height: 110px;
+                    position: relative;
                 }
             }
         }
@@ -89,7 +88,8 @@
         }
 
         @media screen and (max-width: $screen-xs-max) {
-            img {
+            img,
+            .gatsby-image-outer-wrapper div {
                 max-width: 100px;
             }
         }
@@ -136,10 +136,7 @@
 
             margin: 0 ($sr_global-offset-value * 4);
             @media screen and (max-width: $screen-sm-max) {
-                margin: ($sr_global-offset-value * 1)
-                    (
-                        $sr_global-offset-value * 2
-                    );
+                margin: ($sr_global-offset-value * 1) ($sr_global-offset-value * 2);
             }
 
             &:hover {
