@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import { withRouter } from "react-router";
 import classnames from "classnames";
 import Helmet from "react-helmet";
+import Track from "utils/Track";
 
 import SuccessfulResumesStrip from "components/SuccessfulResumes/SuccessfulResumesStrip";
 
@@ -127,20 +128,14 @@ class Header extends React.PureComponent {
                                 <div className="navbar-mobile-visible">
                                     <a
                                      href="https://app.enhancv.com"
-                                     data-track="event"
-                                     data-category="Homepage"
-                                     data-action="Click Signup"
-                                     data-label="Sign In"
+                                     onClick={() => Track("Homepage", "Get Started Mobile Menu")}
                                      className="visible-xs btn btn-default btn-sign-in">
                                         GET STARTED
                                     </a>
                                 </div>
                                 <a
                                  href="https://app.enhancv.com/signup"
-                                 data-track="event"
-                                 data-category="Homepage"
-                                 data-action="Click Signup"
-                                 data-label="Sign Up"
+                                 onClick={() => Track("Homepage", "Signup Header")}
                                  className="visible-xs btn btn-primary navbar-mobile-visible-sticky">
                                     Sign Up
                                 </a>
@@ -170,20 +165,17 @@ class Header extends React.PureComponent {
 
                                 <li>
                                     <a
-                                     data-track="event"
-                                     data-category="Homepage"
-                                     data-action="Click Login"
+                                     onClick={() => Track("Homepage", "Sign In Header")}
                                      href="https://app.enhancv.com/login">
                                         Sign In
                                     </a>
                                 </li>
                                 <li>
                                     <button
-                                     onClick={() => (window.location = "https://app.enhancv.com")}
-                                     data-track="event"
-                                     data-category="Homepage"
-                                     data-action="Click Signup"
-                                     data-label="Sign Up"
+                                     onClick={() => {
+                                        Track("Homepage", "Get Started Header");
+                                        window.location = "https://app.enhancv.com";
+                                     }}
                                      className="btn btn-primary navbar-btn m-left-1 m-right-1">
                                         Get Started
                                     </button>
