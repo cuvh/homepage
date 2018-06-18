@@ -11,14 +11,12 @@ import FamousHeader from "components/SuccessfulResumes/Sections/FamousHeader";
 import Menu from "components/SuccessfulResumes/Sections/Menu";
 import LifeProject from "components/SuccessfulResumes/Sections/LifeProject";
 import Experience from "components/SuccessfulResumes/Sections/Experience";
-import BooksTwo from "components/SuccessfulResumes/Sections/BooksTwo";
 import Awards from "components/SuccessfulResumes/Sections/Awards";
 import Strengths from "components/SuccessfulResumes/Sections/Strengths";
 import TypicalDay from "components/SuccessfulResumes/Sections/TypicalDay";
-import BooksFour from "components/SuccessfulResumes/Sections/BooksFour";
 import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
-import FamousContainer from "components/SuccessfulResumes/Sections/ResumeBottom";
+import FamousBottom from "components/SuccessfulResumes/Sections/FamousBottom";
 import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
@@ -129,7 +127,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                         );
                     }
                 })}
-                <FamousContainer
+                <FamousBottom
                  list={list.edges}
                  dark={true}
                  name={data.name}

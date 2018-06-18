@@ -2,6 +2,7 @@ import "../assets/scss/app.scss";
 import React from "react";
 import Link from "gatsby-link";
 import Meta from "components/Meta";
+import Img from "gatsby-image";
 
 import DefaultLayout from "layouts/DefaultLayout";
 
@@ -18,7 +19,17 @@ import Benefits from "components/Homepage/Benefits";
 import HomepageCTA from "components/Homepage/HomepageCTA";
 import Testimonials from "components/Homepage/Testimonials";
 
-const IndexPage = () => (
+const IndexPage = ({
+	data: {
+		headerImage,
+		standoutOne,
+		standoutTwo,
+		standoutThree,
+		spotlightFront,
+		spotlightBack,
+		...rest
+	},
+}) => (
 	<DefaultLayout className="homepage">
 		<Meta
 		 title="Enhancv | Professional Resume & CV Builder"
@@ -49,8 +60,7 @@ const IndexPage = () => (
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2"
-					>
+					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2">
 						Create Your Resume
 					</a>
 					<a
@@ -59,17 +69,15 @@ const IndexPage = () => (
 					 data-category="Homepage"
 					 data-action="Click Signup"
 					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2"
-					>
+					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2">
 						Create Your Resume
 					</a>
 				</div>
 			</div>
-			<div
-			 className="parallax-window homepage-scalable-header"
-			 data-parallax="scroll"
-			 data-image-src="/img/new-homepage/header.jpg"
-			/>
+			<div className="homepage-gatsby-header">
+				<Img sizes={headerImage.childImageSharp.sizes} />
+			</div>
+			{/*<div className="parallax-window homepage-scalable-header" />*/}
 		</div>
 
 		<div className="homepage-logos">
@@ -108,32 +116,28 @@ const IndexPage = () => (
 
 				<div className="m-top-5 m-bottom-6 hidden-xs hidden-sm">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice
-						companies — read more about their journey to the perfect
-						job&nbsp;
+						Our users got noticed and hired by their top choice companies — read more
+						about their journey to the perfect job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link"
-						>
+						 className="feature-link">
 							here
 						</Link>.
 					</p>
 				</div>
 				<div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
 					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice
-						companies — read more about their journey to the perfect
-						job&nbsp;
+						Our users got noticed and hired by their top choice companies — read more
+						about their journey to the perfect job&nbsp;
 						<Link
 						 data-track="event"
 						 data-category="Homepage"
 						 data-action="Click Successful Resumes"
 						 to="/successful-resumes"
-						 className="feature-link"
-						>
+						 className="feature-link">
 							here
 						</Link>.
 					</p>
@@ -141,18 +145,87 @@ const IndexPage = () => (
 			</div>
 		</div>
 
-		<Parallax />
+		<Parallax standoutImages={[standoutOne, standoutTwo, standoutThree]} />
 
-		<Spotlight />
+		<Spotlight
+		 front={spotlightFront}
+		 back={spotlightBack}
+		/>
 
 		<Customize />
 
 		<Benefits />
 
-		<Testimonials />
+		<Testimonials images={rest} />
 
 		<HomepageCTA />
 	</DefaultLayout>
 );
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+	fragment standoutImage on File {
+		childImageSharp {
+			resolutions(width: 665, height: 560) {
+				...GatsbyImageSharpResolutions
+			}
+		}
+	}
+
+	fragment testimonialImage on File {
+		childImageSharp {
+			resolutions(width: 285, height: 360) {
+				...GatsbyImageSharpResolutions
+			}
+		}
+	}
+
+	query Homepage {
+		headerImage: file(relativePath: { eq: "new-homepage/header.jpg" }) {
+			childImageSharp {
+				sizes(maxWidth: 2500) {
+					...GatsbyImageSharpSizes
+				}
+			}
+		}
+		standoutOne: file(relativePath: { eq: "new-homepage/standout-01-img3-1.png" }) {
+			...standoutImage
+		}
+		standoutTwo: file(relativePath: { eq: "new-homepage/standout-01-img3-2.png" }) {
+			...standoutImage
+		}
+		standoutThree: file(relativePath: { eq: "new-homepage/standout-01-img3-3.png" }) {
+			...standoutImage
+		}
+		danielLogo: file(relativePath: { eq: "new-homepage/testimonials/daniel@2x.png" }) {
+			...testimonialImage
+		}
+		akshayLogo: file(relativePath: { eq: "new-homepage/testimonials/akshay@2x.png" }) {
+			...testimonialImage
+		}
+		zainabLogo: file(relativePath: { eq: "new-homepage/testimonials/zainab@2x.png" }) {
+			...testimonialImage
+		}
+		edwardLogo: file(relativePath: { eq: "new-homepage/testimonials/edward@2x.png" }) {
+			...testimonialImage
+		}
+		claraLogo: file(relativePath: { eq: "new-homepage/testimonials/clara@2x.png" }) {
+			...testimonialImage
+		}
+		spotlightFront: file(relativePath: { eq: "new-homepage/spotlight@2x.png" }) {
+			childImageSharp {
+				resolutions(width: 255, height: 371) {
+					...GatsbyImageSharpResolutions
+				}
+			}
+		}
+		spotlightBack: file(relativePath: { eq: "new-homepage/spotlight_back@2x.png" }) {
+			childImageSharp {
+				resolutions(width: 334, height: 441) {
+					...GatsbyImageSharpResolutions
+				}
+			}
+		}
+	}
+`;

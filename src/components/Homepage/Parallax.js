@@ -1,8 +1,5 @@
 import React from "react";
-
-import parallaxImgOne from "assets/img/new-homepage/standout-01-img3-1.png";
-import parallaxImgTwo from "assets/img/new-homepage/standout-01-img3-2.png";
-import parallaxImgThree from "assets/img/new-homepage/standout-01-img3-3.png";
+import Img from "gatsby-image";
 
 import browserWidth from "utils/browserWidth";
 import isTouchDevice from "utils/isTouchDevice";
@@ -77,29 +74,40 @@ export default class Parallax extends React.PureComponent {
 					</div>
 					<div className="Grid Grid--alignCenter Grid-cell--lg-7 Grid-cell--sm-7 relative homepage-standout Grid-cell--sm-offset-1 Grid-cell--lg-offset-1">
 						<div className="inline-block">
-							<img
-							 id="parallax-1"
-							 className="bg-image"
+							<div
+							 className="bg-image responsive-gatsby full-width"
 							 style={{
 								left: this.state.firstImage.left,
 								top: this.state.firstImage.top,
-							 }}
-							 src={parallaxImgOne}
-							/>
-							<img
-							 id="parallax-2"
-							 className="bg-image"
+							 }}>
+								<Img
+								 id="parallax-1"
+								 resolutions={
+									this.props.standoutImages[0].childImageSharp.resolutions
+								 }
+								/>
+							</div>
+							<div
+							 className="bg-image responsive-gatsby full-width"
 							 style={{
 								left: this.state.secondImage.left,
 								top: this.state.secondImage.top,
-							 }}
-							 src={parallaxImgTwo}
-							/>
-							<img
-							 id="parallax-3"
-							 className="relative"
-							 src={parallaxImgThree}
-							/>
+							 }}>
+								<Img
+								 id="parallax-2"
+								 resolutions={
+									this.props.standoutImages[1].childImageSharp.resolutions
+								 }
+								/>
+							</div>
+							<div className="relative parallax-responsive">
+								<Img
+								 id="parallax-3"
+								 resolutions={
+									this.props.standoutImages[2].childImageSharp.resolutions
+								 }
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

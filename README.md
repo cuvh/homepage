@@ -4,7 +4,7 @@ Development
 
 ```bash
 yarn
-yarn start
+yarn develop
 ```
 
 Build

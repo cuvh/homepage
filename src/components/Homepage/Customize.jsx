@@ -37,7 +37,7 @@ export default function Customize() {
 						/>
 
 						<LazyImage
-						 delay={350}
+						 delay={1000}
 						 hiddenOnLoading={true}
 						 className="gif-monitor"
 						 src={monitorGif}

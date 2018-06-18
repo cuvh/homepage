@@ -10,7 +10,7 @@ import FooterList from "components/SuccessfulResumes/FooterList";
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
 import SocialModal from "components/SocialModal";
 
-export default function FamousContainer({
+export default function FamousBottom({
     name,
     resume,
     finalDescription,

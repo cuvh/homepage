@@ -4,7 +4,7 @@ import customizeImg from "assets/img/new-homepage/customize.png";
 
 export default class Img extends React.PureComponent {
 	state = {
-		loaded: false
+		loaded: false,
 	};
 
 	load() {
@@ -33,11 +33,9 @@ export default class Img extends React.PureComponent {
 				<div
 				 style={{
 					display: "inline-block",
-					minHeight: this.props.minHeight
+					minHeight: this.props.minHeight,
 				 }}
-				>
-					Loading...
-				</div>
+				/>
 			);
 		}
 
