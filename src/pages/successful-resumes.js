@@ -24,7 +24,7 @@ export default function FeaturedResume({ data }) {
     return (
         <DefaultLayout className="resumeslist">
             <Meta
-             title="Real Resume Examples that Got People Hires | Enhancv"
+             title="Real Resume Examples that Got People Hired | Enhancv"
              description="Ditch lifeless resume templates and see a collection of real resume examples to show you how to stand out, get inspired, and get the job"
              metaImage={data.shareImage.publicURL}
             />

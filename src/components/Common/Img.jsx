@@ -1,16 +1,28 @@
 import React from "react";
 import Img from "gatsby-image";
 
-export default function Image({ className, ...props }) {
-    let base64Class = "";
-    if (typeof navigator !== "undefined" && /iPad|iPhone|iPod/.test(navigator.userAgent)) {
-        base64Class = "remove-base-64";
+export default class Image extends React.PureComponent {
+    state = {
+        base64Class: "",
+    };
+
+    componentDidMount() {
+        if (
+            typeof navigator !== "undefined" &&
+            /safari|iPad|iPhone|iPod/i.test(navigator.userAgent)
+        ) {
+            this.setState({ base64Class: "remove-base-64" });
+        }
     }
 
-    return (
-        <Img
-         className={`${className} ${base64Class}`}
-         {...props}
-        />
-    );
+    render() {
+        const { className: noop, ...rest } = this.props;
+
+        return (
+            <Img
+             className={`${this.props.className} ${this.state.base64Class}`}
+             {...rest}
+            />
+        );
+    }
 }
