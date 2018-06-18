@@ -65,6 +65,12 @@ body.no-scroll {
 	img:first-child {
 		visibility: visible;
 	}
+
+	&.remove-base-64 {
+		img:first-child {
+			display: none;
+		}
+	}
 }
 
 .parallax-responsive {

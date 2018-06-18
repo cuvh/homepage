@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import Img from "components/Common/Img";
 import classnames from "classnames";
 import Track from "utils/Track";
 import FeelingInspired from "components/SuccessfulResumes/FeelingInspired";
