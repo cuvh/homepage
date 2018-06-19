@@ -80,11 +80,14 @@
         padding: $sr_global-offset-value * 2.5 0;
         align-items: center;
         border-bottom: 1px solid rgba(151, 151, 151, 0.1);
-        position: sticky;
-        top: 0;
-        width: 100%;
-        z-index: $zindex-navbar - 1;
-        background: #fff;
+
+        @media (min-width: $screen-md-min) {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: $zindex-navbar - 1;
+            background: #fff;
+        }
 
         @media screen and (max-width: $screen-sm-max) {
             padding: $sr_global-offset-value * 4 0;
