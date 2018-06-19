@@ -1,7 +1,6 @@
 // Vendor components
 @import "variables";
 @import "bootstrap";
-@import "components/layout-grid";
 @import "layout-grid";
 @import "slick.scss";
 @import "slicktheme.scss";
@@ -18,13 +17,8 @@
 @import "container";
 
 // components
-@import "components/dots";
 @import "components/nav-tips";
-@import "components/popover";
-@import "components/carousel";
 @import "components/modal";
-@import "components/tooltip";
-@import "components/radio-button";
 
 // pages
 @import "pages/homepage";
@@ -34,7 +28,6 @@
 @import "pages/text-page";
 @import "pages/new-pricing";
 @import "pages/404";
-@import "pages/enhancv-button";
 @import "pages/careers";
 @import "pages/job";
 @import "pages/privacy";
@@ -42,7 +35,6 @@
 
 // partials
 @import "partials/footer";
-@import "partials/example";
 @import "partials/header";
 @import "partials/member";
 @import "partials/companies";
