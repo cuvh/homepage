@@ -19,7 +19,7 @@ import damjanImage from "assets/img/about/member/damjan-obal.jpg";
 
 export default function Members() {
 	return (
-		<div className="container top-lg">
+		<div className="container m-top-12">
 			<div className="row">
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member

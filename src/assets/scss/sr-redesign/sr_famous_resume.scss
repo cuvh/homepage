@@ -18,12 +18,12 @@
     }
     &--head-image {
         position: relative;
-        height:302px;
+        height: 302px;
         img {
             object-position: top right !important;
         }
         @media screen and (min-width: $screen-xs) and (max-width: $screen-sm-max) {
-            height:541px;
+            height: 541px;
         }
         @media screen and (min-width: $screen-md) {
             height: 786px;
@@ -37,12 +37,12 @@
         }
     }
     &--head-content {
-        width:100%;
+        width: 100%;
         @media screen and (min-width: $screen-md) {
-            position: absolute;            
-            height:100%;
-            z-index:1;
-            top:0;
+            position: absolute;
+            height: 100%;
+            z-index: 1;
+            top: 0;
         }
     }
     &--head {
@@ -96,7 +96,7 @@
         }
 
         a {
-            color: $sr_purple-color;
+            color: $brand-purple;
             font-weight: 600;
             font-size: 18px;
             position: relative;
@@ -146,8 +146,7 @@
 
     &--box {
         background: #fff;
-        box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1),
-            1px 0 2px rgba(77, 77, 77, 0.16);
+        box-shadow: -1px 3px 3px rgba(77, 77, 77, 0.1), 1px 0 2px rgba(77, 77, 77, 0.16);
         border-radius: 5px;
         padding: $sr_global-offset-value * 4;
         @media screen and (max-width: $screen-sm-max) {
@@ -155,8 +154,7 @@
         }
         display: block;
         height: 100%;
-        transition: 0.3s transform $ease-BounceInOut,
-            0.3s opacity $ease-ExpoInOut;
+        transition: 0.3s transform $ease-BounceInOut, 0.3s opacity $ease-ExpoInOut;
         position: relative;
         z-index: 1;
         transform-origin: center center;

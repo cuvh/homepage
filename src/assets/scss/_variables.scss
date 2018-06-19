@@ -7,19 +7,19 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base: #000 !default;
-$gray-darker: lighten($gray-base, 13.5%) !default; // #222
-$gray-dark: lighten($gray-base, 20%) !default; // #333
-$gray: lighten($gray-base, 33.5%) !default; // #555
-$gray-light: #808080 !default; // #777
-$gray-lighter: lighten($gray-base, 93.5%) !default; // #eee
+$gray-dark: #333 !default;
+$gray: #555 !default;
+$gray-light: #808080 !default;
+$gray-lightest: #fafafc;
+
+$light-green: #eaf8f3;
 
 $brand-primary: #2dc08d;
 $brand-success: #5cb85c !default;
 $brand-info: #5bc0de !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #d9534f !default;
-$brand-purple: #8C7CDB !default;
+$brand-purple: #8c7cdb !default;
 
 $border-color: #b3b3b3;
 $border-color-muted: #e6e6e6;
@@ -33,6 +33,47 @@ $linkedin-color: #0d77b7;
 $code-color: #009ee8;
 $dark-color: #363636;
 
+$sr_main-color: #384347;
+$sr_secondary-color: #65696d;
+
+$sr_white: #fff;
+$sr_white-smoke: #b2b4b6;
+
+// Default Buttons
+$sr_button_green: $brand-primary;
+$sr_button_green_hover: #96dfc6;
+$sr_button_green_pressed: #7dc6ad;
+$sr_button_green_unavailable: #b1b3b5;
+
+$sr_button_purple: $brand-purple;
+$sr_button_purple_hover: #c5bded;
+$sr_button_purple_pressed: #aca4d4;
+$sr_button_purple_unavailabe: #b1b3b5;
+
+$sr_global-offset-value: 8px;
+
+$sr_resumeslist-background: #fcfcfd;
+$sr_page-scroll: rgba(140, 124, 219, 0.75);
+
+$badge-white: #fff;
+
+$sr_sr_subscription_body_text: #65696d;
+$sr_subscription_border_top: rgba(151, 151, 151, 0.2);
+
+$sr_article-body-text: #65696d;
+$sr_article-heading: $sr_main-color;
+
+$sr_famous_header_bg_dark: $sr_main-color;
+$sr_famous_header_bg_light: #fcfcfd;
+
+$sr_feelings_background: #dbd7f2;
+$ease-BounceInOut: cubic-bezier(0, 1.15, 0.46, 1.17);
+$ease-ExpoInOut: cubic-bezier(1, 0, 0, 1);
+$socail-layout-switch: 1366px;
+
+$sr_wow_button_default_color: $brand-purple;
+$sr_wow_button_active_color: #c5bded;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -40,8 +81,6 @@ $dark-color: #363636;
 //** Background color for `<body>`.
 $body-bg: #fff !default;
 $homepage-background: #f5f5f7; /* #eaf8f3 */
-$light-green: #eaf8f3;
-$light-gray: #fafafc;
 //** Global text color on `<body>`.
 $text-color: $gray-dark !default;
 
@@ -205,7 +244,7 @@ $btn-border-radius-small: (
 //** `<input>` background color
 $input-bg: #fff !default;
 //** `<input disabled>` background color
-$input-bg-disabled: $gray-lighter !default;
+$input-bg-disabled: $gray-light !default;
 
 //** Text color for `<input>`s
 $input-color: $gray !default;
@@ -247,7 +286,7 @@ $legend-color: $gray-dark !default;
 $legend-border-color: #e5e5e5 !default;
 
 //** Background color for textual input addons
-$input-group-addon-bg: $gray-lighter !default;
+$input-group-addon-bg: $gray-light !default;
 //** Border color for textual input addons
 $input-group-addon-border-color: $input-border !default;
 
@@ -394,7 +433,7 @@ $navbar-default-border: white;
 $navbar-default-link-color: #333 !default;
 $navbar-default-link-hover-color: $btn-secondary-color !default;
 $navbar-default-link-hover-bg: transparent !default;
-$navbar-default-link-active-color: #8C7CDB !default;
+$navbar-default-link-active-color: #8c7cdb !default;
 $navbar-default-link-active-bg: transparent !default;
 $navbar-default-link-disabled-color: #ccc !default;
 $navbar-default-link-disabled-bg: transparent !default;
@@ -440,7 +479,7 @@ $navbar-inverse-toggle-border-color: #333 !default;
 
 //=== Shared nav styles
 $nav-link-padding: 10px 15px !default;
-$nav-link-hover-bg: $gray-lighter !default;
+$nav-link-hover-bg: $gray-light !default;
 
 $nav-disabled-link-color: $gray-light !default;
 $nav-disabled-link-hover-color: $gray-light !default;
@@ -448,7 +487,7 @@ $nav-disabled-link-hover-color: $gray-light !default;
 //== Tabs
 $nav-tabs-border-color: #ddd !default;
 
-$nav-tabs-link-hover-border-color: $gray-lighter !default;
+$nav-tabs-link-hover-border-color: $gray-light !default;
 
 $nav-tabs-active-link-hover-bg: $body-bg !default;
 $nav-tabs-active-link-hover-color: $gray !default;
@@ -471,7 +510,7 @@ $pagination-bg: #fff !default;
 $pagination-border: #ddd !default;
 
 $pagination-hover-color: $link-hover-color !default;
-$pagination-hover-bg: $gray-lighter !default;
+$pagination-hover-bg: $gray-light !default;
 $pagination-hover-border: #ddd !default;
 
 $pagination-active-color: #fff !default;
@@ -503,7 +542,7 @@ $pager-disabled-color: $pagination-disabled-color !default;
 
 $jumbotron-padding: 30px !default;
 $jumbotron-color: inherit !default;
-$jumbotron-bg: $gray-lighter !default;
+$jumbotron-bg: $gray-light !default;
 $jumbotron-heading-color: inherit !default;
 $jumbotron-font-size: ceil(($font-size-base * 1.5)) !default;
 $jumbotron-heading-font-size: ceil(($font-size-base * 4.5)) !default;
@@ -698,7 +737,7 @@ $list-group-active-text-color: lighten($list-group-active-bg, 40%) !default;
 //** Text color of disabled list items
 $list-group-disabled-color: $gray-light !default;
 //** Background color of disabled list items
-$list-group-disabled-bg: $gray-lighter !default;
+$list-group-disabled-bg: $gray-light !default;
 //** Text color for content within disabled list items
 $list-group-disabled-text-color: $list-group-disabled-color !default;
 
@@ -859,66 +898,12 @@ $blockquote-small-color: $gray-light !default;
 //** Blockquote font size
 $blockquote-font-size: ($font-size-base * 1.25) !default;
 //** Blockquote border color
-$blockquote-border-color: $gray-lighter !default;
+$blockquote-border-color: $gray-light !default;
 //** Page header border color
-$page-header-border-color: $gray-lighter !default;
+$page-header-border-color: $gray-light !default;
 //** Width of horizontal description list titles
 $dl-horizontal-offset: $component-offset-horizontal !default;
 //** Point at which .dl-horizontal becomes horizontal
 $dl-horizontal-breakpoint: $grid-float-breakpoint !default;
 //** Horizontal line color.
-$hr-border: $gray-lighter !default;
-
-
-
-/////////////////
-// Temporarily  Successful Resumes Variables
-/////////////////////////////////////////////
-///////////////// Colors ////////////////////
-////////////////////////////////////////////
-$sr_main-color : #384347;
-$sr_secondary-color : #65696D;
-$sr_purple-color : #8C7CDB;
-
-$sr_white: #fff;
-$sr_white-smoke: #B2B4B6;
-///////////////// Buttons //////////////////
-// Default Buttons
-$sr_button_green : #2DC08D;
-$sr_button_green_hover : #96DFC6;
-$sr_button_green_pressed : #7DC6AD;
-$sr_button_green_unavailable : #B1B3B5;
-// Smalll Button
-$sr_button_purple : $sr_purple-color;
-$sr_button_purple_hover : #C5BDED;
-$sr_button_purple_pressed : #ACA4D4;
-$sr_button_purple_unavailabe : #B1B3B5;
-///////////////// Dimensions //////////////////
-$sr_global-offset-value: 8px;
-///////////////// Components //////////////////
-$sr_resumeslist-background :#FCFCFD;
-$sr_page-scroll:rgba(140, 124, 219, 0.75);
-/// Badgees styles
-$badge-white:#fff;
-$badge-purple:$sr_purple-color;
-$badge-orange:#FE8F6E;
-////Subscription
-$sr_sr_subscription_body_text:#65696D;
-$sr_subscription_border_top:rgba(151, 151, 151, 0.20);
-//Article
-$sr_article-body-text:#65696D;
-$sr_article-heading:$sr_main-color;
-//Famous Resume 
-$sr_famous_header_bg_dark:$sr_main-color;
-$sr_famous_header_bg_light:#FCFCFD;
-//Feelings
-$sr_feelings_background:#DBD7F2;
-///////////////// Easing //////////////////
-$ease-BounceInOut: cubic-bezier(0, 1.15, 0.46, 1.17);
-$ease-ExpoInOut: cubic-bezier(1.000, 0.000, 0.000, 1.000);
-//////////////// Social Bar ///////////////
-$socail-layout-switch: 1366px;
-////////////// WOW Button ////////////
-$sr_wow_button_default_color:#8C7CDB;
-$sr_wow_button_active_color:#C5BDED;
-
+$hr-border: $gray-light !default;
