@@ -61,31 +61,34 @@ exports.onInitialClientRender = () => {
     })(window, document, "//static.hotjar.com/c/hotjar-", ".js?sv=");
 
     (function() {
-        var prevScrollpos = window.pageYOffset;
-        const NAV_HEIGHT = 62;
-        var famousNavInitialOffset =
-            document.querySelector(".famous-resume--navbar").offsetTop - NAV_HEIGHT;
+        if (document.querySelector(".famous-resume--navbar")) {
+            var prevScrollpos = window.pageYOffset;
+            const NAV_HEIGHT = 62;
+            var famousNavInitialOffset =
+                document.querySelector(".famous-resume--navbar").offsetTop - NAV_HEIGHT;
 
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            var topNav = document.querySelector(".navbar-static-top");
-            var famousNav = document.querySelector(".famous-resume--navbar");
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                var topNav = document.querySelector(".navbar-static-top");
+                var famousNav = document.querySelector(".famous-resume--navbar");
 
-            var distanceScrolled = prevScrollpos - currentScrollPos;
+                var distanceScrolled = prevScrollpos - currentScrollPos;
 
-            if (currentScrollPos > famousNavInitialOffset) {
-                if (prevScrollpos > currentScrollPos) {
-                    topNav.style.top =
-                        Math.min(parseInt(topNav.style.top) + distanceScrolled, 0) + "px";
-                    famousNav.style.top = NAV_HEIGHT + parseInt(topNav.style.top) + "px";
-                } else {
-                    topNav.style.top = famousNav.getBoundingClientRect().top - NAV_HEIGHT + "px";
-                    famousNav.style.top =
-                        Math.max(parseInt(famousNav.style.top) + distanceScrolled, 0) + "px";
+                if (currentScrollPos > famousNavInitialOffset) {
+                    if (prevScrollpos > currentScrollPos) {
+                        topNav.style.top =
+                            Math.min(parseInt(topNav.style.top) + distanceScrolled, 0) + "px";
+                        famousNav.style.top = NAV_HEIGHT + parseInt(topNav.style.top) + "px";
+                    } else {
+                        topNav.style.top =
+                            famousNav.getBoundingClientRect().top - NAV_HEIGHT + "px";
+                        famousNav.style.top =
+                            Math.max(parseInt(famousNav.style.top) + distanceScrolled, 0) + "px";
+                    }
                 }
-            }
-            prevScrollpos = currentScrollPos;
-        };
+                prevScrollpos = currentScrollPos;
+            };
+        }
     })();
 };
 
