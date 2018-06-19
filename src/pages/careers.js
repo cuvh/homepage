@@ -109,7 +109,7 @@ export default function Careers() {
                             </div>
                             <div className="col-md-10 col-md-offset-1 text-center">
                                 <div className="row">
-                                    <div className="info-group no-top">
+                                    <div className="info-group m-top-no">
                                         <div className="col-xs-12 text-center main-text">
                                             Why join Enhancv
                                         </div>

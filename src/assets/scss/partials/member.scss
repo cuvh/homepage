@@ -23,7 +23,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba($gray-lighter, 0.85);
+    background: rgba($gray-light, 0.85);
 
     &:hover {
         z-index: 1;
@@ -81,7 +81,7 @@
     overflow-y: auto;
 
     button.close {
-        background:transparent;
+        background: transparent;
         padding: 6px 8px;
         border-radius: 4px;
         opacity: 1;
@@ -127,4 +127,3 @@
         background-position: center;
     }
 }
-

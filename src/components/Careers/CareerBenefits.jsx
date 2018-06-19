@@ -12,7 +12,7 @@ export default function CareerBenefits() {
     return (
         <div className="career-benefits">
             <div className="row">
-                <div className="col-sm-4 col-xs-12 top-sm">
+                <div className="col-sm-4 col-xs-12 m-top-4">
                     <img
                      src={rocket}
                      alt="circled cross"
@@ -22,7 +22,7 @@ export default function CareerBenefits() {
                         library to boost your spirit.
                     </p>
                 </div>
-                <div className="col-sm-4 col-xs-12 top-sm">
+                <div className="col-sm-4 col-xs-12 m-top-4">
                     <img
                      src={people}
                      alt="pdf file icon"
@@ -31,7 +31,7 @@ export default function CareerBenefits() {
                         Unforgettable company-wide events when we work and celebrate together.
                     </p>
                 </div>
-                <div className="col-sm-4 col-xs-12 top-sm">
+                <div className="col-sm-4 col-xs-12 m-top-4">
                     <img
                      src={bike}
                      alt="happy face"

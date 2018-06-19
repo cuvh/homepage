@@ -1,17 +1,17 @@
 .plans {
     .panel-price {
         padding: 40px;
-        box-shadow: 0 2px 10px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
     }
     .panel-badge {
         margin-top: -8px;
         margin-bottom: -8px;
-        filter: drop-shadow( 2px 2px 6px rgba(0,0,0,0.3));
+        filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.3));
     }
 
     .panel-price-best {
         .panel-footer {
-            background-color: #CEF2EA;
+            background-color: #cef2ea;
         }
     }
 
@@ -21,7 +21,7 @@
         }
 
         li {
-            margin-bottom: $spacer-2 * 2;
+            margin-bottom: $spacer * 2;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -87,5 +87,4 @@
             margin-right: 20px;
         }
     }
-
 }

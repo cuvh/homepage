@@ -1,6 +1,15 @@
 // Vendor components
 @import "variables";
 @import "bootstrap";
+
+// layout grid settings
+$gap-lg: 0;
+$gap-md: 0;
+$gap-sm: 0;
+$gap-xs: 0;
+
+$max-rows-lg: 12;
+
 @import "layout-grid";
 @import "slick.scss";
 @import "slicktheme.scss";
@@ -8,7 +17,6 @@
 
 // Extensions
 @import "offsets";
-@import "offsets-2";
 @import "fonts";
 @import "typography";
 @import "buttons";
@@ -24,12 +32,10 @@
 @import "pages/homepage";
 @import "pages/pricing";
 @import "pages/about";
-@import "pages/successful-resumes/main";
 @import "pages/text-page";
 @import "pages/new-pricing";
 @import "pages/404";
 @import "pages/careers";
-@import "pages/job";
 @import "pages/privacy";
 @import "sr-redesign/main";
 

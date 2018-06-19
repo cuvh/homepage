@@ -1,5 +1,5 @@
 .homepage {
-    background: $light-gray;
+    background: $gray-lightest;
 
     .navbar-default {
         background: transparent;
@@ -13,10 +13,10 @@
     }
 
     .vertical-center-m-negative {
-        margin-top: -($spacer-2 * 2);
+        margin-top: -($spacer * 2);
 
         @media screen and (min-width: $screen-sm) {
-            margin-top: -($spacer-2 * 4);
+            margin-top: -($spacer * 4);
         }
     }
 }
@@ -88,7 +88,7 @@
 
 .homepage-intro {
     position: relative;
-    background: $light-gray;
+    background: $gray-lightest;
 
     .md-lg-heading-margin {
         margin-top: 70px;
@@ -150,10 +150,6 @@
             order: 1;
         }
     }
-}
-
-.slick-arrows-on-hover {
-    background-color: $light-green;
 }
 
 .spotlight-stacked-images {
