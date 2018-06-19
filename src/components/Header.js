@@ -61,7 +61,7 @@ class Header extends React.PureComponent {
                     "navbar-stick": this.state.stick,
                  })}>
                     <div>
-                        <SuccessfulResumesStrip />
+                        <SuccessfulResumesStrip currentPath={pathname} />
                     </div>
                     <div className="navbar-spacing">
                         <div className="navbar-header">
