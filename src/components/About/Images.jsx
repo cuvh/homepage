@@ -58,10 +58,10 @@ export default class Images extends React.PureComponent {
 					 style={{ marginLeft: chunkIndex % 2 !== 0 ? -100 : -30 }}>
 						{chunk.map((image, imageIndex) => (
 							<a
+							 key={imageIndex}
 							 target="_blank"
 							 href={image.link}>
 								<img
-								 key={imageIndex}
 								 className="m-left-1 m-right-1"
 								 style={{ width: IMAGE_DIMENTION, height: IMAGE_DIMENTION }}
 								 src={image.images.standard_resolution.url}
