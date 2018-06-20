@@ -57,12 +57,16 @@ export default class Images extends React.PureComponent {
 					 className={classnames("photos-wrapper", { "m-top-2": chunkIndex !== 0 })}
 					 style={{ marginLeft: chunkIndex % 2 !== 0 ? -100 : -30 }}>
 						{chunk.map((image, imageIndex) => (
-							<img
-							 key={imageIndex}
-							 className="m-left-1 m-right-1"
-							 style={{ width: IMAGE_DIMENTION, height: IMAGE_DIMENTION }}
-							 src={image.standard_resolution.url}
-							/>
+							<a
+							 target="_blank"
+							 href={image.link}>
+								<img
+								 key={imageIndex}
+								 className="m-left-1 m-right-1"
+								 style={{ width: IMAGE_DIMENTION, height: IMAGE_DIMENTION }}
+								 src={image.images.standard_resolution.url}
+								/>
+							</a>
 						))}
 					</div>
 				))}

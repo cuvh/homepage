@@ -17,7 +17,7 @@ module.exports.main = (event, context, callback) => {
         .then(res => {
             const json = JSON.parse(res);
 
-            const images = json.data.map(item => item.images);
+            const images = json.data.map(item => ({ images: item.images, link: item.link }));
 
             s3
                 .putObject({
