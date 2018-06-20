@@ -38,7 +38,12 @@ export default class Images extends React.PureComponent {
 	}
 
 	calculatePerRow() {
-		return Math.max(2, Math.ceil(document.body.offsetWidth / IMAGE_DIMENTION));
+		let bodyWidth = 0;
+		if (typeof document !== "undefined") {
+			bodyWidth = document.body.offsetWidth;
+		}
+
+		return Math.max(2, Math.ceil(bodyWidth / IMAGE_DIMENTION));
 	}
 
 	render() {
