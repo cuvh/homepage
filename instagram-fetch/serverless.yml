@@ -1,0 +1,11 @@
+service: homepage-instagram
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  main:
+    handler: handler.main
+    events:
+      - schedule: rate(10 minutes)
