@@ -23,24 +23,24 @@ export default function Members() {
 			<div className="row">
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0 col-lg-offset-2">
 					<Member
-					 id="volen-valkov"
-					 image={volenImage}
-					 name="Volen Valkov"
-					 facebook="volen.vulkov"
-					 twitter="volenvulkov"
-					 position="Chief Harmonizer"
-					 description="Junior entrepreneur, strong Bulgaria believer and Resume Disruptor. Techie, but not by any measure and Liverpool supporter. Energetic ex-Erasmus striving for harmony and executing the impossible."
-					/>
-				</div>
-				<div className="col-lg-2 col-sm-3 col-xs-5">
-					<Member
 					 id="dimitar-vouldjeff"
 					 image={dimitarImage}
 					 facebook="vouldjeff"
 					 twitter="vouldjeff"
 					 name="Dimitar Vouldjeff"
-					 position="Chief Innovator"
+					 position="Co-founder & CEO"
 					 description="Tech enthusiast, explorer and travel fan. Achiever by nature, adrenalin seeker by spirit."
+					/>
+				</div>
+				<div className="col-lg-2 col-sm-3 col-xs-5">
+					<Member
+					 id="volen-valkov"
+					 image={volenImage}
+					 name="Volen Valkov"
+					 facebook="volen.vulkov"
+					 twitter="volenvulkov"
+					 position="Co-founder & Product"
+					 description="Junior entrepreneur, strong Bulgaria believer and Resume Disruptor. Techie, but not by any measure and Liverpool supporter. Energetic ex-Erasmus striving for harmony and executing the impossible."
 					/>
 				</div>
 				<div className="col-lg-2 col-sm-3 col-xs-5 col-xs-offset-1 col-sm-offset-0">

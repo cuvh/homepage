@@ -22,25 +22,21 @@ export default function About() {
             />
             <div className="container">
                 <h1 className="text-center m-bottom-12 m-top-12">
-                    Enhancv brings resumes that are all about you
+                    At Enhancv, we believe in what we do.
                 </h1>
             </div>
             <div className="about-hero">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-8 col-sm-offset-2 text-center">
-                            <h3>
-                                Our mission is to help talented people believe in themselves and
-                                unleash their full potential
-                            </h3>
                             <p className="m-top-6 text-large">
-                                We've seen a lot of incredibly talented people who are dissatisfied
-                                with their current job or job prospects simply because they aren't
-                                able to strongly present themselves. You need to show your dream
-                                employer that you are a perfect match with your skill-set,
-                                motivation, and most importantly, personality. Enhancv is here to
-                                give the power back to you and help you tell the world who you
-                                really are.
+                                We’re a hand-picked team of 15 people spread across Sofia and
+                                Dublin, yet united around the idea that everyone deserves a
+                                meaningful professional path. We build products and write to inspire
+                                in the moments when you prepare to take your next big leap. Our 500K
+                                users around the world get noticed in companies like Spotify and
+                                Google – whether switching industries or simply looking for the
+                                right next gig.
                             </p>
                         </div>
                     </div>
@@ -52,7 +48,7 @@ export default function About() {
                 <div className="container m-top-6 text-center">
                     <div className="row">
                         <div className="col-sm-8 col-sm-offset-2 text-center">
-                            <h3 className="m-bottom-12">Our values is what we are</h3>
+                            <h3 className="m-bottom-12">What values we live by, as a team:</h3>
                         </div>
                     </div>
                     <div className="Grid">
@@ -133,7 +129,7 @@ export default function About() {
             </div>
             <div className="container">
                 <div className="Grid Grid--spaceBetween m-bottom-2">
-                    <div className="Grid-cell--auto text-gray-light">
+                    <div className="Grid-cell--auto text-darker-grey text-small">
                         Have a glimpse at the everyday life at Enhancv
                     </div>
 
@@ -141,14 +137,14 @@ export default function About() {
                         <a
                          target="_blank"
                          href="https://www.instagram.com/enhancv"
-                         className="feature-link">
+                         className="feature-link text-small">
                             Follow us @enhancv
                         </a>
                     </div>
                 </div>
             </div>
             <Images />
-            <div className="about-join">
+            <div className="about-join m-top-3-negative">
                 <div className="container p-top-11 p-bottom-11 text-center">
                     <h4 className="text-white">Interested in working with us? Join our team</h4>
                     <Link
