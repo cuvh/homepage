@@ -6,3 +6,5 @@ yarn-error.log
 npm-debug.log
 .cache
 public
+
+.serverless

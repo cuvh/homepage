@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="60px" viewBox="0 0 46 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>experiment@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="176" height="80"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-Facelift" transform="translate(-386.000000, -2064.000000)">
+            <g id="experiment" transform="translate(324.000000, 2051.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Group" mask="url(#mask-2)" fill="#2DC08D" fill-rule="nonzero">
+                    <g transform="translate(62.000000, 13.000000)">
+                        <path d="M31.2519291,31.4051522 L31.2519291,17.1428571 L27.054536,17.1428571 L27.054536,31.9672131 C27.0470429,32.3379675 27.1440471,32.7032987 27.3343622,33.0210773 L33.140756,43.4192037 L12.5735297,43.4192037 L18.3799235,33.0210773 C18.5702386,32.7032987 18.6672428,32.3379675 18.6597497,31.9672131 L18.6597497,17.1428571 L14.4623566,17.1428571 L14.4623566,31.4051522 L0.261176626,56.8384075 C-0.0870588755,57.4974602 -0.0870588755,58.2870831 0.261176626,58.9461358 C0.655633615,59.5789283 1.3371355,59.9737945 2.08004697,60 L43.6342387,60 C44.3771502,59.9737945 45.0586521,59.5789283 45.4531091,58.9461358 C45.8013446,58.2870831 45.8013446,57.4974602 45.4531091,56.8384075 L31.2519291,31.4051522 Z" id="Shape"></path>
+                        <rect id="Rectangle-path" x="21.4285714" y="0" width="4.28571429" height="12.8571429"></rect>
+                        <rect id="Rectangle-path" transform="translate(37.857143, 10.714286) rotate(-41.400000) translate(-37.857143, -10.714286) " x="31.4285714" y="8.57142857" width="12.8571429" height="4.28571429"></rect>
+                        <rect id="Rectangle-path" transform="translate(7.857143, 9.285714) rotate(-48.600000) translate(-7.857143, -9.285714) " x="5.71428571" y="2.85714286" width="4.28571429" height="12.8571429"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
