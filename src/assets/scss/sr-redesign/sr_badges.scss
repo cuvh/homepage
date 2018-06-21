@@ -1,22 +1,22 @@
 .badge {
     &--purple {
-        color: $badge-purple;
-        border: 1px solid $badge-purple;
+        color: $brand-purple;
+        border: 1px solid $brand-purple;
         background: $badge-white;
     }
     &--orange {
-        color: $badge-orange;
-        border: 1px solid $badge-orange;
+        color: $promo-color;
+        border: 1px solid $promo-color;
         background: $badge-white;
     }
     &--green {
-        color: #1aafb4;
-        border: 1px solid #1aafb4;
+        color: $brand-primary;
+        border: 1px solid $brand-primary;
         background: $badge-white;
     }
     &--yellow {
-        color: #ffca5a;
-        border: 1px solid #ffca5a;
+        color: $brand-warning;
+        border: 1px solid $brand-warning;
         background: $badge-white;
     }
 }
