@@ -20,7 +20,7 @@ export default function Achievements({ section, data }) {
                                 {left.map(item => (
                                     <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
                                         <Img
-                                         style={{ width: "78px", height: "78px" }}
+                                         style={{ width: "39px", height: "39px" }}
                                          sizes={item.image.childImageSharp.resolutions}
                                         />
                                         <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
@@ -36,7 +36,7 @@ export default function Achievements({ section, data }) {
                                 {right.map(item => (
                                     <div className="Grid Grid-cell--xs-12 m-sm-bottom-6 m-md-bottom-5 flex-wrap-nowrap">
                                         <Img
-                                         style={{ width: "78px", height: "78px" }}
+                                         style={{ width: "39px", height: "39px" }}
                                          sizes={item.image.childImageSharp.resolutions}
                                         />
                                         <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
