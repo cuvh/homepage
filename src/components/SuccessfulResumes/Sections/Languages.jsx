@@ -1,13 +1,11 @@
 import React from "react";
 import Img from "components/Common/Img";
 
-import img from "assets/img/new-successful-resumes/famous/elon-musk/ornaments/illustration.jpg";
-
-export default function LifeProject({
+export default function Languages({
     image,
     description,
     section,
-    altText = "Person's life project",
+    altText = "Person's languages",
     ...rest
 }) {
     return (
@@ -18,7 +16,7 @@ export default function LifeProject({
                 <div className="Grid full-width">
                     <div className="Grid-cell--md-6 Grid-cell--xs-12 p-md-left-10">
                         <article className="resume-article">
-                            <h2>Life projects</h2>
+                            <h2>Languages</h2>
                             <p>{description}</p>
                         </article>
                     </div>
