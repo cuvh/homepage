@@ -13,10 +13,12 @@ import LifeProject from "components/SuccessfulResumes/Sections/LifeProject";
 import Experience from "components/SuccessfulResumes/Sections/Experience";
 import Awards from "components/SuccessfulResumes/Sections/Awards";
 import Strengths from "components/SuccessfulResumes/Sections/Strengths";
+import Achievements from "components/SuccessfulResumes/Sections/Achievements";
 import TypicalDay from "components/SuccessfulResumes/Sections/TypicalDay";
 import Strugles from "components/SuccessfulResumes/Sections/Strugles";
 import LifePhilosophy from "components/SuccessfulResumes/Sections/LifePhilosophy";
 import FamousBottom from "components/SuccessfulResumes/Sections/FamousBottom";
+import Languages from "components/SuccessfulResumes/Sections/Languages";
 import SocialBar from "components/SuccessfulResumes/SocialBar";
 
 import ResumePreview from "components/SuccessfulResumes/ResumePreview";
@@ -70,8 +72,8 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                     <FamousHeader
                      name={data.name}
                      cover={data.cover}
-                     description={data.pageDescription}
-                     smallDescription={data.smallDescription}
+                     description={data.headerDescription}
+                     smallDescription={data.smallHeaderDescription}
                     />
                 </div>
 
@@ -90,9 +92,28 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                         );
                     }
 
-                    if (item.section === "MostProudOf" || item.section === "Achievements") {
+                    if (item.section === "MostProudOf") {
                         return (
                             <Awards
+                             key={item.section}
+                             altText={`${data.name} feeling proud`}
+                             {...item}
+                            />
+                        );
+                    }
+
+                    if (item.section === "Languages") {
+                        return (
+                            <Languages
+                             key={item.section}
+                             {...item}
+                            />
+                        );
+                    }
+
+                    if (item.section === "Achievements") {
+                        return (
+                            <Achievements
                              key={item.section}
                              altText={`${data.name} feeling proud`}
                              {...item}
@@ -147,7 +168,8 @@ export const pageQuery = graphql`
             lightCover
             name
             url
-            smallDescription
+            smallHeaderDescription
+            headerDescription
             pageDescription
             pageTitle
             facebookText
