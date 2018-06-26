@@ -73,50 +73,6 @@
     }
 }
 
-.modal {
-    display: block !important;
-    padding-left: 0px;
-    background-color: rgba(56, 67, 71, 0.9);
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    button.close {
-        background: transparent;
-        padding: 6px 8px;
-        border-radius: 4px;
-        opacity: 1;
-        @media screen and (max-width: $screen-xs-max) {
-            top: 0;
-            right: 0;
-        }
-        i {
-            color: #fff;
-        }
-    }
-}
-
-.member-modal {
-    .modal-body {
-        padding: 30px 40px;
-    }
-
-    .close {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 25px;
-        background-color: transparent;
-        border: none;
-        color: $text-color;
-        opacity: 0.7;
-        transition: opacity 0.3 ease-out;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
 .embed-responsive-member {
     padding-bottom: 52%;
     border-top-left-radius: $border-radius-base;
