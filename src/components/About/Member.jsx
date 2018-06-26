@@ -23,7 +23,8 @@ export default function Member(props) {
                         <p className="no-margin text-white">{props.position}</p>
                     </div>
                 </a>
-             }>
+             }
+             footerHidden={true}>
                 <div className="embed-responsive embed-responsive-member">
                     <div
                      style={{

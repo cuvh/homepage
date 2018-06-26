@@ -2,7 +2,8 @@
     box-shadow: none;
 }
 
-.modal-backdrop, .modal-dark {
+.modal-backdrop,
+.modal-dark {
     background-color: $sr_main-color;
 }
 
@@ -12,14 +13,12 @@
     }
 }
 
-// Member modal 
+// Member modal
 .modal {
     display: block !important;
     padding-left: 0px;
     background-color: rgba(56, 67, 71, 0.9);
     overflow: auto;
-    // overflow-x: hidden;
-    // overflow-y: auto;
     button.close {
         background: transparent;
         padding: 6px 8px;
@@ -32,8 +31,8 @@
             i {
                 color: #fff;
             }
-            top:8px;
-            right:24px;
+            top: 8px;
+            right: 24px;
         }
     }
 }
@@ -58,53 +57,52 @@
     }
 }
 
-// Modal footer bar 
+// Modal footer bar
 .modal-footer-bar {
     position: fixed;
-    bottom:0;
-    left:0;
-    height:110px;
-    width:100%;
-    background:$modal-footer-bar-color;
+    bottom: 0;
+    left: 0;
+    height: 110px;
+    width: 100%;
+    background: $modal-footer-bar-color;
 
-    @media screen and (max-width:$screen-sm-max) {
-        display:none;
+    @media screen and (max-width: $screen-sm-max) {
+        display: none;
     }
     &.hide {
-        display:none;
+        display: none;
     }
 }
 
 .modal-footer-bar-wrap {
-    height:100%;
-    margin:0 auto;
+    height: 100%;
+    margin: 0 auto;
 
     p {
-        font-size:12px;
+        font-size: 12px;
     }
 
     .btn {
-        margin-left:auto;
-        height:40px;
-        min-width:180px;
-        text-transform:uppercase;
+        margin-left: auto;
+        height: 40px;
+        min-width: 180px;
+        text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 0.78px;
     }
 }
 
-
 .close-modal-footer-bar {
-    width:14px;
-    height:14px;
+    width: 14px;
+    height: 14px;
     position: absolute;
-    top:16px;
-    right:24px;
-    border:0;
-    opacity:0.4;
-    transition:0.1s opacity ease-in-out;
+    top: 16px;
+    right: 24px;
+    border: 0;
+    opacity: 0.4;
+    transition: 0.1s opacity ease-in-out;
     cursor: pointer;
     &:hover {
-        opacity:1;
+        opacity: 1;
     }
 }
