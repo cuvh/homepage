@@ -192,7 +192,7 @@ export const pageQuery = graphql`
             resumes {
                 image {
                     childImageSharp {
-                        thumb: resolutions(width: 160, height: 220) {
+                        thumb: resolutions(width: 160, height: 230) {
                             ...GatsbyImageSharpResolutions
                         }
                         small: resolutions(width: 884) {
