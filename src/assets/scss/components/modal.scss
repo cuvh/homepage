@@ -19,6 +19,11 @@
     padding-left: 0px;
     background-color: rgba(56, 67, 71, 0.9);
     overflow: auto;
+
+    .modal-content {
+        background-color: transparent;
+    }
+
     button.close {
         background: transparent;
         padding: 6px 8px;
