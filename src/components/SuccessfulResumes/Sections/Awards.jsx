@@ -25,7 +25,7 @@ export default function Awards({ image, section, data, altText = "Person feeling
                     <div className="Grid-cell--md-4 Grid-cell--xs-12 text-center m-sm-bottom-4 m-bottom-7 Grid--selfCenter">
                         {image ? (
                             <Img
-                             style={{ maxWidth: 266, margin: "0 auto" }}
+                             style={{ maxWidth: 320, margin: "0 auto" }}
                              sizes={image.childImageSharp.sizes}
                              alt={altText}
                             />

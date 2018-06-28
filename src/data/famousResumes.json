@@ -49,6 +49,11 @@
                 "image": "famous-resumes/mostproudof/most-proud-ofrupaul.png",
                 "data": [
                     {
+                        "title": "AJ and the Queen",
+                        "description":
+                            "Coming to Netflix, I will star as Ruby Red in a show following a larger-than-life but down-on-her-luck drag queen."
+                    },
+                    {
                         "title": "Moving to Atlanta",
                         "description":
                             "The choice to move to a new place where I could grow at just 15 was one of the most important decisions of my life."
@@ -56,11 +61,6 @@
                     {
                         "title": "Marrying my Husband",
                         "description": "Shanté you stay, George."
-                    },
-                    {
-                        "title": "AJ and the Queen",
-                        "description":
-                            "Coming to Netflix, I will star as Ruby Red in a show following a larger-than-life but down-on-her-luck drag queen."
                     }
                 ]
             },
