@@ -3,11 +3,7 @@ import Track from "utils/Track";
 
 export default class SocialButtons extends React.PureComponent {
     onShare(type) {
-        Track(
-            "Successful Resumes",
-            "Share",
-            `${this.props.url} from ${this.props.from}`
-        );
+        Track("Successful Resumes", "Share", `${this.props.url} - ${type}`);
     }
 
     render() {
@@ -21,8 +17,7 @@ export default class SocialButtons extends React.PureComponent {
                  )}&message=${encodeURIComponent(facebookText)}`}
                  onClick={() => this.onShare("facebook")}
                  className="component--social-button btn-facebook"
-                 target="_blank"
-                >
+                 target="_blank">
                     <i className="icon-facebook pull-right" />
                 </a>
 
@@ -32,8 +27,7 @@ export default class SocialButtons extends React.PureComponent {
                  )}&text=${encodeURIComponent(twitterText)}`}
                  onClick={() => this.onShare("twitter")}
                  target="_blank"
-                 className="component--social-button btn-twitter"
-                >
+                 className="component--social-button btn-twitter">
                     <i className="icon-twitter pull-right" />
                 </a>
 
@@ -43,8 +37,7 @@ export default class SocialButtons extends React.PureComponent {
                  )}&text=${encodeURIComponent(facebookText)}`}
                  onClick={() => this.onShare("linkedin")}
                  target="_blank"
-                 className="component--social-button btn-linkedin"
-                >
+                 className="component--social-button btn-linkedin">
                     <i className="icon-linkedin-alt pull-right" />
                 </a>
             </React.Fragment>

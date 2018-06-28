@@ -6,12 +6,12 @@ import ShareButtons from "./ShareButtons";
 
 export default class SocialPanel extends React.PureComponent {
     state = {
-        active: false
+        active: false,
     };
 
     componentDidMount() {
         this.setState({
-            active: StoreService.getItem(`wow-${this.props.url}`)
+            active: StoreService.getItem(`wow-${this.props.url}`),
         });
     }
 
@@ -20,16 +20,12 @@ export default class SocialPanel extends React.PureComponent {
 
         const newState = !this.state.active;
         this.setState({
-            active: newState
+            active: newState,
         });
 
         StoreService.setItem(`wow-${this.props.url}`, newState);
 
-        Track(
-            "Successful Resumes",
-            "WOW Button - Modal",
-            `${this.props.url} - ${newState}`
-        );
+        Track("Successful Resumes", "Share", "Appreciate");
     }
 
     render() {
@@ -52,7 +48,7 @@ export default class SocialPanel extends React.PureComponent {
                      href="#"
                      onClick={event => this.onClick(event)}
                      className={classnames("btn-wow", {
-                        active
+                        active,
                      })}
                     />
                 </div>

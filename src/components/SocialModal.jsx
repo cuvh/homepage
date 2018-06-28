@@ -20,7 +20,7 @@ export default class OpenModal extends React.PureComponent {
             <Modal
              trigger={trigger}
              additionalContent={socialPanel}
-            >
+             pageUrl={socialData.url}>
                 {children}
             </Modal>
         );

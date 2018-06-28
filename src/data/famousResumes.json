@@ -1,5 +1,115 @@
 [
     {
+        "name": "RuPaul",
+        "url": "rupaul",
+        "avatar": "famous-resumes/avatars/rupaul.png",
+        "cover": "famous-resumes/cover/RuPaul_cover_photo.png",
+        "position": "Supermodel and TV Host",
+        "resumes": [{ "image": "famous-resumes/rupaul_resume_1.jpg" }],
+        "headerDescription":
+            "RuPaul’s resume shows a life of great struggle and great accomplishment. It conveys personality and style while telling a compelling story. The result is an example of an entertainment industry resume that’s memorable and, dare we say, even fun.",
+        "description":
+            "A resume example that adeptly brings together struggles, accomplishments, and plenty of personality.",
+        "pageTitle": "RuPaul's Entertainment Industry Resume Example | Enhancv",
+        "pageDescription":
+            "Leave it to supermodel and TV host RuPaul to show everyone what an entertainment industry resume with personality should be.",
+        "tags": ["Industry Change", "Marketing", "Arts & Entertainment"],
+        "twitterText":
+            "@RuPaul's resume has truly pulled the pageant tonight. 10s, 10s, 10s across the board.",
+        "facebookText":
+            "@RuPaul's resume would come around and make everyone else look like they're walking first time in drags at a ball #DragRace #RPDR #Rupaul #Drag",
+        "socialImg": "famous-resumes/share-images/rupaul_social_copy.png",
+        "sections": [
+            {
+                "image": "famous-resumes/lifeproject/ru_paul_lifeprojects.png",
+                "section": "LifeProject",
+                "description":
+                    "From Society’s outskirts, RuPaul has been working for decades to bring counter-culture and irreverence into the mainstream. His style and individuality come through in everything he does, from movies to television, books to music.",
+                "data": [
+                    {
+                        "title": "RuPaul’s Drag Race",
+                        "position": "Cable TV to VH1",
+                        "startDate": "2009",
+                        "endDate": "ongoing",
+                        "description":
+                            "The premier showcase of drag talent in the US, Drag Race has brought an unprecedented level of cultural influence and appreciation to drag. To date it’s launched the careers of over 100 drag artists."
+                    },
+                    {
+                        "title": "The RuPaul Show",
+                        "position": "VH1",
+                        "startDate": "1996",
+                        "endDate": "1998",
+                        "description":
+                            "His first foray into television had RuPaul interviewing a wide variety of celebrity guests, pop icons, and actors. In doing so, he also became the first openly gay TV show host in US history."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image": "famous-resumes/mostproudof/most-proud-ofrupaul.png",
+                "data": [
+                    {
+                        "title": "Moving to Atlanta",
+                        "description":
+                            "The choice to move to a new place where I could grow at just 15 was one of the most important decisions of my life."
+                    },
+                    {
+                        "title": "Marrying my Husband",
+                        "description": "Shanté you stay, George."
+                    },
+                    {
+                        "title": "AJ and the Queen",
+                        "description":
+                            "Coming to Netflix, I will star as Ruby Red in a show following a larger-than-life but down-on-her-luck drag queen."
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-2rupaul.png",
+                "description": "His typical day",
+                "data": [
+                    {
+                        "backgroundColor": "#6ECBCC",
+                        "title": "Talking about Squarespace"
+                    },
+                    {
+                        "backgroundColor": "#D1EDED",
+                        "title": "Production meetings"
+                    },
+                    {
+                        "backgroundColor": "#00C0C2",
+                        "title": "Defeating my inner saboteur"
+                    },
+                    {
+                        "backgroundColor": "#4EC6C6",
+                        "title": "Makeup/hair"
+                    },
+                    {
+                        "backgroundColor": "#A8DADA",
+                        "title": "Dirty charades"
+                    },
+                    {
+                        "backgroundColor": "#00A3A7",
+                        "title": "Watching The Golden Girls"
+                    },
+                    {
+                        "backgroundColor": "#91D0D0",
+                        "title": "Blocking Courtney Act on Twitter"
+                    },
+                    {
+                        "backgroundColor": "#00B7B9",
+                        "title": "Polishing my shrine to Judge Judy"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Kathy Hutchins / Shutterstock.com",
+        "finalTitle": "RuPaul’s Entertainment Industry Resume Example",
+        "finalDescription":
+            "What does the resume of someone who speaks shade as a native language look like? RuPaul has the answer."
+    },
+    {
         "name": "Casey Neistat",
         "url": "casey-neistat",
         "avatar": "famous-resumes/avatars/casey@2.png",

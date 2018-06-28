@@ -12,6 +12,18 @@
 .famous-resume {
     &--container {
         margin-top: -80px;
+
+        &.rupaul {
+            .famous-resume--head-content {
+                p {
+                    color: #e1e1e1;
+                }
+            }
+        }
+    }
+    &--attribution {
+        position: relative;
+        top: $spacer * 7;
     }
     &--container-dark {
         position: relative;

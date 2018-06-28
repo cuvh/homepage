@@ -64,7 +64,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                 />
             </SocialModal>
 
-            <main className="famous-resume--container">
+            <main className={`famous-resume--container ${data.url}`}>
                 <div
                  className={classnames({
                     "famous-resume-inverted": data.lightCover,
@@ -153,9 +153,11 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                  dark={true}
                  name={data.name}
                  finalDescription={data.finalDescription}
+                 finalTitle={data.finalTitle}
                  resume={data.resumes[0].image}
                  socialData={socialData}
                  altText={`${data.name}'s resume`}
+                 photoBy={data.photoBy}
                 />
             </main>
         </DefaultLayout>
@@ -174,7 +176,9 @@ export const pageQuery = graphql`
             pageTitle
             facebookText
             twitterText
+            finalTitle
             finalDescription
+            photoBy
             socialImg {
                 childImageSharp {
                     resolutions(width: 1200, height: 628) {

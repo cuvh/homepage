@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Track from "utils/Track";
 
 import bannerResumePreview from "assets/img/new-successful-resumes/small_banner_resume_preview_illustration@2.png";
 
@@ -56,7 +57,7 @@ export default class OpenModal extends React.PureComponent {
 
     render() {
         const { opened } = this.state;
-        const { trigger, children, additionalContent } = this.props;
+        const { trigger, children, additionalContent, pageUrl } = this.props;
 
         return (
             <React.Fragment>
@@ -99,7 +100,13 @@ export default class OpenModal extends React.PureComponent {
                                         </div>
                                         <a
                                          href="https://app.enhancv.com"
-                                         className="btn btn-primary m-right-1">
+                                         className="btn btn-primary m-right-1"
+                                         onClick={() =>
+                                            Track(
+                                                "Successful Resumes",
+                                                "Click Try Enhancv",
+                                                `${pageUrl} - Expanded Resume`
+                                            )}>
                                             Try it for free
                                         </a>
                                         <button

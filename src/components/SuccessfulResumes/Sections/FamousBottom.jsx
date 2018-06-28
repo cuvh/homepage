@@ -17,6 +17,8 @@ export default function FamousBottom({
     list,
     altText,
     socialData,
+    finalTitle,
+    photoBy,
 }) {
     const firstName = name.split(" ")[0];
 
@@ -57,11 +59,8 @@ export default function FamousBottom({
                     </div>
                     <div className="resumes--content Grid-cell--md-6 Grid-cell--xs-12">
                         <div className="m-md-top-15">
-                            <h2 className="h2 m-xs-top-6 text-white">{firstName}’s resume</h2>
+                            <h2 className="h2 m-xs-top-6 text-white">{finalTitle}</h2>
                             <div className="m-xs-top-1 m-md-top-3">
-                                <h5 className="h5 text-white-smoke m-bottom-3">
-                                    One resume to rule them all.
-                                </h5>
                                 <p className="p-big text-white-smoke">{finalDescription}</p>
                             </div>
                             <SocialModal
@@ -90,6 +89,9 @@ export default function FamousBottom({
                                 />
                             </div>
                         </div>
+                    </div>
+                    <div className="Grid Grid-cell--xs-12 Grid--justifyEnd famous-resume--attribution text-white-smoke">
+                        Photo attribution: Cover photo by {photoBy}
                     </div>
                 </section>
 
