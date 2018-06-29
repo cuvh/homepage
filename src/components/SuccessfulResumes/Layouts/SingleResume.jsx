@@ -60,7 +60,12 @@ export default class SingleResume extends React.PureComponent {
                                     <h1 className="h1">{data.title}</h1>
 
                                     <div className="m-xs-top-1 m-md-top-3">
-                                        <p className="p-big">{data.description}</p>
+                                        <p
+                                         className="p-big"
+                                         dangerouslySetInnerHTML={{
+                                            __html: data.description,
+                                         }}
+                                        />
                                     </div>
 
                                     <SocialModal
