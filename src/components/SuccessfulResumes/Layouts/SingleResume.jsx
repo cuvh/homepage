@@ -164,6 +164,20 @@ export default class SingleResume extends React.PureComponent {
                                     they’d change to, “But we’ll take this one.”
                                 </blockquote>
                             </article>
+                        ) : data.url === "melanie-fischer" ? (
+                            <article
+                             style={{ maxWidth: 765 }}
+                             className="resume-article p-md-top-8">
+                                <blockquote
+                                 style={{
+                                    marginTop: 0,
+                                    marginBottom: 0,
+                                 }}>
+                                    I’ve seen thousands of CV’s and 90% are poor… So Enhancv I
+                                    recommend to everyone as a great tool to use to have a refresh
+                                    and appeal to more progressive brands.
+                                </blockquote>
+                            </article>
                         ) : null}
 
                         <article
