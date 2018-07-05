@@ -95,14 +95,14 @@ export default function FeaturedResume({ data }) {
 
                 <ResumeList data={data.allUserResumesJson.edges} />
 
-                <section className="text-center m-sm-bottom-4 m-md-bottom-6">
+                <section className="fix-zindex-sr text-center m-sm-bottom-4 m-md-bottom-6">
                     <h2 className="h2">They changed the world</h2>
                     <h5 className="h5 text-gray-light m-sm-top-1 m-md-top-2">
                         Learn from famous resume examples
                     </h5>
                 </section>
 
-                <section className="resumes--accent accent--reverse Grid full-width noBackground">
+                <section className="fix-zindex-sr resumes--accent accent--reverse Grid full-width noBackground">
                     <div className="resumes--preview Grid-cell--md-6 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6">
                         <span className="resumes--preview-holder">
                             <Modal

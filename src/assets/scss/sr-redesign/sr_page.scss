@@ -22,6 +22,11 @@ body:not(.navbar-mobile-active) {
     }
 }
 
+.fix-zindex-sr {
+    position: relative;
+    z-index: 2;
+}
+
 .page--scroll {
     position: absolute;
     bottom: $sr_global-offset-value * 6;
