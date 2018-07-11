@@ -16,6 +16,7 @@ export default function Experience({ data }) {
                                         <Img
                                          resolutions={item.image.childImageSharp.resolutions}
                                          style={{ height: "36px" }}
+                                         alt={`${item.title} logo`}
                                         />
                                     ) : (
                                         <h4>{item.title}</h4>

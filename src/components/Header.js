@@ -92,6 +92,7 @@ class Header extends React.PureComponent {
                             <img
                              className="navbar-menu-logo"
                              src={logoWhiteImg}
+                             alt="Enhancv Logo"
                             />
 
                             <div className="navbar-center">

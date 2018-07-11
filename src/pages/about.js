@@ -55,7 +55,10 @@ export default function About() {
                         <div className="Grid-cell--sm-6 Grid-cell--md-5">
                             <div className="about-value m-bottom-12">
                                 <span>
-                                    <img src={respectIcon} />
+                                    <img
+                                     src={respectIcon}
+                                     alt="Respecting people value represented by a heart icon"
+                                    />
                                 </span>
                                 <h5 className="m-top-3 text-dark-grey">Respect & candor</h5>
                                 <p className="m-top-2">
@@ -68,7 +71,10 @@ export default function About() {
                         <div className="Grid-cell--sm-6 Grid-cell--md-5 Grid-cell--md-offset-2">
                             <div className="about-value m-bottom-12">
                                 <span>
-                                    <img src={growIcon} />
+                                    <img
+                                     src={growIcon}
+                                     alt="Never stop learning value represented by a growing a plant icon"
+                                    />
                                 </span>
                                 <h5 className="m-top-3 text-dark-grey">Grow, but stay in touch</h5>
                                 <p className="m-top-2">
@@ -83,7 +89,10 @@ export default function About() {
                         <div className="Grid-cell--sm-6 Grid-cell--md-5 ">
                             <div className="about-value m-bottom-12">
                                 <span>
-                                    <img src={experimentIcon} />
+                                    <img
+                                     src={experimentIcon}
+                                     alt="Be curious and experiment value represented by a test tube icon"
+                                    />
                                 </span>
                                 <h5 className="m-top-3 text-dark-grey">
                                     Curiosity & experimentation
@@ -98,7 +107,10 @@ export default function About() {
                         <div className="Grid-cell--sm-6 Grid-cell--md-5 Grid-cell--md-offset-2">
                             <div className="about-value m-bottom-12">
                                 <span>
-                                    <img src={iterateIcon} />
+                                    <img
+                                     src={iterateIcon}
+                                     alt="Speed and iterate value represented by a solving puzzle icon"
+                                    />
                                 </span>
                                 <h5 className="m-top-3 text-dark-grey">
                                     Bias for action & iteration
@@ -115,7 +127,10 @@ export default function About() {
                         <div className="Grid-cell--sm-6 Grid-cell--md-5">
                             <div className="about-value m-bottom-12">
                                 <span>
-                                    <img src={keyIcon} />
+                                    <img
+                                     src={keyIcon}
+                                     alt="Keeping customer's trust value represented by a key icon"
+                                    />
                                 </span>
                                 <h5 className="m-top-3 text-dark-grey">Customer trust</h5>
                                 <p className="m-top-2">

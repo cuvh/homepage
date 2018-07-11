@@ -92,21 +92,30 @@ export default function Footer() {
                                     <a
                                      href="https://facebook.com/enhancv"
                                      className="social-link">
-                                        <img src={facebookImg} />
+                                        <img
+                                         src={facebookImg}
+                                         alt="Facebook logo"
+                                        />
                                     </a>
                                 </div>
                                 <div className="Grid-cell--sm-4">
                                     <a
                                      href="https://www.instagram.com/enhancv"
                                      className="social-link">
-                                        <img src={instagramImg} />
+                                        <img
+                                         src={instagramImg}
+                                         alt="Instagram logo"
+                                        />
                                     </a>
                                 </div>
                                 <div className="Grid-cell--sm-4">
                                     <a
                                      href="https://twitter.com/enhancv"
                                      className="social-link">
-                                        <img src={twitterImg} />
+                                        <img
+                                         src={twitterImg}
+                                         alt="Twitter logo"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -123,21 +132,30 @@ export default function Footer() {
                                     <a
                                      href="https://facebook.com/enhancv"
                                      className="social-link">
-                                        <img src={facebookImg} />
+                                        <img
+                                         src={facebookImg}
+                                         alt="Facebook logo"
+                                        />
                                     </a>
                                 </div>
                                 <div className="Grid-cell--sm-4">
                                     <a
                                      href="https://www.instagram.com/enhancv"
                                      className="social-link">
-                                        <img src={instagramImg} />
+                                        <img
+                                         src={instagramImg}
+                                         alt="Instagram logo"
+                                        />
                                     </a>
                                 </div>
                                 <div className="Grid-cell--sm-4">
                                     <a
                                      href="https://twitter.com/enhancv"
                                      className="social-link">
-                                        <img src={twitterImg} />
+                                        <img
+                                         src={twitterImg}
+                                         alt="Twitter logo"
+                                        />
                                     </a>
                                 </div>
                             </div>
@@ -147,11 +165,13 @@ export default function Footer() {
                                 <img
                                  className="footer-logo hidden-sm hidden-md hidden-lg m-top-1 m-right-1 m-left-no"
                                  src={enhancvLogo}
+                                 alt="Enhancv logo"
                                 />
                                 <p className="copyright">Made with love by people who care.</p>
                                 <img
                                  className="footer-logo hidden-xs m-top-1 m-left-2"
                                  src={enhancvLogo}
+                                 alt="Enhancv logo"
                                 />
                             </div>
                         </div>

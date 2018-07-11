@@ -33,7 +33,10 @@ export default class SuccessfulResumesStrip extends React.PureComponent {
                  className="col-sm-10 col-xs-12 p-sm-bottom-1 p-sm-top-1"
                  to="/successful-resumes"
                  onClick={() => this.onHide()}>
-                    <img src={srImg} />
+                    <img
+                     src={srImg}
+                     alt=""
+                    />
 
                     <span className="hidden-md hidden-lg">Hey, we launched Successful Resumes</span>
 

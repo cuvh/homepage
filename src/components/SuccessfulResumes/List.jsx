@@ -93,6 +93,7 @@ export default class List extends React.PureComponent {
                                      style={{ overflow: "initial" }}
                                      className="m-xs-left-1 m-md-left-2"
                                      resolutions={node.avatar.childImageSharp.resolutions}
+                                     alt={`${node.name} photo`}
                                     />
                                 </span>
                                 <div className="resumes--others-person-info">
@@ -113,6 +114,7 @@ export default class List extends React.PureComponent {
                                              resolutions={
                                                 node.companyLogo.childImageSharp.resolutions
                                              }
+                                             alt="Company logo"
                                             />
                                         </div>
                                     ) : null}
@@ -122,6 +124,7 @@ export default class List extends React.PureComponent {
                                 <Img
                                  className="m-xs-left-1 m-md-left-2"
                                  resolutions={node.resumes[0].image.childImageSharp.resolutions}
+                                 alt={`${node.name} resume preview`}
                                 />
                             </div>
                         </Link>

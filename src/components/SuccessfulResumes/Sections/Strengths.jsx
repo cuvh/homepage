@@ -27,7 +27,7 @@ export default function Strengths({ section, description, image, data }) {
                         <Img
                          width="595"
                          sizes={image.childImageSharp.sizes}
-                         alt="Elon Musk as Tony Stark"
+                         alt=""
                         />
                     </div>
                 </div>

@@ -22,6 +22,7 @@ export default function Achievements({ section, data }) {
                                         <Img
                                          style={{ width: "39px", height: "39px" }}
                                          sizes={item.image.childImageSharp.resolutions}
+                                         alt=""
                                         />
                                         <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
                                             <h6 className="h6 text-dark-grey m-top-no">
@@ -38,6 +39,7 @@ export default function Achievements({ section, data }) {
                                         <Img
                                          style={{ width: "39px", height: "39px" }}
                                          sizes={item.image.childImageSharp.resolutions}
+                                         alt=""
                                         />
                                         <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
                                             <h6 className="h6 text-dark-grey m-top-no">

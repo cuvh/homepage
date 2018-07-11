@@ -3,13 +3,7 @@ import Img from "components/Common/Img";
 
 import img from "assets/img/new-successful-resumes/famous/elon-musk/ornaments/illustration.jpg";
 
-export default function LifeProject({
-    image,
-    description,
-    section,
-    altText = "Person's life project",
-    ...rest
-}) {
+export default function LifeProject({ image, description, section, ...rest }) {
     return (
         <section
          id={section}
@@ -27,7 +21,7 @@ export default function LifeProject({
                          style={{ width: 300 }}
                          className="famous-resume--illustration"
                          sizes={image.childImageSharp.sizes}
-                         alt={altText}
+                         alt=""
                         />
                     </div>
                 </div>

@@ -9,13 +9,12 @@ export default function LifePhilosophy() {
                 <img
                  className="m-sm-bottom-3 m-md-bottom-3"
                  src={quotesImg}
-                 alt="Testimonial Quotes"
+                 alt=""
                 />
                 <blockquote className="m-sm-bottom-4 m-md-bottom-3 p-sm-left-3 p-sm-right-3 p-md-left-14 p-md-right-14">
-                    Brand is just a perception, and perception will match
-                    reality over time. Sometimes it will be ahead, other times
-                    it will be behind. But brand is simply a collective
-                    impression some have about a product.
+                    Brand is just a perception, and perception will match reality over time.
+                    Sometimes it will be ahead, other times it will be behind. But brand is simply a
+                    collective impression some have about a product.
                 </blockquote>
                 <p className="component--testimonial-autor text-white-smoke">
                     ELON MUSK’S Life Philosophy
