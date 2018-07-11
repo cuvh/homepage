@@ -30,7 +30,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                                 <Img
                                  className="m-xs-left-1 m-md-left-2"
                                  resolutions={node.avatar.childImageSharp.resolutions}
-                                 altText={`${node.name}'s photo`}
+                                 alt={`${node.name}'s photo`}
                                 />
                             </span>
                             <div className="resumes--others-person-info">
@@ -65,7 +65,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
                             <Img
                              className="m-xs-left-1 m-md-left-2"
                              resolutions={node.resumes[0].image.childImageSharp.resolutions}
-                             altText={`${node.name}'s resume`}
+                             alt={`${node.name}'s resume preview`}
                             />
                         </div>
                     </Link>

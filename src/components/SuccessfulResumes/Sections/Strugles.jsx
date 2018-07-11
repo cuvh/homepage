@@ -20,6 +20,7 @@ export default function Strugles({ section, data }) {
                                     <Img
                                      style={{ width: "78px", height: "78px" }}
                                      sizes={item.image.childImageSharp.resolutions}
+                                     alt=""
                                     />
                                 </div>
                                 <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-2">

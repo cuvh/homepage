@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "components/Common/Img";
 
-export default function Awards({ image, section, data, altText = "Person feeling proud" }) {
+export default function Awards({ image, section, data }) {
     let left = data;
     let right = data.splice(0, Math.floor(data.length / 2));
 
@@ -27,7 +27,7 @@ export default function Awards({ image, section, data, altText = "Person feeling
                             <Img
                              style={{ maxWidth: 320, margin: "0 auto" }}
                              sizes={image.childImageSharp.sizes}
-                             alt={altText}
+                             alt=""
                             />
                         ) : null}
                     </div>

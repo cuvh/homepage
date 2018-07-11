@@ -53,14 +53,17 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                  onClick={() =>
                     Track("Successful Resumes", "Expand Resume", `${data.name} - Sticky click`)}
                  className="component--fast-resume-preview">
-                    <Img resolutions={data.resumes[0].image.childImageSharp.thumb} />
+                    <Img
+                     resolutions={data.resumes[0].image.childImageSharp.thumb}
+                     altText={`${data.name}'s resume preview`}
+                    />
                     <button className="btn-resume-preview" />
                 </a>
              }
              socialData={socialData}>
                 <ResumePreview
                  resumePageOne={data.resumes[0].image}
-                 altText={`${data.name}'s resume`}
+                 altText={`${data.name}'s resume preview`}
                 />
             </SocialModal>
 
@@ -83,10 +86,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                     if (item.section === "LifeProject") {
                         return (
                             <div key={item.section}>
-                                <LifeProject
-                                 altText={`${data.name}'s life project`}
-                                 {...item}
-                                />
+                                <LifeProject {...item} />
                                 <Experience {...item} />
                             </div>
                         );
@@ -96,7 +96,6 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                         return (
                             <Awards
                              key={item.section}
-                             altText={`${data.name} feeling proud`}
                              {...item}
                             />
                         );
@@ -115,7 +114,6 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                         return (
                             <Achievements
                              key={item.section}
-                             altText={`${data.name} feeling proud`}
                              {...item}
                             />
                         );
@@ -156,7 +154,7 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
                  finalTitle={data.finalTitle}
                  resume={data.resumes[0].image}
                  socialData={socialData}
-                 altText={`${data.name}'s resume`}
+                 altText={`${data.name}'s resume preview`}
                  photoBy={data.photoBy}
                 />
             </main>

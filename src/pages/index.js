@@ -20,212 +20,242 @@ import HomepageCTA from "components/Homepage/HomepageCTA";
 import Testimonials from "components/Homepage/Testimonials";
 
 const IndexPage = ({
-	data: {
-		headerImage,
-		standoutOne,
-		standoutTwo,
-		standoutThree,
-		spotlightFront,
-		spotlightBack,
-		...rest
-	},
+    data: {
+        headerImage,
+        standoutOne,
+        standoutTwo,
+        standoutThree,
+        spotlightFront,
+        spotlightBack,
+        ...rest
+    },
 }) => (
-	<DefaultLayout className="homepage">
-		<Meta
-		 title="Enhancv | Professional Resume & CV Builder"
-		 description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
-		/>
+    <DefaultLayout className="homepage">
+        <Meta
+         title="Professional CV & Resume Builder | Enhancv"
+         description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
+        />
 
-		<div className="homepage-intro m-top-3">
-			<div className="container text-center">
-				<h1 className="hidden-xs hidden-sm md-lg-heading-margin">
-					A resume to be proud of
-				</h1>
-				<h2 className="hidden-md hidden-lg xs-sm-heading-margin">
-					A resume<span className="hidden-br">to be proud of</span>
-				</h2>
+        <div className="homepage-intro m-top-3">
+            <div className="container text-center">
+                <h1 className="hidden-xs hidden-sm md-lg-heading-margin">
+                    A resume to be proud of
+                </h1>
+                <h1 className="hidden-md hidden-lg xs-sm-heading-margin h2">
+                    A resume <span className="hidden-br">to be proud of</span>
+                </h1>
 
-				<div className="m-top-0">
-					<h5 className="hidden-xs hidden-sm m-top-0 text-gray-light">
-						Stand out and make sure the key things come across
-					</h5>
-					<h5 className="hidden-md hidden-lg m-top-1 text-gray-light">
-						Stand out and make sure the key things come across
-					</h5>
-				</div>
-				<div>
-					<a
-					 href="https://app.enhancv.com"
-					 data-track="event"
-					 data-category="Homepage"
-					 data-action="Click Signup"
-					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2">
-						Create Your Resume
-					</a>
-					<a
-					 href="https://app.enhancv.com"
-					 data-track="event"
-					 data-category="Homepage"
-					 data-action="Click Signup"
-					 data-label="Create Your Resume"
-					 className="btn btn-primary btn-md hidden-md hidden-lg m-top-2">
-						Create Your Resume
-					</a>
-				</div>
-			</div>
-			<div className="homepage-gatsby-header">
-				<Img sizes={headerImage.childImageSharp.sizes} />
-			</div>
-			{/*<div className="parallax-window homepage-scalable-header" />*/}
-		</div>
+                <div className="m-top-0">
+                    <h5 className="hidden-xs hidden-sm m-top-0 text-gray-light">
+                        Stand out and make sure the key things come across
+                    </h5>
+                    <h5 className="hidden-md hidden-lg m-top-1 text-gray-light">
+                        Stand out and make sure the key things come across
+                    </h5>
+                </div>
+                <div>
+                    <a
+                     href="https://app.enhancv.com"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Create Your Resume"
+                     className="btn btn-primary btn-lg hidden-xs hidden-sm m-top-2">
+                        Create Your Resume
+                    </a>
+                    <a
+                     href="https://app.enhancv.com"
+                     data-track="event"
+                     data-category="Homepage"
+                     data-action="Click Signup"
+                     data-label="Create Your Resume"
+                     className="btn btn-primary btn-md hidden-md hidden-lg m-top-2">
+                        Create Your Resume
+                    </a>
+                </div>
+            </div>
+            <div className="homepage-gatsby-header">
+                <Img
+                 sizes={headerImage.childImageSharp.sizes}
+                 alt="Proudly holding resume photo"
+                />
+            </div>
+            {/*<div className="parallax-window homepage-scalable-header" />*/}
+        </div>
 
-		<div className="homepage-logos">
-			<div className="container animate-in">
-				<div className="Grid m-top-10 hidden-sm hidden-xs">
-					<div className="Grid-cell text-center">
-						<img src={teslaImg} />
-					</div>
-					<div className="Grid-cell text-center">
-						<img src={googleImg} />
-					</div>
-					<div className="Grid-cell text-center">
-						<img src={facebookImg} />
-					</div>
-					<div className="Grid-cell text-center">
-						<img src={spotifyImg} />
-					</div>
-					<div className="Grid-cell text-center">
-						<img src={intercomImg} />
-					</div>
-				</div>
-				<div className="Grid m-top-6 hidden-md hidden-lg">
-					<div className="Grid-cell--xs-6 text-center">
-						<img src={teslaImg} />
-					</div>
-					<div className="Grid-cell--xs-6 text-center">
-						<img src={googleImg} />
-					</div>
-					<div className="Grid-cell--xs-6 m-top-4 text-center">
-						<img src={facebookImg} />
-					</div>
-					<div className="Grid-cell--xs-6 m-top-4 text-center">
-						<img src={spotifyImg} />
-					</div>
-				</div>
+        <div className="homepage-logos">
+            <div className="container animate-in">
+                <div className="Grid m-top-10 hidden-sm hidden-xs">
+                    <div className="Grid-cell text-center">
+                        <img
+                         src={teslaImg}
+                         alt="Logo representing people hired in Tesla"
+                        />
+                    </div>
+                    <div className="Grid-cell text-center">
+                        <img
+                         src={googleImg}
+                         alt="Logo representing people hired in Google"
+                        />
+                    </div>
+                    <div className="Grid-cell text-center">
+                        <img
+                         src={facebookImg}
+                         alt="Logo representing people hired in Facebook"
+                        />
+                    </div>
+                    <div className="Grid-cell text-center">
+                        <img
+                         src={spotifyImg}
+                         alt="Logo representing people hired in Spotify"
+                        />
+                    </div>
+                    <div className="Grid-cell text-center">
+                        <img
+                         src={intercomImg}
+                         alt="Logo representing people hired in Intercom"
+                        />
+                    </div>
+                </div>
+                <div className="Grid m-top-6 hidden-md hidden-lg">
+                    <div className="Grid-cell--xs-6 text-center">
+                        <img
+                         src={teslaImg}
+                         alt="Logo representing people hired in Tesla"
+                        />
+                    </div>
+                    <div className="Grid-cell--xs-6 text-center">
+                        <img
+                         src={googleImg}
+                         alt="Logo representing people hired in Google"
+                        />
+                    </div>
+                    <div className="Grid-cell--xs-6 m-top-4 text-center">
+                        <img
+                         src={facebookImg}
+                         alt="Logo representing people hired in Facebook"
+                        />
+                    </div>
+                    <div className="Grid-cell--xs-6 m-top-4 text-center">
+                        <img
+                         src={spotifyImg}
+                         alt="Logo representing people hired in Spotify"
+                        />
+                    </div>
+                </div>
 
-				<div className="m-top-5 m-bottom-6 hidden-xs hidden-sm">
-					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice companies — read more
-						about their journey to the perfect job&nbsp;
-						<Link
-						 data-track="event"
-						 data-category="Homepage"
-						 data-action="Click Successful Resumes"
-						 to="/successful-resumes"
-						 className="feature-link">
-							here
-						</Link>.
-					</p>
-				</div>
-				<div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
-					<p className="text-muted-deep text-small text-center">
-						Our users got noticed and hired by their top choice companies — read more
-						about their journey to the perfect job&nbsp;
-						<Link
-						 data-track="event"
-						 data-category="Homepage"
-						 data-action="Click Successful Resumes"
-						 to="/successful-resumes"
-						 className="feature-link">
-							here
-						</Link>.
-					</p>
-				</div>
-			</div>
-		</div>
+                <div className="m-top-5 m-bottom-6 hidden-xs hidden-sm">
+                    <p className="text-muted-deep text-small text-center">
+                        Our users got noticed and hired by their top choice companies — read more
+                        about their journey to the perfect job&nbsp;
+                        <Link
+                         data-track="event"
+                         data-category="Homepage"
+                         data-action="Click Successful Resumes"
+                         to="/successful-resumes"
+                         className="feature-link">
+                            here
+                        </Link>.
+                    </p>
+                </div>
+                <div className="m-top-3 m-bottom-4 hidden-md hidden-lg">
+                    <p className="text-muted-deep text-small text-center">
+                        Our users got noticed and hired by their top choice companies — read more
+                        about their journey to the perfect job&nbsp;
+                        <Link
+                         data-track="event"
+                         data-category="Homepage"
+                         data-action="Click Successful Resumes"
+                         to="/successful-resumes"
+                         className="feature-link">
+                            here
+                        </Link>.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-		<Parallax standoutImages={[standoutOne, standoutTwo, standoutThree]} />
+        <Parallax standoutImages={[standoutOne, standoutTwo, standoutThree]} />
 
-		<Spotlight
-		 front={spotlightFront}
-		 back={spotlightBack}
-		/>
+        <Spotlight
+         front={spotlightFront}
+         back={spotlightBack}
+        />
 
-		<Customize />
+        <Customize />
 
-		<Benefits />
+        <Benefits />
 
-		<Testimonials images={rest} />
+        <Testimonials images={rest} />
 
-		<HomepageCTA />
-	</DefaultLayout>
+        <HomepageCTA />
+    </DefaultLayout>
 );
 
 export default IndexPage;
 
 export const pageQuery = graphql`
-	fragment standoutImage on File {
-		childImageSharp {
-			resolutions(width: 665, height: 560) {
-				...GatsbyImageSharpResolutions
-			}
-		}
-	}
+    fragment standoutImage on File {
+        childImageSharp {
+            resolutions(width: 665, height: 560) {
+                ...GatsbyImageSharpResolutions
+            }
+        }
+    }
 
-	fragment testimonialImage on File {
-		childImageSharp {
-			resolutions(width: 285, height: 360) {
-				...GatsbyImageSharpResolutions
-			}
-		}
-	}
+    fragment testimonialImage on File {
+        childImageSharp {
+            resolutions(width: 285, height: 360) {
+                ...GatsbyImageSharpResolutions
+            }
+        }
+    }
 
-	query Homepage {
-		headerImage: file(relativePath: { eq: "new-homepage/header.jpg" }) {
-			childImageSharp {
-				sizes(maxWidth: 2500) {
-					...GatsbyImageSharpSizes
-				}
-			}
-		}
-		standoutOne: file(relativePath: { eq: "new-homepage/standout-01-img3-1.png" }) {
-			...standoutImage
-		}
-		standoutTwo: file(relativePath: { eq: "new-homepage/standout-01-img3-2.png" }) {
-			...standoutImage
-		}
-		standoutThree: file(relativePath: { eq: "new-homepage/standout-01-img3-3.png" }) {
-			...standoutImage
-		}
-		danielLogo: file(relativePath: { eq: "new-homepage/testimonials/daniel@2x.png" }) {
-			...testimonialImage
-		}
-		akshayLogo: file(relativePath: { eq: "new-homepage/testimonials/akshay@2x.png" }) {
-			...testimonialImage
-		}
-		zainabLogo: file(relativePath: { eq: "new-homepage/testimonials/zainab@2x.png" }) {
-			...testimonialImage
-		}
-		edwardLogo: file(relativePath: { eq: "new-homepage/testimonials/edward@2x.png" }) {
-			...testimonialImage
-		}
-		claraLogo: file(relativePath: { eq: "new-homepage/testimonials/clara@2x.png" }) {
-			...testimonialImage
-		}
-		spotlightFront: file(relativePath: { eq: "new-homepage/spotlight@2x.png" }) {
-			childImageSharp {
-				resolutions(width: 255, height: 371) {
-					...GatsbyImageSharpResolutions
-				}
-			}
-		}
-		spotlightBack: file(relativePath: { eq: "new-homepage/spotlight_back@2x.png" }) {
-			childImageSharp {
-				resolutions(width: 334, height: 441) {
-					...GatsbyImageSharpResolutions
-				}
-			}
-		}
-	}
+    query Homepage {
+        headerImage: file(relativePath: { eq: "new-homepage/header.jpg" }) {
+            childImageSharp {
+                sizes(maxWidth: 2500) {
+                    ...GatsbyImageSharpSizes
+                }
+            }
+        }
+        standoutOne: file(relativePath: { eq: "new-homepage/standout-01-img3-1.png" }) {
+            ...standoutImage
+        }
+        standoutTwo: file(relativePath: { eq: "new-homepage/standout-01-img3-2.png" }) {
+            ...standoutImage
+        }
+        standoutThree: file(relativePath: { eq: "new-homepage/standout-01-img3-3.png" }) {
+            ...standoutImage
+        }
+        danielLogo: file(relativePath: { eq: "new-homepage/testimonials/daniel@2x.png" }) {
+            ...testimonialImage
+        }
+        akshayLogo: file(relativePath: { eq: "new-homepage/testimonials/akshay@2x.png" }) {
+            ...testimonialImage
+        }
+        zainabLogo: file(relativePath: { eq: "new-homepage/testimonials/zainab@2x.png" }) {
+            ...testimonialImage
+        }
+        edwardLogo: file(relativePath: { eq: "new-homepage/testimonials/edward@2x.png" }) {
+            ...testimonialImage
+        }
+        claraLogo: file(relativePath: { eq: "new-homepage/testimonials/clara@2x.png" }) {
+            ...testimonialImage
+        }
+        spotlightFront: file(relativePath: { eq: "new-homepage/spotlight@2x.png" }) {
+            childImageSharp {
+                resolutions(width: 255, height: 371) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+        spotlightBack: file(relativePath: { eq: "new-homepage/spotlight_back@2x.png" }) {
+            childImageSharp {
+                resolutions(width: 334, height: 441) {
+                    ...GatsbyImageSharpResolutions
+                }
+            }
+        }
+    }
 `;

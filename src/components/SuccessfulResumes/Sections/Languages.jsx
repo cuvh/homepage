@@ -1,13 +1,7 @@
 import React from "react";
 import Img from "components/Common/Img";
 
-export default function Languages({
-    image,
-    description,
-    section,
-    altText = "Person's languages",
-    ...rest
-}) {
+export default function Languages({ image, description, section, ...rest }) {
     return (
         <section
          id={section}
@@ -25,7 +19,7 @@ export default function Languages({
                          style={{ width: 300 }}
                          className="famous-resume--illustration"
                          sizes={image.childImageSharp.sizes}
-                         alt={altText}
+                         alt=""
                         />
                     </div>
                 </div>

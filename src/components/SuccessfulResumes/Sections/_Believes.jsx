@@ -12,42 +12,36 @@ export default function Believes() {
                         <img
                          className="m-bottom-3"
                          src={img}
-                         alt="Placeholder illustration"
+                         alt=""
                         />
-                        <h6 className="text-dark-grey">
-                            Dropping out of collage
-                        </h6>
+                        <h6 className="text-dark-grey">Dropping out of collage</h6>
                         <p>
-                            Gave three engagement rings to his wife Tallulah,
-                            one of them designed by him.
+                            Gave three engagement rings to his wife Tallulah, one of them designed
+                            by him.
                         </p>
                     </div>
                     <div className="Grid-cell--md-4 Grid-cell--xs-12 m-sm-bottom-4 p-right-4">
                         <img
                          className="m-bottom-3"
                          src={img}
-                         alt="Placeholder illustration"
+                         alt=""
                         />
-                        <h6 className="text-dark-grey">
-                            Making life multi-planetary
-                        </h6>
+                        <h6 className="text-dark-grey">Making life multi-planetary</h6>
                         <p>
-                            Gave three engagement rings to his wife Tallulah,
-                            one of them designed by him.
+                            Gave three engagement rings to his wife Tallulah, one of them designed
+                            by him.
                         </p>
                     </div>
                     <div className="Grid-cell--md-4 Grid-cell--xs-12 m-sm-bottom-4 p-right-4">
                         <img
                          className="m-bottom-3"
                          src={img}
-                         alt="Placeholder illustration"
+                         alt=""
                         />
-                        <h6 className="text-dark-grey">
-                            Dropping out of collage
-                        </h6>
+                        <h6 className="text-dark-grey">Dropping out of collage</h6>
                         <p>
-                            Gave three engagement rings to his wife Tallulah,
-                            one of them designed by him.
+                            Gave three engagement rings to his wife Tallulah, one of them designed
+                            by him.
                         </p>
                     </div>
                 </div>
