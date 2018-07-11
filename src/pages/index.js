@@ -32,7 +32,7 @@ const IndexPage = ({
 }) => (
     <DefaultLayout className="homepage">
         <Meta
-         title="Enhancv | Professional CV & Resume Builder"
+         title="Professional CV & Resume Builder | Enhancv"
          description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
         />
 
@@ -41,9 +41,9 @@ const IndexPage = ({
                 <h1 className="hidden-xs hidden-sm md-lg-heading-margin">
                     A resume to be proud of
                 </h1>
-                <h2 className="hidden-md hidden-lg xs-sm-heading-margin">
+                <h1 className="hidden-md hidden-lg xs-sm-heading-margin h2">
                     A resume <span className="hidden-br">to be proud of</span>
-                </h2>
+                </h1>
 
                 <div className="m-top-0">
                     <h5 className="hidden-xs hidden-sm m-top-0 text-gray-light">

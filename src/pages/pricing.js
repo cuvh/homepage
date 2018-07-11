@@ -65,8 +65,8 @@ export default class Pricing extends React.PureComponent {
         return (
             <DefaultLayout className="homepage">
                 <Meta
-                 title="Enhancv Pricing | Professional CV & Resume Builder"
-                 description="Enhancv: A resume to be proud of"
+                 title="Professional CV & Resume Builder Pricing | Enhancv"
+                 description="Create your resume with Enhancv to make sure the key things come across. Stand out and get that interview."
                 />
 
                 <div

@@ -10,7 +10,7 @@ export default function Meta({
     noFollow = false,
     metaImage = defaultMetaImage,
     description = "Enhancv resume builder helps you create a resume to be proud of. Stand out and make sure the key things come across.",
-    title = "Enhancv | Professional CV & Resume Builder",
+    title = "Professional CV & Resume Builder | Enhancv",
     ...rest
 }) {
     metaImage = SOCIAL_IMAGE_PREFIX + metaImage;
