@@ -11,9 +11,6 @@ import sbjs from "sourcebuster/src/js/sourcebuster";
 import scrollReveal from "scrollreveal/src/scrollreveal";
 import browserWidth from "./src/utils/browserWidth";
 
-import ReactGA from "react-ga";
-ReactGA.initialize("UA-52969150-1");
-
 exports.onInitialClientRender = () => {
     sbjs.init();
 
@@ -59,8 +56,29 @@ exports.onInitialClientRender = () => {
         r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
     })(window, document, "//static.hotjar.com/c/hotjar-", ".js?sv=");
+
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-M8QM55B");
 };
 
 exports.onRouteUpdate = ({ location }) => {
-    ReactGA.pageview(location.pathname);
+    if (!window.dataLayer) {
+        window.dataLayer = [];
+    }
+
+    window.dataLayer.push({
+        event: "PageView",
+        page: location.pathname,
+    });
 };
