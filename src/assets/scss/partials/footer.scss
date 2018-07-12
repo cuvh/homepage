@@ -1,9 +1,7 @@
 /*Should be fixed*/
-$dark-gray: #65696d;
-
 .footer {
     background-color: #fff;
-    color: $dark-gray;
+    color: $gray-2;
     border-top: 2px solid rgba(151, 151, 151, 0.06);
     z-index: 3;
     position: relative;
@@ -23,7 +21,7 @@ $dark-gray: #65696d;
 
     .list-unstyled li a {
         font-size: 15px;
-        color: $dark-gray;
+        color: $gray-2;
         transition: color 0.15s;
     }
 
