@@ -7,8 +7,7 @@ export default function Layout({ children, data, className }) {
     return (
         <div
          key="test"
-         className={className}
-        >
+         className={className}>
             <link
              href="https://fonts.googleapis.com/css?family=Rubik:400,500"
              rel="stylesheet"
