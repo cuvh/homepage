@@ -1,6 +1,6 @@
 .resume {
     &--highlighted {
-        color: $sr_main-color;
+        color: $gray-3;
     }
     &--highlighted-content {
         @media screen and (min-width: $screen-md) {
@@ -51,7 +51,7 @@
         }
     }
     &--highlighted-text {
-        color: $sr_secondary-color;
+        color: $gray-2;
         font-size: 18px;
         line-height: 32px;
         @media screen and (max-width: $screen-sm-max) {

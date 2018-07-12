@@ -16,7 +16,7 @@ export default function LifePhilosophy() {
                     Sometimes it will be ahead, other times it will be behind. But brand is simply a
                     collective impression some have about a product.
                 </blockquote>
-                <p className="component--testimonial-autor text-white-smoke">
+                <p className="component--testimonial-autor text-gray-1">
                     ELON MUSK’S Life Philosophy
                 </p>
             </div>

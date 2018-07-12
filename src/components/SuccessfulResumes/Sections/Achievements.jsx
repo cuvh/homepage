@@ -12,7 +12,7 @@ export default function Achievements({ section, data }) {
          id={section}
          className="component--thumbs-list p-md-top-8 p-md-bottom-5 m-sm-top-5 m-md-top-10 m-md-bottom-5">
             <div className="container">
-                <div className="Grid text-dark-grey Grid-cell--md-offset-1">
+                <div className="Grid text-gray-3 Grid-cell--md-offset-1">
                     <div className="Grid-cell--md-11 Grid-cell--xs-12">
                         <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">Achievements</h3>
                         <div className="Grid">
@@ -24,8 +24,8 @@ export default function Achievements({ section, data }) {
                                          sizes={item.image.childImageSharp.resolutions}
                                          alt=""
                                         />
-                                        <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
-                                            <h6 className="h6 text-dark-grey m-top-no">
+                                        <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-gray-2 p-left-2">
+                                            <h6 className="h6 text-gray-3 m-top-no">
                                                 {item.title}
                                             </h6>
                                             <p>{item.description}</p>
@@ -41,8 +41,8 @@ export default function Achievements({ section, data }) {
                                          sizes={item.image.childImageSharp.resolutions}
                                          alt=""
                                         />
-                                        <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-darker-grey p-left-2">
-                                            <h6 className="h6 text-dark-grey m-top-no">
+                                        <div className="Grid-cell--xs-9 Grid-cell--sm-10 text-gray-2 p-left-2">
+                                            <h6 className="h6 text-gray-3 m-top-no">
                                                 {item.title}
                                             </h6>
                                             <p>{item.description}</p>

@@ -22,13 +22,13 @@ export default function FamousHeader({ name, cover, description, smallDescriptio
             <div className="famous-resume--head-content">
                 <div className="container">
                     <div className="resumes--content Grid-cell--lg-6 Grid-cell--md-5 Grid-cell--xs-12">
-                        <div className="text text-dark-grey text-center-xs text-center-sm">
+                        <div className="text text-gray-3 text-center-xs text-center-sm">
                             <h1 className="h1 text-md-white">{name}</h1>
-                            <div className="m-xs-top-1 m-md-top-3 text-darker-grey">
-                                <h5 className="h5 text-white-smoke m-bottom-3">
+                            <div className="m-xs-top-1 m-md-top-3 text-gray-2">
+                                <h5 className="h5 text-gray-1 m-bottom-3">
                                     {smallDescription}
                                 </h5>
-                                <p className="p-big text-white-smoke">{description}</p>
+                                <p className="p-big text-gray-1">{description}</p>
                             </div>
                             <a
                              href="#famous-resume"

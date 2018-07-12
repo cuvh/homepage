@@ -72,7 +72,7 @@ $slick-opacity-not-active: 0.25 !default;
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0;
-    border: 1px solid #808080;
+    border: 1px solid $gray-2;
     outline: none;
     &:hover,
     &:focus {

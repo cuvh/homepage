@@ -46,10 +46,10 @@ const IndexPage = ({
                 </h1>
 
                 <div className="m-top-0">
-                    <h5 className="hidden-xs hidden-sm m-top-0 text-gray-light">
+                    <h5 className="hidden-xs hidden-sm m-top-0 text-gray-2">
                         Stand out and make sure the key things come across
                     </h5>
-                    <h5 className="hidden-md hidden-lg m-top-1 text-gray-light">
+                    <h5 className="hidden-md hidden-lg m-top-1 text-gray-2">
                         Stand out and make sure the key things come across
                     </h5>
                 </div>

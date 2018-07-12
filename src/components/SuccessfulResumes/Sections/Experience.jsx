@@ -21,7 +21,7 @@ export default function Experience({ data }) {
                                     ) : (
                                         <h4>{item.title}</h4>
                                     )}
-                                    <div className="famous-resume--work-exp m-md-bottom-2 text-white-smoke">
+                                    <div className="famous-resume--work-exp m-md-bottom-2 text-gray-1">
                                         {item.position ? <div>{item.position}</div> : null}
                                         {item.startDate && item.endDate ? (
                                             <span>
@@ -30,7 +30,7 @@ export default function Experience({ data }) {
                                         ) : null}
                                         &nbsp; {item.location}
                                     </div>
-                                    <p className="text-dark-grey">{item.description}</p>
+                                    <p className="text-gray-3">{item.description}</p>
                                 </div>
                             </div>
                         ))}

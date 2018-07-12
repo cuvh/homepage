@@ -61,7 +61,7 @@ export default function FamousBottom({
                         <div className="m-md-top-15">
                             <h2 className="h2 m-xs-top-6 text-white">{finalTitle}</h2>
                             <div className="m-xs-top-1 m-md-top-3">
-                                <p className="p-big text-white-smoke">{finalDescription}</p>
+                                <p className="p-big text-gray-1">{finalDescription}</p>
                             </div>
                             <SocialModal
                              trigger={
@@ -90,7 +90,7 @@ export default function FamousBottom({
                             </div>
                         </div>
                     </div>
-                    <div className="Grid Grid-cell--xs-12 Grid--justifyEnd famous-resume--attribution text-white-smoke">
+                    <div className="Grid Grid-cell--xs-12 Grid--justifyEnd famous-resume--attribution text-gray-1">
                         Photo attribution: Cover photo by {photoBy}
                     </div>
                 </section>
