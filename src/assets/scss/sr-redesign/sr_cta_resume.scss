@@ -6,16 +6,15 @@
         }
 
         &-image {
-            text-align:center;
+            text-align: center;
             @media screen and (min-width: $screen-md) {
-                text-align:right;
+                text-align: right;
             }
-            @media screen and (max-width:$screen-sm-max) {
+            @media screen and (max-width: $screen-sm-max) {
                 img {
-                    max-width:100%;
+                    max-width: 100%;
                 }
             }
         }
     }
 }
-    

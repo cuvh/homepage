@@ -1,5 +1,5 @@
 .resources {
-    &--head{
+    &--head {
         margin-top: $sr_global-offset-value * 14;
         h1,
         h2 {
@@ -11,21 +11,21 @@
     }
     &--discover-box {
         @media screen and (min-width: $screen-md) {
-            background-color:#f6f7f9;
+            background-color: #f6f7f9;
         }
     }
     &--head-image {
         position: relative;
         @media screen and (min-width: $screen-sm) {
             left: -100px;
-            .gatsby-image-outer-wrapper  {
-                transform: scale(0.90);
+            .gatsby-image-outer-wrapper {
+                transform: scale(0.9);
             }
         }
         .btn-resume-preview {
-            width:64px;
-            height:64px;
-            background-size:cover;
+            width: 64px;
+            height: 64px;
+            background-size: cover;
         }
 
         @media screen and (max-width: $screen-sm-max) {
@@ -56,14 +56,14 @@
 
     &--thumbs-list {
         .component--thumbs-holder {
-            right:0;
+            right: 0;
         }
     }
-    
+
     &--thumbs-list-odd {
         @media screen and (min-width: $screen-sm) {
             position: relative;
-            left:100px;
+            left: 100px;
         }
     }
     &--modal-button {
@@ -79,9 +79,9 @@
             @media screen and (max-width: $screen-sm-max) {
                 display: none;
             }
-       
+
             @media screen and (min-width: $screen-sm) {
-                width:64px;
+                width: 64px;
                 height: 64px;
             }
             @media screen and (max-width: $screen-sm-max) {

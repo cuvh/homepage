@@ -64,7 +64,7 @@
                     right: -17%;
                 }
                 @media screen and (max-width: $screen-sm-max) {
-                   background:transparent;
+                    background: transparent;
                 }
             }
         }
@@ -74,7 +74,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center center;
-        
+
         @media screen and (min-width: $screen-sm) {
             background-image: url("../img/new-successful-resumes/elements/singlepage__tags_bubble@2x.png");
         }
@@ -140,7 +140,7 @@
                 background-position: top right;
                 background-size: 100%;
                 position: absolute;
-                z-index: -1; 
+                z-index: -1;
                 @media screen and (min-width: $screen-sm) {
                     top: (8px * 14) * -1;
                     left: calc(50% - (1047px / 2));
@@ -231,7 +231,7 @@
             background-position: top right;
             background-size: 100%;
             position: absolute;
-            z-index: -1; 
+            z-index: -1;
             @media screen and (min-width: $screen-sm) {
                 top: -24px;
                 left: -90px;
@@ -251,20 +251,18 @@
     &--thumbs-list {
         background-repeat: no-repeat;
         background-position: top left;
-        background-size:auto 100%;
+        background-size: auto 100%;
         @media screen and (min-width: $screen-sm) {
             background-image: url("../img/resources/authours@2.png");
         }
         @media screen and (max-width: $screen-sm-max) {
             background-image: url("../img/resources/authours_mobile@2.png");
         }
-
-        
     }
 }
 
-
 .close-modal-footer-bar {
-    background: url("../img/new-successful-resumes/elements/close_button_small_banner_resume_preview.svg") center center no-repeat;
-    background-size:100%;
+    background: url("../img/new-successful-resumes/elements/close_button_small_banner_resume_preview.svg")
+        center center no-repeat;
+    background-size: 100%;
 }
