@@ -1,28 +1,28 @@
-.component{
+.component {
     &--thumbs-list {
         .thumb-order-sm-2 {
-            @media screen and (max-width:$screen-sm-max) {
-                order:2;
+            @media screen and (max-width: $screen-sm-max) {
+                order: 2;
             }
         }
 
         .flex-wrap-nowrap {
-           flex-wrap: nowrap;  
+            flex-wrap: nowrap;
         }
 
         &-background {
-            background-size:auto 100%;
-            background-position:center bottom;
-            background-repeat:no-repeat;
-            @media screen and (max-width:$screen-sm-max) {
-                display:none;
+            background-size: auto 100%;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            @media screen and (max-width: $screen-sm-max) {
+                display: none;
             }
         }
     }
 
     &--thumbs-holder {
         overflow: hidden;
-        @media screen and (max-width:$screen-sm-max) {
+        @media screen and (max-width: $screen-sm-max) {
             position: relative;
             right: -15px;
         }

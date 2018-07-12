@@ -234,8 +234,8 @@ $btn-link-disabled-color: $gray-light !default;
 $btn-border-radius: 5px;
 $btn-border-radius-large: 5px;
 $btn-border-radius-small: (
-		floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
-	) / 2;
+        floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
+    ) / 2;
 
 //== Forms
 //
@@ -270,14 +270,14 @@ $input-color-placeholder: #999 !default;
 $input-height-base: ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
 //** Large `.form-control` height
 $input-height-large: (
-		ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2
-	)
-	!default;
+        ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2
+    )
+    !default;
 //** Small `.form-control` height
 $input-height-small: (
-		floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
-	)
-	!default;
+        floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2
+    )
+    !default;
 
 //** `.form-group` margin
 $form-group-margin-bottom: 15px !default;
