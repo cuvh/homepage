@@ -12,81 +12,61 @@ export default function BooksFour() {
                      href="https://www.amazon.com/"
                      target="_blank"
                      rel="noopener"
-                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2"
-                    >
+                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2">
                         <div className="component--book-cover m-sm-bottom-4 m-md-bottom-4">
                             <img
                              width="248"
                              src={bookPlaceholder}
-                             alt="Books Placeholder"
+                             alt=""
                             />
                         </div>
-                        <h5 className="component--book-title">
-                            The Design of Everyday Things
-                        </h5>
-                        <h6 className="component--book-author">
-                            Donald A. Norman
-                        </h6>
+                        <h5 className="component--book-title">The Design of Everyday Things</h5>
+                        <h6 className="component--book-author">Donald A. Norman</h6>
                     </a>
                     <a
                      href="https://www.amazon.com/"
                      target="_blank"
                      rel="noopener"
-                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2"
-                    >
+                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2">
                         <div className="component--book-cover m-sm-bottom-4 m-md-bottom-4">
                             <img
                              width="248"
                              src={bookPlaceholder}
-                             alt="Books Placeholder"
+                             alt=""
                             />
                         </div>
-                        <h5 className="component--book-title">
-                            The Design of Everyday Things
-                        </h5>
-                        <h6 className="component--book-author">
-                            Donald A. Norman
-                        </h6>
+                        <h5 className="component--book-title">The Design of Everyday Things</h5>
+                        <h6 className="component--book-author">Donald A. Norman</h6>
                     </a>
                     <a
                      href="https://www.amazon.com/"
                      target="_blank"
                      rel="noopener"
-                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2"
-                    >
+                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2">
                         <div className="component--book-cover m-sm-bottom-4 m-md-bottom-4">
                             <img
                              width="248"
                              src={bookPlaceholder}
-                             alt="Books Placeholder"
+                             alt=""
                             />
                         </div>
-                        <h5 className="component--book-title">
-                            The Design of Everyday Things
-                        </h5>
-                        <h6 className="component--book-author">
-                            Donald A. Norman
-                        </h6>
+                        <h5 className="component--book-title">The Design of Everyday Things</h5>
+                        <h6 className="component--book-author">Donald A. Norman</h6>
                     </a>
                     <a
                      href="https://www.amazon.com/"
                      target="_blank"
                      rel="noopener"
-                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2"
-                    >
+                     className="component--book-box Grid-cell--xs-3 text-center p-md-left-2 p-md-right-2">
                         <div className="component--book-cover m-sm-bottom-4 m-md-bottom-4">
                             <img
                              width="248"
                              src={bookPlaceholder}
-                             alt="Books Placeholder"
+                             alt=""
                             />
                         </div>
-                        <h5 className="component--book-title">
-                            The Design of Everyday Things
-                        </h5>
-                        <h6 className="component--book-author">
-                            Donald A. Norman
-                        </h6>
+                        <h5 className="component--book-title">The Design of Everyday Things</h5>
+                        <h6 className="component--book-author">Donald A. Norman</h6>
                     </a>
                 </div>
             </div>

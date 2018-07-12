@@ -78,7 +78,7 @@ export default class SingleResume extends React.PureComponent {
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         altText={`${data.name}'s resume`}
+                                         altText={`${data.name}'s resume preview`}
                                         />
                                     </SocialModal>
                                 </div>
@@ -99,7 +99,7 @@ export default class SingleResume extends React.PureComponent {
                                             <div className="responsive-gatsby">
                                                 <Img
                                                  resolutions={resumePageOne.childImageSharp.small}
-                                                 alt={`${data.name}'s resume`}
+                                                 alt={`${data.name}'s resume preview`}
                                                  style={{ width: "548px" }}
                                                  imgStyle={{
                                                     borderRadius: "5px",
@@ -116,7 +116,7 @@ export default class SingleResume extends React.PureComponent {
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         altText={`${data.name}'s resume`}
+                                         altText={`${data.name}'s resume preview`}
                                         />
                                     </SocialModal>
                                 </span>
@@ -196,6 +196,7 @@ export default class SingleResume extends React.PureComponent {
                                     <img
                                      style={{ width: 560, margin: "0 auto" }}
                                      src={danielOne}
+                                     alt=""
                                     />
                                 </div>
                             ) : null}
@@ -212,6 +213,7 @@ export default class SingleResume extends React.PureComponent {
                                                 marginTop: 23,
                                              }}
                                              src={samTwo}
+                                             alt=""
                                             />
                                         ) : null}
 
@@ -219,6 +221,7 @@ export default class SingleResume extends React.PureComponent {
                                             <img
                                              style={{ margin: "50px 0" }}
                                              src={samOne}
+                                             alt=""
                                             />
                                         ) : null}
 
@@ -232,6 +235,7 @@ export default class SingleResume extends React.PureComponent {
                                             <img
                                              style={{ marginBottom: 50 }}
                                              src={danielPots}
+                                             alt=""
                                             />
                                         ) : null}
 
@@ -251,7 +255,10 @@ export default class SingleResume extends React.PureComponent {
                                                     most - having the perfect representation of who
                                                     I am and what I can offer.
                                                 </blockquote>
-                                                <img src={danielPlant} />
+                                                <img
+                                                 src={danielPlant}
+                                                 alt=""
+                                                />
                                             </React.Fragment>
                                         ) : null}
                                     </li>
@@ -265,7 +272,7 @@ export default class SingleResume extends React.PureComponent {
                                     <img
                                      style={{ width: 404, height: 496 }}
                                      src={data.url === "sam-young" ? samElement : danielElement}
-                                     alt="Image Placeholder"
+                                     alt=""
                                     />
                                 </div>
                                 <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-13">
@@ -293,7 +300,7 @@ export default class SingleResume extends React.PureComponent {
                                         <ResumePreview
                                          resumePageOne={resumePageOne}
                                          resumePageTwo={resumePageTwo}
-                                         altText={`${data.name}'s resume`}
+                                         altText={`${data.name}'s resume preview`}
                                         />
                                     </SocialModal>
                                 </div>

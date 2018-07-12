@@ -88,7 +88,7 @@ export default class OpenModal extends React.PureComponent {
                                          src={bannerResumePreview}
                                          className="m-right-2"
                                          height="107"
-                                         alt="Footer Bar Illustration"
+                                         alt=""
                                         />
                                         <div>
                                             <h6 className="h6 text-dark-grey m-bottom-1">

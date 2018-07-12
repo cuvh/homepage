@@ -20,7 +20,7 @@ export default function TypicalDay({ image, section, description, data }) {
                          }}
                          className="famous-resume--person-time-illustration"
                          sizes={image.childImageSharp.sizes}
-                         alt="Elon Musk Day Timeline"
+                         alt=""
                         />
                     </div>
                     <div className="Grid-cell--md-5 Grid-cell--lg-5 Grid-cell--sm-10 Grid-cell--xs-12 p-md-left-13 text-darker-grey">

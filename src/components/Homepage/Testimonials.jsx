@@ -63,6 +63,7 @@ export default function Testimonials({
                                         <Img
                                          className="testimonial-image m-bottom-2"
                                          resolutions={image.childImageSharp.resolutions}
+                                         alt={`${title} - photo`}
                                         />
                                     </div>
                                 </Tilt>

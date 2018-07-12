@@ -38,7 +38,7 @@ export default function resources({ data }) {
                                          resolutions={
                                             data.resourcesHeaderImage.childImageSharp.resolutions
                                          }
-                                         alt="Who is this good for? | Image"
+                                         alt="Who is this good for? | Preview"
                                         />
                                         <button className="btn-resume-preview" />
                                     </React.Fragment>
@@ -46,7 +46,7 @@ export default function resources({ data }) {
                                     <ResourcePreview
                                      filled={data.shapeStoryPreviewOne}
                                      empty={data.shapeStoryPreviewTwo}
-                                     altText={"Who is this good for? | Image"}
+                                     altText={"Who is this good for? | Preview"}
                                     />
                                 </Modal>
                             </div>
@@ -105,7 +105,7 @@ export default function resources({ data }) {
                             <div className="famous-resume--illustration-holder Grid-cell--md-5 Grid-cell--xs-12 m-sm-top-3 m-xs-top-5 m-md-top-6 p-md-left-10 responsive-gatsby">
                                 <Img
                                  resolutions={data.ladderImage.childImageSharp.resolutions}
-                                 alt="Who is this good for? | Image"
+                                 alt="Who is this good for? | Preview"
                                 />
                             </div>
                         </div>
@@ -116,7 +116,7 @@ export default function resources({ data }) {
                         <div className="Grid-cell--md-4 Grid-cell--sm-10 Grid-cell--xs-12 m-sm-bottom-5 m-md-left-10 text-center responsive-gatsby">
                             <Img
                              resolutions={data.peopleImage.childImageSharp.resolutions}
-                             alt="Who is this good for? | Image"
+                             alt="Who is this good for? | Preview"
                             />
                         </div>
                         <div className="Grid-cell--md-6 Grid-cell--sm-10 Grid-cell--xs-12 p-md-right-15 p-md-left-10">
@@ -147,7 +147,7 @@ export default function resources({ data }) {
                                     <React.Fragment>
                                         <Img
                                          resolutions={data.discoverImage.childImageSharp.resolutions}
-                                         alt="Discover Your Definition of Success | Image"
+                                         alt="Discover Your Definition of Success | Preview"
                                         />
                                         <button className="btn-resume-preview" />
                                     </React.Fragment>
@@ -155,7 +155,7 @@ export default function resources({ data }) {
                                     <ResourcePreview
                                      filled={data.defineSuccessPreviewOne}
                                      empty={data.defineSuccessPreviewTwo}
-                                     altText={"Discover Your Definition of Success | Image"}
+                                     altText={"Discover Your Definition of Success | Preview"}
                                     />
                                 </Modal>
                             </div>
@@ -191,7 +191,7 @@ export default function resources({ data }) {
                                     <div className="Grid-cell--xs-5 Grid-cell--sm-3 Grid-cell--md-2 component--thumbs-holder">
                                         <Img
                                          resolutions={data.vessyAvatar.childImageSharp.resolutions}
-                                         alt="Discover Your Definition of Success | Image"
+                                         alt="Discover Your Definition of Success | Preview"
                                         />
                                     </div>
                                     <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">

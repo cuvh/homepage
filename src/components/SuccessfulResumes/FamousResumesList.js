@@ -34,7 +34,7 @@ export default class FamousResumesList extends React.PureComponent {
                                 <span className="resumes--person-avatar">
                                     <Img
                                      resolutions={node.avatar.childImageSharp.resolutions}
-                                     alt={`${node.name} ${node.position}`}
+                                     alt={`${node.name} ${node.position} photo`}
                                     />
                                 </span>
                                 <h4 className="resumes--person-name m-top-2">{node.name}</h4>
@@ -46,7 +46,7 @@ export default class FamousResumesList extends React.PureComponent {
                             <div className="resumes--hovered">
                                 <Img
                                  resolutions={node.resumes[0].image.childImageSharp.resolutions}
-                                 alt={`${node.name} ${node.position}`}
+                                 alt={`${node.name} ${node.position} resume preview`}
                                 />
                             </div>
                         </Link>
