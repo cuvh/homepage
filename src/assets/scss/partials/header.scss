@@ -34,12 +34,6 @@
     }
 }
 
-.navbar-header-sr {
-    @media screen and (max-width: $screen-sm) {
-        position: relative;
-    }
-}
-
 .navigation-spacer-sr {
     height: 120px;
 
@@ -48,7 +42,7 @@
     }
 
     @media screen and (max-width: $screen-xs) {
-        height: 180px;
+        height: 120px;
     }
 }
 

@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import Track from "utils/Track";
 
 import SuccessfulResumesStrip from "components/SuccessfulResumes/SuccessfulResumesStrip";
+import StoreService from "utils/StoreService";
 
 import logoImg from "../assets/img/logo-with-text.svg";
 import logoWhiteImg from "../assets/img/logo-white.svg";
@@ -13,6 +14,7 @@ import logoWhiteImg from "../assets/img/logo-white.svg";
 class Header extends React.PureComponent {
     state = {
         stick: false,
+        hidden: true,
     };
 
     constructor(props) {
@@ -22,6 +24,13 @@ class Header extends React.PureComponent {
 
     componentDidMount() {
         document.addEventListener("scroll", this.onScroll);
+        if (this.props.location.pathname.indexOf("successful-resumes") !== -1) {
+            StoreService.setItem("isMsgShowed", true);
+        }
+
+        this.setState({
+            hidden: Boolean(StoreService.getItem("isMsgShowed")),
+        });
     }
 
     componentWillUnmount() {
@@ -44,8 +53,18 @@ class Header extends React.PureComponent {
         }
     }
 
+    onHide() {
+        this.setState({
+            hidden: true,
+        });
+        StoreService.setItem("isMsgShowed", true);
+    }
+
     render() {
         const { location: { pathname } } = this.props;
+        const navigationSpacerClass = this.state.hidden
+            ? "navigation-spacer"
+            : "navigation-spacer-sr";
 
         return (
             <div>
@@ -54,15 +73,18 @@ class Header extends React.PureComponent {
                     class: this.state.mobileNavOpened,
                  }}
                 />
-                <div className="navigation-spacer" />
+                <div className={`${navigationSpacerClass}`} />
 
                 <nav
                  className={classnames("navbar navbar-default navbar-sticky navbar-static-top", {
                     "navbar-stick": this.state.stick,
                  })}>
                     <div>
-                        <SuccessfulResumesStrip currentPath={pathname} />
+                        {!this.state.hidden ? (
+                            <SuccessfulResumesStrip hideMsg={this.onHide.bind(this)} />
+                        ) : null}
                     </div>
+
                     <div className="navbar-spacing">
                         <div className="navbar-header">
                             <button

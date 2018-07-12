@@ -5,34 +5,13 @@ import Link from "gatsby-link";
 import srImg from "assets/img/msg-SR-Emoji@3x.svg";
 
 export default class SuccessfulResumesStrip extends React.PureComponent {
-    state = {
-        hidden: true,
-    };
-
-    componentDidMount() {
-        if (this.props.currentPath.indexOf("successful-resumes") !== -1) {
-            StoreService.setItem("isMsgShowed", true);
-        }
-
-        this.setState({
-            hidden: Boolean(StoreService.getItem("isMsgShowed")),
-        });
-    }
-
-    onHide() {
-        this.setState({
-            hidden: true,
-        });
-        StoreService.setItem("isMsgShowed", true);
-    }
-
     render() {
-        return !this.state.hidden ? (
+        return (
             <div className="Grid Grid--alignCenter msg-SR Grid--justifyCenter">
                 <Link
                  className="col-sm-10 col-xs-12 p-sm-bottom-1 p-sm-top-1"
                  to="/successful-resumes"
-                 onClick={() => this.onHide()}>
+                 onClick={this.props.hideMsg}>
                     <img
                      src={srImg}
                      alt=""
@@ -48,10 +27,10 @@ export default class SuccessfulResumesStrip extends React.PureComponent {
                 <button
                  type="button"
                  className="close m-sm-bottom-1 m-right-2 hidden-xs"
-                 onClick={() => this.onHide()}>
+                 onClick={this.props.hideMsg}>
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        ) : null;
+        );
     }
 }
