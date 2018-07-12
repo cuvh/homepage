@@ -81,7 +81,7 @@ class Header extends React.PureComponent {
                  })}>
                     <div>
                         {!this.state.hidden ? (
-                            <SuccessfulResumesStrip hideMsg={this.onHide.bind(this)} />
+                            <SuccessfulResumesStrip hideMsg={() => this.onHide()} />
                         ) : null}
                     </div>
 
