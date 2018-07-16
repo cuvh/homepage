@@ -20,7 +20,7 @@ export default function GrowthMarketer() {
                                 <h3>Senior Growth Marketer</h3>
                             </div>
                         </div>
-                        <div className="row text-center job-subtitle">
+                        <div className="row text-center job-subtitle m-top-2">
                             <div className="col-xs-4 col-md-2 col-md-offset-2 secondary-text text-muted">
                                 Full-time
                             </div>
@@ -32,7 +32,7 @@ export default function GrowthMarketer() {
                             </div>
                         </div>
 
-                        <div className="row content job-text m-top-4">
+                        <div className="row content job-text m-top-6">
                             <div className="col-md-8 col-md-offset-2">
                                 <p>
                                     Enhancv is a growth stage B2C startup founded in 2014. Today,
