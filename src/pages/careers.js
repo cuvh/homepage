@@ -53,11 +53,58 @@ export default function Careers() {
                             <div className="col-xs-12 text-center">
                                 <h4 className="h5">Current job openings</h4>
                             </div>
-                            <div className="col-md-10 col-md-offset-1">
+                            <div className="col-md-10 col-md-offset-1 p-no">
                                 <ul className="list-group">
                                     <li className="list-group-item row">
-                                        <div className="full-width secondary-text text-center">
-                                            There are currently no positions available.
+                                        <div className="col-sm-6 col-xs-8 main-text">
+                                            Inbound Marketing Manager
+                                            <div className="row visible-xs top-ty">
+                                                <div className="col-xs-4 secondary-text">
+                                                    Full-time
+                                                </div>
+                                                <div className="col-xs-8 secondary-text">
+                                                    Sofia / Dublin / Remote
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-2 hidden-xs secondary-text">
+                                            Full-time
+                                        </div>
+                                        <div className="col-sm-3 hidden-xs secondary-text">
+                                            Sofia / Dublin / Remote
+                                        </div>
+                                        <div className="col-xs-5 col-sm-2">
+                                            <Link
+                                             className="btn btn-primary pull-right"
+                                             to="/marketing-manager">
+                                                Learn More
+                                            </Link>
+                                        </div>
+                                    </li>
+                                    <li className="list-group-item row">
+                                        <div className="col-sm-6 col-xs-8 main-text">
+                                            Senior Growth Marketer
+                                            <div className="row visible-xs top-ty">
+                                                <div className="col-xs-4 secondary-text">
+                                                    Full-time
+                                                </div>
+                                                <div className="col-xs-8 secondary-text">
+                                                    Sofia / Dublin / Remote
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-2 hidden-xs secondary-text">
+                                            Full-time
+                                        </div>
+                                        <div className="col-sm-3 hidden-xs secondary-text">
+                                            Sofia / Dublin / Remote
+                                        </div>
+                                        <div className="col-xs-5 col-sm-2">
+                                            <Link
+                                             className="btn btn-primary pull-right"
+                                             to="/growth-marketer">
+                                                Learn More
+                                            </Link>
                                         </div>
                                     </li>
                                 </ul>
