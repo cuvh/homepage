@@ -17,7 +17,7 @@ export default function GrowthMarketer() {
                     <div className="container m-top-7">
                         <div className="row">
                             <div className="col-xs-12 text-center">
-                                <h3>Senior Growth Marketerr</h3>
+                                <h3>Senior Growth Marketer</h3>
                             </div>
                         </div>
                         <div className="row text-center job-subtitle">
