@@ -4,8 +4,7 @@ export default function ResumeCard({ url, name, position }) {
     return (
         <a
          href={url}
-         className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1"
-        >
+         className="resumes--box-holder Grid-cell--md-4 Grid-cell--sm-4 Grid-cell--xs-12 p-1">
             <div className="resumes--box">
                 <span className="resumes--person-avatar">
                     <img
@@ -22,8 +21,8 @@ export default function ResumeCard({ url, name, position }) {
                 <h5 className="resumes--person-jobtitle">{position}</h5>
                 <div className="resumes--person-description">
                     <p className="m-top-2">
-                        Accomplishments from a single job, you can still show
-                        your values and what you're most proud of.
+                        Accomplishments from a single job, you can still show your values and what
+                        you're most proud of.
                     </p>
                 </div>
             </div>

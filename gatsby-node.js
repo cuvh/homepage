@@ -37,16 +37,16 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 
     const userResumes = await graphql(
         `
-			{
-				allUserResumesJson(limit: 1000) {
-					edges {
-						node {
-							url
-						}
-					}
-				}
-			}
-		`
+            {
+                allUserResumesJson(limit: 1000) {
+                    edges {
+                        node {
+                            url
+                        }
+                    }
+                }
+            }
+        `
     );
 
     userResumes.data.allUserResumesJson.edges.forEach(({ node: { url } }) => {
@@ -63,16 +63,16 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 
     const famousResumes = await graphql(
         `
-			{
-				allFamousResumesJson(limit: 1000) {
-					edges {
-						node {
-							url
-						}
-					}
-				}
-			}
-		`
+            {
+                allFamousResumesJson(limit: 1000) {
+                    edges {
+                        node {
+                            url
+                        }
+                    }
+                }
+            }
+        `
     );
 
     famousResumes.data.allFamousResumesJson.edges.forEach(({ node: { url } }) => {

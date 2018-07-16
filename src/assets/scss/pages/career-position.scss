@@ -1,39 +1,39 @@
 .career-page {
-	.job {
-		.content > * {
-			font-size: 16px;
-			line-height: 19px;
-		}
+    .job {
+        .content > * {
+            font-size: 16px;
+            line-height: 19px;
+        }
 
-		a {
-			text-decoration: underline;
+        a {
+            text-decoration: underline;
 
-			&:hover {
-				color: $brand-purple;
-			}
-		}
+            &:hover {
+                color: $brand-purple;
+            }
+        }
 
-		.go-back {
-			text-decoration: none;
-			.icon-angle-left {
-				font-size: 22px;
-			}
-		}
-		.content {
-			p {
-				margin-bottom: 20px;
-			}
-			ul {
-				padding-left: 20px;
-				li {
-					margin-top: 5px;
-				}
-			}
-		}
-		@media (min-width: $screen-sm-max) {
-			.job-subtitle {
-				margin-left: 60px;
-			}
-		}
-	}
+        .go-back {
+            text-decoration: none;
+            .icon-angle-left {
+                font-size: 22px;
+            }
+        }
+        .content {
+            p {
+                margin-bottom: 20px;
+            }
+            ul {
+                padding-left: 20px;
+                li {
+                    margin-top: 5px;
+                }
+            }
+        }
+        @media (min-width: $screen-sm-max) {
+            .job-subtitle {
+                margin-left: 60px;
+            }
+        }
+    }
 }

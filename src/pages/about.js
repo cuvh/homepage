@@ -94,9 +94,7 @@ export default function About() {
                                      alt="Be curious and experiment value represented by a test tube icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-gray-3">
-                                    Curiosity & experimentation
-                                </h5>
+                                <h5 className="m-top-3 text-gray-3">Curiosity & experimentation</h5>
                                 <p className="m-top-2">
                                     No matter how good we are, we stay curious for new opportunities
                                     and enjoy trying things out without judgement. Yet, knowing why
@@ -112,9 +110,7 @@ export default function About() {
                                      alt="Speed and iterate value represented by a solving puzzle icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-gray-3">
-                                    Bias for action & iteration
-                                </h5>
+                                <h5 className="m-top-3 text-gray-3">Bias for action & iteration</h5>
                                 <p className="m-top-2">
                                     We start small no matter how grand our idea is. Speed matters,
                                     so we prefer getting something out there to extensive studies.
