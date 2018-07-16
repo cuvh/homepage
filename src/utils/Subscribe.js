@@ -6,15 +6,15 @@ export default function Subscribe(email) {
     return fetch(SUBSCRIBE_URL, {
         body: JSON.stringify({
             email,
-            groupId: GROUP_ID
+            groupId: GROUP_ID,
         }),
         cache: "no-cache",
         headers: {
-            "content-type": "application/json"
+            "content-type": "application/json",
         },
         method: "POST",
         mode: "cors",
         redirect: "follow",
-        referrer: "no-referrer"
+        referrer: "no-referrer",
     }).then(response => response.json());
 }

@@ -2,9 +2,9 @@
     &--accent {
         &.isSingle {
             position: relative;
-            z-index:1;
+            z-index: 1;
             .resumes--content {
-                z-index:1;
+                z-index: 1;
             }
         }
         padding-bottom: $sr_global-offset-value * 9;
@@ -28,7 +28,7 @@
         text-align: right;
         &.isSingle {
             position: relative;
-            z-index:1;
+            z-index: 1;
         }
 
         &-holder {

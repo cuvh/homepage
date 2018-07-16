@@ -54,8 +54,8 @@
 }
 
 .btn {
-    font-weight:600;
-    border-radius:6px;
+    font-weight: 600;
+    border-radius: 6px;
 }
 
 .btn.btn-default {
@@ -75,10 +75,10 @@
 }
 
 .btn.btn-big {
-    font-size:$font-size-large;
+    font-size: $font-size-large;
     font-weight: 600;
-    min-width:245px;
-    text-transform:uppercase;
+    min-width: 245px;
+    text-transform: uppercase;
 }
 
 .btn.btn-muted {
@@ -204,11 +204,7 @@
                 darken(#eb4141, 10%) 47%,
                 transparent 78%
             ),
-            linear-gradient(
-                135deg,
-                darken(#234bd7, 10%) 0,
-                darken(#c33cbe, 10%) 78%
-            );
+            linear-gradient(135deg, darken(#234bd7, 10%) 0, darken(#c33cbe, 10%) 78%);
     }
 }
 
@@ -264,15 +260,15 @@
 .btn-resume-preview,
 .btn-wow {
     cursor: pointer;
-    transition:0.2s background ease-in-out;
+    transition: 0.2s background ease-in-out;
 
-    border:0;   
-    background-color:transparent;
-    background-position:center center;
-    background-repeat:no-repeat;
-    
+    border: 0;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     &:focus {
-        outline:none;
+        outline: none;
     }
 }
 
@@ -292,14 +288,14 @@
 }
 
 .btn-resume-preview {
-    width:52px;
-    height:52px;
-    background-size:52px;
+    width: 52px;
+    height: 52px;
+    background-size: 52px;
 }
 
 .btn-wow {
-    width:58px;
-    height:57px;
+    width: 58px;
+    height: 57px;
     display: inline-flex;
-    background-size:58px;
+    background-size: 58px;
 }

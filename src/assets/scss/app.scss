@@ -49,32 +49,32 @@ $max-rows-lg: 12;
 @import "../icons/styles.css";
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body.no-scroll {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .gatsby-image-wrapper {
-	img:first-child {
-		visibility: visible;
-	}
+    img:first-child {
+        visibility: visible;
+    }
 
-	&.remove-base-64 {
-		img:first-child {
-			display: none;
-		}
-	}
+    &.remove-base-64 {
+        img:first-child {
+            display: none;
+        }
+    }
 }
 
 .parallax-responsive {
-	img {
-		max-width: 665px !important;
-		width: 100% !important;
-	}
+    img {
+        max-width: 665px !important;
+        width: 100% !important;
+    }
 }
