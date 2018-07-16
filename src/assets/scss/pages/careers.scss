@@ -65,6 +65,13 @@
         border-radius: 5px;
     }
 
+    .career-benefits {
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
     .jobs-list {
         padding: 32px;
 
@@ -82,13 +89,6 @@
                 .secondary-text {
                     color: #808080;
                 }
-            }
-        }
-
-        .career-benefits {
-            img {
-                width: 36px;
-                height: 36px;
             }
         }
     }
