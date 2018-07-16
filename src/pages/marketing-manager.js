@@ -25,7 +25,7 @@ export default function MarketingManager() {
                                 Full-time
                             </div>
                             <div className="col-xs-4 col-md-3 secondary-text text-muted">
-                                Product team: 5-10 people
+                                Market team: 5-10 people
                             </div>
                             <div className="col-xs-4 col-md-3 secondary-text text-muted">
                                 Sofia / Dublin / Remote
