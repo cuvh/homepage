@@ -4,6 +4,9 @@
     "description": "Enhancv Homepage",
     "main": "index.js",
     "license": "MIT",
+    "engines": {
+        "node": "8.11.3"
+    },
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
@@ -43,6 +46,12 @@
         "whatwg-fetch": "^2.0.4"
     },
     "devDependencies": {
+        "husky": "^1.0.0-rc.13",
         "prettier-ecv": "^1.7.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "bash bin/pre-commit.sh"
+        }
     }
 }

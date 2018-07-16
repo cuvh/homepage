@@ -25,9 +25,7 @@ export default function FamousHeader({ name, cover, description, smallDescriptio
                         <div className="text text-gray-3 text-center-xs text-center-sm">
                             <h1 className="h1 text-md-white">{name}</h1>
                             <div className="m-xs-top-1 m-md-top-3 text-gray-2">
-                                <h5 className="h5 text-gray-1 m-bottom-3">
-                                    {smallDescription}
-                                </h5>
+                                <h5 className="h5 text-gray-1 m-bottom-3">{smallDescription}</h5>
                                 <p className="p-big text-gray-1">{description}</p>
                             </div>
                             <a
