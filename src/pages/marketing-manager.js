@@ -46,7 +46,7 @@ export default function MarketingManager() {
                                     <Link
                                      to="/successful-resumes/sam-young"
                                      target="_blank">
-                                        See how Sam got hired at Spotify.
+                                        see how Sam got hired at Spotify.
                                     </Link>
                                 </p>
                                 <p>
@@ -61,7 +61,7 @@ export default function MarketingManager() {
                                     join us remotely.
                                 </p>
 
-                                <p className="m-top-2">
+                                <p className="m-top-5">
                                     <strong>What’s the challenge we’re facing:</strong>
                                 </p>
 
@@ -106,7 +106,7 @@ export default function MarketingManager() {
                                     impact on our company growth.
                                 </p>
 
-                                <p className="m-top-2">
+                                <p className="m-top-4">
                                     <strong>What you’ll be doing:</strong>
                                 </p>
                                 <ul>
@@ -214,13 +214,13 @@ export default function MarketingManager() {
                                     continue to be part of our DNA as we grow.
                                 </p>
 
-                                <p className="m-top-2">
+                                <p className="m-top-4">
                                     <strong>Does it sound exciting?</strong> Send us your CV at{" "}
                                     <a href={"mailto:work@enhancv.com"}>work@enhancv.com</a> and
                                     tell us your story. We’d love to hear from you!
                                 </p>
 
-                                <p className="m-top-3">
+                                <p className="m-top-5">
                                     <strong>
                                         Enhancv is an equal opportunity employer. Have a look at{" "}
                                         <a
