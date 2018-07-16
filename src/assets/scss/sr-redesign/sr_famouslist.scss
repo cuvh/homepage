@@ -69,7 +69,7 @@
     }
     &--person-name {
         font-size: 24px;
-        color: $sr_main-color;
+        color: $gray-3;
     }
     &--person-jobtitle {
         font-size: 14px;
@@ -78,7 +78,7 @@
         line-height: 1.5;
     }
     &--person-description {
-        color: $sr_secondary-color;
+        color: $gray-2;
         font-size: 14px;
         line-height: 24px;
         @media screen and (min-width: $screen-md) {

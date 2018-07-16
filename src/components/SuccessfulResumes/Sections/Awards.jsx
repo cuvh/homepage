@@ -11,12 +11,12 @@ export default function Awards({ image, section, data }) {
          className="component m-sm-top-5 m-md-top-10 m-md-bottom-5">
             <div className="container">
                 <h3 className="h3">Most proud of</h3>
-                <div className="Grid text-dark-grey m-sm-top-3 m-md-top-6">
+                <div className="Grid text-gray-3 m-sm-top-3 m-md-top-6">
                     <div className="Grid-cell--md-4 Grid-cell--xs-12">
                         <article className="resume-article">
                             {left.map(item => (
                                 <div key={item.title}>
-                                    <h6 className="text-dark-grey">{item.title}</h6>
+                                    <h6 className="text-gray-3">{item.title}</h6>
                                     <p>{item.description}</p>
                                 </div>
                             ))}
@@ -35,7 +35,7 @@ export default function Awards({ image, section, data }) {
                         <article className="resume-article">
                             {right.map(item => (
                                 <div key={item.title}>
-                                    <h6 className="text-dark-grey">{item.title}</h6>
+                                    <h6 className="text-gray-3">{item.title}</h6>
                                     <p>{item.description}</p>
                                 </div>
                             ))}

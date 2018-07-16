@@ -88,28 +88,28 @@
         transparent,
 
         $btn-default-color,
-        rgba($gray-dark, 0.2),
+        $gray-3-20,
         transparent,
 
         $btn-default-color,
-        rgba($gray-dark, 0.4),
+        $gray-3-50,
         transparent
     );
 }
 
 .btn.btn-transparent {
     @include button-explicit(
-        $inverse-color,
+        #fff,
         transparent,
-        rgba($inverse-color, 0.4),
+        rgba(#fff, 0.4),
 
-        $inverse-color,
+        #fff,
         transparent,
-        $inverse-color,
+        #fff,
 
-        $inverse-color,
+        #fff,
         transparent,
-        $inverse-color
+        #fff
     );
 }
 

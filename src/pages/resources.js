@@ -182,7 +182,7 @@ export default function resources({ data }) {
                 </section>
                 <section className="component--thumbs-list resources--thumbs-list m-sm-top-8 m-md-top-10">
                     <div className="container">
-                        <div className="Grid text-dark-grey Grid-cell--md-offset-2">
+                        <div className="Grid text-gray-3 Grid-cell--md-offset-2">
                             <div className="Grid-cell--md-9 Grid-cell--xs-12">
                                 <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">
                                     Struggles I learned from
@@ -194,8 +194,8 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Preview"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no">
+                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-gray-2 p-md-left-3">
+                                        <h6 className="h6 text-gray-3 m-top-no">
                                             <span className="text-bold">Vessy Tasheva</span>
                                             <a
                                              target="_blank"
@@ -220,8 +220,8 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Image"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no">
+                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-gray-2 p-md-left-3">
+                                        <h6 className="h6 text-gray-3 m-top-no">
                                             <span className="text-bold">Eric Halsey</span>
                                             <a
                                              target="_blank"
@@ -246,8 +246,8 @@ export default function resources({ data }) {
                                          alt="Discover Your Definition of Success | Image"
                                         />
                                     </div>
-                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-darker-grey p-md-left-3">
-                                        <h6 className="h6 text-dark-grey m-top-no">
+                                    <div className="Grid-cell--xs-7 Grid-cell--sm-8 Grid-cell--md-10 text-gray-2 p-md-left-3">
+                                        <h6 className="h6 text-gray-3 m-top-no">
                                             <span className="text-bold">Velina Getova</span>
                                             <a
                                              target="_blank"

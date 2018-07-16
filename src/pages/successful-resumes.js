@@ -31,7 +31,7 @@ export default function FeaturedResume({ data }) {
             <main className="container">
                 <section className="page--head">
                     <h1 className="h1">Resume examples that get people like you hired</h1>
-                    <h5 className="h5 text-gray-light m-xs-top-1 m-md-top-3">
+                    <h5 className="h5 text-gray-2 m-xs-top-1 m-md-top-3">
                         Get inspired and learn from these real life examples
                     </h5>
                 </section>
@@ -97,7 +97,7 @@ export default function FeaturedResume({ data }) {
 
                 <section className="fix-zindex-sr text-center m-sm-bottom-4 m-md-bottom-6">
                     <h2 className="h2">They changed the world</h2>
-                    <h5 className="h5 text-gray-light m-sm-top-1 m-md-top-2">
+                    <h5 className="h5 text-gray-2 m-sm-top-1 m-md-top-2">
                         Learn from famous resume examples
                     </h5>
                 </section>

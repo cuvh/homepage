@@ -91,10 +91,10 @@ export default class OpenModal extends React.PureComponent {
                                          alt=""
                                         />
                                         <div>
-                                            <h6 className="h6 text-dark-grey m-bottom-1">
+                                            <h6 className="h6 text-gray-3 m-bottom-1">
                                                 Your dream job awaits, make your move.
                                             </h6>
-                                            <p className="text-darker-grey medium">
+                                            <p className="text-gray-2 medium">
                                                 Create a resume to be proud of with Enhnacv.
                                             </p>
                                         </div>

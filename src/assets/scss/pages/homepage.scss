@@ -1,5 +1,5 @@
 .homepage {
-    background: $gray-lightest;
+    background: $homepage-background;
 
     .navbar-default {
         background: transparent;
@@ -88,7 +88,7 @@
 
 .homepage-intro {
     position: relative;
-    background: $gray-lightest;
+    background: $homepage-background;
 
     .md-lg-heading-margin {
         margin-top: 70px;
@@ -253,7 +253,7 @@
     background: $brand-primary;
 
     h2 {
-        color: $inverse-color;
+        color: #fff;
     }
 
     .container {

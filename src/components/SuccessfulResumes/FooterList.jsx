@@ -14,7 +14,7 @@ export default function FooterList({ list, famousPrefix = "" }) {
     return (
         <section className="resumes--others m-sm-top-4 m-md-top-13 m-sm-bottom-3 m-md-bottom-7">
             <div className="resumes--list">
-                <p className="big-p text-center text-gray-light text-white-smoke">
+                <p className="big-p text-center text-gray-2 text-gray-1">
                     Other successful resumes made on Enhancv
                 </p>
             </div>

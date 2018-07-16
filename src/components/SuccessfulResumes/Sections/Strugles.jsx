@@ -9,7 +9,7 @@ export default function Strugles({ section, data }) {
          id={section}
          className="component--thumbs-list m-sm-top-5 m-md-top-10 m-md-bottom-5">
             <div className="container">
-                <div className="Grid text-dark-grey Grid-cell--md-offset-2">
+                <div className="Grid text-gray-3 Grid-cell--md-offset-2">
                     <div className="Grid-cell--md-9 Grid-cell--xs-12">
                         <h3 className="h3 m-sm-bottom-3 m-md-bottom-6">Struggles I learned from</h3>
                         {data.map(item => (
@@ -23,8 +23,8 @@ export default function Strugles({ section, data }) {
                                      alt=""
                                     />
                                 </div>
-                                <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-darker-grey p-md-left-2">
-                                    <h6 className="h6 text-dark-grey m-top-no">{item.title}</h6>
+                                <div className="Grid-cell--xs-11 Grid-cell--sm-10 text-gray-2 p-md-left-2">
+                                    <h6 className="h6 text-gray-3 m-top-no">{item.title}</h6>
                                     <p>{item.description}</p>
                                 </div>
                             </div>

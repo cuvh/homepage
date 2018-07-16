@@ -60,7 +60,7 @@ export default function About() {
                                      alt="Respecting people value represented by a heart icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-dark-grey">Respect & candor</h5>
+                                <h5 className="m-top-3 text-gray-3">Respect & candor</h5>
                                 <p className="m-top-2">
                                     We are individuals first, so accept people for who they are &
                                     treat them respectfully. Speak candidly without worrying about
@@ -76,7 +76,7 @@ export default function About() {
                                      alt="Never stop learning value represented by a growing a plant icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-dark-grey">Grow, but stay in touch</h5>
+                                <h5 className="m-top-3 text-gray-3">Grow, but stay in touch</h5>
                                 <p className="m-top-2">
                                     We are never done learning and we challenge ourselves by raising
                                     the bar with every next project. Yet, we stay in touch with
@@ -94,7 +94,7 @@ export default function About() {
                                      alt="Be curious and experiment value represented by a test tube icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-dark-grey">
+                                <h5 className="m-top-3 text-gray-3">
                                     Curiosity & experimentation
                                 </h5>
                                 <p className="m-top-2">
@@ -112,7 +112,7 @@ export default function About() {
                                      alt="Speed and iterate value represented by a solving puzzle icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-dark-grey">
+                                <h5 className="m-top-3 text-gray-3">
                                     Bias for action & iteration
                                 </h5>
                                 <p className="m-top-2">
@@ -132,7 +132,7 @@ export default function About() {
                                      alt="Keeping customer's trust value represented by a key icon"
                                     />
                                 </span>
-                                <h5 className="m-top-3 text-dark-grey">Customer trust</h5>
+                                <h5 className="m-top-3 text-gray-3">Customer trust</h5>
                                 <p className="m-top-2">
                                     We deliver a simple & delightful experience to address the
                                     customer's need. Earning & keeping trust is key to success.
@@ -144,7 +144,7 @@ export default function About() {
             </div>
             <div className="container">
                 <div className="Grid Grid--spaceBetween m-bottom-2">
-                    <div className="Grid-cell--auto text-darker-grey text-small">
+                    <div className="Grid-cell--auto text-gray-2 text-small">
                         Have a glimpse at the everyday life at Enhancv
                     </div>
 

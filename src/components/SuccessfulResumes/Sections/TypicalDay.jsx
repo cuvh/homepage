@@ -23,7 +23,7 @@ export default function TypicalDay({ image, section, description, data }) {
                          alt=""
                         />
                     </div>
-                    <div className="Grid-cell--md-5 Grid-cell--lg-5 Grid-cell--sm-10 Grid-cell--xs-12 p-md-left-13 text-darker-grey">
+                    <div className="Grid-cell--md-5 Grid-cell--lg-5 Grid-cell--sm-10 Grid-cell--xs-12 p-md-left-13 text-gray-2">
                         <div className="m-md-bottom-6 m-md-bottom-6 m-sm-bottom-4">
                             <h2 className="h2 m-md-bottom-6 m-sm-bottom-3">{description}</h2>
                             {data.map(item => (
