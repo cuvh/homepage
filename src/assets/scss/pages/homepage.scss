@@ -31,17 +31,6 @@
     }
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-        top: 50px;
-    }
-    to {
-        opacity: 1;
-        top: 0px;
-    }
-}
-
 .homepage-scalable-header {
     background: url(../img/new-homepage/header.jpg);
     background-size: cover;
@@ -54,12 +43,6 @@
     @media screen and (max-width: $screen-sm) {
         min-height: 300px !important;
     }
-
-    will-change: opacity, top;
-
-    opacity: 0;
-    top: 50px;
-    animation: fadein 0.6s ease-out 0.2s forwards;
 }
 
 .homepage-gatsby-header {
@@ -71,12 +54,6 @@
     @media screen and (max-width: $screen-sm) {
         min-height: 300px !important;
     }
-
-    will-change: opacity, top;
-
-    opacity: 0;
-    top: 50px;
-    animation: fadein 0.6s ease-out 0.2s forwards;
 
     .gatsby-image-wrapper {
         min-height: 600px;
@@ -112,10 +89,7 @@
     }
 
     .container {
-        will-change: opacity, top;
         position: relative;
-        top: 50px;
-        animation: fadein 0.6s ease-out forwards;
     }
 }
 .homepage-tips {
