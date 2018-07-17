@@ -14,35 +14,6 @@ import browserWidth from "./src/utils/browserWidth";
 exports.onInitialClientRender = () => {
     sbjs.init();
 
-    const sr = scrollReveal();
-
-    sr.reveal(".animate-in", {
-        scale: 1,
-        easing: "ease-out",
-        distance: "50px",
-        viewFactor: browserWidth > 768 ? 0.6 : 0.45,
-    });
-
-    sr.reveal(".spotlight-animate", {
-        scale: 1,
-        easing: "ease-out",
-        distance: "50px",
-        delay: 500,
-        viewFactor: browserWidth() > 768 ? 0.6 : 0.45,
-    });
-
-    var isDesktop = browserWidth() > 768;
-
-    for (var i = 0; i < 4; i++) {
-        sr.reveal("#benefits-item-" + i, {
-            scale: 1,
-            delay: isDesktop ? i * 100 : 0,
-            easing: "ease-out",
-            distance: "50px",
-            viewFactor: isDesktop ? 0.6 : 0.45,
-        });
-    }
-
     (function(h, o, t, j, a, r) {
         h.hj =
             h.hj ||
@@ -81,4 +52,35 @@ exports.onRouteUpdate = ({ location }) => {
         event: "PageView",
         page: location.pathname,
     });
+};
+
+exports.onClientEntry = () => {
+    const sr = scrollReveal();
+
+    sr.reveal(".animate-in", {
+        scale: 1,
+        easing: "ease-out",
+        distance: "50px",
+        viewFactor: browserWidth > 768 ? 0.6 : 0.45,
+    });
+
+    sr.reveal(".spotlight-animate", {
+        scale: 1,
+        easing: "ease-out",
+        distance: "50px",
+        delay: 500,
+        viewFactor: browserWidth() > 768 ? 0.6 : 0.45,
+    });
+
+    var isDesktop = browserWidth() > 768;
+
+    for (var i = 0; i < 4; i++) {
+        sr.reveal("#benefits-item-" + i, {
+            scale: 1,
+            delay: isDesktop ? i * 100 : 0,
+            easing: "ease-out",
+            distance: "50px",
+            viewFactor: isDesktop ? 0.6 : 0.45,
+        });
+    }
 };
