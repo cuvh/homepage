@@ -204,6 +204,10 @@ ul.navbar-mobile-menu {
     }
 }
 
+.navbar-mobile-login {
+    display: none;
+}
+
 .navbar-menu-logo {
     display: none;
     position: absolute;
@@ -233,6 +237,12 @@ body.navbar-mobile-active {
     }
     .navbar-transparent {
         margin-top: 0;
+    }
+    .navbar-mobile-login {
+        display: block;
+    }
+    .navbar-mobile-signup {
+        display: none !important;
     }
 }
 

@@ -159,8 +159,14 @@ class Header extends React.PureComponent {
                                 <a
                                  href="https://app.enhancv.com/signup"
                                  onClick={() => Track("Homepage", "Signup Header")}
-                                 className="visible-xs btn btn-primary navbar-mobile-visible-sticky">
+                                 className="visible-xs btn btn-primary navbar-mobile-visible-sticky navbar-mobile-signup">
                                     Sign Up
+                                </a>
+                                <a
+                                 href="https://app.enhancv.com/login"
+                                 onClick={() => Track("Homepage", "Sign In Header")}
+                                 className="btn btn-primary navbar-mobile-login">
+                                    Sign In
                                 </a>
                             </div>
                         </div>
