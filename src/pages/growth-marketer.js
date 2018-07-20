@@ -10,7 +10,7 @@ export default function GrowthMarketer() {
         <DefaultLayout>
             <div className="career-page">
                 <Meta
-                 title="Open position - Marketing Manager"
+                 title="Senior Growth Marketer"
                  description="Join our team of superheroes"
                 />
                 <div className="job">

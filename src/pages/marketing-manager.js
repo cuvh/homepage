@@ -10,7 +10,7 @@ export default function MarketingManager() {
         <DefaultLayout>
             <div className="career-page">
                 <Meta
-                 title="Open position - Marketing Manager"
+                 title="Inbound Marketing Manager"
                  description="Join our team of superheroes"
                 />
                 <div className="job">
