@@ -55,7 +55,7 @@ export default function GrowthMarketer() {
                                     with zero budget. We are now on the hunt for the next big thing
                                     – becoming job applicants’ one-stop shop for professional growth
                                     and self-discovery. And we’re looking for a
-                                    <b> Growth Marketer</b> to help us scale the company even
+                                    <b> Senior Growth Marketer</b> to help us scale the company even
                                     further.
                                 </p>
                                 <p>
@@ -144,7 +144,7 @@ export default function GrowthMarketer() {
                                     <li>
                                         You like rolling up your sleeves and doing the work
                                         yourself: even when it comes to writing copy for one of our
-                                        product screens or making customer interviews.
+                                        product screens or making customer interviews;
                                     </li>
                                     <li>
                                         You’re so fluent in English you can watch an Aaron Sorkin
