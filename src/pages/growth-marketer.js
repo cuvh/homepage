@@ -53,14 +53,14 @@ export default function GrowthMarketer() {
                                     We’re proud of our experimentation mentality and data-driven
                                     culture. We know how to grow from $3k to $70k MRR in five weeks
                                     with zero budget. We are now on the hunt for the next big thing
-                                    – becoming job applicants’ one-stop shop for personal branding
+                                    – becoming job applicants’ one-stop shop for professional growth
                                     and self-discovery. And we’re looking for a
                                     <b> Growth Marketer</b> to help us scale the company even
                                     further.
                                 </p>
                                 <p>
                                     Come work with us in one of our offices (Sofia and Dublin), or
-                                    join us remotely anywhere in Europe.
+                                    join us remotely in the time zones between GMT and GMT+3.
                                 </p>
 
                                 <p className="m-top-5">
@@ -88,7 +88,7 @@ export default function GrowthMarketer() {
                                 </p>
                                 <ul>
                                     <li>
-                                        You will optimize our conversion 3x, 10x, maybe even 50x
+                                        You will help us achieve CRO of 3x, 10x, maybe even 50x
                                         across the funnel;
                                     </li>
                                     <li>
@@ -97,10 +97,11 @@ export default function GrowthMarketer() {
                                         take brave steps in their careers;
                                     </li>
                                     <li>
-                                        You’ll also work closely with design, development, and
-                                        marketing, as well external PR to iterate and ship growth
-                                        marketing experiments across the entire funnel, no matter if
-                                        they are in the marketing or product domain;
+                                        As part of the Marketing team, you’ll also work closely with
+                                        Design and Development, as well as external PR to iterate
+                                        and ship growth marketing experiments across the entire
+                                        funnel, no matter if they are in the marketing or product
+                                        domain;
                                     </li>
                                     <li>
                                         You’d take a value-driven approach, discovering potential
@@ -123,9 +124,9 @@ export default function GrowthMarketer() {
                                         $100k MRR to $1m), ideally in another B2C scale-up;
                                     </li>
                                     <li>
-                                        You are equally left-brained and right-brained: you are a
-                                        creative genius when it comes to experiments, but you know
-                                        how to execute, measure and improve them;
+                                        You are equally left-brained and right-brained: you're
+                                        creative when it comes to experiments and A/B tests, but you
+                                        also know how to execute, measure and improve them;
                                     </li>
                                     <li>
                                         You have a good grasp of human psychology and persuasion
@@ -142,8 +143,12 @@ export default function GrowthMarketer() {
                                     </li>
                                     <li>
                                         You like rolling up your sleeves and doing the work
-                                        yourself: even when it comes to finding a certain
-                                        journalist’s email or rewriting the copy of our team page.
+                                        yourself: even when it comes to writing copy for one of our
+                                        product screens or making customer interviews.
+                                    </li>
+                                    <li>
+                                        You’re so fluent in English you can watch an Aaron Sorkin
+                                        show without subtitles.
                                     </li>
                                 </ul>
                                 <p />
