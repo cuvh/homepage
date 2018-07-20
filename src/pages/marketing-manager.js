@@ -116,7 +116,7 @@ export default function MarketingManager() {
                                     </li>
                                     <li>
                                         You will help us grow our organic, referral, and direct
-                                        traffic 3x, 5x, maybe even 10x
+                                        traffic 3x, 5x, maybe even 10x;
                                     </li>
                                     <li>
                                         You’ll coordinate between team members to iterate on and
