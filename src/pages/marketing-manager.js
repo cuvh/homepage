@@ -43,11 +43,11 @@ export default function MarketingManager() {
                                     helps people highlight their achievements, attitude, and
                                     personality, so they can tell their story with confidence.
                                     Together with our users we make success stories –{" "}
-                                    <Link
-                                     to="/successful-resumes/sam-young"
+                                    <a
+                                     href="http://utm.io/ub6a5"
                                      target="_blank">
                                         see how Sam got hired at Spotify.
-                                    </Link>
+                                    </a>
                                 </p>
                                 <p>
                                     We’re proud of our experimentation mentality and data-driven
@@ -74,11 +74,16 @@ export default function MarketingManager() {
                                     We can confidently say that we produce high-quality content
                                     (check our{" "}
                                     <a
-                                     href="https://blog.enhancv.com/"
+                                     href="http://utm.io/ub6a6"
                                      target="_blank">
                                         blog
                                     </a>{" "}
-                                    or <Link to="/successful-resumes">Successful Resumes</Link>{" "}
+                                    or{" "}
+                                    <a
+                                     href="http://utm.io/ub6a5"
+                                     target="_blank">
+                                        Successful Resumess
+                                    </a>{" "}
                                     page). We’ve also been featured in top media like{" "}
                                     <a
                                      href="http://www.businessinsider.com/a-sample-resume-for-marissa-mayer-2016-7?IR=T"

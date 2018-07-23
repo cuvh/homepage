@@ -43,11 +43,11 @@ export default function GrowthMarketer() {
                                     helps people highlight their achievements, attitude, and
                                     personality, so they can tell their story with confidence.
                                     Together with our users we make success stories –{" "}
-                                    <Link
-                                     to="/successful-resumes/sam-young"
+                                    <a
+                                     href="http://utm.io/ub6a5"
                                      target="_blank">
                                         see how Sam got hired at Spotify.
-                                    </Link>
+                                    </a>
                                 </p>
                                 <p>
                                     We’re proud of our experimentation mentality and data-driven
