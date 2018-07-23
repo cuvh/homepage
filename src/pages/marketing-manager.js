@@ -82,7 +82,7 @@ export default function MarketingManager() {
                                     <a
                                      href="http://utm.io/ub6a5"
                                      target="_blank">
-                                        Successful Resumess
+                                        Successful Resumes
                                     </a>{" "}
                                     page). We’ve also been featured in top media like{" "}
                                     <a
