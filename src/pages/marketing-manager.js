@@ -10,7 +10,7 @@ export default function MarketingManager() {
         <DefaultLayout>
             <div className="career-page">
                 <Meta
-                 title="Open position - Marketing Manager"
+                 title="Inbound Marketing Manager"
                  description="Join our team of superheroes"
                 />
                 <div className="job">
@@ -43,11 +43,11 @@ export default function MarketingManager() {
                                     helps people highlight their achievements, attitude, and
                                     personality, so they can tell their story with confidence.
                                     Together with our users we make success stories –{" "}
-                                    <Link
-                                     to="/successful-resumes/sam-young"
+                                    <a
+                                     href="http://utm.io/ub6a5"
                                      target="_blank">
                                         see how Sam got hired at Spotify.
-                                    </Link>
+                                    </a>
                                 </p>
                                 <p>
                                     We’re proud of our experimentation mentality and data-driven
@@ -58,7 +58,7 @@ export default function MarketingManager() {
                                 </p>
                                 <p>
                                     Come work with us in one of our offices (Sofia and Dublin), or
-                                    join us remotely.
+                                    join us remotely in the time zones between GMT and GMT+3.
                                 </p>
 
                                 <p className="m-top-5">
@@ -74,11 +74,16 @@ export default function MarketingManager() {
                                     We can confidently say that we produce high-quality content
                                     (check our{" "}
                                     <a
-                                     href="https://blog.enhancv.com/"
+                                     href="http://utm.io/ub6a6"
                                      target="_blank">
                                         blog
                                     </a>{" "}
-                                    or <Link to="/successful-resumes">Successful Resumes</Link>{" "}
+                                    or{" "}
+                                    <a
+                                     href="http://utm.io/ub6a5"
+                                     target="_blank">
+                                        Successful Resumes
+                                    </a>{" "}
                                     page). We’ve also been featured in top media like{" "}
                                     <a
                                      href="http://www.businessinsider.com/a-sample-resume-for-marissa-mayer-2016-7?IR=T"
@@ -100,10 +105,9 @@ export default function MarketingManager() {
                                      target="_blank">
                                         Glassdoor
                                     </a>, you name it. Even so, there’s still a long way to go in
-                                    terms of organic search traffic and backlinks relative to our
-                                    competitors. Addressing this challenge is where your role comes
-                                    in. It’s an exciting but also responsible job, as it has direct
-                                    impact on our company growth.
+                                    terms of organic search traffic and backlinks. Addressing this
+                                    challenge is where your role comes in. It’s an exciting but also
+                                    responsible job, as it has direct impact on our company growth.
                                 </p>
 
                                 <p className="m-top-4">
@@ -112,12 +116,12 @@ export default function MarketingManager() {
                                 <ul>
                                     <li>
                                         Above all, we need you to help us level up and integrate our
-                                        SEO, Content Creation and Outreach into a coherent strategy,
-                                        allowing for these pieces to reinforce each other;
+                                        SEO, PR and Content into a coherent strategy, allowing for
+                                        these pieces to reinforce each other;
                                     </li>
                                     <li>
-                                        You’ll participate in developing 6 week and 6 month company
-                                        and marketing goals;
+                                        You will help us grow our organic, referral, and direct
+                                        traffic 3x, 5x, maybe even 10x;
                                     </li>
                                     <li>
                                         You’ll coordinate between team members to iterate on and
@@ -176,8 +180,8 @@ export default function MarketingManager() {
                                 <ul>
                                     <li>
                                         You have a success track record as a Content Strategist,
-                                        Outreach Marketer, SEO Manager, or Inbound Marketer from
-                                        another B2C tech company;
+                                        Outreach Marketer, SEO Manager, SEO PR Expert, or Inbound
+                                        Marketer from another B2C tech company;
                                     </li>
                                     <li>
                                         You’re customer-centric. You’re not looking for “hacks”, but
@@ -194,7 +198,10 @@ export default function MarketingManager() {
                                         genuinely interested in understanding customers so you can
                                         bring them value;
                                     </li>
-                                    <li>You can watch an Aaron Sorkin show without subtitles.</li>
+                                    <li>
+                                        You’re so fluent in English you can watch an Aaron Sorkin
+                                        show without subtitles.
+                                    </li>
                                 </ul>
                                 <p />
 

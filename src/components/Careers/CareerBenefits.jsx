@@ -37,7 +37,8 @@ export default function CareerBenefits() {
                      alt="Bicycle icon representing better health"
                     />
                     <p className="text-muted m-top-3">
-                        Health matters to us, so each team member has their own budget for sports.
+                        Health matters to us, so each team member has their own budget for health
+                        and sports.
                     </p>
                 </div>
             </div>
