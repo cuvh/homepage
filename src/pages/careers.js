@@ -122,6 +122,17 @@ export default function Careers() {
                                             <strong>work@enhancv.com</strong>
                                         </a>. Our two offices are centrally located in Sofia and
                                         Dublin, and we're always keen to meet interesting people!
+                                        <p className="m-top-1">
+                                            <em>
+                                                *We process personal data from applications in
+                                                accordance with our{" "}
+                                                <Link
+                                                 to="/applicant-privacy"
+                                                 className="feature-link">
+                                                    Job Applicant Privacy Policy
+                                                </Link>
+                                            </em>
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="info-group">
