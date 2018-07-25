@@ -1,5 +1,49 @@
 [
     {
+        "resumes": [{ "image": "successful-resumes/avery-lecrercq-resume-1.jpg" }],
+        "label": "New Role",
+        "avatar": "successful-resumes/avatars/avery@2.png",
+        "companyLogo": "successful-resumes/company-logos/aiesec.png",
+        "position": "Talent Manager, Social Media Coordinator, Volunteer, and Allies Officer",
+        "url": "avery-lecrercq",
+        "pageTitle": "Real Volunteer Resume Example | Enhancv",
+        "pageDescription":
+            "A volunteer resume that got big results by showing purpose, drive, and personality",
+        "tags": ["Volunteering", "mid-level", "Branding Team Member"],
+        "twitterText":
+            "This resume does three things that got Avery a life-changing volunteering opportunity in Indonesia #volunteering #AIESEC #Resume",
+        "facebookText":
+            "This resume does three things that got Avery a life-changing @AIESEC volunteering opportunity in Indonesia",
+        "socialImg": "famous-resumes/share-images/avery_social.png",
+        "name": "Avery Leclercq",
+        "title": "How To Make an Effective Volunteer Resume - Show Yourself",
+        "description":
+            "Avery’s volunteer resume perfectly exemplifies how you can make a statement with your individuality and previous volunteering experience. In showcasing their achievements and using their resume to their advantage, Avery secured an amazing opportunity of volunteering abroad for six weeks.",
+        "stepsTitle": "Meet Avery",
+        "stepsDescription":
+            "Avery is a French—American student who found themselves yearning for a volunteering opportunity with impact. Coupled with their desire to find people that are “as much of a cultural mess” as they are, Avery utilised their resume to secure a dream volunteering opportunity in Indonesia. While working in the village’s coffee trade, Avery explored the deep culture of Indonesia and managed to forge friendships with people that will last a lifetime.",
+        "steps": [
+            {
+                "title": "What Makes Avery’s Resume Effective"
+            },
+            {
+                "title": "1. It Keeps The Audience in Mind",
+                "description":
+                    "With hundreds of volunteering opportunities out there, it’s important to remember the specificities of the organisation you’re applying through and the nuances of the project you’re hoping to get selected for. Avery made sure to highlight their previous experience with AIESEC to demonstrate their familiarity and in-depth knowledge of the organisation. "
+            },
+            {
+                "title": "2. It Has Identity",
+                "description":
+                    "To be effective, a volunteer application needs a strong personal element. This is especially true when applying for community-led volunteering opportunities. This doesn’t just mean having a picture, it means bringing your personality across and highlighting what makes you you, not just what you can do. Avery masterfully accomplishes this through speaking on their involvement in college LGBT societies and their journey as a French-American student."
+            },
+            {
+                "title": "3. It’s Purposeful",
+                "description":
+                    "Not only should you keep the organisation in mind, but you should consider your purpose. What exactly are you hoping to do in your volunteering? What skills do you need to have to accomplish this? This is exactly what Avery did in highlighting their adaptability in new environments, this is a critical skill during volunteering opportunities that often rely on your ability to be a jack-of-all-trades. "
+            }
+        ]
+    },
+    {
         "resumes": [
             { "image": "successful-resumes/maximilian-malterer-resume-1.jpg" },
             { "image": "successful-resumes/maximilian-malterer-resume-2.jpg" }
@@ -386,11 +430,12 @@
             "Founders need resumes too. Here’s how Tobias showed his personality and skills in a resume that got him a new job.",
         "socialImg": "famous-resumes/share-images/Tobias_social.png",
         "name": "Tobias Horstmann",
-        "title": "A Manager Resume That’s Much, Much More",
+        "title": "A Powerful Program Manager Resume Example",
         "description":
-            "When a regional manager has to balance IT, logistics, business administration, and more, their resume needs to show flexibility, boldness, and results. Tobias’ resume example does just that. It tells his story wonderfully, painting a picture of a manager who’s up to the task of taking his firm to new places.",
-        "position": "Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
-        "stepsTitle": "Why Tobias’ Manager Resume Works",
+            "When a manager has to balance IT, logistics, business administration, and more, their resume needs to show flexibility, boldness, and results. Tobias’ resume example does just that. It tells his story wonderfully, painting a picture of a manager who’s up to the task of taking his firm to new places and ultimately a new opportunity at Google DeepMind.",
+        "position":
+            "Program Manager, Regional Manager, Project Manager, Co-Founder and CEO, Volunteer",
+        "stepsTitle": "Why Tobias’ Program Manager Resume Works",
         "stepsDescription":
             "There’s a lot going on in this two page resume example, but three core principles hold it all together.",
         "steps": [
@@ -402,7 +447,7 @@
             {
                 "title": "Step 2: It demonstrated flexibility",
                 "description":
-                    "This isn’t simply a manager resume, Tobias shows a variety of interests and a drive to explore them. The resume balances volunteer experience, conference organization, world travels, research, and his actual work experience. The result is a picture of someone who’s comfortable working in every aspect of his current managerial role."
+                    "This isn’t simply a program manager resume, Tobias shows a variety of interests and a drive to explore them. The resume balances volunteer experience, conference organization, world travels, research, and his actual work experience. The result is a picture of someone who’s comfortable working in every aspect of his current managerial role."
             },
             {
                 "title": "Step 3: It shows boldness",
