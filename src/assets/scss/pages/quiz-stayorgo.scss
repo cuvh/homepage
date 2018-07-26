@@ -1,0 +1,19 @@
+.quiz-stayorgo {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+
+    .q-left-container {
+        width: 45%;
+        background-color: #504d62;
+        overflow: hidden;
+
+        .fish-img {
+            width: 60vw;
+            right: 16vw;
+        }
+    }
+    .q-right-container {
+        width: 55%;
+    }
+}
