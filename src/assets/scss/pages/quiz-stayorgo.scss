@@ -1,0 +1,167 @@
+.quiz-stayorgo {
+    width: 100%;
+    display: flex;
+    font-size: 1.25vw;
+    min-height: 100%;
+    height: 100vh;
+    color: $sr_article-body-text;
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .q-right-container {
+        width: 55%;
+        justify-content: center;
+        padding-left: 6.8vw;
+        padding-top: 4vw;
+        height: 100vh;
+        min-height: 100vh;
+
+        h1 {
+            font-size: 3.8vw;
+            font-family: $headings-font-family;
+            line-height: 4.5vw;
+            color: $gray-3;
+            max-width: 39vw;
+            margin-bottom: 0.4vw;
+        }
+
+        h2 {
+            font-size: 2vw;
+            font-family: $headings-font-family;
+            color: $gray-3;
+            max-width: 26vw;
+            margin-bottom: 2.4vw;
+            margin-left: 0.16vw;
+        }
+
+        p {
+            margin-bottom: 1vw;
+            max-width: 37.5vw;
+        }
+
+        .btn-start-quiz {
+            font-size: 1.4vw;
+            font-weight: 500;
+            letter-spacing: 0.078vw;
+            line-height: 1.71vw;
+            font-family: Rubik;
+            text-align: center;
+            width: 19vw;
+            padding-top: 1.17vw;
+            padding-bottom: 1.17vw;
+            margin-top: 1vw;
+            margin-bottom: 3vw;
+        }
+
+        .q-enhancv {
+            margin-bottom: 2vw;
+            img {
+                width: 2.34vw;
+                margin-right: 1.6vw;
+            }
+
+            div {
+                color: $gray-1;
+                font-size: 1.1vw;
+                line-height: 1.4vw;
+
+                a {
+                    color: $gray-1;
+                    &:hover {
+                        color: $brand-purple;
+                    }
+                }
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            width: 100%;
+            padding: 0;
+
+            .q-mobile {
+                padding: 30px;
+                background-color: #504d62;
+                height: 70%;
+                overflow: hidden;
+                height: 460px;
+                position: relative;
+
+                h1 {
+                    color: white;
+                    font-size: 38px;
+                    line-height: 44px;
+                    max-width: 100%;
+                    margin-bottom: 8px;
+                }
+
+                h2 {
+                    color: white;
+                    font-size: 20px;
+                    line-height: 26px;
+                    max-width: 100%;
+                    margin-bottom: 60px;
+                    margin-left: 2px;
+                }
+
+                .fish-mobile-img {
+                    position: absolute !important;
+                    top: -120px;
+                    right: 2%;
+                    width: 400px;
+
+                    img:first-of-type {
+                        display: none;
+                    }
+                }
+            }
+            .q-instructions {
+                padding: 40px;
+
+                p {
+                    margin-bottom: 24px;
+                    max-width: 100%;
+                    font-size: 16px;
+                    letter-spacing: 0.6px;
+                }
+
+                .btn-start-quiz {
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 22px;
+                    width: 100%;
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+
+                .q-mobile-logo {
+                    display: block;
+                    margin: auto;
+                    width: 30px;
+                }
+
+                .q-enhancv {
+                    margin-top: 40px;
+                    margin-bottom: 8px;
+                    justify-content: center;
+
+                    div {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .q-left-container {
+        width: 45%;
+        background-color: #504d62;
+        overflow: hidden;
+
+        .fish-img {
+            width: 60vw;
+            right: 16vw;
+        }
+    }
+}
