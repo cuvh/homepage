@@ -48,8 +48,8 @@ const StayOrGoQuiz = ({ data: { fishImage } }) => (
                     <p>Take our quiz and find out in just a couple of minutes!</p>
 
                     <a
-                     href="https://app.enhancv.com/signup"
-                     onClick={() => Track("Landing Page", "Start Quiz StayOrGo")}
+                     href="https://enhancv.outgrow.us/staygo"
+                     onClick={() => Track("Engineering as Marketing", "Start Quiz StayOrGo")}
                      className="btn btn-primary btn-start-quiz">
                         LET'S START
                     </a>
