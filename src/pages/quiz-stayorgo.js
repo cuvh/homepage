@@ -5,12 +5,14 @@ import Img from "gatsby-image";
 import Track from "utils/Track";
 
 import logo from "../assets/img/logo.svg";
+import fishMetaImg from "../assets/img/landing-pages/quiz_banner.png";
 
 const StayOrGoQuiz = ({ data: { fishImage } }) => (
     <div className="career-page">
         <Meta
          title="Quiz: Should I stay or should I go?"
          description="Quiz - Evaluate your current job in 3 minutes or less"
+         metaImage={fishMetaImg}
         />
         <link
          href="https://fonts.googleapis.com/css?family=Rubik:400,500"
