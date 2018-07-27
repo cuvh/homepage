@@ -7,7 +7,7 @@ import Track from "utils/Track";
 import logo from "../assets/img/logo.svg";
 
 const StayOrGoQuiz = ({ data: { fishImage } }) => (
-    <div className="career-page gatsby-image-wrapper">
+    <div className="career-page">
         <Meta
          title="Quiz: Should I stay or should I go?"
          description="Quiz - Evaluate your current job in 3 minutes or less"
