@@ -109,6 +109,10 @@
                     top: -120px;
                     right: 2%;
                     width: 400px;
+
+                    img:first-child {
+                        display: none;
+                    }
                 }
             }
             .q-instructions {
