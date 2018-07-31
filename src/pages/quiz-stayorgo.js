@@ -56,21 +56,29 @@ const StayOrGoQuiz = ({ data: { fishImage } }) => (
                         LET'S START
                     </a>
                     <div className="Grid q-enhancv">
-                        <img
-                         className="hidden-sm hidden-xs"
-                         src={logo}
-                         alt="Company logo - Enhancv"
-                        />
+                        <a
+                         href="https://enhancv.com/"
+                         className="logo-link">
+                            <img
+                             className="hidden-sm hidden-xs"
+                             src={logo}
+                             alt="Company logo - Enhancv"
+                            />
+                        </a>
                         <div>
                             Brought to you by your friends at{" "}
                             <a href="https://enhancv.com/">Enhancv</a>
                         </div>
                     </div>
-                    <img
-                     className="hidden-md hidden-lg q-mobile-logo"
-                     src={logo}
-                     alt="Company logo - Enhancv"
-                    />
+                    <a
+                     href="https://enhancv.com/"
+                     className="logo-link">
+                        <img
+                         className="hidden-md hidden-lg q-mobile-logo"
+                         src={logo}
+                         alt="Company logo - Enhancv"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
