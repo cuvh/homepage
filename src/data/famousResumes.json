@@ -1,5 +1,123 @@
 [
     {
+        "lightCover": true,
+        "name": "Maisie Williams",
+        "url": "maisie-williams",
+        "avatar": "famous-resumes/avatars/maisie.png",
+        "cover": "famous-resumes/cover/maisie_cover_photo.png",
+        "position": "Actor turned Co-Founder",
+        "resumes": [{ "image": "famous-resumes/maisie-resume.jpg" }],
+        "headerDescription":
+            "Maisie Williams may only be 21, but her actor resume already tells the story of her establishing herself in acting and then using that experience to co-found two companies. It shows her funny and irreverent personality alongside impressive awards and accomplishments.",
+        "description": "Williams shows us all how to change careers the smart way",
+        "pageTitle": "Maisie Williams' Career Change Resume Example | Enhancv",
+        "pageDescription":
+            "Maisie Williams (AKA Arya Stark) shows how anyone can change careers: apply unique knowledge from one career towards your new one",
+        "tags": ["Career Change"],
+        "twitterText":
+            "@Maisie_Williams shows everyone how to change careers, applying all she's learned as an actor to @daisieapp",
+        "facebookText":
+            "How can being an actor prepare you to co-found a tech company? GOT's Maisie Williams shows us how to change careers the right way",
+        "socialImg": "famous-resumes/share-images/maisie_social.png",
+        "sections": [
+            {
+                "image": "famous-resumes/lifeproject/maisie_lifeprojects.png",
+                "section": "LifeProject",
+                "description":
+                    "Starring in a massively popular TV show at 13 has allowed Williams to end up with a successful career at 21. Most interestingly, she’s taking her experiences in the creative field and applying them to co-founding two companies.",
+                "data": [
+                    {
+                        "title": "Daisie and Daisy Chain Productions",
+                        "position": "Co-founder",
+                        "startDate": "01/2018",
+                        "endDate": "ongoing",
+                        "description":
+                            "Building an online community to build careers and meaningful connections within the creative sphere along with a production company to make some of their amazing projects."
+                    },
+                    {
+                        "title": "The Falling",
+                        "position": "Lead actor",
+                        "startDate": "10/2013",
+                        "endDate": "04/2015",
+                        "description":
+                            "A feature film about a mysterious illness affecting an all-girl’s school."
+                    },
+                    {
+                        "title": "Game of Thrones",
+                        "image": "famous-resumes/companies/GoT.png",
+                        "position": "Actor",
+                        "startDate": "2010",
+                        "endDate": "ongoing",
+                        "description":
+                            "The global blockbuster of a show demonstrating that a unique kind of cinematic long-form storytelling can work for a TV show."
+                    }
+                ]
+            },
+            {
+                "section": "MostProudOf",
+                "image": "famous-resumes/mostproudof/most-proud-ofmaisie-williams.png",
+                "data": [
+                    {
+                        "title": "Found a way",
+                        "description": "To make a living doing what she loves: acting"
+                    },
+                    {
+                        "title": "Worked to help others",
+                        "description": "Support themselves doing what they love"
+                    },
+                    {
+                        "title": "Had the courage",
+                        "description": "To drop out of school at 14"
+                    },
+                    {
+                        "title": "Woke up early",
+                        "description": "To make Game of Thrones, even though she hated it"
+                    }
+                ]
+            },
+            {
+                "section": "TypicalDay",
+                "image": "famous-resumes/myday/my_time-maisie.png",
+                "description": "His typical day",
+                "data": [
+                    {
+                        "backgroundColor": "#008589",
+                        "title":
+                            "Meeting with young creative people to better understand their challenges"
+                    },
+                    {
+                        "backgroundColor": "#009EA3",
+                        "title": "Searching for interesting new roles"
+                    },
+                    {
+                        "backgroundColor": "#0EBFC5",
+                        "title": "Hanging out with her \"wife\" Sophie Turner"
+                    },
+                    {
+                        "backgroundColor": "#27C9CF",
+                        "title": "Watching The Great British Bakeoff"
+                    },
+                    {
+                        "backgroundColor": "#4ED9E0",
+                        "title": "Playing with her dogs"
+                    },
+                    {
+                        "backgroundColor": "#89EDEC",
+                        "title": "Working on her latest project"
+                    },
+                    {
+                        "backgroundColor": "#CFFFFF",
+                        "title": "Taking dance classes"
+                    }
+                ]
+            }
+        ],
+        "photoBy": "Gage Skidmore from Peoria",
+        "finalTitle": "Maisie Williams’ Actor Resume Example",
+        "finalDescription":
+            "A great example of an actor resume, this one shows off awards and accomplishments alongside passions and personality. The result is an impression of someone who’s not just accomplished in her field, but who is a pleasure to work with and brings the right attitude to set."
+    },
+    {
         "name": "RuPaul",
         "url": "rupaul",
         "avatar": "famous-resumes/avatars/rupaul.png",
