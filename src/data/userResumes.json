@@ -2,7 +2,8 @@
     {
         "resumes": [{ "image": "successful-resumes/casey-tryon-resume-volunteer.jpg" }],
         "label": "New Role",
-        "avatar": "successful-resumes/avatars/casey_avatar_photo.png",
+        "avatar": "successful-resumes/avatars/casey_volunteer_avatar.png",
+        "companyLogo": "successful-resumes/company-logos/killester_basketball.png",
         "position": "Basketball Coach, Volunteer",
         "url": "casey-tryon-coach",
         "pageTitle": "Real Coaching Resume Example | Enhancv",
