@@ -36,8 +36,8 @@ export default function FamousResume({ data: { famousResumesJson: { ...data }, l
     return (
         <DefaultLayout className="navbar-light">
             <Meta
-             title={data.pageTitle}
-             description={data.pageDescription}
+             title={data.metaTitle}
+             description={data.metaDescription}
              metaImage={data.socialImg.childImageSharp.resolutions.src}
             />
 
@@ -170,8 +170,8 @@ export const pageQuery = graphql`
             url
             smallHeaderDescription
             headerDescription
-            pageDescription
-            pageTitle
+            metaDescription
+            metaTitle
             facebookText
             twitterText
             finalTitle
