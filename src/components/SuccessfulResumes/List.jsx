@@ -8,7 +8,9 @@ import { map, flatten, uniq, flow, contains } from "lodash/fp";
 import Track from "utils/Track";
 import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
 
-const IS_CRAWLER = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+const IS_CRAWLER = /bot|googlebot|crawler|spider|robot|crawling/i.test(
+    typeof navigator !== "undefined" && navigator.userAgent
+);
 
 const getIndustries = flow(map("node.industry"), flatten, uniq);
 
