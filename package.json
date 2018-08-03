@@ -4,9 +4,6 @@
     "description": "Enhancv Homepage",
     "main": "index.js",
     "license": "MIT",
-    "engines": {
-        "node": "8.11.3"
-    },
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
@@ -28,6 +25,7 @@
         "gatsby-plugin-react-helmet": "^2.0.10",
         "gatsby-plugin-sass": "^1.0.26",
         "gatsby-plugin-sharp": "^1.6.46",
+        "gatsby-plugin-sitemap": "^1.2.25",
         "gatsby-source-filesystem": "^1.5.38",
         "gatsby-transformer-json": "^1.0.19",
         "gatsby-transformer-sharp": "^1.6.26",
