@@ -38,8 +38,8 @@ export default class SingleResume extends React.PureComponent {
         return (
             <DefaultLayout className="resumedetail">
                 <Meta
-                 title={data.pageTitle}
-                 description={data.pageDescription}
+                 title={data.metaTitle}
+                 description={data.metaDescription}
                  metaImage={data.socialImg.childImageSharp.resolutions.src}
                 />
 
@@ -325,8 +325,8 @@ export const pageQuery = graphql`
             name
             title
             position
-            pageTitle
-            pageDescription
+            metaTitle
+            metaDescription
             description
             label
             url
