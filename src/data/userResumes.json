@@ -1,6 +1,7 @@
 [
     {
         "resumes": [{ "image": "successful-resumes/casey-tryon-resume-volunteer.jpg" }],
+        "industry": ["Student and Volunteering"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/casey_volunteer_avatar.png",
         "companyLogo": "successful-resumes/company-logos/killester_basketball.png",
@@ -45,6 +46,7 @@
     },
     {
         "resumes": [{ "image": "successful-resumes/casey-tryon-resume-sales.jpg" }],
+        "industry": ["Sales"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/casey-sales-resume.png",
         "companyLogo": "successful-resumes/company-logos/carlen-glass.png",
@@ -89,6 +91,7 @@
     },
     {
         "resumes": [{ "image": "successful-resumes/avery-lecrercq-resume-1.jpg" }],
+        "industry": ["Student and Volunteering"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/avery@2.png",
         "companyLogo": "successful-resumes/company-logos/aiesec.png",
@@ -137,6 +140,7 @@
             { "image": "successful-resumes/maximilian-malterer-resume-2.jpg" }
         ],
         "label": "New Role",
+        "industry": ["Business and Management"],
         "companyLogo": "successful-resumes/company-logos/2x-amazon.png",
         "avatar": "successful-resumes/avatars/max@2.png",
         "url": "maximilian-malterer",
@@ -182,6 +186,7 @@
             { "image": "successful-resumes/daniel-pietersen-resume-2.jpg" }
         ],
         "label": "New Role",
+        "industry": ["Customer Support"],
         "avatar": "successful-resumes/avatars/daniel@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-intercom-logo.png",
         "url": "daniel-pietersen",
@@ -230,6 +235,7 @@
             { "image": "successful-resumes/sam-young-resume-1.jpg" },
             { "image": "successful-resumes/sam-young-resume-2.jpg" }
         ],
+        "industry": ["IT and Tech", "Accounting and Finance"],
         "label": "Industry Switch",
         "avatar": "successful-resumes/avatars/sam@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-spotify-logo.png",
@@ -289,6 +295,7 @@
     {
         "resumes": [{ "image": "successful-resumes/louis-grenier-resume-1.jpg" }],
         "label": "New Role",
+        "industry": ["Marketing"],
         "avatar": "successful-resumes/avatars/louis@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-hotjar-logo.png",
         "url": "louis-grenier",
@@ -332,6 +339,7 @@
             { "image": "successful-resumes/julian-prim-resume-1.jpg" },
             { "image": "successful-resumes/julian-prim-resume-2.jpg" }
         ],
+        "industry": ["Accounting and Finance"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/new_role_deafult_avatar@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-pwc-logo.png",
@@ -374,6 +382,7 @@
     {
         "resumes": [{ "image": "successful-resumes/eric-hu-resume-1.jpg" }],
         "label": "Career Change",
+        "industry": ["Marketing"],
         "avatar": "successful-resumes/avatars/eric@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-sde-logo.png",
         "url": "eric-hu",
@@ -415,6 +424,7 @@
     {
         "resumes": [{ "image": "successful-resumes/akshay-rao-resume-1.jpg" }],
         "label": "New Role",
+        "industry": ["Engineering"],
         "avatar": "successful-resumes/avatars/ashkay@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-tesla-logo.png",
         "url": "akshay-rao",
@@ -459,6 +469,7 @@
             { "image": "successful-resumes/marcellus-nixon-resume-1.jpg" },
             { "image": "successful-resumes/marcellus-nixon-resume-2.jpg" }
         ],
+        "industry": ["Engineering", "C-Suite and Executive"],
         "label": "Industry Switch",
         "avatar": "successful-resumes/avatars/marcellus@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-verizon-logo.png",
@@ -504,6 +515,7 @@
             { "image": "successful-resumes/tobias-horstmann-resume-1.jpg" },
             { "image": "successful-resumes/tobias-horstmann-resume-2.jpg" }
         ],
+        "industry": ["Business and Management"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/tobias@2.png",
         "companyLogo": "successful-resumes/company-logos/deepmind_logo.png",
@@ -549,6 +561,7 @@
             { "image": "successful-resumes/melanie-fisher-resume-1.jpg" },
             { "image": "successful-resumes/melanie-fisher-resume-2.jpg" }
         ],
+        "industry": ["Sales"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/melanie@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-esc-logo.png",
@@ -594,6 +607,7 @@
             { "image": "successful-resumes/steffany-photopoulos-resume-1.jpg" },
             { "image": "successful-resumes/steffany-photopoulos-resume-2.jpg" }
         ],
+        "industry": ["Student and Volunteering", "Medicine"],
         "label": "Career Change",
         "companyLogo": "successful-resumes/company-logos/2x-ie-logo.png",
         "avatar": "successful-resumes/avatars/steffany@2.png",
@@ -640,6 +654,7 @@
             { "image": "successful-resumes/hillary-k-darville-resume-1.jpg" },
             { "image": "successful-resumes/hillary-k-darville-resume-2.jpg" }
         ],
+        "industry": ["Business and Management"],
         "label": "New Role",
         "avatar": "successful-resumes/avatars/hillary@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-guru-logo.png",
@@ -683,6 +698,7 @@
     {
         "resumes": [{ "image": "successful-resumes/eden-ivancich-resume-1.jpg" }],
         "label": "First Job",
+        "industry": ["Student and Volunteering"],
         "avatar": "successful-resumes/avatars/eden@2.png",
         "url": "eden-ivancich",
         "metaTitle": "Real High School Teen Resume Example | Enhancv",
@@ -726,6 +742,7 @@
             { "image": "successful-resumes/eric-weissmann-resume-2.jpg" }
         ],
         "label": "New Role",
+        "industry": ["Marketing", "C-Suite and Executive"],
         "avatar": "successful-resumes/avatars/eric_weismann@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-cin-logo.png",
         "url": "eric-weissmann",
@@ -768,6 +785,7 @@
     {
         "resumes": [{ "image": "successful-resumes/sophie-segal-resume-1.jpg" }],
         "label": "New Role",
+        "industry": ["Business and Management", "Customer Support"],
         "avatar": "successful-resumes/avatars/sofie_segal@2.png",
         "companyLogo": "successful-resumes/company-logos/2x-avis-budget.png",
         "url": "sophie-segal",
