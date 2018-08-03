@@ -28,7 +28,7 @@
                 height: 100vh;
             }
         }
-        /*
+        /* TO DO
 		.moving-eyes-container {
 			width: 50%;
 			position: absolute;
@@ -44,9 +44,22 @@
 				position: absolute;
 				top: 38%;
 				left: 28%;
+				animation: move-eyes10s infinite;
+		    	animation-delay: 1s;
 			}
 		}
-*/
+		@keyframes move-eyes {
+			0% {
+				left: 0px;
+			}
+			50% {
+				left: 200px;
+			}
+			100% {
+				left: 0px;
+			}
+		}
+		*/
         .q-right-container {
             width: 50%;
             justify-content: center;
@@ -165,7 +178,7 @@
 
             @media (max-width: $screen-xs-max) {
                 .q-mobile {
-                    padding: 40px;
+                    padding: 16px 40px;
 
                     h1 {
                         font-size: 38px;

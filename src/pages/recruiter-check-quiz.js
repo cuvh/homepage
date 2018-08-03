@@ -6,7 +6,7 @@ import Track from "utils/Track";
 
 import logo from "../assets/img/logo.svg";
 
-const RecruiterCheckQuiz = ({ data: { metaImage, recruitersImg, recruitersMobileImg } }) => (
+const RecruiterCheckQuiz = ({ data: { metaImage, recruitersImg } }) => (
     <div className="quiz-recruiter-check">
         <Meta
          title="Quiz: Survive being Googled by recruiters!"
@@ -102,13 +102,6 @@ export const pageQuery = graphql`
             }
         }
         recruitersImg: file(relativePath: { eq: "landing-pages/recruitersImg.png" }) {
-            childImageSharp {
-                sizes(maxWidth: 2500) {
-                    ...GatsbyImageSharpSizes
-                }
-            }
-        }
-        recruitersMobileImg: file(relativePath: { eq: "landing-pages/recruitersMobileImg.png" }) {
             childImageSharp {
                 sizes(maxWidth: 2500) {
                     ...GatsbyImageSharpSizes
