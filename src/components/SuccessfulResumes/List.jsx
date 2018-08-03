@@ -3,17 +3,24 @@ import Img from "components/Common/Img";
 import Link from "gatsby-link";
 import classnames from "classnames";
 
+import { map, flatten, uniq, flow, contains } from "lodash/fp";
+
 import Track from "utils/Track";
 import ResumeBadge from "components/SuccessfulResumes/ResumeBadge";
 
+const IS_CRAWLER = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+
+const getIndustries = flow(map("node.industry"), flatten, uniq);
+
 export default class List extends React.PureComponent {
     state = {
-        revealed: false,
+        // if crawler, reveal all content for SEO purposes (hidden content is not properly indexed)
+        revealed: IS_CRAWLER,
         filter: null,
     };
 
     filter(type) {
-        Track("Successful Resumes", "Click Resume Categories", type);
+        Track("Successful Resumes", "Click Resume Industries", type);
         this.setState({
             filter: type,
         });
@@ -31,9 +38,11 @@ export default class List extends React.PureComponent {
         const { data } = this.props;
         const { filter, revealed } = this.state;
 
+        const industries = getIndustries(data);
+
         let items;
         if (filter) {
-            items = data.filter(item => item.node.label === filter);
+            items = data.filter(({ node: { industry } }) => contains(this.state.filter, industry));
         } else {
             items = this.state.revealed ? data : data.slice(0, 6);
         }
@@ -50,34 +59,16 @@ export default class List extends React.PureComponent {
                          })}>
                             All resumes
                         </button>
-                        <button
-                         onClick={() => this.filter("Career Change")}
-                         className={classnames("resumes--filter-button", {
-                            selected: filter === "Career Change",
-                         })}>
-                            Career Change
-                        </button>
-                        <button
-                         onClick={() => this.filter("New Role")}
-                         className={classnames("resumes--filter-button", {
-                            selected: filter === "New Role",
-                         })}>
-                            New Role
-                        </button>
-                        <button
-                         onClick={() => this.filter("Industry Switch")}
-                         className={classnames("resumes--filter-button", {
-                            selected: filter === "Industry Switch",
-                         })}>
-                            Industry Switch
-                        </button>
-                        <button
-                         onClick={() => this.filter("First Job")}
-                         className={classnames("resumes--filter-button", {
-                            selected: filter === "First Job",
-                         })}>
-                            First Job
-                        </button>
+                        {industries.map(industry => (
+                            <button
+                             key={industry}
+                             onClick={() => this.filter(industry)}
+                             className={classnames("resumes--filter-button", {
+                                selected: filter === industry,
+                             })}>
+                                {industry}
+                            </button>
+                        ))}
                     </nav>
                 </div>
                 <div className="resumes--others-wrap Grid">

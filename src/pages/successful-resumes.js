@@ -182,6 +182,7 @@ export const pageQuery = graphql`
                     name
                     tags
                     title
+                    industry
                     resumes {
                         image {
                             childImageSharp {
