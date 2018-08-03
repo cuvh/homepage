@@ -4,6 +4,7 @@ const path = require("path");
 module.exports = {
     siteMetadata: {
         title: "Gatsby Default Starter",
+        siteUrl: `https://enhancv.com`,
     },
     plugins: [
         {
@@ -48,6 +49,22 @@ module.exports = {
                         browsers: ["last 2 versions"],
                     }),
                 ],
+            },
+        },
+
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                output: `/sitemap.xml`,
+                exclude: ["/404"],
+                serialize: ({ site, allSitePage }) =>
+                    allSitePage.edges.map(edge => {
+                        return {
+                            url: site.siteMetadata.siteUrl + edge.node.path,
+                            changefreq: `daily`,
+                            priority: edge.node.path === "/successful-resumes/" ? 1 : 0.7,
+                        };
+                    }),
             },
         },
     ],
