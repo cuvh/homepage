@@ -19,4 +19,4 @@ aws s3 sync ./public s3://$BUCKET --acl public-read --exclude "*" --include "*.h
 
 echo "Staging url is http://"$BUCKET".s3-website-us-east-1.amazonaws.com"
 
-aws cloudfront create-invalidation --distribution-id $DISTRIBUTIONID --paths "*"
+aws cloudfront create-invalidation --distribution-id $DISTRIBUTIONID --paths "/*"
