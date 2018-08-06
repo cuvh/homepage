@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 import Meta from "components/Meta";
-import Img from "gatsby-image";
+
+import Img from "components/Common/Img";
 import Track from "utils/Track";
 
 import logo from "../assets/img/logo.svg";

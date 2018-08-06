@@ -1,5 +1,6 @@
 import React from "react";
-import Img from "gatsby-image";
+
+import Img from "components/Common/Img";
 
 export default function SportLight({ back, front }) {
     return (

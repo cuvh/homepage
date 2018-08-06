@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import Tilt from "react-tilt";
 import LazyImage from "utils/Image";
-import Img from "gatsby-image";
+
+import Img from "components/Common/Img";
 
 export default function Testimonials({
     images: { danielLogo, akshayLogo, zainabLogo, edwardLogo, claraLogo },
