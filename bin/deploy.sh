@@ -18,3 +18,5 @@ echo "[PRODUCTION DEPLOY] Uploading media to S3..."
 aws s3 sync ./public s3://$BUCKET --acl public-read --exclude "*" --include "*.html" --cache-control "public, max-age=30"
 
 echo "Staging url is http://"$BUCKET".s3-website-us-east-1.amazonaws.com"
+
+aws cloudfront create-invalidation --distribution-id $DISTRIBUTIONID --paths *
