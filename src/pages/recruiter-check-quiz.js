@@ -46,6 +46,10 @@ const RecruiterCheckQuiz = ({ data: { metaImage, recruitersImg } }) => (
                 </div>
                 <div className="q-instructions">
                     <p>
+                        70% of employers check candidates online, 54% have decided not to hire an
+                        applicant based on their social media profiles.
+                    </p>
+                    <p>
                         You need to pass the test of being Googled. Find out if you’re likely to
                         succeed and what to do so you not just pass, but go to the top of the
                         applicant list!
