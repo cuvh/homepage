@@ -6,6 +6,7 @@ import Img from "components/Common/Img";
 import Track from "utils/Track";
 
 import logo from "../assets/img/logo.svg";
+import shareImage from "../assets/img/landing-pages/metaImg.jpg";
 
 const RecruiterCheckQuiz = ({ data: { metaImage, recruitersImg } }) => (
     <div className="quiz-recruiter-check">
@@ -15,7 +16,7 @@ const RecruiterCheckQuiz = ({ data: { metaImage, recruitersImg } }) => (
          succeed and what to do so you not just pass, but go to the top of the applicant list!
          This survey will give you personalized recommendations on building up your online 
          presence and it takes just 4 minutes to complete!"
-         metaImage={metaImage}
+         metaImage={shareImage}
         />
         <link
          href="https://fonts.googleapis.com/css?family=Rubik:400,500"
