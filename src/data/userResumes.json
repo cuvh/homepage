@@ -89,51 +89,7 @@
             }
         ]
     },
-    {
-        "resumes": [{ "image": "successful-resumes/casey-tryon-resume-volunteer.jpg" }],
-        "industry": ["Student and Volunteering"],
-        "label": "New Role",
-        "avatar": "successful-resumes/avatars/casey_volunteer_avatar.png",
-        "companyLogo": "successful-resumes/company-logos/killester_basketball.png",
-        "position": "Basketball Coach, Volunteer",
-        "url": "casey-tryon-coach",
-        "metaTitle": "Real Coaching Resume Example | Enhancv",
-        "metaDescription":
-            "Casey's coaching resume brings attention to her humanity while demonstrating her ability to lead and grow teams. ",
-        "tags": ["Coaching", "Basketball", "Volunteer"],
-        "twitterText":
-            "Casey's resume is the perfect sample for any coaching opportunity. With her resume, we see her passion for basketball and for teaching others. What are you passionate about?",
-        "facebookText":
-            "A good coach can make a world of a difference to your experience, that's why we love Casey's coaching resume. We get insight into her skill as a basketball coach, her special skills and her ability to lead a team to victory. See what makes Casey's coaching resume effective!",
-        "socialImg": "famous-resumes/share-images/casey_social_volunteer.png",
-        "name": "Casey Tryon",
-        "title": "How To Ace A Coaching Resume - Casey’s Story",
-        "description":
-            "Casey has already shown us how to put together a <a href=\"https://www.enhancv.com/successful-resumes/casey-tryon-sales\" class=\"feature-link\">stellar sales resume</a>, but there’s sides of life outside of the office too. With her coaching resume, Casey shows us that dedicating an individual resume for her volunteering is perfect for “securing future opportunities”. Coaching positions can be as difficult to secure as job offerings and putting a resume together tailor-made to that line of work is what will get your foot-in-the-door. Read more to see what makes Casey’s coaching resume effective. ",
-        "stepsTitle": "The Need for a Separate Resume",
-        "stepsDescription":
-            "We all struggle with keeping our resume specific to the job we’re applying to.This becomes a problem when you have an extensive job history as well as a long history of volunteering projects. We often consider volunteering projects to be easy to acquire but as we learned in Avery’s story, this isn’t necessarily the case. Creating a coaching resume shows you as a person at a quick glance. Coaching recruiters often depend on the humanity of people when trusting volunteers, so being able to convey who you are is just as, if not more, important than in another type of job.",
-        "steps": [
-            {
-                "title": "How Casey Scored With Her Coaching Resume "
-            },
-            {
-                "title": "1. It’s Contextual ",
-                "description":
-                    "Everything that is on Casey’s coaching resume is tailored towards basketball coaching. She gives details on her previous basketball coaching roles, what she has accomplished while fulfilling these roles, and an insight into her strengths as a basketball coach; goal setting, leadership development, and training design."
-            },
-            {
-                "title": "2. It Shows You Who She Is ",
-                "description":
-                    "As mentioned, coaching recruiters focus heavily on the type of person that they allow take ownership of projects. Considering that basketball coaching can involve work with children, it’s especially important to show who Casey is as a person to provide a sense of security. Casey accomplishes this by including her in-action photograph and her life philosophy. “You have to have a dream, a goal”."
-            },
-            {
-                "title": "3. It Highlights Special Skills ",
-                "description":
-                    "To stand out, emphasize skills that are both relevant to the project and that are individual to you. Casey does just this as she gives mention to her certificate in disability inclusion in sport and her BA in Psychology. This shows that she has transferable skills and knowledge that are unique to her that give her a competitive edge over someone that may have the same amount of experience in coaching. "
-            }
-        ]
-    },
+
     {
         "resumes": [{ "image": "successful-resumes/casey-tryon-resume-sales.jpg" }],
         "industry": ["Sales"],
@@ -421,6 +377,51 @@
                 "title": "Step 3: Focusing on Impact",
                 "description":
                     "Throughout his resume, Louis does what every marketing consultant resume should do: show the impact. From how many episodes of his podcast he’s released to how much revenue he bootstrapped, Louis shows how marketers show what they can do and stand out."
+            }
+        ]
+    },
+    {
+        "resumes": [{ "image": "successful-resumes/casey-tryon-resume-volunteer.jpg" }],
+        "industry": ["Student and Volunteering"],
+        "label": "New Role",
+        "avatar": "successful-resumes/avatars/casey_volunteer_avatar.png",
+        "companyLogo": "successful-resumes/company-logos/killester_basketball.png",
+        "position": "Basketball Coach, Volunteer",
+        "url": "casey-tryon-coach",
+        "metaTitle": "Real Coaching Resume Example | Enhancv",
+        "metaDescription":
+            "Casey's coaching resume brings attention to her humanity while demonstrating her ability to lead and grow teams. ",
+        "tags": ["Coaching", "Basketball", "Volunteer"],
+        "twitterText":
+            "Casey's resume is the perfect sample for any coaching opportunity. With her resume, we see her passion for basketball and for teaching others. What are you passionate about?",
+        "facebookText":
+            "A good coach can make a world of a difference to your experience, that's why we love Casey's coaching resume. We get insight into her skill as a basketball coach, her special skills and her ability to lead a team to victory. See what makes Casey's coaching resume effective!",
+        "socialImg": "famous-resumes/share-images/casey_social_volunteer.png",
+        "name": "Casey Tryon",
+        "title": "How To Ace A Coaching Resume - Casey’s Story",
+        "description":
+            "Casey has already shown us how to put together a <a href=\"https://www.enhancv.com/successful-resumes/casey-tryon-sales\" class=\"feature-link\">stellar sales resume</a>, but there’s sides of life outside of the office too. With her coaching resume, Casey shows us that dedicating an individual resume for her volunteering is perfect for “securing future opportunities”. Coaching positions can be as difficult to secure as job offerings and putting a resume together tailor-made to that line of work is what will get your foot-in-the-door. Read more to see what makes Casey’s coaching resume effective. ",
+        "stepsTitle": "The Need for a Separate Resume",
+        "stepsDescription":
+            "We all struggle with keeping our resume specific to the job we’re applying to.This becomes a problem when you have an extensive job history as well as a long history of volunteering projects. We often consider volunteering projects to be easy to acquire but as we learned in Avery’s story, this isn’t necessarily the case. Creating a coaching resume shows you as a person at a quick glance. Coaching recruiters often depend on the humanity of people when trusting volunteers, so being able to convey who you are is just as, if not more, important than in another type of job.",
+        "steps": [
+            {
+                "title": "How Casey Scored With Her Coaching Resume "
+            },
+            {
+                "title": "1. It’s Contextual ",
+                "description":
+                    "Everything that is on Casey’s coaching resume is tailored towards basketball coaching. She gives details on her previous basketball coaching roles, what she has accomplished while fulfilling these roles, and an insight into her strengths as a basketball coach; goal setting, leadership development, and training design."
+            },
+            {
+                "title": "2. It Shows You Who She Is ",
+                "description":
+                    "As mentioned, coaching recruiters focus heavily on the type of person that they allow take ownership of projects. Considering that basketball coaching can involve work with children, it’s especially important to show who Casey is as a person to provide a sense of security. Casey accomplishes this by including her in-action photograph and her life philosophy. “You have to have a dream, a goal”."
+            },
+            {
+                "title": "3. It Highlights Special Skills ",
+                "description":
+                    "To stand out, emphasize skills that are both relevant to the project and that are individual to you. Casey does just this as she gives mention to her certificate in disability inclusion in sport and her BA in Psychology. This shows that she has transferable skills and knowledge that are unique to her that give her a competitive edge over someone that may have the same amount of experience in coaching. "
             }
         ]
     },
