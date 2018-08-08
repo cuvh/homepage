@@ -1,0 +1,45 @@
+    {
+        "resumes": [{ "image": "successful-resumes/" }],
+        "industry": [""],
+        "label": "",
+        "avatar": "successful-resumes/avatars/",
+        "companyLogo": "successful-resumes/company-logos/",
+        "position": "",
+        "url": "",
+        "metaTitle": "",
+        "metaDescription":
+            "",
+        "tags": [""],
+        "twitterText":
+            "",
+        "facebookText":
+            "",
+        "socialImg": "famous-resumes/share-images/",
+        "name": "",
+        "title": "",
+        "description":
+            "",
+        "stepsTitle": "",
+        "stepsDescription":
+            "",
+        "steps": [
+            {
+                "title": ""
+            },
+            {
+                "title": "",
+                "description":
+                    ""
+            },
+            {
+                "title": "",
+                "description":
+                    ""
+            },
+            {
+                "title": "",
+                "description":
+                    ""
+            }
+        ]
+    },

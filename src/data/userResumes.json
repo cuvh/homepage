@@ -1,5 +1,95 @@
 [
     {
+        "resumes": [{ "image": "successful-resumes/pavel-kucherbaev.jpg" }],
+        "socialImg": "famous-resumes/share-images/pavel_social.png",
+        "avatar": "successful-resumes/avatars/pavel-kucherbaev.png",
+        "companyLogo": "successful-resumes/company-logos/booking-logo.png",
+        "industry": ["IT and Tech"],
+        "label": "New Role",
+        "position": "Data Science Analyst",
+        "url": "pavel-kucherbaev",
+        "metaTitle": "Real Data Scientist Resume Example | Enhancv",
+        "metaDescription":
+            "Pavel's data scientist resume shows us how to bring together all of your past experience and capitalise on it to enter into the new area of tech. ",
+        "tags": ["Data Science Analyst", "Tech", "Founder"],
+        "twitterText":
+            "Have you ever wondered what it would be like to watch the stars through a telescope? What about pondering the work of data scientists? Pavel has done it all. See how Pavel got hired at Booking.com using his Enhancv resume.",
+        "facebookText":
+            "Entering a new area in tech can be difficult to manage, that's why we love Pavel's data scientist resume. With scarce resources out there on resume writing for the role, you can be sure to pick up some tips from Pavel's successful resume.",
+        "name": "Pavel Kucherbaev",
+        "title": "Pavel’s Perfect Data Scientist Resume",
+        "description":
+            "Data science is a relatively new area in the tech world. This leaves us wondering, how do you create a data science resume? Pavel spoke with us on this challenge and highlighted that there aren’t a lot of resources on data science positions - until now. He utilised his resume to get hired at booking.com as a data science analyst. Today, we share with you exactly what his resume did to make this happen, and how you can do the same. ",
+        "stepsTitle": "The data scientist from the stars",
+        "stepsDescription":
+            "Growing up, Pavel was fascinated by the solar system and the things that exist outside of earth. “Exploring space is the most exciting thing anyone could ever imagine”. It’s no wonder he was driven to the area of data science. People see a lot of things in data, but spotting opportunities is his forte. “I could look into the data of people booking apartments and hotels and identify certain opportunities to help customers and the business”. Similar to how he would show his friends the craters of the Moon and watch their wonder, Pavel now spots patterns in data to help booking.com create a better experience for their users. Now, he loves where he works, and is surrounded by an amazing leadership team and great people. One of the stepping stones to getting there, as Pavel mentions, was creating his resume.",
+        "steps": [
+            {
+                "title": "Why Pavel’s Resume Was His Rocketship to Success "
+            },
+            {
+                "title": "1. It satisfied the job description",
+                "description":
+                    "Your resume is your answer booklet to the questions set out by the job description. This should take priority. Pavel took the job description and distilled it into categories of things that need to be addressed; data analytics, statistics, and more. He then highlighted online courses in statistics and machine learning he completed through Udacity and Coursera and gave spotlight to his analyst work on public bike sharing. This showed that he had the experience to rise to the challenges the vacancy would bring. He also satisfied the job description in other ways, as mentioned in number 3. "
+            },
+            {
+                "title": "2. It takes a two-pronged approach",
+                "description":
+                    "Resumes have two main components: aesthetics and content. Pavel highlights that his Enhancv resume was the perfect balance between the two and avoided the problem of sacrificing one for the other. Each section is laid out in a simple way and the experience mentioned is explained in simple, measurable terms. "
+            },
+            {
+                "title": "3. It injects him into his role ",
+                "description":
+                    "Recruiters aim to find the person that will fit the job opening best. One way to convince them that you are this person is to position yourself like you’re in the role already. Pavel achieves this by matching as many details of his potential employer as possible. “Booking’s main colour is dark blue so I used the same accent color in my resume as well”.. Collectively, this made it easy for the recruiter to see the potential fit and increased the likelihood to get invited to the initial interview. "
+            }
+        ]
+    },
+    {
+        "resumes": [{ "image": "successful-resumes/dean-oreilly-resume.jpg" }],
+        "avatar": "successful-resumes/avatars/dean-avatar.png",
+        "companyLogo": "successful-resumes/company-logos/enhancv-logo.png",
+        "industry": ["Marketing"],
+        "label": "First Job",
+        "position": "Marketing Intern, LGBT Chairperson, Mental Health Ambassador",
+        "url": "dean-oreilly",
+        "metaTitle": "Real Student Resume Example | Enhancv",
+        "metaDescription":
+            "What does a student resume look like when applying for your first internship? Dean's resume is a perfect sample for how to convey your passion and willingness to learn when finding a job while studying.",
+        "tags": ["Entry", "Internships", "College Student", "Marketing"],
+        "twitterText":
+            "You've heard about Dean's resume writing abilities for RuPaul, but what about his resume? We thought it was the perfect way to show us who he was and to detail his abilities. See why Dean's resume was the icing on the cake when applying for his internship with Enhancv! #Internship #FirstJob @deaneoreillyT @dculgbta ",
+        "facebookText":
+            "Dean's resume really sealed the deal with us when he applied for his internship. What did his resume accomplish to do this? Well, you have to see for yourself. #FirstJob",
+        "socialImg": "famous-resumes/share-images/dean_social.png",
+        "name": "Dean O'Reilly",
+        "title": "An Illustrative Student Resume - Dean’s Journey to Enhancv",
+        "description":
+            "As far as introductions go, Dean’s student resume was the perfect icebreaker when applying to intern with us at Enhancv. His resume is an excellent overview of his past experience, current projects and future ambitions. Using this resume, Dean successfully joined Enhancv as our Marketing Intern, his first ever internship.",
+        "stepsTitle": "Meet Dean",
+        "stepsDescription":
+            "Dean is a third-year Psychology student studying at Dublin City University in Ireland. Some of you may know him from his featured article in Fast Company in which he described how he came about working on RuPaul’s resume. However, there’s a little more to the story when it comes to starting his internship with Enhancv. Dean managed to, in his words, “find the internship of his dreams” with us after working on that resume and going through an interview where he talked us through his resume. “I’m so glad to have found my internship at Enhancv, it ticks all the boxes for me. There’s a great work culture, amazing opportunities and I get to work on pieces highlighting inspiring stories of other people finding their jobs”.<br /><br /> Getting to work with Dean was amazing but his resume was truly the icing on the cake. See below why we felt Dean was the perfect fit from his resume.",
+        "steps": [
+            {
+                "title": "Why Dean’s Resume Was The Dealmaker"
+            },
+            {
+                "title": "1. It’s Passionate",
+                "description":
+                    "One of the things we value most in Enhancv are people that bring their passion to everything they do - including their work. There is nothing better than seeing people flourish in their position because of their own inner-drive. That’s one thing that made Dean’s resume stand out - it was brimming with passion. From describing his work with DCU LGBTA to his poetry publications, there was no denying that it was self-motivation and not obligation that drives him to achieve."
+            },
+            {
+                "title": "2. The Perfect Balance",
+                "description":
+                    "Resumes are too often bereft of personality. But, when we come across resumes that beautifully blend their personality in with their accolades, that’s when we get excited. Dean spoke of his work as a ReachOut Ireland Ambassador which highlighted his ability to speak at public events, write content, and stay versatile in new environments. At the same time, he included his Most Proud Of section, which gave us insight into the things he cares for in his personal life - fronting BeLonGTo’s Stand Up Week Campaign, for example. With this, we got to see what skills Dean could bring to the company but also where he would fit in as a colleague in our team."
+            },
+            {
+                "title": "3. It’s Experience Based",
+                "description":
+                    "While academic work is very important, the true-teller of someone’s ability is how they handle situations and experiences. This doesn’t have to be working in a company, as Dean’s resume shows, it can be experiences in volunteering opportunities or even in your daily life. Dean made sure to emphasise the experiences he has had through his volunteering ventures including his workshops and speaking opportunities that proved he could comprehend theory and put it into practice."
+            }
+        ]
+    },
+    {
         "resumes": [{ "image": "successful-resumes/casey-tryon-resume-volunteer.jpg" }],
         "industry": ["Student and Volunteering"],
         "label": "New Role",
