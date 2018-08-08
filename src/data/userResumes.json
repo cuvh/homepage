@@ -3,11 +3,11 @@
         "resumes": [{ "image": "successful-resumes/pavel-kucherbaev.jpg" }],
         "socialImg": "famous-resumes/share-images/pavel_social.png",
         "avatar": "successful-resumes/avatars/pavel-kucherbaev.png",
-        "companyLogo": "successful-resumes/company-logos/booking-logo.png",
+        "companyLogo": "successful-resumes/company-logos/booking_logo@2.png",
         "industry": ["IT and Tech"],
         "label": "New Role",
         "position": "Data Science Analyst",
-        "url": "pavel-kucherbaev",
+        "url": "pavel-kucherbaev-data-analyst-resume",
         "metaTitle": "Real Data Scientist Resume Example | Enhancv",
         "metaDescription":
             "Pavel's data scientist resume shows us how to bring together all of your past experience and capitalise on it to enter into the new area of tech. ",
@@ -47,11 +47,11 @@
     {
         "resumes": [{ "image": "successful-resumes/dean-oreilly-resume.jpg" }],
         "avatar": "successful-resumes/avatars/dean-avatar.png",
-        "companyLogo": "successful-resumes/company-logos/enhancv-logo.png",
+        "companyLogo": "successful-resumes/company-logos/enhancv-logo@2.png",
         "industry": ["Marketing"],
         "label": "First Job",
         "position": "Marketing Intern, LGBT Chairperson, Mental Health Ambassador",
-        "url": "dean-oreilly",
+        "url": "dean-oreilly-marketing-intern-resume",
         "metaTitle": "Real Student Resume Example | Enhancv",
         "metaDescription":
             "What does a student resume look like when applying for your first internship? Dean's resume is a perfect sample for how to convey your passion and willingness to learn when finding a job while studying.",
