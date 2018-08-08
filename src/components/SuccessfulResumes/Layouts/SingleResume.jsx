@@ -189,7 +189,11 @@ export default class SingleResume extends React.PureComponent {
                          id="article"
                          className="resume-article p-md-top-8">
                             <h3>{data.stepsTitle}</h3>
-                            <p>{data.stepsDescription}</p>
+                            <p
+                             dangerouslySetInnerHTML={{
+                                __html: data.stepsDescription,
+                             }}
+                            />
 
                             {data.url === "daniel-pietersen" ? (
                                 <div style={{ textAlign: "center" }}>
