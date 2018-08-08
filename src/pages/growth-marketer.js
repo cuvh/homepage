@@ -44,7 +44,7 @@ export default function GrowthMarketer() {
                                     personality, so they can tell their story with confidence.
                                     Together with our users we make success stories –{" "}
                                     <a
-                                     href="http://utm.io/ub6a5"
+                                     href="/successful-resumes"
                                      target="_blank">
                                         see how Sam got hired at Spotify.
                                     </a>

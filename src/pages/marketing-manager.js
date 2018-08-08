@@ -44,7 +44,7 @@ export default function MarketingManager() {
                                     personality, so they can tell their story with confidence.
                                     Together with our users we make success stories –{" "}
                                     <a
-                                     href="http://utm.io/ub6a5"
+                                     href="/successful-resumes"
                                      target="_blank">
                                         see how Sam got hired at Spotify.
                                     </a>
@@ -74,13 +74,13 @@ export default function MarketingManager() {
                                     We can confidently say that we produce high-quality content
                                     (check our{" "}
                                     <a
-                                     href="http://utm.io/ub6a6"
+                                     href="https://blog.enhancv.com"
                                      target="_blank">
                                         blog
                                     </a>{" "}
                                     or{" "}
                                     <a
-                                     href="http://utm.io/ub6a5"
+                                     href="/successful-resumes"
                                      target="_blank">
                                         Successful Resumes
                                     </a>{" "}
